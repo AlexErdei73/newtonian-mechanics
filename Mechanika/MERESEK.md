@@ -19,11 +19,11 @@ A mechanikában három alapmennyiségről beszélünk, és ezek mérését illet
 
 ### Hosszúság
 
-> **A hosszúság egysége a méter. Egy méter a Föld egyenlítőjének 40 000 000-ad része. Úgy is mondhatjuk, hogy az egyenlítő hossza 40 000 km.**
+> **A hosszúság egysége a méter. Egy méter a Föld hosszúsági körének 40 000 000-ad része. Úgy is mondhatjuk, hogy a hosszúsági kör hossza 40 000 km.**
 
 A kilométer a méter 1000-szerese. A "kilo-" előtag más egységekhez is kapcsolható; mindig 1000-szeres szorzót jelent. A kilo előtag jelölése `k`, amelyet a mértékegység jele (ez esetben `m`) elé írunk. Az ilyen előtagokat (prefixumokat) általában táblázatban foglaljuk össze.
 
-Érdekességként megjegyezzük, hogy a korábbi (hagyományos) definíció a méterre más alapokon nyugodott. Ma a métert a fény másodperc alatt megtett útja alapján definiáljuk, mivel ez nagyon pontosan mérhető — természetesen bonyolultabb eszközökkel, mint egy méterrúd.
+Érdekességként megjegyezzük, hogy a definíció az első definíciója a méternek. Ma már egy pontosabb definíciót használunk, mely a fény egy másodperc alatt üres térben megtett útján alapul.
 
 ### Idő
 
