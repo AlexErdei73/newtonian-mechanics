@@ -1,45 +1,70 @@
-# Mérések, mértékegységek
+ # Mérések, mértékegységek
 
-A mérés az mindig annak a megállapítása, hogy a mennyiség hányszorosa a mértékegységnek. 
+A mérés mindig annak a megállapítása, hogy a mennyiség hányszorosa egy mértékegységnek.
 
-Ha például lemérjük a szoba hosszát és azt találjuk, hogy 3 méter, az azt jelenti, hogy a méterrud háromszor fér el a szobában, hosszában fektetve egymás után.
+Ha például lemérjük a szoba hosszát, és azt találjuk, hogy 3 m, az azt jelenti, hogy a méterrúd háromszor fér el a szoba hosszában egymás után.
 
-Fontos megjegyezni, hogy a mennyiség mindig a mérték szám és a mértékegység szorzata. 
-Például:\
+Fontos megjegyezni, hogy a mennyiség mindig a mértékszám és a mértékegység szorzata.
+Például:
 
 $$
 3m = 3 \times 1m
 $$
 
-Itt 3 a mérték szám és m a méter mértékegység jele. 3m úgy érthető, hogy a hosszúság a 3-szorosa az 1 méternek, vagyis a méterrud hosszának.
+Itt a 3 a mértékszám, és `m` a méter mértékegység jele. A `3 m` úgy értendő, hogy a hosszúság háromszorosa az 1 méternek.
 
-A mechanikában három alapmennyiségről beszélünk és ezek mérését illetve egységeit beszéljük meg.
+A mechanikában három alapmennyiségről beszélünk, és ezek mérését illetve egységeit tárgyaljuk.
 
-## Alapmennyisegek
+## Alapmennyiségek
 
 ### Hosszúság
-A hosszúság egysége a méter. Egy méter a Föld egyenlítőjének a 40 000 000-odik része. Úgy is mondhatjuk, hogy az egyenlítő hossza 40 000 km. 
 
-Itt a méter 1000-szerese az egység, mely a kilométer nevet viseli. A kilo szorzó más egységekhez is hozzárakható, minden esetben 1000-szeres szorzó. A kilo szorzó jele k, amit a mértékegység jele (ez esetben m) elé írunk. Az ilyen szorzók elnevezése prefixum és ezeket egy táblázatban szokás összefoglalni, amelyet később bemutatunk.
+> **A hosszúság egysége a méter. Egy méter a Föld egyenlítőjének 40 000 000-ad része. Úgy is mondhatjuk, hogy az egyenlítő hossza 40 000 km.**
 
-Érdekességként megjegyezzük, hogy a méter fenti definíciója egy régebbi definíció. Ma a fény által egy másodperc alatt megtett távolság alapján definiáljuk, mivel ez igen pontosan mérhető, persze bonyolultabb eszközökkel, mint a méterrud.
+A kilométer a méter 1000-szerese. A "kilo-" előtag más egységekhez is kapcsolható; mindig 1000-szeres szorzót jelent. A kilo előtag jelölése `k`, amelyet a mértékegység jele (ez esetben `m`) elé írunk. Az ilyen előtagokat (prefixumokat) általában táblázatban foglaljuk össze.
+
+Érdekességként megjegyezzük, hogy a korábbi (hagyományos) definíció a méterre más alapokon nyugodott. Ma a métert a fény másodperc alatt megtett útja alapján definiáljuk, mivel ez nagyon pontosan mérhető — természetesen bonyolultabb eszközökkel, mint egy méterrúd.
 
 ### Idő
-Régota felismerték, hogy a folyamatok összevethetők az alapján, hogy milyen gyorsan mennek végbe. Ez alapján mérhető az idő, amelyet kezdetben homokórákkal illetve vízórákkal mértek. Később egyre pontosabb órákat is készítettek, amelyek az inga lengésének alapján működtek. Az idő egységét is a Földhöz, pontosabban a Föld mozgásához rögzítették egészen az atomórák elterjedéséig. 
 
-Az idő egysége a másodperc (szekundum, jele s). A másodperc a Föld egy teljes tengely körüli fordulatának (a Naphoz viszonyítva) a 86400-ad része. Úgy is mondhatjuk, hogy egy nap a 86400 s.
+Régóta felismerték, hogy a folyamatok összehasonlíthatók az alapján, hogy milyen gyorsan mennek végbe. Ez alapján mérhető az idő, amelyet kezdetben homokórákkal, illetve vízórákkal mértek. Később egyre pontosabb órákat készítettek, amelyek az inga lengései alapján működtek. Az idő egységét korábban a Föld mozgásához kötötték, egészen az atomórák elterjedéséig.
 
-Másodperces inga: Az egy méter hosszú inga kis lengéseit kb. 2 s periódussal ismétlődnek, tehát fél lengés az egyik szélsőhelyzetből a másikig az kb. 1 másodperc.
+> **Az idő egysége a másodperc (szekundum, jele `s`). A másodperc a Föld egy teljes tengely körüli fordulatának (a Naphoz viszonyítva) 1/86400-a; ezért egy nap 86400 s.**
 
-Az inga lengések nem alkalmasak pontos definícióra, mivel az inga pontos periódusideje függ a földrajzi helytől, hőmérséklettől és még az inga lengés nagyságától is.
+Ez a szám onnan jön, hogy egy nap 24 óra, egy óra 60 perc, egy perc pedig 60 másodperc.
+
+$$
+1min = 60s
+$$
+
+$$
+1h = 60min = 60 \times 60s = 3600s
+$$
+
+$$
+1nap = 24h = 24 \times 3600s = 86400s
+$$
+
+Másodperces inga: Az egy méter hosszú inga kis lengései kb. 2 s periódussal ismétlődnek; tehát egy fél lengés az egyik szélső helyzetből a másikig körülbelül 1 másodperc.
+
+Az inga lengései nem alkalmasak pontos definícióra, mivel az inga periódusideje függ a földrajzi helytől, a hőmérséklettől és magának a lengés amplitúdójától is.
 
 ### Tömeg
-A testek tömegét mérleggel hasonlítható össze. Ezek működése általában a testek súlyának összehasonlításán alapul. A súlyról később részletesen fogunk beszélni. Egyelőre elegendő annyit tudnunk róla, hogy a Föld felszínének közelében a testek nyugalomban tartásához a testet alá kell támasztani, vagy fel kell függeszteni. A test ilyenkor erőt fejt ki a felfüggesztésre vagy az alátámasztásra, mely a test tömegétől függ. A test nyomja az alátámasztást, vagy húzza a felfüggesztést és tömege ez alapján megmérhetö.
 
-A tömeg egysége a kilogramm (kg). Egy kilogramm a tömege egy köbdeciméter kémiailag tiszta (desztillált) víznek 4 Celsius-fok hőmérsékleten.
+A testek tömegét mérleggel hasonlítjuk össze. A mérlegek működése általában a testek súlyának összehasonlításán alapul. A súlyról később részletesen fogunk beszélni. Egyelőre elegendő annyit tudnunk róla, hogy a Föld felszínének közelében a testeket alá kell támasztani vagy fel kell függeszteni ahhoz, hogy nyugalomban tartsuk őket. A test ilyenkor erőt fejt ki a felfüggesztésre vagy az alátámasztásra, amely a test tömegétől függ. A test nyomja az alátámasztást vagy húzza a felfüggesztést, és a tömege ez alapján megmérhető.
 
-Ez a definíció tartalmazza a térfogat fogalmát. A téglatestek térfogata az oldalai hosszainak szorzata. Mivel a kocka is téglatest, melynek oldalai egyenlő hosszúak, a térfogata is az oldalainak a szorzata. Egy köbdeciméter a térfogata az egy deciméter oldalú kockának. Egy deciméter az egy tized méter. Úgy is mondhatnánk, hogy 10 deciméter az egy méter. A köbdeciméter térfogategység másik elnevezése liter (l).
+> **A tömeg egysége a kilogramm (kg). Egy kilogramm az a tömeg, amelyet egy köbdeciméter kémiailag tiszta (desztillált) víz tölt 4 °C-on.**
 
-A definíció szintén tartalmazza a hőmérséklet fogalmát. A víz 4 Celsius-fok hőmérsékleten a legsűrűbb. Ez annyit jelent, hogy egy liter víz tömege 4 Celsius-fok hőmérsékleten a legnagyobb.
+Ez a definíció tartalmazza a térfogat fogalmát. A téglatestek térfogata az oldalaik hosszainak szorzata. Mivel a kocka is téglatest (minden oldala egyenlő hosszú), a térfogata az oldalainak a szorzata. Egy köbdeciméter egy deciméter oldalú kocka térfogata. Egy deciméter az egy tized méter, tehát 10 deciméter = 1 méter. A köbdeciméter térfogategység másik elnevezése a liter (l).
 
-Ez a viszonylag bonyolult definíció régi. A 2019-ig elfogadott definíció a Párizsban őrzött platina henger tömegét fogadta el az egy kilogramm definíciójaként. Így nem volt szükséges hőmérséklet vagy térfogatmérés, de minden 1 kg-os etalonért mérésséel kellett hitelesíteni, összehasonlítva a Párizsban őrzöttel. A tömeg kismértékben változott az idő folyamán a szennyezés és kopás miatt. Ezért 2019-ben ezt a definíciót is megváltoztatták és a kilogramm definícióját a Planck-állandó méréséhez kötötték. Ezt 1:100 000 000 pontossággal ismerjük és értékét időben állandónak tekinthetjük. 
+$$
+1l = 1dm^3 = 1dm \times 1dm \times 1dm = 0.1m \times 0.1m \times 0.1m = 0.001m^3
+$$
+
+$$
+1m^3 = 1m \times 1m \times 1m = 10dm \times 10dm \times 10dm = 1000dm^3 = 1000l
+$$
+
+A definíció szintén tartalmazza a hőmérséklet fogalmát. A víz 4 °C-on a legsűrűbb; ez azt jelenti, hogy egy liter víz tömege 4 °C-on a legnagyobb.
+
+Ez a viszonylag bonyolult definíció a korábbi, régi megfogalmazás volt. A 2019-ig elfogadott definíció szerint az egy kilogrammot a Párizsban őrzött platina henger tömege határozta meg. Így nem volt szükség hőmérséklet- vagy térfogatmérésre a definícióhoz, de minden 1 kg-os etalont méréssel kellett hitelesíteni, összehasonlítva a Párizsban őrzött példánnyal. A tömeg kismértékben változott az idő folyamán a szennyeződések és a kopás miatt. Ezért 2019-ben a definíciót módosították, és a kilogramm definícióját a Planck-állandó méréséhez kötötték. Ezt 1:100 000 000 pontossággal ismerjük, és értékét időben állandónak tekinthetjük.
