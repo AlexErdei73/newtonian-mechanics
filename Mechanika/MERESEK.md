@@ -69,9 +69,29 @@ A definíció szintén tartalmazza a hőmérséklet fogalmát. A víz 4 °C-on a
 
 Ez a viszonylag bonyolult definíció a korábbi, régi megfogalmazás volt. A 2019-ig elfogadott definíció szerint az egy kilogrammot a Párizsban őrzött platina henger tömege határozta meg. Így nem volt szükség hőmérséklet- vagy térfogatmérésre a definícióhoz, de minden 1 kg-os etalont méréssel kellett hitelesíteni, összehasonlítva a Párizsban őrzött példánnyal. A tömeg kismértékben változott az idő folyamán a szennyeződések és a kopás miatt. Ezért 2019-ben a definíciót módosították, és a kilogramm definícióját a Planck-állandó méréséhez kötötték. Ezt 1:100 000 000 pontossággal ismerjük, és értékét időben állandónak tekinthetjük.
 
-### Érdekességek
+## Érdekességek
 
 - [A méter története](https://www.youtube.com/watch?v=e3eHHwcMVcA)
 - [A mechanikus óra működése](https://www.youtube.com/watch?v=9_QsCLYs2mY)
 - [A kvarcóra](https://www.youtube.com/watch?v=1pM6uD8nePo)
 - [Az atomóra működése](https://www.youtube.com/watch?v=p2BxAu6WZI8)
+
+## Prefixumok
+| Name | Sign | Exponent |
+|------|------|----------|
+|atto  |a     |-18       |
+|femto |f     |-15       |
+|piko  |p     |-12       |
+|nano  |n     |-9        |
+|mikro |$\mu$ |-6        |
+|mili  |m     |-3        |
+|centi |c     |-2        |
+|deci  |d     |-1        |
+|deka  |dk    |1         |
+|hekto |h     |2         |
+|kilo  |k     |3         |
+|mega  |M     |6         |
+|giga  |G     |9         |
+|terra |T     |12        |
+|peta  |P     |15        |
+|exa   |E     |18        |
