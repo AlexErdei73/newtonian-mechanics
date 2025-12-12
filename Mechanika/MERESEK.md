@@ -77,21 +77,49 @@ Ez a viszonylag bonyolult definíció a korábbi, régi megfogalmazás volt. A 2
 - [Az atomóra működése](https://www.youtube.com/watch?v=p2BxAu6WZI8)
 
 ## Prefixumok
-| Name | Sign | Exponent |
-|------|------|----------|
-|atto  |a     |-18       |
-|femto |f     |-15       |
-|piko  |p     |-12       |
-|nano  |n     |-9        |
-|mikro |$\mu$ |-6        |
-|mili  |m     |-3        |
-|centi |c     |-2        |
-|deci  |d     |-1        |
-|deka  |dk    |1         |
-|hekto |h     |2         |
-|kilo  |k     |3         |
-|mega  |M     |6         |
-|giga  |G     |9         |
-|terra |T     |12        |
-|peta  |P     |15        |
-|exa   |E     |18        |
+| Előtag | Jel | Kitevő |
+|---------|-----|--------|
+| atto    | a   | -18    |
+| femto   | f   | -15    |
+| piko    | p   | -12    |
+| nano    | n   | -9     |
+| mikro   | μ   | -6     |
+| mili    | m   | -3     |
+| centi   | c   | -2     |
+| deci    | d   | -1     |
+| deka    | da  | 1      |
+| hekto   | h   | 2      |
+| kilo    | k   | 3      |
+| mega    | M   | 6      |
+| giga    | G   | 9      |
+| tera    | T   | 12     |
+| peta    | P   | 15     |
+| exa     | E   | 18     |
+
+## Példák
+
+1. A H-atom sugara alapállapotban a Bohr-rádiusz, amely 0.053 nm. Hány méter ez és hány pikométer? Egy angstrom (Å) az $10^{-10}$ m. Hány angstrom a Bohr-rádiusz?
+
+$$
+0.053nm = 0.053 \times 10^{-9}m = 5.3 \times 10^{-11}m
+$$
+
+$$
+5.3 \times 10^{-11}m = 53 \times 10^{-12}m = 53pm
+$$
+
+$$
+5.3 \times 10^{-11}m = 0.53 \times 10^{-10}m = 0.53Å
+$$
+
+2. A Föld sugara 6371 km. Hány méternek felel ez meg? Számítsuk ki az egyenlítő hosszát méterben és kilométerben!
+
+$$
+6371km = 6371 \times 10^{3}m = 6.371 \times 10^{6}m
+$$
+
+$$
+K = 2 \pi R = 2 \times 3.1415 \times 6.371 \times 10^{6}m = 40 029 000m = 40 029km
+$$
+
+Az eltérés a 40 000 km-tól a francia mérések hibája miatt lép fel. Nem sikerült egész pontosan úgy definiálni a métert, ahogyan szerették volna. További eltérést okoz, hogy a Föld nem szabályos gömb alakú, hanem kismértékben lapult a tengely körüli forgása miatt. Így az egyenlítőnél nagyobb a sugara, mint az átlagos sugár. Így az egyenlítő hossza kissé meg nagyobb, mint a számításunk (40 075 km).
