@@ -1,4 +1,4 @@
- # Mérések, mértékegységek
+# Mérések, mértékegységek
 
 A mérés mindig annak a megállapítása, hogy a mennyiség hányszorosa egy mértékegységnek.
 
@@ -19,11 +19,11 @@ A mechanikában három alapmennyiségről beszélünk, és ezek mérését illet
 
 ### Hosszúság
 
-> **A hosszúság egysége a méter. Egy méter a Föld egyenlítőjének 40 000 000-ad része. Úgy is mondhatjuk, hogy az egyenlítő hossza 40 000 km.**
+> **A hosszúság egysége a méter. Egy méter a Föld hosszúsági körének 40 000 000-ad része. Úgy is mondhatjuk, hogy a hosszúsági kör hossza 40 000 km.**
 
 A kilométer a méter 1000-szerese. A "kilo-" előtag más egységekhez is kapcsolható; mindig 1000-szeres szorzót jelent. A kilo előtag jelölése `k`, amelyet a mértékegység jele (ez esetben `m`) elé írunk. Az ilyen előtagokat (prefixumokat) általában táblázatban foglaljuk össze.
 
-Érdekességként megjegyezzük, hogy a korábbi (hagyományos) definíció a méterre más alapokon nyugodott. Ma a métert a fény másodperc alatt megtett útja alapján definiáljuk, mivel ez nagyon pontosan mérhető — természetesen bonyolultabb eszközökkel, mint egy méterrúd.
+Érdekességként megjegyezzük, hogy a definíció az első definíciója a méternek. Ma már egy pontosabb definíciót használunk, mely a fény egy másodperc alatt üres térben megtett útján alapul.
 
 ### Idő
 
@@ -85,8 +85,8 @@ Ez a viszonylag bonyolult definíció a korábbi, régi megfogalmazás volt. A 2
 | nano    | n   | -9     |
 | mikro   | μ   | -6     |
 | mili    | m   | -3     |
-| centi   | c   | -2     |
-| deci    | d   | -1     |
+| centi   | c   | -2    |
+| deci    | d   | -1    |
 | deka    | da  | 1      |
 | hekto   | h   | 2      |
 | kilo    | k   | 3      |
@@ -123,3 +123,15 @@ K = 2 \pi R = 2 \times 3.1415 \times 6.371 \times 10^{6}m = 40 029 000m = 40 029
 $$
 
 Az eltérés a 40 000 km-tól a francia mérések hibája miatt lép fel. Nem sikerült egész pontosan úgy definiálni a métert, ahogyan szerették volna. További eltérést okoz, hogy a Föld nem szabályos gömb alakú, hanem kismértékben lapult a tengely körüli forgása miatt. Így az egyenlítőnél nagyobb a sugara, mint az átlagos sugár. Így az egyenlítő hossza kissé meg nagyobb, mint a számításunk (40 075 km).
+
+## Feladatok
+
+1. A 6 megaohm ellenállás: hány ohm és hány kiloohm?
+2. Az elektron tömege $9.11\times10^{-31}\ \mathrm{kg}$. Hány gramm az elektron? Hány gramm egy mol elektron, ha egy mol elektron $6.022\times10^{23}$ darab?
+3. A fény sebessége vákuumban körülbelül $300\;000\ \mathrm{km/s}$. Hány métert tesz meg a fény egy másodperc alatt?
+4. A Napról a Földre érkező sugárzás nagyjából 8 perc 20 másodperc alatt ér el. Hány kilométerre van a Föld a Naptól?
+5. Egy fényév az a távolság, amelyet a fény vákuumban 1 év alatt megtesz. Hány méter és hány kilométer egy fényév?
+6. A Naphoz legközelebbi csillag (Proxima Centauri) körülbelül 4 fényév távolságra van. Hány méterre van a csillag a Naptól?
+7. Az Andromeda-köd, a hozzánk legközelebbi nagyobb galaxis, kb. 2,537 millió fényév távolságra van. Hány méter ez és hány kilométer?
+8. A He–Ne lézer vörös fényének hullámhossza $632.8\ \mathrm{nm}$. Hány méter ez és hány mikrométer?
+9. A Proxima Centauri a Nap után a hozzánk legközelebbi csillag; távolsága kb. $4.25$ fényév. Hány méterre és hány kilométerre van a Földtől? Hányszor nagyobb ez a távolság, mint a Nap–Föld távolság?
