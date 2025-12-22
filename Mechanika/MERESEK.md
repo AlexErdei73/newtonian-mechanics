@@ -126,12 +126,13 @@ Az eltérés a 40 000 km-tól a francia mérések hibája miatt lép fel. Nem si
 
 ## Feladatok
 
-1. A 6 megaohm ellenállás: hány ohm és hány kiloohm?
+1. Egy 6 megaohm ellenállás (6 MΩ): hány ohm és hány kiloohm?
 2. Az elektron tömege $9.11\times10^{-31}\ \mathrm{kg}$. Hány gramm az elektron? Hány gramm egy mol elektron, ha egy mol elektron $6.022\times10^{23}$ darab?
-3. A fény sebessége vákuumban körülbelül $300\;000\ \mathrm{km/s}$. Hány métert tesz meg a fény egy másodperc alatt?
-4. A Napról a Földre érkező sugárzás nagyjából 8 perc 20 másodperc alatt ér el. Hány kilométerre van a Föld a Naptól?
-5. Egy fényév az a távolság, amelyet a fény vákuumban 1 év alatt megtesz. Hány méter és hány kilométer egy fényév?
-6. A Naphoz legközelebbi csillag (Proxima Centauri) körülbelül 4 fényév távolságra van. Hány méterre van a csillag a Naptól?
-7. Az Andromeda-köd, a hozzánk legközelebbi nagyobb galaxis, kb. 2,537 millió fényév távolságra van. Hány méter ez és hány kilométer?
-8. A He–Ne lézer vörös fényének hullámhossza $632.8\ \mathrm{nm}$. Hány méter ez és hány mikrométer?
-9. A Proxima Centauri a Nap után a hozzánk legközelebbi csillag; távolsága kb. $4.25$ fényév. Hány méterre és hány kilométerre van a Földtől? Hányszor nagyobb ez a távolság, mint a Nap–Föld távolság?
+3. A fénysebesség vákuumban körülbelül $300\,000\ \mathrm{km/s}$. Hány métert tesz meg a fény egy másodperc alatt?
+4. A Napról a Földre érkező fény körülbelül 8 perc 20 másodperc alatt érkezik. Mekkora a Nap–Föld távolság kilométerben?
+5. Egy fényév az a távolság, amelyet a fény vákuumban egy év alatt megtesz. Hány méter és hány kilométer egy fényév?
+6. A Naphoz legközelebbi csillag, a Proxima Centauri, körülbelül 4 fényév távolságra van. Hány méterre van a csillag a Naptól?
+7. Az Andromeda-köd (a hozzánk legközelebbi nagyobb galaxis) kb. $2.537\times10^{6}$ fényév távolságra van. Hány méter és hány kilométer ez?
+8. A He–Ne lézer vörös fényének hullámhossza $632.8\ \mathrm{nm}$. Hány méter és hány mikrométer ez?
+9. A megfigyelhető világegyetem sugara körülbelül $46.5\times10^{9}$ fényév. Hány kilométer ez a távolság?
+10. A proton sugara 0.84 fm. Hány méter és hány milliméter ez a távolság?
