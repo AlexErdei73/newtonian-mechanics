@@ -80,7 +80,7 @@ Az adatok két értékes jegyre adottak, tehát nem szabad 3 értékes jegynél 
 
 ## A sűrűség
 
-> Egy test tömegének és térfogatának hányadosát a test sűrűségének nevezzük. A sűrűség az anyagi minőségre jellemző mennyiség. A sűrűség jele $\rho$, egysége: $\frac {kg} {m^3}$
+> **Egy test tömegének és térfogatának hányadosát a test sűrűségének nevezzük. A sűrűség az anyagi minőségre jellemző mennyiség. A sűrűség jele $\rho$, egysége: $\frac {kg} {m^3}$**
 
 $$
 \rho = \frac {m} {V}
