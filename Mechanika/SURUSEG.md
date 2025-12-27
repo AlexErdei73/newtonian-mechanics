@@ -117,3 +117,25 @@ m = \rho \times V = 13 600 \frac {kg}{m^3} \times 1cm^3 = 13600 \frac {1000g} {1
 $$
 
 $1 \frac {g} {cm^3}$ egyenlő $1000 \frac {kg} {m^3}$-rel.
+
+## Feladatok
+
+1. Egy szoba padlójának területe 12 m². Hány 30 cm x 30 cm-es csempével lehet ezt lefedni minimálisan?
+
+2. Egy kert területe 2,5 km². Hány bokrot lehet ültetni, ha a bokrok között 2 m térköz van minden irányban? A széleket elhanyagoljuk.
+
+3. Hány 10 ml-es pohárba lehet kitölteni egy 2 literes üveget? Hány cm³ egy pohár? Hány dm³ az üveg?
+
+4. Egy henger alakú tartály 4 m magas és 2 m sugarú. Hány liter víz fér bele, ha 80%-ig töltjük meg?
+
+5. Egy alumínium rúd tömege 1500 kg, térfogata 0,5 m³. Mennyi az alumínium sűrűsége?
+
+6. Egy üveg víz tömege 1,2 kg, térfogata 1,2 dm³. Mennyi a víz sűrűsége?
+
+7. Egy alumínium kocka oldala 10 cm, tömege 2,7 kg. Mennyi az alumínium sűrűsége?
+
+8. Egy héliumos ballon térfogata 5 m³, tömege 10 kg (beleértve a ballont is, de a ballon tömege elhanyagolható). Mennyi a hélium sűrűsége?
+
+9. Egy főzőpohárba 300 g olajat öntünk. Milyen magasan áll az olaj, ha a pohár sugara 5 cm? Az olaj sűrűsége 900 kg/m³.
+
+10. Számítsd ki 1 dm³ víz tömegét! A víz sűrűsége 1000 kg/m³. Hány g ez?
