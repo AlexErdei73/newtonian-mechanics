@@ -14,5 +14,7 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 
 - Matematikai alapismeretek
 - Mechanika
-	1. [Mérések, mértékegységek](Mechanika/MERESEK.md)
-	2. Vektor és skalár mennyiségek
+	1. [Mérések és mértékegységek](Mechanika/MERESEK.md)
+	2. [Sűrűség](Mechanika/SURUSEG.md)
+	3. [Skalár- és vektormennyiségek](Mechanika/VEKTOR.md)
+	
