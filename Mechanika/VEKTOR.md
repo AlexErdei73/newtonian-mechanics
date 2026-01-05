@@ -47,3 +47,11 @@ $$
 $$
 c = \sqrt{2500} = 50m
 $$
+
+### Vektorok kivonása
+
+Két vektor különbségét úgy kapjuk meg, hogy a vektorokat közös kezdőpontra toljuk. A különbségvektor a két végpontot köti össze, és a vektortól, amelyből kivonunk, a másik vektor végpontja felé mutat.
+
+### Nullvektor
+
+Ha egy vektorból önmagát vonjuk ki, nullvektort kapunk. A nullvektor hossza 0, iránya tetszőleges. A nullvektort bármely vektorhoz hozzáadhatjuk; a vektor értéke nem változik.
