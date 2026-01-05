@@ -6,11 +6,15 @@ Azok a mennyiségek, amelyeket csak nagyságuk jellemeznek: a skalár mennyiség
 
 ## Vektormennyiségek
 
-A későbbiekben gyakran találkozunk olyan mennyiségekkel, amelyeket a nagyságuk mellett az irányuk is jellemez. Ezeket vektormennyiségeknek nevezzük, és gyakran aláhúzással vagy a mennyiség jele fölé rajzolt nyíllal jelöljük. A legegyszerűbb példa az elmozdulás, amelynek van nagysága és iránya is. További példák: a sebesség, a gyorsulás és az erő, amelyekkel később részletesebben foglalkozunk.
+A későbbiekben gyakran találkozunk olyan mennyiségekkel, amelyeket a nagyságuk mellett az irányuk is jellemez. Ezeket vektormennyiségeknek nevezzük. Jelölésük történhet nyíllal a jel fölött vagy aláhúzással. Pl.: $\overrightarrow{a}$ az $a$ vektort jelöli, melynek hossza $\left|\overrightarrow{a}\right| = a$. A legegyszerűbb példa az elmozdulás, amelynek van nagysága és iránya is. További példák: a sebesség, a gyorsulás és az erő, amelyekkel később részletesebben foglalkozunk.
 
 ### Vektorok összeadása
 
 Vektorokat úgy adunk össze, ahogy azt az elmozdulásoknál tesszük. A második elmozdulást úgy toljuk el önmagával párhuzamosan, hogy a kezdőpontja az első elmozdulás végpontjába kerüljön. Ekkor az eredő elmozdulás az első elmozdulás kezdőpontjából a második elmozdulás végpontjába mutat.
+
+$$
+\overrightarrow{w} = \overrightarrow{u} + \overrightarrow{v}
+$$
 
 [Vektor-összeadás](https://www.geogebra.org/classic/tpa5qfuq)
 
@@ -55,3 +59,11 @@ Két vektor különbségét úgy kapjuk meg, hogy a vektorokat közös kezdőpon
 ### Nullvektor
 
 Ha egy vektorból önmagát vonjuk ki, nullvektort kapunk. A nullvektor hossza 0, iránya tetszőleges. A nullvektort bármely vektorhoz hozzáadhatjuk; a vektor értéke nem változik.
+
+$$
+\overrightarrow{0} = \overrightarrow{a} - \overrightarrow{a}
+$$
+
+$$
+\left | \overrightarrow{0} \right | = 0
+$$
