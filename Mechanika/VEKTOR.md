@@ -54,7 +54,11 @@ $$
 
 ### Vektorok kivonása
 
-Két vektor különbségét úgy kapjuk meg, hogy a vektorokat közös kezdőpontra toljuk. A különbségvektor a két végpontot köti össze, és a vektortól, amelyből kivonunk, a másik vektor végpontja felé mutat.
+Két vektor különbségét úgy kapjuk meg, hogy a vektorokat közös kezdőpontra toljuk. A különbségvektor a két végpontot köti össze, és a kisebbítendő vektor végpontja felé mutat.
+
+$$
+\overrightarrow{w} - \overrightarrow{u} = \overrightarrow{v}
+$$
 
 ### Nullvektor
 
