@@ -52,6 +52,18 @@ $$
 c = \sqrt{2500} = 50m
 $$
 
+### Feladatok
+
+1. Egy turista 15m-t sétál kelet felé, majd további 25m-t ugyanabba az irányba. Mekkora az elmozdulása összesen?
+
+2. Egy biciklista 80m-t halad észak felé, majd visszafelé 50m-t az ellenkező irányba. Mekkora az elmozdulása a kezdőponthoz képest?
+
+3. Egy személy 9m-t sétál egyenesen, majd merőlegesen folytatja útját és még 12m-t sétál. Mekkora az elmozdulása a kezdőponthoz képest?
+
+4. Egy személy 6m-t sétál észak felé, majd 8m-t kelet felé. Mekkora az elmozdulása a kezdőponthoz képest? (Használd a Pitagorasz-tételt.)
+
+5. Egy személy először 20m-t sétál az egyik irányba, majd 35m-t az ellenkező irányba. Mekkora az elmozdulása a kezdőponthoz képest?
+
 ### Vektorok kivonása
 
 Két vektor különbségét úgy kapjuk meg, hogy a vektorokat közös kezdőpontra toljuk. A különbségvektor a két végpontot köti össze, és a kisebbítendő vektor végpontja felé mutat.
