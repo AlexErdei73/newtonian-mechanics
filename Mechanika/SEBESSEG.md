@@ -35,3 +35,70 @@ v = \frac{s}{t}
 $$
 
 Ebben a formulában s a megtett út, t pedig a megtételéhez szükséges idő jele.
+
+### Példák:
+
+1. Egy autó egyenletesen halad, sebessége 60 km/h. Mekkora ez a sebesség m/s egységben? Mekkora utat tesz meg az autó 20 s alatt? Mennyi idő alatt tesz meg 100 m-t az autó?
+
+A sebesség kiszámítása:
+
+$$
+v = \frac {s} {t} = \frac {60 \text{ km}} {1 \text{ h}} = \frac {60\,000 \text{ m}} {3600 \text{ s}} = 16.7 \frac {m} {s}
+$$
+
+Itt kerekítettünk, hisz a sebességet két értékes jegyre adtuk meg, tehát a válasz is maximum 3 értékes jegyet tartalmazhat, ahol az utolsó jegy már nem pontos.
+
+$$
+16.7 \frac {m} {s} = \frac {x} {20 \text{ s}}
+$$
+
+Itt x-szel jelöltük az ismeretlen utat. Mindkét oldalt megszorozzuk 20 s-al, hogy megkapjuk x-et, ahogyan az egyenleteket megoldjuk a matematikában.
+
+$$
+x = 16.7 \frac {m} {s} \times 20 \text{ s} = 334 \text{ m}
+$$
+
+Itt az utolsó jegy már nem pontos, tehát durván 330 m-t tesz meg az autó 20 s alatt.
+
+Most az időt fogjuk x-szel jelölni.
+$$
+16.7 \frac {m} {s} = \frac {100 \text{ m}} {x}
+$$
+
+Az egység értelemszerűen s lesz, tehát elhagyjuk az egységeket a számítás során, csak a végén írjuk ki, hisz az eredmény csak így érvényes.
+
+$$
+16.7 \times x = 100
+$$
+
+$$
+x = \frac {100} {16.7} = 6.0 \text{ s}
+$$
+
+Itt 2 értékes jegyre kerekítettünk, hisz percenként 1 km-t tesz meg az autó, ami 60 s, tehát 6 s alatt pontosan 100 m-t tesz meg.
+
+2. Egy autó egyenletesen halad $30 \frac {m} {s}$ sebességgel. Mekkora utat tesz meg 3600 s tehát egy óra alatt? Mekkora a sebessége $\frac {km} {h}$-ban? Mennyi idő alatt ér egyenletesen haladva a 150 km távolságra lévő másik városba?
+
+$$
+30 = \frac {x} {3600}
+$$
+
+$$
+x = 30 \times 3600 = 108\,000 \text{ m} = 108 \text{ km}
+$$
+
+Az autó óránként 108 km-t tesz meg, tehát sebessége $108 \frac {km} {h}$.
+
+Most az időt, x-et számítjuk:
+
+$$
+108 = \frac {150} {x}
+$$
+
+$$
+108 \times x = 150
+$$
+
+$$
+x = \frac {150} {108} = 1.39h = 1h 23min
+$$
