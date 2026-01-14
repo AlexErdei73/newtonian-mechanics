@@ -61,6 +61,7 @@ $$
 Itt az utolsó jegy már nem pontos, tehát durván 330 m-t tesz meg az autó 20 s alatt.
 
 Most az időt fogjuk x-szel jelölni.
+
 $$
 16.7 \frac {m} {s} = \frac {100 \text{ m}} {x}
 $$
@@ -100,5 +101,27 @@ $$
 $$
 
 $$
-x = \frac {150} {108} = 1.39h = 1h 23min
+x = \frac {150} {108} = 1.39 \text{ h} = 1 \text{ h } 23 \text{ min}
 $$
+
+## Feladatok
+
+1. Egy vonat egyenletesen halad 80 km/h sebességgel. Mekkora ez a sebesség m/s egységben? Mekkora utat tesz meg a vonat 45 s alatt?
+
+2. Egy kerékpáros 5 m/s sebességgel halad. Mekkora utat tesz meg 2 perc alatt? Mennyi idő alatt tesz meg 15 km-t?
+
+3. Egy futó 6 m/s sebességgel fut. Mekkora ez a sebesség km/h egységben? Mennyi idő alatt fut le egy 100 m-es szakaszt?
+
+4. Egy autó 25 m/s sebességgel halad. Mekkora utat tesz meg 1 óra alatt? Mekkora a sebessége km/h-ban?
+
+5. Egy önjáró jármű 72 km/h sebességgel mozog. Mekkora ez a sebesség m/s egységben? Mennyi idő alatt tesz meg 500 m-t?
+
+6. Egy csiga 0,01 m/s sebességgel mozog. Mekkora utat tesz meg 10 perc alatt? Mennyi idő alatt tesz meg 1 métert?
+
+7. Egy repülőgép 900 km/h sebességgel repül. Mekkora ez a sebesség m/s egységben? Mekkora a távolság két város között, ha 2 óra alatt éri el azt?
+
+8. Egy űrszonda 50 000 km/h sebességgel halad. Mekkora ez a sebesség m/s egységben? Mekkora távolságot tesz meg 24 óra alatt?
+
+9. Egy motoros 15 m/s sebességgel halad. Mekkora ez a sebesség km/h egységben? Mekkora utat tesz meg 30 perc alatt?
+
+10. Két város között 240 km a távolság. Egy autó 80 km/h, egy másik 100 km/h sebességgel halad. Mekkora az eltérés az utazási időkben? Hány perccel ér később az első autó, mint a második?
