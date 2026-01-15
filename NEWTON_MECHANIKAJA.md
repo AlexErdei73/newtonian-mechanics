@@ -18,4 +18,5 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	2. [Sűrűség](Mechanika/SURUSEG.md)
 	3. [Skalár- és vektormennyiségek](Mechanika/VEKTOR.md)
 	4. [Sebesseg](Mechanika/SEBESSEG.md)
+	5. [Atlagsebesseg](Mechanika/ATLAGSEBESSEG.md)
 	
