@@ -48,3 +48,15 @@ $$
 Az autó gyorsulására formulánk fékezés esetén negatív értéket ad. Az a jelölés a gyorsulás vektor nagyságát szokta jelenteni, mely nem lehet negatív. Fékezés esetén a formula a gyorsulás vektor mozgás irányú összetevőjét adja meg ($a_x$ ha a mozgás x tengely irányú). A gyorsulás x komponense már lehet negatív, amennyiben az x tengellyel ellentétes irányú a gyorsulás vektor. Fékezésnél ez a helyzet, ha a mozgás x tengely irányú. A formula alkalmazása az $a_x$ jelölés helyett $a$ jelöléssel matematikailag pontatlan, de a rövidség kedvéért így fogjuk a továbbiakban alkalmazni. 
 
 > **Fékezés esetén a gyorsulás negatív, mely azt jelenti, hogy a gyorsulás vektor iránya a mozgás irányával ellentétes.**
+
+### Feladatok
+
+3. Egy versenyző 0 sebességről indul és 8 másodperc alatt eléri a $10 \frac {m} {s}$ sebességet. Mekkora az átlagos gyorsulása?
+
+4. Egy vonat $15 \frac {m} {s}$ sebességről 20 másodperc alatt lassít és $5 \frac {m} {s}$ sebességre csökkent. Mekkora a lassulása?
+
+5. Egy labdát függőlegesen felfelé dobunk. Az első másodpercben $25 \frac {m} {s}$-ről $15 \frac {m} {s}$-re csökken a sebessége. Mekkora a gravitációs gyorsulás (lassulás)?
+
+6. Egy motorkerékpár $0 \frac {m} {s}$-ról 5 másodperc alatt $30 \frac {m} {s}$ sebességre gyorsul fel. Mekkora a gyorsulása?
+
+7. Egy repülőgép landoláskor $60 \frac {m} {s}$ sebességről 15 másodperc alatt teljes állóra fékez. Mekkora a fékezés gyorsulása?
