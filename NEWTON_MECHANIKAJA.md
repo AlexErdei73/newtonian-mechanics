@@ -19,4 +19,6 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	3. [Skalár- és vektormennyiségek](Mechanika/VEKTOR.md)
 	4. [Sebesség](Mechanika/SEBESSEG.md)
 	5. [Átlagsebesség](Mechanika/ATLAGSEBESSEG.md)
-	
+	6. [Gyorsulás](Mechanika/GYORSULAS.md)
+	7. [Négyzetes út-törvény](Mechanika/NEGYZETESUTTORVENY.md)
+	8. [Feladatmegoldás](Mechanika/FELADATOKGYORSULOMOZG.md)

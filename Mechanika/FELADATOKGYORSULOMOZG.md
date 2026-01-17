@@ -1,0 +1,1 @@
+# Feladatok Gyorsulo Mozgasra
