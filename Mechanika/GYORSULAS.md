@@ -2,7 +2,7 @@
 
 ## Az egyenletesen gyorsuló mozgás
 
-Ha egy test sebességének nagysága, vagy mozgásának iránya változik, akkor gyorsuló mozgásról beszélünk. Most csak azzal az esettel fogunk foglalkozni, amikor a sebesseg nagysága változik és a mozgás egyenesvonalú az egyszerűség kedvéért. A sebesseg iránya se változik meg, csupán a nagysága.
+Ha egy test sebességének nagysága, vagy mozgásának iránya változik, akkor gyorsuló mozgásról beszélünk. Most csak azzal az esettel fogunk foglalkozni, amikor a sebesség nagysága változik és a mozgás egyenesvonalú az egyszerűség kedvéért. A sebesség iránya se változik meg, csupán a nagysága.
 
 > **Egyenletesen gyorsuló mozgásról beszélünk, amikor a test sebessége egyenlő időközök alatt egyenlő mértékben változik.**
 
@@ -14,21 +14,21 @@ Ha egy test sebességének nagysága, vagy mozgásának iránya változik, akkor
 
 [Súrlódás mentes mozgás lejtőn](https://alexerdei73.github.io/physics-engine/project/#94f47c36-ead0-4d85-a1ff-ac1827797ce9)
 
-Mind a kísérlet, mind a szimuláció mutatja, hogy a test a lejtőn gyorsulva mozog súrlódás mentes esetben. Gyakorlásképp a szimulátorral ábrázoljuk a sebesseg-idő grafikonját a testnek! Ez látható a következő ábrán:
+Mind a kísérlet, mind a szimuláció mutatja, hogy a test a lejtőn gyorsulva mozog súrlódás mentes esetben. Gyakorlásképp a szimulátorral ábrázoljuk a sebesség-idő grafikonját a testnek! Ez látható a következő ábrán:
 
 ![egyenletesen gyorsuló test sebesség-idő grafikonja](Kepek/egyenletesengyorsulomozgassebidograf.png)
 
-A test sebessége másodpercenként $0.5 \frac {m} {s}$-mal nő a grafikon alapján. A mozgás egyenletesen gyorsuló mozgás. A kezdeti sebesseg 0, a test álló helyzetből indul. 
+A test sebessége másodpercenként $0.5 \frac {m} {s}$-mal nő a grafikon alapján. A mozgás egyenletesen gyorsuló mozgás. A kezdeti sebesség 0, a test álló helyzetből indul. 
 
 ## A gyorsulás
 
-> **A gyorsulás az időegységre eső sebességváltozással egyenlő. Kiszámítható a sebesseg változás és az idő hányadosaként. Jele: a, egysége: $\frac {m} {s^2}$**
+> **A gyorsulás az időegységre eső sebességváltozással egyenlő. Kiszámítható a sebesség változás és az idő hányadosaként. Jele: a, egysége: $\frac {m} {s^2}$**
 
 $$
 a = \frac {\Delta v} {t} = \frac {v - v_0} {t}
 $$
 
-A gyorsulás vektormennyiség, a sebesseg változás vektor irányába mutat. A sebesseg változás vektor az elért sebesseg vektor és a kezdősebesseg vektor különbsége. Mi egyelőre csak olyan esettel foglalkozunk, ahol a vektorok azonos irányúak és a mozgás iránya nem változik, de az összefüggés általánosan igaz a vektorokra. 
+A gyorsulás vektormennyiség, a sebesség változás vektor irányába mutat. A sebesség változás vektor az elért sebesség vektor és a kezdősebesség vektor különbsége. Mi egyelőre csak olyan esettel foglalkozunk, ahol a vektorok azonos irányúak és a mozgás iránya nem változik, de az összefüggés általánosan igaz a vektorokra. 
 
 ### Példák
 1. A lejtőn lefele mozgó test a szimuláció során $0.5 \frac {m} {s}$-ról $2 \frac {m} {s}$-ra gyorsult fel $3s$ alatt. Mekkora a gyorsulás?

@@ -6,7 +6,7 @@
 
 1. Egy folyosó területe $5,8m^2$. Hány kőlappal lehet ezt lefedni minimálisan, ha egy kőlap 15cm x 21cm téglalap alakú?
 
-Egyszerűbb $cm^2$ egységben dolgozni, hisz a kőlap méretei ebben vannak megadva.
+Egyszerűbb $cm^2$ egységben dolgozni, hiszen a kőlap méretei ebben vannak megadva.
 
 $$
 A = 5,8m^2 = 5,8 \times 100cm \times 100cm = 5,8 \times 10^4cm^2
@@ -48,7 +48,7 @@ $$
 V = 1,5l = 1,5dm^3 = 1,5 \times 10cm \times 10cm \times 10cm = 1500cm^3 = 1500ml
 $$
 
-Az látszik, hogy $1cm^3 = 1ml$. 
+Ez látszik, hogy $1cm^3 = 1ml$. 
 
 $$
 V_{fecskendő} = 5ml = 5cm^3

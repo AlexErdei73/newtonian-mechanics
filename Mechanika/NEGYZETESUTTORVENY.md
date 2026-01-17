@@ -1,4 +1,4 @@
-# A negyzetes úttorveny
+# A négyzetes úttörvény
 
 ## Az út kiszámítása
 Idézzük fel a sebesség-idő grafikont a lejtőn lefele mozgó test esetére, amikor a gyorsulás $0.5 \frac {m} {s^2}$.
@@ -25,7 +25,7 @@ $$
 s = \frac {(a \times t) \times t} {2}
 $$
 
-A keresett formula melyet negyzetes uttorvenynek nevezunk:
+A keresett formula melyet négyzetes úttörvénynek nevezunk:
 
 $$
 s = \frac {a} {2} \times t^2
@@ -49,6 +49,6 @@ Vizsgáljuk most meg az út-idő grafikont, amit megkaphatunk a szimuláció ala
 
 Gyakorlásképp nézzük meg az út-idő grafikon képét a szimuláció alapján! A következő grafikont kell kapnunk:
 
-![Negyzetes úttorveny grafikonja](Kepek/negyzetesuttorvenygraf.png)
+![Négyzetes úttörvény grafikonja](Kepek/negyzetesuttorvenygraf.png)
 
-Látszik is, hogy valóban a megtett út 4m, 4s idő elteltékor. A görbe neve parabola.
+Látszik is, hogy valóban a megtett út 4m, 4s idő elteltekor. A görbe neve parabola.
