@@ -68,11 +68,11 @@ Tehát a test $10.0 \frac {m} {s}$-et ér el.
 
 3. Egy lift álló helyzetből felfelé gyorsít $2.00 \frac{m}{s^2}$ gyorsulással $10.0 s$ ideig. Mekkora a végsebessége? Mekkora a megtett út?
 
-## Peldak nem nulla kezdosebessegu gyorsulo mozgasokra
+## Példák nem nulla kezdősebességű gyorsuló mozgásokra
 
-1. Egy feldobott labda lassulasa $9.81 \frac {m} {s^2}$. Milyen magasra repul fel, ha $5.00 \frac {m} {s}$ sebesseggel dobjuk fel? Mennyi ido alatt eri el ezt a magassagot?
+1. Egy feldobott labda lassulása $9.81 \frac {m} {s^2}$. Milyen magasra repül fel, ha $5.00 \frac {m} {s}$ sebességgel dobjuk fel? Mennyi idő alatt éri el ezt a magasságot?
 
-Ha a szokasos formulat hasznaljuk, akkor a gyorsulast negativnak kell vennunk, hisz a labda lassul.
+Ha a szokásos formulát használjuk, akkor a gyorsulást negatívnak kell vennünk, hisz a labda lassul.
 
 $$
 a = \frac {v - v_0} {t}
@@ -90,10 +90,66 @@ $$
 x = \frac {-5.00} {-9.81} = 0.510
 $$
 
-Az emelkedesi ido $0.510s$.
+Az emelkedési idő $0.510s$.
 
 $$
 s = v_0 \times t + \frac {a} {2} \times t^2 = 5.00 \times 0.510 + \frac {-9.81} {2} \times 0.510^2 = 1.27m
 $$
 
-2. Egy auto $30.0 \frac {m} {s}$ sebessegrol fekez $3.00 \frac {m} {s^2}$ lassulassal, mikozben 113m utat tesz meg. Mennyi ideig tartott a fekezes es mekkora sebessegre lassitott le? 
+2. Egy autó $30.0 \frac {m} {s}$ sebességről fékez $3.00 \frac {m} {s^2}$ lassulással, miközben 113m utat tesz meg. Mennyi ideig tartott a fékezés és mekkora sebességre lassított le? 
+
+Ez a feladat nehéznek tűnhet, de vegyük észre, hogy minden adat adott a négyzetes úttörvényben, kivéve az eltelt időt. Tehát az idő kiszámítható kell legyen egy egyenlet megoldásával.
+
+$$
+s = v_0 \times t + \frac {a} {2} \times t^2
+$$
+
+$$
+113 = 30.0 \times x + \frac {-3.00} {2} \times x^2
+$$
+
+$$
+1.50x^2 - 30.0x + 113 = 0
+$$
+
+Ez egy másodfokú egyenlet az idő meghatározására, melyet az x ismeretlen jelöl. Erre ismerjük a megoldóképletet.
+
+$$
+x_{12} = \frac {-b \pm \sqrt {b^2 - 4ac}} {2a} = \frac {30.0 \pm \sqrt {30.0^2 - 4 \times 1.50 \times 113}} {3.00} = \frac {30.0 \pm 14.9} {3.00} = 15.0 , 5.03
+$$
+
+Két megoldást kapunk. Az egyik esetben a test úgy tesz meg 113m-t, hogy nem fordul meg, a másik esetben nem a megtett út 113m, hanem a test távolsága az eredeti pozíciójától. A test 0-ra fékez és megfordul, majd elindul visszafele és gyorsulva jut 113m távolságra az eredeti helytől, ahol a fékezés kezdett. Ez persze akkor történne, ha a gyorsulás nem szűnne meg, amint a kocsi nullára fekezett, hanem változatlanul fennállna. Nyilván minket a rövidebb idő érdekel csak, amikor a test mozgás iránya nem fordul meg. Tehát a lassítás ideje 5.03s.
+
+A sebesség könnyeden kiszámítható.
+
+$$
+a = \frac {v - v_0} {t}
+$$
+
+$$
+-3.00 = \frac {x - 30.0} {5.03}
+$$
+
+$$
+-15.1 = x - 30.0
+$$
+
+$$
+x = 14.9
+$$
+
+A sebesség tehát $14.9 \frac {m} {s}$.
+
+### Feladatok
+
+1. Egy autó $20.0 \frac {m} {s}$ sebességről $2.00 \frac {m} {s^2}$ lassulással fékez. Mennyi idő alatt tesz meg 60.0 métert a fékezés során?
+
+2. Egy labdát a talajról felhajítunk $15.0 \frac {m} {s}$ kezdősebességgel. A labda lassulása $9.81 \frac {m} {s^2}$. Mekkora idő alatt ér el 10.0 méteres magasságot az emelkedés során?
+
+3. Egy vonat $25.0 \frac {m} {s}$ sebességgel halad, majd egyenletes $5.00 \frac {m} {s^2}$ gyorsulással $10.0$ másodpercig gyorsít. Mekkora végsebességet ér el? Mekkora utat tesz meg a gyorsítás alatt?
+
+4. Egy segédmotor $12.0 \frac {m} {s}$ sebességgel halad, majd $1.50 \frac {m} {s^2}$ lassulással fékez. Mennyi idő alatt tesz meg 50.0 métert a fékezés során?
+
+5. Egy sportautó $40.0 \frac {m} {s}$ sebességgel halad és $5.00 \frac {m} {s^2}$ gyorsulással $8.00$ másodpercig gyorsít. Mekkora sebességre gyorsul fel? Mekkora távolságot tesz meg a gyorsítás során?
+
+6. Egy síelő lesiklik a pályán $30.0 \frac {m} {s}$ sebességgel, majd a lejtő vége felé egyenletes $4.00 \frac {m} {s^2}$ lassulással fékez. Mennyi idő alatt lassul le $10.0 \frac {m} {s}$ sebességre? Mekkora távolságot tesz meg ezalatt?
