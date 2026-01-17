@@ -7,7 +7,7 @@ $$
 v = \frac {s} {t} = \frac {100km} {1h} = \frac {100 000m} {3600s} = 27.8 \frac {m} {s}
 $$
 
-Itt az elért sebességre az egyenletes mozgás formuláját használtuk, hisz gondolhatjuk, hogy az autó egyenletesen halad tovább a gyorsítási folyamat után az elért sebességgel. Ez azt jelenti, hogy 100km-t tesz meg 1h alatt. 1h az úgy 60min tehát 3600s, hisz minden perc 60s.
+Itt az elért sebességre az egyenletes mozgás formuláját használtuk, hisz gondolhatjuk, hogy az autó egyenletesen halad tovább a gyorsítási folyamat után az elért sebességgel. Ez azt jelenti, hogy 100km-t tesz meg 1h alatt. 1h az 60min tehát 3600s, hisz minden perc 60s.
 
 $$
 a = \frac {\Delta v} {t} = \frac {v - v_0} {t} = \frac {27.8 \frac {m} {s} - 0} {8s} = 3.48 \frac {m} {s^2}
@@ -57,7 +57,7 @@ $$
 x = 10.0
 $$
 
-Tehát a test $10.0 \frac {m} {s}$-et ér el.
+Tehát a test $10.0 \frac {m} {s}$-ot ér el.
 
 ### Feladatok
 
@@ -118,9 +118,9 @@ $$
 x_{12} = \frac {-b \pm \sqrt {b^2 - 4ac}} {2a} = \frac {30.0 \pm \sqrt {30.0^2 - 4 \times 1.50 \times 113}} {3.00} = \frac {30.0 \pm 14.9} {3.00} = 15.0 , 5.03
 $$
 
-Két megoldást kapunk. Az egyik esetben a test úgy tesz meg 113m-t, hogy nem fordul meg, a másik esetben nem a megtett út 113m, hanem a test távolsága az eredeti pozíciójától. A test 0-ra fékez és megfordul, majd elindul visszafele és gyorsulva jut 113m távolságra az eredeti helytől, ahol a fékezés kezdett. Ez persze akkor történne, ha a gyorsulás nem szűnne meg, amint a kocsi nullára fekezett, hanem változatlanul fennállna. Nyilván minket a rövidebb idő érdekel csak, amikor a test mozgás iránya nem fordul meg. Tehát a lassítás ideje 5.03s.
+Két megoldást kapunk. Az egyik esetben a test úgy tesz meg 113m-t, hogy nem fordul meg, a másik esetben nem a megtett út 113m, hanem a test távolsága az eredeti pozíciójától. A test 0-ra fékez és megfordul, majd elindul visszafele és gyorsulva jut 113m távolságra az eredeti helytől, ahol fékezni kezdett a kocsi. Ez persze akkor történne, ha a gyorsulás nem szűnne meg, amint a kocsi nullára fekezett, hanem változatlanul fennállna. Nyilván minket a rövidebb idő érdekel csak, amikor a test mozgás iránya nem fordul meg. Tehát a lassítás ideje 5.03s.
 
-A sebesség könnyeden kiszámítható.
+A sebesség könnyedén kiszámítható.
 
 $$
 a = \frac {v - v_0} {t}
