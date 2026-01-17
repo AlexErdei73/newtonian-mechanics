@@ -57,14 +57,43 @@ $$
 x = 10.0
 $$
 
-Tehát a test $10 \frac {m} {s}$-et ér el.
+Tehát a test $10.0 \frac {m} {s}$-et ér el.
 
 ### Feladatok
 
-1. Egy autó álló helyzetből felgyorsít $60 \frac{km}{h}$-ra $5.00 s$ alatt. Mekkora a gyorsulása? Mekkora a megtett út?
+1. Egy autó álló helyzetből felgyorsít $60.0 \frac{km}{h}$-ra $5.00 s$ alatt. Mekkora a gyorsulása? Mekkora a megtett út?
 
 2. Egy labda lefelé gurul egy dombon súrlódásmentesen, gyorsulása $3.00 \frac{m}{s^2}$. A domb hossza $15.0 m$. Mennyi idő alatt ér le? Mekkora sebességgel?
 
 
 3. Egy lift álló helyzetből felfelé gyorsít $2.00 \frac{m}{s^2}$ gyorsulással $10.0 s$ ideig. Mekkora a végsebessége? Mekkora a megtett út?
 
+## Peldak nem nulla kezdosebessegu gyorsulo mozgasokra
+
+1. Egy feldobott labda lassulasa $9.81 \frac {m} {s^2}$. Milyen magasra repul fel, ha $5.00 \frac {m} {s}$ sebesseggel dobjuk fel? Mennyi ido alatt eri el ezt a magassagot?
+
+Ha a szokasos formulat hasznaljuk, akkor a gyorsulast negativnak kell vennunk, hisz a labda lassul.
+
+$$
+a = \frac {v - v_0} {t}
+$$
+
+$$
+-9.81 = \frac {0 - 5.00} {x}
+$$
+
+$$
+-9.81x = -5.00
+$$
+
+$$
+x = \frac {-5.00} {-9.81} = 0.510
+$$
+
+Az emelkedesi ido $0.510s$.
+
+$$
+s = v_0 \times t + \frac {a} {2} \times t^2 = 5.00 \times 0.510 + \frac {-9.81} {2} \times 0.510^2 = 1.27m
+$$
+
+2. Egy auto $30.0 \frac {m} {s}$ sebessegrol fekez $3.00 \frac {m} {s^2}$ lassulassal, mikozben 113m utat tesz meg. Mennyi ideig tartott a fekezes es mekkora sebessegre lassitott le? 
