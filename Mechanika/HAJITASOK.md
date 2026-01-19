@@ -10,7 +10,13 @@ Ha adott egy vektor is a koordináta rendszerben, akkor ez önmagával párhuzam
 
 [vektor koordináták](https://www.geogebra.org/calculator/unkrfvjp) 
 
-Az alábbiak jelölése: $\overrightarrow{a} = (a_x,a_y)$   . Itt $a_x$ és $a_y$ az $\overrightarrow{a}$ vektor koordinátái. Ezek csak a koordináta rendszerrel együtt adják meg a vektort. Ha elforgatjuk a koordinátarendszert a vektor koordinátái is megváltoznak. A továbbiakban a koordinátarendszert sem mozgatjuk.
+Az alábbiak jelölése: 
+
+$$
+\overrightarrow{a} = (a_x,a_y)
+$$    
+
+Itt $a_x$ és $a_y$ az $\overrightarrow{a}$ vektor koordinátái. Ezek csak a koordináta rendszerrel együtt adják meg a vektort. Ha elforgatjuk a koordinátarendszert a vektor koordinátái is megváltoznak. A továbbiakban a koordinátarendszert sem mozgatjuk.
 Az $\overrightarrow{a}$ vektor előállítható két vektor összegként, melyek a koordináta tengelyekkel párhuzamosak. Ezek a vektor komponensek. Az x-tengellyel párhuzamos komponens, az x-komponens, hossza $\left|a_x\right|$. Az y-komponens hossza $\left|a_y\right|$.
 
 ## A megtett út és az elmozdulás vektor
