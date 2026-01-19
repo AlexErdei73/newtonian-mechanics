@@ -149,3 +149,15 @@ x = -17.21
 $$
 
 Tehát a becsapódás sebessége $17.2 \frac {m} {s}$. A negatív előjel azt jelzi, hogy $v_y$ negatív, vagyis a test a felfelé mutató y-tengellyel ellentétes irányban, tehát lefelé mozog a becsapódáskor, ahogy annak lennie is kell.
+
+### Feladatok
+
+1. Egy labdát függőlegesen felfelé dobunk $15.0 \frac{m}{s}$ kezdősebességgel. Milyen magasra emelkedik a labda? Mennyi idő alatt éri el a maximális magasságot? A légellenállás elhanyagolható, a nehézségi gyorsulás $9.81 \frac{m}{s^2}$.
+
+2. Egy labdát függőlegesen felfelé dobunk, és 5.0 másodperc múlva visszaérkezik a kezünkbe. Mekkora volt a kezdősebesség? A nehézségi gyorsulás $9.81 \frac{m}{s^2}$.
+
+3. Egy labdát függőlegesen felfelé dobunk $12.0 \frac{m}{s}$ sebességgel. Mennyi idő alatt éri el a 10.0 m magasságot az emelkedés során? A nehézségi gyorsulás $9.81 \frac{m}{s^2}$.
+
+4. Egy labdát függőlegesen felfelé dobunk, és 3.0 másodperc után sebessége $5.0 \frac{m}{s}$ felfelé. Mekkora volt a kezdősebesség? A nehézségi gyorsulás $9.81 \frac{m}{s^2}$.
+
+5. Egy labdát függőlegesen felfelé dobunk $18.0 \frac{m}{s}$ sebességgel. Mennyi idő alatt éri el a 15.0 m magasságot? A nehézségi gyorsulás $9.81 \frac{m}{s^2}$.
