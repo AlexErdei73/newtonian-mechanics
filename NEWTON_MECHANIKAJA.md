@@ -23,3 +23,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	7. [Négyzetes út-törvény](Mechanika/NEGYZETESUTTORVENY.md)
 	8. [Feladatmegoldás](Mechanika/FELADATOKGYORSULOMOZG.md)
 	9. [Szabadeses](Mechanika/SZABADESES.md)
+	10. [Hajitasok](HAJITASOK.md)
