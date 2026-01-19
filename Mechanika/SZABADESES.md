@@ -17,11 +17,11 @@ Vizsgáljuk meg a szabadon eső test sebesség-idő és út-idő grafikonjait a 
 
 ## A szabadesés és feltételei
 
-Galileo Galilei megjegyzései szerint a különböző tömegű testek, anyagi minőségtől függetlenül azonos magasságból elengedve azonos idő alatt érnek földet, feltéve hogy a mozgás során a légellenállás elhanyagolható, tehát a testek szabadon esnek, külső behatások nélkül. 
+Galileo Galilei megfigyelései szerint a különböző tömegű testek, anyagi minőségtől függetlenül azonos magasságból elengedve azonos idő alatt érnek földet, feltéve hogy a mozgás során a légellenállás elhanyagolható, tehát a testek szabadon esnek, külső hatások nélkül. 
 
 Galilei azt is megállapította, hogy a mozgás egyenletesen gyorsuló mozgás, melynek gyorsulása a nehézségi gyorsulás. Ennek értéke a Földön kb. $9.81 \frac {m} {s^2}$. A nehézségi gyorsulás kismértékben változik a földrajzi hellyel.
 
-> **Szabadon eső testek a Föld felszíne közelében egyenletesen gyorsuló mozgást végeznek, melynek gyorsulása a nehézségi gyorsulás. A nehézségi gyorsulás jele g, értéke $9.81 \frac{m}{s^2}$, mely kismértékben függ a földrajzi helytől. A nehézségi gyorsulás minden testre egyforma értékű.** 
+> **Szabadon eső testek a Föld felszíne közelében egyenletesen gyorsuló mozgást végeznek, melynek gyorsulása a nehézségi gyorsulás. A nehézségi gyorsulás jele g, értéke $9.81 \frac{m}{s^2}$, mely kismértékben függ a földrajzi helytől. A nehézségi gyorsulás minden testre egyforma értékű egy adott helyen.** 
 
 Érvényes a négyzetes úttörvény a nulla kezdősebességű esésre:
 
@@ -33,7 +33,7 @@ Itt h az elengedés magassága, t az esés ideje és g a nehézségi gyorsulás.
 
 ### Példák
 
-1. Egy $5.00 \text{ m}$ magasból elengedett test mennyi idő alatt ér talajt, ha szabadon esik? Mekkora sebességgel csapódik be? 
+1. Egy $5.00 \text{ m}$ magasból elejtett test mennyi idő alatt ér talajt, ha szabadon esik? Mekkora sebességgel csapódik be? 
 
 $$
 h = \frac {g} {2} \times t^2
@@ -55,7 +55,7 @@ $$
 x = \pm 1.010
 $$
 
-A test $1.01 \text{ s}$ alatt zuhan. 
+A test $1.01 \text{ s}$ alatt zuhan le. 
 
 $$
 a = g = \frac {v - v_0} {t}
@@ -99,7 +99,7 @@ A magasság tehát $45.9 \text{ m}$.
 
 ### Feladatok
 
-1. Egy $80.0 \text{ m}$ magasságból elengedett test mennyi idő alatt ér talajt, és mekkora sebességgel csapódik be?
+1. Egy $80.0 \text{ m}$ magasságból elejtett test mennyi idő alatt ér talajt, és mekkora sebességgel csapódik be?
 
 2. Egy szabadon eső test $20.0 \frac {m} {s}$ sebességgel érkezik a talajra. Mennyi ideig zuhant, és milyen magasságból dobták le?
 
