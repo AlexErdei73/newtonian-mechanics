@@ -21,16 +21,20 @@ Az $\overrightarrow{a}$ vektor előállítható két vektor összegként, melyek
 
 ## A megtett út és az elmozdulás vektor
 
-Vizsgáljunk tetszőleges mozgást, amelynek során egy pontszerűnek tekinthető test elmozdul a kezdőpontból a végpontba. A kezdőpontból a végpontba mutató vektort elmozdulásnak nevezzük, ez vektor mennyiség. A kezdőpontot a végponttal összekötő pályaszakasz hosszát nevezzük megtett útnak. Mikor egyezik meg az elmozdulás vektor hossza a megtett úttal? Ez egyenesvonalú mozgásoknál fordulhat elő, amikor a mozgó test nem vált mozgásirányt miközben a kezdo pontból a végpontba jut. Ez pontosan az az eset, amivel eddig foglalkoztunk. 
+Vizsgáljunk tetszőleges mozgást, amelynek során egy pontszerűnek tekinthető test elmozdul a kezdőpontból a végpontba. A kezdőpontból a végpontba mutató vektort elmozdulásnak nevezzük, ez vektor mennyiség. A kezdőpontot a végponttal összekötő pályaszakasz hosszát nevezzük megtett útnak. Mikor egyezik meg az elmozdulás vektor hossza a megtett úttal? Ez egyenesvonalú mozgásoknál fordulhat elő, amikor a mozgó test nem vált mozgásirányt miközben a kezdő pontból a végpontba jut. Ez pontosan az az eset, amivel eddig foglalkoztunk. 
 
-A továbbiakban lesznek olyan esetek, amikor a mozgás nem egyenes vonalú, illetve egyenesvonalú, de a mozgás iránya megváltozik a mozgás során. Ilyenkor is igaz, hogy a megtett út a sebesség-idő grafikon görbéje alatti terület. Itt a sebesség nagyságát ábrázoljuk a grafikonon, ami mindig pozitív. Ábrázolhatjuk azonban a sebesség vektor valamely koordinátáját is az idő függvényében. Ilyenkor a sebesség koordináta lehet negatív is, ha a sebesség megfelelő komponense a megfelelő koordináta tengellyel ellentétes irányú. Ha a sebesség koordináta negatív, akkor ábrázolva ezt az idő függvényében a területet is negatívnak kell venni, a sebesség koordináta-idő függvény görbéje alatt. A grafikon alatti teljes terület, melyet előjelesen kell kiszámítsunk, nem a megtett utat fogja jelenteni, hanem az elmozdulás megfelelő koordinátáját. Látjuk majd, hogy az összefüggéseink érvényben maradnak, csak az út helyébe elmozdulás koordináták kerülnek. A többi vektor helyébe is a megfelelő koordináták lépnek, a vektor nagysága helyett. Ily módon tetszőleges egyenletesen változó mozgás kiszámíthatóvá válik, például a hajítások különböző esetei.
+A továbbiakban lesznek olyan esetek, amikor a mozgás nem egyenes vonalú, illetve egyenesvonalú, de a mozgás iránya megváltozik a mozgás során. Ilyenkor is igaz, hogy a megtett út a sebesség-idő grafikon görbéje alatti terület. Itt a sebesség nagyságát ábrázoljuk a grafikonon, ami sosem negatív. 
+
+Ábrázolhatjuk azonban a sebesség vektor valamely koordinátáját is az idő függvényében. Ilyenkor a sebesség koordináta lehet negatív is, ha a sebesség megfelelő komponense a megfelelő koordináta tengellyel ellentétes irányú. Ha a sebesség koordináta negatív, akkor ábrázolva ezt az idő függvényében a területet is negatívnak kell venni, a sebesség koordináta-idő függvény görbéje alatt. A grafikon alatti teljes terület, melyet előjelesen kell kiszámítanunk, nem a megtett utat fogja jelenteni, hanem az elmozdulás megfelelő koordinátáját. 
+
+Látjuk majd, hogy az összefüggéseink érvényben maradnak, csak az út helyébe elmozdulás koordináták kerülnek. A többi vektor helyébe is a megfelelő koordináták lépnek, a vektor nagysága helyett. Ily módon tetszőleges egyenletesen változó mozgás kiszámíthatóvá válik, például a hajítások különböző esetei.
 
 ## Függőleges hajítás
 
 Dobjunk fel egy labdát egy bizonyos $v_0$ kezdősebességgel. A labda induljon a koordináta rendszer kezdőpontjából. Az x-tengely vízszintes és balról jobbra mutat. Az y-tengely felfelé mutat függőlegesen.
 A labda függőlegesen emelkedik, majd egy pillanatra sebessége 0 lesz, de azonnal megindul lefelé és gyorsulva esik vissza, függőleges egyenes pálya mentén. A labda az y-tengelyen mozog, tehát x-koordinátája végig 0 a mozgás során. Írjuk fel az y koordináta változását, úgy hogy az út helyébe az elmozdulás y-koordinátáját tesszük és a gyorsulás és a sebesség helyett is az y-koordinátaik szerepelnek. Így a helyes összefüggéshez jutunk.
 
-A gyorsulás állandó és függőlegesen lefelé mutat, nagysága g, ahogy eddig is láttuk a szabad esés esetében.
+A gyorsulás állandó és függőlegesen lefelé mutat, nagysága g, ahogy eddig is láttuk a szabadesés esetében. A mozgás most is szabadon, elhanyagolható légellenállással megy végbe.
 
 $$
 \overrightarrow{a} = (a_x, a_y) = (0, -g)
@@ -62,9 +66,23 @@ $$
 y = v_0 \times t - \frac {g} {2} \times t^2
 $$
 
+### Szimuláció
+
+[Függőleges hajítás](https://alexerdei73.github.io/physics-engine/project/#92e788c7-ec41-4a65-9505-a3fc8c1ad904)
+
+Nézzük meg a szimulációt, majd helyezzük a testet a koordináta rendszer kezdőpontjába és ábrázoljuk a **path length** és az y koordinátát az idő függvényében!
+
+>**Tipp:** Amennyiben ki vagyunk jelentkezve, vagy nincs fiókunk, a változtatások mentésekor csak a mi számítógépünkön kerülnek rögzítésre. Amint bejelentkezünk a fiókunkba, ezek az ideiglenes változtatások elvesznek és visszakapjuk az adatokat, amiket a project készítője megadott.
+
+A grafikon, amit kapnunk kell:
+
+![Függőleges hajítás sebesség-idő grafikon](Kepek/FUGGOLEGESHAJITASSEBIDOGRAF.png)
+
+A piros görbe a megtett utat mutatja, a zöld görbe az y koordináta. Tárgyalásunk során fordított y tengelyt használunk, mint a szimuláció, tehát a zöld görbét tükröznünk kell gondolatban a vízszintes tengelyre. Ha ezt megtesszük, akkor az emelkedés alatt a zöld és piros görbék tökéletesen fedik egymást, majd szétválnak, amint a mozgás iránya az emelkedés után megfordul, pont ahogy elmagyaráztuk. 
+
 ### Példák
 
-1. Egy labdát feldobunk $20.0 \frac {m} {s}$ sebességgel. A légellenállás elhanyagolható, a nehézségi gyorsulás $9.81 \frac {m} {s^2}$. Milyen magasra emelkedik a labda? Mennyi idő alatt ér vissza a kezembe?
+1. Egy labdát feldobunk $20.0 \frac {m} {s}$ sebességgel. A légellenállás elhanyagolható, a nehézségi gyorsulás $9.81 \frac {m} {s^2}$. Milyen magasra emelkedik a labda? Mennyi idő alatt ér vissza a kezünkbe?
 
 $$
 -g = \frac {0 - v_0} {t}
@@ -82,7 +100,7 @@ $$
 x = \frac {-20.0} {-9.81} = 2.039s
 $$
 
-Tehát az emelkedési idő $2.04s$. A visszaérkezés ideje gyanítjuk, hogy ennek a duplája, hisz az esés és az emelkedés ugyanannyi ideig kellene tartson. Számítsuk ezt azért ki!
+Tehát az emelkedési idő $2.04s$. A visszaérkezés ideje gyanítjuk, hogy ennek a duplája, hiszen az esés és az emelkedés ugyanannyi ideig kellene tartson. Számítsuk ezt azért ki!
 
 $$
 y = v_0 \times t - \frac {g} {2} \times t^2
@@ -132,8 +150,8 @@ $$
 
 A megoldóképletet alkalmazzuk:
 
-$$
-x_{12} = \frac {-b \pm \sqrt {b^2 - 4ac}} {2a} = \frac {10.0 \pm \sqrt {100 - 4 \times 4.905 \times (-10.0) }} {9.81} = 2.774 , -0.7350
+$$ 
+x_{12} = \frac {-b \pm \sqrt {b^2 - 4ac}} {2a} = \frac {10.0 \pm \sqrt {100 - 4 \times 4.905 \times (-10.0) }} {9.81} = 2.774 , -0.7350$$
 $$
 
 Nyilván az idő pozitív, tehát $t=2.77s$-kor ér a labda a gödör aljára. Számítsuk ki a sebességet!
