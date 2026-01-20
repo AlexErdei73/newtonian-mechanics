@@ -24,3 +24,5 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	8. [Feladatmegoldás](Mechanika/FELADATOKGYORSULOMOZG.md)
 	9. [Szabadesés](Mechanika/SZABADESES.md)
 	10. [Hajítasok](Mechanika/HAJITASOK.md)
+	11. [Vízszintes hajítas](Mechanika/VIZSZINTESHAJITAS.md)
+
