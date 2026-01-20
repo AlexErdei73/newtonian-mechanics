@@ -140,3 +140,15 @@ y = \frac {g} {2} \times t^2 = \frac {9.81} {2} \times 0.250^2 = 0.307m
 $$
 
 Tehát kb. $30.7cm$-el a tárgy fölé kell célozni, ha el akarjuk találni.
+
+### Feladatok
+
+1. Egy labdát vízszintesen elhajítanak $15.0 \frac{m}{s}$ sebességgel egy $10.0m$ magas toronyról. Mennyi idő alatt éri el a földet? Milyen távolságra jut vízszintesen?
+
+2. Egy lövedék vízszintesen repül ki $500 \frac{m}{s}$ sebességgel. Mennyi idő alatt esik le $1.0m$-t függőlegesen?
+
+3. Egy követ vízszintesen elhajítanak $20.0 \frac{m}{s}$ sebességgel egy $15.0m$ mély szakadék tetejéről. Mennyi idő alatt csapódik be a szakadék aljába? Milyen sebességgel csapódik be?
+
+4. Egy labdát vízszintesen elhajítanak $12.0 \frac{m}{s}$ sebességgel egy $8.0m$ magas épületről. Milyen messzire jut vízszintesen a becsapódáskor?
+
+5. Egy tárgyat vízszintesen elhajítanak $25.0 \frac{m}{s}$ sebességgel. Mennyi idő alatt éri el a $5.0m$ függőleges elmozdulást?
