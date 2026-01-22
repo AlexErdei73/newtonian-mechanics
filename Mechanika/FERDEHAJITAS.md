@@ -102,3 +102,102 @@ $$
 $$
 y = v_0 sin (\alpha) t - \frac {g} {2} \times t^2
 $$
+
+### Példák
+1. Egy testet vízszintes talajon ferdeán elhajítunk a talajszint magasságáról $5 \frac {m} {s}$ nagyságú és a vízszintessel $30°$ szöget bezáró irányban. Mennyi idő alatt ér talajt a test? Milyen messze kerül a kiindulási helyétől ezalatt az idő alatt? A légellenállás elhanyagolható és a nehézségi gyorsulás $9.81 \frac {m} {s^2}$.
+
+$$
+\overrightarrow{v_0} = (v_0cos \alpha, v_0sin \alpha) = (4.330 \frac {m} {s}, 2.500 \frac {m} {s})
+$$
+
+$$
+y = v_0 sin(\alpha)t - \frac {g} {2} \times t^2
+$$
+
+$$
+0 = 2.500t - 4.905t^2
+$$
+
+A $t=0$ megoldás a kilövés, minket a másik megoldás érdekel. 
+
+$$
+t = 0.5097 \text{ s}
+$$
+
+Tehát a keresett idő $0.510 \text{ s}$.
+
+$$
+x = v_0 cos(\alpha)t = 4.330 \times 0.5097 = 2.207 \text{ m}
+$$
+
+Tehát a keresett távolság $2.21 \text{ m}$.
+
+2. Egy testet a talaj szintjéről kilövünk $v_0 = 20 \frac {m} {s}$ nagyságú kezdősebességgel vízszintes talajon, a vízszintessel $45°$-ot bezáró szögben. A test egy $10.0 \text{ m}$ mély gödör alján csapódik be. Mennyi idő telik el a kilövés és a becsapódás közt? Legfeljebb milyen messze lehet tőlünk a gödör közelebbi szele? Legalább milyen széles a gödör? A légellenállás elhanyagolható és a nehézségi gyorsulás $9.81 \frac {m} {s^2}$.
+
+$$
+\overrightarrow{v_0} = (v_0 cos \alpha, v_0 sin \alpha) = (14.14 \frac {m} {s}, 14.14 \frac {m} {s})
+$$
+
+$$
+y = v_0 sin(\alpha)t - \frac {g} {2} \times t^2
+$$
+
+$$
+-10 = 14.14t - 4.905t^2
+$$
+
+$$
+4.905t^2 - 14.14t - 10.0 = 0
+$$
+
+$$
+t_{12} = \frac {14.14 \pm \sqrt {14.14^2 - 4 \times 4.905 \times (-10.0)}} {2 \times 4.905} = \frac {14.14 \pm \sqrt {200 + 196.2}} {9.81} = 3.470 \text{ s}, -0.5876 \text{ s}
+$$
+
+A keresett idő $3.47 \text{ s}$. 
+
+$$
+x = v_0 cos (\alpha) t = 14.14 \times 3.470 = 49.07 \text{ m}
+$$
+
+A gödör szele nem lehet messzebb, mint:
+
+$$
+y = v_0 sin(\alpha) t - \frac {g} {2} \times t^2
+$$
+
+$$
+0 = 14.14t - 4.905t^2
+$$
+
+A $t=0$ megoldás nem érdekes, így:
+
+$$
+t = 14.14 / 4.905 = 2.883 \text{ s}
+$$
+
+A test $2.88 \text{ s}$-kor ér vissza a vízszintes talajszintre, ekkor a távolsága:
+
+$$
+x = v_0 cos(\alpha) t = 14.14 \times 2.883 = 40.77 \text{ m}
+$$
+
+Így a gödör közelebbi szele legfeljebb $40.8 \text{ m}$-re lehet a kilövés helyétől. 
+
+$$
+49.07 - 40.77 = 8.30 \text{ m}
+$$
+
+A gödör legalább $8.30 \text{ m}$ széles.
+
+## Feladatok
+
+1. Egy testet 35° szögben kilövünk a talajtól $12.0 \frac {m} {s}$ kezdősebességgel. Maximálisan mekkora magasságra emelkedik a test? Milyen messze csapódik be a talajba? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
+
+2. Egy kőgolyót egy domb tetejéről 40° szögben lövünk ki $18.0 \frac {m} {s}$ kezdősebességgel. A lövés helyétől vízszintesen 25.0 m távolságban és 15.0 m mélységben egy tó található. Beesik-e a kőgolyó a tóba? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
+
+3. Egy labdát 60° szögben kilövünk a talajtól $18.0 \frac {m} {s}$ kezdősebességgel. Határozd meg, hogy milyen hosszú ideig volt a labda a levegőben! Mekkora volt a labda maximális magassága? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
+
+4. Egy katapult 25° szögben lő ki egy kőgolyót $30.0 \frac {m} {s}$ sebességgel. Az ellenség vára $40.0 \text{ m}$ távolságban található. Eléri-e a kőgolyó a várat? Ha igen, milyen magasságban csapódik be a falba? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
+
+5. Egy teniszezőnek egy mozgó célpontot kell eltalálnia. A célpont 50.0 m távolságban található és 3.50 m magasságban. Egy teniszlabdát 35° szögben kilövünk $22.0 \frac {m} {s}$ sebességgel a talajtól. Eltaláljuk-e a célpontot? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
