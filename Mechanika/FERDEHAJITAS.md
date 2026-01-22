@@ -69,7 +69,7 @@ $$
 
 [Ferde hajítás](https://alexerdei73.github.io/physics-engine/project/#b2325a19-cfb5-49fa-91e5-0d11b2955e2b)
 
-Miután megtekintettük a szimulációt, készítsük el a $v_x$ és $v_y$ mennyiségek időfüggésé t mutató grafikonokat!
+Miután megtekintettük a szimulációt, készítsük el a $v_x$ és $v_y$ mennyiségek időfüggését mutató grafikonokat!
 
 ### A ferde hajítás képletei
 
@@ -93,7 +93,7 @@ $$
 s = v_0 \times t + \frac {a} {2} \times t^2
 $$
 
-Ebbe a képletbe s helyére kell írjuk a megfelelő elmozdulás komponensét, míg a v_0 és a helyébe a kezdősebesség és a gyorsulás megfelelő komponensét. Így a következő képleteket kapjuk:
+Ebbe a képletbe s helyére kell írjuk a megfelelő elmozdulás komponensét, míg a $v_0$ és $a$ helyébe a kezdősebesség és a gyorsulás megfelelő komponensét. Így a következő képleteket kapjuk:
 
 $$
 x = v_0 cos (\alpha) t
@@ -200,4 +200,4 @@ A gödör legalább $8.30 \text{ m}$ széles.
 
 4. Egy katapult 25° szögben lő ki egy kőgolyót $30.0 \frac {m} {s}$ sebességgel. Az ellenség vára $40.0 \text{ m}$ távolságban található. Eléri-e a kőgolyó a várat? Ha igen, milyen magasságban csapódik be a falba? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
 
-5. Egy teniszezőnek egy mozgó célpontot kell eltalálnia. A célpont 50.0 m távolságban található és 3.50 m magasságban. Egy teniszlabdát 35° szögben kilövünk $22.0 \frac {m} {s}$ sebességgel a talajtól. Eltaláljuk-e a célpontot? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
+5. Egy teniszezőnek egy célpontot kell eltalálnia. A célpont 50.0 m távolságban található és 3.50 m magasságban. Egy teniszlabdát 35° szögben kilövünk $22.0 \frac {m} {s}$ sebességgel a talajtól. Eltaláljuk-e a célpontot? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
