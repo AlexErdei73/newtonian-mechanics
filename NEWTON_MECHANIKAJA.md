@@ -27,4 +27,7 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	11. [Vízszintes hajítás*](Mechanika/VIZSZINTESHAJITAS.md)
 	12. [Ferde hajítás*](Mechanika/FERDEHAJITAS.md)
 	13. [Newton törvényei](Mechanika/NEWTONTORVENYEI.md)
-
+	6. [Gyorsulás](Mechanika/GYORSULAS.md)
+	14. [Az erő mérése, súly, súlytalanság](Mechanika/EROMERESE.md)
+	13. [Newton törvényei](Mechanika/NEWTONTORVENYEI.md)
+	15. [Feladatok az erő témában](Mechanika/FELADATOKERO.md)
