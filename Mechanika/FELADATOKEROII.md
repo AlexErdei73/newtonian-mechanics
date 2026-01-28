@@ -53,7 +53,7 @@ $$
 
 Tehát a csőben a golyót $51.4N$ erő gyorsítja fel $2.33ms$ idő alatt.
 
-2. A golyó egy fahasábba behatol $600 \frac {m} {s}$ sebességgel és $25.0cm$ távolságon fékeződik le. A golyó tömege $20g$. Mekkora a lassulás, a fékeződés ideje és a fékező erő a fahasábban?
+2. A golyó egy fahasábba behatol $600 \frac {m} {s}$ sebességgel és $30.0cm$ távolságon fékeződik le. A golyó tömege $20g$. Mekkora a lassulás, a fékeződés ideje és a fékező erő a fahasábban?
 
 $$
 a = \frac {v - v_0} {t}
