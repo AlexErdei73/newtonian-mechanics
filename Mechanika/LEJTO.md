@@ -52,7 +52,10 @@ Itt a szimuláció során egy lejtővel párhuzamos rugó egyensúlyban tartja a
 ![A test adatai a lejtőn](Kepek/testadataialejton.png)
 ![A rugó adatai a lejtőn](Kepek/rugoeroalejton.png)
 ![A lejtő által kifejtett erő](Kepek/kenyszereroalejton.png)
+
+A rugó adatainak változása az időben, a kovetkező:
 ![A rugó adatainak változása az időben](Kepek/rugoadataiazidofuggvenyeben.png)
+A piros görbe a rugó hosszát mutatja, míg a zöld a rugó erő változását.
 
 ### A formula levezetése
 Jelöljük a nehézségi erőt $G$-vel, a lejtő által kifejtett kényszererőt $K$-val és a rugó által kifejtett erőt, mely megakadályozza, hogy a test lecsússzon, $F$-fel. Legyen továbbá adott egy koordináta-rendszer, melynek x-tengelye a lejtővel párhuzamosan lefelé, az y-tengelye pedig a lejtőre merőlegesen, a $K$ erő irányába mutat! Ekkor:
@@ -136,8 +139,10 @@ Tehát $F$ és $K$ vektori eredője egyenlő nagyságú $G$-vel, de felfelé mut
 
 ### Feladatok
 
-1. Egy 5,00 kg tömegű kiskocsi pihen egy 20,0∘-os hajlásszögű, súrlódásmentes lejtőn. Mekkora a lejtővel párhuzamos tartóerő (F), amely megakadályozza, hogy a kocsi leguruljon?
-2. Egy 12,0 N súlyú testet helyezünk egy 40,0∘-os hajlásszögű lejtőre. Mekkora erővel (K) nyomja a test a lejtőt merőlegesen?
-3. Egy 35,0∘-os lejtővel párhuzamosan egy rugós erőmérővel tartunk egyensúlyban egy testet. Az erőmérő 15,0 N erőt mutat. Mekkora a test tömege (m)?
-4. Ugyanazt a 8,00 kg tömegű testet először egy 15,0∘-os, majd egy 45,0∘-os lejtőre tesszük. Hányszorosára nő a lejtővel párhuzamos tartóerő (F) a meredekebb lejtőn az első esethez képest?
-5. Egy 30,0∘-os lejtőn egy 2,50 kg tömegű testet egy rugó tart meg. A rugó 12,3 N erőt fejt ki a testre a lejtővel párhuzamosan felfelé. Egyensúlyban van-e a test, vagy elindul valamelyik irányba? (Válaszodat a lejtő irányú nehézségi erőkomponens kiszámításával indokold!)
+1. Egy $5,00kg$ tömegű kiskocsi pihen egy $20,0 \degree$-os hajlásszögű, súrlódásmentes lejtőn. Mekkora a lejtővel párhuzamos tartóerő (F), amely megakadályozza, hogy a kocsi leguruljon?
+2. Egy $12,0N$ súlyú testet helyezünk egy $40,0 \degree$-os hajlásszögű lejtőre. Mekkora erővel (K) nyomja a test a lejtőt merőlegesen?
+3. Egy $35,0\degree$-os lejtővel párhuzamosan egy rugós erőmérővel tartunk egyensúlyban egy testet. Az erőmérő $15,0N$ erőt mutat. Mekkora a test tömege?
+4. Ugyanazt a $8,00kg$ tömegű testet először egy $15,0\degree$-os, majd egy $45,0\degree$-os lejtőre tesszük. Hányszorosára nő a lejtővel párhuzamos tartóerő a meredekebb lejtőn az első esethez képest?
+5. Egy $30,0\degree$-os lejtőn egy $2,50kg$ tömegű testet egy rugó tart meg. A rugó $12,3N$ erőt fejt ki a testre a lejtővel párhuzamosan felfelé. Egyensúlyban van-e a test, vagy elindul valamelyik irányba? (Válaszodat a lejtő irányú nehézségi erőkomponens kiszámításával indokold!)
+
+A súrlódás mindenütt elhanyagolható s a nehézségi gyorsulás $9,81 \frac {m} {s^2}$.
