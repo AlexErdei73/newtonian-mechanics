@@ -31,3 +31,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	13. [Newton törvényei](Mechanika/NEWTONTORVENYEI.md)
 	15. [Feladatok az erő témában](Mechanika/FELADATOKERO.md)
 	16. [Feladatok az erő témában II](Mechanika/FELADATOKEROII.md)
+	17. [A lejtő](Mechanika/LEJTO.md)
