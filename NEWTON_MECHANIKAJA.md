@@ -31,4 +31,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	15. [Feladatok az erő témában](Mechanika/FELADATOKERO.md)
 	16. [Feladatok az erő témában II](Mechanika/FELADATOKEROII.md)
 	17. [A lejtő *](Mechanika/LEJTO.md)
-	18. [Feladatok az egyensulyra](Mechanika/FELADATOKEGYENSULY.md)
+	18. [Feladatok az egyensúlyra *](Mechanika/FELADATOKEGYENSULY.md)
