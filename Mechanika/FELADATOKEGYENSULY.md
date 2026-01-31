@@ -170,10 +170,14 @@ Tehát a bal oldali kötél $1,23N$ erővel feszül, míg a jobb oldalról a ví
 
 1. Egy vízszintes plafonon két kampó távolsága $4,00m$. Egy $0,50kg$ tömegű testet két kötéllel függesztünk fel úgy, hogy az egyik kötél hossza $3,00m$, a másiké $4,00m$. Számítsd ki a kötelekben ébredő erőket, ha a test nyugalomban van!
 
+[Statika első feladat](https://alexerdei73.github.io/physics-engine/project/#b7f8397b-e4ea-4f20-9a85-cddec0155428)
+
 2. Egy $30^\circ$-os hajlásszögű, súrlódásmentes lejtőn egy $2,00kg$ tömegű testet a lejtő tetejéhez rögzített, a lejtő síkjával párhuzamos kötéllel tartunk egyensúlyban. Mekkora a kötélben ébredő erő és mekkora a lejtő által kifejtett nyomóerő?
 
 3. Egy utcai lámpát, amelynek tömege $15kg$, két oszlop közé feszített acélhuzal tart. A huzal két fele $170^\circ$-os szöget zár be egymással (vagyis mindkét oldalon csak $5^\circ$-ot tér el a vízszintestől). Mekkora erő feszíti a huzalt?
 
-6. Egy $5,00kg$ tömegű testet a mennyezethez rögzített két kötél tart, melyek a függőlegessel $30^\circ$-os és $45^\circ$-os szöget zárnak be. Határozd meg a két kötélben ébredő húzóerőt!
+4. Egy $5,00kg$ tömegű testet a mennyezethez rögzített két kötél tart, melyek a függőlegessel $30^\circ$-os és $45^\circ$-os szöget zárnak be. Határozd meg a két kötélben ébredő húzóerőt!
 
-7. Egy $10kg$ tömegű közlekedési lámpa egy $6,00m$ hosszú vízszintes rúd végén lóg. A rudat a falnál egy csukló tartja, a rúd végét pedig egy, a falhoz $45^\circ$-os szögben csatlakozó merevítő drót rögzíti a rúd felett. Mekkora erő ébred a drótban, ha a rúd súlyát elhanyagoljuk?
+5. Egy $10kg$ tömegű közlekedési lámpa egy $6,00m$ hosszú vízszintes rúd végén lóg. A rudat a falnál egy csukló tartja, a rúd végét pedig egy, a falhoz $45^\circ$-os szögben csatlakozó merevítő drót rögzíti a rúd felett. Mekkora erő ébred a drótban, ha a rúd súlyát elhanyagoljuk?
+
+[Statika ötödik feladat](https://alexerdei73.github.io/physics-engine/project/#83d3b11c-0a5a-4eca-9e5e-74b36177f4dc)
