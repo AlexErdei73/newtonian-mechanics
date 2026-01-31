@@ -82,3 +82,30 @@ $$
 $$
 s = v_0 \times t + \frac {a} {2} \times t^2 = 5 \times 1,019 + \frac {-4,906} {2} \times 1,019^2 = 2,548m
 $$
+
+## A tapadasi ero
+
+A surlodas masik fajtaja a tapadasi surlodas. Itt is ervenyes, hogy a feluletek a felulettel parhuzamos iranyu erot fejtenek ki egymasra, de nem mozognak egymashoz kepest, mert a megcsuszast a tapadasi ero megakadalyozza. Ennek az eronek az iranyat ugy allapitjuk meg, hogy gondolatban elhagyjuk a tapadasi erot es kiszamitjuk, milyen iranyu lenne a gyorsulas. A tapadasi ero ezzel ellentetes iranyu ero. 
+
+A tapadasi ero nem lehet nagyobb egy maximalis erteknel, kulonben a feluletek megcsusznak es a csuszasi surlodas fog fellepni. Amennyiben kevesebb ero is eleg a megcsuszas megakadalyozasahoz, mint a tapadasi ero maximuma, akkor a tapadasi ero akkora, hogy a megcsuszast megakadalyozza.
+
+A tapadasi ero maximumara hasonlo osszefugges vonatkozik, mint a csuszasi surlodasi erore:
+
+$$
+F_{t,max} = \mu_t \times K
+$$
+
+Vagyis:
+
+$$
+F_t \leqslant \mu_t \times K
+$$
+
+A kiserletekbol lattuk, hogy adott feluletek es K ero eseten a tapadasi ero nagyobb, mint a csuszasi surlodasi ero, tehat:
+
+$$
+\mu \leqslant \mu_t
+$$
+
+### Pelda
+Egy test tomege $0,500kg$ es a testet vizszintes talajra helyezzuk es toljuk $3,00N$ erovel. A tapadasi egyutthato $0,7$, a csuszasi surlodasi egyutthato pedig $0,5$. Mekkora a surlodasi ero? Mekkora a test gyorsulasa? Szamitsuk ki ugyanezt akkor is, ha a toloero $4,00N$!
