@@ -32,3 +32,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	16. [Feladatok az erő témában II](Mechanika/FELADATOKEROII.md)
 	17. [A lejtő *](Mechanika/LEJTO.md)
 	18. [Feladatok az egyensúlyra *](Mechanika/FELADATOKEGYENSULY.md)
+	19. [A súrlódás](Mechanika/SURLODAS.md)
