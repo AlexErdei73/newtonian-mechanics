@@ -36,4 +36,6 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	20. [Feladatok a súrlódásra](Mechanika/FELADATOKSURLODAS.md)
 	21. [Lejtő súrlódással*](Mechanika/LEJTOSURLODASSAL.md)
 	22. [A munka](Mechanika/MUNKA.md)
+	23. [A mozgasi energia](Mechanika/MOZGASIENERGIA.md)
+	24. [A helyzeti energia](Mechanika/HELYZETIENERGIA.md)
 	
