@@ -38,4 +38,6 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	22. [A munka](Mechanika/MUNKA.md)
 	23. [A mozgasi energia](Mechanika/MOZGASIENERGIA.md)
 	24. [A helyzeti energia](Mechanika/HELYZETIENERGIA.md)
+	25. [A mechanikai energia](Mechanika/MECHANIKAIENERGIA.md)
+	
 	
