@@ -42,5 +42,6 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	26. [Az impulzus](Mechanika/IMPULZUS.md)
 	27. [Az impulzus megmaradás tétele](Mechanika/IMPULZUSMEGMARADAS.md)
 	28. [A tökéletesen rugalmas ütközés](Mechanika/RUGALMASUTKOZES.md)
+	29. [Tökéletesen rugalmas, ferde ütközések](Mechanika/FERDERUGALMASUTKOZESEK.md)
 	
 	
