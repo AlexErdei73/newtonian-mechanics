@@ -1,0 +1,96 @@
+<svg width="750" height="500" xmlns="http://www.w3.org/2000/svg" style="background-color: white; border: 1px solid #ddd; border-radius: 5px;">
+  <defs>
+    <!-- Arrowheads -->
+    <marker id="arrow-blue" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1565c0" />
+    </marker>
+    <marker id="arrow-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d32f2f" />
+    </marker>
+    <marker id="arrow-green" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2e7d32" />
+    </marker>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#555" />
+    </marker>
+    <marker id="arrow-black" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="375" y="30" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">A rendszer teljes erőábrája</text>
+
+  <!-- Floor -->
+  <line x1="50" y1="300" x2="700" y2="300" stroke="#555" stroke-width="3" />
+  
+  <!-- === OBJECTS === -->
+  
+  <!-- Wood Block (m1) -->
+  <!-- Center X approx 250 -->
+  <rect x="200" y="220" width="100" height="80" fill="#d7ccc8" stroke="#5d4037" stroke-width="2" />
+  <text x="250" y="210" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#5d4037">Fa (m1)</text>
+
+  <!-- Brick (m2) -->
+  <!-- Center X approx 375 -->
+  <rect x="300" y="200" width="150" height="100" fill="#ffcdd2" stroke="#c62828" stroke-width="2" />
+  <text x="375" y="190" font-family="Arial" font-size="14" font-weight="bold" text-anchor="middle" fill="#c62828">Tégla (m2)</text>
+
+
+  <!-- === VERTICAL FORCES (Thin lines) === -->
+  
+  <!-- Forces on Wood (m1) -->
+  <!-- K1 (Normal force up) -->
+  <line x1="250" y1="220" x2="250" y2="150" stroke="#555" stroke-width="1.5" marker-end="url(#arrow-gray)" />
+  <text x="260" y="160" font-family="Arial" font-size="12" fill="#555">K1</text>
+  
+  <!-- m1g (Gravity down) -->
+  <line x1="250" y1="260" x2="250" y2="330" stroke="#555" stroke-width="1.5" marker-end="url(#arrow-gray)" />
+  <text x="260" y="330" font-family="Arial" font-size="12" fill="#555">m1·g</text>
+
+  <!-- Forces on Brick (m2) -->
+  <!-- K2 (Normal force up - Larger because mass is larger) -->
+  <line x1="375" y1="200" x2="375" y2="100" stroke="#555" stroke-width="1.5" marker-end="url(#arrow-gray)" />
+  <text x="385" y="110" font-family="Arial" font-size="12" fill="#555">K2</text>
+  
+  <!-- m2g (Gravity down - Larger) -->
+  <line x1="375" y1="250" x2="375" y2="350" stroke="#555" stroke-width="1.5" marker-end="url(#arrow-gray)" />
+  <text x="385" y="350" font-family="Arial" font-size="12" fill="#555">m2·g</text>
+
+
+  <!-- === HORIZONTAL FORCES (Thick lines) === -->
+
+  <!-- F (External Push on Wood) -->
+  <line x1="80" y1="260" x2="195" y2="260" stroke="#1565c0" stroke-width="4" marker-end="url(#arrow-blue)" />
+  <text x="120" y="250" font-family="Arial" font-size="14" fill="#1565c0" font-weight="bold">F</text>
+
+  <!-- Internal Forces K (at contact surface x=300) -->
+  <!-- K (Action on Brick) -->
+  <line x1="300" y1="260" x2="360" y2="260" stroke="#2e7d32" stroke-width="3" marker-end="url(#arrow-green)" />
+  <text x="330" y="240" font-family="Arial" font-size="12" fill="#2e7d32" font-weight="bold">K</text>
+  
+  <!-- K (Reaction on Wood) - Slightly offset Y to show clearly -->
+  <line x1="300" y1="260" x2="240" y2="260" stroke="#2e7d32" stroke-width="3" marker-end="url(#arrow-green)" />
+  
+  <!-- Friction Forces -->
+  <!-- Fs1 (Wood) -->
+  <line x1="250" y1="300" x2="230" y2="300" stroke="#d32f2f" stroke-width="3" marker-end="url(#arrow-red)" />
+  <text x="240" y="320" font-family="Arial" font-size="12" fill="#d32f2f" text-anchor="middle">Fs1</text>
+
+  <!-- Fs2 (Brick - Larger friction) -->
+  <line x1="375" y1="300" x2="310" y2="300" stroke="#d32f2f" stroke-width="3" marker-end="url(#arrow-red)" />
+  <text x="340" y="320" font-family="Arial" font-size="12" fill="#d32f2f" text-anchor="middle">Fs2</text>
+
+  <!-- Acceleration -->
+  <line x1="500" y1="50" x2="600" y2="50" stroke="#000" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow-black)" />
+  <text x="550" y="40" font-family="Arial" font-size="14" fill="#000" text-anchor="middle">a (gyorsulás)</text>
+
+  <!-- Legend -->
+  <rect x="530" y="370" width="200" height="110" fill="white" stroke="#ccc" rx="5" />
+  <text x="540" y="390" font-family="Arial" font-size="12" font-weight="bold">Jelmagyarázat:</text>
+  <circle cx="545" cy="405" r="4" fill="#555" /> <text x="560" y="410" font-family="Arial" font-size="11">Függőleges erők (K1, K2, mg)</text>
+  <circle cx="545" cy="425" r="4" fill="#1565c0" /> <text x="560" y="430" font-family="Arial" font-size="11">F: Külső tolóerő</text>
+  <circle cx="545" cy="445" r="4" fill="#2e7d32" /> <text x="560" y="450" font-family="Arial" font-size="11">K: Belső erő (egymásra hatás)</text>
+  <circle cx="545" cy="465" r="4" fill="#d32f2f" /> <text x="560" y="470" font-family="Arial" font-size="11">Fs: Súrlódási erő</text>
+
+</svg>
