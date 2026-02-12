@@ -45,6 +45,7 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	29. [Tökéletesen rugalmas, ferde ütközések](Mechanika/FERDERUGALMASUTKOZESEK.md)
 	30. [A tökéletesen rugalmatlan ütközés](Mechanika/RUGALMATLANUTKOZES.md)
 	31. [Feladatok a tömegközéppontra](Mechanika/TOMEGKOZEPPONTFELADATOK.md)
+	32. [A tömegközéppont tétele](Mechanika/TKPTETEL.md)
 
 	
 	
