@@ -43,9 +43,10 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	27. [Az impulzus megmaradás tétele](Mechanika/IMPULZUSMEGMARADAS.md)
 	28. [A tökéletesen rugalmas ütközés](Mechanika/RUGALMASUTKOZES.md)
 	29. [Tökéletesen rugalmas, ferde ütközések](Mechanika/FERDERUGALMASUTKOZESEK.md)
-	30. [A tökéletesen rugalmatlan ütközés](Mechanika/RUGALMATLANUTKOZES.md)
-	31. [Feladatok a tömegközéppontra](Mechanika/TOMEGKOZEPPONTFELADATOK.md)
-	32. [A tömegközéppont tétele](Mechanika/TKPTETEL.md)
+	30. [Erdekes peldak rugalmas utkozesre](Mechanika/PELDAKRUGALMASUTKOZESRE.md)
+	31. [A tökéletesen rugalmatlan ütközés](Mechanika/RUGALMATLANUTKOZES.md)
+	32. [Feladatok a tömegközéppontra](Mechanika/TOMEGKOZEPPONTFELADATOK.md)
+	33. [A tömegközéppont tétele](Mechanika/TKPTETEL.md)
 
 	
 	
