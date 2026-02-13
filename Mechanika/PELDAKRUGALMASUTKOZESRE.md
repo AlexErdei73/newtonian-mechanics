@@ -199,3 +199,38 @@ $$
 
 
 Ha három golyó pattanna fel, akkor az energia harmad része elveszne, tehát ez sem lehetséges. Pontosan ugyanannyi golyó pattan fel, ahányat eredetileg belengettünk.
+
+Van még egy nagyon fontos dolog, amit ritkán említenek a játék működésének magyarázatakor. A golyók ugyanolyanok kell legyenek, főképp egyenlő tömegűek. Láttuk, hogy ez a feltétele, hogy centrális, tökéletesen rugalmas ütközéskor egy álló golyó teljes egészében átvehesse az energiát a mozgó golyótól. Szimulációval könnyen kipróbálható, hogy a játék mozgása elromlik, ha valamelyik golyó tömege nem egyezik a többivel. Ilyenkor a mozgás már nem az a szép, szabályos mozgás lesz, amit láttunk.
+
+## Feladatok
+
+1. Két egymásra helyezett labdát $h_0$ magasságból ejtünk le.  
+Az alsó labda tömege $M$, a felső labdáé $m$.  
+A talajjal és egymással való ütközések tökéletesen rugalmasak és centrálisak.
+
+- Mutasd meg, hogy a felső labda visszapattanási sebessége:
+
+$$
+v_{\text{felső}} = \frac{3M - m}{M + m} \, v_0
+$$
+
+ahol
+
+$$
+v_0 = \sqrt{2gh_0}.
+$$
+
+- Határozd meg, mekkora magasságra pattan vissza a felső labda!
+
+- Vizsgáld meg a határesetet, amikor $M \gg m$!  
+   Mit tapasztalsz?
+
+2. Egy Newton‑bölcsőben 5 azonos tömegű golyó van.  
+Kettőt az egyik oldalon $h_0$ magasságba emelünk és elengedünk.
+
+- Mutasd meg impulzus‑ és energiamegmaradással, hogy pontosan két golyó fog kilendülni a másik oldalon!
+
+- Mekkora sebességgel indulnak el?
+
+- Mi történne, ha a középső golyó tömege kétszer akkora lenne, mint a többié?  
+   Működne‑e ugyanígy a rendszer? Indokold válaszodat!
