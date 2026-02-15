@@ -47,7 +47,9 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	31. [A tökéletesen rugalmatlan ütközés](Mechanika/RUGALMATLANUTKOZES.md)
 	32. [Feladatok a tömegközéppontra](Mechanika/TOMEGKOZEPPONTFELADATOK.md)
 	33. [A tömegközéppont tétele](Mechanika/TKPTETEL.md)
-	34. [Atwood ejtőgépe](Mechanika/ATWOODGEP.md) 
+	34. [Atwood ejtőgépe](Mechanika/ATWOODGEP.md)
+	35. [Atwood-gép jellegű probélmák](Mechanika/FELADATOKATWOODGEP.md)
+
 
 	
 	
