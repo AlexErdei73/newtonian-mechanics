@@ -49,6 +49,7 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	33. [A tömegközéppont tétele](Mechanika/TKPTETEL.md)
 	34. [Atwood ejtőgépe](Mechanika/ATWOODGEP.md)
 	35. [Atwood-gép jellegű probélmák](Mechanika/FELADATOKATWOODGEP.md)
+	36. [Egyenletes körmozgás](Mechanika/EGYENLETESKORMOZGAS.md)
 
 
 	

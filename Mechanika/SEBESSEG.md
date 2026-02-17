@@ -16,7 +16,7 @@ A test egyenlő időközök alatt egyenlő utakat fut be. Úgy is mondhatjuk, ho
 [Egyenletes és egyenletesen változó mozgás](https://www.youtube.com/watch?v=PCLjIjAUBnw&t)
 
 ### Szimuláció
-[Egyenesvonalú, egyenletes mozgás](https://alexerdei73.github.io/physics-engine/project/#c1c7278a-8c14-4386-ad82-477930ee81d2)
+[Egyenesvonalú, egyenletes mozgás](https://alexerdei73.github.io/physics-engine/project/#2bb04c3c-0905-425f-bbba-301a5a455867)
 
 A szimuláció alapján megkapható a test által megtett út grafikonja az eltelt idő függvényében. Jelölje be a **Graphs** jelölőnégyzetet, majd a **Results**-et. Ezután válassza ki a **Path Length** mezőt (a megtett utat), majd a **Switch** gombbal térjen vissza és indítsa el a szimulációt. Eredményül a következő grafikon jelenik meg:
 
