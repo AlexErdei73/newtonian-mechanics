@@ -12,6 +12,8 @@ Vezessük le a centripetális gyorsulásra vonatkozó formulát! Legyen a test a
 
 A test elmozdulása összetethető a vízszintes, egyenes vonalú, egyenletes mozgás elmozdulásából és a középpont felé mutató, egyenletesen gyorsuló mozgás elmozdulásából. A függőleges sugár, az elmozdulások és a sugár, mely az elmozdulás végpontjába mutat, egy derékszögű háromszöget alkot.
 
+![A centripetális gyorsulás levezetése](Kepek/centripetalisgyorsulas.svg)
+
 
 $$
 (R + s)^2 = R^2 + (vt)^2
@@ -99,10 +101,10 @@ $$
 
 ***
 
-### 5 Gyakorló feladat az anyaghoz:
+### Feladatok:
 
-1.  **Versenyautó:** Egy forma-1-es autó $180 \frac{\text{km}}{\text{h}}$ ($50 \frac{\text{m}}{\text{s}}$) sebességgel halad egy $100 \text{ m}$ sugarú kanyarban. Mekkora a jármű centripetális gyorsulása?
-2.  **Műhold:** Egy műhold a Föld felszíne felett kering. A keringési sebessége $7800 \frac{\text{m}}{\text{s}}$, a pályasugara pedig (a Föld középpontjától számítva) kb. $6600 \text{ km}$. Számítsd ki a műholdra ható centripetális gyorsulást! Hasonlítsd össze ezt az értéket a földi nehézségi gyorsulással ($g \approx 9,81 \frac{\text{m}}{\text{s}^2}$)!
-3.  **Kalapácsvetés:** Egy atléta a $7,26 \text{ kg}$ tömegű kalapácsot $2 \text{ m}$ sugarú körpályán forgatja. A kalapács sebessége a kidobás pillanatában $28 \frac{\text{m}}{\text{s}}$. Mekkora erővel húzza a kalapács az atléta karját (mekkora a centripetális erő)?
-4.  **Űrállomás:** Egy űrállomás gyűrű alakú lakóegysége forog, hogy mesterséges gravitációt hozzon létre. A gyűrű sugara $20 \text{ m}$. Mekkora kerületi sebességgel kell forognia a gyűrűnek, hogy a peremén a centripetális gyorsulás megegyezzen a földi gravitációs gyorsulással ($g = 9,81 \frac{\text{m}}{\text{s}^2}$)?
-5.  **Körhinta:** Egy láncos körhintán a gyerekek a középponttól $5 \text{ m}$ távolságra keringenek. A hinta szögsebessége $\omega = 0,8 \frac{\text{rad}}{\text{s}}$. Használd az $a_{cp} = \omega^2 \cdot R$ összefüggést (vagy számold át kerületi sebességre), és határozd meg a gyerekek centripetális gyorsulását!
+1. Egy forma-1-es autó $180 \frac{\text{km}}{\text{h}}$ ($50 \frac{\text{m}}{\text{s}}$) sebességgel halad egy $100 \text{ m}$ sugarú kanyarban. Mekkora a jármű centripetális gyorsulása?
+2. Egy műhold a Föld felszíne felett kering. A keringési sebessége $7800 \frac{\text{m}}{\text{s}}$, a pályasugara pedig (a Föld középpontjától számítva) kb. $6600 \text{ km}$. Számítsd ki a műholdra ható centripetális gyorsulást! Hasonlítsd össze ezt az értéket a földi nehézségi gyorsulással ($g \approx 9,81 \frac{\text{m}}{\text{s}^2}$)!
+3. Egy atléta a $7,26 \text{ kg}$ tömegű kalapácsot $2 \text{ m}$ sugarú körpályán forgatja. A kalapács sebessége a kidobás pillanatában $28 \frac{\text{m}}{\text{s}}$. Mekkora erővel húzza a kalapács az atléta karját (mekkora a centripetális erő)?
+4. Egy űrállomás gyűrű alakú lakóegysége forog, hogy mesterséges gravitációt hozzon létre. A gyűrű sugara $20 \text{ m}$. Mekkora kerületi sebességgel kell forognia a gyűrűnek, hogy a peremén a centripetális gyorsulás megegyezzen a földi gravitációs gyorsulással ($g = 9,81 \frac{\text{m}}{\text{s}^2}$)?
+5. Egy láncos körhintán a gyerekek a középponttól $5 \text{ m}$ távolságra keringenek. A hinta szögsebessége $\omega = 0,8 \frac{\text{rad}}{\text{s}}$. Használd az $a_{cp} = \omega^2 \cdot R$ összefüggést (vagy számold át kerületi sebességre), és határozd meg a gyerekek centripetális gyorsulását!
