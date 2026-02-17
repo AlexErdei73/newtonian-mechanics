@@ -50,7 +50,7 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	34. [Atwood ejtőgépe](Mechanika/ATWOODGEP.md)
 	35. [Atwood-gép jellegű probélmák](Mechanika/FELADATOKATWOODGEP.md)
 	36. [Egyenletes körmozgás](Mechanika/EGYENLETESKORMOZGAS.md)
-
+	37. [Centripetalis gyorsulas](Mechanika/CENTRIPETALISGYORSULAS.md)
 
 	
 	
