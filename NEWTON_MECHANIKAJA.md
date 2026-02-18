@@ -51,6 +51,7 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	35. [Atwood-gép jellegű probélmák](Mechanika/FELADATOKATWOODGEP.md)
 	36. [Egyenletes körmozgás](Mechanika/EGYENLETESKORMOZGAS.md)
 	37. [Centripetalis gyorsulas](Mechanika/CENTRIPETALISGYORSULAS.md)
+	38. [Körmozgas és az energia megmaradása](Mechanika/KORMOZGASESENERGIA.md)
 
 	
 	
