@@ -10,6 +10,7 @@
 
 A kúpinga olyan inga, mely egyenletes körmozgást végez a vízszintes síkban, miközben a fonal egy kúpfelületen mozog. A testre a függőlegesen lefelé húzó nehézségi erő és a kötél irányú kötélerő hat. A kötélerő felbontható egy függőleges és vízszintes komponensre. A kötélerő függőleges komponense kiegyenlíti a nehézségi erőt, hisz az inga nem gyorsul függőlegesen. A körmozgás a vízszintes síkban történik, tehát a centripetális gyorsulás vízszintes, melyet a kötélerő vízszintes komponense okoz.
 
+![A kúpinga](Kepek/kupinga.svg)
 
 $$
 Kcos \Theta = mg
@@ -114,7 +115,6 @@ Ez a formula a kúpinga periódusideje. Ha a $\Theta$ szög igen kicsiny $1rad$-
 
 Egy $0,1kg$ tömegű test $1m$ hosszú fonalon vízszintes síkban egyenletes körmozgást végez, miközben a fonal függőlegessel bezárt szöge $30\degree$. Mekkora a körpálya sugara? Mekkora a fonalat feszítő erő? Mekkora a centripetális erő? Mekkora a test sebessége? Mekkora a keringési idő? Ellenőrizzük a periódusidőre kapott képlettel is a választ!
 
-
 $$
 R = l sin \Theta = 1m \times sin(30\degree) = 0,5m
 $$
@@ -201,6 +201,8 @@ Látszik, hogy a formula pontosan ugyanazt adja, mint a számításunk, ahogy an
 ### Példa
 
 $1200kg$ tömegű versenyautó halad $108 \frac {km} {h}$ sebességgel a $150m$ sugarú kanyarban. A pálya dőlésszöge a vízszintessel $30\degree$. Mekkora a pálya által kifejtett kényszererő és a tapadási erő? Ha $\mu_t = 0,7$ kicsúszik-e a kocsi?
+
+![Versenyautó döntött pályán](Kepek/versenyauto.svg)
 
 A kocsi sebessége kicsi, tehát lefelé csúszna a döntött pályán. Ezt a pálya síkjában felfelé mutató tapadási erő akadályozza meg. 
 
