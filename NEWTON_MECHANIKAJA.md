@@ -53,6 +53,7 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	37. [Centripetalis gyorsulas](Mechanika/CENTRIPETALISGYORSULAS.md)
 	38. [Körmozgas és az energia megmaradása](Mechanika/KORMOZGASESENERGIA.md)
 	39. [Tovabbi példak körmozgásra](Mechanika/KUPINGA.md)
+	40. [Kepler törvényei](Mechanika/KEPLERTORVENYEI.md)
 
 	
 	
