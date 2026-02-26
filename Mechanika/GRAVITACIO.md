@@ -107,6 +107,8 @@ Newton a gravitáció törvényéből sikeresen le tudta vezetni mindhárom Kepl
 
 A test mozgását figyeljük nagyon rövid $t$ időtartamokon keresztül, tehát $t \ll T$. Kezdetben a test $A$ pontból a $B$ pontba jut egyenes vonalban az igen rövid $t$ idő alatt. Ha erő nem hatna rá, akkor újabb $t$ idő elteltével a $C$ pontba jutna az egyenes mentén tovább mozogva egyenletes sebességgel.
 
+![Bolygó mozgása a Nap körül](Kepek/kepler2.svg)
+
 
 $$
 \overline {AB} = \overline {BC}

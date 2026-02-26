@@ -1,0 +1,91 @@
+<svg width="600" height="520" xmlns="http://www.w3.org/2000/svg" style="background-color: #ffffff; font-family: 'Times New Roman', serif;">
+  
+  <!-- Definíciók a nyilakhoz -->
+  <defs>
+    <!-- Fekete nyílhegy a mozgáshoz -->
+    <marker id="arrow_black" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L7,3 z" fill="#000" />
+    </marker>
+    <!-- Szürke nyílhegy a "szellem" mozgáshoz -->
+    <marker id="arrow_gray" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L7,3 z" fill="#888" />
+    </marker>
+    <!-- Piros nyílhegy az erőhöz -->
+    <marker id="arrow_red" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L7,3 z" fill="#DC143C" />
+    </marker>
+  </defs>
+
+  <!-- 
+    Koordináták:
+    O = 300, 480 (Nap)
+    A = 150, 230
+    B = 300, 180
+    C = 450, 130 (B-ből az AB irány folytatása)
+    D = 450, 280 (A gravitáció lehúzza, párhuzamos OB-vel)
+  -->
+
+  <!-- 1. HÁROMSZÖGEK -->
+  
+  <!-- OAB (Kék) - Az első időköz területe -->
+  <polygon points="300,480 150,230 300,180" fill="rgba(65, 105, 225, 0.2)" stroke="none" />
+  
+  <!-- OBC (Szürke) - A "tehetetlenségi" háromszög. 
+       Lényeges, mert T(OAB) = T(OBC) -->
+  <polygon points="300,480 300,180 450,130" fill="rgba(150, 150, 150, 0.2)" stroke="#ccc" stroke-dasharray="4,4" />
+
+  <!-- OBD (Piros) - A valós második terület.
+       Lényeges, mert T(OBC) = T(OBD) -->
+  <polygon points="300,480 300,180 450,280" fill="rgba(220, 20, 60, 0.2)" stroke="none" />
+
+  <!-- 2. SUGARAK (Sima vonalak, nincs nyíl) -->
+  <line x1="300" y1="480" x2="150" y2="230" stroke="#333" stroke-width="1.5" /> <!-- OA -->
+  <line x1="300" y1="480" x2="300" y2="180" stroke="#333" stroke-width="1.5" /> <!-- OB -->
+  <line x1="300" y1="480" x2="450" y2="280" stroke="#ddd" stroke-width="1" />   <!-- OD halványan -->
+
+  <!-- 3. ELMOZDULÁSOK (Vektorok, nyilakkal) -->
+  
+  <!-- A -> B (v * t) -->
+  <line x1="150" y1="230" x2="292" y2="183" stroke="#000" stroke-width="2.5" marker-end="url(#arrow_black)" />
+  
+  <!-- B -> C (v * t - ha nem hatna erő) -->
+  <line x1="300" y1="180" x2="442" y2="133" stroke="#888" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow_gray)" />
+
+  <!-- B -> D (v' * t - valós elmozdulás) -->
+  <line x1="300" y1="180" x2="442" y2="275" stroke="#000" stroke-width="2.5" marker-end="url(#arrow_black)" />
+
+  <!-- C -> D (Gravitációs "lökés", párhuzamos OB-vel) -->
+  <line x1="450" y1="130" x2="450" y2="270" stroke="#DC143C" stroke-width="3" marker-end="url(#arrow_red)" />
+
+  <!-- 4. PONTOK -->
+  <circle cx="300" cy="480" r="12" fill="orange" stroke="gold" stroke-width="2" /> <!-- Nap -->
+  <text x="285" y="510" font-size="18" font-weight="bold">O (Nap)</text>
+
+  <circle cx="150" cy="230" r="4" fill="black" />
+  <text x="135" y="225" font-size="18" font-style="italic">A</text>
+
+  <circle cx="300" cy="180" r="4" fill="black" />
+  <text x="290" y="165" font-size="18" font-style="italic">B</text>
+
+  <circle cx="450" cy="130" r="4" fill="#888" />
+  <text x="460" y="130" font-size="18" font-style="italic" fill="#888">C</text>
+
+  <circle cx="450" cy="280" r="4" fill="black" />
+  <text x="460" y="285" font-size="18" font-style="italic">D</text>
+
+  <!-- 5. FELIRATOK A VEKTOROKHOZ -->
+  
+  <!-- v * t (AB szakasz felett) -->
+  <text x="200" y="190" font-size="16" fill="#000" font-weight="bold">v · t</text>
+  
+  <!-- v * t (BC szakasz felett - szürkén) -->
+  <text x="360" y="140" font-size="16" fill="#666" font-style="italic">v · t</text>
+
+  <!-- v' * t (BD szakasz alatt) -->
+  <text x="360" y="250" font-size="16" fill="#000" font-weight="bold">v' · t</text>
+
+  <!-- Terület magyarázat (opcionális, de segít) -->
+  <text x="50" y="450" font-size="14" fill="#4169E1">T(OAB) = T(OBC)</text>
+  <text x="50" y="470" font-size="14" fill="#DC143C">T(OBC) = T(OBD)</text>
+
+</svg>
