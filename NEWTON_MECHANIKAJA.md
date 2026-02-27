@@ -50,11 +50,12 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	34. [Atwood ejtőgépe](Mechanika/ATWOODGEP.md)
 	35. [Atwood-gép jellegű probélmák](Mechanika/FELADATOKATWOODGEP.md)
 	36. [Egyenletes körmozgás](Mechanika/EGYENLETESKORMOZGAS.md)
-	37. [Centripetalis gyorsulas](Mechanika/CENTRIPETALISGYORSULAS.md)
+	37. [Centripetális gyorsulás](Mechanika/CENTRIPETALISGYORSULAS.md)
 	38. [Körmozgas és az energia megmaradása](Mechanika/KORMOZGASESENERGIA.md)
 	39. [Tovabbi példak körmozgásra *](Mechanika/KUPINGA.md)
 	40. [Kepler törvényei](Mechanika/KEPLERTORVENYEI.md)
 	41. [A gravitáció törvénye](Mechanika/GRAVITACIO.md)
+	42. [Feladatok a bolygómozgásra](Mechanika/FELADATOKBOLYGOMOZGAS.md)
 
 	
 	
