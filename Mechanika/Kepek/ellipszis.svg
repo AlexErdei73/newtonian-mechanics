@@ -1,0 +1,56 @@
+<svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="white" />
+  
+  <!-- Main Definition at the top centre (Black to match r1/r2) -->
+  <text x="300" y="35" font-family="Arial" font-size="22" fill="black" font-weight="bold" text-anchor="middle">
+    r<tspan dy="5" font-size="14">1</tspan><tspan dy="-5"> + r</tspan><tspan dy="5" font-size="14">2</tspan><tspan dy="-5"> = 2a</tspan>
+  </text>
+
+  <!-- Axes -->
+  <line x1="40" y1="200" x2="560" y2="200" stroke="#eee" stroke-width="1" />
+  <line x1="300" y1="50" x2="300" y2="350" stroke="#eee" stroke-width="1" />
+  
+  <!-- Elliptical Orbit -->
+  <ellipse cx="300" cy="200" rx="250" ry="150" fill="none" stroke="#444" stroke-width="2" />
+
+  <!-- Right-angled Triangle (a, b, c relationship) -->
+  <path d="M 100 200 L 300 50 L 300 200 Z" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" fill-opacity="0.6"/>
+  <path d="M 300 185 L 285 185 L 285 200" fill="none" stroke="#1976d2" stroke-width="1.5"/>
+
+  <!-- Foci -->
+  <circle cx="100" cy="200" r="10" fill="#fbc02d" stroke="black" /> <!-- F1 (Earth/Sun) -->
+  <circle cx="500" cy="200" r="6" fill="#666" />                   <!-- F2 -->
+  <text x="90" y="230" font-family="Arial" font-size="16">F<tspan dy="5" font-size="10">1</tspan></text>
+  <text x="490" y="230" font-family="Arial" font-size="16">F<tspan dy="5" font-size="10">2</tspan></text>
+
+  <!-- Triangle Labels -->
+  <text x="190" y="195" font-family="Arial" font-size="18" fill="#1976d2" font-weight="bold">c</text>
+  <text x="310" y="130" font-family="Arial" font-size="18" fill="#1976d2" font-weight="bold">b</text>
+  <text x="180" y="115" font-family="Arial" font-size="20" fill="#1976d2" font-weight="bold" transform="rotate(-37, 200, 125)">a</text>
+
+  <!-- r1 and r2 sections via Point P -->
+  <path d="M 100 200 L 450 82 L 500 200" fill="none" stroke="#666" stroke-width="1.5" stroke-dasharray="4,2" />
+  <circle cx="450" cy="82" r="4" fill="black" />
+  <text x="455" y="75" font-family="Arial" font-size="16" font-weight="bold">P</text>
+  
+  <!-- r1 and r2 labels next to the dashed lines -->
+  <text x="260" y="140" font-family="Arial" font-size="16" fill="#666" font-weight="bold">r<tspan dy="5" font-size="10">1</tspan></text>
+  <text x="475" y="150" font-family="Arial" font-size="16" fill="#666" font-weight="bold">r<tspan dy="5" font-size="10">2</tspan></text>
+
+  <!-- r_min and r_max visualization -->
+  <line x1="50" y1="265" x2="100" y2="265" stroke="#d32f2f" stroke-width="3" />
+  <text x="55" y="285" font-family="Arial" font-size="14" fill="#d32f2f" font-weight="bold">r<tspan dy="5" font-size="10">min</tspan></text>
+  
+  <line x1="100" y1="295" x2="550" y2="295" stroke="#388e3c" stroke-width="3" />
+  <text x="280" y="315" font-family="Arial" font-size="14" fill="#388e3c" font-weight="bold">r<tspan dy="5" font-size="10">max</tspan></text>
+
+  <!-- 2a relationship at the bottom -->
+  <line x1="50" y1="360" x2="550" y2="360" stroke="#1976d2" stroke-width="3" />
+  <text x="300" y="390" font-family="Arial" font-size="20" fill="#1976d2" font-weight="bold" text-anchor="middle">
+    2a = r<tspan dy="5" font-size="12">min</tspan><tspan dy="-5"> + r</tspan><tspan dy="5" font-size="12">max</tspan>
+  </text>
+
+  <!-- Centre point -->
+  <circle cx="300" cy="200" r="3" fill="black" />
+  <text x="305" y="215" font-family="Arial" font-size="14">C</text>
+</svg>

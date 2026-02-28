@@ -91,6 +91,8 @@ Ha $\alpha = 90\degree$, akkor $sin \alpha = 1$, tehát a területi sebesség a 
 
 1. A Mars legkisebb távolsága a Naptól ellipszis pályáján (Perihélium) 206,6 millió km, a legtávolabbi pontja a pályának pedig 249,2 millió km. Mekkora a Mars átlagos távolsága a Naptól, tehát a nagytengely hosszának fele? Hány csillagászati egység (CSE) ez a távolság? Ha a Mars keringési ideje 687,0nap, akkor mekkora a területi sebesség? Használd az ellipszis területképletet! $T_{ellipszis} = ab\pi$! Mekkora a bolygó sebessége a Naphoz legközelebbi és a Naptól legtávolabbi pontokban?
 
+![A palya ellipszis](Kepek/ellipszis.svg)
+
 $$
 2a = r_{min} + r_{max} = 206,6 + 249,2 = 455,8 \times 10^6km
 $$
