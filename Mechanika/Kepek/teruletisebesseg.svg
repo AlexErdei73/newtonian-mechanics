@@ -1,0 +1,19 @@
+<svg width="500" height="400" viewBox="0 0 500 400" xmlns="http://www.w3.org">
+  <rect width="500" height="400" fill="#ffffff" />
+  <path d="M 100 300 L 450 150" stroke="#cccccc" stroke-dasharray="5,5" />
+  <path d="M 100 300 L 350 190 L 410 165 Z" fill="#e1f5fe" stroke="#01579b" stroke-width="1" fill-opacity="0.6"/>
+  <line x1="100" y1="300" x2="350" y2="190" stroke="#333" stroke-width="2" />
+  <line x1="350" y1="190" x2="410" y2="165" stroke="#d32f2f" stroke-width="3" />
+  <circle cx="100" cy="300" r="6" fill="#fbc02d" />
+  <circle cx="350" cy="190" r="4" fill="#000" />
+  <circle cx="410" cy="165" r="4" fill="#000" />
+  <line x1="410" y1="165" x2="385" y2="225" stroke="#388e3c" stroke-width="2" stroke-dasharray="4,2" />
+  <path d="M 330 200 A 35 35 0 0 1 345 185" fill="none" stroke="#555" stroke-width="2" />
+  <text x="85" y="325" font-family="Arial" font-size="16" font-weight="bold">O</text>
+  <text x="340" y="180" font-family="Arial" font-size="16" font-weight="bold">A</text>
+  <text x="415" y="160" font-family="Arial" font-size="16" font-weight="bold">B</text>
+  <text x="210" y="260" font-family="Arial" font-size="14" font-style="italic">r</text>
+  <text x="365" y="165" font-family="Arial" font-size="14" fill="#d32f2f" font-weight="bold">vt</text>
+  <text x="360" y="215" font-family="Arial" font-size="16" font-weight="bold">α</text>
+  <text x="395" y="210" font-family="Arial" font-size="12" fill="#388e3c">m_AB</text>
+</svg>
