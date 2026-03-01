@@ -56,6 +56,7 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	40. [Kepler törvényei](Mechanika/KEPLERTORVENYEI.md)
 	41. [A gravitáció törvénye](Mechanika/GRAVITACIO.md)
 	42. [Feladatok a bolygómozgásra](Mechanika/FELADATOKBOLYGOMOZGAS.md)
+	43. [Gravitációs energia](Mechanika/GRAVITACIOSENERGIA.md)
 
 	
 	
