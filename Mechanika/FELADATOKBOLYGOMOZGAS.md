@@ -184,3 +184,20 @@ $$
 $$
 v_{min} = \frac {2 \times 196400} {405500} = 0,9687 \frac {km} {s}
 $$
+
+## Feladatok
+
+1. A Jupiter bolygó átlagos távolsága a Naptól $a_{Jupiter} = 5,203$ CSE. A Föld adatai alapján ($a_{Föld} = 1$ CSE, $T_{Föld} = 1$ év) számítsd ki a Kepler III. törvényének egyszerűsített alakjával ($\frac{a^3}{T^2} = 1$), hány földi év alatt kerüli meg a Napot a Jupiter!
+
+2. Az Eris törpebolygó keringési ideje rendkívül hosszú, $T_{Eris} = 558$ földi év. Számítsd ki, mekkora az Eris átlagos távolsága a Naptól csillagászati egységben (CSE)!
+
+3. Alacsony pályás műhold (Műholdak mozgása)
+Egy megfigyelő műhold $250$ km magasságban kering a Föld felszíne felett. 
+*   Mekkora a pálya sugara ($a$), ha a Föld sugara $R = 6370$ km?
+*   Számítsd ki a műhold keringési idejét ($T$) másodpercben!
+
+4. Egy üstökös a Nap körüli pályáján a napközelpontban (perihélium) $r_{min} = 0,6$ CSE távolságra van a Naptól, és itt a sebessége $v_{max} = 55 \frac{km}{s}$. Mekkora lesz a sebessége a naptávolpontban (afélium), ha ott a távolsága $r_{max} = 35$ CSE?
+
+5. Egy képzeletbeli bolygó keringési ideje $T = 8$ év. A pályájának kistengelye $b = 3,8$ CSE, nagytengelyének fele $a = 4$ CSE.
+*   Számítsd ki a pálya területét a $T_{ellipszis} = a b \pi$ képlettel!
+*   Mekkora a bolygó területi sebessége $\frac{CSE^2}{év}$ egységben?
