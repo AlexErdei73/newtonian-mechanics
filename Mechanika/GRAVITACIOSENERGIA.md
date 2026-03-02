@@ -93,3 +93,97 @@ Latjuk, hogy ez mindig negativ, hisz $h \ll R$, de egy adott testre csak egy all
 $$
 E_h = mgh = E_g + mgR
 $$
+
+## A mechanikai energia megmaradasa
+
+A bolygomozgas eseten megmarad a mechanikai energia, hiszen csak a gravitacios ero eri a bolygot es ez konzervativ, amint epp megallapitottuk. 
+
+$$
+E_m + E_g = E_{m,0} + E_{g,0}
+$$
+
+$$
+\frac {mv^2} {2} - G\frac {mM} {r} = E
+$$
+
+Itt az $E$ allando a palyahoz tartozo energia, mely allando az adott palyan.
+
+## Sebesseg kiszamitasa
+
+Ha a mechanikai energia egyenletebol kifejezzuk a sebesseget, akkor a kovetkezo keplet adodik.
+
+$$
+v = \sqrt{\frac {2E} {m} + GM\frac {2} {r}}
+$$
+
+Itt az $E$ osszenergia ismeretlen, de jegyezzuk meg, hogy ez csak a bolygo es a Nap atlagos tavolsagatol fugg, nem fugg a palya alakjatol sem. Az osszefugges az $E$ energia es az $a$ atlagos tavolsag kozt korpalyabol is megkaphato.
+
+$$
+ma_{cp} = F_g
+$$
+
+$$
+m\frac {v^2} {a} = G \frac {Mm} {a^2}
+$$
+
+Innen $v^2$ kifejezheto:
+
+$$
+v^2 = \frac {GM} {a}
+$$
+
+Az energia tehat:
+
+$$
+E = \frac {mv^2} {2} - G\frac {mM} {r} = \frac {GmM} {2a} - \frac {GmM} {a} = -G \frac {mM} {2a}
+$$
+
+Eszerint:
+
+$$
+\frac {2E} {m} = -GM \frac {1} {a}
+$$
+
+Ezt visszairva a sebesseg kiszamitasaba, megkapjuk a ssebesseg kiszamitasara vonatkozo egyenletet.
+
+$$
+v = \sqrt {GM(\frac {2} {r} - \frac {1} {a})}
+$$
+
+## A masodik kozmikus sebesseg
+
+Mekkora sebesseggel kell egy testet elhajitanunk a Fold felszinen, hogy sose terjen vissza? (A legellenallast elhanyagoljuk.) A valasz egyszeru, ha meggondoljuk, hogy el kell jusson vegtelen tavolsagra, tehat $a = \infty$.
+
+$$
+v = \sqrt{GM\frac {2} {R}} = \sqrt {2gR} = \sqrt {2} \sqrt{gR} = 1,4142 \times 7,902 \frac {km} {s} = 11,18 \frac {km} {s}
+$$
+
+Ezt a sebesseget nevezzuk masodik kozmikus sebessegnek.
+
+## A harmadik kozmikus sebesseg
+
+Mekkora sebesseggel kell egy testet elhajitani a Foldrol, hogy a Naprendszert is elhagyja? Ugyanigy szamolhatunk, de itt $M$ a Nap tomeget jelenti es $r$ pedig a Nap-Fold tavolsag, tehat a csillagaszati egyseg. G ekkor $4\pi^2$, tehat:
+
+$$
+v_{Nap} = \sqrt {GM_{Nap} \frac {2} {r}} = \sqrt {8 \pi^2} = 8,886 \frac {CSE} {ev} = 42,12 \frac {km} {s}
+$$
+
+A testnek evvel a sebesseggel kell rendelkeznie a Fold elhagyasa utan a Naphoz kepest, hogy elhagyja a Naprendszert. Tudjuk, hogy a Fold elhagyasahoz is kell $11,18 \frac {km} {s}$ sebesseg, mely eltunik, mikor a test mar nagy tavolsagra kerul a Fold sugarahoz kepest a Foldtol. A Fold maga is rendelkezik Nap koruli sebesseggel, ez konnyen ki is szamithato.
+
+$$
+v_{Fold} = \frac {2 \pi r} {T} = \frac {2 \times 3,1415 \times 1,496 \times 10^8} {365,26 \times 86400} = 29,78 \frac {km} {s}
+$$
+
+Ez annyit tesz, hogy a Foldhoz kepest a Fold elhagyasa utan elegendo
+
+$$
+v_{Nap} - v_{Fold} = 42,12 - 29,78 = 12,34 \frac {km} {s}
+$$
+
+sebesseggel rendelkezzen a test a Foldpalya sebessegenek iranyaban. Ugyanis ekkor a test a Naphoz kepest pont a szukseges $v_{Nap}$ sebesseggel rendelkezik. Milyen iranyban kell mutasson a Fold elhagyasahoz szukseges $11,18 \frac {km} {s}$ sebesseg a test inditasakor a Fold felszinen? Ez mutasson fuggolegesen felfele a Foldon, mondjuk ejszaka a Naptol huzott sugarvektorral parhuzamosan a Naptol elfele, hisz ekkor a test a Foldhoz kepest $12,34 \frac {km} {s}$ sebesseggel mozog a Napbol huzott sugarvektorra merolegesen a Fold keringesenek iranyaban. A harmadik kozmikus sebesseg ezekkel a feltetelekkel a kovetkezo lesz.
+
+$$
+v = \sqrt {11,18^2 + 12,34^2} = 16,65 \frac {km} {s}
+$$
+
+Ez tehat a leheto legkisebb sebesseg, mellyel a megfelelo iranyban kilove a testet a Fold felszinen, ballisztikus palyan, a test kepes elhagyni a Naprendszert is.
