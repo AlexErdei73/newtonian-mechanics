@@ -171,19 +171,27 @@ $$
 A testnek evvel a sebesseggel kell rendelkeznie a Fold elhagyasa utan a Naphoz kepest, hogy elhagyja a Naprendszert. Tudjuk, hogy a Fold elhagyasahoz is kell $11,18 \frac {km} {s}$ sebesseg, mely eltunik, mikor a test mar nagy tavolsagra kerul a Fold sugarahoz kepest a Foldtol. A Fold maga is rendelkezik Nap koruli sebesseggel, ez konnyen ki is szamithato.
 
 $$
-v_{Fold} = \frac {2 \pi r} {T} = \frac {2 \times 3,1415 \times 1,496 \times 10^8} {365,26 \times 86400} = 29,78 \frac {km} {s}
+v_{Föld} = \frac {2 \pi r} {T} = \frac {2 \times 3,1415 \times 1,496 \times 10^8} {365,26 \times 86400} = 29,78 \frac {km} {s}
 $$
 
 Ez annyit tesz, hogy a Foldhoz kepest a Fold elhagyasa utan elegendo
 
 $$
-v_{Nap} - v_{Fold} = 42,12 - 29,78 = 12,34 \frac {km} {s}
+v_{Nap} - v_{Föld} = 42,12 - 29,78 = 12,34 \frac {km} {s}
 $$
 
-sebesseggel rendelkezzen a test a Foldpalya sebessegenek iranyaban. Ugyanis ekkor a test a Naphoz kepest pont a szukseges $v_{Nap}$ sebesseggel rendelkezik. Milyen iranyban kell mutasson a Fold elhagyasahoz szukseges $11,18 \frac {km} {s}$ sebesseg a test inditasakor a Fold felszinen? Ez mutasson fuggolegesen felfele a Foldon, mondjuk ejszaka a Naptol huzott sugarvektorral parhuzamosan a Naptol elfele, hisz ekkor a test a Foldhoz kepest $12,34 \frac {km} {s}$ sebesseggel mozog a Napbol huzott sugarvektorra merolegesen a Fold keringesenek iranyaban. A harmadik kozmikus sebesseg ezekkel a feltetelekkel a kovetkezo lesz.
+sebesseggel rendelkezzen a test a Foldpalya sebessegenek iranyaban. Ugyanis ekkor a test a Naphoz képest pont a szükséges $v_{Nap}$ sebességgel rendelkezik. Indítsuk a testet a Föld keringésének irányában a Föld felszínéről függőlegesen felfelé! Ez azt jelenti, hogy a Föld pályamenti sebessége függőlegesen felfelé mutat! Számítsuk ki a szükséges $v$ sebességet úgy, hogy a Föld elhagyása után a testnek éppen a szükséges sebessége legyen a pályasebesség irányába!
+
+$$
+\frac {mv^2} {2} - G \frac {mM} {R} = \frac {m(v_{Nap} - v_{Föld})^2} {2}
+$$
+
+$$
+v^2 = 2 \frac {GM} {R^2} R + (v_{Nap} - v_{Föld})^2 = 2gR + (v_{Nap} - v_{Föld})^2
+$$
 
 $$
 v = \sqrt {11,18^2 + 12,34^2} = 16,65 \frac {km} {s}
 $$
 
-Ez tehat a leheto legkisebb sebesseg, mellyel a megfelelo iranyban kilove a testet a Fold felszinen, ballisztikus palyan, a test kepes elhagyni a Naprendszert is.
+Ez tehát a lehető legkisebb sebesség, amellyel a megfelelő irányban, a megfelelő helyen kilőve a testet a Föld felszínén, ballisztikus pályán, a test képes elhagyni a Naprendszert is.
