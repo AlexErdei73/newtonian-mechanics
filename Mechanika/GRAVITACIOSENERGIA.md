@@ -202,3 +202,31 @@ Ez tehát a lehető legkisebb sebesség, amellyel a megfelelő irányban, a megf
 ### Szimuláció
 
 [A harmadik kozmikus sebesség szimulációja](https://alexerdei73.github.io/physics-engine/project/#4bb597b1-beff-4abc-8d96-d3f126822b01)
+
+## Kötött és szabad pályák
+
+Látjuk, hogy az égitestek pályája nem szükségszerűen a zárt ellipszispálya, ahogy azt Kepler bolygómozgásról szóló törvényei leírják. Van, hogy a test vissza sem tér sosem. Ezt a pálya energiája szabja meg. Ha az energia negatív, akkor a pálya ellipszis, és egy pozitív $a$ érték, tehát pozitív félnagytengely tartozik hozzá. Az energia $E < 0$. Ez a kötött pálya. A körpálya speciális esetében a mozgási energia állandó, és fele a negatív helyzeti energia abszolút értékének.
+
+[Ellipszispálya](https://alexerdei73.github.io/physics-engine/project/#fefc0e35-7beb-4f00-81e4-05e25bfbf064)
+
+$$
+E_{m,\text{kör}} = \frac {|E_{g,\text{kör}}|} {2} = |E_{\text{kör}}|
+$$
+
+[Körpálya](https://alexerdei73.github.io/physics-engine/project/#5f0cba8e-b08a-4f3b-94b6-627d297e388f)
+
+Ha a test képes a végtelenbe eljutni, de ott mozgási energiája nem marad, akkor a pályához tartozó teljes energia nulla. Ekkor $a = \infty$, a pálya alakja parabola. A parabolát el lehet úgy képzelni, hogy végtelenül elnyújtott ellipszis, mely sosem tér vissza önmagába. Ez esetben $E = 0$.
+
+[Parabolapálya](https://alexerdei73.github.io/physics-engine/project/#6139370b-ddc9-44b5-a7ab-603c9bdbb806)
+
+A harmadik eset, hogy a pályához tartozó teljes energia pozitív, tehát a test a vonzócentrumtól végtelen távolságra jut, és még marad is mozgási energiája. Ez az az eset, amikor a test egy hiperbolaágon mozog. A hiperbola olyan görbe, melynek az ellipszishez hasonlóan van két fókuszpontja. Bármely pont fókuszpontoktól mért távolságainak különbsége egy állandó, $\pm 2a$. Vonzóerő esetén a test a görbének azon az ágán mozog, melyre $a < 0$. Az energiát meghatározó képlet továbbra is érvényes marad, sőt a sebesség kiszámítására vonatkozó képlet is érvényes a negatív $a$-val. $E > 0$ tehát ez esetben.
+
+[Hiperbolapálya](https://alexerdei73.github.io/physics-engine/project/#fb3346ec-45d8-4e2f-b03a-07bf897767af)
+
+
+| Alak | Energia | $a$ | Szimuláció |
+| :---: | :---: | :---: | :---: |
+| Ellipszis | $E < 0$ | $a > 0$| [Ellipszispálya](https://alexerdei73.github.io/physics-engine/project/#fefc0e35-7beb-4f00-81e4-05e25bfbf064) |
+| Kör | $E = -E_{m} = E_{g}/2$ | $a = R$ | [Körpálya](https://alexerdei73.github.io/physics-engine/project/#5f0cba8e-b08a-4f3b-94b6-627d297e388f) |
+| Parabola | $E = 0$ | $a = \infty$ | [Parabolapálya](https://alexerdei73.github.io/physics-engine/project/#6139370b-ddc9-44b5-a7ab-603c9bdbb806) |
+| Hiperbolapálya | $E > 0$ | $a < 0$ | [Hiperbolapálya](https://alexerdei73.github.io/physics-engine/project/#fb3346ec-45d8-4e2f-b03a-07bf897767af) |
