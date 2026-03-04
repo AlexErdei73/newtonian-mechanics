@@ -57,6 +57,7 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	41. [A gravitáció törvénye](Mechanika/GRAVITACIO.md)
 	42. [Feladatok a bolygómozgásra](Mechanika/FELADATOKBOLYGOMOZGAS.md)
 	43. [Gravitációs energia](Mechanika/GRAVITACIOSENERGIA.md)
+	44. [Feladatok a gravitációs energiára](Mechanika/FELADATOKGRAVENERGIA.md)
 
 	
 	
