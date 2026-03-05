@@ -59,7 +59,8 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	43. [Gravitációs energia](Mechanika/GRAVITACIOSENERGIA.md)
 	44. [Feladatok a gravitációs energiára](Mechanika/FELADATOKGRAVENERGIA.md)
 	45. [Cavendish kísérlete](Mechanika/CAVENDISH.md)
-	
+	46. [A kéttest probléma *](Mechanika/KETTESTPROBLEMA.md)
+
 
 	
 	
