@@ -10,11 +10,9 @@ Foglalkoztunk még tömegpontok rendszerével is, amikor két vagy több tömegp
 
 Ideális merev testek a valóságban nincsenek, hisz bármely szilárd test elegendően nagy erőhatás hatására alakját szemmel láthatóan megváltoztatja. Ilyen változás például autóbaleset esetén a kocsi deformációja, vagy egy rugó elszakadása, ha túlterhelik stb. Sokszor a deformációk kicsik, és a test képes visszanyerni az alakját az erőhatás megszűntével. Ilyen esetre példa a nem túl nagy erővel megfeszített rugó, mely alakját visszanyeri, ha az erőhatás megszűnik. Az ilyen deformációkat rugalmasnak nevezzük, és ezekkel a rugalmasságtan foglalkozik. A merev testeket úgy tekintjük, hogy a fellépő erőhatások olyan kicsinyek, hogy a test deformációi teljesen elhanyagolhatók. 
 
-## A merev test helyzetének megadása
+## A merev mozgasa
 
 A merev test alakját tehát a mozgás során nem változtatja meg, így elmozdulása minden esetben összetevődik egy eltolás és egy elforgatás egymásutánjaként. Tehát a merev test haladó mozgáson kívül forgómozgást is képes végezni. 
-
-A merev test helyzetét három pontjának megadása a térben egyértelműen meghatározza. Ez 9 koordináta megadását jelenti, de ezek közt fennáll 3 összefüggés, nevezetesen a három pont közül bármely kettőnek a távolsága állandó. Ez 3 távolság állandóságát jelenti, tehát a test helyzetének megadásához 6 független adat elegendő. Ez lehet például egy pontjának 3 koordinátája és 3 szög megadása a test térbeli orientációjának megfelelően. Például megadhatjuk egy vasrúd tömegközéppontjának helyzetét és a tömegközépponton átmenő forgástengely egységvektorát (ez két koordináta, hisz az egységvektor hossza egységnyi), továbbá egy szögadatot, amely egy elfordulási szöget ad meg a tengely körül. Ezen 6 adat a térben egyértelműen meghatározza a vasrúd helyzetét, feltéve, hogy a rúd alakváltozást nem szenved mozgása során.
 
 ## A merev test síkmozgása
 
@@ -26,18 +24,49 @@ Gondoljunk például egy kerék gördülésére, amikor a kerék egyenes vonalon
 
 Síkmozgás esetén a test helyzetét két pontjának koordinátái meghatározzák. Itt a két pont távolsága nem változik, tehát csak 3 független adat kell. Lehet ez mondjuk a tömegközéppont 2 koordinátája a síkban és a test elfordulási szöge a síkban. Kerék esetében például a középpont általában a tömegközéppont is egyben, és a kerék még az ezen a ponton áthaladó, a mozgás síkjára merőleges képzeletbeli tengely körül el is fordul gördülése során. Az elfordulási szög, mint látni fogjuk, előjeles szám. Ha a test az óramutató járásával ellenkező irányban fordult el a síkban, akkor az elfordulási szög pozitív, ellenkező esetben negatív.
 
-## A pillanatnyi forgástengely
+## A forgatonyomatek
+Mi az ero megfeleloje forgomozgas eseten, ami felelos a forgas gyorsitasaert vagy epp lassitasaert? Ez a mennyiseg a forgatonyomatek.
 
-Gondoljunk valamilyen merev test síkmozgására, például a kerék gördülésére egyenes vonal mentén. Ekkor a tömegközéppont haladó mozgást végez, de a kerék a tömegközépponton átmenő, a gördülés síkjára merőleges tengely körül forog is. Van-e olyan tengely, mely körül a kerék mozgása leírható tisztán forgással legalább egy igen rövid időtartam alatt? A gördülő kerék esetén, feltéve, hogy a kerék nem csúszik meg, hanem tisztán gördül, a kerék talajjal érintkező pontján átmenő tengely, mely a gördülés síkjára merőleges, ilyen tengely. Ezt nevezzük pillanatnyi forgástengelynek. 
+Itt nehany fogalmat kell megbeszeljunk: 
 
->**Pillanatnyi forgástengely az a tengely, mely körüli tiszta elfordulással leírható a merev test elmozdulása egy rövid időtartam alatt, eltolás nélkül.**
+>**Az ero tamadaspontja az a pont, ahol az ero a testre hatasat kifejti.**
 
-Pillanatnyi forgástengely mindig van, amennyiben van forgás. Síkmozgás esetén például az A pont a C-be, a B pont a D-be mozdul el. 
+>**Az ero hatasvonala az az egyenes, mely a tamadasponton halad at es az ero vektor iranyaval parhuzamos.**
 
+>**Az erokar az ero hatasvonalanak a forgastengelytol mert tavolsaga.**
+
+Ezekutan konnyen megfogalmazhatjuk a forgatonyomatek definiciojat is.
+
+>**Az ero forgatonyomateka az ero es az erokar szorzata.**
 
 $$
-\overline {AB} = \overline {CD}
+M = Fk = Frsin \alpha
 $$
 
+Itt $\alpha$ az a $180\degree$-nal nem nagyobb szog, melyet az ero vektor bezar az tamadaspont helyvektoraval, ha az origo a forgastengely. A szog elojeles forgasszog. Amenniben az ero pozitiv iranyba forgat, tehat az oramutato jarasaval ellentetes ertelemben, akkor a szoget pozitivnak, ellenkezo esetben negativnak tekintjuk. Igy a forgatonyomatek is elojeles szam, hiszen az ilyen szogekre a szinusz fuggveny ugyanolyan elojelu, mint a szog.
 
-Ez azért van így, mert bármely két pont távolsága a mozgás során nem változik. A geometriából tudjuk, hogy az $AC$ szakasz felezőmerőlegesének pontjaiból A elforgatással juttatható C-be. A $BD$ szakasz felezőmerőlegesének pontjaiból pedig B forgatással juttatható D-be. Ha a két merőleges metszi egymást, meg is van a pillanatnyi forgástengely a mozgás síkjában. Ezek a szakaszok sosem párhuzamosak, kivéve, ha a test mozgása tiszta eltolás. Ilyen esetben elforgatás és pillanatnyi forgástengely sincs, de amint a test elfordul a síkban, mindig létezik a pillanatnyi forgástengely.
+### Peldak
+1. Egy csavarkulcs hossza $30,0cm$. A kulcs vegenel 60N erot fejtunk ki. Mikor nagyobb a forgatonyomatek? Az elso esetben az ero meroleges a csavarkulcsra. A masodik esetben az ero a csavaskulccsal $60\degree$ szoget zar be.
+
+$$
+M_1 = Frsin \alpha = 60 \times 0,3 \times sin (90\degree) = 18Nm
+$$
+
+$$
+M_2 = Frsin \alpha = 60 \times 0,3 \times sin (60\degree) = 15,58Nm
+$$
+
+Tehat a masodik esetben kisebb a forgatonyomatek, vagyis az ero forgato hatasa.
+
+2. Egy emelo rudja vizszintesen all. A forgastengelytol $2,00m$-re van rahelyezve $20kg$ suly. A forgastengely masik oldalan a rudat fuggolegesen lefele nyomjuk $3,00m$ tavolsagra a tengelytol $130N$ erovel. A nehezsegi gyorsulas $9,81 \frac {m} {s^2}$
+Mekkorak a rudra hato forgatonyomatekok es merre billen a rud?
+
+$$
+|M_1| = F_1k_1 = mgr_1 = 20 \times 9,81 \times 2 = 392,4Nm
+$$
+
+$$
+|M_2| = F_2k_2 = F_2r_2 = 130 \times 3 = 390,0Nm
+$$
+
+Mivel $|M_2|$ kisebb, mint $|M_1|$ ezert a teher fele billen a rud.

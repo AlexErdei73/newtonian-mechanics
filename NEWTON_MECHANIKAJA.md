@@ -60,7 +60,7 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	44. [Feladatok a gravitációs energiára](Mechanika/FELADATOKGRAVENERGIA.md)
 	45. [Cavendish kísérlete](Mechanika/CAVENDISH.md)
 	46. [A kéttest probléma *](Mechanika/KETTESTPROBLEMA.md)
-	47. [Merev testek](Mechanika/MEREVTEST.md)
+	47. [Merev testek es egyensulyuk](Mechanika/MEREVTEST.md)
 	48. [Forgas rogzitett tengely korul](Mechanika/FORGASROGZITETTTENGELYEN.md)
 
 

@@ -50,26 +50,7 @@ $$
 
 Ossze kell adjuk az osszes testre a tomegenek es a forgastengelytol mert tavolsag negyzetenek a szorzatait. Igy a tehetetlensegi nyomatek egysege $kgm^2$. Latni fogjuk, hogy $\Theta$ a tomeg megfeleloje forgomozgas esetere, tehat a test adott tengely koruli forgatasanak gyorsitasat vagy lassitasat igyekszik gatolni. 
 
-## A forgatonyomatek
-Eddig lattuk a halado mozgas sebessegenek, gyorsulasanak es tomegenek, valamint az impulzusnak a rogzitett tengely koruli forgas eseten a megfeleloit. Azt is tudjuk, hogy a halado mozgas gyorsulasaert az ero a felelos. Mi az ero megfeleloje forgomozgas eseten, ami felelos a forgas gyorsitasaert vagy epp lassitasaert? Ez a mennyiseg a forgatonyomatek.
 
-Itt nehany fogalmat kell megbeszeljunk: 
-
->**Az ero tamadaspontja az a pont, ahol az ero a testre hatasat kifejti.**
-
->**Az ero hatasvonala az az egyenes, mely a tamadasponton halad at es az ero vektor iranyaval parhuzamos.**
-
->**Az erokar az ero hatasvonalanak a forgastengelytol mert tavolsaga.**
-
-Ezekutan konnyen megfogalmazhatjuk a forgatonyomatek definiciojat is.
-
->**Az ero forgatonyomateka az ero es az erokar szorzata.**
-
-$$
-M_z = Fk = Frsin \alpha
-$$
-
-Itt $\alpha$ az a $180\degree$-nal nem nagyobb szog, melyet az ero vektor bezar az tamadaspont helyvektoraval, ha az origo a forgastengely. A szog elojeles forgasszog. Amenniben az ero pozitiv iranyba forgat, tehat az oramutato jarasaval ellentetes ertelemben, akkor a szoget pozitivnak, ellenkezo esetben negativnak tekintjuk. Igy a forgatonyomatek is elojeles szam, hiszen az ilyen szogekre a szinusz fuggveny ugyanolyan elojelu, mint a szog.
 
 ## Az impulzusmomentum tetele
 Nezzuk most meg az eredo forgatonyomatekot, mert arra lesz legtobbszor szuksegunk!
