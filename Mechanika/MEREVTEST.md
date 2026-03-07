@@ -45,6 +45,10 @@ $$
 
 Itt $\alpha$ az a $180\degree$-nal nem nagyobb szog, melyet az ero vektor bezar az tamadaspont helyvektoraval, ha az origo a forgastengely. A szog elojeles forgasszog. Amenniben az ero pozitiv iranyba forgat, tehat az oramutato jarasaval ellentetes ertelemben, akkor a szoget pozitivnak, ellenkezo esetben negativnak tekintjuk. Igy a forgatonyomatek is elojeles szam, hiszen az ilyen szogekre a szinusz fuggveny ugyanolyan elojelu, mint a szog.
 
+### Kiserlet
+
+[Sas Elemer bemutatja a cernaorso paradoxont](https://www.youtube.com/watch?v=Fodof4gSIA0&t=8m50s)
+
 ### Peldak
 1. Egy csavarkulcs hossza $30,0cm$. A kulcs vegenel 60N erot fejtunk ki. Mikor nagyobb a forgatonyomatek? Az elso esetben az ero meroleges a csavarkulcsra. A masodik esetben az ero a csavaskulccsal $60\degree$ szoget zar be.
 
@@ -70,3 +74,72 @@ $$
 $$
 
 Mivel $|M_2|$ kisebb, mint $|M_1|$ ezert a teher fele billen a rud.
+
+## A nehezsegi ero forgatonyomateka
+
+Nagyon fontos kerdes, hogy hogyan veheto figyelembe a nehezsegi ero forgatonyomateka? Legyen most is a forgastengely az origoban, a z-tengely. A nehezsegi ero hasson az y-tengellyel ellentetesen, lefele. Ekkor az erokar a x-koordinata lesz.
+
+$$
+M_z = \sum_{i = 1}^{N} -m_igx_i = -Mg\frac {\sum_{i = 1}^{N} m_ix_i} {M} = -Mgx_{TKP}
+$$
+
+A nehezsegi ero tamadaspontja termeszetesen a fuggoleges hatasvonal menten tettszolegesen eltolhato a forgatonyomatek megvaltoztatasa nelkul. 
+
+>**A nehezsegi ero hatasa egyesitheto egyetlen ero hatasaval, melynek nagysaga Mg es tamadaspopntja a test tomegkozeppontja, iranya pedig fuggolegesen lefele mutat.**
+
+Igy peldak megoldasa soran a nehezsegi ero forgatonyomateka konnyen kiszamithato.
+
+### Pelda
+Egy gerenda hossza $6,00m$ tomege $60,0kg$. A vizszintes gerenda ala van tamasztva egyik vegpontjanal, illetve a masik vegponttol $2,00m$ tavolsagra, mely pont korul elfordulhat. Milyen messze setalhat a gerendan a $80kg$ tomegu munkas az elfordulasi ponttol a szabad veg fele, hogy a gerenda epp ne billenjen le? 
+
+Legyen a szabad veg a jobb oldalon. Ekkor a gerenda tomegkozeppontja a forgastengelytol balra, $1,00m$ tavolsagra van. A nyomatek:
+
+$$
+M_{z,1} = -Mgx_{TKP} = -60 \times 9,81 \times 1 = -588,6Nm
+$$
+
+A munkas legyen $x$ tavolsagra a forgasponttol. A nyomatek:
+
+$$
+M_{z,2} = mgx = 80 \times 9,81 x = 784,8x
+$$
+
+A ket kulso nyomatek osszege epp nulla, amikor a gerenda meg nem billen at.
+
+$$
+M_{z,e}^k = M_{z,1} + M_{z,2} = 0
+$$
+
+$$
+-588,6 + 784,8x = 0
+$$
+
+A megoldas:
+
+$$
+x = \frac {588,6} {784,8} = 0,75m
+$$
+
+Tehat a munkas nem mehet az alatamasztasi ponttol tavolabb, mint $0,75m$ a szabad veg fele, annelkul, hogy a gereda le ne billenjen.
+
+### Kiserlet
+
+[Tancolo baba](https://www.youtube.com/shorts/wuvrJnYLCV8)
+
+## Merev test egyensúlyának feltételei
+
+Korábbról tudjuk, hogy tetszőleges pontrendszer egyensúlyához szükséges, hogy a külső erők eredője nulla legyen. Ez, mint a példákból is láthatjuk, nem elég. Az is kell, hogy a külső erők eredő forgatónyomatéka is nulla legyen.
+
+
+$$
+\sum_{i = 1}^{N} \vec {F_i^k} = \vec 0
+$$
+
+
+
+$$
+\sum _{i = 1}^{N} M_{z,i}^k = 0
+$$
+
+
+Az utóbbi feltétel síkmozgásra vonatkozik, amely az x-y síkban történne, ha nem volna egyensúly. A teljes egyensúlyhoz mindhárom tengelyre vonatkozó forgatónyomaték 0 kell legyen a háromdimenziós térben. Az egyensúlyhoz a tengely pozíciója nem lényeges, de iránya igen. Mondhatjuk, hogy háromdimenziós térben a pontrendszer egyensúlyának feltétele, hogy tetszőleges tengelyre vonatkozó forgatónyomaték nulla legyen. Merev testekre ez a két feltétel elegendő is, hisz ezek deformációkat nem szenvedhetnek, csak forgó és haladó mozgás lehetséges.
