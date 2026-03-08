@@ -10,7 +10,7 @@ Foglalkoztunk még tömegpontok rendszerével is, amikor két vagy több tömegp
 
 Ideális merev testek a valóságban nincsenek, hisz bármely szilárd test elegendően nagy erőhatás hatására alakját szemmel láthatóan megváltoztatja. Ilyen változás például autóbaleset esetén a kocsi deformációja, vagy egy rugó elszakadása, ha túlterhelik stb. Sokszor a deformációk kicsik, és a test képes visszanyerni az alakját az erőhatás megszűntével. Ilyen esetre példa a nem túl nagy erővel megfeszített rugó, mely alakját visszanyeri, ha az erőhatás megszűnik. Az ilyen deformációkat rugalmasnak nevezzük, és ezekkel a rugalmasságtan foglalkozik. A merev testeket úgy tekintjük, hogy a fellépő erőhatások olyan kicsinyek, hogy a test deformációi teljesen elhanyagolhatók. 
 
-## A merev mozgasa
+## A merev test mozgása
 
 A merev test alakját tehát a mozgás során nem változtatja meg, így elmozdulása minden esetben összetevődik egy eltolás és egy elforgatás egymásutánjaként. Tehát a merev test haladó mozgáson kívül forgómozgást is képes végezni. 
 
@@ -24,122 +24,150 @@ Gondoljunk például egy kerék gördülésére, amikor a kerék egyenes vonalon
 
 Síkmozgás esetén a test helyzetét két pontjának koordinátái meghatározzák. Itt a két pont távolsága nem változik, tehát csak 3 független adat kell. Lehet ez mondjuk a tömegközéppont 2 koordinátája a síkban és a test elfordulási szöge a síkban. Kerék esetében például a középpont általában a tömegközéppont is egyben, és a kerék még az ezen a ponton áthaladó, a mozgás síkjára merőleges képzeletbeli tengely körül el is fordul gördülése során. Az elfordulási szög, mint látni fogjuk, előjeles szám. Ha a test az óramutató járásával ellenkező irányban fordult el a síkban, akkor az elfordulási szög pozitív, ellenkező esetben negatív.
 
-## A forgatonyomatek
-Mi az ero megfeleloje forgomozgas eseten, ami felelos a forgas gyorsitasaert vagy epp lassitasaert? Ez a mennyiseg a forgatonyomatek.
+## A forgatónyomaték
+Mi az erő megfelelője forgómozgás esetén, ami felelős a forgás gyorsításáért vagy épp lassításáért? Ez a mennyiség a forgatónyomaték.
 
-Itt nehany fogalmat kell megbeszeljunk: 
+Itt néhány fogalmat kell megbeszélnünk: 
 
->**Az ero tamadaspontja az a pont, ahol az ero a testre hatasat kifejti.**
+>**Az erő támadáspontja az a pont, ahol az erő a testre hatását kifejti.**
 
->**Az ero hatasvonala az az egyenes, mely a tamadasponton halad at es az ero vektor iranyaval parhuzamos.**
+>**Az erő hatásvonala az az egyenes, mely a támadásponton halad át és az erővektor irányával párhuzamos.**
 
->**Az erokar az ero hatasvonalanak a forgastengelytol mert tavolsaga.**
+>**Az erőkar az erő hatásvonalának a forgástengelytől mért távolsága.**
 
-Ezekutan konnyen megfogalmazhatjuk a forgatonyomatek definiciojat is.
+Ezek után könnyen megfogalmazhatjuk a forgatónyomaték definícióját is.
 
->**Az ero forgatonyomateka az ero es az erokar szorzata.**
+>**Az erő forgatónyomatéka az erő és az erőkar szorzata.**
 
-$$
-M = Fk = Frsin \alpha
-$$
-
-Itt $\alpha$ az a $180\degree$-nal nem nagyobb szog, melyet az ero vektor bezar az tamadaspont helyvektoraval, ha az origo a forgastengely. A szog elojeles forgasszog. Amenniben az ero pozitiv iranyba forgat, tehat az oramutato jarasaval ellentetes ertelemben, akkor a szoget pozitivnak, ellenkezo esetben negativnak tekintjuk. Igy a forgatonyomatek is elojeles szam, hiszen az ilyen szogekre a szinusz fuggveny ugyanolyan elojelu, mint a szog.
-
-### Kiserlet
-
-[Sas Elemer bemutatja a cernaorso paradoxont](https://www.youtube.com/watch?v=Fodof4gSIA0&t=8m50s)
-
-### Peldak
-1. Egy csavarkulcs hossza $30,0cm$. A kulcs vegenel 60N erot fejtunk ki. Mikor nagyobb a forgatonyomatek? Az elso esetben az ero meroleges a csavarkulcsra. A masodik esetben az ero a csavaskulccsal $60\degree$ szoget zar be.
 
 $$
-M_1 = Frsin \alpha = 60 \times 0,3 \times sin (90\degree) = 18Nm
+M = Fk = Fr \sin \alpha
 $$
 
-$$
-M_2 = Frsin \alpha = 60 \times 0,3 \times sin (60\degree) = 15,58Nm
-$$
 
-Tehat a masodik esetben kisebb a forgatonyomatek, vagyis az ero forgato hatasa.
+Itt $\alpha$ az a $180\degree$-nál nem nagyobb szög, melyet az erővektor bezár a támadáspont helyvektorával, ha az origó a forgástengely. A szög előjeles forgásszög. Amennyiben az erő pozitív irányba forgat, tehát az óramutató járásával ellentetes értelemben, akkor a szöget pozitívnak, ellenkező esetben negatívnak tekintjük. Így a forgatónyomaték is előjeles szám, hiszen az ilyen szögekre a szinuszfüggvény ugyanolyan előjelű, mint a szög.
 
-2. Egy emelo rudja vizszintesen all. A forgastengelytol $2,00m$-re van rahelyezve $20kg$ suly. A forgastengely masik oldalan a rudat fuggolegesen lefele nyomjuk $3,00m$ tavolsagra a tengelytol $130N$ erovel. A nehezsegi gyorsulas $9,81 \frac {m} {s^2}$
-Mekkorak a rudra hato forgatonyomatekok es merre billen a rud?
+![Forgatónyomaték](Kepek/forgatonyomatek.svg)
 
-$$
-|M_1| = F_1k_1 = mgr_1 = 20 \times 9,81 \times 2 = 392,4Nm
-$$
+### Kísérlet
 
-$$
-|M_2| = F_2k_2 = F_2r_2 = 130 \times 3 = 390,0Nm
-$$
+[Sas Elemér bemutatja a cérnaorsó paradoxont](https://www.youtube.com/watch?v=Fodof4gSIA0&t=8m50s)
 
-Mivel $|M_2|$ kisebb, mint $|M_1|$ ezert a teher fele billen a rud.
+### Példák
+1. Egy csavarkulcs hossza $30,0 \text{ cm}$. A kulcs végénél $60 \text{ N}$ erőt fejtünk ki. Mikor nagyobb a forgatónyomaték? Az első esetben az erő merőleges a csavarkulcsra. A második esetben az erő a csavarkulccsal $60\degree$ szöget zár be.
 
-## A nehezsegi ero forgatonyomateka
-
-Nagyon fontos kerdes, hogy hogyan veheto figyelembe a nehezsegi ero forgatonyomateka? Legyen most is a forgastengely az origoban, a z-tengely. A nehezsegi ero hasson az y-tengellyel ellentetesen, lefele. Ekkor az erokar a x-koordinata lesz.
 
 $$
-M_z = \sum_{i = 1}^{N} -m_igx_i = -Mg\frac {\sum_{i = 1}^{N} m_ix_i} {M} = -Mgx_{TKP}
+M_1 = Fr \sin \alpha = 60 \times 0,3 \times \sin (90\degree) = 18 \text{ Nm}
 $$
 
-A nehezsegi ero tamadaspontja termeszetesen a fuggoleges hatasvonal menten tettszolegesen eltolhato a forgatonyomatek megvaltoztatasa nelkul. 
 
->**A nehezsegi ero hatasa egyesitheto egyetlen ero hatasaval, melynek nagysaga Mg es tamadaspopntja a test tomegkozeppontja, iranya pedig fuggolegesen lefele mutat.**
-
-Igy peldak megoldasa soran a nehezsegi ero forgatonyomateka konnyen kiszamithato.
-
-### Pelda
-Egy gerenda hossza $6,00m$ tomege $60,0kg$. A vizszintes gerenda ala van tamasztva egyik vegpontjanal, illetve a masik vegponttol $2,00m$ tavolsagra, mely pont korul elfordulhat. Milyen messze setalhat a gerendan a $80kg$ tomegu munkas az elfordulasi ponttol a szabad veg fele, hogy a gerenda epp ne billenjen le? 
-
-Legyen a szabad veg a jobb oldalon. Ekkor a gerenda tomegkozeppontja a forgastengelytol balra, $1,00m$ tavolsagra van. A nyomatek:
 
 $$
-M_{z,1} = -Mgx_{TKP} = -60 \times 9,81 \times 1 = -588,6Nm
+M_2 = Fr \sin \alpha = 60 \times 0,3 \times \sin (60\degree) = 15,58 \text{ Nm}
 $$
 
-A munkas legyen $x$ tavolsagra a forgasponttol. A nyomatek:
+
+Tehát a második esetben kisebb a forgatónyomaték, vagyis az erő forgató hatása.
+
+2. Egy emelő rúdja vízszintesen áll. A forgástengelytől $2,00 \text{ m}$-re van ráhelyezve $20 \text{ kg}$ súly. A forgástengely másik oldalán a rudat függőlegesen lefelé nyomjuk $3,00 \text{ m}$ távolságra a tengelytől $130 \text{ N}$ erővel. A nehézségi gyorsulás $9,81 \frac{\text{m}}{\text{s}^2}$.
+Mekkorák a rúdra ható forgatónyomatékok és merre billen a rúd?
+
 
 $$
-M_{z,2} = mgx = 80 \times 9,81 x = 784,8x
+|M_1| = F_1 k_1 = m g r_1 = 20 \times 9,81 \times 2 = 392,4 \text{ Nm}
 $$
 
-A ket kulso nyomatek osszege epp nulla, amikor a gerenda meg nem billen at.
+
+
+$$
+|M_2| = F_2 k_2 = F_2 r_2 = 130 \times 3 = 390,0 \text{ Nm}
+$$
+
+
+Mivel $|M_2|$ kisebb, mint $|M_1|$, ezért a teher felé billen a rúd.
+
+## A nehézségi erő forgatónyomatéka
+
+Nagyon fontos kérdés, hogy hogyan vehető figyelembe a nehézségi erő forgatónyomatéka? Legyen most is a forgástengely az origóban, a z-tengely. A nehézségi erő hasson az y-tengellyel ellentétesen, lefelé. Ekkor az erőkar az x-koordináta lesz.
+
+
+$$
+M_z = \sum_{i = 1}^{N} -m_i g x_i = -Mg \frac{\sum_{i = 1}^{N} m_i x_i}{M} = -Mg x_{TKP}
+$$
+
+
+A nehézségi erő támadáspontja természetesen a függőleges hatásvonal mentén tetszőlegesen eltolható a forgatónyomaték megváltoztatása nélkül. 
+
+>**A nehézségi erő hatása egyesíthető egyetlen erő hatásával, melynek nagysága Mg és támadáspontja a test tömegközéppontja, iránya pedig függőlegesen lefelé mutat.**
+
+Így példák megoldása során a nehézségi erő forgatónyomatéka könnyen kiszámítható.
+
+### Példa
+Egy gerenda hossza $6,00 \text{ m}$, tömege $60,0 \text{ kg}$. A vízszintes gerenda alá van támasztva egyik végpontjánál, illetve a másik végponttól $2,00 \text{ m}$ távolságra, mely pont körül elfordulhat. Milyen messze sétálhat a gerendán a $80 \text{ kg}$ tömegű munkás az elfordulási ponttól a szabad vég felé, hogy a gerenda épp ne billenjen le? 
+
+Legyen a szabad vég a jobb oldalon. Ekkor a gerenda tömegközéppontja a forgástengelytől balra, $1,00 \text{ m}$ távolságra van. Mivel ez az oldal "lefelé", azaz az óramutató járásával ellentétes irányba forgatna, a nyomaték pozitív:
+
+
+$$
+M_{z,1} = -Mg x_{TKP} = -60 \times 9,81 \times (-1) = 588,6 \text{ Nm}
+$$
+
+
+A munkás legyen $x$ távolságra a forgásponttól a jobb oldalon. Mivel ő az óramutató járásával megegyező irányba forgatna, a nyomaték negatív:
+
+
+$$
+M_{z,2} = -mgx = -80 \times 9,81 \times x = -784,8x \text{ Nm}
+$$
+
+
+A két külső nyomaték összege épp nulla, amikor a gerenda még nem billen át.
+
 
 $$
 M_{z,e}^k = M_{z,1} + M_{z,2} = 0
 $$
 
-$$
--588,6 + 784,8x = 0
-$$
 
-A megoldas:
 
 $$
-x = \frac {588,6} {784,8} = 0,75m
+588,6 - 784,8x = 0
 $$
 
-Tehat a munkas nem mehet az alatamasztasi ponttol tavolabb, mint $0,75m$ a szabad veg fele, annelkul, hogy a gereda le ne billenjen.
 
-### Kiserlet
+A megoldás:
 
-[Tancolo baba](https://www.youtube.com/shorts/wuvrJnYLCV8)
+
+$$
+x = \frac{588,6}{784,8} = 0,75 \text{ m}
+$$
+
+
+Tehát a munkás nem mehet az alátámasztási ponttól távolabb, mint $0,75 \text{ m}$ a szabad vég felé, anélkül, hogy a gerenda le ne billenjen.
+
+### Kísérlet
+
+[Táncoló baba](https://www.youtube.com/shorts/wuvrJnYLCV8)
 
 ## Merev test egyensúlyának feltételei
 
 Korábbról tudjuk, hogy tetszőleges pontrendszer egyensúlyához szükséges, hogy a külső erők eredője nulla legyen. Ez, mint a példákból is láthatjuk, nem elég. Az is kell, hogy a külső erők eredő forgatónyomatéka is nulla legyen.
 
 
+
 $$
-\sum_{i = 1}^{N} \vec {F_i^k} = \vec 0
+\sum_{i = 1}^{N} \vec{F_i^k} = \vec{0}
 $$
+
+
 
 
 
 $$
 \sum _{i = 1}^{N} M_{z,i}^k = 0
 $$
+
 
 
 Az utóbbi feltétel síkmozgásra vonatkozik, amely az x-y síkban történne, ha nem volna egyensúly. A teljes egyensúlyhoz mindhárom tengelyre vonatkozó forgatónyomaték 0 kell legyen a háromdimenziós térben. Az egyensúlyhoz a tengely pozíciója nem lényeges, de iránya igen. Mondhatjuk, hogy háromdimenziós térben a pontrendszer egyensúlyának feltétele, hogy tetszőleges tengelyre vonatkozó forgatónyomaték nulla legyen. Merev testekre ez a két feltétel elegendő is, hisz ezek deformációkat nem szenvedhetnek, csak forgó és haladó mozgás lehetséges.
