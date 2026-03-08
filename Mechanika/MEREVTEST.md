@@ -171,3 +171,13 @@ $$
 
 
 Az utóbbi feltétel síkmozgásra vonatkozik, amely az x-y síkban történne, ha nem volna egyensúly. A teljes egyensúlyhoz mindhárom tengelyre vonatkozó forgatónyomaték 0 kell legyen a háromdimenziós térben. Az egyensúlyhoz a tengely pozíciója nem lényeges, de iránya igen. Mondhatjuk, hogy háromdimenziós térben a pontrendszer egyensúlyának feltétele, hogy tetszőleges tengelyre vonatkozó forgatónyomaték nulla legyen. Merev testekre ez a két feltétel elegendő is, hisz ezek deformációkat nem szenvedhetnek, csak forgó és haladó mozgás lehetséges.
+
+## Gyakorló feladatok
+
+1.  **A létra problémája:** Egy $4,0 \text{ m}$ hosszú, $10 \text{ kg}$ tömegű létra a sima (súrlódásmentes) függőleges falnak támaszkodik. A létra alja $1,5 \text{ m}$ távolságra van a faltól a vízszintes talajon. A talaj nem sima, ott van súrlódás. Mekkora erővel nyomja a létra a falat, és mekkora a függőleges nyomóerő, illetve a vízszintes súrlódási erő a létra aljánál, ha a létra egyensúlyban van? (Tipp: írjuk fel a nyomatéki egyenletet a létra alsó pontjára, majd az erőegyensúlyokat x és y irányban!)
+2.  **Híd alátámasztása:** Egy $20,0 \text{ m}$ hosszú, egyenletes tömegeloszlású híd tömege $10 \text{ t}$. A hidat a két végpontjánál (A és B pont) támasztják alá. A hídon megáll egy $5,0 \text{ t}$ tömegű teherautó úgy, hogy a tömegközéppontja az "A" alátámasztástól $5,0 \text{ m}$ távolságra van. Számítsuk ki, mekkora $F_A$ és $F_B$ tartóerő (reakcióerő) ébred a két alátámasztásnál!
+3.  **Cégtábla:** Egy üzlet bejárata felett egy $2,0 \text{ m}$ hosszú, $8,0 \text{ kg}$ tömegű, vízszintes rúdra van rögzítve a cégtábla. A rúd egyik vége a falhoz van csuklósan rögzítve, a másik végét egy kötél tartja, amely a fallal $30^\circ$-os szöget zár be (felfelé). A cégtábla tömege $12 \text{ kg}$ és a rúd szabad végén lóg. Mekkora erő feszíti a kötelet?
+4.  **Toronydaru:** Egy toronydaru vízszintes gémje aszimmetrikus. A forgástengelytől az egyik irányba $15 \text{ m}$ hosszú a kar (ellensúly oldala), a másik irányba $45 \text{ m}$ (teher oldala). A gém teljes tömege $3 \text{ t}$, súlypontja a tengelyben van (így nem forgat). Az ellensúly tömege $5 \text{ t}$ és a tengelytől $12 \text{ m}$-re helyezték el. Mekkora tömegű terhet emelhetünk fel a gém végén ($45 \text{ m}$-re), hogy a daru még éppen ne billenjen ki az egyensúlyából?
+5.  **Talicska:** Egy talicska teljes hossza a kerék tengelyétől a fogantyú végéig $1,5 \text{ m}$. A megrakott talicska súlypontja a kerék tengelyétől $0,5 \text{ m}$ távolságra van. A teher és a talicska együttes tömege $60 \text{ kg}$. 
+    *   a) Mekkora függőleges erővel kell emelnünk a fogantyút az egyensúly fenntartásához? 
+    *   b) Mekkora erő terheli eközben a talicska kerekének tengelyét?
