@@ -116,5 +116,6 @@ $$
 M_{z,e}^k = \Theta \beta
 $$
 
-Ez a forgomozgas alapegyenlete, mely ervenyes tobbek kozt a merev test rogzitett tengely koruli forgasara.
+Ez a forgomozgas alapegyenlete, mely ervenyes tobbek kozt a merev test rogzitett tengely koruli forgasara. 
+$$
 
