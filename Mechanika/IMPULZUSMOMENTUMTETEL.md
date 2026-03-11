@@ -67,8 +67,16 @@ Ket demonstraciot lathatunk.
 
 Mindket kiserlet az impulzusmomentum megmaradasaval ertelmezheto. Egyik sem esik szigoruan a levezetesunk hatalya ala, a masodik eset az atforditaskor nem is tekintheto sikmozgasnak sem. Ezek a demonstraciok azt mutatjak, hogy a tetel altalanosan ervenyes pontrendszerek eseten. Mi ugyan az impulzusmomentumot elojeles mennyisegnek tekintjuk, ez igazabol vektor, melynek mi csak a z-komponensevel foglalkozunk a merev test sikmozgasa eseten.
 
-### Pelda
-Egy csapagyazott rud fuggoleges sikban kepes forogni a felso vegpontja korul. A surlodastol es a legellenallastol eltekinthetunk. A rud hossza $1,20m$, tomege $0,800kg$. A rud szabad vegere erositettek egy $0,500kg$ tomegu, pontszerunek tekintheto testet. Mekkora a rendszer tehetetlensegi nyomateka? Egy vizszintesen mozgo $20,0g$ tomegu lovedek a forgas iranyaban talalja el a rudat a tengelytol $0,900m$ tavolsagra $250 \frac {m} {s}$ sebesseggel. Az utkozes tokeletesen rugalmatlan, tehat utkozes utan a rud es a lovedek egyutt mozognak. Mekkora a tengelyre vonatkozo impulzusmomentum az utkozes elotti pillanatban? Mekkora az utkozest kozvetlenul koveto pillanatban? Megmarado mennyiseg-e a lendulet az utkozes soran? Mekkora a szogsebesseg az utkozes utani pillanatban? Mekkora szogben ter ki a rud?
+### Peldak
+1. A bolygok mozgasanal Kepler masodik torvenye is egy peldaja az impulzusmomentum tetelenek. Ez ugyan sikmozgas, de a bolygo nem vegez kormaozgast, tavolsaga valtozik a Naptol, melyen a forgastengely megy keresztul merolegesen a bolygomozgas sikjara. 
+
+$$
+N_z = \sum_{i = 1}^{1} m_iv_isin \alpha_i = m_1v_1sin \alpha_1 = 2m_1 \frac {T_{ellipszis}} {T}
+$$
+
+Tehat az impulzusmomentum a teruleti sebesseg $2m$-szerese, amennyiben $m = m_1$ a bolygo tomege. A teruleti sebessegrol bebizonyitottuk, hogy allando, tehat az impulzusmomentum is az, ahogy ennek lennie is kell, hiszen a gravitacios ero hatasvonala atmegy a Napon, tehat a forgastengelyen. 
+
+2. Egy csapagyazott rud fuggoleges sikban kepes forogni a felso vegpontja korul. A surlodastol es a legellenallastol eltekinthetunk. A rud hossza $1,20m$, tomege $0,800kg$. A rud szabad vegere erositettek egy $0,500kg$ tomegu, pontszerunek tekintheto testet. Mekkora a rendszer tehetetlensegi nyomateka? Egy vizszintesen mozgo $20,0g$ tomegu lovedek a forgas iranyaban talalja el a rudat a tengelytol $0,900m$ tavolsagra $250 \frac {m} {s}$ sebesseggel. Az utkozes tokeletesen rugalmatlan, tehat utkozes utan a rud es a lovedek egyutt mozognak. Mekkora a tengelyre vonatkozo impulzusmomentum az utkozes elotti pillanatban? Mekkora az utkozest kozvetlenul koveto pillanatban? Megmarado mennyiseg-e a lendulet az utkozes soran? Mekkora a szogsebesseg az utkozes utani pillanatban? Mekkora szogben ter ki a rud?
 
 $$
 \Theta_{rud} = \frac {1} {3} Ml^2 = \frac {1} {3} \times 0,8 \times 1,2^2 = 0,384 kgm^2
@@ -175,3 +183,5 @@ $$
 $$
 \phi = 80,74\degree
 $$
+
+## Feladatok
