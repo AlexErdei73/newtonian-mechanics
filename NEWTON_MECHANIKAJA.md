@@ -63,7 +63,8 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	47. [Merev testek es egyensúlyuk](Mechanika/MEREVTEST.md)
 	48. [Az impulzusmomentum](Mechanika/IMPULZUSMOMENTUM.md)
 	49. [A tehetetlenségi nyomaték](Mechanika/TEHETETLENSEGINYOMATEK.md)
-	50. [Az impulzusmomentum tetele](Mechanika/IMPULZUSMOMENTUMTETEL.md)
+	50. [Az impulzusmomentum tétele](Mechanika/IMPULZUSMOMENTUMTETEL.md)
+	51. [A forgomozgás alapegyenlete](Mechanika/FORGOMOZGASALAPEGYENLETE.md)
 
 
 	
