@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 550">
+  <defs>
+    <!-- Nyílhegyek definíciói -->
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1F618D" />
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#27AE60" />
+    </marker>
+    <marker id="arrow-purple" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#8E44AD" />
+    </marker>
+  </defs>
+
+  <!-- Fehér háttér -->
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <!-- Cím -->
+  <text x="425" y="40" text-anchor="middle" font-size="22" font-family="sans-serif" font-weight="bold" fill="#2C3E50">
+    1. Példa: Vízszintes talajon tisztán gördülő kerék
+  </text>
+
+  <!-- ================= HÁTTÉR ÉS TALAJ ================= -->
+  
+  <rect x="0" y="400" width="850" height="150" fill="#ECF0F1" />
+  <line x1="0" y1="400" x2="850" y2="400" stroke="#7F8C8D" stroke-width="4" />
+  
+  <path d="M 50 400 L 20 430 M 100 400 L 70 430 M 150 400 L 120 430 M 200 400 L 170 430 M 250 400 L 220 430 M 300 400 L 270 430 M 350 400 L 320 430 M 400 400 L 370 430 M 450 400 L 420 430 M 500 400 L 470 430 M 550 400 L 520 430 M 600 400 L 570 430 M 650 400 L 620 430 M 700 400 L 670 430 M 750 400 L 720 430 M 800 400 L 770 430 M 850 400 L 820 430" stroke="#BDC3C7" stroke-width="2" />
+
+  <line x1="425" y1="70" x2="425" y2="430" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="10,5" />
+
+  <!-- ================= KERÉK (KÉK TEST) ================= -->
+  
+  <circle cx="425" cy="250" r="150" fill="#D4E6F1" stroke="#2980B9" stroke-width="4" />
+  <circle cx="425" cy="250" r="110" fill="#EAF2F8" stroke="#2980B9" stroke-width="2" stroke-dasharray="12,8" />
+  
+  <!-- Kerék sugara (r) -->
+  <line x1="425" y1="250" x2="318.9" y2="143.9" stroke="#34495E" stroke-width="2" stroke-dasharray="5,4" />
+  <text x="355" y="185" fill="#34495E" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="18">r</text>
+
+  <!-- ================= FIZIKAI PONTOK ================= -->
+  
+  <circle cx="425" cy="250" r="6" fill="#1F618D" />
+  <text x="415" y="235" text-anchor="end" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-size="14">TKP</text>
+
+  <circle cx="425" cy="400" r="6" fill="#1F618D" />
+  <text x="435" y="425" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-size="14">Pillanatnyi forgástengely (v=0)</text>
+
+  <!-- ================= ERŐK ================= -->
+  
+  <!-- Húzóerő (F) -->
+  <line x1="425" y1="250" x2="600" y2="250" stroke="#1F618D" stroke-width="4" marker-end="url(#arrow-blue)" />
+  <text x="580" y="235" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="20">F = 5 N</text>
+
+  <!-- Tapadási súrlódási erő (F_t) -->
+  <line x1="425" y1="400" x2="310" y2="400" stroke="#1F618D" stroke-width="4" marker-end="url(#arrow-blue)" />
+  <text x="275" y="390" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="18">F<tspan font-size="12" baseline-shift="sub">t</tspan></text>
+
+  <!-- Gravitációs erő (mg) - Hossz: 70 -->
+  <line x1="425" y1="250" x2="425" y2="320" stroke="#1F618D" stroke-width="3" marker-end="url(#arrow-blue)" />
+  <text x="435" y="310" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="16">mg</text>
+
+  <!-- Talaj nyomóereje (N) - Hossz: 70 -->
+  <line x1="425" y1="400" x2="425" y2="330" stroke="#1F618D" stroke-width="3" marker-end="url(#arrow-blue)" />
+  <text x="400" y="340" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="16">N</text>
+
+  <!-- ================= KINEMATIKAI VEKTOROK ================= -->
+  
+  <!-- Haladó mozgás gyorsulása (a) -->
+  <line x1="425" y1="70" x2="550" y2="70" stroke="#27AE60" stroke-width="4" marker-end="url(#arrow-green)" />
+  <text x="480" y="55" fill="#27AE60" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="20">a<tspan font-size="14" baseline-shift="sub">TKP</tspan></text>
+
+  <!-- Szöggyorsulás / Szögsebesség (β, ω) - Most már egy TÖKÉLETES koncentrikus körív! -->
+  <path d="M 330 100 A 180 180 0 0 1 520 100" fill="none" stroke="#8E44AD" stroke-width="4" marker-end="url(#arrow-purple)" />
+  <text x="535" y="90" fill="#8E44AD" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="20">β, ω</text>
+
+  <!-- ================= KÉPLET ÖSSZEFOGLALÓ ================= -->
+  
+  <rect x="580" y="415" width="250" height="120" rx="5" fill="#FDFEFE" stroke="#BDC3C7" stroke-width="2" />
+  <text x="705" y="440" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2C3E50" font-weight="bold">Fizikai összefüggések:</text>
+  
+  <text x="600" y="465" font-family="sans-serif" font-size="15" fill="#2C3E50">
+    <tspan font-style="italic" font-weight="bold" fill="#27AE60">a</tspan> = r · <tspan font-style="italic" font-weight="bold" fill="#8E44AD">β</tspan>
+  </text>
+  
+  <text x="600" y="490" font-family="sans-serif" font-size="15" fill="#2C3E50">
+    M<tspan font-size="10" baseline-shift="sub">P</tspan> = <tspan font-style="italic" font-weight="bold" fill="#1F618D">F</tspan> · r = Θ<tspan font-size="10" baseline-shift="sub">P</tspan> · <tspan font-style="italic" font-weight="bold" fill="#8E44AD">β</tspan>
+  </text>
+  
+  <text x="600" y="515" font-family="sans-serif" font-size="15" fill="#2C3E50">
+    Θ<tspan font-size="10" baseline-shift="sub">P</tspan> = Θ<tspan font-size="10" baseline-shift="sub">TKP</tspan> + mr²
+  </text>
+
+</svg>

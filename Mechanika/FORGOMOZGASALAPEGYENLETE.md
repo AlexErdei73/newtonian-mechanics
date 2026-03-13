@@ -5,18 +5,18 @@ A merev test forgását fogjuk leírni rögzített tengely körül, mely ismét 
 
 
 $$
-\beta = \frac {\omega - \omega_0} {t}
+\beta = \frac{\omega - \omega_0}{t}
 $$
 
 
->**Az időegységre eső szögsebesség-változás neve szöggyorsulás. A szöggyorsulás előjeles mennyiség, jele $\beta$, egysége $\frac {1} {s^2}$.**
+>**Az időegységre eső szögsebesség-változás neve szöggyorsulás. A szöggyorsulás előjeles mennyiség, jele $\beta$, egysége $\frac{1}{\mathrm{s}^2}$.**
 
 ## A forgómozgás alapegyenlete
 Az impulzusnyomaték tétele szerint írhatjuk az alábbi összefüggést:
 
 
 $$
-M_{z,e}^k = \frac {N_z - N_{z,0}} {t}
+M_{z,e}^k = \frac{N_z - N_{z,0}}{t}
 $$
 
 
@@ -30,7 +30,7 @@ Ezt beírva az előző egyenletbe azt kapjuk, hogy:
 
 
 $$
-M_{z,e}^k = \frac {\Theta \omega - \Theta \omega_0} {t} = \Theta \frac {\omega - \omega_0} {t}
+M_{z,e}^k = \frac{\Theta \omega - \Theta \omega_0}{t} = \Theta \frac{\omega - \omega_0}{t}
 $$
 
 
@@ -51,24 +51,26 @@ Itt a forgatónyomatékokat és a tehetetlenségi nyomatékot a forgástengelyre
 [Körlap alakú test tehetetlenségi nyomatékának mérése](https://www.youtube.com/watch?v=O4PSeSuyKZU)
 
 ### Példa
-Egy körlap alakú test függőleges tengely körül foroghat. Egy kis csigát erősítünk hozzá úgy, hogy a csiga és a körlap ugyanazon függőleges tengely körül forogjon. A csigára fonalat tekerünk, melyet egy másik kis csigán átvetünk úgy, hogy egy függőlegesen süllyedő test húzhassa a fonalat. A süllyedő test tömege $0,1\, \text{kg}$, $0,86\, \text{m}$ magasból, álló helyzetből indulva talajt ér $5,04\, \text{s}$ alatt. A csigák tömege elhanyagolható, akárcsak a súrlódás. 
+Egy körlap alakú test függőleges tengely körül foroghat. Egy kis csigát erősítünk hozzá úgy, hogy a csiga és a körlap ugyanazon függőleges tengely körül forogjon. A csigára fonalat tekerünk, melyet egy másik kis csigán átvetünk úgy, hogy egy függőlegesen süllyedő test húzhassa a fonalat. A süllyedő test tömege $0{,}1$ kg, $0{,}86$ m magasból, álló helyzetből indulva talajt ér $5{,}04$ s alatt. A csigák tömege elhanyagolható, akárcsak a súrlódás. 
 - Mekkora a süllyedő test gyorsulása?
 - Mekkora a fonalat feszítő erő?
-- Mekkora a forgatónyomaték, mely a körlap alakú test forgását gyorsítja? A csiga sugara $2,75\, \text{cm} = 0,0275\, \text{m}$.
+- Mekkora a forgatónyomaték, mely a körlap alakú test forgását gyorsítja? A csiga sugara $2{,}75$ cm, azaz $0{,}0275$ m.
 - Mekkora a szöggyorsulás?
 - Számítsuk ki a tehetetlenségi nyomatékot a forgó körlap alakú testre a forgómozgás alapegyenletéből!
+
+![Tehetetlenségi nyomaték mérése a forgomozgás alapegyenlete alapján](Kepek/tehetetlenseginyomatekmerese.svg)
 
 A test nyugvó helyzetből indul, tehát érvényes az alábbi összefüggés:
 
 
 $$
-s = \frac {a} {2} t^2
+s = \frac{a}{2} t^2
 $$
 
 
 
 $$
-a = \frac {2s} {t^2} = \frac {2 \times 0,86} {5,04^2} = 0,0677\, \frac {\text{m}} {\text{s}^2}
+a = \frac{2s}{t^2} = \frac{2 \cdot 0{,}86}{5{,}04^2} = 0{,}0677 \mathrm{\frac{m}{s^2}}
 $$
 
 
@@ -84,7 +86,7 @@ Innen a fonalat feszítő erő kifejezhető:
 
 
 $$
-K = mg - ma = 0,1 \times 9,81 - 0,1 \times 0,0677 = 0,974\, \text{N}
+K = mg - ma = 0{,}1 \cdot 9{,}81 - 0{,}1 \cdot 0{,}0677 = 0{,}974 \mathrm{N}
 $$
 
 
@@ -92,7 +94,7 @@ A forgatónyomaték kiszámítása esetünkben a következő:
 
 
 $$
-M_z = Kr = 0,974 \times 0,0275 = 0,0268\, \text{Nm}
+M_z = Kr = 0{,}974 \cdot 0{,}0275 = 0{,}0268 \mathrm{Nm}
 $$
 
 
@@ -106,7 +108,7 @@ $$
 
 
 $$
-a = \frac {v - v_0} {t} = \frac {r\omega - r\omega_0} {t} = r \frac {\omega - \omega_0} {t}
+a = \frac{v - v_0}{t} = \frac{r\omega - r\omega_0}{t} = r \frac{\omega - \omega_0}{t}
 $$
 
 
@@ -122,7 +124,7 @@ Ez igen fontos összefüggés. A csiga peremének pontjaira vonatkozik, melyek k
 
 
 $$
-\beta = \frac {a} {r} = \frac {0,0677} {0,0275} = 2,46\, \frac {1} {\text{s}^2}
+\beta = \frac{a}{r} = \frac{0{,}0677}{0{,}0275} = 2{,}46 \mathrm{\frac{1}{s^2}}
 $$
 
 
@@ -138,7 +140,7 @@ Ez azt jelenti, hogy a tehetetlenségi nyomaték kiszámítható:
 
 
 $$
-\Theta = \frac {M_z} {\beta} = \frac {0,0268} {2,46} = 0,0109\, \text{kgm}^2 \approx 0,011\, \text{kgm}^2
+\Theta = \frac{M_z}{\beta} = \frac{0{,}0268}{2{,}46} = 0{,}0109 \mathrm{kg \cdot m^2} \approx 0{,}011 \mathrm{kg \cdot m^2}
 $$
 
 
@@ -157,7 +159,7 @@ Illetve a gyorsulásra írhatjuk a következő összefüggést:
 
 
 $$
-a_{TKP} = \frac {v_{TKP} - v_{TKP,0}} {t} = r_{TKP} \frac {\omega - \omega_0} {t}
+a_{TKP} = \frac{v_{TKP} - v_{TKP,0}}{t} = r_{TKP} \frac{\omega - \omega_0}{t}
 $$
 
 
@@ -170,9 +172,11 @@ $$
 
 
 ### Példák
-1. Egy kereket vízszintesen húzunk a középpontjában $5\, \text{N}$ erővel, aminek hatására tisztán gördül egyenes vonalban a vízszintes talajon, gyorsulva. A kerék tehetetlenségi nyomatéka $0,2\, \text{kgm}^2$ a középpontjára vonatkozólag, mely egyben a tömegközéppontja is, tömege pedig $1\, \text{kg}$. A kerék sugara $0,5\, \text{m}$.
+1. Egy kereket vízszintesen húzunk a középpontjában $5$ N erővel, aminek hatására tisztán gördül egyenes vonalban a vízszintes talajon, gyorsulva. A kerék tehetetlenségi nyomatéka $0{,}2$ $\mathrm{kg \cdot m^2}$ a középpontjára vonatkozólag, mely egyben a tömegközéppontja is, tömege pedig $1$ kg. A kerék sugara $0{,}5$ m.
 - Mekkora a kerék gyorsulása?
 - Mekkora a tapadási erő, ha a kerék tisztán gördül?
+
+![Kerék gördülése vizszintes talajon](Kepek/kerekgordulesevizszintesen.svg)
 
 Írjuk fel a forgómozgás alapegyenletét a pillanatnyi forgástengelyre vonatkozólag!
 
@@ -194,7 +198,7 @@ Itt $r$ a középpont távolsága a pillanatnyi forgástengelytől, tehát a ker
 
 
 $$
-a = r \beta \implies \beta = \frac {a} {r}
+a = r \beta \implies \beta = \frac{a}{r}
 $$
 
 
@@ -210,7 +214,7 @@ Mindezeket behelyettesítve kapjuk az alábbi összefüggést:
 
 
 $$
-Fr = (\Theta_{TKP} + mr^2) \frac {a} {r}
+Fr = (\Theta_{TKP} + mr^2) \frac{a}{r}
 $$
 
 
@@ -218,7 +222,7 @@ Innen $a$-t kifejezzük:
 
 
 $$
-a = \frac {Fr^2} {\Theta_{TKP} + mr^2} = \frac {F/m} {1 + \frac {\Theta_{TKP}} {mr^2}}
+a = \frac{Fr^2}{\Theta_{TKP} + mr^2} = \frac{F/m}{1 + \frac{\Theta_{TKP}}{mr^2}}
 $$
 
 
@@ -226,7 +230,7 @@ Látjuk, hogy ha $\Theta_{TKP} \ll mr^2$, akkor visszakapjuk a haladó mozgás g
 
 
 $$
-a = \frac {5/1} {1 + 0,2 / (1 \times 0,5^2)} = 2,778\, \frac {\text{m}} {\text{s}^2}
+a = \frac{5/1}{1 + 0{,}2 / (1 \cdot 0{,}5^2)} = 2{,}778 \mathrm{\frac{m}{s^2}}
 $$
 
 
@@ -240,23 +244,25 @@ $$
 
 
 $$
-F_t = F - ma = F - \frac {F} {1 + \frac {\Theta_{TKP}} {mr^2}} = F \frac {\frac {\Theta_{TKP}} {mr^2}} {1 + \frac {\Theta_{TKP}} {mr^2}}
+F_t = F - ma = F - \frac{F}{1 + \frac{\Theta_{TKP}}{mr^2}} = F \frac{\frac{\Theta_{TKP}}{mr^2}}{1 + \frac{\Theta_{TKP}}{mr^2}}
 $$
 
 
 
 $$
-\frac {\Theta_{TKP}} {mr^2} = \frac {0,2} {0,25} = 0,8
+\frac{\Theta_{TKP}}{mr^2} = \frac{0{,}2}{0{,}25} = 0{,}8
 $$
 
 
 
 $$
-F_t = 5 \times \frac {0,8} {1 + 0,8} = 2,222\, \text{N}
+F_t = 5 \cdot \frac{0{,}8}{1 + 0{,}8} = 2{,}222 \mathrm{N}
 $$
 
 
 2. Az előző kerék egy $\alpha = 30^\circ$ hajlásszögű lejtőn tisztán gördül lefelé álló helyzetből. Mekkora a gyorsulása és a tapadási erő, ha a veszteségektől eltekinthetünk?
+
+![Kerék gördülése lejtőn lefelé](Kepek/kerekgorduleselejton.svg)
 
 A lejtőn lefelé húzó erőre már láttuk a kiszámítást:
 
@@ -270,13 +276,13 @@ Ezt formuláinkba helyettesítve $F$ helyére, megkapjuk a válaszokat!
 
 
 $$
-a = \frac {g\sin \alpha} {1 + \frac {\Theta_{TKP}} {mr^2}}
+a = \frac{g\sin \alpha}{1 + \frac{\Theta_{TKP}}{mr^2}}
 $$
 
 
 
 $$
-F_t = mg\sin \alpha \frac {\frac {\Theta_{TKP}} {mr^2}} {1 + \frac {\Theta_{TKP}} {mr^2}}
+F_t = mg\sin \alpha \frac{\frac{\Theta_{TKP}}{mr^2}}{1 + \frac{\Theta_{TKP}}{mr^2}}
 $$
 
 
@@ -297,26 +303,29 @@ A szimuláció magáért beszél. Az adatokból határozd meg a tehetetlenségi 
 ## Feladatok
 
 **1. Feladat: Szöggyorsulás és kinematika**
-Egy mosógép centrifugája nyugalmi helyzetből indulva, egyenletesen gyorsulva 15 másodperc alatt éri el az $1200\, \text{fordulat/perc}$ fordulatszámot. 
+Egy mosógép centrifugája nyugalmi helyzetből indulva, egyenletesen gyorsulva 15 másodperc alatt éri el az $1200$ fordulat/perc fordulatszámot. 
 - Mekkora a mosógép dobjának szöggyorsulása? 
 - Hány fordulatot tesz meg a dob a felgyorsulás 15 másodperce alatt?
 
 **2. Feladat: Forgómozgás alapegyenlete (rögzített tengely)**
-Egy $M = 5\, \text{kg}$ tömegű, $R = 0,2\, \text{m}$ sugarú homogén tömör henger súrlódásmentesen foroghat a geometriai tengelye körül. A henger palástjára vékony, súlytalan fonalat tekerünk, melynek végét állandó $F = 20\, \text{N}$ nagyságú erővel húzzuk. 
+Egy $M = 5$ kg tömegű, $R = 0{,}2$ m sugarú homogén tömör henger súrlódásmentesen foroghat a geometriai tengelye körül. A henger palástjára vékony, súlytalan fonalat tekerünk, melynek végét állandó $F = 20$ N nagyságú erővel húzzuk. 
 - Mekkora a henger szöggyorsulása? 
-- Mekkora lesz a henger szögsebessége a húzás megkezdésétől számított 4 másodperc múlva? *(A homogén tömör henger tehetetlenségi nyomatéka: $\Theta = \frac{1}{2}MR^2$)*.
+- Mekkora lesz a henger szögsebessége a húzás megkezdésétől számított 4 másodperc múlva?
+**Segítség:** A homogén tömör henger tehetetlenségi nyomatéka: $\Theta = \frac{1}{2}MR^2$.
 
 **3. Feladat: Tiszta gördülés vízszintes talajon**
-Egy $m = 3\, \text{kg}$ tömegű tömör gömböt egyenes vonalban, vízszintes talajon húzunk a tömegközéppontjában támadó vízszintes $F = 15\, \text{N}$ erővel. A gömb megcsúszás nélkül, tisztán gördül. 
+Egy $m = 3$ kg tömegű tömör gömböt egyenes vonalban, vízszintes talajon húzunk a tömegközéppontjában támadó vízszintes $F = 15$ N erővel. A gömb megcsúszás nélkül, tisztán gördül. 
 - Mekkora a gömb tömegközéppontjának gyorsulása? 
-- Mekkora a talaj és a gömb között fellépő tapadási súrlódási erő nagysága? *(A tömör gömb tehetetlenségi nyomatéka: $\Theta_{TKP} = \frac{2}{5}mR^2$)*.
+- Mekkora a talaj és a gömb között fellépő tapadási súrlódási erő nagysága? 
+**Segítség:** A tömör gömb tehetetlenségi nyomatéka: $\Theta_{TKP} = \frac{2}{5}mR^2$.
 
 **4. Feladat: Lejtőn gördülő testek versenye**
 Egy $\alpha = 25^\circ$-os hajlásszögű lejtő tetejéről, azonos magasságból, nyugalmi helyzetből egyszerre elengedünk egy tömör hengert és egy vékony falú csövet (üreges hengert). Mindkét test tisztán gördül lefelé a lejtőn. A közegellenállástól eltekintünk.
-- Írja fel mindkét test tömegközéppontjának gyorsulását! *(A tömör henger tehetetlenségi nyomatéka $\frac{1}{2}mR^2$, az üregesé $mR^2$)*.
+- Írja fel mindkét test tömegközéppontjának gyorsulását! 
 - Melyik test ér le hamarabb a lejtő aljára? Válaszát a kiszámított gyorsulások alapján indokolja! Függ-e az eredmény a testek tömegétől vagy sugarától?
+**Segítség:** A tömör henger tehetetlenségi nyomatéka $\frac{1}{2}mR^2$, az üreges hengeré $mR^2$.
 
 **5. Feladat: Csiga tehetetlenségi nyomatékának figyelembevétele**
-Két test, melyek tömege $m_1 = 2\, \text{kg}$ és $m_2 = 4\, \text{kg}$, egy hajlékony, nyújthatatlan kötél két végére van erősítve. A kötél egy $M = 3\, \text{kg}$ tömegű, $R = 0,15\, \text{m}$ sugarú, homogén tömör henger alakú csigán van átvetve. A kötél nem csúszik meg a csigán, a tengelysúrlódás elhanyagolható.
+Két test, melyek tömege $m_1 = 2$ kg és $m_2 = 4$ kg, egy hajlékony, nyújthatatlan kötél két végére van erősítve. A kötél egy $M = 3$ kg tömegű, $R = 0{,}15$ m sugarú, homogén tömör henger alakú csigán van átvetve. A kötél nem csúszik meg a csigán, a tengelysúrlódás elhanyagolható.
 - Határozza meg a rendszer gyorsulását!
 - Mekkora erők ébrednek a kötélben a csiga bal, illetve jobb oldalán? Mutassa meg, hogy a kötélben ébredő erők nem egyenlők, és ennek oka a csiga forgásában keresendő!

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 550">
+  <defs>
+    <!-- Nyílhegyek definíciói -->
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#1F618D" />
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#27AE60" />
+    </marker>
+    <marker id="arrow-purple" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#8E44AD" />
+    </marker>
+  </defs>
+
+  <!-- Fehér háttér -->
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <!-- Cím -->
+  <text x="425" y="40" text-anchor="middle" font-size="22" font-family="sans-serif" font-weight="bold" fill="#2C3E50">
+    2. Példa: Lejtőn tisztán gördülő kerék
+  </text>
+
+  <!-- ================= TALAJ ÉS LEJTŐ (Hajszálpontos 30 fokos szög) ================= -->
+  
+  <!-- Vízszintes alapvonal -->
+  <line x1="80" y1="520" x2="750" y2="520" stroke="#7F8C8D" stroke-width="4" />
+  
+  <!-- Lejtő háromszöge (Alfa = 30 fok) -->
+  <path d="M 100 234.6 L 594.26 520 L 100 520 Z" fill="#EAEDED" stroke="#95A5A6" stroke-width="3" />
+  
+  <!-- Lejtő dőlésszögének (Alfa) jelzése ívvel -->
+  <path d="M 534.26 520 A 60 60 0 0 1 542.3 490" fill="none" stroke="#2C3E50" stroke-width="2" />
+  <text x="500" y="510" fill="#2C3E50" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="20">α = 30°</text>
+
+  <!-- ================= KERÉK (KÉK TEST) ================= -->
+  
+  <!-- Külső gumi/keréktest (Középpont: 300, 200. Sugár: 130) -->
+  <circle cx="300" cy="200" r="130" fill="#D4E6F1" stroke="#2980B9" stroke-width="4" />
+  <!-- Belső mintázat -->
+  <circle cx="300" cy="200" r="95" fill="#EAF2F8" stroke="#2980B9" stroke-width="2" stroke-dasharray="10,8" />
+  
+  <!-- ================= FIZIKAI PONTOK ÉS GEOMETRIA ================= -->
+  
+  <!-- Tömegközéppont (TKP) -->
+  <circle cx="300" cy="200" r="6" fill="#1F618D" />
+  <text x="290" y="185" text-anchor="end" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-size="14">TKP</text>
+
+  <!-- Pillanatnyi forgástengely a lejtőn (Érintési pont) -->
+  <circle cx="235" cy="312.6" r="6" fill="#1F618D" />
+  
+  <!-- Felirat a pillanatnyi forgástengelyhez -->
+  <line x1="230" y1="315" x2="160" y2="350" stroke="#7F8C8D" stroke-width="2" />
+  <text x="155" y="360" text-anchor="end" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-size="14">Pillanatnyi forgástengely (v=0)</text>
+
+  <!-- Kerék sugara (r) a középpontból az érintési pontba -->
+  <line x1="300" y1="200" x2="235" y2="312.6" stroke="#34495E" stroke-width="2" stroke-dasharray="5,4" />
+  <text x="280" y="270" fill="#34495E" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="18">r</text>
+
+  <!-- ================= ERŐK (MIND KÉK, MERT A KÉK KERÉKRE HATNAK) ================= -->
+  
+  <!-- GRAVITÁCIÓ ÉS KOMPONENSEI -->
+  <!-- mg vektor (Függőlegesen lefelé, Hossz: 120) -->
+  <line x1="300" y1="200" x2="300" y2="320" stroke="#1F618D" stroke-width="4" marker-end="url(#arrow-blue)" />
+  <text x="308" y="335" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="18">mg</text>
+
+  <!-- mg lejtővel párhuzamos komponense (Hossz: 60) -->
+  <line x1="300" y1="200" x2="351.96" y2="230" stroke="#1F618D" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow-blue)" />
+  <text x="360" y="245" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="16">mg·sin α</text>
+
+  <!-- mg lejtőre merőleges komponense (Hossz: 103.9) -->
+  <line x1="300" y1="200" x2="248.05" y2="290" stroke="#1F618D" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow-blue)" />
+  <!-- Komponens téglalap bezárása (Segédvonalak) -->
+  <line x1="351.96" y1="230" x2="300" y2="320" stroke="#1F618D" stroke-width="1" stroke-dasharray="3,3" />
+  <line x1="248.05" y1="290" x2="300" y2="320" stroke="#1F618D" stroke-width="1" stroke-dasharray="3,3" />
+  <text x="240" y="255" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="16" text-anchor="end">mg·cos α</text>
+
+  <!-- TALAJREAKCIÓK -->
+  <!-- Talaj nyomóereje (N) a talppontból merőlegesen felfelé (Hossz: 103.9) -->
+  <line x1="235" y1="312.6" x2="286.95" y2="222.6" stroke="#1F618D" stroke-width="3" marker-end="url(#arrow-blue)" />
+  <text x="260" y="220" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="18">N</text>
+
+  <!-- Tapadási súrlódási erő (F_t) a talppontból a lejtőn FELFELÉ! -->
+  <line x1="235" y1="312.6" x2="200.36" y2="292.6" stroke="#1F618D" stroke-width="4" marker-end="url(#arrow-blue)" />
+  <text x="175" y="285" fill="#1F618D" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="18">F<tspan font-size="12" baseline-shift="sub">t</tspan></text>
+
+  <!-- ================= KINEMATIKAI VEKTOROK ================= -->
+  
+  <!-- Haladó mozgás gyorsulása (a) - Zöld színnel, lejtővel párhuzamosan -->
+  <!-- Kicsit eltolva indul a középpontból, hogy vizuálisan ne üssön el a többitől -->
+  <line x1="325" y1="156.7" x2="385.6" y2="191.7" stroke="#27AE60" stroke-width="4" marker-end="url(#arrow-green)" />
+  <text x="370" y="160" fill="#27AE60" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="20">a<tspan font-size="14" baseline-shift="sub">TKP</tspan></text>
+
+  <!-- Szöggyorsulás / Szögsebesség (β, ω) - Lila színnel -->
+  <!-- Tökéletes koncentrikus körív az óramutató járásával megegyezően -->
+  <path d="M 300 50 A 150 150 0 0 1 450 200" fill="none" stroke="#8E44AD" stroke-width="4" marker-end="url(#arrow-purple)" />
+  <text x="430" y="100" fill="#8E44AD" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="20">β, ω</text>
+
+  <!-- ================= KÉPLET ÖSSZEFOGLALÓ (Jobb felső sarok) ================= -->
+  
+  <rect x="520" y="60" width="310" height="150" rx="5" fill="#FDFEFE" stroke="#BDC3C7" stroke-width="2" />
+  <text x="675" y="90" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#2C3E50" font-weight="bold">Fizikai összefüggések (Lejtőn):</text>
+  
+  <!-- Képletek -->
+  <text x="540" y="125" font-family="sans-serif" font-size="15" fill="#2C3E50">
+    <tspan font-style="italic" font-weight="bold" fill="#1F618D">mg·sin α - F</tspan><tspan fill="#1F618D" font-size="10" baseline-shift="sub">t</tspan> = m · <tspan font-style="italic" font-weight="bold" fill="#27AE60">a</tspan>
+  </text>
+  
+  <text x="540" y="155" font-family="sans-serif" font-size="15" fill="#2C3E50">
+    M<tspan font-size="10" baseline-shift="sub">P</tspan> = (<tspan font-style="italic" font-weight="bold" fill="#1F618D">mg·sin α</tspan>) · r = Θ<tspan font-size="10" baseline-shift="sub">P</tspan> · <tspan font-style="italic" font-weight="bold" fill="#8E44AD">β</tspan>
+  </text>
+  
+  <text x="540" y="185" font-family="sans-serif" font-size="15" fill="#2C3E50">
+    <tspan font-style="italic" font-weight="bold" fill="#27AE60">a</tspan> = r · <tspan font-style="italic" font-weight="bold" fill="#8E44AD">β</tspan>
+  </text>
+
+</svg>
