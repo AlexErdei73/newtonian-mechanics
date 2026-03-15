@@ -3,6 +3,8 @@
 ## Példa
 Egy $m$ tömegű, $L$ hosszúságú rúd a tetején csapágyazva van, és függőleges síkban lengéseket képes végezni. A rúd a csapágyazással együtt képes forogni a csapágyon átmenő függőleges tengely körül. Egy motor megforgatja a csapágyazást, és $\omega$ szögsebességű forgásban tartja. Mekkora $\alpha$ szöget zár be a rúd a függőlegessel forgása közben, ha ez a szög állandó?
 
+![A forgo rud peldaja](Kepek/forgorud.svg)
+
 A rúd pontjai körmozgást végeznek vízszintes síkban, tehát gyorsulásuk a centripetális gyorsulás. Az $\alpha$ szög nem változik, tehát a rúdnak nincs szöggyorsulása a vele együtt forgó koordináta-rendszerben. Van-e szöggyorsulás az inerciarendszerben? Ha felbontjuk a pontok gyorsulását rúdirányú és rúdra merőleges komponensre, akkor nem nulla $\alpha$ szög esetén lesz a rúdra merőleges gyorsulás, amely szöggyorsulást jelent a vízszintes forgástengelyre vonatkozóan. 
 
 
