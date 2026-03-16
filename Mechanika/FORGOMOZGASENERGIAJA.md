@@ -114,7 +114,7 @@ Az adatokat behelyettesítve megkapjuk a gyorsulást:
 
 
 $$
-a = \frac {5 \cdot 9,81 \cdot \sin(30^\circ)} {7} = 3,504 \, \frac{m}{s^2}
+a = \frac {5 \cdot 9,81 \cdot \sin(30^\circ)} {7} = 3,504 \frac{m}{s^2}
 $$
 
 
@@ -211,7 +211,7 @@ Alkalmazd a szövegben látott dinamikai logikát: a tapadási erőt cseréld le
 **2. Különböző testek versenye:**
 A szövegben egy tömör gömb gyorsulását számoltuk ki. Képzeljük el, hogy a gömb helyett egy homogén, tömör henger gördül le ugyanezen a $30^\circ$-os lejtőn! A henger tehetetlenségi nyomatéka $\Theta_{TKP} = \frac{1}{2}mr^2$. 
 * Használd a szövegben levezetett általános képletet, és számítsd ki a henger gyorsulását! 
-* Hasonlítsd össze a kapott értéket a gömb gyorsulásával ($3,504 \, \frac{m}{s^2}$)! Melyik test ér le hamarabb a lejtő aljára, ha azonos magasságból, egyszerre indítjuk őket? A testek tömege és sugara számít-e a végeredmény szempontjából?
+* Hasonlítsd össze a kapott értéket a gömb gyorsulásával ($3,504 \frac{m}{s^2}$)! Melyik test ér le hamarabb a lejtő aljára, ha azonos magasságból, egyszerre indítjuk őket? A testek tömege és sugara számít-e a végeredmény szempontjából?
 
 **3. Alternatív levezetés energiamegmaradásból:**
 A szövegben az erőtani összefüggésekből kiindulva igazoltuk, hogy az energia állandó. Végezd el a fordított műveletet! 
@@ -220,9 +220,9 @@ A szövegben az erőtani összefüggésekből kiindulva igazoltuk, hogy az energ
 **4. A tiszta gördülés feltétele (Maximális hajlásszög):**
 A tiszta gördülés feltétele, hogy a test ne csússzon meg, azaz a fellépő tapadási erő ($F_t$) ne lépje túl a maximális tapadási súrlódási erőt ($F_{t,max} = \mu_0 \cdot F_{nyom\acute{o}}$). 
 A szövegben szereplő gyorsulásképletet és a tapadási erőt ($F_t = mg\sin\alpha - ma$) felhasználva vezesd le, **mekkora lehet a lejtő maximális hajlásszöge ($\alpha_{max}$)** egy adott $\mu_0$ tapadási súrlódási együttható esetén, hogy a tömör gömb még éppen tisztán gördüljön! 
-*(Számítsd ki ezt a maximális szöget konkrétan, ha a lejtő és a gömb közötti tapadási súrlódási együttható $\mu_0 = 0,2$!)*
+*(Számítsd ki ezt a maximális szöget konkrétan, ha a lejtő és a gömb közötti tapadási súrlódási együttható* $\mu_0 = 0,2$*!)*
 
 **5. Gördülés a halálkanyarban:**
 A szövegben bemutatott mechanikai energiamegmaradást használjuk fel egy klasszikus feladathoz! Egy homogén tömör gömb nyugalmi helyzetből, $h$ magasságból legördül egy lejtőn, majd beérkezik egy $R$ sugarú függőleges körpályába ("halálkanyarba"). 
 Határozd meg, **legalább mekkora $h$ magasságból kell indítani a gömböt** ahhoz, hogy a hurok legfelső pontján se essen le (azaz végig a pályán maradva tisztán gördüljön)! 
-*(Tipp: A hurok tetején a testnek kell, hogy legyen egy minimális sebessége, amit a súlytalanság állapota, azaz az $mg = m\frac{v^2}{R}$ feltétel határoz meg. Ne felejtsd el a hurok tetején lévő test mozgási energiájába beleszámolni a forgást is! A gömb $r$ sugarát az $R$ sugárhoz képest elhanyagolhatónak tekinthetjük: $r \ll R$.)*
+*(Tipp: A hurok tetején a testnek kell, hogy legyen egy minimális sebessége, amit a súlytalanság állapota, azaz az* $mg = m\frac{v^2}{R}$ *feltétel határoz meg. Ne felejtsd el a hurok tetején lévő test mozgási energiájába beleszámolni a forgást is! A gömb $r$ sugarát az $R$ sugárhoz képest elhanyagolhatónak tekinthetjük:* $r \ll R$*.)*

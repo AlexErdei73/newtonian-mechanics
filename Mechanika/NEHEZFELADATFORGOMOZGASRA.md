@@ -105,6 +105,20 @@ $$
 
 Megmutatható, hogy amikor ez a megoldás létezik, akkor ez a stabil megoldás.
 
+## Analógia a haladó és forgó mozgás közt
+
+| Haladó mozgás | Forgó mozgás |
+| :--- | :--- |
+| Út ($s = r\phi$) | Szög ($\phi$) |
+| Sebesség ($v = r\omega$) | Szögsebesség ($\omega$) |
+| Gyorsulás ($a = r\beta$) | Szöggyorsulás ($\beta$) |
+| Erő ($F$) | Forgatónyomaték ($M = Fr\sin\alpha$) |
+| Tömeg ($m$) | Tehetetlenségi nyomaték ($\Theta = \sum_{i = 1}^{N}m_ir_i^2$) |
+| Lendület / Impulzus ($I = mv$) | Perdület / Impulzusmomentum ($N = Ir\sin\alpha = \Theta \omega$) |
+| $F_e = ma$ | $M_e = \Theta \beta$ |
+| $\vec{F}_e = \frac {\Delta \vec{I}} {t}, t \to 0$ | $\vec{M}_e = \frac {\Delta \vec{N}} {t}, t \to 0$ |
+| $E_{mozg} = \frac {mv^2} {2}$ | $E_{forg} = \frac {\Theta \omega^2} {2}$ |
+ 
 ## Feladatok
 
 **1. Feladat (Támaszerők)**  
