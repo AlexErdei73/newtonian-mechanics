@@ -58,6 +58,14 @@ $$
 
 Ez a formula az, ahogy Newton a második törvényt eredetileg megfogalmazta. Ez az eredeti megfogalmazás állandó erő esetén érvényes alakja, tehát egyenletesen gyorsuló mozgásokra vonatkozik, amelyekkel mi foglalkozunk egyelőre.
 
+Amennyiben az erő változik, a képlet csak az átlagos erőt adja meg. Ez általában nem egyezik meg az erő pillanatnyi értékével. Azonban a $t$ időtartam csökkentésével elérhető, hogy az átlagerő a számítási pontosságunkon belül megegyezzen az erő pillanatnyi értékével. Ilyenkor a képlet úgy értendő, hogy a $t$ időtartamot elegendően rövidre választjuk a kívánt pontosság eléréséhez. Ennek jelölése a következő:
+
+
+$$
+t \to 0
+$$
+
+
 Az eddig használt alak csak akkor érvényes, ha a tömeg állandónak tekinthető. Ezt eddig feltételeztük. A fizikában van két eset, amikor a tömeg nem tekinthető állandónak.
 
 1. A fény vákuumbeli sebességével összemérhető sebességek esetén a tömeg nem állandó. A második törvény az eredeti alakjában ekkor is érvényes, de az impulzus kifejezése megváltozik. Ezzel a relativitáselmélet foglalkozik, nem tartozik a newtoni mechanika tárgykörébe.
