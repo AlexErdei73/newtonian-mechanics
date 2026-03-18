@@ -68,6 +68,7 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	52. [Az energia megmaradása forgómozgásra](Mechanika/FORGOMOZGASENERGIAJA.md)
 	53. [Egy nehezebb feladat forgómozgásra](Mechanika/NEHEZFELADATFORGOMOZGASRA.md)
 	54. [A harmónikus rezgőmozgás](Mechanika/HARMONIKUSREZGOMOZGAS.md)
+	55. [A harmónikus rezgőmozgás sebessége](Mechanika/REZGOMOZGASSEBESSEGE.md)
 
 
 	
