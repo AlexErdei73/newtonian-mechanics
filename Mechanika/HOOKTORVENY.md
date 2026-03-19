@@ -27,6 +27,7 @@ $$
 a_x = -A\omega^2\cos(\omega t)
 $$
 
+![A harmonikus rezgőmozgás gyorsulása](Kepek/rezgesgyorsulasa.svg)
 
 ### Példa
 A harmonikus rezgőmozgást végző test kitérés-idő függvénye a következő:
