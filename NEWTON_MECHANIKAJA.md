@@ -69,6 +69,7 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	53. [Egy nehezebb feladat forgómozgásra](Mechanika/NEHEZFELADATFORGOMOZGASRA.md)
 	54. [A harmónikus rezgőmozgás](Mechanika/HARMONIKUSREZGOMOZGAS.md)
 	55. [A harmónikus rezgőmozgás sebessége](Mechanika/REZGOMOZGASSEBESSEGE.md)
+	56. [Hook törvénye](Mechanika/HOOKTORVENY.md)
 
 
 	
