@@ -66,10 +66,11 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	50. [Az impulzusmomentum tétele](Mechanika/IMPULZUSMOMENTUMTETEL.md)
 	51. [A forgómozgás alapegyenlete](Mechanika/FORGOMOZGASALAPEGYENLETE.md)
 	52. [Az energia megmaradása forgómozgásra](Mechanika/FORGOMOZGASENERGIAJA.md)
-	53. [Egy nehezebb feladat forgómozgásra](Mechanika/NEHEZFELADATFORGOMOZGASRA.md)
+	53. [Egy nehezebb feladat forgómozgásra *](Mechanika/NEHEZFELADATFORGOMOZGASRA.md)
 	54. [A harmónikus rezgőmozgás](Mechanika/HARMONIKUSREZGOMOZGAS.md)
 	55. [A harmónikus rezgőmozgás sebessége](Mechanika/REZGOMOZGASSEBESSEGE.md)
 	56. [Hook törvénye](Mechanika/HOOKTORVENY.md)
+	57. [A rugalmas energia](Mechanika/RUGALMASENERGIA.md)
 
 
 	
