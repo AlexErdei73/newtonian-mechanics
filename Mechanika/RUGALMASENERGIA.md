@@ -71,9 +71,13 @@ $$
 a_{x,2} = \frac {F_{x,2}} {m} = \frac {-1,0001} {0,2039} = -4,905\text{ m/s}^2
 $$
 
+A gyorsulás kiszámítása:
 
-Mivel $a_{x,2} = \frac {\Delta v_x} {t_2}$:
+$$
+a_{x,2} = \frac {\Delta v_x} {t_2}
+$$
 
+Ez átrendezhető, hogy az ismeretlen időt kiszámítsuk.
 
 $$
 t_2 = \frac {\Delta v_x} {a_{x,2}} = \frac {0 - 17,375} {-4,905} = 3,542\text{ s}
@@ -196,17 +200,19 @@ $$
 h = \frac {E_m} {mg} = \frac {4} {0,01 \cdot 9,81} = 40,77\text{ m}
 $$
 
+### Szimulació
+
+[A katapultos példa](https://alexerdei73.github.io/physics-engine/project/#804a06d3-a20a-401b-94c2-b5989a56c61c)
+
+Ellenőrizzük a golyó által elért magasságot a szimulátorban!
 
 ## Feladatok
 
-**1. Feladat**  
-Egy $500\text{ g}$ tömegű dobozt meglökünk a padlón $5\text{ m/s}$ kezdősebességgel. A csúszási súrlódási együttható a doboz és a padló között $\mu = 0,2$.  
+1. Egy $500\text{ g}$ tömegű dobozt meglökünk a padlón $5\text{ m/s}$ kezdősebességgel. A csúszási súrlódási együttható a doboz és a padló között $\mu = 0,2$.  
 *Mekkora utat tesz meg a doboz a megállásig, és mennyi a súrlódási erő által végzett munka? Ellenőrizd az eredményedet a munkatétel segítségével!*
 
-**2. Feladat**  
-Egy vízszintes felületen fekvő, $D = 120\text{ N/m}$ direkciós erejű (rugóállandójú) rugónak nekiütköztetünk egy játékkocsit ($m = 150\text{ g}$). A kocsi sebessége az ütközés pillanatában $2\text{ m/s}$.  
+2. Egy vízszintes felületen fekvő, $D = 120\text{ N/m}$ direkciós erejű (rugóállandójú) rugónak nekiütköztetünk egy játékkocsit ($m = 150\text{ g}$). A kocsi sebessége az ütközés pillanatában $2\text{ m/s}$.  
 *Legfeljebb mekkora lesz a rugó maximális összenyomódása, ha a súrlódástól teljes mértékben eltekintünk?*
 
-**3. Feladat**  
-Egy rugós kilövő ($D = 500\text{ N/m}$) rugóját $10\text{ cm}$-rel összenyomjuk, majd egy $50\text{ g}$-os golyót lövünk ki vele egy vízszintes asztalon. Az asztalon a súrlódási együttható $0,15$.  
+3. Egy rugós kilövő ($D = 500\text{ N/m}$) rugóját $10\text{ cm}$-rel összenyomjuk, majd egy $50\text{ g}$-os golyót lövünk ki vele egy vízszintes asztalon. Az asztalon a súrlódási együttható $0,15$.  
 *Milyen messzire jut a golyó a kilövés pontjától (a rugó nyugalmi helyzetétől mérve), mire a súrlódás miatt teljesen megáll?*
