@@ -71,7 +71,6 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	55. [A harmónikus rezgőmozgás sebessége](Mechanika/REZGOMOZGASSEBESSEGE.md)
 	56. [Hook törvénye](Mechanika/HOOKTORVENY.md)
 	57. [A rugalmas energia](Mechanika/RUGALMASENERGIA.md)
+	58. [A harmónikus rezgőmozgás energiája](Mechanika/REZGESIENERGIA.md)
 
-
-	
 	
