@@ -63,6 +63,10 @@ $$
 
 Láthatjuk, hogy a teljes energia mindig $4 \text{ J}$, függetlenül a test kitérésétől vagy az időtől.
 
+### Szimulació
+
+[Rezgési energiát bemutató példa](https://alexerdei73.github.io/physics-engine/project/#7d6e9374-6fcf-4c85-97c1-69d72a3a796c)
+
 ## Pitagorasz-tétel a trigonometriában
 
 ![Pitagorasz-tétel a trigonometriában](Kepek/pitagorasz.svg)
