@@ -18,8 +18,73 @@ Most nezzuk meg azt az esetet, mikor surlodas ugyan nincs, de van legellenallas.
 
 [Harmonikus rezges csillapodasa a legellenallas miatt](https://alexerdei73.github.io/physics-engine/project/#2d7bf5da-1455-4c4a-896d-a40baf1347a4)
 
-## A sebesseggel aranyos csillapitas
+### A sebesseggel aranyos csillapitas
 A valodi rugok igen kismertekben ugyan, de csillapitjak a rezgest, akkor is, ha nincs legellenallas. Ennek merteke acel eseten igen kicsiny, az acel szinte tokeletesen rugalmas. Ez a fajta csillapitas egyebkent nem irhato le az eddigi kifejezesekkel. Ennek oka, hogy a belso anyagszerkezeti mechanizmus amplitudotol fuggo, nem pedig sebessegfuggo csillapito erot eredmenyez.
-Bar elmeletileg helytelen, ezt sokszor szoktak modellezni sebessegfuggo, a sebesseggel linearis csillapitasi erovel. Ennek oka, hogy a matematika viszonylag egyszeru es a csillapitas altalaban igen kicsi. Ilyen csillapitasi ero lep fel folyadekokban kis sebessegek eseten, amikor az aramlas szabalyos szerkezetu, tehat nem orvenyes. A tipikus pelda a lengescsillapitokban fellepo csillapitasi erok. A tovabbiakban mi evvel a csillapitassal fogunk reszletesebben foglalkozni.
+Bar elmeletileg helytelen, ezt sokszor szoktak modellezni sebessegfuggo, a sebesseggel linearis csillapitasi erovel. Ennek oka, hogy a matematika viszonylag egyszeru es a csillapitas altalaban igen kicsi. Ilyen csillapitasi ero lep fel folyadekokban kis sebessegu mozgas eseten, amikor az aramlas szabalyos szerkezetu, tehat nem orvenyes. A tipikus pelda a lengescsillapitokban fellepo csillapitasi erok. A tovabbiakban mi evvel a csillapitassal fogunk reszletesebben foglalkozni.
 
 [Harmonikus rezges sebesseggel aranyos csillapitassal](https://alexerdei73.github.io/physics-engine/project/#8b2676f8-91a6-4f77-b2cd-e8f0c9b87a51)
+
+## Mozgasegyenlet sebeseggel aranyos csillapitas eseten
+
+$$
+F_{x,e} = -Dx - \beta v_x
+$$
+
+Ez az egyenlet azt mutatja, hogy a rugalmas ero mellett fellep egy a sebesseg nagysagaval aranyos, de a sebesseggel ellentetes iranyu ero, mely a mozgast minden pillanatban lassitani igyekszik. Ezt behelyettesitve Newton masodik torvenyebe megkapjuk a mozgasegyenletet.
+
+$$
+F_{x,e} = ma_x
+$$
+
+$$
+ma_x = -Dx - \beta v_x
+$$
+
+Nullara rendezve szokas az egyenletet felirni.
+
+$$
+ma_x + \beta v_x + Dx = 0
+$$
+
+Kerdes az hogy milyen kiteres-ido fuggveny az egyenlet megoldasa, ha a test a allo helyzetbol indul az $x(0) = +A$ helyzetbol. Erre csak felsobb matematikai ismeretek birtokaban lehet valaszolni, tehat az egyenletet nem fogjuk megoldani, csak a megoldast magyarazzuk el.
+
+## Az amplitudo csokkenese
+
+Eloszor is vizsgaljuk meg hogyan csokken az amplitudo. Ha a szimulacionkban feljegyeznenk az keteres erteket $nT$ idonkent, ahol $n$ nem negativ egesz szam, akkor eszrevennenk, hogy a kovetkezo osszefugges all fenn.
+
+$$
+x(nT) = Aq^n, 0 < q < 1
+$$
+
+Ezt a sorozatot a matematikaban ugy ismerjuk, mint a *mertani sorozat*. Tehat az amplitudok mertani sorozat szerint csokkennek. Minnel kisebb a $q$ tenyezo, annal gyorsabban csokken az amplitudo, tehat annal gyorsabban hal el a rezges.
+Bevezethetjuk a *csillapitasi tenyezot*, melyet $\delta$-val fogunk jelolni. Ennek egysege 1/s akarcsak a korferekvencianak, tehat ezek osszehasonlithatok.
+
+$$
+\delta = \frac \beta {2m}
+$$
+
+A mozgasegyenlet megoldasaval megmutathato, hogy 
+
+$$
+q = e^{-\delta T}
+$$
+
+Itt az $e$ szam a felsobb matematikabol jol ismert irracionalis szam, nevet *Euler* matematikusrol kapta. Erteke:
+
+$$
+e = 2,71828...
+$$
+
+Ez mar majdnem elegendo q kiszamitasahoz, de a periodusido egy kicsivel hoszabb, mint a csillapitatlan rezges eseten. A mozgasegyenlet megoldasaval megmutathato, hogy a korfrekvencia egy kicsit kisebb, mint a csillapitatlan esetben.
+
+$$
+\omega_0^2 = \frac D m
+$$
+
+$$
+\omega = \sqrt {\omega_0^2 - \delta^2}
+$$
+
+Ezen osszefuggesek segitsegevel a q tenyezo mar kiszamithato.
+
+### Pelda
