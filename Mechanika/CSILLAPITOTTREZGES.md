@@ -88,3 +88,82 @@ $$
 Ezen osszefuggesek segitsegevel a q tenyezo mar kiszamithato.
 
 ### Pelda
+
+Szamitsuk ki az eddigi peldankban a $q$ tenyezo erteket! Mennyi ido alatt csokken a rezges energiaja 4 tizedes pontosaggal 0-ra? ($5 \times 10^-5$ J energia maradhat maximum a rendszerben) A $\beta = 0,06$ kg/s a szimulacionkban.
+
+A csillapitasi tenyezo kiszamitasa a kovetkezo.
+
+$$
+\delta = \frac {\beta} {2m} = \frac {0,06} {2 \times 0,01} = 3\text{ 1/s}
+$$
+
+A pontos korfrekvencia es periodusido is kiszamithato.
+
+$$
+\omega_0^2 = \frac {D} {m} = \frac {200} {0,01} = 20000\text{ s}^{-2}
+$$
+
+$$
+\omega = \sqrt {\omega_0^2 - \delta^2} = \sqrt {20000 - 9} = 141,39\text{ 1/s}
+$$
+
+$$
+T = \frac {2 \pi} {\omega} = \frac {2 \pi} {141,39} = 0,044439\text{ s}
+$$
+
+Most mar $q$ kiszamithato.
+
+$$
+q = e^{-\delta T} = e^{-3 \cdot 0,044439} = 0,87519
+$$
+
+Az maradek energiabol megkaphatjuk a maradek maximalis kiterest!
+
+$$
+\frac {Dx_{max}^2} {2} = E_{max}
+$$
+
+$$
+x_{max} = \sqrt \frac {2E_{max}} {D} = \sqrt \frac {2 \cdot 5 \cdot 10^{-5}} {200} = 7,0711 \cdot 10^{-4}\text{ m}
+$$
+
+$$
+x_{max} \geq Aq^n
+$$
+
+$$
+\ln {x_{max}} \geq \ln A + n \ln q
+$$
+
+$$
+n \geq \frac {\ln {x_{max}} - \ln A} {\ln q}
+$$
+
+$$
+n \geq \frac {\ln {7,0711 \cdot 10^{-4}} - \ln 0,2} {\ln 0,87519} = 43
+$$
+
+$$
+t_{min} = nT = 43 \cdot 0,044439 = 1,911\text{ s}
+$$
+
+Valoban a szimulaciobol latszik, hogy az energia kb. $1,9$ s alatt eri el a $-0,147$ J-t!
+A valosagban kisse tulbecsultuk az idot, hisz n itt egesz szam.
+
+## A kiteres-ido fuggveny
+Matematikabol tanultuk, hogy a hatvanyozas elvegezheto tettszoleges valos kitevovel is. Ha az alap az $e$ szam, ez az exponencialis fuggvenyhez vezet. Ezt a fuggvenyt talaljuk a kiteres-ido fuggvenyben, mint az amplitudo szorzoja. Igy tehat az amplitudo exponencialisan csokken.
+
+$$
+x(t) = Ae^{-\delta t}\cos(\omega t)
+$$
+
+## Kritikus csillapitas
+Amikor a csillapitas akkora, hogy a korfrekvencia mullava valik, akkor a koszinusz fuggveny mar allandoan 1, tehat a test egyszeruen exponencialisan tart az egyensulyi helyzethez. Ezt nevezzuk kritikus csillapitasnak.
+
+$$
+\delta_k = \omega_0
+$$
+
+### Szimulacio
+
+[Kritikus csillapitas](https://alexerdei73.github.io/physics-engine/project/#1de4ac61-0df7-4a4c-b912-fbec97a261c1)
