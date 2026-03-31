@@ -73,4 +73,5 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	57. [A rugalmas energia](Mechanika/RUGALMASENERGIA.md)
 	58. [A harmónikus rezgőmozgás energiája](Mechanika/REZGESIENERGIA.md)
 	59. [Csillapított rezgések](Mechanika/CSILLAPITOTTREZGES.md)
+	60. [A rezonancia](Mechanika/REZONANCIA.md)
 	
