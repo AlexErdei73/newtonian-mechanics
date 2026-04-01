@@ -6,7 +6,7 @@
 
 ## Szimuláció
 
-Ebben a szimulációban a kísérletben látottakat tudjuk megismételni. A testre hat egy periodikus gerjesztőerő, amit egy piros nyíl szimbolizál a szimulációban. Ez éppen úgy energiát ad a rendszernek, mint a kísérletben a rugó végének periodikus mozgatása. Az utóbbi a rendszer egyensúlyi helyzetét mozgatja periodikusan, amely egy periodikus gerjesztőerőt jelent, amely a testet éri. Amennyiben a sajátfrekvencia megegyezik a gerjesztőerő frekvenciájával, a rendszer energiája nőni kezd, mivel az erő megfelelő ütemben hat és a munkája sosem negatív, tehát növeli a rendszer mechanikai energiáját. Egészen addig tart ez, ameddig egy periódus alatt a csillapítás pontosan annyi energiát emészt fel, amennyit a rendszer a gerjesztéstől kap. Ilyenkor időben állandó amplitúdójú rezgés alakul ki, és ez az amplitúdó akkor lesz a legnagyobb, amikor a sajátfrekvencia megegyezik a gerjesztőerő frekvenciájával. Ez egészen pontosan a rezgés sebességének amplitúdójára igaz, hisz az energiaátadás a sebességtől függ. Egy csúszkán állítható a gerjesztő frekvencia, középen a rendszer sajátfrekvenciája van. 
+Ebben a szimulációban a kísérletben látottakat tudjuk megismételni. A testre hat egy periodikus gerjesztőerő, amit egy piros nyíl szimbolizál a szimulációban. Ez éppen úgy energiát ad a rendszernek, mint a kísérletben a rugó végének periodikus mozgatása. Az utóbbi a rendszer egyensúlyi helyzetét mozgatja periodikusan, amely egy periodikus gerjesztőerőt jelent, amely a testet éri. Amennyiben a sajátfrekvencia megegyezik a gerjesztőerő frekvenciájával, a rendszer energiája nőni kezd, mivel az erő megfelelő ütemben hat és a munkája sosem negatív, tehát növeli a rendszer mechanikai energiáját. Egészen addig tart ez, ameddig egy periódus alatt a csillapítás pontosan annyi energiát emészt fel, amennyit a rendszer a gerjesztéstől kap. Ilyenkor időben állandó amplitúdójú rezgés alakul ki, és ez az amplitúdó akkor lesz a legnagyobb, amikor a sajátfrekvencia megegyezik a gerjesztőerő frekvenciájával. Ez egészen pontosan csak a csillapításmentes határesetben igaz. Amennyiben a csillapítás kicsiny, de nem elhanyagolható, a maximális amplitúdó egy kicsivel a rendszer sajátfrekvenciája alatt lép fel, ahogyan azt látni fogjuk. Egy csúszkán állítható a gerjesztőfrekvencia, középen a rendszer sajátfrekvenciája van. 
 
 [Kényszerrezgés, rezonancia szimuláció](https://alexerdei73.github.io/physics-engine/project/#05652dfe-092a-4fe2-a4bc-f7a29109e103)
 
@@ -20,7 +20,7 @@ Ebben a szimulációban a kísérletben látottakat tudjuk megismételni. A test
 
 >**Kényszerrezgés:** A rendszerre ható periodikus gerjesztőerő hatására kialakuló időben állandó mechanikai energiájú állapot. Ennek kialakulása időt vesz igénybe, a szabad rezgés elhal, a frekvencia megegyezik a gerjesztőerő frekvenciájával. Az amplitúdó időben állandó.
 
->**Rezonancia:** A kényszerrezgés amplitúdója igen naggyá válhat, amikor a sajátfrekvencia és a gerjesztőerő frekvenciája megegyezik. Ez a rezonancia. Az energiafelvétel a rezgő rendszer által maximális rezonancián. Az amplitúdó maximum értéke kissé alacsonyabb frekvencián lesz maximális, amikor a csillapítási veszteségek kisebbek.
+>**Rezonancia:** A kényszerrezgés amplitúdója igen naggyá válhat, amikor a sajátfrekvencia és a gerjesztőerő frekvenciája megegyezik. Ez a rezonancia. Az energiafelvétel a rezgő rendszer által maximális rezonancián. Az amplitúdó értéke kissé alacsonyabb frekvencián lesz maximális, amikor a csillapítási veszteségek kisebbek.
 
 ## A mozgásegyenlet
 
@@ -164,7 +164,7 @@ $$
 
 ## Az amplitúdó
 
-Most azt fogjuk vizsgálni, hogy függ az amplitúdó a gerjesztő frekvenciától. Ehhez a $\cos(\omega t)$-t tartalmazó tagokat gyűjtjük össze a mozgásegyenlet bal oldalán és $f_0$-t kell kapnunk, hisz a jobb oldalon $f_0\cos(\omega t)$ szerepel.
+Most azt fogjuk vizsgálni, hogyan függ az amplitúdó a gerjesztőfrekvenciától. Ehhez a $\cos(\omega t)$-t tartalmazó tagokat gyűjtjük össze a mozgásegyenlet bal oldalán és $f_0$-t kell kapnunk, hisz a jobb oldalon $f_0\cos(\omega t)$ szerepel.
 
 
 $$
@@ -209,6 +209,25 @@ $$
 A = \frac {f_0} {\sqrt {(\omega_0^2 - \omega^2)^2 + 4\delta^2\omega^2}}
 $$
 
+
+### A forgó vektorok (fázorok) módszere
+
+Emlékezzünk vissza, hogyan vezettük be a harmonikus rezgőmozgást a tanulmányaink elején! A rezgést egy egyenletes körmozgást végző test (az ún. referenciakörön mozgó pont) árnyékaként, vetületeként képzeltük el. Ennek a körmozgásnak a szögsebessége éppen az $\omega$ körfrekvencia.
+
+Pontosan ezt a logikát alkalmazzuk itt is! A kényszerrezgés során a kitérés, a sebesség és a gyorsulás is periodikusan változik. Ezeket a mennyiségeket elképzelhetjük egy-egy $\omega$ szögsebességgel forgó vektorként, amelyeknek a vízszintes tengelyre vett vetülete adja meg a pillanatnyi értékeket:
+* A **kitérés** egy bizonyos szögben áll.
+* A **sebesség** a kitéréshez képest pontosan $90^\circ$-kal siet (hiszen a koszinuszból szinusz lett).
+* A **gyorsulás** pedig $180^\circ$-kal van elfordulva a kitéréshez képest (mivel a koszinuszból mínusz koszinusz lett).
+
+Mivel az egyenletben szereplő összes tag (a visszatérítő hatás, a csillapítás, a gyorsulás és a gerjesztőerő) **ugyanazzal az $\omega$ körfrekvenciával forog**, egymáshoz viszonyított szögük sosem változik. Ha "gondolatban együtt forgunk" velük, akkor ezek a vektorok megállnak, és egy egyszerű, álló derékszögű háromszöget alkotnak!
+
+* A vízszintes tengelyen a kitéréssel azonos, illetve ellentétes fázisú tagok (a visszatérítő hatás és a gyorsulás tagja) eredője található: $A(\omega_0^2 - \omega^2)$.
+* A függőleges tengelyen, ezekre merőlegesen a sebességből származó csillapítási tag áll: $A(2\delta\omega)$.
+* A kettő vektoriális összege (az átfogó) pedig ki kell, hogy adja a gerjesztést: $f_0$.
+
+Így a bonyolult trigonometriai azonosságok helyett egy egyszerű Pitagorasz-tétellel is megkaphatjuk az amplitúdók közötti összefüggést!
+
+![A mozgásegyenlet forgóvektoros ábrázolása](Kepek/rezonanciafazorabra.svg)
 
 ### Példák
 1. Először vizsgáljuk a csillapítás nélküli, ideális esetet. A kényszererő amplitúdóját válasszuk meg úgy, hogy $f_0 = 1$ teljesüljön.
@@ -311,6 +330,6 @@ $$
 
 1. Egy $m = 0,5 \text{ kg}$ tömegű testet egy $D = 50 \text{ N/m}$ direkciós erejű rugóra függesztünk. A rendszert egy periodikus erő gerjeszti. A csillapítási tényező $\beta = 0,2 \text{ kg/s}$. Határozza meg a rendszer csillapítatlan saját körfrekvenciáját ($\omega_0$), valamint azt a gerjesztő körfrekvenciát ($\omega_r$), amelynél a kényszerrezgés amplitúdója maximális lesz!
 
-2. Egy lengéscsillapítóval felszerelt jármű tömege $1200 \text{ kg}$, a rugózat eredő direkciós ereje $D = 3 \cdot 10^5 \text{ N/m}$. A jármű egy olyan úton halad, ahol a keresztirányú úthibák (bukkenők) egymástól egyenlő $L = 6 \text{ m}$ távolságra követik egymást. Milyen sebességgel ($v$) kell haladnia az autónak ahhoz, hogy fellépjen a rezonancia jelensége, ha a lengéscsillapítás mértékét elhanyagolhatónak tekintjük?
+2. Egy lengéscsillapítóval felszerelt jármű tömege $1200 \text{ kg}$, a rugózat eredő direkciós ereje $D = 3 \cdot 10^5 \text{ N/m}$. A jármű egy olyan úton halad, ahol a keresztirányú úthibák (bukkanók) egymástól egyenlő $L = 6 \text{ m}$ távolságra követik egymást. Milyen sebességgel ($v$) kell haladnia az autónak ahhoz, hogy fellépjen a rezonancia jelensége, ha a lengéscsillapítás mértékét elhanyagolhatónak tekintjük?
 
 3. Az elméleti összefoglalóban levezetett $\tan \phi$ kifejezés alapján mutassa meg, hogy mekkora a gerjesztőerő és a kitérés közötti $\phi$ fáziskülönbség abban a speciális esetben, amikor a gerjesztő frekvencia pontosan megegyezik a sajátfrekvenciával ($\omega = \omega_0$)! Fogalmazza meg szavakkal is, mit jelent ez a fáziskülönbség a sebesség és a gerjesztőerő irányára nézve!
