@@ -124,7 +124,7 @@ $$
 $$
 
 
-Itt a közelítésünk lényege, hogy az $2s$ ívhosszat a hozzá tartozó szelővel pótoltuk, amely egyenes szakasz. Ez nyilván annál pontosabb, minél kisebb a $\phi$ kitérés. Ez azt jelenti, hogy ebben a speciális esetben jogosak az alábbi közelítések:
+Itt a közelítésünk lényege, hogy az $2s$ ívhosszat a hozzá tartozó $2x$ hosszúságú húrral pótoltuk, amely egyenes szakasz. Ez nyilván annál pontosabb, minél kisebb a $\phi$ kitérés. Ez azt jelenti, hogy ebben a speciális esetben jogosak az alábbi közelítések:
 
 
 $$
