@@ -75,4 +75,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	59. [Csillapított rezgések *](Mechanika/CSILLAPITOTTREZGES.md)
 	60. [A rezonancia *](Mechanika/REZONANCIA.md)
 	61. [A matematikai inga](Mechanika/MATEMATIKAIINGA.md)
-	62. [A fizikai inga, forgási rezgések](Mechanika/FIZIKAIINGA.md)
+	62. [A fizikai inga](Mechanika/FIZIKAIINGA.md)
