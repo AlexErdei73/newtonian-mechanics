@@ -76,3 +76,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	60. [A rezonancia *](Mechanika/REZONANCIA.md)
 	61. [A matematikai inga](Mechanika/MATEMATIKAIINGA.md)
 	62. [A fizikai inga](Mechanika/FIZIKAIINGA.md)
+	63. [Forgási rezgések](Mechanika/FORGASIREZGESEK.md)
