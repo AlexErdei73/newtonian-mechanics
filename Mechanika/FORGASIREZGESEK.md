@@ -1,4 +1,4 @@
-# A torziós inga (Forgási rezgések)
+# Forgási rezgések, torziós inga
 
 ## Kísérletek
 
@@ -16,7 +16,7 @@ $$
 $$
 
 
-Itt $\Theta$ a felfüggesztés tengelyére vonatkozó tehetetlenségi nyomaték, $\beta$ pedig a szöggyorsulás.
+Itt $\Theta$ a felfüggesztés tengelyrezgésekére vonatkozó tehetetlenségi nyomaték, $\beta$ pedig a szöggyorsulás.
 
 Amikor a szálat megcsavarjuk, abban rugalmas feszültség ébred, amely a kitéréssel ellentétes irányú forgatónyomatékot fejt ki a testre. A Hooke-törvény forgó mozgásra vonatkozó alakja szerint ez a visszatérítő nyomaték egyenesen arányos a megcsavarodás $\phi$ szögével:
 

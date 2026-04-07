@@ -77,3 +77,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	61. [A matematikai inga](Mechanika/MATEMATIKAIINGA.md)
 	62. [A fizikai inga](Mechanika/FIZIKAIINGA.md)
 	63. [Forgási rezgések](Mechanika/FORGASIREZGESEK.md)
+	64. [Csattolt rezgések](Mechanika/CSATTOLTREZGESEK.md)
