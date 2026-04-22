@@ -103,7 +103,13 @@ $$
 $$
 
 
-Ha most ezt a két azonosságot összeadjuk, akkor megkapjuk, amire szükségünk lesz. Azonban először meghatározzuk $\alpha$ és $\beta$ értékeit úgy, hogy alkalmazhassuk az azonosságot.
+Ha most ezt a két azonosságot összeadjuk, akkor megkapjuk, amire szükségünk lesz.
+
+$$
+\cos(\alpha + \beta) + \cos(\alpha - \beta) = 2\cos\alpha \cos\beta
+$$
+
+Először meghatározzuk $\alpha$ és $\beta$ értékeit úgy, hogy alkalmazhassuk az azonosságot.
 
 
 $$
@@ -137,8 +143,6 @@ Ezeket felhasználva a következő eredményekre jutunk:
 $$
 x = x_I + x_{II} = A\cos(\omega_I t) + A\cos(\omega_{II}t) = A(\cos(\omega_I t) + \cos(\omega_{II} t))
 $$
-
-
 
 $$
 x = 2A\cos\alpha \cos\beta
