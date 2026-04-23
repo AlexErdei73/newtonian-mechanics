@@ -40,6 +40,8 @@ $$
 
 [Interferencia hanghullámokkal](https://www.youtube.com/watch?v=b87QZtYKmqo)
 
+[Az eredeti Young kíserlet fénnyel](https://www.youtube.com/watch?v=Iuv6hY6zsd0)
+
 > **Koherens hullámforrások:** Egyenlő frekvenciájú harmonikus hullámokat kibocsátó hullámforrások, amelyek között a fáziskülönbség állandó.
 
 > **Interferencia:** Koherens hullámforrásokból származó hullámok találkozásakor fellépő jelenség. A hullámtér bizonyos pontjaiban, ahol a hullámok azonos fázisban találkoznak, a hullámok erősítik egymást. Ahol a hullámok ellentétes fázisban találkoznak, ott gyengítik egymást.
