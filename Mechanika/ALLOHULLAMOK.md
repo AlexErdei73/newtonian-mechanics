@@ -42,7 +42,7 @@ y = y_{beeső} +  y_{visszavert} = A(\cos(\omega t - kx) + \cos(\omega t + kx - 
 $$
 
 
-A $\cos$ függvények összegére a régi trükköt alkalmazhatjuk. Az azonosság a következő volt:
+Mivel a rögzített végpont egyáltalán nem mozdulhat el, a beeső és a visszavert hullám kitérésének összege az $x=l$ helyen minden időpillanatban nullát kell, hogy adjon. Hogy ezt a kifejezést egyszerűbb alakra hozzuk és vizsgálhassuk a kitérést, a koszinuszfüggvények összegére egy jól ismert trigonometriai azonosságot alkalmazhatunk:
 
 
 $$
@@ -86,7 +86,7 @@ y = 2A\cos\left(\frac{\phi}{2} + k(l - x)\right)\cos\left(\omega t - kl - \frac{
 $$
 
 
-Ez az általános kifejezés az egydimenziós hullám kitérésére, ha a kitérés a haladó és a visszavert hullám találkozása. Ha $x = l$, tehát a rögzített végnél vagyunk, akkor:
+Ez az általános kifejezés az egydimenziós hullám kitérésére, ha a kitérés a haladó és a visszavert hullám találkozása. Ha $x = l$, tehát a rögzített végnél vagyunk, akkor a fenti feltétel értelmében a helyfüggő résznek kell nullává válnia:
 
 
 $$
@@ -140,11 +140,11 @@ A kísérletekben állóhullámokat láthatunk. Ezek a haladó hullámokkal elle
 
 >**Sajátfrekvencia:** Az állóhullámban a húr minden pontja azonos frekvenciával rezeg. Ez a frekvencia a sajátfrekvencia. A húrnak végtelen sok sajátrezgése és sajátfrekvenciája van.
 
->**Alapharmonikus vagy alaphang:** A húron kialakuló állóhullám, melynek nincs belső csomópontja a húron.
+>**Alapharmonikus vagy alaphang (1. harmonikus):** A húron kialakuló állóhullám, melynek nincs belső csomópontja a húron (a továbbiakban ezt az $n=0$ esettel jelöljük).
 
 >**Alapfrekvencia:** Az alapharmonikus frekvenciája. Ez a legalacsonyabb sajátfrekvencia. 
 
->**Felharmonikus:** Olyan állóhullám, ahol a húron belső csomópontok vannak. Az $n$-edik harmonikus esetében $n$ belső csomó van a húron. A felharmonikus frekvenciája mindig az alapfrekvencia egész számú többszöröse.
+>**Felharmonikus (és harmonikusok):** Olyan állóhullám, ahol a húron belső csomópontok vannak. A fizikában a rezgéseket harmonikusoknak is hívjuk (ahol az alaphang az 1. harmonikus). Ha a húron $n$ belső csomópont van, azt az $n$-edik felharmonikusnak, vagyis az $(n+1)$-edik harmonikusnak nevezzük. A harmonikusok frekvenciája a rögzített végű húr esetében mindig az alapfrekvencia egész számú többszöröse.
 
 A rezgő rendszerben két, ellentétes irányban terjedő hullám interferál és erre a helyzetre érvényes a fentebb levezetett formula a kitérésre. Tegyük fel, hogy a külső gerjesztő erő megszűnte után, ahogy a szimulációban láthatjuk, a szabad végen állandó amplitúdójú rezgés alakul ki. Jelöljük ezt az amplitúdót most $2A$-val! Ekkor az $x = 0$ szabad végen fenn kell álljon, hogy:
 
@@ -182,7 +182,7 @@ l = \left(n + \frac{1}{2}\right)\frac{\lambda}{2} = (2n + 1)\frac{\lambda}{4}
 $$
 
 
-A húr hossza a negyed hullámhossz páratlan számú többszöröse kell legyen. A szimuláció az $n = 2$ esetet mutatja be, amikor a húr hossza $5$-szöröse a negyed hullámhossznak. Természetesen nincs megszabva, hogy mekkora az $A$ amplitúdó, tehát ameddig a húr a rugalmassági tartományon belül mozog, akármekkora is lehet. A kitérésfüggvényt egységnyi $2A$ amplitúdóval adott $n$ esetén, a húr $n$-edik sajátfüggvényének, vagy $n$-edik sajátrezgésének nevezzük. Természetesen az amplitúdó bármekkora lehet és a szuperpozíció elve szerint több ilyen megoldás összege is megoldás. Tehát legáltalánosabb esetben a mozgásegyenlet megoldása a következő kell legyen:
+A húr hossza a negyed hullámhossz páratlan számú többszöröse kell legyen. A szimuláció az $n = 2$ esetet mutatja be, amikor a húr hossza $5$-szöröse a negyed hullámhossznak. Természetesen nincs megszabva, hogy mekkora az $A$ amplitúdó, tehát ameddig a húr a rugalmassági tartományon belül mozog, akármekkora is lehet. A kitérésfüggvényt egységnyi $2A$ amplitúdóval adott $n$ belső csomópont esetén a húr $n$-edik sajátfüggvényének, vagy sajátrezgésének nevezzük. Természetesen az amplitúdó bármekkora lehet és a szuperpozíció elve szerint több ilyen megoldás összege is megoldás. Tehát legáltalánosabb esetben a mozgásegyenlet megoldása a következő kell legyen:
 
 
 $$
@@ -200,11 +200,11 @@ $$
 
 A matematikusok be is bizonyítják, hogy a mozgásegyenlet megoldása a húr tetszőleges szabad rezgése esetében felírható a fenti alakban, persze az $f_n$ függvények konkrét alakja függ a húr fizikai paramétereitől, például a hullám terjedési sebességétől a húron, illetve attól, hogy a húr végei szabadon rezegnek vagy rögzítettek-e. A húr kitérései nyilván a rugalmassági határokon belül kell legyenek. 
 
->A húron kialakuló szabad rezgés mindig a sajátrezgések különböző amplitúdókkal vett szuperpozíciója. Ez az állítás tetszőleges rezgő rendszerre érvényes, nem csak húrokra. Csak annyi a feltétel, hogy a szuperpozíció elve érvényes legyen, tehát a kitérések kicsinyek kell legyenek és a rendszer a rugalmassági határain belül mozog, ahol a Hooke-törvénye érvényes.
+>A húron kialakuló szabad rezgés mindig a sajátrezgések különböző amplitúdókkal vett szuperpozíciója. Ez az állítás tetszőleges rezgő rendszerre érvényes, nem csak húrokra. Csak annyi a feltétel, hogy a szuperpozíció elve érvényes legyen, tehát a kitérések kicsinyek kell legyenek és a rendszer a rugalmassági határain belül mozog, ahol a Hooke-törvény érvényes.
 
 ### Példák
 
-1. A szimulációban leolvasható a gerjesztő frekvencia, melyre a húr rezonál. Ez $0,59\text{ Hz}$. Ekkor két belső csomó alakul ki, tehát $n = 2$. A húr hossza $l = 15\text{ m}$. 
+1. A szimulációban leolvasható a gerjesztő frekvencia, melyre a húr rezonál. Ez $0,59\text{ Hz}$. Ekkor két belső csomó alakul ki, tehát az indexünk $n = 2$. A húr hossza $l = 15\text{ m}$. 
 * Mekkora a kialakuló állóhullám hullámhossza?
 * Mekkora a terjedési sebesség a húron?
 * Mekkora az alapfrekvencia? Próbáljuk ki ezt a frekvenciát a szimulációban!
@@ -251,7 +251,7 @@ f_0 = \frac{c}{\lambda_0} = \frac{7,08}{60} = 0,118\text{ Hz}
 $$
 
 
-Itt is igaz az, hogy a frekvencia az alapfrekvencia egész számú többszöröse, ez esetben pont $5$-szöröse (mivel $2n+1 = 5$).
+Itt is igaz az, hogy a frekvencia az alapfrekvencia páratlan egész számú többszöröse, ez esetben pont $5$-szöröse (mivel $2n+1 = 5$).
 
 
 $$
@@ -260,13 +260,13 @@ $$
 
 
 2. Vizsgáljuk most a kialakuló állóhullámokat a szimulációban szereplő húron, ha mindkét vég rögzített!
-* Mekkora az alaprezgés hullámhossza, ha a húr $15\text{ m}$ hosszú?
+* Mekkora az alaphang (n=0 belső csomópont) hullámhossza, ha a húr $15\text{ m}$ hosszú?
 * Mekkora az alapfrekvencia, ha a terjedési sebesség továbbra is $c = 7,08\text{ m/s}$?
-* Mekkora az első és második felharmonikus hullámhossza és frekvenciája?
-* Mekkora az $n$-edik harmonikus hullámhossza és frekvenciája?
-* Készítsünk szimulációt a második harmonikusra!
+* Mekkora az 1. és a 2. felharmonikus (vagyis az 1, illetve 2 belső csomóponttal rendelkező rezgések) hullámhossza és frekvenciája?
+* Mekkora egy általános, $n$ belső csomóponttal rendelkező állóhullám hullámhossza és frekvenciája?
+* Készítsünk szimulációt a 2. harmonikusra (az 1. felharmonikusra)!
 
-Ha mindkét vég rögzített, akkor ezeken csomópont van, de az alaphang esetében nincs belső csomó, tehát a húr hossza egy fél hullámhossz kell legyen.
+Ha mindkét vég rögzített, akkor ezeken csomópont van, de az alaphang esetében nincs belső csomó ($n=0$), tehát a húr hossza egy fél hullámhossz kell legyen.
 
 
 $$
@@ -286,19 +286,21 @@ f_0 = \frac{c}{\lambda_0} = \frac{7,08}{30} = 0,236\text{ Hz}
 $$
 
 
+Az 1. felharmonikus (1 belső csomó) frekvenciája a 2. harmonikusnak felel meg:
 
 $$
 f_1 = 2f_0 = 0,472\text{ Hz}
 $$
 
 
+A 2. felharmonikus (2 belső csomó) frekvenciája a 3. harmonikus:
 
 $$
 f_2 = 3f_0 = 0,708\text{ Hz}
 $$
 
 
-A hullámhosszak:
+A megfelelő hullámhosszak:
 
 
 $$
@@ -312,7 +314,7 @@ $$
 $$
 
 
-Az általános formula:
+Az általános formula $n$ darab belső csomópont esetén:
 
 
 $$
@@ -337,13 +339,12 @@ $$
 [Állóhullám húron két rögzített véggel](https://alexerdei73.github.io/physics-engine/project/#80f91da0-5f31-4cad-8590-1ec4a3824fa1)
 
 ## Feladatok
-
 1. Egy $10 \text{ m}$ hosszú, homogén kötél egyik vége rögzített, a másik vége szabadon mozoghat. A hullámok terjedési sebessége a kötélen $5 \text{ m/s}$. 
 * Határozd meg az alapharmonikus (alaphang) frekvenciáját és hullámhosszát!
 * Mekkora frekvenciával kell rezegtetni a kötelet, hogy olyan állóhullám alakuljon ki, amelyen pontosan 3 belső csomópont található ($n=3$)?
 
 2. Egy gitárhúr mindkét vége rögzített, a hossza $0,65 \text{ m}$. Tudjuk, hogy a húr alaphangjának frekvenciája $330 \text{ Hz}$ (ez felel meg az E hangnak).
-* Milyen sebeséggel terjednek a mechanikai hullámok ezen a húron?
+* Milyen sebességgel terjednek a mechanikai hullámok ezen a húron?
 * Határozd meg a harmadik felharmonikus (amelynél három belső csomópont található) frekvenciáját és a hozzá tartozó hullámhosszat!
 
 3. Két azonos anyagból készült, és azonos mechanikai feszültségű (tehát azonos hullámterjedési sebességű) húrt vizsgálunk laboratóriumi körülmények között. Az első, $L_1$ hosszúságú húr mindkét vége rögzített, míg a második, $L_2$ hosszúságú húr egyik vége rögzített, a másik pedig szabad.
