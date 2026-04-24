@@ -198,6 +198,15 @@ f_n = \cos\left(\frac{\pi}{2} + k(l - x)\right)\cos\left(\omega t - kl - \frac{\
 $$
 
 
+> 💡 **Kitekintő haladóknak: Az állóhullám legelegánsabb alakja**  
+> A fenti, bonyolultnak tűnő kifejezést a peremfeltételek és trigonometriai azonosságok segítségével sokkal egyszerűbb alakra hozhatjuk. Ha elvégezzük a matematikai lépéseket, az időbeli és térbeli rész gyönyörűen szétválik:  
+> 
+$$
+f_n(x,t) = \cos(k_n x) \cos(\omega_n t)
+$$
+  
+> **Miért zseniális ez a forma?** Azonnal leolvasható belőle az állóhullám lényege! A $\cos(\omega_n t)$ rész mutatja, hogy a húr minden pontja *egyszerű harmonikus rezgőmozgást* végez az időben. A $\cos(k_n x)$ rész pedig megadja a rezgés *helytől függő amplitúdóját*: ahol ez nulla, ott csomópont van, ahol maximális, ott duzzadóhely.
+
 A matematikusok be is bizonyítják, hogy a mozgásegyenlet megoldása a húr tetszőleges szabad rezgése esetében felírható a fenti alakban, persze az $f_n$ függvények konkrét alakja függ a húr fizikai paramétereitől, például a hullám terjedési sebességétől a húron, illetve attól, hogy a húr végei szabadon rezegnek vagy rögzítettek-e. A húr kitérései nyilván a rugalmassági határokon belül kell legyenek. 
 
 >A húron kialakuló szabad rezgés mindig a sajátrezgések különböző amplitúdókkal vett szuperpozíciója. Ez az állítás tetszőleges rezgő rendszerre érvényes, nem csak húrokra. Csak annyi a feltétel, hogy a szuperpozíció elve érvényes legyen, tehát a kitérések kicsinyek kell legyenek és a rendszer a rugalmassági határain belül mozog, ahol a Hooke-törvény érvényes.
@@ -339,6 +348,7 @@ $$
 [Állóhullám húron két rögzített véggel](https://alexerdei73.github.io/physics-engine/project/#80f91da0-5f31-4cad-8590-1ec4a3824fa1)
 
 ## Feladatok
+
 1. Egy $10 \text{ m}$ hosszú, homogén kötél egyik vége rögzített, a másik vége szabadon mozoghat. A hullámok terjedési sebessége a kötélen $5 \text{ m/s}$. 
 * Határozd meg az alapharmonikus (alaphang) frekvenciáját és hullámhosszát!
 * Mekkora frekvenciával kell rezegtetni a kötelet, hogy olyan állóhullám alakuljon ki, amelyen pontosan 3 belső csomópont található ($n=3$)?
