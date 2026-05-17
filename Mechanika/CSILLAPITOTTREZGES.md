@@ -27,31 +27,31 @@ Bár elméletileg helytelen, ezt sokszor szokták modellezni sebességfüggő, a
 ## Mozgásegyenlet sebességgel arányos csillapítás esetén
 
 
-$$
+$$$$
 F_{x,e} = -Dx - \beta v_x
-$$
+$$$$
 
 
 Ez az egyenlet azt mutatja, hogy a rugalmas erő mellett fellép egy a sebesség nagyságával arányos, de a sebességgel ellentétes irányú erő, mely a mozgást minden pillanatban lassítani igyekszik. Ezt behelyettesítve Newton második törvényébe, megkapjuk a mozgásegyenletet.
 
 
-$$
+$$$$
 F_{x,e} = ma_x
-$$
+$$$$
 
 
 
-$$
+$$$$
 ma_x = -Dx - \beta v_x
-$$
+$$$$
 
 
 Nullára rendezve szokás az egyenletet felírni:
 
 
-$$
+$$$$
 ma_x + \beta v_x + Dx = 0
-$$
+$$$$
 
 
 Kérdés az, hogy milyen kitérés-idő függvény az egyenlet megoldása, ha a test álló helyzetből indul az $x(0) = +A$ helyzetből. Erre csak felsőbb matematikai ismeretek birtokában lehet válaszolni, tehát az egyenletet nem fogjuk megoldani, csak a megoldást magyarázzuk el.
@@ -61,48 +61,48 @@ Kérdés az, hogy milyen kitérés-idő függvény az egyenlet megoldása, ha a 
 Először is vizsgáljuk meg, hogyan csökken az amplitúdó. Ha a szimulációnkban feljegyeznénk a kitérés értékét $nT$ időnként, ahol $n$ nem negatív egész szám, akkor észrevennénk, hogy a következő összefüggés áll fenn:
 
 
-$$
+$$$$
 x(nT) = A_0q^n, \quad 0 < q < 1
-$$
+$$$$
 
 
 Ezt a sorozatot a matematikában úgy ismerjük, mint a *mértani sorozat*. Tehát az amplitúdók mértani sorozat szerint csökkennek. Minél kisebb a $q$ tényező, annál gyorsabban csökken az amplitúdó, tehát annál gyorsabban hal el a rezgés.
 Bevezethetjük a *csillapítási tényezőt*, melyet $\delta$-val fogunk jelölni. Ennek egysége 1/s, akárcsak a körfrekvenciának, tehát ezek összehasonlíthatók.
 
 
-$$
+$$$$
 \delta = \frac \beta {2m}
-$$
+$$$$
 
 
 A mozgásegyenlet megoldásával megmutatható, hogy:
 
 
-$$
+$$$$
 q = e^{-\delta T}
-$$
+$$$$
 
 
 Itt az $e$ szám a felsőbb matematikából jól ismert irracionális szám, nevét *Euler* matematikusról kapta. Értéke:
 
 
-$$
+$$$$
 e = 2,71828...
-$$
+$$$$
 
 
 Ez már majdnem elegendő $q$ kiszámításához, de a periódusidő egy kicsivel hosszabb, mint a csillapítatlan rezgés esetén. A mozgásegyenlet megoldásával megmutatható, hogy a körfrekvencia egy kicsit kisebb, mint a csillapítatlan esetben.
 
 
-$$
+$$$$
 \omega_0^2 = \frac D m
-$$
+$$$$
 
 
 
-$$
+$$$$
 \omega = \sqrt {\omega_0^2 - \delta^2}
-$$
+$$$$
 
 
 Ezen összefüggések segítségével a $q$ tényező már kiszámítható.
@@ -114,86 +114,86 @@ Számítsuk ki az eddigi példánkban a $q$ tényező értékét! Mennyi idő al
 A csillapítási tényező kiszámítása a következő:
 
 
-$$
+$$$$
 \delta = \frac {\beta} {2m} = \frac {0,06} {2 \times 0,01} = 3\text{ 1/s}
-$$
+$$$$
 
 
 A pontos körfrekvencia és periódusidő is kiszámítható:
 
 
-$$
+$$$$
 \omega_0^2 = \frac {D} {m} = \frac {200} {0,01} = 20000\text{ s}^{-2}
-$$
+$$$$
 
 
 
-$$
+$$$$
 \omega = \sqrt {\omega_0^2 - \delta^2} = \sqrt {20000 - 9} = 141,39\text{ 1/s}
-$$
+$$$$
  
 
 
-$$
+$$$$
 T = \frac {2 \pi} {\omega} = \frac {2 \pi} {141,39} = 0,044439\text{ s}
-$$
+$$$$
 
 
 Most már $q$ kiszámítható:
 
 
-$$
+$$$$
 q = e^{-\delta T} = e^{-3 \cdot 0,044439} = 0,87519
-$$
+$$$$
 
 
 A maradék energiából megkaphatjuk a maradék maximális kitérést!
 
 
-$$
+$$$$
 \frac {Dx_{max}^2} {2} = E_{max}
-$$
+$$$$
 
-$$
+$$$$
 x_{max} = \sqrt \frac {2E_{max}} {D} = \sqrt \frac {2 \cdot 5 \cdot 10^{-5}} {200} = 7,0711 \cdot 10^{-4}\text{ m}
-$$
+$$$$
 
 A maradék $x_{max}$ kitérésből kiszámíthatjuk $n$ minimális értékét úgy, hogy a rezgés energiája négy tizedes pontossággal 0 legyen!  
 
 
-$$
+$$$$
 x_{max} = A_0 q^n
-$$
+$$$$
 
 
 
-$$
+$$$$
 q^n = \frac{x_{max}}{A_0}
-$$
+$$$$
 
 
 A kitevő kiszámítása a logaritmusfüggvény segítségével lehetséges. A logaritmus alapja a hatványalap, a függvény pedig a hatvány értékéből adja vissza a kitevőt. Ez a függvény a legtöbb tudományos számológépen megtalálható. Néha csak a 10-es alapú $\log$ vagy az $e$ alapú $\ln$ függvények érhetők el. Ekkor a következő logaritmusazonosság segít visszavezetni a $q$ alapú logaritmust 10-es vagy $e$ alapú logaritmusra:
 
 
-$$
+$$$$
 \log_a(x) = \frac{\log_b(x)}{\log_b(a)}, \quad a > 0, b > 0, a \neq 1, b \neq 1
-$$
+$$$$
 
 
 Ez alapján az $e$ alapú logaritmus segítségével a számítás a következő:
 
 
-$$
+$$$$
 n = \log_q \left( \frac{x_{max}}{A_0} \right) = \frac{\ln \left( \frac{x_{max}}{A_0} \right)}{\ln q} = \frac{\ln \left( \frac{7,0711 \cdot 10^{-4}}{0,2} \right)}{\ln 0,87519} = 42,3427
-$$
+$$$$
 
 
 Az $n$ értékéből már az idő minimális értéke meghatározható:
 
 
-$$
+$$$$
 t_{min} = nT = 42,3427 \cdot 0,044439 = 1,8817 \text{ s}
-$$
+$$$$
 
 
 Valóban a szimulációból látszik, hogy az energia $1,882$ s alatt éri el a $-0,1470$ J-t!
@@ -203,71 +203,71 @@ Figyeljük meg, hogy itt a pontos érték megkapásához $n$-re a tört értéke
 Matematikából tanultuk, hogy a hatványozás elvégezhető tetszőleges valós kitevővel is. Ha az alap az $e$ szám, ez az exponenciális függvényhez vezet. Ezt a függvényt találjuk a kitérés-idő függvényben, mint az amplitúdó szorzója. Így tehát az amplitúdó exponenciálisan csökken.
 
 
-$$
+$$$$
 x(t) = Ae^{-\delta t}\cos(\omega t + \phi)
-$$
+$$$$
 
 
 A $\phi$ fázistolás ahhoz kell, hogy a kezdeti időpillanatban a kezdősebesség nulla legyen. Ennek kiszámítása:
 
 
-$$
+$$$$
 \tan \phi = - \frac \delta \omega
-$$
+$$$$
  
 
 Itt az $A$ szorzó még nem az amplitúdó, mert a kezdeti amplitúdót $t = 0$ behelyettesítéssel kapjuk meg.
 
 
-$$
+$$$$
 A_0 = A\cos \phi
-$$
+$$$$
 
 
 ### Példa
 Számítsuk ki a kitérést az idő függvényében a szimulációs példánkban!
 
 
-$$
+$$$$
 \tan \phi = - \frac \delta \omega = - \frac {3} {141,39} = -0,021218
-$$
+$$$$
 
 
 
-$$
+$$$$
 \phi = -0,021215
-$$
+$$$$
 
 
 
-$$
+$$$$
 A = A_0 / \cos \phi = 0,2 / \cos(-0,021215) = 0,200045
-$$
+$$$$
 
 
 Ezeket behelyettesítve kapjuk, hogy:
 
 
-$$
+$$$$
 x = 0,200045e^{-3t}\cos(141,39t - 0,021215)
-$$
+$$$$
 
 
 ## Kritikus csillapítás
 Amikor a csillapítás akkora, hogy a körfrekvencia nullává válik, akkor a koszinusz függvény már állandóan 1, tehát a test egyszerűen exponenciálisan tart az egyensúlyi helyzethez. Ezt nevezzük kritikus csillapításnak.
 
 
-$$
+$$$$
 \delta_k = \omega_0
-$$
+$$$$
 
 
 A formula megkapható a korábbi képletből, de a levezetés felsőbb matematikát igényel, úgyhogy itt nem vezetjük le. A képletet a teljesség kedvéért közöljük:
 
 
-$$
+$$$$
 x = A_0(1 + \delta_k t)e^{-\delta_k t}
-$$
+$$$$
 
 
 A mérnöki gyakorlatban az autók lengéscsillapítójánál a kritikus csillapítás megvalósítására törekednek, mert ekkor kerül vissza az autó kerékfelfüggesztése a leggyorsabban az egyensúlyi helyzetébe, tehát a menetstabilitás a lehető legjobb lesz. A lengéscsillapítók azonban a rugó összenyomódása alatt kis csillapítást fejtenek ki, míg a visszatérés alatt a csillapítás nagyobb. Ez az aszimmetrikus csillapítás fontos, hogy ha a kereket nagy ütés érné felfelé, akkor ezt ne vigye át a felfüggesztés a karosszériára.
@@ -280,9 +280,9 @@ A mérnöki gyakorlatban az autók lengéscsillapítójánál a kritikus csillap
 Írjuk fel a képletet a szimulációs példánk esetére!
 
 
-$$
+$$$$
 x = 0,2(1 + 141,42t)e^{-141,42t}
-$$
+$$$$
 
 
 ### Szimuláció
@@ -294,15 +294,15 @@ $$
 Ha a csillapítási együttható nagyobb, mint a csillapítatlan körfrekvencia, ami a kritikus csillapításra jellemző, a test nem végez rezgéseket, de annál lassabban jut vissza exponenciálisan az egyensúlyi helyzetbe, minél nagyobb a csillapítási együttható. Ez a képlet is levezethető felsőbb matematikai eszközökkel a gyenge csillapítás esetéből, de itt csak az eredményt közöljük.
 
 
-$$
+$$$$
 \gamma = \sqrt {\delta^2 - \omega_0^2}
-$$
+$$$$
 
 
 
-$$
+$$$$
 x = \frac A {2\gamma} \left( (\delta + \gamma)e^{(-\delta+\gamma)t} - (\delta - \gamma)e^{(-\delta-\gamma)t} \right)
-$$
+$$$$
 
 
 Ilyen eset áll fenn ajtók csillapításánál, hogy ne csapódjanak be, hanem szép lassan csukódjanak be.

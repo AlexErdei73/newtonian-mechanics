@@ -39,31 +39,31 @@ Mindkét esetben elmondhatjuk, hogy a közeg részecskéi egyensúlyi helyzetük
 Rugalmas testekben kialakulhatnak periodikus hullámok is, sőt ezek a legfontosabbak. Ez esetben a rezgés periodikus. Mi csak a harmonikus rezgések esetével foglalkozunk. Ha például a hullámgép végpontját harmonikus rezgésbe hozzuk periodikus gerjesztő erő hatására, akkor ez a rezgés a hullámgépen tovaterjed. Amíg a hullámgép másik végéhez nem ér a hullám, a matematikai leírás egyszerű. Legyen pl. a rezgés y-tengely irányú, míg a hullám x-irányban terjed. Ekkor a kitérés függ az x távolságtól is az időn kívül.
 
 
-$$
+$$$$
 y = A\cos\left(\omega\left(t - \frac x c\right)\right)
-$$
+$$$$
 
 
 Ez a függvény az $x = 0$ helyen pontosan olyan, mint az $x > 0$ tetszőleges helyen, ahová viszont csak késéssel ér oda. Ez a késés könnyen meghatározható. Legyen az $x = 0$ origóban az idő jele $t_0$, ekkor az x-helyen a hullám azonos rezgésállapotú a későbbi $t$ időben, mint volt az origóban.
 
 
-$$
+$$$$
 t_0 = t - \frac x c
-$$
+$$$$
 
 
 
-$$
+$$$$
 t = t_0 + \frac x c
-$$
+$$$$
 
 
 Tehát az időkésés értéke a megtett távolság és a terjedési sebesség hányadosa.
 
 
-$$
+$$$$
 \Delta t = \frac x c
-$$
+$$$$
 
 
 ## A hullámhossz fogalma
@@ -73,40 +73,40 @@ $$
 Amennyiben a hullám pontosan egy periódusnyit rezeg, mondjuk az $x = 0$ pontban, akkor pontosan egy rezgés zajlik le, tehát amennyiben $y = A$ volt, akkor újra $y = A$ lesz érvényben. Ekkor viszont már a hullámhegy eljut az $x = \lambda$ távolságba is. Érvényes tehát az előbbiek alapján, hogy
 
 
-$$
+$$$$
 T = \frac \lambda c
-$$
+$$$$
 
 
 Ez az összefüggés más alakba is írható a frekvencia, illetve a körfrekvencia segítségével.
 
 
-$$
+$$$$
 \lambda = cT = \frac c f
-$$
+$$$$
 
 
 A hullámszám, melyet $k$-val jelölünk, a $2\pi$ távolságon lévő teljes periódusok száma.
 
 
-$$
+$$$$
 k = \frac {2\pi} \lambda = \frac {2\pi f} c = \frac \omega c
-$$
+$$$$
 
 
 ### Példa
 Normál hőmérsékleten levegőben a hang terjedési sebessége $340\text{ m/s}$. Mekkora a hangvilla hullámhossza, ha frekvenciája $440\text{ Hz}$? Hány teljes hullám van egy teljes méteren?
 
 
-$$
+$$$$
 \lambda = \frac c f = \frac {340} {440} = 0,77272\text{ m}
-$$
+$$$$
 
 
 
-$$
+$$$$
 n = \frac 1 \lambda = \frac 1 {0,77272} = 1,2941
-$$
+$$$$
 
 
 ## Feladatok

@@ -12,9 +12,9 @@ A későbbiekben gyakran találkozunk olyan mennyiségekkel, amelyeket a nagysá
 
 Vektorokat úgy adunk össze, ahogy azt az elmozdulásoknál tesszük. A második elmozdulást úgy toljuk el önmagával párhuzamosan, hogy a kezdőpontja az első elmozdulás végpontjába kerüljön. Ekkor az eredő elmozdulás az első elmozdulás kezdőpontjából a második elmozdulás végpontjába mutat.
 
-$$
+$$$$
 \overrightarrow{w} = \overrightarrow{u} + \overrightarrow{v}
-$$
+$$$$
 
 [Vektor-összeadás](https://www.geogebra.org/classic/tpa5qfuq)
 
@@ -28,29 +28,29 @@ $$
 
 A gyalogos elmozdulásai azonos irányú vektorok, tehát az összeg hossza a tagok hosszának összege:
 
-$$
+$$$$
 s = 20m + 30m = 50m
-$$
+$$$$
 
 2. Most a gyalogos először 20 m-t sétál az egyik irányba, majd visszasétál az ellenkező irányba 30 m-t. Milyen messze mozdult el a kezdőponttól, ha az elmozdulások egy vonalban történtek?
 
 Az elmozdulások ellentétes irányú vektorok, tehát a nagyobbik hosszából kivonjuk a kisebbik hosszát:
 
-$$
+$$$$
 s = 30m - 20m = 10m
-$$
+$$$$
 
 3. Egy gyalogos 30 m-t sétál egyenesen a járdán, majd egy útkereszteződésnél merőlegesen folytatja útját, és még 40 m-t sétál. Mekkora az elmozdulása a kezdőponthoz képest?
 
 Mivel az elmozdulások merőlegesek egymásra, egy derékszögű háromszög átfogójának hosszát keressük:
 
-$$
+$$$$
 c^2 = a^2 + b^2 = 30^2 + 40^2 = 900 + 1600 = 2500
-$$
+$$$$
 
-$$
+$$$$
 c = \sqrt{2500} = 50m
-$$
+$$$$
 
 ### Feladatok
 
@@ -68,18 +68,18 @@ $$
 
 Két vektor különbségét úgy kapjuk meg, hogy a vektorokat közös kezdőpontra toljuk. A különbségvektor a két végpontot köti össze, és a kisebbítendő vektor végpontja felé mutat.
 
-$$
+$$$$
 \overrightarrow{w} - \overrightarrow{u} = \overrightarrow{v}
-$$
+$$$$
 
 ### Nullvektor
 
 Ha egy vektorból önmagát vonjuk ki, nullvektort kapunk. A nullvektor hossza 0, iránya tetszőleges. A nullvektort bármely vektorhoz hozzáadhatjuk; a vektor értéke nem változik.
 
-$$
+$$$$
 \overrightarrow{0} = \overrightarrow{a} - \overrightarrow{a}
-$$
+$$$$
 
-$$
+$$$$
 \left | \overrightarrow{0} \right | = 0
-$$
+$$$$

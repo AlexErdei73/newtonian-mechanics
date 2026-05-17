@@ -25,9 +25,9 @@ Galilei azt is megállapította, hogy a mozgás egyenletesen gyorsuló mozgás, 
 
 Érvényes a négyzetes úttörvény a nulla kezdősebességű esésre:
 
-$$
+$$$$
 h = \frac {g} {2} \times t^2
-$$
+$$$$
 
 Itt h az elengedés magassága, t az esés ideje és g a nehézségi gyorsulás.
 
@@ -35,65 +35,65 @@ Itt h az elengedés magassága, t az esés ideje és g a nehézségi gyorsulás.
 
 1. Egy $5.00 \text{ m}$ magasból elejtett test mennyi idő alatt ér talajt, ha szabadon esik? Mekkora sebességgel csapódik be? 
 
-$$
+$$$$
 h = \frac {g} {2} \times t^2
-$$
+$$$$
 
-$$
+$$$$
 5.00 = \frac {9.81} {2} \times x^2
-$$
+$$$$
 
-$$
+$$$$
 5.00 = 4.905x^2
-$$
+$$$$
 
-$$
+$$$$
 x^2 = 1.019
-$$
+$$$$
 
-$$
+$$$$
 x = \pm 1.010
-$$
+$$$$
 
 A test $1.01 \text{ s}$ alatt zuhan le. 
 
-$$
+$$$$
 a = g = \frac {v - v_0} {t}
-$$
+$$$$
 
-$$
+$$$$
 9.81 = \frac {x - 0} {1.010}
-$$
+$$$$
 
-$$
+$$$$
 x = 9.90
-$$
+$$$$
 
 A talajba csapódás sebessége $9.90 \frac {m} {s}$.
 
 2. Egy szabadon eső test $30.0 \frac {m} {s}$ sebességgel csapódik a talajba. Mennyi ideig zuhant a test és mekkora magasságból engedték el?
 
-$$
+$$$$
 a = g = \frac {v - v_0} {t}
-$$
+$$$$
 
-$$
+$$$$
 9.81 = \frac {30.0 - 0} {x}
-$$
+$$$$
 
-$$
+$$$$
 9.81x = 30.0
-$$
+$$$$
 
-$$
+$$$$
 x = 3.058
-$$
+$$$$
 
 Az idő $3.06 \text{ s}$.
 
-$$
+$$$$
 h = \frac {g} {2} \times t^2 = \frac {9.81} {2} \times 3.058^2 = 45.9 \text{ m}
-$$
+$$$$
 
 A magasság tehát $45.9 \text{ m}$.
 

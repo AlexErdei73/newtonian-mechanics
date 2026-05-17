@@ -6,29 +6,29 @@ Egyensúlyban a testek sebessége és gyorsulása is nulla. Ez az állapot így 
 
 Newton második törvénye alapján az eredő erő nulla, tehát az eredő erő nullvektor.
 
-$$
+$$$$
 a = 0
-$$
+$$$$
 
-$$
+$$$$
 F_e = ma = 0
-$$
+$$$$
 
-$$
+$$$$
 \overrightarrow{F_e} = \overrightarrow{F_1} + \overrightarrow{F_2} + ... + \overrightarrow{F_n} = \overrightarrow{0}
-$$
+$$$$
 
 A vektorösszeadás a koordináta-rendszerben a koordináták előjeles összeadását jelenti. Tehát:
 
-$$
+$$$$
 F_{e,x} = F_{1,x} + F_{2,x} + ... + F_{n, x} = 0
-$$
+$$$$
 
 és
 
-$$
+$$$$
 F_{e,y} = F_{1,y} + F_{2,y} + ... + F_{n, y} = 0
-$$
+$$$$
 
 ## Egyensúly a lejtőn
 
@@ -60,80 +60,80 @@ A piros görbe a rugó hosszát mutatja, míg a zöld a rugó erő változását
 ### A formula levezetése
 Jelöljük a nehézségi erőt $G$-vel, a lejtő által kifejtett kényszererőt $K$-val és a rugó által kifejtett erőt, mely megakadályozza, hogy a test lecsússzon, $F$-fel. Legyen továbbá adott egy koordináta-rendszer, melynek x-tengelye a lejtővel párhuzamosan lefelé, az y-tengelye pedig a lejtőre merőlegesen, a $K$ erő irányába mutat! Ekkor:
 
-$$
+$$$$
 \overrightarrow{F} + \overrightarrow{K} + \overrightarrow{G} = \overrightarrow{0}
-$$
+$$$$
 
-$$
+$$$$
 F_x + K_x + G_x = 0
-$$
+$$$$
 
-$$
+$$$$
 F_y + K_y + G_y = 0
-$$
+$$$$
 
-$$
+$$$$
 F_x = -F, F_y = 0
-$$
+$$$$
 
-$$
+$$$$
 K_x = 0, K_y = K
-$$
+$$$$
 
 A $G$ erő felbontható a lejtő irányú x és a lejtőre merőleges y komponensekre. Ha berajzoljuk a derékszögű háromszöget, mely a felbontáshoz vezet, akkor ebben 30 fokos szög van a lejtővel párhuzamos komponenssel szemben. Ennek oka, hogy a szög szárai merőlegesek a lejtő 30 fokos szögének megfelelő száraira, és ez esetben a merőleges szárú szögek egyenlők (más esetekben 180°-ra egészítik ki egymást).
 
-$$
+$$$$
 \frac {G_x} {G} = \sin \alpha
-$$
+$$$$
 
 Tehát:
 
-$$
+$$$$
 G_x = G \times \sin \alpha
-$$
+$$$$
 
 Hasonlóan:
 
-$$
+$$$$
 G_y = -G \times \cos \alpha
-$$
+$$$$
 
 $G$ y komponense negatív, mivel az y tengellyel ellentétes irányba, tehát $K$-val ellentétes irányba mutat. Ezeket beírva:
 
-$$
+$$$$
 -F + 0 + G \times \sin \alpha = 0
-$$
+$$$$
 
-$$
+$$$$
 0 + K + (-G \times \cos \alpha) = 0
-$$
+$$$$
 
 Eredményeink:
 
-$$
+$$$$
 F = G \times \sin \alpha = mg \times \sin \alpha
-$$
+$$$$
 
-$$
+$$$$
 K = G \times \cos \alpha = mg \times \cos \alpha
-$$
+$$$$
 
 ### Példa
 Ha a test súlya 1N és a lejtő szöge 30 fok, akkor:
 
-$$
+$$$$
 F = G \times \sin \alpha = 1N \times \sin(30^\circ) = 1N \times 0,5 = 0,5N
-$$
+$$$$
 
-$$
+$$$$
 K = G \times \cos \alpha = 1N \times \cos(30^\circ) = 1N \times 0,8660 = 0,8660N
-$$
+$$$$
 
 $K$ és $F$ egymásra merőleges erők, vektori összegük:
 
-$$
+$$$$
 \sqrt{F^2 + K^2} = \sqrt {0,5^2 + 0,8660^2} = 1,0000N = G
-$$
+$$$$
 
 Tehát $F$ és $K$ vektori eredője egyenlő nagyságú $G$-vel, de felfelé mutat. Így ezek az erők együttesen kiegyensúlyozzák a nehézségi erőt, ahogy annak lennie is kell.
 

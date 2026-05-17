@@ -16,77 +16,77 @@ Végezzük el a számításokat!
 A kötélszárak egyenlő hosszúak, és a szimmetria miatt az erő is egyenlő nagyságú bennük, jelöljük ezt $K$-val. Legyen a koordináta-rendszer $x$ tengelye vízszintes és jobbra mutató, az $y$ tengely meg függőleges és felfelé mutató.
 A kötélszárak hossza legyen $l$:
 
-$$
+$$$$
 l = \sqrt {1,5^2 + 2^2} = 2,50m
-$$
+$$$$
 
 Tehát a kötél teljes hossza ($2l$): $5,00m$. Legyen a kötélszár függőlegessel bezárt szöge $\alpha$. Ekkor:
 
-$$
+$$$$
 \sin \alpha = \frac {1,5} {2,5} = 0,6
-$$
+$$$$
 
-$$
+$$$$
 \cos \alpha = \frac {2} {2,5} = 0,8
-$$
+$$$$
 
 Az egyensúly feltétele:
 
-$$
+$$$$
 \overrightarrow {K_1} + \overrightarrow {K_2} + \overrightarrow {G} = \overrightarrow {0}
-$$
+$$$$
 
 Itt 1-es a bal kötélszár indexe és 2-es a jobboldali kötélszáré.
 
-$$
+$$$$
 |\overrightarrow {K_1}| = |\overrightarrow {K_2}| = K
-$$
+$$$$
 
 Az egyenletek a koordinátákban:
 
-$$
+$$$$
 K_{1,x} + K_{2,x} + G_x = 0 
-$$
+$$$$
 
-$$
+$$$$
 K_{1,y} + K_{2,y} + G_y = 0
-$$
+$$$$
 
-$$
+$$$$
 K_{1,x} = -K \times \sin \alpha
-$$
+$$$$
 
-$$
+$$$$
 K_{2,x} = K \times \sin \alpha
-$$
+$$$$
 
-$$
+$$$$
 K_{1,y} = K_{2,y} = K \times \cos \alpha
-$$
+$$$$
 
-$$
+$$$$
 G_x = 0, G_y = -G
-$$
+$$$$
 
 Ezeket beírva kapjuk:
 
-$$
+$$$$
 -K \times \sin \alpha + K \times \sin \alpha + 0 = 0
-$$
+$$$$
 
-$$
+$$$$
 K \times \cos \alpha + K \times \cos \alpha - G = 0
-$$
+$$$$
 
 Az első egyenlet azonosság, a második egyenlet:
 
-$$
+$$$$
 2K \times \cos \alpha = G
-$$
+$$$$
 
-$$
+$$$$
 K = \frac {G} {2\cos \alpha} = \frac {0,98N} {2 \times 0,8} = 0,6125N
-$$
+$$$$
 
 Tehát a kötélben ébredő erő $0,613N$.
 
@@ -108,59 +108,59 @@ Pontosan ugyanúgy kapjuk, hogy $\sin \alpha = 0,6$ és $\cos \alpha = 0,8$. Itt
 
 A számítások:
 
-$$
+$$$$
 \overrightarrow {K_1} + \overrightarrow {K_2} + \overrightarrow {G} = \overrightarrow {0}
-$$
+$$$$
 
 A koordinátás alak:
 
-$$
+$$$$
 K_{1,x} + K_{2,x} + G_x = 0
-$$
+$$$$
 
-$$
+$$$$
 K_{1,y} + K_{2,y} + G_y = 0
-$$
+$$$$
 
 Az ábra alapján:
 
-$$
+$$$$
 K_{1,x} = -K_1 \times \sin \alpha
-$$
+$$$$
 
-$$
+$$$$
 K_{1,y} = K_1 \times \cos \alpha
-$$
+$$$$
 
-$$
+$$$$
 K_{2,x} = K_2, K_{2,y} = 0
-$$
+$$$$
 
-$$
+$$$$
 G_x = 0, G_y = -G
-$$
+$$$$
 
 Behelyettesítve ezeket:
 
-$$
+$$$$
 -K_1 \times \sin \alpha + K_2 + 0 = 0
-$$
+$$$$
 
-$$
+$$$$
 K_1 \times \cos \alpha + 0 - G = 0
-$$
+$$$$
 
 A második egyenletből kapjuk:
 
-$$
+$$$$
 K_1 = \frac {G} {\cos \alpha} = \frac {0,98N} {0,8} = 1,225N
-$$
+$$$$
 
 Az első egyenletből pedig:
 
-$$
+$$$$
 K_2 = K_1 \times \sin \alpha = 1,225N \times 0,6 = 0,735N
-$$
+$$$$
 
 Tehát a bal oldali kötél $1,23N$ erővel feszül, míg a jobb oldalról a vízszintes húzóerő $0,735N$.
 

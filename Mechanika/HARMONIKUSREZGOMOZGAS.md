@@ -13,40 +13,40 @@
 Egy rugóra akasztott test harmonikus rezgőmozgást végez, és amint a kísérletből és a szimulációból is láthatjuk, ez szoros kapcsolatban van az egyenletes körmozgással. A testeket megfelelően indítva a mozgásuk szinkronban marad, mégpedig úgy, hogy az egyenletes körmozgást végző test egyik koordinátája (pl. az x-koordináta) megegyezik az egyenes vonalban, az x-tengellyel párhuzamosan harmonikus rezgőmozgást végző test x-koordinátájával.
 
 
-$$
+$$$$
 x = A\cos(\omega t)
-$$
+$$$$
 
 ![Harmonikus rezgőmozgás es egyenletes körmozgás kapcsolata](Kepek/rezgomozgas.svg)
 
 A matematikából tudjuk, hogy a pont koordinátái derékszögű koordináta-rendszerben a következők:
 
 
-$$
+$$$$
 x = r\cos \phi
-$$
+$$$$
 
 
 
-$$
+$$$$
 y = r\sin \phi
-$$
+$$$$
 
 
 Itt $r$ a távolság az origótól, $\phi$ pedig a forgásszög a pozitív x-tengelytől mérve. A forgásszög a körmozgás esetén $\omega t$, a kör $r$ sugarát pedig itt $A$-val jelöltük és amplitúdónak nevezzük. $x$ neve kitérés, az amplitúdó pedig a maximális kitérést jelenti, hisz a koszinuszfüggvény legnagyobb értéke 1. $\omega$ elnevezése szögsebesség helyett most körfrekvencia, és továbbra is érvényes az eddigi összefüggés:
 
 
-$$
+$$$$
 \omega = \frac {2\pi} {T} = 2\pi f
-$$
+$$$$
 
 
 Itt a $T$ periódusidő reciproka az $f$ frekvencia.
 
 
-$$
+$$$$
 f = \frac {1} {T}
-$$
+$$$$
 
 
 A frekvencia egysége $\frac {1} {s}$, ezt hertznek is nevezik, jele: Hz. A körmozgásnál a periódusidő reciprokát fordulatszámnak nevezik és $n$-nel jelölik.
@@ -75,27 +75,27 @@ Egy rugóra akasztott test harmonikus rezgőmozgást végez. A mozgás amplitúd
 - Számítsuk ki a kitérést $t=0,150\text{ s}$-kor!
 
 
-$$
+$$$$
 T = \frac {1} {f} = \frac {1} {2} = 0,5\text{ s}
-$$
+$$$$
 
 
 
-$$
+$$$$
 \omega = 2\pi f = 2 \cdot \pi \cdot 2 \approx 12,566 \frac {1} {s}
-$$
+$$$$
 
 
 
-$$
+$$$$
 x = A \cos (\omega t) = 0,2 \cdot \cos (12,566 \cdot t)
-$$
+$$$$
 
 
 
-$$
+$$$$
 x = 0,2 \cdot \cos (12,566 \cdot 0,15) = -0,0618\text{ m}
-$$
+$$$$
 
 
 > **Tipp:** A megoldásnál ügyelni kell, hogy a szöget radiánban mérjük, tehát a számológépünket radián (RAD) módba kell kapcsolni!

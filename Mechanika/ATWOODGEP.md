@@ -8,29 +8,29 @@ Ez egy fizikafeladatokban gyakran szereplő idealizáció. A fonal tömege álta
 Ha ugyanis a fonal egyenes, meg van feszítve (vagy ilyen darabokra osztható), akkor a gyorsulása a második törvény alapján:
 
 
-$$
+$$$$
 F_e = ma
-$$
+$$$$
 
 
 
-$$
+$$$$
 K_1 - K_2 = ma
-$$
+$$$$
 
 
 Itt $K_1$ és $K_2$ a két végen kifejtett erők, melyek ellentétes irányúak. Ha $m = 0$, akkor:
 
 
-$$
+$$$$
 K_1 - K_2 = 0
-$$
+$$$$
 
 
 
-$$
+$$$$
 K_1 = K_2
-$$
+$$$$
 
 
 >**Az elhanyagolható tömegű, egyenesre kifeszített fonal a két végén egyenlő erőt fejt ki. A fonal által kifejtett erő természetesen a fonal irányába mutat, nincs a fonalra merőleges komponense.**
@@ -38,49 +38,49 @@ $$
 2. A nyújthatatlan fonal két vége megfeszített állapotban egyenlő mértékben mozdul el a fonal irányába. Ezáltal a fonal hossza nem változik az elmozdulás során. Legyen a végpontok által a fonal irányába megtett út $s_1$ és $s_2$. Ekkor:
 
 
-$$
+$$$$
 \Delta l = |s_2 - s_1|
-$$
+$$$$
 
 
 Itt $\Delta l$ a fonal megnyúlása. Ez nulla, tehát:
 
 
-$$
+$$$$
 0 = |s_2 - s_1|
-$$
+$$$$
 
 
 
-$$
+$$$$
 s_1 = s_2
-$$
+$$$$
 
 
 
-$$
+$$$$
 \frac {s_1} {t} = \frac {s_2} {t}
-$$
+$$$$
 
 
 
-$$
+$$$$
 v_{1,f} = v_{2,f}
-$$
+$$$$
 
 
 Itt a sebességek a végpontok sebességeinek fonalirányú komponensei. Ha a fonal végei csak a fonal irányába mozdulnak el, tehát nincs a fonal végpontjának a fonalra merőleges sebességkomponense, akkor a végpontok gyorsulásai is egyenlők:
 
 
-$$
+$$$$
 \frac {\Delta v_{1,f}} {t} = \frac {\Delta v_{2,f}} {t}
-$$
+$$$$
 
 
 
-$$
+$$$$
 a_1 = a_2
-$$
+$$$$
 
 
 Itt tehát a gyorsulások megegyeznek, de ez csak akkor igaz, ha a végpontok elmozdulása tisztán a fonalirányú haladó mozgás következménye. Ez tehát nem igaz például egy ingára, ahol az inga sebessége merőleges a fonalra. Ingánál a fonal hossza nem változik, ha a fonal nyújthatatlan, de nincs a sebességnek a lengő végpontnál fonalirányú komponense. A fonalra kötött test körmozgásával, mint amilyen az inga lengése is, majd a későbbiekben foglalkozunk részletesebben.
@@ -104,75 +104,75 @@ Az alábbi ábra az ideális Atwood-ejtőgépet mutatja:
 Felírjuk a második törvényt mindkét testre:
 
 
-$$
+$$$$
 K - m_1g = m_1a
-$$
+$$$$
 
 
 
-$$
+$$$$
 m_2g - K = m_2a
-$$
+$$$$
 
 
 A kötélerőt kifejezzük az első egyenletből és beírjuk a második egyenletbe, majd az egyenletet megoldjuk $a$-ra.
 
 
-$$
+$$$$
 K = m_1g + m_1a
-$$
+$$$$
 
 
 
-$$
+$$$$
 m_2g - (m_1g + m_1a) = m_2a
-$$
+$$$$
 
 
 
-$$
+$$$$
 m_2g - m_1g - m_1a = m_2a
-$$
+$$$$
 
 
 
-$$
+$$$$
 m_2g - m_1g = m_1a + m_2a
-$$
+$$$$
 
 
 
-$$
+$$$$
 (m_2 - m_1)g = (m_1 + m_2)a
-$$
+$$$$
 
 
 
-$$
+$$$$
 a = \frac {m_2 - m_1} {m_1 + m_2} g
-$$
+$$$$
 
 
 Most kiszámítjuk a $K$-t:
 
 
-$$
+$$$$
 K = m_1g + m_1a = m_1g + m_1\frac {m_2 - m_1} {m_1 + m_2} g
-$$
+$$$$
 
 
 
-$$
+$$$$
 K = \frac {m_1(m_1 + m_2) + m_1(m_2 -m_1)} {m_1 + m_2} g = \frac {2m_1m_2} {m_1 + m_2} g
-$$
+$$$$
 
 
 A rendszer súlya:
 
 
-$$
+$$$$
 F_s = 2K = \frac {4m_1m_2} {m_1 + m_2} g
-$$
+$$$$
 
 
 ### Kísérlet

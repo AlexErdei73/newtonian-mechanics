@@ -39,83 +39,83 @@ Egy $0,100\,kg$ tömegű test $1,00\,\frac{m}{s}$ sebességgel csapódik a nyuga
 Felírjuk a megmaradási tételeket az ütközési folyamatra. A mechanikai energia az ütközés előtt és után is csak mozgási energia:
 
 
-$$
+$$$$
 \frac {m_1v_{1,0}^2} {2} + \frac {m_2v_{2,0}^2} {2} = \frac {m_1v_1^2} {2} + \frac {m_2v_2^2} {2}
-$$
+$$$$
 
 
 A lendület megmaradása:
 
 
-$$
+$$$$
 m_1v_{1,0} + m_2v_{2,0} = m_1v_1 + m_2v_2
-$$
+$$$$
 
 
 Helyettesítsük be az adatokat!
 
 
-$$
+$$$$
 \frac {0,1 \cdot 1^2} {2} + 0 = \frac {0,1 v_1^2} {2} + \frac {0,2 v_2^2} {2}
-$$
+$$$$
 
 
 
-$$
+$$$$
 0,1 \cdot 1 + 0 = 0,1 v_1 + 0,2 v_2
-$$
+$$$$
 
 
 Szorozzuk meg az első egyenletet 20-szal és másodikat pedig 10-zel!
 
 1.  
-$$
+$$$$
 1 = v_1^2 + 2v_2^2
-$$
+$$$$
 
 2.  
-$$
+$$$$
 1 = v_1 + 2v_2
-$$
+$$$$
 
 
 Fejezzük ki $v_1$-et a másodikból:
 
-$$
+$$$$
 v_1 = 1 - 2v_2
-$$
+$$$$
 
 
 Helyettesítsük vissza az elsőbe:
 
-$$
+$$$$
 1 = (1 - 2v_2)^2 + 2v_2^2
-$$
+$$$$
 
 
 
-$$
+$$$$
 1 = 1 - 4v_2 + 4v_2^2 + 2v_2^2
-$$
+$$$$
 
 
 
-$$
+$$$$
 0 = 6v_2^2 - 4v_2
-$$
+$$$$
 
 
 
-$$
+$$$$
 0 = (3v_2 - 2)v_2
-$$
+$$$$
 
 
 A megoldások:
 
-$$
+$$$$
 v_2 = 0 \quad \text{vagy} \quad v_2 = \frac {2} {3} = 0,6667 \frac {m} {s}
-$$
+$$$$
 
 
 A két megoldás közül az első a kezdeti, ütközés előtti állapot. A számunkra ismeretlen megoldás tehát:
@@ -128,110 +128,110 @@ Ellenőrizhető a szimulációval is.
 Az általános képletek is levezethetők egy kis algebrával $v_1$-re és $v_2$-re. Itt a sebességek tulajdonképpen sebességkomponensek az ütközés egyenesének irányában, tehát előjelesek. Általában a pozitív tengely iránya balról jobbra mutat. A teljesség kedvéért levezetjük a formulákat!
 
 
-$$
+$$$$
 \frac {m_1v_{1,0}^2} {2} + \frac {m_2v_{2,0}^2} {2} = \frac {m_1v_1^2} {2} + \frac {m_2v_2^2} {2}
-$$
+$$$$
 
 
 
-$$
+$$$$
 m_1v_{1,0} + m_2v_{2,0} = m_1v_1 + m_2v_2
-$$
+$$$$
 
 
 A trükk az energiaegyenlet átrendezése 2-vel való szorzás után.
 
 
-$$
+$$$$
 m_1v_{1,0}^2 - m_1v_1^2 = m_2v_2^2 - m_2v_{2,0}^2
-$$
+$$$$
 
 
 Szorzattá alakítjuk az oldalakat:
 
 
-$$
+$$$$
 m_1(v_{1,0} + v_1)(v_{1,0} - v_1) = m_2(v_2 + v_{2,0})(v_2 - v_{2,0})
-$$
+$$$$
 
 
 Átrendezzük az impulzusmegmaradást is:
 
 
-$$
+$$$$
 m_1v_{1,0} - m_1v_1 = m_2v_2 - m_2v_{2,0}
-$$
+$$$$
 
 
 
-$$
+$$$$
 m_1(v_{1,0} - v_1) = m_2(v_2 - v_{2,0})
-$$
+$$$$
 
 
 Ezzel az egyenlettel elosztjuk az átrendezett energiaegyenletet:
 
 
-$$
+$$$$
 v_{1,0} + v_1 = v_2 + v_{2,0}
-$$
+$$$$
 
 
 $v_1$-et megkapjuk, ha kifejezzük $v_2$-t az impulzusegyenletből, majd $v_2$ helyére beírjuk az impulzusegyenletbe. Ezután kifejezzük $v_1$-et.
 
 
-$$
+$$$$
 v_2 = v_{1,0} + v_1 - v_{2,0}
-$$
+$$$$
 
 
 
-$$
+$$$$
 m_1v_{1,0} + m_2v_{2,0} = m_1v_1 + m_2(v_{1,0} + v_1 - v_{2,0})
-$$
+$$$$
 
 
 
-$$
+$$$$
 m_1v_{1,0} - m_2v_{1,0} + 2m_2v_{2,0} = m_1v_1 + m_2v_1
-$$
+$$$$
 
 
 
-$$
+$$$$
 (m_1 - m_2)v_{1,0} + 2m_2v_{2,0} = (m_1 + m_2)v_1
-$$
+$$$$
 
 
 A végső formula:
 
-$$
+$$$$
 v_1 = \frac {(m_1 - m_2)v_{1,0} + 2m_2v_{2,0}} {m_1 + m_2}
-$$
+$$$$
 
 
 Kipróbálhatjuk az általános formulánkat a példánk adataival:
 
 
-$$
+$$$$
 v_1 = \frac {(0,1 - 0,2)1 + 2 \cdot 0,2 \cdot 0} {0,1 + 0,2} = \frac {-0,1} {0,3} = -0,3334 \frac {m} {s}
-$$
+$$$$
 
 
 Látszik, hogy helyes eredményt kapunk. $v_2$-t teljesen hasonlóan kapjuk meg. Itt csak az eredményt közöljük:
 
 
-$$
+$$$$
 v_2 = \frac {(m_2 - m_1)v_{2,0} + 2m_1v_{1,0}} {m_1 + m_2}
-$$
+$$$$
 
 
 Ennek az ellenőrzése a példánk alapján:
 
 
-$$
+$$$$
 v_2 = \frac {(0,2 - 0,1) \cdot 0 + 2 \cdot 0,1 \cdot 1} {0,1 + 0,2} = \frac {0,2} {0,3} = 0,6667 \frac {m} {s}
-$$
+$$$$
 
 
 > **Megjegyzés:** A képleteket nem érdemes bemagolni, inkább számoljunk úgy, ahogy a példamegoldásnál tettük!

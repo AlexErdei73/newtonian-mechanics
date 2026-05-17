@@ -12,67 +12,67 @@ Cavendish úgynevezett torziós mérleget használt, mely egy vékony torziós s
 1. Határozzuk meg a Föld tömegét, ha tudjuk, hogy a nehézségi gyorsulás $9,81 \frac {m} {s^2}$ és a Föld sugara $6370 km$! A $G$ mért értéke $6,674 \times 10^{-11} \frac {Nm^2} {kg^2}$.
 
 
-$$
+$$$$
 F_g = mg
-$$
+$$$$
 
 
 
-$$
+$$$$
 F_g = G\frac {mM_F} {R^2}
-$$
+$$$$
 
 
 Itt a testre ható nehézségi erőt írtuk fel két különböző alakban! Az egyik alak a szokásos, nehézségi gyorsulást tartalmazza. A másik pedig Newton gravitációs törvényét jelenti erre a problémára.
 
 
-$$
+$$$$
 mg = G\frac {mM_F} {R^2}
-$$
+$$$$
 
 
 
-$$
+$$$$
 g = \frac {GM_F} {R^2}
-$$
+$$$$
 
 
 Innen kifejezhetjük $M$-et, a Föld tömegét!
 
 
-$$
+$$$$
 M_F = \frac {gR^2} {G} = \frac {9,81 \times 6370000^2} {6,674 \times 10^{-11}} = 5,964 \times 10^{24}kg
-$$
+$$$$
 
 
 2. Határozzuk meg a Nap tömegét a Föld pályaadatai alapján!
 
 
-$$
+$$$$
 F_g = m\frac {v^2} {r} = m\frac {4 \pi^2 r^2} {T^2r}
-$$
+$$$$
 
 
 
-$$
+$$$$
 F_g = G\frac {mM_N} {r^2}
-$$
+$$$$
 
 
 A két felírást egyenlővé téve a következőt kapjuk:
 
 
-$$
+$$$$
 m\frac {4 \pi^2 r} {T^2} = G\frac {mM_N} {r^2}
-$$
+$$$$
 
 
 Itt $m$-mel oszthatunk és kifejezhetjük $M$-et.
 
 
-$$
+$$$$
 M_N = \frac {4 \pi^2 r^3} {GT^2} = \frac {4 \times 3,1415^2 \times (1,496 \times 10^{11})^3} {6,674 \times 10^{-11} \times (365,26 \times 86400)^2} = 1,988 \times 10^{30} kg
-$$
+$$$$
 
 
 ## Feladatok

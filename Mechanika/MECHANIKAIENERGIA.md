@@ -20,33 +20,33 @@ A mechanikai energiából mindig 100%-ban visszanyerhető a befektetett munka, h
 
 Tegyük fel, hogy a testre mozgása közben csak konzervatív erők hatnak. Az egyszerűség kedvéért hasson csak egy konzervatív erő a testre. Ekkor a munka, melyet a konzervatív erő végez a testen, nem más, mint a helyzeti energia csökkenése.
 
-$$
+$$$$
 W = -\Delta E_h
-$$
+$$$$
 
 Ha csak egy erő hat a testre, akkor ez az eredő erő, tehát munkája a gyorsítási munka, mely nem más, mint a mozgási energia növekedése.
 
-$$
+$$$$
 W = \Delta E_m
-$$
+$$$$
 
 Tehát amennyivel a helyzeti energia csökken, pontosan annyival nő a mozgási energia.
 
-$$
+$$$$
 -(E_h - E_{h,0}) = E_m - E_{m,0}
-$$
+$$$$
 
-$$
+$$$$
 E_{h,0} - E_h = E_m - E_{m,0}
-$$
+$$$$
 
-$$
+$$$$
 E_m + E_h = E_{m,0} + E_{h,0}
-$$
+$$$$
 
-$$
+$$$$
 E_m + E_h = const.
-$$
+$$$$
 
 >**Ha egy rendszerben csak konzervatív erők hatnak, akkor a mechanikai energiája állandó. Ez a mechanikai energia megmaradásának tétele.**
 
@@ -67,47 +67,47 @@ A kísérlet és a szimuláció az ingalengéseket mutatja be, amelyeknél a mec
 ### Példák
 1. Egy $0,100 kg$ tömegű testet meglökünk a lejtő alján $5,00 \frac {m} {s}$ sebességgel. Mekkora a mozgási energiája? Mekkora a helyzeti energiája? A lejtő súrlódásmentes. Milyen magasra mehet fel a test? Mekkora ekkor a mozgási energiája? Mekkora ekkor a helyzeti energiája?
 
-$$
+$$$$
 E_{m,0} = \frac {mv_0^2} {2} = \frac {0,1 \times 5^2} {2} = 1,25 J
-$$
+$$$$
 
 A helyzeti energia a vonatkoztatási szinttől függ. Válasszuk $h_0 = 0$-t!
 
-$$
+$$$$
 E_{h,0} = mgh_0 = 0
-$$
+$$$$
 
 Minden pillanatban igaz, hogy:
 
-$$
+$$$$
 E_h + E_m = 1,25 J
-$$
+$$$$
 
 Ha a test felfelé mozog a lejtőn és nincs súrlódás, akkor egy pillanatra megáll, majd visszafordul. Tehát a maximális emelkedés akkor következik be, amikor a sebessége és mozgási energiája 0.
 
-$$
+$$$$
 mgh + 0 = 1,25 J
-$$
+$$$$
 
-$$
+$$$$
 0,1 \times 9,81 \times h = 1,25
-$$
+$$$$
 
-$$
+$$$$
 h = \frac {1,25} {0,1 \times 9,81} = 1,274 m 
-$$
+$$$$
 
 2. Egy $0,100 kg$ tömegű test egy $3,00 m$ hosszú kötél alján lóg, és meglökjük $5,00 \frac {m} {s}$ sebességgel. Milyen magasra emelkedik a kezdőpont felett? Mekkora kitérésnek felel ez meg? Az esetleges veszteségektől tekintsünk el.
 
 Az első példában megadott gondolatmenetet alkalmazhatjuk itt is. Az adatok is azonosak. Az egyedüli különbség a mozgás pályájában van, hisz most köríven mozog a test, nem egy síkon felfelé, mint az előző példában. A kényszererő munkája persze itt is nulla, tehát nem kell potenciális energiát figyelembe vegyünk a kényszererő miatt. A magasságra itt is $1,274 m$-t kapunk. Mekkora az ehhez tartozó szög? Ez már geometriai feladat. A keresett szög, melyet a kötél a függőlegessel bezár a teljes kitérésnél, legyen $\alpha$. Ez egy derékszögű háromszög egyik szöge, melynek szög melletti befogója $R - h$, az átfogója pedig $R$, a körpálya sugara, tehát a kötél hossza.
 
-$$
+$$$$
 \cos \alpha = \frac {R - h} {R} = \frac {3 - 1,274} {3} = 0,5753
-$$
+$$$$
 
-$$
+$$$$
 \alpha = 54,88^\circ
-$$
+$$$$
 
 ## Az energia megmaradása
 

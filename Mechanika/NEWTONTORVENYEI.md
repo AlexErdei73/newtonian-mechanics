@@ -26,21 +26,21 @@ Gyakorlatban a Földhöz rögzített koordináta rendszer sok esetben kielégít
 
 >**A test gyorsulása egyenesen arányos a rá ható erők vektori eredőjével. Az arányossági tényező a test tömege.**
 
-$$
+$$$$
 F_e = ma
-$$
+$$$$
 
 Ebben az összefüggésben az $F_e$ eredő erő a testre ható erők vektoros összege. 
 
-$$
+$$$$
 \overrightarrow {F_e} = \overrightarrow {F_1} + \overrightarrow {F_2} + ... + \overrightarrow {F_n}
-$$
+$$$$
 
 Az erő tehát vektor mennyiség. Az erő egysége a Newton(N). $1N$ erő $1kg$ tömeget $1 \frac {m} {s^2}$ gyorsulással gyorsít.
 
-$$
+$$$$
 1N = 1kg \times 1 \frac {m} {s^2}
-$$
+$$$$
 
 ### Kísérlet
 

@@ -7,9 +7,9 @@ Ha például lemérjük a szoba hosszát, és azt találjuk, hogy 3 m, az azt je
 Fontos megjegyezni, hogy a mennyiség mindig a mértékszám és a mértékegység szorzata.
 Például:
 
-$$
+$$$$
 3m = 3 \times 1m
-$$
+$$$$
 
 Itt a 3 a mértékszám, és `m` a méter mértékegység jele. A `3 m` úgy értendő, hogy a hosszúság háromszorosa az 1 méternek.
 
@@ -33,17 +33,17 @@ Régóta felismerték, hogy a folyamatok összehasonlíthatók az alapján, hogy
 
 Ez a szám onnan jön, hogy egy nap 24 óra, egy óra 60 perc, egy perc pedig 60 másodperc.
 
-$$
+$$$$
 1min = 60s
-$$
+$$$$
 
-$$
+$$$$
 1h = 60min = 60 \times 60s = 3600s
-$$
+$$$$
 
-$$
+$$$$
 1nap = 24h = 24 \times 3600s = 86400s
-$$
+$$$$
 
 Másodperces inga: Az egy méter hosszú inga kis lengései kb. 2 s periódussal ismétlődnek; tehát egy fél lengés az egyik szélső helyzetből a másikig körülbelül 1 másodperc.
 
@@ -57,13 +57,13 @@ A testek tömegét mérleggel hasonlítjuk össze. A mérlegek működése álta
 
 Ez a definíció tartalmazza a térfogat fogalmát. A téglatestek térfogata az oldalaik hosszainak szorzata. Mivel a kocka is téglatest (minden oldala egyenlő hosszú), a térfogata az oldalainak a szorzata. Egy köbdeciméter egy deciméter oldalú kocka térfogata. Egy deciméter az egy tized méter, tehát 10 deciméter = 1 méter. A köbdeciméter térfogategység másik elnevezése a liter (l).
 
-$$
+$$$$
 1l = 1dm^3 = 1dm \times 1dm \times 1dm = 0.1m \times 0.1m \times 0.1m = 0.001m^3
-$$
+$$$$
 
-$$
+$$$$
 1m^3 = 1m \times 1m \times 1m = 10dm \times 10dm \times 10dm = 1000dm^3 = 1000l
-$$
+$$$$
 
 A definíció szintén tartalmazza a hőmérséklet fogalmát. A víz 4 °C-on a legsűrűbb; ez azt jelenti, hogy egy liter víz tömege 4 °C-on a legnagyobb.
 
@@ -100,27 +100,27 @@ Ez a viszonylag bonyolult definíció a korábbi, régi megfogalmazás volt. A 2
 
 1. A H-atom sugara alapállapotban a Bohr-rádiusz, amely 0.053 nm. Hány méter ez és hány pikométer? Egy angstrom (Å) az $10^{-10}$ m. Hány angstrom a Bohr-rádiusz?
 
-$$
+$$$$
 0.053nm = 0.053 \times 10^{-9}m = 5.3 \times 10^{-11}m
-$$
+$$$$
 
-$$
+$$$$
 5.3 \times 10^{-11}m = 53 \times 10^{-12}m = 53pm
-$$
+$$$$
 
-$$
+$$$$
 5.3 \times 10^{-11}m = 0.53 \times 10^{-10}m = 0.53Å
-$$
+$$$$
 
 2. A Föld sugara 6371 km. Hány méternek felel ez meg? Számítsuk ki az egyenlítő hosszát méterben és kilométerben!
 
-$$
+$$$$
 6371km = 6371 \times 10^{3}m = 6.371 \times 10^{6}m
-$$
+$$$$
 
-$$
+$$$$
 K = 2 \pi R = 2 \times 3.1415 \times 6.371 \times 10^{6}m = 40 029 000m = 40 029km
-$$
+$$$$
 
 Az eltérés a 40 000 km-tól a francia mérések hibája miatt lép fel. Nem sikerült egész pontosan úgy definiálni a métert, ahogyan szerették volna. További eltérést okoz, hogy a Föld nem szabályos gömb alakú, hanem kismértékben lapult a tengely körüli forgása miatt. Így az egyenlítőnél nagyobb a sugara, mint az átlagos sugár. Így az egyenlítő hossza kissé meg nagyobb, mint a számításunk (40 075 km).
 

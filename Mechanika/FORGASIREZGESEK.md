@@ -11,9 +11,9 @@
 A forgási rezgések legtipikusabb példája a torziós inga. Egy függőleges, rugalmas szálra (vagy spirálrugóra) rögzített testet a nyugalmi helyzetéből vízszintes síkban elfordítunk, majd elengedünk. A mozgásegyenlet felírásához ismét a forgómozgás alapegyenletéből indulunk ki:
 
 
-$$
+$$$$
 \Theta \beta = M_{z,e}^k
-$$
+$$$$
 
 
 Itt $\Theta$ a felfüggesztés tengelyrezgésekére vonatkozó tehetetlenségi nyomaték, $\beta$ pedig a szöggyorsulás.
@@ -21,9 +21,9 @@ Itt $\Theta$ a felfüggesztés tengelyrezgésekére vonatkozó tehetetlenségi n
 Amikor a szálat megcsavarjuk, abban rugalmas feszültség ébred, amely a kitéréssel ellentétes irányú forgatónyomatékot fejt ki a testre. A Hooke-törvény forgó mozgásra vonatkozó alakja szerint ez a visszatérítő nyomaték egyenesen arányos a megcsavarodás $\phi$ szögével:
 
 
-$$
+$$$$
 M_{z,e}^k = -D^* \phi
-$$
+$$$$
 
 
 Itt $D^*$ a szálra jellemző direkciós nyomaték vagy torziós állandó, mértékegysége $\text{Nm/rad}$. Megmutatja, mekkora nyomaték szükséges a szál 1 radiánnal történő megcsavarásához.
@@ -31,15 +31,15 @@ Itt $D^*$ a szálra jellemző direkciós nyomaték vagy torziós állandó, mér
 Ezt behelyettesítve a mozgásegyenletbe kapjuk:
 
 
-$$
+$$$$
 \Theta \beta = -D^* \phi
-$$
+$$$$
 
 
 
-$$
+$$$$
 \beta = -\frac {D^*} {\Theta} \phi
-$$
+$$$$
 
 
 **Fontos különbség a fizikai ingához képest:** Itt nem volt szükség kis szögű ($\sin\phi \approx \phi$) közelítésre! Amíg a megcsavarás nem haladja meg a szál rugalmassági határát, ez az egyenlet nagyobb kitérések (akár több teljes fordulat) esetén is pontosan érvényes. 
@@ -51,29 +51,29 @@ Mivel a szöggyorsulás egyenesen arányos a kitéréssel és ellentétes irány
 Az egyenlet alakjából leolvashatjuk a körfrekvencia négyzetét:
 
 
-$$
+$$$$
 \omega^2 = \frac {D^*} {\Theta}
-$$
+$$$$
 
 
 A periódusidő ($T = \frac{2\pi}{\omega}$) pedig a következőképpen alakul:
 
 
-$$
+$$$$
 \frac {4\pi^2} {T^2} = \frac {D^*} {\Theta}
-$$
+$$$$
 
 
 
-$$
+$$$$
 \frac {T^2} {4\pi^2} = \frac {\Theta} {D^*}
-$$
+$$$$
 
 
 
-$$
+$$$$
 T = 2\pi \sqrt {\frac {\Theta} {D^*}}
-$$
+$$$$
 
 
 Látható, hogy a lengésidő független a nehézségi gyorsulástól ($g$), kizárólag a test tehetetlenségétől és a szál rugalmas tulajdonságaitól függ.
@@ -84,17 +84,17 @@ Látható, hogy a lengésidő független a nehézségi gyorsulástól ($g$), kiz
 Először határozzuk meg a korong saját tengelyére vonatkozó tehetetlenségi nyomatékát:
 
 
-$$
+$$$$
 \Theta = \frac 1 2 mR^2 = \frac 1 2 \cdot 2 \cdot (0,1)^2 = 0,01\text{ kg m}^2
-$$
+$$$$
 
 
 Behelyettesítve a lengésidő képletébe:
 
 
-$$
+$$$$
 T = 2\pi \sqrt {\frac {\Theta} {D^*}} = 2\pi \sqrt {\frac {0,01} {0,05}} = 2\pi \sqrt {0,2} \approx 2,81\text{ s}
-$$
+$$$$
 
 
 2. **Ismeretlen test tehetetlenségi nyomatékának mérése (Laboratóriumi módszer).** 
@@ -108,41 +108,41 @@ Ezután a tengelyre szimmetrikusan ráhelyezünk egy ismert $\Theta_{plusz} = 0,
 Osszuk el a második egyenletet az elsővel (így a $4\pi^2$ és az ismeretlen $D^*$ is kiesik):
 
 
-$$
+$$$$
 \frac {T_2^2} {T_1^2} = \frac {\Theta_0 + \Theta_{plusz}} {\Theta_0}
-$$
+$$$$
 
 
 
-$$
+$$$$
 \frac {T_2^2} {T_1^2} = 1 + \frac {\Theta_{plusz}} {\Theta_0}
-$$
+$$$$
 
 
 Helyettesítsük be a számadatokat:
 
 
-$$
+$$$$
 \frac {2,10^2} {1,50^2} = 1 + \frac {0,02} {\Theta_0}
-$$
+$$$$
 
 
 
-$$
+$$$$
 1,96 = 1 + \frac {0,02} {\Theta_0}
-$$
+$$$$
 
 
 
-$$
+$$$$
 0,96 = \frac {0,02} {\Theta_0}
-$$
+$$$$
 
 
 
-$$
+$$$$
 \Theta_0 = \frac {0,02} {0,96} \approx 0,0208\text{ kg m}^2
-$$
+$$$$
 
 
 Ez egy rendkívül elegáns és gyakran használt kísérleti módszer, mert csupán időméréssel meghatározható egy tetszőlegesen bonyolult alakú test tehetetlenségi nyomatéka!
@@ -160,71 +160,71 @@ Jelöljük az eltérülés szögét $\phi$-vel, hisz $\Theta$ a tehetetlenségi 
 A gravitációs erő:
 
 
-$$
+$$$$
 F_g = G\frac{mM} {r^2}
-$$
+$$$$
 
 
 A fellépő forgatónyomaték a következő:
 
 
-$$
+$$$$
 |M_z| = 2F_g\frac L 2 = F_gL
-$$
+$$$$
 
 
 Tudjuk, hogy a nyomatékkal arányos szögelfordulás lép fel a torziós szálon. Ez Hooke törvénye a torziós szálra:
 
 
-$$
+$$$$
 |M_z| = D^*\phi
-$$
+$$$$
 
 
 Itt a nyomaték nagyságát jelöltük $|M_z|$-mel, tehát $|M_z|$ nem negatív. A forgási rezgésre felírhatjuk, hogy:
 
 
-$$
+$$$$
 \omega^2 = \frac {D^*} {\Theta}
-$$
+$$$$
 
 
 A tehetetlenségi nyomaték a következő:
 
 
-$$
+$$$$
 \Theta = 2m\left(\frac L 2\right)^2 = \frac 1 2 mL^2
-$$
+$$$$
 
 
 Rakjuk össze az egyenleteket egyetlen egyenletbe, melyből $G$-t fogjuk kifejezni. Ehhez kifejezzük $D^*$-ot!
 
 
-$$
+$$$$
 D^* = \omega^2 \Theta = \frac {4\pi^2} {T^2} \frac 1 2 mL^2 = \frac {2\pi^2mL^2} {T^2}
-$$
+$$$$
 
 
 A nyomatékokat is egyenlővé tesszük, és behelyettesítjük $F_g$-t:
 
 
-$$
+$$$$
 D^* \phi = G\frac{mM} {r^2}L
-$$
+$$$$
 
 
 Végül beírjuk $D^*$-ot, és kifejezzük $G$-t:
 
 
-$$
+$$$$
 \frac {2\pi^2mL^2\phi} {T^2} = G\frac {mM} {r^2}L
-$$
+$$$$
 
 
 
-$$
+$$$$
 G = \frac {2\pi^2Lr^2\phi} {MT^2}
-$$
+$$$$
 
 
 ## Feladatok

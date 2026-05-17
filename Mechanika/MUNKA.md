@@ -20,43 +20,43 @@ A mindennapi életben munka alatt azt értjük, amikor bemegyünk dolgozni a mun
 
 >**A munka az erő és az erő irányába eső elmozdulás (komponens) szorzata. Egysége a joule (J).**
 
-$$
+$$$$
 W = \overrightarrow{F} \Delta \overrightarrow{r}
-$$
+$$$$
 
 Ez a formula állandó nagyságú erő esetén érvényes, tehát az erő iránya és nagysága sem változik az elmozdulás során.
 
-$$
+$$$$
 W = F |\Delta \overrightarrow{r}| \cos \alpha
-$$
+$$$$
 
 Itt az $\alpha$ szög az erő és az elmozdulás vektorok által bezárt $180^\circ$-nál nem nagyobb szög. Ha a mozgás egyenes vonalú és irányváltozás sem történik az elmozdulás során, akkor a megtett út megegyezik az elmozdulás nagyságával. Ez esetben:
 
-$$
+$$$$
 W = Fs \cos \alpha
-$$
+$$$$
 
 ### Speciális esetek:
 
 1. Az erő az elmozdulás irányába mutat. Ekkor $\alpha = 0$, tehát:
 
-$$
+$$$$
 W = Fs
-$$
+$$$$
 
 2. Az erő és az elmozdulás egymásra merőleges, tehet $\alpha = 90^\circ$. Ekkor:
 
-$$
+$$$$
 W = 0
-$$
+$$$$
 
 mivel $\cos \alpha = \cos(90^\circ) = 0$.
 
 3. Az erő és az elmozdulás ellentétes irányú. Ekkor $\alpha = 180^\circ$, vagyis:
 
-$$
+$$$$
 W = -Fs
-$$
+$$$$
 
 Ilyenkor $\cos \alpha = \cos(180^\circ) = -1$.
 
@@ -66,59 +66,59 @@ A munka skalár mennyiség. Amikor két vektort úgy szorzunk össze, hogy az er
 
 1. Egy $200 kg$ tömegű testet függőlegesen felemelünk egy daruval $15,0 m$ magasra. Az emelés lassan, állandó sebességgel történik. Mekkora a nehézségi erő? Mekkora a súly? Mekkora erővel emelünk? Mekkora a végzett munka?
 
-$$
+$$$$
 G = mg = 200 \times 9,81 = 1962 N
-$$
+$$$$
 
-$$
+$$$$
 F = K = G = 1962 N
-$$
+$$$$
 
-$$
+$$$$
 W = Fs = 1962 \times 15 = 29430 J = 29,43 kJ
-$$
+$$$$
 
 Tehát a végzett munka $29,4 kJ$.
 
 2. Egy $200 kg$ tömegű testet állandó sebességgel gurítunk fel egy $15,0 m$ magas, $90,0 m$ hosszú emelkedőn. Az emelkedő sík felület, a gördülési ellenállástól eltekinthetünk. Mekkora a nehézségi erő? Hány N erővel nyomja a test az emelkedőt? Mekkora erővel kell tolni a testet? Mekkora az emelési munka? Mekkora a nehézségi erő által végzett munka? Mekkora a kényszererő által végzett munka?
 
-$$
+$$$$
 G = mg = 200 \times 9,81 = 1962 N
-$$
+$$$$
 
-$$
+$$$$
 \sin \alpha = \frac{15}{90} = 0,1667
-$$
+$$$$
 
-$$
+$$$$
 \alpha = 9,594^\circ
-$$
+$$$$
 
-$$
+$$$$
 K = mg \cos \alpha = 200 \times 9,81 \times \cos(9,594^\circ) = 1935 N
-$$
+$$$$
 
-$$
+$$$$
 F = mg \sin \alpha = 200 \times 9,81 \times 0,1667 = 327,1 N
-$$
+$$$$
 
-$$
+$$$$
 W = Fs = 327,1 \times 90 = 29440 J = 29,44 kJ
-$$
+$$$$
 
-$$
+$$$$
 W_G = Gs \cos(90^\circ + \alpha) = 1962 \times 90 \times \cos(99,594^\circ) = -29430 J = -29,43 kJ
-$$
+$$$$
 
 Ezt kiszámíthatjuk másképp is. A G erő és a h emelkedés ellentétes irányú, tehát:
 
-$$
+$$$$
 W_G = -Gh = -1962 \times 15 = -29430 J = -29,43 kJ
-$$
+$$$$
 
-$$
+$$$$
 W_K = Ks \cos(90^\circ) = 0
-$$
+$$$$
 
 Láthatjuk, hogy az emelési munkánk a lejtőn pontosan annyi, mintha lejtő nélkül emeltük volna fel ugyanazt a testet ugyanolyan magasra, feltéve hogy nincs veszteség. A lejtő erőt spórol nekünk, de munkát nem.
 
@@ -128,21 +128,21 @@ A gravitációs erő munkája független az úttól, csak az elmozdulás kezdő 
 
 3. Egy autó tömege $1300 kg$. Felgyorsítjuk álló helyzetből egyenletesen $20,0 \frac{m}{s}$ sebességre $8,00 s$ alatt. Mekkora a gyorsulás? Mekkora úton történt a gyorsítás? Mekkora a gyorsító erő? Mekkora munkát végez a motor a gyorsítás alatt? A veszteségektől, menetellenállásoktól eltekinthetünk.
 
-$$
+$$$$
 a = \frac{v - v_0}{t} = \frac{20}{8} = 2,50 \frac{m}{s^2}
-$$
+$$$$
 
-$$
+$$$$
 s = \frac{a}{2} \times t^2 = \frac{2,50}{2} \times 8^2 = 80 m
-$$
+$$$$
 
-$$
+$$$$
 F = F_e = ma = 1300 \times 2,50 = 3250 N
-$$
+$$$$
 
-$$
+$$$$
 W = Fs = 3250 \times 80 = 260000 J = 260 kJ
-$$
+$$$$
 
 ## Feladatok
 

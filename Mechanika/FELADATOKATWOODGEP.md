@@ -13,64 +13,64 @@ Legyen a kocsi tömege, mely a vízszintes asztallapon mozog, az $m_1$-es tömeg
 ![Newton második törvényének mérése](Kepek/newtonsecondlawmeasurement.svg)
 
 
-$$
+$$$$
 K = m_1a
-$$
+$$$$
 
 
 
-$$
+$$$$
 m_2g - K = m_2a
-$$
+$$$$
 
 
 Ezek az egyenletek Newton második törvényét fejezik ki az első és a második testre. Ha az első egyenletből $K$-t beírjuk a második egyenletbe, akkor ki tudjuk fejezni az $a$ gyorsulást.
 
 
-$$
+$$$$
 m_2g - m_1a = m_2a
-$$
+$$$$
 
 
 
-$$
+$$$$
 m_2g = (m_1 + m_2)a
-$$
+$$$$
 
 
 
-$$
+$$$$
 a = \frac {m_2g} {m_1 + m_2}
-$$
+$$$$
 
 
 A gyorsulás az $m_2g$ súly és az $m_1 + m_2$ össztömeg hányadosa, tehát valóban a kis lefelé mozgó súly gyorsítja a rendszer teljes össztömegét.
 
-$$
+$$$$
 K = \frac {m_1m_2} {m_1 + m_2} g
-$$
+$$$$
 
 ### Példa
 A videóból látszik, hogy $200 g$ lefelé gyorsuló tömeg $2 \frac {m} {s^2}$ gyorsulással mozog. Mekkora a rendszer össztömege? Mennyi a kocsi tömege? Mekkora a fonalerő?
 
 
-$$
+$$$$
 m_2g = (m_1 + m_2)a
-$$
+$$$$
 
 
 
-$$
+$$$$
 m_1 + m_2 = \frac {m_2g} {a} = \frac {0,2 \times 9,81} {2} = 0,981 kg = 981 g
-$$
+$$$$
 
-$$
+$$$$
 m_1 = 781g
-$$
+$$$$
 
-$$
+$$$$
 K = m_1a = 0,781 \times 2 = 1,562N
-$$
+$$$$
 
 
 ### Feladatok

@@ -6,37 +6,37 @@ Láttuk, hogy a szabadon eső testek a Föld felé, függőlegesen lefelé gyors
 
 A második törvény értelmében:
 
-$$
+$$$$
 F = ma
-$$
+$$$$
 
-$$
+$$$$
 F = G
-$$
+$$$$
 
-$$
+$$$$
 a = g
-$$
+$$$$
 
 Tehát a testekre:
 
-$$
+$$$$
 G = mg
-$$
+$$$$
 
 Nehézségi erő hat. Ha a test egyensúlyban van, tehát nem esik szabadon, hanem például fel van függesztve vagy épp alá van támasztva, akkor ez csak úgy lehetséges, hogy az alátámasztás vagy felfüggesztés a nehézségi erőt kiegyenlíti, tehát egy vele egyenlő nagyságú de függőlegesen felfelé mutató erőt fejt ki a testre ott ahol vele érintkezik. Ekkor viszont a test is kifejt egy a nehézségi erővel egyenlő nagyságú, de ellentétes irányú, tehát függőlegesen lefelé mutató erőt az alátámasztásra vagy a felfüggesztésre a harmadik törvény értelmében. Ezt az erőt nevezzük a test súlyának.
 
-$$
+$$$$
 F_k = G = mg
-$$
+$$$$
 
-$$
+$$$$
 F_s = F_k
-$$
+$$$$
 
-$$
+$$$$
 F_s = mg
-$$
+$$$$
 
 Első egyenletünk azt fejezi ki, hogy az alátámasztás vagy felfüggesztés által kifejtett kényszerő egyenlő a nehézségi erővel, így a test egyensúlyban van, nem mozdul. A második egyenlet a harmadik törvény, miszerint a súly erő és a kényszerő egyenlő nagyságú.
 
@@ -57,27 +57,27 @@ Az erő nem csak gyorsítani képes a testeket, hanem az alakjukat is megváltoz
 ## A súly függése a gyorsulástól
 Ha a test nincs egyensúlyban, hanem gyorsul, akkor a súlya nagyobb vagy kisebb, mint a rá ható gravitációs erő. Legyen a gyorsulás felfelé mutató és a nagysága $a$. Ekkor:
 
-$$
+$$$$
 F_e = F_k - G = ma
-$$
+$$$$
 
-$$
+$$$$
 F_s = F_k
-$$
+$$$$
 
-$$
+$$$$
 F_s = ma + G = ma + mg = m(a + g)
-$$
+$$$$
 
 Itt a súly és a kényszerő továbbra is egyenlő Newton harmadik törvénye alapján. Ha a gyorsulás lefelé mutat:
 
-$$
+$$$$
 F_e = G - F_k = ma
-$$
+$$$$
 
-$$
+$$$$
 F_s = F_k = G - ma = mg - ma = m(g - a)
-$$
+$$$$
 
 Fontos megjegyezzük, hogy kapjuk meg az eredő erő nagyságát. A kényszerő mindig felfelé mutat, a nehézségi erő még lefelé. Az eredő erő a különbségük, de a nagyobbikból kell a kisebbiket kivonni. Ha a test felfelé gyorsul, akkor a kényszerő a nagyobb, ha lefelé gyorsul, akkor a nehézségi erő a nagyobb. Ez speciális esete az ellentétes irányú vektorok összeadásának.
 

@@ -3,23 +3,23 @@
 ## Az emelési munka
 Vizsgáljuk meg, mitől függ az emelési munka! Emeljünk egy $m$ tömegű testet egyenletes sebességgel a felszín közelében $h_0$ magasságból $h$ magasságba!
 
-$$
+$$$$
 F = G = mg
-$$
+$$$$
 
-$$
+$$$$
 W = Fs = G(h - h_0) = mgh - mgh_0 = \Delta (mgh)
-$$
+$$$$
 
 Látjuk, hogy az emelési munka nem más, mint az $mgh$ változása. Ezt helyzeti energiának nevezzük. Az emelési munka tehát a helyzeti energia növelésére fordítódik.
 
-$$
+$$$$
 E_h = mgh
-$$
+$$$$
 
-$$
+$$$$
 W = \Delta E_h
-$$
+$$$$
 
 Ha a testet nem emeljük, hanem leeresztjük egyenletesen, akkor az emelési munkánk negatív. Ez azt jelenti, hogy a helyzeti energia csökkenése révén a test végez munkát számunkra.
 
@@ -27,9 +27,9 @@ Ha a testet nem emeljük, hanem leeresztjük egyenletesen, akkor az emelési mun
 
 >**A súly és magasság szorzatát (nehézségi vagy gravitációs) helyzeti energiának nevezzük.**
 
-$$
+$$$$
 E_h = Gh = mgh
-$$
+$$$$
 
 ### Vonatkoztatási szint
 
@@ -46,35 +46,35 @@ Látjuk majd, hogy létezik rugalmas helyzeti energia is, továbbá általánosa
 ## Példák
 1. Egy $1500 kg$ tömegű vasbeton panelt a daru $5,00 m$ kezdeti magasságból, lassan, elhanyagolható sebességgel felemel $30,0 m$ magasba, hogy a munkások felhasználhassák. A vonatkoztatási szint a talaj szintje. Mekkora a helyzeti energia kezdetben? Mekkora a helyzeti energia az emelés végén? Mekkora az emelési munka, ha a veszteségek elhanyagolhatók?
 
-$$
+$$$$
 E_{h,0} = mgh_0 = 1500 \times 9,81 \times 5 = 73580 J = 73,58 kJ
-$$
+$$$$
 
-$$
+$$$$
 E_h = mgh = 1500 \times 9,81 \times 30,0 = 441450 J = 441,45 kJ
-$$
+$$$$
 
-$$
+$$$$
 W = \Delta E_h = E_h - E_{h,0} = 441,45 kJ - 73,58 kJ = 367,9 kJ
-$$
+$$$$
 
 2. Egy $350 g$ tömegű követ $1,50 m$ magasságból feldobunk, és a kő beleesik egy $3,00 m$ mély gödörbe. A vonatkoztatási szint legyen a talaj szintje. Mekkora a helyzeti energia kezdetben és a dobás végén? Mekkora lenne az emelési munka, ha a követ egy csigán átvetett kötélre akasztanánk, és lassan, egyenletesen a gödör aljára engednénk? A veszteségektől eltekinthetünk.
 
-$$
+$$$$
 G = mg = 0,35 \times 9,81 = 3,434 N
-$$
+$$$$
 
-$$
+$$$$
 E_{h,0} = Gh_0 = 3,434 \times 1,50 = 5,151 J 
-$$
+$$$$
 
-$$
+$$$$
 E_h = Gh = 3,434 \times (-3,00) = -10,302 J
-$$
+$$$$
 
-$$
+$$$$
 W = \Delta E_h = E_h - E_{h,0} = -10,302 - 5,151 = -15,45 J
-$$
+$$$$
 
 Tehát az emelési munka $-15,45 J$ lenne, vagyis $15,45J$ munkát végeztethetnénk a kővel, miközben a gödörbe engedjük a csigára akasztott kötéllel.
 

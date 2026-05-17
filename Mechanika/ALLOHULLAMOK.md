@@ -21,99 +21,99 @@ A kísérletben és a szimulációban is megfigyelhetjük, hogy amikor a hullám
 Ezt a tapasztalatot a szuperpozíció elvével magyarázhatjuk meg. A rögzített végen a kitérés minden pillanatban nulla. A kitérés azonban a beeső és a visszavert hullám szuperpozíciója.
 
 
-$$
+$$$$
 y_{beeső} = A\cos(\omega t - kx)
-$$
+$$$$
 
 
 Tudjuk, hogy a terjedési sebesség iránya és így a hullámszám ellentétes előjelű a visszavert hullámra, mint a beeső hullámra. A visszavert hullám által megtett út visszaverődés után $l - x$, tehát az $x$ változása $x - l$. Ideális esetben, egy dimenzióban, nincs amplitúdóváltozás.
 
 
-$$
+$$$$
 y_{visszavert} = A\cos(\omega t - kl + k(x - l) - \phi) = A\cos(\omega t + kx - 2kl - \phi)
-$$
+$$$$
 
 
 Itt $\phi$ az ismeretlen fázistolás, melyre $\pi$-t várunk a kísérlet alapján. Nézzük meg, megkapjuk-e ezt!
 
 
-$$
+$$$$
 y = y_{beeső} +  y_{visszavert} = A(\cos(\omega t - kx) + \cos(\omega t + kx - 2kl - \phi))
-$$
+$$$$
 
 
 Mivel a rögzített végpont egyáltalán nem mozdulhat el, a beeső és a visszavert hullám kitérésének összege az $x=l$ helyen minden időpillanatban nullát kell, hogy adjon. Hogy ezt a kifejezést egyszerűbb alakra hozzuk és vizsgálhassuk a kitérést, a koszinuszfüggvények összegére egy jól ismert trigonometriai azonosságot alkalmazhatunk:
 
 
-$$
+$$$$
 \cos(\alpha + \beta) + \cos(\alpha - \beta) = 2\cos\alpha\cos\beta
-$$
+$$$$
 
 
 Legyen
 
 
-$$
+$$$$
 \alpha + \beta = \omega t - kx
-$$
+$$$$
 
 
 
-$$
+$$$$
 \alpha - \beta = \omega t + kx - 2kl - \phi
-$$
+$$$$
 
 
 Meghatározzuk $\alpha$ és $\beta$ értékeit:
 
 
-$$
+$$$$
 \alpha = \omega t - kl - \frac{\phi}{2}
-$$
+$$$$
 
 
 
-$$
+$$$$
 \beta = \frac{\phi}{2} + kl - kx
-$$
+$$$$
 
 
 Így a kitérés a következő:
 
 
-$$
+$$$$
 y = 2A\cos\left(\frac{\phi}{2} + k(l - x)\right)\cos\left(\omega t - kl - \frac{\phi}{2}\right)
-$$
+$$$$
 
 
 Ez az általános kifejezés az egydimenziós hullám kitérésére, ha a kitérés a haladó és a visszavert hullám találkozása. Ha $x = l$, tehát a rögzített végnél vagyunk, akkor a fenti feltétel értelmében a helyfüggő résznek kell nullává válnia:
 
 
-$$
+$$$$
 y = 2A\cos\left(\frac{\phi}{2}\right)\cos\left(\omega t - kl - \frac{\phi}{2}\right)
-$$
+$$$$
 
 
 Ez tehát harmonikus rezgés. Az amplitúdó nulla kell legyen a rögzített végen, tehát:
 
 
-$$
+$$$$
 \cos\left(\frac{\phi}{2}\right) = 0
-$$
+$$$$
 
 
 
-$$
+$$$$
 \frac{\phi}{2} = \left(n + \frac{1}{2}\right)\pi, \quad n = 0, 1, 2, ...
-$$
+$$$$
 
 
 Innen $\phi$-t kifejezve kapjuk, hogy:
 
 
-$$
+$$$$
 \phi = (2n + 1)\pi
-$$
+$$$$
 
 
 Ezek a megoldások egyenértékűek a visszavert hullámok kitérésére, tehát választhatjuk az $n = 0$ esetet és így $\phi = \pi$.
@@ -149,61 +149,61 @@ A kísérletekben állóhullámokat láthatunk. Ezek a haladó hullámokkal elle
 A rezgő rendszerben két, ellentétes irányban terjedő hullám interferál és erre a helyzetre érvényes a fentebb levezetett formula a kitérésre. Tegyük fel, hogy a külső gerjesztő erő megszűnte után, ahogy a szimulációban láthatjuk, a szabad végen állandó amplitúdójú rezgés alakul ki. Jelöljük ezt az amplitúdót most $2A$-val! Ekkor az $x = 0$ szabad végen fenn kell álljon, hogy:
 
 
-$$
+$$$$
 2A = 2A\left|\cos\left(\frac{\pi}{2} + kl\right)\right|
-$$
+$$$$
 
 
 A koszinusz értéke tehát $\pm 1$.
 
 
-$$
+$$$$
 \frac{\pi}{2} + kl = m\pi, \quad m = 1, 2, 3, ...
-$$
+$$$$
 
 
 Ekkor a húr hossza és a hullámhossz közt érdekes összefüggés kell fennálljon:
 
 
-$$
+$$$$
 kl = \left(m - \frac{1}{2}\right)\pi = \left(n + \frac{1}{2}\right)\pi, \quad n = 0, 1, 2, ...
-$$
+$$$$
 
 
 
-$$
+$$$$
 \frac{2\pi}{\lambda} l = \left(n + \frac{1}{2}\right)\pi
-$$
+$$$$
 
 
 
-$$
+$$$$
 l = \left(n + \frac{1}{2}\right)\frac{\lambda}{2} = (2n + 1)\frac{\lambda}{4}
-$$
+$$$$
 
 
 A húr hossza a negyed hullámhossz páratlan számú többszöröse kell legyen. A szimuláció az $n = 2$ esetet mutatja be, amikor a húr hossza $5$-szöröse a negyed hullámhossznak. Természetesen nincs megszabva, hogy mekkora az $A$ amplitúdó, tehát ameddig a húr a rugalmassági tartományon belül mozog, akármekkora is lehet. A kitérésfüggvényt egységnyi $2A$ amplitúdóval adott $n$ belső csomópont esetén a húr $n$-edik sajátfüggvényének, vagy sajátrezgésének nevezzük. Természetesen az amplitúdó bármekkora lehet és a szuperpozíció elve szerint több ilyen megoldás összege is megoldás. Tehát legáltalánosabb esetben a mozgásegyenlet megoldása a következő kell legyen:
 
 
-$$
+$$$$
 y = \sum_{n = 0}^{\infty} A_n f_n(x, t)
-$$
+$$$$
 
 
 Itt az $f_n$ sajátfüggvény:
 
 
-$$
+$$$$
 f_n = \cos\left(\frac{\pi}{2} + k(l - x)\right)\cos\left(\omega t - kl - \frac{\pi}{2}\right)
-$$
+$$$$
 
 
 > 💡 **Kitekintő haladóknak: Az állóhullám legelegánsabb alakja**  
 > A fenti, bonyolultnak tűnő kifejezést a peremfeltételek és trigonometriai azonosságok segítségével sokkal egyszerűbb alakra hozhatjuk. Ha elvégezzük a matematikai lépéseket, az időbeli és térbeli rész gyönyörűen szétválik:  
 > 
-$$
+$$$$
 f_n(x,t) = \cos(k_n x) \cos(\omega_n t)
-$$
+$$$$
   
 > **Miért zseniális ez a forma?** Azonnal leolvasható belőle az állóhullám lényege! A $\cos(\omega_n t)$ rész mutatja, hogy a húr minden pontja *egyszerű harmonikus rezgőmozgást* végez az időben. A $\cos(k_n x)$ rész pedig megadja a rezgés *helytől függő amplitúdóját*: ahol ez nulla, ott csomópont van, ahol maximális, ott duzzadóhely.
 
@@ -219,53 +219,53 @@ A matematikusok be is bizonyítják, hogy a mozgásegyenlet megoldása a húr te
 * Mekkora az alapfrekvencia? Próbáljuk ki ezt a frekvenciát a szimulációban!
 
 
-$$
+$$$$
 l = (2n + 1)\frac{\lambda}{4}
-$$
+$$$$
 
 
 
-$$
+$$$$
 15 = 5 \frac{\lambda}{4}
-$$
+$$$$
 
 
 
-$$
+$$$$
 \lambda = 12\text{ m}
-$$
+$$$$
 
 
 
-$$
+$$$$
 c = \frac{\lambda}{T} = \lambda f = 12 \cdot 0,59 = 7,08\text{ m/s}
-$$
+$$$$
 
 
 
-$$
+$$$$
 l = \frac{\lambda_0}{4}
-$$
+$$$$
 
 
 
-$$
+$$$$
 \lambda_0 = 4l = 4 \cdot 15 = 60\text{ m}
-$$
+$$$$
 
 
 
-$$
+$$$$
 f_0 = \frac{c}{\lambda_0} = \frac{7,08}{60} = 0,118\text{ Hz}
-$$
+$$$$
 
 
 Itt is igaz az, hogy a frekvencia az alapfrekvencia páratlan egész számú többszöröse, ez esetben pont $5$-szöröse (mivel $2n+1 = 5$).
 
 
-$$
+$$$$
 \frac{f}{f_0} = \frac{0,59}{0,118} = 5
-$$
+$$$$
 
 
 2. Vizsgáljuk most a kialakuló állóhullámokat a szimulációban szereplő húron, ha mindkét vég rögzített!
@@ -278,71 +278,71 @@ $$
 Ha mindkét vég rögzített, akkor ezeken csomópont van, de az alaphang esetében nincs belső csomó ($n=0$), tehát a húr hossza egy fél hullámhossz kell legyen.
 
 
-$$
+$$$$
 l = \frac{\lambda_0}{2}
-$$
+$$$$
 
 
 
-$$
+$$$$
 \lambda_0 = 2l = 30\text{ m}
-$$
+$$$$
 
 
 
-$$
+$$$$
 f_0 = \frac{c}{\lambda_0} = \frac{7,08}{30} = 0,236\text{ Hz}
-$$
+$$$$
 
 
 Az 1. felharmonikus (1 belső csomó) frekvenciája a 2. harmonikusnak felel meg:
 
-$$
+$$$$
 f_1 = 2f_0 = 0,472\text{ Hz}
-$$
+$$$$
 
 
 A 2. felharmonikus (2 belső csomó) frekvenciája a 3. harmonikus:
 
-$$
+$$$$
 f_2 = 3f_0 = 0,708\text{ Hz}
-$$
+$$$$
 
 
 A megfelelő hullámhosszak:
 
 
-$$
+$$$$
 \lambda_1 = \frac{c}{f_1} = \frac{7,08}{0,472} = 15\text{ m}
-$$
+$$$$
 
 
 
-$$
+$$$$
 \lambda_2 = \frac{c}{f_2} = \frac{7,08}{0,708} = 10\text{ m}
-$$
+$$$$
 
 
 Az általános formula $n$ darab belső csomópont esetén:
 
 
-$$
+$$$$
 l = (n + 1)\frac{\lambda}{2}
-$$
+$$$$
 
 
 Innen kifejezve $\lambda$-t kapjuk, hogy:
 
 
-$$
+$$$$
 \lambda = \frac{2l}{n + 1}
-$$
+$$$$
 
 
 
-$$
+$$$$
 f = \frac{c}{\lambda} = \frac{c}{\frac{2l}{n + 1}} = \frac{n + 1}{2} \frac{c}{l}
-$$
+$$$$
 
 
 [Állóhullám húron két rögzített véggel](https://alexerdei73.github.io/physics-engine/project/#80f91da0-5f31-4cad-8590-1ec4a3824fa1)

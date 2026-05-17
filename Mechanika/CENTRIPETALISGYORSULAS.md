@@ -15,57 +15,57 @@ A test elmozdulása összetethető a vízszintes, egyenes vonalú, egyenletes mo
 ![A centripetális gyorsulás levezetése](Kepek/centripetalisgyorsulas.svg)
 
 
-$$
+$$$$
 (R + s)^2 = R^2 + (vt)^2
-$$
+$$$$
 
 
 
-$$
+$$$$
 R^2 + 2Rs + s^2 = R^2 + v^2t^2
-$$
+$$$$
 
 
 
-$$
+$$$$
 2Rs + s^2 = v^2t^2
-$$
+$$$$
 
 
 
-$$
+$$$$
 t \ll T
-$$
+$$$$
 
 
 Az időtartam igen kicsiny, tehát a $t^4$-t tartalmazó tag elhanyagolható a $t^2$-tel arányos tagok mellett.
 
 
-$$
+$$$$
 s = \frac {a} {2}t^2
-$$
+$$$$
 
 
 $s^2$ elhanyagolható, hisz ez $t^4$-el arányos tag.
 
 
-$$
+$$$$
 2Rs = v^2t^2
-$$
+$$$$
 
 
 
-$$
+$$$$
 s = \frac {\frac {v^2} {R}} {2} t^2
-$$
+$$$$
 
 
 Ezt a formulát összehasonlítva az egyenletesen gyorsuló mozgásra vonatkozó képletünkkel, kapjuk:
 
 
-$$
+$$$$
 a = \frac {v^2} {R}
-$$
+$$$$
 
 
 >**A centripetális gyorsulás a sebesség négyzetének és a sugárnak a hányadosa.**
@@ -76,27 +76,27 @@ Ez a szimulációval is könnyen ellenőrizhető.
 1. Egy $0,100 \text{ kg}$ tömegű követ egy parittyában pörgetünk $0,4 \text{ s}$ periódusidővel $0,200 \text{ m}$ sugarú körpályán. A kő egyenletes körmozgást végez. Mekkora a kő sebessége? Mekkora a kő mozgási energiája? Mekkora a kő centripetális gyorsulása? Mekkora erő tartja pályáján a követ?
 
 
-$$
+$$$$
 v = \frac {2 \pi R} {T} = \frac {2 \times 3,1415 \times 0,2} {0,4} = 3,142 \frac {\text{m}} {\text{s}}
-$$
+$$$$
 
 
 
-$$
+$$$$
 E_m = \frac {mv^2} {2} = \frac {0,1 \times 3,142^2} {2} = 0,4933 \text{ J}
-$$
+$$$$
 
 
 
-$$
+$$$$
 a = \frac {v^2} {R} = \frac {3,142^2} {0,2} = 49,36 \frac {\text{m}} {\text{s}^2}
-$$
+$$$$
 
 
 
-$$
+$$$$
 F_e = ma = 0,1 \times 49,36 = 4,936 \text{ N}
-$$
+$$$$
 
 2. Egy vödörben víz van és függőleges síkban forgatjuk úgy egy kötélen, hogy körmozgást végez. A pálya legfelső pontján a vödör sebessége $5 \frac {m} {s}$, a kör sugara $0,77m$. Mekkora erővel nyomja a víz a vödör fenekét, ha tömege $1,50kg$? Kifolyik-e a víz a vödörből? Mekkora a minimális szögsebesség, melynél a víz nem folyik ki a vödörből?
 
@@ -107,71 +107,71 @@ $$
 Felírjuk Newton második törvényét a pálya felső pontjában:
 
 
-$$
+$$$$
 mg + K = ma_{cp}
-$$
+$$$$
 
 
 
-$$
+$$$$
 a_{cp} = \frac {v^2} {R} = \frac {5^2} {0,77} = 32,47 \frac {m} {s^2}
-$$
+$$$$
 
 
 
-$$
+$$$$
 K = ma_{cp} - mg = 1,50 \times 32,47 - 1,50 \times 9,81 = 33,99N
-$$
+$$$$
 
 
 Tehát a víz nem folyik ki, hanem tekintélyes erővel nyomja a vödör alját. Nézzük most azt az esetet, amikor a víz még épp nem folyik ki, de már nem nyomja a vödör alját!
 
 
-$$
+$$$$
 K = 0
-$$
+$$$$
 
 
 
-$$
+$$$$
 mg = ma_{cp,min}
-$$
+$$$$
 
 
 
-$$
+$$$$
 g = a_{cp,min}
-$$
+$$$$
 
 
 
-$$
+$$$$
 g = \frac {v_{min}^2} {R}
-$$
+$$$$
 
 
 
-$$
+$$$$
 gR = v_{min}^2
-$$
+$$$$
 
 
 
-$$
+$$$$
 v_{min} = \sqrt {gR} = \sqrt {9,81 \times 0,77} = 2,748 \frac {m} {s}
-$$
+$$$$
 
 
 
-$$
+$$$$
 v_{min} = R \omega_{min}
-$$
+$$$$
 
 
 
-$$
+$$$$
 \omega_{min} = \frac {v_{min}} {R} = \frac {2,748} {0,77} = 3,569 \frac {rad} {s}
-$$
+$$$$
 
 
 

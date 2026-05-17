@@ -15,21 +15,21 @@
 A kísérletek szépen szemléltetik a szuperpozíció elvét, amely mechanikai hullámok esetében matematikai úton is levezethető a Newton-törvényekből. Ezt a levezetést meghagyjuk későbbre. Itt csak felírjuk az eredményt matematikai alakban is két, egydimenziós, transzverzális hullám esetére.
 
 
-$$
+$$$$
 y_1 = f(x, t)
-$$
+$$$$
 
 
 
-$$
+$$$$
 y_2 = g(x, t)
-$$
+$$$$
 
 
 
-$$
+$$$$
 y = y_1 + y_2 = f(x, t) + g(x, t)
-$$
+$$$$
 
 
 ## Young-féle interferenciakísérlet
@@ -51,21 +51,21 @@ A matematikai leírás megmutatja, hogy az, hogy erősítés vagy gyengítés ta
 Írjuk fel a két hullámfüggvényt! Legyen $A$ az amplitúdó, $\omega$ a körfrekvencia, és $c$ a hullám terjedési sebessége.
 
 
-$$
+$$$$
 y_1 = A\cos\left(\omega\left(t - \frac {x_1} c\right)\right)
-$$
+$$$$
 
 
 
-$$
+$$$$
 y_2 = A\cos\left(\omega\left(t - \frac {x_2} c\right)\right)
-$$
+$$$$
 
 
 
-$$
+$$$$
 y = y_1 + y_2 = A(\cos(\omega t - k x_1) + \cos(\omega t - k x_2))
-$$
+$$$$
 
 
 Ahol bevezettük a $k = \frac \omega c$ hullámszámot.
@@ -73,45 +73,45 @@ Ahol bevezettük a $k = \frac \omega c$ hullámszámot.
 Most felhasználjuk a trigonometrikus azonosságot, amelyet már korábban is használtunk:
 
 
-$$
+$$$$
 \cos (\alpha + \beta) + \cos (\alpha - \beta) = 2\cos\alpha\cos\beta
-$$
+$$$$
 
 
 Legyen most:
 
 
-$$
+$$$$
 \alpha + \beta = \omega t - k x_1
-$$
+$$$$
 
 
 
-$$
+$$$$
 \alpha - \beta = \omega t - k x_2
-$$
+$$$$
 
 
 Ekkor ugye:
 
 
-$$
+$$$$
 \alpha = \frac {\omega t - k x_1 + \omega t - k x_2} 2 = \frac {2\omega t - k(x_1 + x_2)} 2 = \omega t - k\frac {x_1 + x_2} 2
-$$
+$$$$
 
 
 
-$$
+$$$$
 \beta = \frac {\omega t - k x_1 - (\omega t - k  x_2)} 2 = \frac{k(x_2 - x_1)}{2} = k\frac{\Delta x}{2}
-$$
+$$$$
 
 
 Így végül a kitérés a hullámtér azon pontjában, ahol az útkülönbség a forrásoktól $\Delta x$:
 
 
-$$
+$$$$
 y = \left[ 2A\cos\left(k\frac{\Delta x}{2}\right) \right] \cos\left(\omega t - k\frac {x_1 + x_2} 2\right)
-$$
+$$$$
 
 
 **Figyeljük meg a kapott eredményt!** A képlet csodálatos módon két jól elkülöníthető részre szakadt:
@@ -121,23 +121,23 @@ $$
 Az eredő rezgés amplitúdója tehát a térben pontról pontra változik:
 
 
-$$
+$$$$
 A_{\text{eredő}} = \left| 2A\cos\left(k \frac{\Delta x}{2}\right) \right| = \left| 2A\cos\left(\frac{2\pi}{\lambda}\frac {\Delta x}{2}\right) \right| = \left| 2A\cos\left(\pi\frac {\Delta x} \lambda\right) \right|
-$$
+$$$$
 
 
 A kioltás feltétele, hogy az amplitúdó, tehát a $\cos$ függvény értéke 0 legyen.
 
 
-$$
+$$$$
 \pi \frac {\Delta x} \lambda = \left(n + \frac 1 2\right)\pi, \quad n = 0, 1, 2, 3, ...
-$$
+$$$$
 
 
 
-$$
+$$$$
 \Delta x = \left(n + \frac 1 2\right) \lambda
-$$
+$$$$
 
 
 *(Fizikai szemlélettel ez teljesen logikus: ha az útkülönbség egy fél hullámhossz, vagy annak páratlan többszöröse, akkor az egyik hullám hullámhegye pont a másik hullámvölgyével találkozik, teljesen lerontva egymást.)*
@@ -145,15 +145,15 @@ $$
 Az erősítés feltétele, hogy az amplitúdó a maximális $2A$ legyen, tehát a $\cos$ függvény értéke $\pm 1$ legyen.
 
 
-$$
+$$$$
 \pi \frac {\Delta x} \lambda = n\pi, \quad n = 0, 1, 2, 3, ...
-$$
+$$$$
 
 
 
-$$
+$$$$
 \Delta x = n \lambda
-$$
+$$$$
 
 
 *(Ekkor a hullámhegy hullámheggyel találkozik, a fáziskülönbség nulla, vagy teljes hullámhossznyi.)*
@@ -165,16 +165,16 @@ Két pontszerűnek tekinthető hangszóró távolsága egymástól $2\text{ m}$.
 
 Számoljuk ki a hullámhosszt!
 
-$$
+$$$$
 \lambda = \frac c f = \frac {340} {2000} = 0,17\text{ m}
-$$
+$$$$
 
 
 Az első kioltás ($n=0$) útkülönbsége:
 
-$$
+$$$$
 \Delta x = \left(0 + \frac 1 2\right) \lambda = \frac \lambda 2 = 0,085\text{ m} = 8,5\text{ cm}
-$$
+$$$$
 
 
 A megfigyelő eredetileg 4 m-re van a hangszóróktól, és a fél távolság a hangszórók között 1 m. Pithagorasz-tétellel a megfigyelő egyenese és a hangszórók síkja közötti merőleges távolság: $\sqrt{4^2 - 1^2} = \sqrt{15}\text{ m}$.
@@ -182,9 +182,9 @@ A megfigyelő eredetileg 4 m-re van a hangszóróktól, és a fél távolság a 
 Tegyük fel, hogy elmozdulunk jobbra $d$ távolsággal. Ekkor a két hangszórótól vett új távolságok Pithagorasz-tétellel felírva az alábbi útkülönbséget adják:
 
 
-$$
+$$$$
 \Delta x = \sqrt{(1 + d)^2 + 15} - \sqrt{(1 - d)^2 + 15} = 0,085
-$$
+$$$$
 
 
 Ezt az egyenletet (megfelelő matematikai közelítéssel, vagy algebrai úton) megoldva $d \approx 0,17\text{ m}$-t kapunk, vagyis **17 cm**-t kell elmozdulnia. Ezt visszahelyettesítéssel ellenőrizhetjük.

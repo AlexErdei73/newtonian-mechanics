@@ -4,9 +4,9 @@
 A merev test forgását fogjuk leírni rögzített tengely körül, mely ismét a z-tengely lesz. A mozgás ilyenkor síkmozgás, ahogy megbeszéltük. Ha a merev testre ható külső erők forgatónyomatékainak eredője nem nulla, akkor a test forgása gyorsul vagy lassul. Ezt a szöggyorsulással jellemezzük, mely a szögsebesség időegységre eső változása. Ez is előjeles mennyiség, akárcsak a szögsebesség.
 
 
-$$
+$$$$
 \beta = \frac{\omega - \omega_0}{t}
-$$
+$$$$
 
 
 >**Az időegységre eső szögsebesség-változás neve szöggyorsulás. A szöggyorsulás előjeles mennyiség, jele $\beta$, egysége $\frac{1}{\mathrm{s}^2}$.**
@@ -15,31 +15,31 @@ $$
 Az impulzusnyomaték tétele szerint írhatjuk az alábbi összefüggést:
 
 
-$$
+$$$$
 M_{z,e}^k = \frac{N_z - N_{z,0}}{t}
-$$
+$$$$
 
 
 
-$$
+$$$$
 N_z = \Theta \omega
-$$
+$$$$
 
 
 Ezt beírva az előző egyenletbe azt kapjuk, hogy:
 
 
-$$
+$$$$
 M_{z,e}^k = \frac{\Theta \omega - \Theta \omega_0}{t} = \Theta \frac{\omega - \omega_0}{t}
-$$
+$$$$
 
 
 Itt kiemeltük a $\Theta$ tehetetlenségi nyomatékot, mely a forgástengelyre vonatkozik és nem változik, hisz a test merev. Megkapjuk a következő, végső összefüggésünket:
 
 
-$$
+$$$$
 M_{z,e}^k = \Theta \beta
-$$
+$$$$
 
 
 >**A forgómozgás alapegyenlete szerint a külső erők eredő forgatónyomatéka nem más, mint a tehetetlenségi nyomaték és a szöggyorsulás szorzata. Ez Newton második törvényének megfelelője forgómozgás esetére.**
@@ -63,85 +63,85 @@ Egy körlap alakú test függőleges tengely körül foroghat. Egy kis csigát e
 A test nyugvó helyzetből indul, tehát érvényes az alábbi összefüggés:
 
 
-$$
+$$$$
 s = \frac{a}{2} t^2
-$$
+$$$$
 
 
 
-$$
+$$$$
 a = \frac{2s}{t^2} = \frac{2 \cdot 0{,}86}{5{,}04^2} = 0{,}0677 \mathrm{\frac{m}{s^2}}
-$$
+$$$$
 
 
 Newton második törvénye a süllyedő testre a következő lesz:
 
 
-$$
+$$$$
 mg - K = ma
-$$
+$$$$
 
 
 Innen a fonalat feszítő erő kifejezhető:
 
 
-$$
+$$$$
 K = mg - ma = 0{,}1 \cdot 9{,}81 - 0{,}1 \cdot 0{,}0677 = 0{,}974 \mathrm{N}
-$$
+$$$$
 
 
 A forgatónyomaték kiszámítása esetünkben a következő:
 
 
-$$
+$$$$
 M_z = Kr = 0{,}974 \cdot 0{,}0275 = 0{,}0268 \mathrm{Nm}
-$$
+$$$$
 
 
 A szöggyorsulás könnyen meghatározható, hisz tudjuk, hogy a sebesség kiszámítása a csiga peremére, illetve tangenciálisan a süllyedő testre is a következő:
 
 
-$$
+$$$$
 v = r\omega
-$$
+$$$$
 
 
 
-$$
+$$$$
 a = \frac{v - v_0}{t} = \frac{r\omega - r\omega_0}{t} = r \frac{\omega - \omega_0}{t}
-$$
+$$$$
 
 
 Eredményünk a következő:
 
 
-$$
+$$$$
 a = r \beta
-$$
+$$$$
 
 
 Ez igen fontos összefüggés. A csiga peremének pontjaira vonatkozik, melyek körmozgást végeznek. Ezeknek a pontoknak a gyorsulása felbontható centripetális gyorsulásra, mely körmozgás esetében mindig fellép a sebesség irányának változása miatt, és érintő irányú (tangenciális) gyorsulásra. A centripetális gyorsulás a forgástengely felé mutat, míg az érintő irányú gyorsulás a fonal és a süllyedő test egyenes vonalú mozgásának gyorsulásával egyezik meg, hiszen ezek együtt mozognak azonos sebességgel minden pillanatban, és ez a sebesség megegyezik a csiga peremének sebességével ott, ahol a fonal attól elválik.
 
 
-$$
+$$$$
 \beta = \frac{a}{r} = \frac{0{,}0677}{0{,}0275} = 2{,}46 \mathrm{\frac{1}{s^2}}
-$$
+$$$$
 
 
 A forgómozgás alapegyenlete esetünkben a következő:
 
 
-$$
+$$$$
 M_z = \Theta \beta
-$$
+$$$$
 
 
 Ez azt jelenti, hogy a tehetetlenségi nyomaték kiszámítható:
 
 
-$$
+$$$$
 \Theta = \frac{M_z}{\beta} = \frac{0{,}0268}{2{,}46} = 0{,}0109 \mathrm{kg \cdot m^2} \approx 0{,}011 \mathrm{kg \cdot m^2}
-$$
+$$$$
 
 
 ## A tiszta gördülés
@@ -150,25 +150,25 @@ Eddig rögzített tengely körüli forgással foglalkoztunk, most megnézzük, m
 Tiszta gördülés esetén a tömegközéppont is csupán forgó mozgást végez a pillanatnyi forgástengely körül, tehát a következőt írhatjuk:
 
 
-$$
+$$$$
 v_{TKP} = r_{TKP}\omega
-$$
+$$$$
 
 
 Illetve a gyorsulásra írhatjuk a következő összefüggést:
 
 
-$$
+$$$$
 a_{TKP} = \frac{v_{TKP} - v_{TKP,0}}{t} = r_{TKP} \frac{\omega - \omega_0}{t}
-$$
+$$$$
 
 
 Itt $r_{TKP}$ nem változik a forgás során, tehát kiemelhető. Így végül eredményünk ez lesz:
 
 
-$$
+$$$$
 a_{TKP} = r_{TKP}\beta
-$$
+$$$$
 
 
 ### Példák
@@ -181,83 +181,83 @@ $$
 Írjuk fel a forgómozgás alapegyenletét a pillanatnyi forgástengelyre vonatkozólag!
 
 
-$$
+$$$$
 M_{z,e}^k = \Theta \beta
-$$
+$$$$
 
 
 Tudjuk, hogy az egyetlen erő, melynek van nyomatéka a pillanatnyi forgástengelyre nézve, az a húzóerő, mivel az összes többi erő hatásvonala átmegy a pillanatnyi forgástengelyen.
 
 
-$$
+$$$$
 M_{z,e}^k = Fr
-$$
+$$$$
 
 
 Itt $r$ a középpont távolsága a pillanatnyi forgástengelytől, tehát a kerék sugara.
 
 
-$$
+$$$$
 a = r \beta \implies \beta = \frac{a}{r}
-$$
+$$$$
 
 
 A tehetetlenségi nyomatékra alkalmazzuk a Steiner-tételt!
 
 
-$$
+$$$$
 \Theta = \Theta_{TKP} + mr^2
-$$
+$$$$
 
 
 Mindezeket behelyettesítve kapjuk az alábbi összefüggést:
 
 
-$$
+$$$$
 Fr = (\Theta_{TKP} + mr^2) \frac{a}{r}
-$$
+$$$$
 
 
 Innen $a$-t kifejezzük:
 
 
-$$
+$$$$
 a = \frac{Fr^2}{\Theta_{TKP} + mr^2} = \frac{F/m}{1 + \frac{\Theta_{TKP}}{mr^2}}
-$$
+$$$$
 
 
 Látjuk, hogy ha $\Theta_{TKP} \ll mr^2$, akkor visszakapjuk a haladó mozgás gyorsulását, mintha forgás nem is lenne. Ez várható is.
 
 
-$$
+$$$$
 a = \frac{5/1}{1 + 0{,}2 / (1 \cdot 0{,}5^2)} = 2{,}778 \mathrm{\frac{m}{s^2}}
-$$
+$$$$
 
 
 A dinamika alapegyenlete (Newton második törvénye) a haladó mozgásra pedig ez:
 
 
-$$
+$$$$
 F - F_t = ma
-$$
+$$$$
 
 
 
-$$
+$$$$
 F_t = F - ma = F - \frac{F}{1 + \frac{\Theta_{TKP}}{mr^2}} = F \frac{\frac{\Theta_{TKP}}{mr^2}}{1 + \frac{\Theta_{TKP}}{mr^2}}
-$$
+$$$$
 
 
 
-$$
+$$$$
 \frac{\Theta_{TKP}}{mr^2} = \frac{0{,}2}{0{,}25} = 0{,}8
-$$
+$$$$
 
 
 
-$$
+$$$$
 F_t = 5 \cdot \frac{0{,}8}{1 + 0{,}8} = 2{,}222 \mathrm{N}
-$$
+$$$$
 
 
 2. Az előző kerék egy $\alpha = 30^\circ$ hajlásszögű lejtőn tisztán gördül lefelé álló helyzetből. Mekkora a gyorsulása és a tapadási erő, ha a veszteségektől eltekinthetünk?
@@ -267,23 +267,23 @@ $$
 A lejtőn lefelé húzó erőre már láttuk a kiszámítást:
 
 
-$$
+$$$$
 F = mg\sin \alpha
-$$
+$$$$
 
 
 Ezt formuláinkba helyettesítve $F$ helyére, megkapjuk a válaszokat!
 
 
-$$
+$$$$
 a = \frac{g\sin \alpha}{1 + \frac{\Theta_{TKP}}{mr^2}}
-$$
+$$$$
 
 
 
-$$
+$$$$
 F_t = mg\sin \alpha \frac{\frac{\Theta_{TKP}}{mr^2}}{1 + \frac{\Theta_{TKP}}{mr^2}}
-$$
+$$$$
 
 
 ### Kísérlet

@@ -24,26 +24,26 @@ A test sebessége másodpercenként $0.5 \frac {m} {s}$-mal nő a grafikon alapj
 
 > **A gyorsulás az időegységre eső sebességváltozással egyenlő. Kiszámítható a sebesség változás és az idő hányadosaként. Jele: a, egysége: $\frac {m} {s^2}$**
 
-$$
+$$$$
 a = \frac {\Delta v} {t} = \frac {v - v_0} {t}
-$$
+$$$$
 
 A gyorsulás vektormennyiség, a sebesség változás vektor irányába mutat. A sebesség változás vektor az elért sebesség vektor és a kezdősebesség vektor különbsége. Mi egyelőre csak olyan esettel foglalkozunk, ahol a vektorok azonos irányúak és a mozgás iránya nem változik, de az összefüggés általánosan igaz a vektorokra. 
 
 ### Példák
 1. A lejtőn lefele mozgó test a szimuláció során $0.5 \frac {m} {s}$-ról $2 \frac {m} {s}$-ra gyorsult fel $3s$ alatt. Mekkora a gyorsulás?
 
-$$
+$$$$
 a = \frac {v - v_0} {t} = \frac {2 \frac {m} {s} - 0.5 \frac {m} {s}} {3s} = 0.5 \frac {m} {s^2} 
-$$
+$$$$
 
 Tehát a test gyorsulása $0.5 \frac {m} {s^2}$.
 
 2. Egy autó $20 \frac {m} {s}$ sebességről 6s alatt lefékez $5 \frac {m} {s}$ sebességre. Mekkora az autó gyorsulása?
 
-$$
+$$$$
 a = \frac {v - v_0} {t} = \frac {5 \frac {m} {s} - 20 \frac {m} {s}} {6s} = - 2.5 \frac {m} {s^2} 
-$$
+$$$$
 
 Az autó gyorsulására formulánk fékezés esetén negatív értéket ad. Az a jelölés a gyorsulás vektor nagyságát szokta jelenteni, mely nem lehet negatív. Fékezés esetén a formula a gyorsulás vektor mozgás irányú összetevőjét adja meg ($a_x$ ha a mozgás x tengely irányú). A gyorsulás x komponense már lehet negatív, amennyiben az x tengellyel ellentétes irányú a gyorsulás vektor. Fékezésnél ez a helyzet, ha a mozgás x tengely irányú. A formula alkalmazása az $a_x$ jelölés helyett $a$ jelöléssel matematikailag pontatlan, de a rövidség kedvéért így fogjuk a továbbiakban alkalmazni. 
 

@@ -18,41 +18,41 @@ Ha bármely pillanatban megállítjuk a szimulációt, megállapíthatjuk, hogy 
 A szimulációt megállítottuk a $t = 10,7688$ s-kor. A szimulációban a 9-es test x-koordinátáját kell leolvasnunk, majd kivonjuk az egyensúlyi $2$ m-t, így kapjuk az 1-es test kitérését az I. normálmódusban.
 
 
-$$
+$$$$
 x_{I, 1} = 1,8754 - 2 = -0,1246\text{ m}
-$$
+$$$$
 
 
 A második normálmódusban hasonlóan kapjuk az 1-es test kitérését, csak most a szimulációban az 5-ös test x-koordinátáját olvassuk le.
 
 
-$$
+$$$$
 x_{II, 1} = 2,4903 - 2 = 0,4903\text{ m}
-$$
+$$$$
 
 
 Végül az 1-es test kitérése a kombinált rezgésben a szimulációban is az 1-es test x-koordinátájából kapható meg.
 
 
-$$
+$$$$
 x_1 = 2,3657 - 2 = 0,3657\text{ m}
-$$
+$$$$
 
 
 Most már valóban láthatjuk, hogy az alábbi összefüggés érvényes a kiválasztott pillanatban. 
 
 
-$$
+$$$$
 x_1 = x_{I,1} + x_{II,1} = -0,1246 + 0,4903 = 0,3657\text{ m}
-$$
+$$$$
 
 
 Ez az összefüggés az adott kezdeti feltételek esetén kialakuló rezgésre bármely pillanatban érvényes. Hasonló összefüggés érvényes a 2-es testre is.
 
 
-$$
+$$$$
 x_2 = x_{I,2} + x_{II,2}
-$$
+$$$$
 
 
 Ezeknek az összefüggéseknek a bizonyítását most nem fogjuk elvégezni. Ennek oka, hogy ehhez a mozgásegyenletet kellene megoldani, de ez egy olyan számítás, amit meghagyunk a felsőbb matematikai ismeretek elsajátítása utánra.
@@ -70,91 +70,91 @@ Ezeknek az összefüggéseknek a bizonyítását most nem fogjuk elvégezni. Enn
 Legyen az $x$ kitérés két harmonikus rezgés, $x_I$ és $x_{II}$ összege. Ezek frekvenciája eltérő lehet.
 
 
-$$
+$$$$
 x_I = A\cos(\omega_I t)
-$$
+$$$$
 
 
 
-$$
+$$$$
 x_{II} = A\cos(\omega_{II} t)
-$$
+$$$$
 
 
 Az eredő rezgés a következő:
 
 
-$$
+$$$$
 x = x_I + x_{II}
-$$
+$$$$
 
 
 Ahhoz, hogy ezt átalakíthassuk, szükségünk lesz néhány trigonometriai azonosságra.
 
 
-$$
+$$$$
 \cos(\alpha + \beta) = \cos\alpha \cos\beta - \sin\alpha \sin\beta
-$$
+$$$$
 
 
 
-$$
+$$$$
 \cos(\alpha - \beta) = \cos\alpha \cos\beta + \sin\alpha \sin\beta
-$$
+$$$$
 
 
 Ha most ezt a két azonosságot összeadjuk, akkor megkapjuk, amire szükségünk lesz.
 
-$$
+$$$$
 \cos(\alpha + \beta) + \cos(\alpha - \beta) = 2\cos\alpha \cos\beta
-$$
+$$$$
 
 Először meghatározzuk $\alpha$ és $\beta$ értékeit úgy, hogy alkalmazhassuk az azonosságot.
 
 
-$$
+$$$$
 \alpha + \beta = \omega_{II}t
-$$
+$$$$
 
 
 
-$$
+$$$$
 \alpha - \beta = \omega_I t
-$$
+$$$$
 
 
 Ezeket összeadva és kivonva könnyen megkaphatjuk $\alpha$ és $\beta$ értékeit.
 
 
-$$
+$$$$
 \alpha = \frac {\omega_{II} + \omega_I} 2 t
-$$
+$$$$
 
 
 
-$$
+$$$$
 \beta = \frac {\omega_{II} - \omega_I} 2 t
-$$
+$$$$
 
 
 Ezeket felhasználva a következő eredményekre jutunk:
 
 
-$$
+$$$$
 x = x_I + x_{II} = A\cos(\omega_I t) + A\cos(\omega_{II}t) = A(\cos(\omega_I t) + \cos(\omega_{II} t))
-$$
+$$$$
 
-$$
+$$$$
 x = 2A\cos\alpha \cos\beta
-$$
+$$$$
 
 
 A végeredmény pedig a következő, ha beírjuk $\alpha$ és $\beta$ értékeit:
 
 
-$$
+$$$$
 x = 2A\cos\left(\frac {\omega_{II} + \omega_I} 2 t\right)\cos\left(\frac {\omega_{II} - \omega_I} 2 t\right)
-$$
+$$$$
 
 
 Ez a rezgés $\alpha$ (átlag) frekvenciájú, de amplitúdója a kisebb, $\beta$ frekvenciával oszcillál, pont úgy, ahogy a kísérletekben is láttuk.
@@ -170,23 +170,23 @@ A szimulációban $A = 0,5$ m. Az $\omega_{II}$ és $\omega_I$ körfrekvenciák 
 A normálmódusok:
 
 
-$$
+$$$$
 x_{I,1} = x_{I,2} = A\cos(\omega_I t)
-$$
+$$$$
 
 
 
-$$
+$$$$
 x_{II,1} = -x_{II,2} = A\cos(\omega_{II}t)
-$$
+$$$$
 
 
 Így az
 
 
-$$
+$$$$
 x = x_{I,1} + x_{II,1}
-$$
+$$$$
 
 
 összefüggés pontosan azt jelenti, hogy a lebegéskor kapott képlet lesz érvényes az 1-es test kitérésére. 
@@ -199,59 +199,59 @@ Ennek a kérdésnek a megválaszolásához meg kell határoznunk a körfrekvenci
 Az első (azonos fázisú) módusban a középső rugó hossza nem változik, így csak a külső rugók hatnak a testekre:
 
 
-$$
+$$$$
 \omega_I^2 = \frac {D_1} m = \frac {0,5} {0,2} = 2,5
-$$
+$$$$
 
 
 
-$$
+$$$$
 \omega_I = \sqrt {2,5} = 1,5811\text{ rad/s}
-$$
+$$$$
 
 
 A másik körfrekvencia meghatározása kissé nehezebb. Vegyük észre, hogy a középső rugó közepe a $II$-es normálmódusban mozdulatlan! Ha az 1-es test kitérése $x$, akkor a második rugó megnyúlása (vagy összenyomódása) $2x$ a szimmetria miatt. Ennek a belső rugónak az ereje a nyugalmi helyzet felé mutat, tehát **hozzáadódik** a külső rugó visszatérítő erejéhez. A mozgásegyenlet a következő lesz:
 
 
-$$
+$$$$
 ma = F_{e,x} = -D_1x - 2D_2x = -(D_1 + 2D_2)x
-$$
+$$$$
 
 
 
-$$
+$$$$
 a = - \frac {D_1 + 2D_2} m x
-$$
+$$$$
 
 
 Ez alapján tehát:
 
 
-$$
+$$$$
 \omega_{II}^2 = \frac {D_1 + 2D_2} m = \frac {0,5 + 2 \cdot 0,05} {0,2} = \frac {0,6} {0,2} = 3
-$$
+$$$$
 
 
 
-$$
+$$$$
 \omega_{II} = \sqrt {3} = 1,7321\text{ rad/s}
-$$
+$$$$
 
 
 A lebegés körfrekvenciája (az amplitúdó modulációjának frekvenciája):
 
 
-$$
+$$$$
 \beta = \frac {\omega_{II} - \omega_I} 2 = \frac {1,7321 - 1,5811} 2 = 0,0755\text{ rad/s}
-$$
+$$$$
 
 
 A periódusidő:
 
 
-$$
+$$$$
 T = \frac {2\pi} {\beta} = \frac {2 \cdot 3,1415} {0,0755} = 83,22\text{ s}
-$$
+$$$$
 
 
 Az első minimum a negyed periódusnál van, azután pedig félperiódusonként csökken az amplitúdó nullára.

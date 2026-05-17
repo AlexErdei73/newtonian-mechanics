@@ -4,9 +4,9 @@
 A harmonikus rezgőmozgás esetén a sebesség nyilván a mozgás egyenesébe esik, de vajon hogyan változik, hiszen a kitérés látszólag bonyolultan, folyamatosan változik. Szerencsére az egyenletes körmozgással való kapcsolat itt is segít. Ennek ismerjük a sebességét. Mivel a körmozgást végző test $x$-koordinátája pontosan egyenlő a rezgőmozgást végző test $x$-koordinátájával minden pillanatban, így világos, hogy a testek sebességeinek $x$-komponensei is minden pillanatban megegyeznek! Az átlagsebesség ugyanis:
 
 
-$$
+$$$$
 \overline {v_x} = \frac {x - x_0} {t}
-$$
+$$$$
 
 
 Ez természetesen nem egyezik a pillanatnyi sebességgel, de ha a $t$ időtartamot oly kicsinyre választjuk, hogy a sebesség változása ezen idő alatt már elhanyagolhatóan kicsiny, akkor az átlagsebesség már számítási pontosságunkon belül megegyezik a pillanatnyi sebességgel. Így látható, hogy a pillanatnyi sebesség csakugyan minden pillanatban meg kell egyezzen a körmozgást végző test sebességének $x$-komponensével.
@@ -16,9 +16,9 @@ Ez természetesen nem egyezik a pillanatnyi sebességgel, de ha a $t$ időtartam
 A körmozgást végző test sebessége $r\omega$ nagyságú és minden pillanatban érintő irányú, vagyis a függőleges, $y$-tengely irányába mutató egyenessel $\omega t$ szöget zár be. Így azt kapjuk, hogy:
 
 
-$$
+$$$$
 v_x = -A\omega \sin (\omega t)
-$$
+$$$$
 
 
 Itt felhasználtuk, hogy az eddigiek alapján $r = A$ a rezgőmozgás esetén. A test $t = 0$-kor az $x = +A$ helyzetben van, ahogy azt az előző leckében is feltételeztük.
@@ -27,9 +27,9 @@ Itt felhasználtuk, hogy az eddigiek alapján $r = A$ a rezgőmozgás esetén. A
 Harmonikus rezgőmozgást végző, rugóra akasztott test kitérését leíró függvény:
 
 
-$$
+$$$$
 x = 0{,}2 \cos (4\pi \cdot t)
-$$
+$$$$
 
 
 Itt $x$ méterben (m), $t$ pedig másodpercben (s) értendő! Keresésük meg a mozgás legfontosabb paramétereit!
@@ -41,39 +41,39 @@ Itt $x$ méterben (m), $t$ pedig másodpercben (s) értendő! Keresésük meg a 
 
 A kitérés-idő függvény általános alakjából, amely $x = A \cos(\omega t)$ leolvasható:
   
-$$
+$$$$
 A = 0{,}2\text{ m}
-$$
+$$$$
 
 Szintén a függvényből leolvasható a $t$ szorzója:
   
-$$
+$$$$
 \omega = 4 \pi \text{ rad/s}
-$$
+$$$$
 
 A $v_x = -A\omega \sin(\omega t)$ összefüggésbe behelyettesítve az ismert adatokat ($-0{,}2 \cdot 4\pi = -0{,}8\pi$):
   
-$$
+$$$$
 v_x(t) = -0{,}8\pi \sin (4\pi \cdot t)
-$$
+$$$$
   
 A kitérés értéke az eredeti függvénybe behelyettesítve:
   
-$$
+$$$$
 x = 0{,}2 \cos (4 \pi \cdot 0{,}1) = 0{,}06180\text{ m}
-$$
+$$$$
 
 A sebesség értéke az általunk felírt sebességfüggvénybe behelyettesítve:
   
-$$
+$$$$
 v_x = -0{,}2 \cdot 4 \pi \cdot \sin (4 \pi \cdot 0{,}1) = -2{,}390\text{ m/s}
-$$
+$$$$
 
 A sebesség akkor maximális, ha a szinuszos tag értéke 1 (vagy -1). Így a maximális sebesség nagysága:
   
-$$
+$$$$
 v_{\max} = A\omega = 0{,}2 \cdot 4\pi \approx 2{,}513\text{ m/s}
-$$
+$$$$
 
 ## Feladatok
 

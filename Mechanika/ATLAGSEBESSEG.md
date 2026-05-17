@@ -18,41 +18,41 @@ Egy test 0 és 2s között egyenletesen halad $2 \frac {m} {s}$ sebességgel, ma
 
 ![szakaszonkent egyenletes mozgas](Kepek/szkaszonkentegyenletesmozgassebidograf.png)
 
-$$
+$$$$
 v_1 = \frac {s_1} {t_1}
-$$
+$$$$
 
-$$
+$$$$
 2 = \frac {s_1} {2}
-$$
+$$$$
 
-$$
+$$$$
 s_1 = 2 \times 2 = 4m
-$$
+$$$$
 
 Tehát a test az első 2s alatt 4m utat tesz meg. Ekkor hirtelen egy  másik testtel ütközik és sebessége szinte azonnal felére csökken. Még 3s hosszan mozog az új sebességével egészen 5s-ig.
 
-$$
+$$$$
 v_2 = \frac {s_2} {t_2}
-$$
+$$$$
 
-$$
+$$$$
 t_2 = 5s - 2s = 3s
-$$
+$$$$
 
-$$
+$$$$
 1 = \frac {s_2} {3}
-$$
+$$$$
 
-$$
+$$$$
 s_2 = 1 \times 3 = 3m
-$$
+$$$$
 
 Tehát a mozgás második szakaszában az ütközés után a test további 3m utat tesz meg.
 
-$$
+$$$$
 s = s_1 + s_2 = 4m + 3m = 7m
-$$
+$$$$
 
 A teljes megtett út tehát 7m. Ez láthatóan megegyezik a sebesség-idő grafikon alatti területtel, hiszen az pont 7 egység négyzet, ahogy az ábráról látható.
 
@@ -70,15 +70,15 @@ Változó mozgásnál a megtett út és a megtételéhez szükséges idő hánya
 
 >**A teljes megtett út és a megtételéhez szükséges idő hányadosa az átlagsebesség. Ennek jele: $\overline{v}$.**
 
-$$
+$$$$
 \overline{v} = \frac {s} {t}
-$$
+$$$$
 
 Példánkban a teljes megtett út 7m és az idő 5s. Az átlagsebesség tehát:
 
-$$
+$$$$
 \overline{v} = \frac {s} {t} = \frac {7m} {5s} = 1.4 \frac {m} {s}
-$$
+$$$$
 
 Látjuk, hogy az átlagsebesség, csak az ütközés során lesz egyenlő a pillanatnyi sebességgel egy pillanatra, amikor a sebesség lecsökken. Sem a $2 \frac {m} {s}$ kezdeti, sem az $1 \frac {m} {s}$ ütközés utáni sebességgel nem egyenlő.
 

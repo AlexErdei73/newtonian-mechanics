@@ -19,63 +19,63 @@ Amint a szimulációból is látszik, a beesési szög és a visszaverődési sz
 Legyen a koordináta-rendszer $x$ tengelye merőleges a falra, az $y$ tengely pedig párhuzamos vele. Ekkor az energiamegmaradás:
 
 
-$$
+$$$$
 \frac {mv_0^2} {2} = \frac {mv^2} {2}
-$$
+$$$$
 
 
 
-$$
+$$$$
 v_0 = v
-$$
+$$$$
 
 
 Vagyis az energiamegmaradás alapján az ütközés előtti sebesség nagysága egyenlő az ütközés utáni sebesség nagyságával. Mivel a falra párhuzamos erő ($F_y$) nem hat (nincs súrlódás), a lendület $y$ komponense megmarad:
 
 
-$$
+$$$$
 F_{e,y} = 0 \quad \rightarrow \quad \Delta I_y = 0
-$$
+$$$$
 
 
 
-$$
+$$$$
 mv_{0,y} = mv_y
-$$
+$$$$
 
 
 Tehát a falra párhuzamos lendületkomponens megmarad az ütközés során. Ha a beesési szög $\alpha$ és a visszaverődési szög $\beta$ (a merőlegestől mérve):
 
 
-$$
+$$$$
 v_{0,y} = v_0 \sin \alpha
-$$
+$$$$
 
 
 
-$$
+$$$$
 v_y = v \sin \beta
-$$
+$$$$
 
 
 Mivel $v_0 = v$ és $v_{0,y} = v_y$:
 
 
-$$
+$$$$
 mv_0 \sin \alpha = mv \sin \beta
-$$
+$$$$
 
 
 
-$$
+$$$$
 \sin \alpha = \sin \beta
-$$
+$$$$
 
 
 
-$$
+$$$$
 \alpha = \beta
-$$
+$$$$
 
 
 Itt kihasználtuk, hogy a sebesség nagysága nem változik meg, tehát az egyenlet mindkét oldala osztható vele.
@@ -86,43 +86,43 @@ Egy $0,100kg$ tömegű labda $3,00 \frac{m}{s}$ nagyságú sebességgel tökéle
 
 A sebesség falra merőleges ($x$ irányú) komponense:
 
-$$
+$$$$
 I_{0,x} = mv_{0,x} = mv_0 \cos \alpha = 0,100 \cdot 3,00 \cdot \cos(30^\circ) = 0,2598 \frac{kgm}{s}
-$$
+$$$$
 
 
 Mivel rugalmas az ütközés, a visszapattanás $x$ irányú sebessége ellentétes irányú:
 
-$$
+$$$$
 v_x = -v_{0,x}
-$$
+$$$$
 
 
 
-$$
+$$$$
 mv_x = -mv_{0,x}
-$$
+$$$$
 
 
 A lendületváltozás $x$ irányban:
 
-$$
+$$$$
 \Delta I_x = I_x - I_{0,x} = -I_{0,x} - I_{0,x} = -2 \cdot 0,2598 = -0,5196 \frac{kgm}{s}
-$$
+$$$$
 
 
 Az átlagos erő (a labdára ható):
 
-$$
+$$$$
 F_{e,x} = \frac {\Delta I_x} {t} = \frac {-0,5196} {0,001} = -519,6N
-$$
+$$$$
 
 
 A falra ható erő ennek ellenereje (Newton III. törvénye):
 
-$$
+$$$$
 K = -F_e = 519,6N
-$$
+$$$$
 
 
 ## Egyenlő tömegű testek tökéletesen rugalmas ütközése, amikor a céltárgy nyugalomban van
@@ -139,16 +139,16 @@ Két dolgot tudunk:
 
 Lendületmegmaradás vektorosan:
 
-$$
+$$$$
 m \vec{v_0} = m \vec{v_1} + m \vec{v_2}
-$$
+$$$$
 
 
 Egyszerűsítve tömeggel:
 
-$$
+$$$$
 \vec{v_0} = \vec{v_1} + \vec{v_2}
-$$
+$$$$
 
 
 A kezdősebesség tehát a két végső sebesség vektori összege. Ez annyit jelent, hogy $\vec{v_1}$, $\vec{v_2}$ és $\vec{v_0}$ egy háromszög oldalai, amelynek leghosszabb oldala $\vec{v_0}$.
@@ -156,15 +156,15 @@ A kezdősebesség tehát a két végső sebesség vektori összege. Ez annyit je
 Az energia megmaradása miatt:
 
 
-$$
+$$$$
 \frac {mv_0^2} {2} = \frac {mv_1^2} {2} + \frac {mv_2^2} {2}
-$$
+$$$$
 
 
 
-$$
+$$$$
 v_0^2 = v_1^2 + v_2^2
-$$
+$$$$
 
 
 A legutolsó egyenlet nem más, mint a **Pitagorasz-tétel** erre a háromszögre. Ez azt jelenti, hogy a háromszög derékszögű, tehát $\vec{v_1}$ és $\vec{v_2}$ egymásra merőleges (amennyiben az ütközés nem centrális).
@@ -174,34 +174,34 @@ Egy $0,100kg$ tömegű golyó $5,00 \frac{m}{s}$ sebességgel ferdén ütközik 
 
 Alkalmazzuk a Pitagorasz-tételt a sebességekre:
 
-$$
+$$$$
 v_0^2 = v_1^2 + v_2^2
-$$
+$$$$
 
 
 
-$$
+$$$$
 5^2 = 4^2 + v_2^2
-$$
+$$$$
 
 
 
-$$
+$$$$
 v_2 = \sqrt {5^2 - 4^2} = \sqrt {25 - 16} = \sqrt {9} = 3 \frac{m}{s}
-$$
+$$$$
 
 
 Az erő számítása (a második golyó lendületváltozásából):
 
-$$
+$$$$
 F_e = \frac {\Delta I_2} {t} = \frac {mv_2 - 0} {t}
-$$
+$$$$
 
 
 
-$$
+$$$$
 F_e = \frac {0,1 \cdot 3} {0,001} = \frac{0,3}{0,001} = 300N
-$$
+$$$$
 
 
 Tehát **$300,0N$** erő lép fel a golyók közt átlagosan az $1 ms$ ütközési idő alatt. Ez a kezdetben nyugvó golyót $3,00 \frac{m}{s}$ sebességre gyorsítja fel.

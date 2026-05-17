@@ -15,107 +15,107 @@ Ezt a problémát már megoldottuk a pillanatnyi forgástengely segítségével.
 A nyomaték most a tapadási erőből fakad, hisz egyedül ennek a hatásvonala nem megy át a tömegközépponti tengelyen.
 
 
-$$
+$$$$
 M_{z,e}^k = F_t r
-$$
+$$$$
 
 
 Az alapegyenlet tehát ekkor a következő:
 
 
-$$
+$$$$
 F_t r = \Theta_{TKP}\beta
-$$
+$$$$
 
 
 A tömegközépponthoz képest a lejtővel érintkező pont sebességének nagysága a következő:
 
 
-$$
+$$$$
 v = r\omega
-$$
+$$$$
 
 
 Valójában ennek a pontnak a sebessége az inerciarendszerben nulla, hiszen a tömegközéppont halad ugyanekkora nagyságú, de ellentétes irányú sebességgel. Írhatjuk tehát, hogy:
 
 
-$$
+$$$$
 v_{TKP} = r \omega
-$$
+$$$$
 
 
 amiből a lejtő irányú gyorsulásra azt kapjuk, hogy:
 
 
-$$
+$$$$
 a = a_{TKP} = r \beta
-$$
+$$$$
 
 
 Ez ismét csak igen fontos összefüggés.
 A Newton-féle második törvény alakja most is ugyanaz:
 
 
-$$
+$$$$
 mg\sin \alpha - F_t = ma
-$$
+$$$$
 
 
 Ebből kifejezve a tapadási erőt és beírva az alapegyenletbe, továbbá a szöggyorsulást az előző összefüggésből kifejezve és beírva, megkapjuk a gyorsulásra vonatkozó egyenletet:
 
 
-$$
+$$$$
 F_t = mg\sin \alpha - ma
-$$
+$$$$
 
 
 
-$$
+$$$$
 r(mg\sin \alpha - ma) = \Theta_{TKP} \frac {a} {r}
-$$
+$$$$
 
 
 
-$$
+$$$$
 g\sin \alpha - a = a \frac {\Theta_{TKP}} {mr^2}
-$$
+$$$$
 
 
 Innen fejezzük ki $a$-t és meg is van az összefüggés, amit keresünk:
 
 
-$$
+$$$$
 g\sin \alpha = a \left(1 + \frac {\Theta_{TKP}} {mr^2}\right)
-$$
+$$$$
 
 
 
-$$
+$$$$
 a = \frac {g\sin \alpha} {1 + \frac {\Theta_{TKP}} {mr^2}}
-$$
+$$$$
 
 
 Ez pontosan az az összefüggés, melyet előzőleg a pillanatnyi forgástengely alkalmazásával vezettünk le.
 Ide beírhatjuk a gömb tehetetlenségi nyomatékát:
 
 
-$$
+$$$$
 \frac {\Theta_{TKP}} {mr^2} = \frac {2} {5}
-$$
+$$$$
 
 
 
-$$
+$$$$
 a = \frac {g\sin\alpha} {1 + 2/5} = \frac {5g\sin\alpha} {7}
-$$
+$$$$
 
 
 Az adatokat behelyettesítve megkapjuk a gyorsulást:
 
 
-$$
+$$$$
 a = \frac {5 \cdot 9,81 \cdot \sin(30^\circ)} {7} = 3,504 \frac{m}{s^2}
-$$
+$$$$
 
 
 ## A mechanikai energia megmaradása
@@ -125,77 +125,77 @@ Forgómozgás esetén is igaz az, hogy a mechanikai energia megmaradhat. Ennek v
 A lejtőn legördülő gömb esetében mutassuk meg, hogy a mechanikai energia állandó!
 
 
-$$
+$$$$
 E = \frac {\Theta_{TKP}\omega^2} {2} + \frac {mv_{TKP}^2} {2} + mgh_{TKP} = \text{állandó}
-$$
+$$$$
 
 
 Induljon a test mondjuk álló helyzetből az egyszerűség kedvéért! Ekkor a gyorsulás:
 
 
-$$
+$$$$
 a_{TKP} = \frac {g\sin \alpha} {1 + \frac {\Theta_{TKP}} {mr^2}}
-$$
+$$$$
 
 
 A szöggyorsulás:
 
 
-$$
+$$$$
 \beta = \frac {a_{TKP}} {r}
-$$
+$$$$
 
 
 
-$$
+$$$$
 v_{TKP} = a_{TKP}t
-$$
+$$$$
 
 
 
-$$
+$$$$
 \omega = \beta t
-$$
+$$$$
 
 
 Továbbá:
 
 
-$$
+$$$$
 h_{TKP} = h_{TKP,0}- s \sin \alpha
-$$
+$$$$
 
 
 ahol
 
 
-$$
+$$$$
 s = \frac {a_{TKP}} {2}t^2
-$$
+$$$$
 
 
 Helyettesítsük ezeket be!
 
 
-$$
+$$$$
 E = \frac {1} {2} mg^2\sin^2 \alpha \cdot t^2 \frac {1} {\left(1 + \frac {\Theta_{TKP}} {mr^2}\right)^2} + \frac {1} {2} \Theta_{TKP} \frac {g^2\sin^2\alpha \cdot t^2} {r^2\left(1 + \frac {\Theta_{TKP}} {mr^2}\right)^2} + mgh_{TKP,0} - mg\frac {g\sin \alpha} {2\left(1 + \frac {\Theta_{TKP}} {mr^2}\right)}t^2\sin \alpha
-$$
+$$$$
 
 
 Az első két tag összevonható.
 
 
-$$
+$$$$
 \frac {1} {2} mg^2\sin^2 \alpha \cdot t^2 \frac {1} {\left(1 + \frac {\Theta_{TKP}} {mr^2}\right)^2} + \frac {1} {2} \Theta_{TKP} \frac {g^2\sin^2\alpha \cdot t^2} {r^2\left(1 + \frac {\Theta_{TKP}} {mr^2}\right)^2} = \frac {mg^2\sin^2 \alpha \cdot t^2} {2} \frac {1 + \frac {\Theta_{TKP}} {mr^2}} {\left(1 + \frac {\Theta_{TKP}} {mr^2}\right)^2}
-$$
+$$$$
 
 
 Itt egyszerűsítés után pont az utolsó tag ellentettje áll, tehát azt kapjuk, hogy:
 
 
-$$
+$$$$
 E = mgh_{TKP,0}
-$$
+$$$$
 
 
 ***
