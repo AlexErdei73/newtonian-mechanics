@@ -109,13 +109,13 @@ Ezen összefüggések segítségével a $q$ tényező már kiszámítható.
 
 ### Példa
 
-Számítsuk ki az eddigi példánkban a $q$ tényező értékét! Mennyi idő alatt csökken a rezgés energiája 4 tizedes pontossággal 0-ra? ($5 \times 10^{-5}$ J energia maradhat maximum a rendszerben.) A $\beta = 0,06$ kg/s a szimulációnkban.
+Számítsuk ki az eddigi példánkban a $q$ tényező értékét! Mennyi idő alatt csökken a rezgés energiája 4 tizedes pontossággal 0-ra? ($5 \cdot 10^{-5}$ J energia maradhat maximum a rendszerben.) A $\beta = 0,06$ kg/s a szimulációnkban.
 
 A csillapítási tényező kiszámítása a következő:
 
 
 $$
-\delta = \frac {\beta} {2m} = \frac {0,06} {2 \times 0,01} = 3\text{ 1/s}
+\delta = \frac {\beta} {2m} = \frac {0,06} {2 \cdot 0,01} = 3\text{ 1/s}
 $$
 
 

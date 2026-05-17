@@ -29,7 +29,7 @@ $$
 A négyzetes úttörvény:
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2
 $$
 
 Itt s helyébe a megfelelő elmozdulás koordináta kerül, míg v_0 helyébe a kezdősebesség megfelelő koordinátaja, illetve a helyébe a megfelelő gyorsulás koordináta kerül.
@@ -37,29 +37,29 @@ Itt s helyébe a megfelelő elmozdulás koordináta kerül, míg v_0 helyébe a 
 A vízszintes mozgás:
 
 $$
-x - x_0 = v_{0, x} \times t + \frac {a_x} {2} \times t^2
+x - x_0 = v_{0, x} \cdot t + \frac {a_x} {2} \cdot t^2
 $$
 
 $$
-x - 0 = v_0 \times t + \frac {0} {2} \times t^2
+x - 0 = v_0 \cdot t + \frac {0} {2} \cdot t^2
 $$
 
 $$
-x = v_0 \times t
+x = v_0 \cdot t
 $$
 
 A függőleges mozgás:
 
 $$
-y - y_0 = v_{0, y} \times t + \frac {a_y} {2} \times t^2
+y - y_0 = v_{0, y} \cdot t + \frac {a_y} {2} \cdot t^2
 $$
 
 $$
-y - 0 = 0 \times t + \frac {g} {2} \times t^2
+y - 0 = 0 \cdot t + \frac {g} {2} \cdot t^2
 $$
 
 $$
-y = \frac {g} {2} \times t^2
+y = \frac {g} {2} \cdot t^2
 $$
 
 Láthatjuk, hogy az y kiszámítása, mely ez esetben megegyezik az elejtett szabadon eső test által megtett úttal, pontosan úgy történik, mint a szabadesés esetén, tehát ha t és g ugyanaz az érték, akkor y = s, ahol s az elejtett test által megtett út. Ezt láttuk eddig is a kísérletben illetve a szimulációban is.
@@ -69,7 +69,7 @@ Láthatjuk, hogy az y kiszámítása, mely ez esetben megegyezik az elejtett sza
 1. Egy $20.0m$ magas szakadék széléről vízszintesen elhajítunk egy követ $10.0 \frac {m} {s}$ kezdősebességgel. Mennyi idő múlva csapódik a kő a talajba? Milyen messzire jut vízszintesen a szakadék szélétől a kő? Számítsuk ki a kő sebességét a becsapódáskor!
 
 $$
-y = \frac {g} {2} \times t^2
+y = \frac {g} {2} \cdot t^2
 $$
 
 $$
@@ -87,7 +87,7 @@ $$
 Tehát a becsapódás $2.02s$-al az elhajítás után következik be. 
 
 $$
-x = v_0 \times t = 10.0 \times 2.019 = 20.19
+x = v_0 \cdot t = 10.0 \cdot 2.019 = 20.19
 $$
 
 A kő vízszintesen $20.2m$ távolságra jut.
@@ -108,7 +108,7 @@ $$
 $$
 
 $$
-x = 9.81 \times 2.019 = 19.81
+x = 9.81 \cdot 2.019 = 19.81
 $$
 
 Tehát $v_y = 19.81 \frac {m} {s}$.
@@ -122,7 +122,7 @@ $$
 2. Egy lövedék sebessége $600 \frac {m} {s}$. Ha a fegyvert elsütjük és a golyó vízszintesen repül ki, akkor mennyit esik lefelé, amíg eltalálja a $150m$-re lévő céltárgyat? A légellenállást elhanyagolhatjuk, a nehézségi gyorsulás $9.81 \frac {m} {s^2}$.
 
 $$
-x = v_0 \times t
+x = v_0 \cdot t
 $$
 
 $$
@@ -136,7 +136,7 @@ $$
 Tehát $t = 0.250s$.
 
 $$
-y = \frac {g} {2} \times t^2 = \frac {9.81} {2} \times 0.250^2 = 0.307m
+y = \frac {g} {2} \cdot t^2 = \frac {9.81} {2} \cdot 0.250^2 = 0.307m
 $$
 
 Tehát kb. $30.7cm$-el a tárgy fölé kell célozni, ha el akarjuk találni.

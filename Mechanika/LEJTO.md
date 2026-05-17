@@ -89,44 +89,44 @@ $$
 Tehát:
 
 $$
-G_x = G \times \sin \alpha
+G_x = G \cdot \sin \alpha
 $$
 
 Hasonlóan:
 
 $$
-G_y = -G \times \cos \alpha
+G_y = -G \cdot \cos \alpha
 $$
 
 $G$ y komponense negatív, mivel az y tengellyel ellentétes irányba, tehát $K$-val ellentétes irányba mutat. Ezeket beírva:
 
 $$
--F + 0 + G \times \sin \alpha = 0
+-F + 0 + G \cdot \sin \alpha = 0
 $$
 
 $$
-0 + K + (-G \times \cos \alpha) = 0
+0 + K + (-G \cdot \cos \alpha) = 0
 $$
 
 Eredményeink:
 
 $$
-F = G \times \sin \alpha = mg \times \sin \alpha
+F = G \cdot \sin \alpha = mg \cdot \sin \alpha
 $$
 
 $$
-K = G \times \cos \alpha = mg \times \cos \alpha
+K = G \cdot \cos \alpha = mg \cdot \cos \alpha
 $$
 
 ### Példa
 Ha a test súlya 1N és a lejtő szöge 30 fok, akkor:
 
 $$
-F = G \times \sin \alpha = 1N \times \sin(30^\circ) = 1N \times 0,5 = 0,5N
+F = G \cdot \sin \alpha = 1N \cdot \sin(30^\circ) = 1N \cdot 0,5 = 0,5N
 $$
 
 $$
-K = G \times \cos \alpha = 1N \times \cos(30^\circ) = 1N \times 0,8660 = 0,8660N
+K = G \cdot \cos \alpha = 1N \cdot \cos(30^\circ) = 1N \cdot 0,8660 = 0,8660N
 $$
 
 $K$ és $F$ egymásra merőleges erők, vektori összegük:

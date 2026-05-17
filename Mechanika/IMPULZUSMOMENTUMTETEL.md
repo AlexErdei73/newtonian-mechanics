@@ -102,13 +102,13 @@ Tehát az impulzusmomentum a területi sebesség $2m$-szerese, amennyiben $m = m
 
 
 $$
-\Theta_{r\acute{u}d} = \frac {1} {3} M l^2 = \frac {1} {3} \times 0,8 \times 1,2^2 = 0,384\,kgm^2
+\Theta_{r\acute{u}d} = \frac {1} {3} M l^2 = \frac {1} {3} \cdot 0,8 \cdot 1,2^2 = 0,384\,kgm^2
 $$
 
 
 
 $$
-\Theta_{pont} = m l^2 = 0,5 \times 1,2^2 = 0,72\,kgm^2
+\Theta_{pont} = m l^2 = 0,5 \cdot 1,2^2 = 0,72\,kgm^2
 $$
 
 
@@ -120,7 +120,7 @@ $$
 
 
 $$
-N_{z,0} = m_{goly\acute{o}} r v = 0,02 \times 0,9 \times 250 = 4,50\,\frac{kgm^2}{s}
+N_{z,0} = m_{goly\acute{o}} r v = 0,02 \cdot 0,9 \cdot 250 = 4,50\,\frac{kgm^2}{s}
 $$
 
 
@@ -142,7 +142,7 @@ $$
 
 
 $$
-\Theta_{goly\acute{o}} = m_{goly\acute{o}} r^2 = 0,02 \times 0,9^2 = 0,0162\,kgm^2
+\Theta_{goly\acute{o}} = m_{goly\acute{o}} r^2 = 0,02 \cdot 0,9^2 = 0,0162\,kgm^2
 $$
 
 
@@ -156,19 +156,19 @@ Számítsuk ki a tömegközéppont távolságát a forgástengelytől!
 
 
 $$
-r_{TKP} = \frac {\sum_{i = 1}^{N} m_i r_i} {M_{\ddot{o}ssz}} = \frac {0,8\times 0,6 + 0,5\times 1,2 + 0,02\times 0,9} {1,320} = 0,8318\,m
+r_{TKP} = \frac {\sum_{i = 1}^{N} m_i r_i} {M_{\ddot{o}ssz}} = \frac {0,8\cdot 0,6 + 0,5\cdot 1,2 + 0,02\cdot 0,9} {1,320} = 0,8318\,m
 $$
 
 
 
 $$
-v_{TKP} = r_{TKP} \omega = 0,8318 \times 4,017 = 3,341\,\frac{m}{s}
+v_{TKP} = r_{TKP} \omega = 0,8318 \cdot 4,017 = 3,341\,\frac{m}{s}
 $$
 
 
 
 $$
-I = M_{\ddot{o}ssz} v_{TKP} = 1,32 \times 3,341 = 4,411\,\frac{kgm}{s}
+I = M_{\ddot{o}ssz} v_{TKP} = 1,32 \cdot 3,341 = 4,411\,\frac{kgm}{s}
 $$
 
 
@@ -176,7 +176,7 @@ Ez tehát az ütközés utáni lendület közvetlenül.
 
 
 $$
-I_0 = m_{goly\acute{o}} v_{goly\acute{o}} = 0,02 \times 250 = 5\,\frac{kgm}{s}
+I_0 = m_{goly\acute{o}} v_{goly\acute{o}} = 0,02 \cdot 250 = 5\,\frac{kgm}{s}
 $$
 
 
@@ -224,7 +224,7 @@ $$
 
 
 $$
-h_{TKP} = \frac {(\Theta + \Theta_{goly\acute{o}})\omega^2} {2 M_{\ddot{o}ssz} g} = \frac {(1,104 + 0,0162)\times 4,017^2} {2 \times 1,32 \times 9,81} = 0,6980\,m
+h_{TKP} = \frac {(\Theta + \Theta_{goly\acute{o}})\omega^2} {2 M_{\ddot{o}ssz} g} = \frac {(1,104 + 0,0162)\cdot 4,017^2} {2 \cdot 1,32 \cdot 9,81} = 0,6980\,m
 $$
 
 

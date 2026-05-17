@@ -4,7 +4,7 @@
 1. Egy autó gumija és az aszfalt közt a súrlódási együttható 0,6, a tapadási együttható 0,8. Az autó $100 \frac {km} {h}$ sebességről egyenletesen lefékez, miközben a blokkolásgátló működik, szóval a kerék nem csúszik meg. Számítsuk ki a lassulást, a megállásig eltelt időt, valamint a fékutat, ha az autó tömege $1300 kg$! Függ-e a lassulás az autó tömegétől? Számítsuk ki a fékutat abban az esetben is, ha a kerekek blokkolnak és csúsznak a talajon!
 
 $$
-G = mg = 1300 \times 9,81 = 12750N
+G = mg = 1300 \cdot 9,81 = 12750N
 $$
 
 $$
@@ -12,7 +12,7 @@ K = G = 12750N
 $$
 
 $$
-F_e = F_s = \mu_t \times K = 0,8 \times 12750 = 10200N
+F_e = F_s = \mu_t \cdot K = 0,8 \cdot 12750 = 10200N
 $$
 
 $$
@@ -44,13 +44,13 @@ t = \frac {-27,78} {-7,846} = 3,541s
 $$
 
 $$
-s = v_0 \times t - \frac {a} {2} \times t^2 = 27,78 \times 3,541 + \frac {-7,846} {2} \times 3,541^2 = 49,18m
+s = v_0 \cdot t - \frac {a} {2} \cdot t^2 = 27,78 \cdot 3,541 + \frac {-7,846} {2} \cdot 3,541^2 = 49,18m
 $$
 
 A lassulás független a tömegtől, hisz:
 
 $$
-|a| = \frac {F_e} {m} = \frac {\mu_t mg} {m} = \mu_t g = 0,8 \times 9,81 = 7,848 \frac {m} {s^2}
+|a| = \frac {F_e} {m} = \frac {\mu_t mg} {m} = \mu_t g = 0,8 \cdot 9,81 = 7,848 \frac {m} {s^2}
 $$
 
 Ez a számítási hibán belül megegyezik az eddigi eredménnyel, az utolsó jegy pontatlan.
@@ -58,7 +58,7 @@ Ez a számítási hibán belül megegyezik az eddigi eredménnyel, az utolsó je
 Csúszás esetén:
 
 $$
-a = -\mu g = -0,6 \times 9,81 = -5,886 \frac {m} {s^2}
+a = -\mu g = -0,6 \cdot 9,81 = -5,886 \frac {m} {s^2}
 $$
 
 $$
@@ -66,7 +66,7 @@ t = \frac {v - v_0} {a} = \frac {-27,78} {-5,886} = 4,720s
 $$
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2 = 27,78 \times 4,720 + \frac {-5,886} {2} \times 4,720^2 = 65,56m
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 27,78 \cdot 4,720 + \frac {-5,886} {2} \cdot 4,720^2 = 65,56m
 $$
 
 Látjuk, a blokkolásgátló hogyan képes csökkenteni a fékutat.
@@ -78,7 +78,7 @@ F_e = F_t = \mu_t K = \mu_t mg = ma
 $$
 
 $$
-a = \frac {F_e} {m} = \frac {\mu_t mg} {m} = \mu_t g = 0,8 \times 9,81 = 7,848 \frac {m} {s^2}
+a = \frac {F_e} {m} = \frac {\mu_t mg} {m} = \mu_t g = 0,8 \cdot 9,81 = 7,848 \frac {m} {s^2}
 $$
 
 $$
@@ -86,7 +86,7 @@ t = \frac {v - v_0} {a} = \frac {27,78 - 0} {7,848} = 3,540s
 $$
 
 $$
-s = \frac {a} {2} \times t^2 = \frac {7,848} {2} \times 3,540^2 = 49,17m
+s = \frac {a} {2} \cdot t^2 = \frac {7,848} {2} \cdot 3,540^2 = 49,17m
 $$
 
 Látjuk, hogy a fékezéskor megtett út egyezik a gyorsításkor megtett úttal, hisz maximálisan kihasználjuk az elérhető tapadást a blokkolásgátlóval is és a kipörgésgátlóval is. Ilyenkor a két folyamat mintegy egymás tükörképe az időben, legalábbis a mozgás szempontjából. A valóságban a két folyamat egyáltalán nem egymás tükörképe, hisz a fékezéskor a fékek alaposan felmelegednek, míg a gyorsításkor a motor jelentős mennyiségű üzemanyagot éget el, amely fékezéskor nem történik meg.
@@ -94,7 +94,7 @@ Látjuk, hogy a fékezéskor megtett út egyezik a gyorsításkor megtett úttal
 A gyorsulás kipörgő hajtott kerékkel:
 
 $$
-a = \mu g = 0,6 \times 9,81 = 5,886 \frac {m} {s^2}
+a = \mu g = 0,6 \cdot 9,81 = 5,886 \frac {m} {s^2}
 $$
 
 $$
@@ -102,7 +102,7 @@ t = \frac {v - v_0} {a} = \frac {27,78 - 0} {5,886} = 4,720s
 $$
 
 $$
-s = \frac {a} {2} \times t^2 = \frac {5,886} {2} \times 4,720^2 = 65,57m
+s = \frac {a} {2} \cdot t^2 = \frac {5,886} {2} \cdot 4,720^2 = 65,57m
 $$
 
 ## Feladatok

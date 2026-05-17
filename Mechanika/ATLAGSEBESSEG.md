@@ -27,7 +27,7 @@ $$
 $$
 
 $$
-s_1 = 2 \times 2 = 4m
+s_1 = 2 \cdot 2 = 4m
 $$
 
 Tehát a test az első 2s alatt 4m utat tesz meg. Ekkor hirtelen egy  másik testtel ütközik és sebessége szinte azonnal felére csökken. Még 3s hosszan mozog az új sebességével egészen 5s-ig.
@@ -45,7 +45,7 @@ $$
 $$
 
 $$
-s_2 = 1 \times 3 = 3m
+s_2 = 1 \cdot 3 = 3m
 $$
 
 Tehát a mozgás második szakaszában az ütközés után a test további 3m utat tesz meg.

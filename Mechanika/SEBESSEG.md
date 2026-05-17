@@ -55,7 +55,7 @@ $$
 Itt x-szel jelöltük az ismeretlen utat. Mindkét oldalt megszorozzuk 20 s-al, hogy megkapjuk x-et, ahogyan az egyenleteket megoldjuk a matematikában.
 
 $$
-x = 16.7 \frac {m} {s} \times 20 \text{ s} = 334 \text{ m}
+x = 16.7 \frac {m} {s} \cdot 20 \text{ s} = 334 \text{ m}
 $$
 
 Itt az utolsó jegy már nem pontos, tehát durván 330 m-t tesz meg az autó 20 s alatt.
@@ -69,7 +69,7 @@ $$
 Az egység értelemszerűen s lesz, tehát elhagyjuk az egységeket a számítás során, csak a végén írjuk ki, hisz az eredmény csak így érvényes.
 
 $$
-16.7 \times x = 100
+16.7 \cdot x = 100
 $$
 
 $$
@@ -85,7 +85,7 @@ $$
 $$
 
 $$
-x = 30 \times 3600 = 108\,000 \text{ m} = 108 \text{ km}
+x = 30 \cdot 3600 = 108\,000 \text{ m} = 108 \text{ km}
 $$
 
 Az autó óránként 108 km-t tesz meg, tehát sebessége $108 \frac {km} {h}$.
@@ -97,7 +97,7 @@ $$
 $$
 
 $$
-108 \times x = 150
+108 \cdot x = 150
 $$
 
 $$

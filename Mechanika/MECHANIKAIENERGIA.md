@@ -68,7 +68,7 @@ A kísérlet és a szimuláció az ingalengéseket mutatja be, amelyeknél a mec
 1. Egy $0,100 kg$ tömegű testet meglökünk a lejtő alján $5,00 \frac {m} {s}$ sebességgel. Mekkora a mozgási energiája? Mekkora a helyzeti energiája? A lejtő súrlódásmentes. Milyen magasra mehet fel a test? Mekkora ekkor a mozgási energiája? Mekkora ekkor a helyzeti energiája?
 
 $$
-E_{m,0} = \frac {mv_0^2} {2} = \frac {0,1 \times 5^2} {2} = 1,25 J
+E_{m,0} = \frac {mv_0^2} {2} = \frac {0,1 \cdot 5^2} {2} = 1,25 J
 $$
 
 A helyzeti energia a vonatkoztatási szinttől függ. Válasszuk $h_0 = 0$-t!
@@ -90,11 +90,11 @@ mgh + 0 = 1,25 J
 $$
 
 $$
-0,1 \times 9,81 \times h = 1,25
+0,1 \cdot 9,81 \cdot h = 1,25
 $$
 
 $$
-h = \frac {1,25} {0,1 \times 9,81} = 1,274 m 
+h = \frac {1,25} {0,1 \cdot 9,81} = 1,274 m 
 $$
 
 2. Egy $0,100 kg$ tömegű test egy $3,00 m$ hosszú kötél alján lóg, és meglökjük $5,00 \frac {m} {s}$ sebességgel. Milyen magasra emelkedik a kezdőpont felett? Mekkora kitérésnek felel ez meg? Az esetleges veszteségektől tekintsünk el.

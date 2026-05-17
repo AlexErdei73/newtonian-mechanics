@@ -17,7 +17,7 @@ s = \frac {v_0 + v} {2}t
 $$
 
 $$
-W = F_e s = m \frac {v - v_0} {t} \times \frac {v_0 + v} {2}t = \frac {m} {2} (v - v_0)(v + v_0) = \frac {m} {2} (v^2 - v_0^2)  
+W = F_e s = m \frac {v - v_0} {t} \cdot \frac {v_0 + v} {2}t = \frac {m} {2} (v - v_0)(v + v_0) = \frac {m} {2} (v^2 - v_0^2)  
 $$
 
 $$
@@ -40,11 +40,11 @@ A munkatételt mi csak egyenes vonalú, egyenletesen gyorsuló mozgásra mutattu
 1. Egy $1300 kg$ tömegű gépkocsi felgyorsít $10,0 \frac {m} {s}$ sebességről $20,0 \frac {m} {s}$ sebességre. Mekkora a mozgási energia kezdetben? Mekkorára nő a mozgási energia a gyorsítás során? Mekkora a motor gyorsítási munkája, ha a veszteségektől eltekintünk? Számítsuk ki a munkát úgy is, hogy a gyorsulást és az erőt is kiszámítjuk! Így is ugyanannyit kapunk?
 
 $$
-E_{m,0} = \frac {mv_0^2} {2} = \frac {1300 \times 10^2} {2} = 65000 J
+E_{m,0} = \frac {mv_0^2} {2} = \frac {1300 \cdot 10^2} {2} = 65000 J
 $$
 
 $$
-E_m = \frac {mv^2} {2} = \frac {1300 \times 20^2} {2} = 260000 J
+E_m = \frac {mv^2} {2} = \frac {1300 \cdot 20^2} {2} = 260000 J
 $$
 
 $$
@@ -58,15 +58,15 @@ a = \frac {v - v_0} {t} = \frac {20 - 10} {10} = 1 \frac {m} {s^2}
 $$
 
 $$
-F_e = ma = 1300 \times 1 = 1300 N
+F_e = ma = 1300 \cdot 1 = 1300 N
 $$
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2 = 10 \times 10 + \frac {1} {2} \times 10^2 = 150 m
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 10 \cdot 10 + \frac {1} {2} \cdot 10^2 = 150 m
 $$
 
 $$
-W = F_e s = 1300 \times 150 = 195000 J = 195,0 kJ
+W = F_e s = 1300 \cdot 150 = 195000 J = 195,0 kJ
 $$
 
 Tehát így is pontosan ugyanannyit kapunk, ahogy annak lennie is kell.
@@ -74,11 +74,11 @@ Tehát így is pontosan ugyanannyit kapunk, ahogy annak lennie is kell.
 2. Egy $0,10 kg$ tömegű követ függőlegesen feldobunk $5 \frac {m} {s}$ sebességgel. Mekkora a nehézségi erő munkája, amikor $2 \frac {m} {s}$ sebességre fékeződik le? Itt is számítsuk ki az eredményt a munkatétel nélkül is!
 
 $$
-E_{m,0} = \frac {mv_0^2} {2} = \frac {0,10 \times 5^2} {2} = 1,25 J
+E_{m,0} = \frac {mv_0^2} {2} = \frac {0,10 \cdot 5^2} {2} = 1,25 J
 $$
 
 $$
-E_m = \frac {mv^2} {2} = \frac {0,10 \times 2^2} {2} = 0,20 J
+E_m = \frac {mv^2} {2} = \frac {0,10 \cdot 2^2} {2} = 0,20 J
 $$
 
 $$
@@ -86,7 +86,7 @@ W = \Delta E_m = 0,2 J - 1,25 J = -1,05 J
 $$
 
 $$
-F_e = G = mg = 0,1 \times 9,81 = 0,981 N
+F_e = G = mg = 0,1 \cdot 9,81 = 0,981 N
 $$
 
 $$
@@ -102,11 +102,11 @@ t = \frac {-3} {-9,81} = 0,3058 s
 $$
 
 $$
-s = h = v_0 \times t + \frac {a} {2} \times t^2 = 5 \times 0,3058 + \frac {-9,81} {2} \times 0,3058^2 = 1,070 m
+s = h = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 5 \cdot 0,3058 + \frac {-9,81} {2} \cdot 0,3058^2 = 1,070 m
 $$
 
 $$
-W = -F_e s = -0,981 N \times 1,070 m = -1,050 J 
+W = -F_e s = -0,981 N \cdot 1,070 m = -1,050 J 
 $$
 
 Látjuk, hogy a számítási pontosságon belül eredményeink egyeznek.

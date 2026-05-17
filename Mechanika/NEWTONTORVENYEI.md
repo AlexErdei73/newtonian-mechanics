@@ -39,7 +39,7 @@ $$
 Az erő tehát vektor mennyiség. Az erő egysége a Newton(N). $1N$ erő $1kg$ tömeget $1 \frac {m} {s^2}$ gyorsulással gyorsít.
 
 $$
-1N = 1kg \times 1 \frac {m} {s^2}
+1N = 1kg \cdot 1 \frac {m} {s^2}
 $$
 
 ### Kísérlet

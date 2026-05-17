@@ -14,7 +14,7 @@ a = \frac {\Delta v} {t} = \frac {v - v_0} {t} = \frac {27.8 \frac {m} {s} - 0} 
 $$
 
 $$
-s = \frac {a} {2} \times {t^2} = \frac {3.48 \frac {m} {s^2}} {2} \times (8s)^2 = 111m 
+s = \frac {a} {2} \cdot {t^2} = \frac {3.48 \frac {m} {s^2}} {2} \cdot (8s)^2 = 111m 
 $$
 
 Itt az eredményeket 3 értékes jegyre kerekítettük, hisz az adatok is ezzel a pontossággal adottak, tehát az eredmény sem lehet pontosabb.
@@ -22,13 +22,13 @@ Itt az eredményeket 3 értékes jegyre kerekítettük, hisz az adatok is ezzel 
 2. Egy test 30 fokos lejtőn csúszik le súrlódásmentesen álló helyzetből indulva, miközben gyorsulása $5.00 \frac {m} {s^2}$. Ha a lejtő hossza $10.0m$, hány másodperc kell, hogy leérjen a lejtő aljára? Mekkora sebességgel ér a lejtő aljára?
 
 $$
-s = \frac {a} {2} \times t^2
+s = \frac {a} {2} \cdot t^2
 $$
 
 Behelyettesítjük az adatokat, az ismeretlen idő legyen x. Az egységeket elhagyjuk az egyszerűség végett. Az eredmény másodpercben értendő.
 
 $$
-10.0 = \frac {5.00} {2} \times x^2
+10.0 = \frac {5.00} {2} \cdot x^2
 $$
 
 $$
@@ -93,7 +93,7 @@ $$
 Az emelkedési idő $0.510s$.
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2 = 5.00 \times 0.510 + \frac {-9.81} {2} \times 0.510^2 = 1.27m
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 5.00 \cdot 0.510 + \frac {-9.81} {2} \cdot 0.510^2 = 1.27m
 $$
 
 2. Egy autó $30.0 \frac {m} {s}$ sebességről fékez $3.00 \frac {m} {s^2}$ lassulással, miközben 113m utat tesz meg. Mennyi ideig tartott a fékezés és mekkora sebességre lassított le? 
@@ -101,11 +101,11 @@ $$
 Ez a feladat nehéznek tűnhet, de vegyük észre, hogy minden adat adott a négyzetes úttörvényben, kivéve az eltelt időt. Tehát az idő kiszámítható kell legyen egy egyenlet megoldásával.
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2
 $$
 
 $$
-113 = 30.0 \times x + \frac {-3.00} {2} \times x^2
+113 = 30.0 \cdot x + \frac {-3.00} {2} \cdot x^2
 $$
 
 $$
@@ -115,7 +115,7 @@ $$
 Ez egy másodfokú egyenlet az idő meghatározására, melyet az x ismeretlen jelöl. Erre ismerjük a megoldóképletet.
 
 $$
-x_{12} = \frac {-b \pm \sqrt {b^2 - 4ac}} {2a} = \frac {30.0 \pm \sqrt {30.0^2 - 4 \times 1.50 \times 113}} {3.00} = \frac {30.0 \pm 14.9} {3.00} = 15.0 , 5.03
+x_{12} = \frac {-b \pm \sqrt {b^2 - 4ac}} {2a} = \frac {30.0 \pm \sqrt {30.0^2 - 4 \cdot 1.50 \cdot 113}} {3.00} = \frac {30.0 \pm 14.9} {3.00} = 15.0 , 5.03
 $$
 
 Két megoldást kapunk. Az egyik esetben a test úgy tesz meg 113m-t, hogy nem fordul meg, a másik esetben nem a megtett út 113m, hanem a test távolsága az eredeti pozíciójától. A test 0-ra fékez és megfordul, majd elindul visszafele és gyorsulva jut 113m távolságra az eredeti helytől, ahol fékezni kezdett a kocsi. Ez persze akkor történne, ha a gyorsulás nem szűnne meg, amint a kocsi nullára fekezett, hanem változatlanul fennállna. Nyilván minket a rövidebb idő érdekel csak, amikor a test mozgás iránya nem fordul meg. Tehát a lassítás ideje 5.03s.

@@ -67,17 +67,17 @@ $$
 
 
 ## Példa
-A Föld mozgása Nap körüli keringése során jó közelítéssel egyenletes körmozgásnak tekinthető. A kör sugara $149,6 \times 10^6 \text{ km}$, a periódusidő $365,26 \text{ nap}$. Mekkora a keringési sebesség? Mekkora a szögsebesség? 
+A Föld mozgása Nap körüli keringése során jó közelítéssel egyenletes körmozgásnak tekinthető. A kör sugara $149,6 \cdot 10^6 \text{ km}$, a periódusidő $365,26 \text{ nap}$. Mekkora a keringési sebesség? Mekkora a szögsebesség? 
 
 
 $$
-v = \frac {2 \pi R} {T} = \frac {2 \pi \cdot 149,6 \times 10^9 \text{ m}} {365,26 \times 86400 \text{ s}} = 29784 \frac {\text{m}} {\text{s}}
+v = \frac {2 \pi R} {T} = \frac {2 \pi \cdot 149,6 \cdot 10^9 \text{ m}} {365,26 \cdot 86400 \text{ s}} = 29784 \frac {\text{m}} {\text{s}}
 $$
 
 
 
 $$
-\omega = \frac {2 \pi} {T} = \frac {2 \pi} {365,26 \times 86400} = 1,99 \times 10^{-7} \frac {\text{rad}} {\text{s}}
+\omega = \frac {2 \pi} {T} = \frac {2 \pi} {365,26 \cdot 86400} = 1,99 \cdot 10^{-7} \frac {\text{rad}} {\text{s}}
 $$
 
 

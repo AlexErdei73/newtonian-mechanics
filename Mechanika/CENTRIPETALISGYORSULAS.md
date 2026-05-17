@@ -77,13 +77,13 @@ Ez a szimulációval is könnyen ellenőrizhető.
 
 
 $$
-v = \frac {2 \pi R} {T} = \frac {2 \times 3,1415 \times 0,2} {0,4} = 3,142 \frac {\text{m}} {\text{s}}
+v = \frac {2 \pi R} {T} = \frac {2 \cdot 3,1415 \cdot 0,2} {0,4} = 3,142 \frac {\text{m}} {\text{s}}
 $$
 
 
 
 $$
-E_m = \frac {mv^2} {2} = \frac {0,1 \times 3,142^2} {2} = 0,4933 \text{ J}
+E_m = \frac {mv^2} {2} = \frac {0,1 \cdot 3,142^2} {2} = 0,4933 \text{ J}
 $$
 
 
@@ -95,7 +95,7 @@ $$
 
 
 $$
-F_e = ma = 0,1 \times 49,36 = 4,936 \text{ N}
+F_e = ma = 0,1 \cdot 49,36 = 4,936 \text{ N}
 $$
 
 2. Egy vödörben víz van és függőleges síkban forgatjuk úgy egy kötélen, hogy körmozgást végez. A pálya legfelső pontján a vödör sebessége $5 \frac {m} {s}$, a kör sugara $0,77m$. Mekkora erővel nyomja a víz a vödör fenekét, ha tömege $1,50kg$? Kifolyik-e a víz a vödörből? Mekkora a minimális szögsebesség, melynél a víz nem folyik ki a vödörből?
@@ -120,7 +120,7 @@ $$
 
 
 $$
-K = ma_{cp} - mg = 1,50 \times 32,47 - 1,50 \times 9,81 = 33,99N
+K = ma_{cp} - mg = 1,50 \cdot 32,47 - 1,50 \cdot 9,81 = 33,99N
 $$
 
 
@@ -158,7 +158,7 @@ $$
 
 
 $$
-v_{min} = \sqrt {gR} = \sqrt {9,81 \times 0,77} = 2,748 \frac {m} {s}
+v_{min} = \sqrt {gR} = \sqrt {9,81 \cdot 0,77} = 2,748 \frac {m} {s}
 $$
 
 

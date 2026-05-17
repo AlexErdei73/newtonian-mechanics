@@ -12,11 +12,11 @@ a = \frac {\Delta v} {t} = \frac {v - v_0} {t} = \frac {27.7 - 0} {8.00} = 3.463
 $$
 
 $$
-s = \frac {a} {2} \times t^2 = \frac {3.463} {2} \times 8.00^2 = 110.8m
+s = \frac {a} {2} \cdot t^2 = \frac {3.463} {2} \cdot 8.00^2 = 110.8m
 $$
 
 $$
-F_e = ma = 1300 \times 3.463 = 4502N = 4.50kN
+F_e = ma = 1300 \cdot 3.463 = 4502N = 4.50kN
 $$
 
 2. Egy $1500kg$ tömegű gépkocsi egyenletesen halad $50 \frac {km} {h}$ sebességgel. A vezető elé hirtelen kilép egy gyalogos, aki hirtelen fékez. A vezető reakcióideje $0.300s$. A gépkocsit lassító erő $8.83kN$. Számítsd ki a lassulást $\frac {m} {s^2}$-ban! Mennyi a fékezési idő és mennyi idő telik el a gyalogos megpillantásától a teljes megállásig? Mennyi utat tesz meg az autó a reakcióidő alatt és a fékezés alatt? Mennyi a teljes út a megállásig? 
@@ -36,7 +36,7 @@ $$
 $$
 
 $$
-s_1 = 13.89 \times 0.3 = 4.167m
+s_1 = 13.89 \cdot 0.3 = 4.167m
 $$
 
 $$
@@ -44,7 +44,7 @@ F_e = ma
 $$
 
 $$
-8830 = 1500 \times |a|
+8830 = 1500 \cdot |a|
 $$
 
 $$
@@ -66,7 +66,7 @@ t = \frac {-13.89} {-5.887} = 2.359s
 $$
 
 $$
-s_2 = v_0 \times t + \frac {a} {2} \times t^2 = 13.89 \times 2.359 + \frac {-5.887} {2} \times 2.359^2 = 16.39m
+s_2 = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 13.89 \cdot 2.359 + \frac {-5.887} {2} \cdot 2.359^2 = 16.39m
 $$
 
 A teljes idő a megállásig:
@@ -100,7 +100,7 @@ Egy $50kg$ tömegű ládát vízszintes padlón tolunk egyenletesen gyorsulva. A
 1. Egy $60.0kg$ tömegű tornász a dobbantóra ráugorva $2.00 \frac {m} {s}$ függőleges lefelé irányú sebességgel ugrik rá és $0.300s$ múlva függőleges felfelé irányú $4.00 \frac {m} {s}$ sebességgel pattan fel. Mekkora a tornász függőleges gyorsulás komponense? Mekkora a tornászt érő gravitációs erő? Mekkora a tornász súlya nyugalomban? Mekkora a tornász súlya a dobbantás alatt? Mekkora a tornász súlya a levegőben? Számítsuk ki a tornász súlypontja milyen magasra emelkedik az ugrás során? A nehézségi gyorsulás $9.81 \frac {m} {s^2}$.
 
 $$
-G = mg = 60 \times 9.81 = 588.6N
+G = mg = 60 \cdot 9.81 = 588.6N
 $$
 
 A tornász súlya nyugalomban tehát $588.6N$.
@@ -114,7 +114,7 @@ $$
 A tornászt a dobbantó gyorsítja felfelé és a gravitáció lefelé húzza. Az eredő erő könnyen számítható:
 
 $$
-F_e = ma = 60.0 \times 20.0 = 1200N
+F_e = ma = 60.0 \cdot 20.0 = 1200N
 $$
 
 $$
@@ -144,7 +144,7 @@ x = \frac {-4.00} {-9.81} = 0.4077s
 $$
 
 $$
-h = s = v_0 \times t + \frac {a} {2} \times t^2 = 4.00 \times 0.4077 + \frac {-9.81} {2} \times 0.4077^2 = 0.8155m
+h = s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 4.00 \cdot 0.4077 + \frac {-9.81} {2} \cdot 0.4077^2 = 0.8155m
 $$
 
 Itt nyilván a nehézségi gyorsulás fékezi a tornászt, tehát a gyorsulást negatívnak vettük. Az is nyilvánvaló, hogy addig tud emelkedni, amíg a függőleges sebesség komponens nem 0, tehát $v = 0$ az emelkedés végsebessége.
@@ -156,13 +156,13 @@ Válaszainkat ellenőrizhetjük az alábbi szimuláció alapján:
 [Függőlegesen lefelé gyorsuló test súlya](https://alexerdei73.github.io/physics-engine/project/#ab26cafb-9a10-491b-a55b-97408d43f06e)
 
 $$
-G = mg = 0.1 \times 9.81 = 0.981N
+G = mg = 0.1 \cdot 9.81 = 0.981N
 $$
 
 $100g$ az $0.1kg$, ami közel $1N$ erőt jelent. Az eredő erő lefelé mutat:
 
 $$
-F_e = ma = 0.1 \times 2 = 0.2N
+F_e = ma = 0.1 \cdot 2 = 0.2N
 $$
 
 $$

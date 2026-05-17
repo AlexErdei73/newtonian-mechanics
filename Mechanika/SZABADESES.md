@@ -26,7 +26,7 @@ Galilei azt is megállapította, hogy a mozgás egyenletesen gyorsuló mozgás, 
 Érvényes a négyzetes úttörvény a nulla kezdősebességű esésre:
 
 $$
-h = \frac {g} {2} \times t^2
+h = \frac {g} {2} \cdot t^2
 $$
 
 Itt h az elengedés magassága, t az esés ideje és g a nehézségi gyorsulás.
@@ -36,11 +36,11 @@ Itt h az elengedés magassága, t az esés ideje és g a nehézségi gyorsulás.
 1. Egy $5.00 \text{ m}$ magasból elejtett test mennyi idő alatt ér talajt, ha szabadon esik? Mekkora sebességgel csapódik be? 
 
 $$
-h = \frac {g} {2} \times t^2
+h = \frac {g} {2} \cdot t^2
 $$
 
 $$
-5.00 = \frac {9.81} {2} \times x^2
+5.00 = \frac {9.81} {2} \cdot x^2
 $$
 
 $$
@@ -92,7 +92,7 @@ $$
 Az idő $3.06 \text{ s}$.
 
 $$
-h = \frac {g} {2} \times t^2 = \frac {9.81} {2} \times 3.058^2 = 45.9 \text{ m}
+h = \frac {g} {2} \cdot t^2 = \frac {9.81} {2} \cdot 3.058^2 = 45.9 \text{ m}
 $$
 
 A magasság tehát $45.9 \text{ m}$.

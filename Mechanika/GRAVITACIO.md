@@ -43,7 +43,7 @@ $$
 
 
 $$
-v = \sqrt {gR} = \sqrt {9,81 \times 6,370 \times 10^6} = 7905 \frac {m} {s} = 7,905 \frac {km} {s}
+v = \sqrt {gR} = \sqrt {9,81 \cdot 6,370 \cdot 10^6} = 7905 \frac {m} {s} = 7,905 \frac {km} {s}
 $$
 
 
@@ -59,7 +59,7 @@ Newton tudta, hogy a Hold a Földtől kb. 60 Föld-sugárnyi távolságra van ($
 
 
 $$
-v = \frac {2 \pi r} {T} = \frac {2 \times 3,1415 \times 384400000} {27,3 \times 86400} = 1024 \frac {m} {s}
+v = \frac {2 \pi r} {T} = \frac {2 \cdot 3,1415 \cdot 384400000} {27,3 \cdot 86400} = 1024 \frac {m} {s}
 $$
 
 

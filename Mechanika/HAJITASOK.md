@@ -53,17 +53,17 @@ $$
 A négyzetes úttörvény egyenletesen gyorsuló mozgásra:
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2
 $$
 
 Most a vektorok helyébe az y koordinátákat írjuk és az s helyébe az y elmozdulást. Így megkapjuk a keresett összefüggést:
 
 $$
-\Delta y = v_{0,y} \times t + \frac {a_y} {2} \times t^2 
+\Delta y = v_{0,y} \cdot t + \frac {a_y} {2} \cdot t^2 
 $$
 
 $$
-y = v_0 \times t - \frac {g} {2} \times t^2
+y = v_0 \cdot t - \frac {g} {2} \cdot t^2
 $$
 
 ### Szimuláció
@@ -103,7 +103,7 @@ $$
 Tehát az emelkedési idő $2.04s$. A visszaérkezés ideje gyanítjuk, hogy ennek a duplája, hiszen az esés és az emelkedés ugyanannyi ideig kellene tartson. Számítsuk ezt azért ki!
 
 $$
-y = v_0 \times t - \frac {g} {2} \times t^2
+y = v_0 \cdot t - \frac {g} {2} \cdot t^2
 $$
 
 $$
@@ -133,7 +133,7 @@ Tehát a teljes visszaérkezési idő valóban $4.08s$, ami az emelkedési idő 
 2. Egy gödör $10.0m$ mély. A gödör szélén feldobunk egy labdát $10.0 \frac {m} {s}$ sebességgel függőlegesen felfelé. Mennyi idő múlva csapódik a gödör aljába? Mekkora a becsapódás sebessége? A légellenállás elhanyagolható, a nehézségi gyorsulás $9.81 \frac {m} {s^2}$
 
 $$
-y = v_0 \times t - \frac {g} {2} \times t^2
+y = v_0 \cdot t - \frac {g} {2} \cdot t^2
 $$
 
 $$
@@ -151,7 +151,7 @@ $$
 A megoldóképletet alkalmazzuk:
 
 $$ 
-x_{12} = \frac {-b \pm \sqrt {b^2 - 4ac}} {2a} = \frac {10.0 \pm \sqrt {100 - 4 \times 4.905 \times (-10.0) }} {9.81} = 2.774 , -0.7350$$
+x_{12} = \frac {-b \pm \sqrt {b^2 - 4ac}} {2a} = \frac {10.0 \pm \sqrt {100 - 4 \cdot 4.905 \cdot (-10.0) }} {9.81} = 2.774 , -0.7350$$
 $$
 
 Nyilván az idő pozitív, tehát $t=2.77s$-kor ér a labda a gödör aljára. Számítsuk ki a sebességet!

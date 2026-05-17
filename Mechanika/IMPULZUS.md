@@ -123,13 +123,13 @@ A test tehát egyenes vonalú egyenletes mozgást végez vagy nyugalomban van. V
 
 
 $$
-I_0 = mv_0 = 1300 \times 20,0 = 26000 \frac {kgm} {s}
+I_0 = mv_0 = 1300 \cdot 20,0 = 26000 \frac {kgm} {s}
 $$
 
 
 
 $$
-I = mv = 1300 \times 30,0 = 39000 \frac {kgm} {s}
+I = mv = 1300 \cdot 30,0 = 39000 \frac {kgm} {s}
 $$
 
 
@@ -153,7 +153,7 @@ $$
 
 
 $$
-s = v_0t + \frac {a} {2} t^2 = 20,0 \times 2 + \frac {5} {2}2^2 = 50,0m
+s = v_0t + \frac {a} {2} t^2 = 20,0 \cdot 2 + \frac {5} {2}2^2 = 50,0m
 $$
 
 
@@ -161,7 +161,7 @@ $$
 
 
 $$
-I = mv = 18000 \times 80,0 = 1440000 \frac {kgm} {s}
+I = mv = 18000 \cdot 80,0 = 1440000 \frac {kgm} {s}
 $$
 
 

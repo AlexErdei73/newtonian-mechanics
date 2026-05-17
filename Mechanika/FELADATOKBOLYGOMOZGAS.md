@@ -28,11 +28,11 @@ $$
 $$
 
 $$
-a^3 = \frac {gR^2T^2} {4 \pi^2} = \frac {9,81 \times 6370000^2 \times 86400^2} {4 \times 3,1415^2} = 7,527 \times 10^{22}m^3
+a^3 = \frac {gR^2T^2} {4 \pi^2} = \frac {9,81 \cdot 6370000^2 \cdot 86400^2} {4 \cdot 3,1415^2} = 7,527 \cdot 10^{22}m^3
 $$
 
 $$
-a = \sqrt [3] {7,527 \times 10^{22}} = 42220000m = 42220km
+a = \sqrt [3] {7,527 \cdot 10^{22}} = 42220000m = 42220km
 $$
 
 A magasság:
@@ -50,7 +50,7 @@ $$
 $$
 
 $$
-T^2 = \frac {4 \pi^2 a^3} {gR^2} = \frac {4 \pi^2 \times (6370000 + 420000)^3} {9,81 \times 6370000^2}
+T^2 = \frac {4 \pi^2 a^3} {gR^2} = \frac {4 \pi^2 \cdot (6370000 + 420000)^3} {9,81 \cdot 6370000^2}
 $$
 
 $$
@@ -58,11 +58,11 @@ T = 5572s = 93min
 $$
 
 $$
-v = \frac {2 \pi a} {T} = \frac {2 \times 3,1415 \times (6370000 + 420000)} {5572} = 7656 \frac {m} {s}
+v = \frac {2 \pi a} {T} = \frac {2 \cdot 3,1415 \cdot (6370000 + 420000)} {5572} = 7656 \frac {m} {s}
 $$
 
 $$
-\frac {7656} {7905} \times 100 = 96,86\%
+\frac {7656} {7905} \cdot 100 = 96,86\%
 $$
 
 Ez tehát 96,9%-a az első kozmikus sebességnek. Azért van ilyen közel, mivel a magasság viszonylag kicsi a Föld sugarához képest, tehát szinte olyan a keringés, mint az első kozmikus sebesség kiszámításakor feltételeztük. Ebben a magasságban a légellenállás még nem teljesen nulla, ezért időnként alkalmaznak egy kis meghajtást, hogy az űrállomás ne veszítsen a magasságából.
@@ -94,53 +94,53 @@ Ha $\alpha = 90\degree$, akkor $sin \alpha = 1$, tehát a területi sebesség a 
 ![A palya ellipszis](Kepek/ellipszis.svg)
 
 $$
-2a = r_{min} + r_{max} = 206,6 + 249,2 = 455,8 \times 10^6km
+2a = r_{min} + r_{max} = 206,6 + 249,2 = 455,8 \cdot 10^6km
 $$
 
 $$
-a = 227,9 \times 10^6km
+a = 227,9 \cdot 10^6km
 $$
 
 $$
-a = \frac {227,9 \times 10^6 km} {149,6 \times 10^6 km} = 1,523 CSE
+a = \frac {227,9 \cdot 10^6 km} {149,6 \cdot 10^6 km} = 1,523 CSE
 $$
 
 A területi sebességhez ki kell számítanunk az ellipszis kistengelyét!
 
 $$
-c = a - r_{min} = 227,9 - 206,6 = 21,3 \times 10^6km
+c = a - r_{min} = 227,9 - 206,6 = 21,3 \cdot 10^6km
 $$
 
 $$
-b = \sqrt {a^2 - c^2} = \sqrt {227,9^2 - 21,3^2} = 226,9 \times 10^6km
+b = \sqrt {a^2 - c^2} = \sqrt {227,9^2 - 21,3^2} = 226,9 \cdot 10^6km
 $$
 
 Most már könnyű az ellipszis területét kiszámolni:
 
 $$
-T_{ellipszis} = ab \pi = 227,9 \times 226,9 \times 3,1415 = 162400 \times 10^{12} km^2
+T_{ellipszis} = ab \pi = 227,9 \cdot 226,9 \cdot 3,1415 = 162400 \cdot 10^{12} km^2
 $$
 
 Ha ezt elosztjuk a keringési idővel, megkapjuk a területi sebességet.
 
 $$
-\frac {T_{ellipszis}} {T} = \frac {162400 \times 10^{12}} {687 \times 86400} = 2736 \times 10^6 \frac {km^2} {s}
+\frac {T_{ellipszis}} {T} = \frac {162400 \cdot 10^{12}} {687 \cdot 86400} = 2736 \cdot 10^6 \frac {km^2} {s}
 $$
 
 A perihélium és afélium pontokban a területi sebesség a sugár és a sebesség szorzatának fele. Ezekben a pontokban a sugár merőleges a sebességre.
 
 $$
-\frac {1} {2} r_{min}v_{max} = \frac {1} {2} r_{max}v_{min} = 2,736 \times 10^9 \frac {km^2} {s}
+\frac {1} {2} r_{min}v_{max} = \frac {1} {2} r_{max}v_{min} = 2,736 \cdot 10^9 \frac {km^2} {s}
 $$
 
 Így:
 
 $$
-v_{max} = \frac {2 \times 2,736 \times 10^9} {206,6 \times 10^6} = 26,48 \frac {km} {s}
+v_{max} = \frac {2 \cdot 2,736 \cdot 10^9} {206,6 \cdot 10^6} = 26,48 \frac {km} {s}
 $$
 
 $$
-v_{min} = \frac {2 \times 2,736 \times 10^9} {249,2 \times 10^6} = 21,96 \frac {km} {s}
+v_{min} = \frac {2 \cdot 2,736 \cdot 10^9} {249,2 \cdot 10^6} = 21,96 \frac {km} {s}
 $$
 
 2. Számítsuk ki ugyanazt, mint az első példában, de most a Hold esetében. A legkisebb Hold–Föld távolság (perigeum) 363300km, a legnagyobb (apogeum) pedig 405500km. Mekkora a Hold–Föld átlagos távolság (a nagytengely fele)? Mekkora a területi sebesség, ha a keringési idő 27,32nap? Mekkora a minimális és maximális sebesség? (Használjuk az ellipszis területére a $T_{ellipszis} = ab \pi$ képletet!)
@@ -168,7 +168,7 @@ $$
 A területi sebesség:
 
 $$
-\frac {ab \pi} {T} = \frac {384400 \times 383820 \times \pi} {27,32 \times 86400} = 196400 \frac {km^2} {s}
+\frac {ab \pi} {T} = \frac {384400 \cdot 383820 \cdot \pi} {27,32 \cdot 86400} = 196400 \frac {km^2} {s}
 $$
 
 Tudjuk, hogy:
@@ -178,11 +178,11 @@ $$
 $$
 
 $$
-v_{max} = \frac {2 \times 196400} {363300} = 1,081 \frac {km} {s}
+v_{max} = \frac {2 \cdot 196400} {363300} = 1,081 \frac {km} {s}
 $$
 
 $$
-v_{min} = \frac {2 \times 196400} {405500} = 0,9687 \frac {km} {s}
+v_{min} = \frac {2 \cdot 196400} {405500} = 0,9687 \frac {km} {s}
 $$
 
 ## Feladatok

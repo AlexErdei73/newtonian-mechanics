@@ -67,7 +67,7 @@ A munka skalár mennyiség. Amikor két vektort úgy szorzunk össze, hogy az er
 1. Egy $200 kg$ tömegű testet függőlegesen felemelünk egy daruval $15,0 m$ magasra. Az emelés lassan, állandó sebességgel történik. Mekkora a nehézségi erő? Mekkora a súly? Mekkora erővel emelünk? Mekkora a végzett munka?
 
 $$
-G = mg = 200 \times 9,81 = 1962 N
+G = mg = 200 \cdot 9,81 = 1962 N
 $$
 
 $$
@@ -75,7 +75,7 @@ F = K = G = 1962 N
 $$
 
 $$
-W = Fs = 1962 \times 15 = 29430 J = 29,43 kJ
+W = Fs = 1962 \cdot 15 = 29430 J = 29,43 kJ
 $$
 
 Tehát a végzett munka $29,4 kJ$.
@@ -83,7 +83,7 @@ Tehát a végzett munka $29,4 kJ$.
 2. Egy $200 kg$ tömegű testet állandó sebességgel gurítunk fel egy $15,0 m$ magas, $90,0 m$ hosszú emelkedőn. Az emelkedő sík felület, a gördülési ellenállástól eltekinthetünk. Mekkora a nehézségi erő? Hány N erővel nyomja a test az emelkedőt? Mekkora erővel kell tolni a testet? Mekkora az emelési munka? Mekkora a nehézségi erő által végzett munka? Mekkora a kényszererő által végzett munka?
 
 $$
-G = mg = 200 \times 9,81 = 1962 N
+G = mg = 200 \cdot 9,81 = 1962 N
 $$
 
 $$
@@ -95,25 +95,25 @@ $$
 $$
 
 $$
-K = mg \cos \alpha = 200 \times 9,81 \times \cos(9,594^\circ) = 1935 N
+K = mg \cos \alpha = 200 \cdot 9,81 \cdot \cos(9,594^\circ) = 1935 N
 $$
 
 $$
-F = mg \sin \alpha = 200 \times 9,81 \times 0,1667 = 327,1 N
+F = mg \sin \alpha = 200 \cdot 9,81 \cdot 0,1667 = 327,1 N
 $$
 
 $$
-W = Fs = 327,1 \times 90 = 29440 J = 29,44 kJ
+W = Fs = 327,1 \cdot 90 = 29440 J = 29,44 kJ
 $$
 
 $$
-W_G = Gs \cos(90^\circ + \alpha) = 1962 \times 90 \times \cos(99,594^\circ) = -29430 J = -29,43 kJ
+W_G = Gs \cos(90^\circ + \alpha) = 1962 \cdot 90 \cdot \cos(99,594^\circ) = -29430 J = -29,43 kJ
 $$
 
 Ezt kiszámíthatjuk másképp is. A G erő és a h emelkedés ellentétes irányú, tehát:
 
 $$
-W_G = -Gh = -1962 \times 15 = -29430 J = -29,43 kJ
+W_G = -Gh = -1962 \cdot 15 = -29430 J = -29,43 kJ
 $$
 
 $$
@@ -133,15 +133,15 @@ a = \frac{v - v_0}{t} = \frac{20}{8} = 2,50 \frac{m}{s^2}
 $$
 
 $$
-s = \frac{a}{2} \times t^2 = \frac{2,50}{2} \times 8^2 = 80 m
+s = \frac{a}{2} \cdot t^2 = \frac{2,50}{2} \cdot 8^2 = 80 m
 $$
 
 $$
-F = F_e = ma = 1300 \times 2,50 = 3250 N
+F = F_e = ma = 1300 \cdot 2,50 = 3250 N
 $$
 
 $$
-W = Fs = 3250 \times 80 = 260000 J = 260 kJ
+W = Fs = 3250 \cdot 80 = 260000 J = 260 kJ
 $$
 
 ## Feladatok

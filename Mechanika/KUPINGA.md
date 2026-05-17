@@ -116,7 +116,7 @@ Ez a formula a kúpinga periódusideje. Ha a $\Theta$ szög igen kicsiny $1rad$-
 Egy $0,1kg$ tömegű test $1m$ hosszú fonalon vízszintes síkban egyenletes körmozgást végez, miközben a fonal függőlegessel bezárt szöge $30\degree$. Mekkora a körpálya sugara? Mekkora a fonalat feszítő erő? Mekkora a centripetális erő? Mekkora a test sebessége? Mekkora a keringési idő? Ellenőrizzük a periódusidőre kapott képlettel is a választ!
 
 $$
-R = l sin \Theta = 1m \times sin(30\degree) = 0,5m
+R = l sin \Theta = 1m \cdot sin(30\degree) = 0,5m
 $$
 
 
@@ -128,7 +128,7 @@ $$
 
 
 $$
-K = \frac {mg} {cos \Theta} = \frac {0,1 \times 9,81} {cos(30\degree)} = 1,133N
+K = \frac {mg} {cos \Theta} = \frac {0,1 \cdot 9,81} {cos(30\degree)} = 1,133N
 $$
 
 
@@ -182,7 +182,7 @@ $$
 
 
 $$
-T = \frac {2 \pi R} {v} = \frac {2 \pi \times 0,5} {1,683} = 1,867s
+T = \frac {2 \pi R} {v} = \frac {2 \pi \cdot 0,5} {1,683} = 1,867s
 $$
 
 
@@ -190,7 +190,7 @@ Számítsuk ki a formulával is, amit kaptunk!
 
 
 $$
-T = 2 \pi \sqrt {\frac {l cos \Theta} {g}} = 2 \pi \sqrt {1 \times cos(30\degree) / 9,81} = 1,867s
+T = 2 \pi \sqrt {\frac {l cos \Theta} {g}} = 2 \pi \sqrt {1 \cdot cos(30\degree) / 9,81} = 1,867s
 $$
 
 
@@ -286,7 +286,7 @@ $$
 
 
 $$
-F_t = 23540 - 1,732 \times 13800 = -430,9N
+F_t = 23540 - 1,732 \cdot 13800 = -430,9N
 $$
 
 

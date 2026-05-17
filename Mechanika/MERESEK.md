@@ -8,7 +8,7 @@ Fontos megjegyezni, hogy a mennyiség mindig a mértékszám és a mértékegys�
 Például:
 
 $$
-3m = 3 \times 1m
+3m = 3 \cdot 1m
 $$
 
 Itt a 3 a mértékszám, és `m` a méter mértékegység jele. A `3 m` úgy értendő, hogy a hosszúság háromszorosa az 1 méternek.
@@ -38,11 +38,11 @@ $$
 $$
 
 $$
-1h = 60min = 60 \times 60s = 3600s
+1h = 60min = 60 \cdot 60s = 3600s
 $$
 
 $$
-1nap = 24h = 24 \times 3600s = 86400s
+1nap = 24h = 24 \cdot 3600s = 86400s
 $$
 
 Másodperces inga: Az egy méter hosszú inga kis lengései kb. 2 s periódussal ismétlődnek; tehát egy fél lengés az egyik szélső helyzetből a másikig körülbelül 1 másodperc.
@@ -58,11 +58,11 @@ A testek tömegét mérleggel hasonlítjuk össze. A mérlegek működése álta
 Ez a definíció tartalmazza a térfogat fogalmát. A téglatestek térfogata az oldalaik hosszainak szorzata. Mivel a kocka is téglatest (minden oldala egyenlő hosszú), a térfogata az oldalainak a szorzata. Egy köbdeciméter egy deciméter oldalú kocka térfogata. Egy deciméter az egy tized méter, tehát 10 deciméter = 1 méter. A köbdeciméter térfogategység másik elnevezése a liter (l).
 
 $$
-1l = 1dm^3 = 1dm \times 1dm \times 1dm = 0.1m \times 0.1m \times 0.1m = 0.001m^3
+1l = 1dm^3 = 1dm \cdot 1dm \cdot 1dm = 0.1m \cdot 0.1m \cdot 0.1m = 0.001m^3
 $$
 
 $$
-1m^3 = 1m \times 1m \times 1m = 10dm \times 10dm \times 10dm = 1000dm^3 = 1000l
+1m^3 = 1m \cdot 1m \cdot 1m = 10dm \cdot 10dm \cdot 10dm = 1000dm^3 = 1000l
 $$
 
 A definíció szintén tartalmazza a hőmérséklet fogalmát. A víz 4 °C-on a legsűrűbb; ez azt jelenti, hogy egy liter víz tömege 4 °C-on a legnagyobb.
@@ -101,25 +101,25 @@ Ez a viszonylag bonyolult definíció a korábbi, régi megfogalmazás volt. A 2
 1. A H-atom sugara alapállapotban a Bohr-rádiusz, amely 0.053 nm. Hány méter ez és hány pikométer? Egy angstrom (Å) az $10^{-10}$ m. Hány angstrom a Bohr-rádiusz?
 
 $$
-0.053nm = 0.053 \times 10^{-9}m = 5.3 \times 10^{-11}m
+0.053nm = 0.053 \cdot 10^{-9}m = 5.3 \cdot 10^{-11}m
 $$
 
 $$
-5.3 \times 10^{-11}m = 53 \times 10^{-12}m = 53pm
+5.3 \cdot 10^{-11}m = 53 \cdot 10^{-12}m = 53pm
 $$
 
 $$
-5.3 \times 10^{-11}m = 0.53 \times 10^{-10}m = 0.53Å
+5.3 \cdot 10^{-11}m = 0.53 \cdot 10^{-10}m = 0.53Å
 $$
 
 2. A Föld sugara 6371 km. Hány méternek felel ez meg? Számítsuk ki az egyenlítő hosszát méterben és kilométerben!
 
 $$
-6371km = 6371 \times 10^{3}m = 6.371 \times 10^{6}m
+6371km = 6371 \cdot 10^{3}m = 6.371 \cdot 10^{6}m
 $$
 
 $$
-K = 2 \pi R = 2 \times 3.1415 \times 6.371 \times 10^{6}m = 40 029 000m = 40 029km
+K = 2 \pi R = 2 \cdot 3.1415 \cdot 6.371 \cdot 10^{6}m = 40 029 000m = 40 029km
 $$
 
 Az eltérés a 40 000 km-tól a francia mérések hibája miatt lép fel. Nem sikerült egész pontosan úgy definiálni a métert, ahogyan szerették volna. További eltérést okoz, hogy a Föld nem szabályos gömb alakú, hanem kismértékben lapult a tengely körüli forgása miatt. Így az egyenlítőnél nagyobb a sugara, mint az átlagos sugár. Így az egyenlítő hossza kissé meg nagyobb, mint a számításunk (40 075 km).
@@ -127,12 +127,12 @@ Az eltérés a 40 000 km-tól a francia mérések hibája miatt lép fel. Nem si
 ## Feladatok
 
 1. Egy 6 megaohm ellenállás (6 MΩ): hány ohm és hány kiloohm?
-2. Az elektron tömege $9.11\times10^{-31}\ \mathrm{kg}$. Hány gramm az elektron? Hány gramm egy mol elektron, ha egy mol elektron $6.022\times10^{23}$ darab?
+2. Az elektron tömege $9.11\cdot10^{-31}\ \mathrm{kg}$. Hány gramm az elektron? Hány gramm egy mol elektron, ha egy mol elektron $6.022\cdot10^{23}$ darab?
 3. A fénysebesség vákuumban körülbelül $300\,000\ \mathrm{km/s}$. Hány métert tesz meg a fény egy másodperc alatt?
 4. A Napról a Földre érkező fény körülbelül 8 perc 20 másodperc alatt érkezik. Mekkora a Nap–Föld távolság kilométerben?
 5. Egy fényév az a távolság, amelyet a fény vákuumban egy év alatt megtesz. Hány méter és hány kilométer egy fényév?
 6. A Naphoz legközelebbi csillag, a Proxima Centauri, körülbelül 4 fényév távolságra van. Hány méterre van a csillag a Naptól?
-7. Az Andromeda-köd (a hozzánk legközelebbi nagyobb galaxis) kb. $2.537\times10^{6}$ fényév távolságra van. Hány méter és hány kilométer ez?
+7. Az Andromeda-köd (a hozzánk legközelebbi nagyobb galaxis) kb. $2.537\cdot10^{6}$ fényév távolságra van. Hány méter és hány kilométer ez?
 8. A He–Ne lézer vörös fényének hullámhossza $632.8\ \mathrm{nm}$. Hány méter és hány mikrométer ez?
-9. A megfigyelhető világegyetem sugara körülbelül $46.5\times10^{9}$ fényév. Hány kilométer ez a távolság?
+9. A megfigyelhető világegyetem sugara körülbelül $46.5\cdot10^{9}$ fényév. Hány kilométer ez a távolság?
 10. A proton sugara 0.84 fm. Hány méter és hány milliméter ez a távolság?

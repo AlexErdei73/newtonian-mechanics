@@ -90,7 +90,7 @@ $$
 $$
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2
 $$
 
 Ebbe a képletbe s helyére kell írjuk a megfelelő elmozdulás komponensét, míg a $v_0$ és $a$ helyébe a kezdősebesség és a gyorsulás megfelelő komponensét. Így a következő képleteket kapjuk:
@@ -100,7 +100,7 @@ x = v_0 cos (\alpha) t
 $$
 
 $$
-y = v_0 sin (\alpha) t - \frac {g} {2} \times t^2
+y = v_0 sin (\alpha) t - \frac {g} {2} \cdot t^2
 $$
 
 ### Példák
@@ -111,7 +111,7 @@ $$
 $$
 
 $$
-y = v_0 sin(\alpha)t - \frac {g} {2} \times t^2
+y = v_0 sin(\alpha)t - \frac {g} {2} \cdot t^2
 $$
 
 $$
@@ -127,7 +127,7 @@ $$
 Tehát a keresett idő $0.510 \text{ s}$.
 
 $$
-x = v_0 cos(\alpha)t = 4.330 \times 0.5097 = 2.207 \text{ m}
+x = v_0 cos(\alpha)t = 4.330 \cdot 0.5097 = 2.207 \text{ m}
 $$
 
 Tehát a keresett távolság $2.21 \text{ m}$.
@@ -139,7 +139,7 @@ $$
 $$
 
 $$
-y = v_0 sin(\alpha)t - \frac {g} {2} \times t^2
+y = v_0 sin(\alpha)t - \frac {g} {2} \cdot t^2
 $$
 
 $$
@@ -151,19 +151,19 @@ $$
 $$
 
 $$
-t_{12} = \frac {14.14 \pm \sqrt {14.14^2 - 4 \times 4.905 \times (-10.0)}} {2 \times 4.905} = \frac {14.14 \pm \sqrt {200 + 196.2}} {9.81} = 3.470 \text{ s}, -0.5876 \text{ s}
+t_{12} = \frac {14.14 \pm \sqrt {14.14^2 - 4 \cdot 4.905 \cdot (-10.0)}} {2 \cdot 4.905} = \frac {14.14 \pm \sqrt {200 + 196.2}} {9.81} = 3.470 \text{ s}, -0.5876 \text{ s}
 $$
 
 A keresett idő $3.47 \text{ s}$. 
 
 $$
-x = v_0 cos (\alpha) t = 14.14 \times 3.470 = 49.07 \text{ m}
+x = v_0 cos (\alpha) t = 14.14 \cdot 3.470 = 49.07 \text{ m}
 $$
 
 A gödör szele nem lehet messzebb, mint:
 
 $$
-y = v_0 sin(\alpha) t - \frac {g} {2} \times t^2
+y = v_0 sin(\alpha) t - \frac {g} {2} \cdot t^2
 $$
 
 $$
@@ -179,7 +179,7 @@ $$
 A test $2.88 \text{ s}$-kor ér vissza a vízszintes talajszintre, ekkor a távolsága:
 
 $$
-x = v_0 cos(\alpha) t = 14.14 \times 2.883 = 40.77 \text{ m}
+x = v_0 cos(\alpha) t = 14.14 \cdot 2.883 = 40.77 \text{ m}
 $$
 
 Így a gödör közelebbi szele legfeljebb $40.8 \text{ m}$-re lehet a kilövés helyétől. 

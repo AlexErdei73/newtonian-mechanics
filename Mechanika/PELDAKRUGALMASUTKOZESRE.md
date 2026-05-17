@@ -84,7 +84,7 @@ $$
 
 
 $$
-v_1 = \frac {18v_0 \pm \sqrt{324v_0^2 - 4 \times 11 \times 7v_0^2}} {2 \times 11} = \frac {18v_0 \pm 4v_0} {22} = v_0, \frac {7v_0} {11}
+v_1 = \frac {18v_0 \pm \sqrt{324v_0^2 - 4 \cdot 11 \cdot 7v_0^2}} {2 \cdot 11} = \frac {18v_0 \pm 4v_0} {22} = v_0, \frac {7v_0} {11}
 $$
 
 

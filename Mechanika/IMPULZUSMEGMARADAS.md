@@ -85,7 +85,7 @@ $$
 
 
 $$
-60 \times v_2 - 40 \times 3 = 0
+60 \cdot v_2 - 40 \cdot 3 = 0
 $$
 
 
@@ -119,7 +119,7 @@ Az ütközés előtti lendület:
 
 
 $$
-I_0 = mv_0 = 0,020 \times 600 = 12 \frac {kgm} {s}
+I_0 = mv_0 = 0,020 \cdot 600 = 12 \frac {kgm} {s}
 $$
 
 
@@ -165,7 +165,7 @@ A mechanikai energia a lengés legmagasabb pontján:
 
 
 $$
-E_m + E_h = 0 + Mgh = 2,02 \times 9,81 \times h
+E_m + E_h = 0 + Mgh = 2,02 \cdot 9,81 \cdot h
 $$
 
 
@@ -179,13 +179,13 @@ $$
 
 
 $$
-35,65 = 2,020 \times 9,81 \times h
+35,65 = 2,020 \cdot 9,81 \cdot h
 $$
 
 
 
 $$
-35,65 = 19,82 \times h
+35,65 = 19,82 \cdot h
 $$
 
 
@@ -202,7 +202,7 @@ A golyót érő erő:
 
 
 $$
-|F_e| = m|a_1| = m \frac {|v - v_0|} {t} = 0,02 \times \frac {600 - v} {t} = \frac {12 - 0,02v} {t}
+|F_e| = m|a_1| = m \frac {|v - v_0|} {t} = 0,02 \cdot \frac {600 - v} {t} = \frac {12 - 0,02v} {t}
 $$
 
 
@@ -288,7 +288,7 @@ $$
 
 
 $$
-t = \frac {0,20} {299,98} = 6,667 \times 10^{-4}s
+t = \frac {0,20} {299,98} = 6,667 \cdot 10^{-4}s
 $$
 
 
@@ -296,7 +296,7 @@ Ez tényleg igen rövid időtartam a folyamat teljes idejéhez képest! A zsák 
 
 
 $$
-s_2 = 2,9705t = 2,9705 \times 6,667 \times 10^{-4} = 1,980 \times 10^{-3}m = 1,98mm
+s_2 = 2,9705t = 2,9705 \cdot 6,667 \cdot 10^{-4} = 1,980 \cdot 10^{-3}m = 1,98mm
 $$
 
 

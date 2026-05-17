@@ -10,7 +10,7 @@ a = \frac {v - v_0} {t}
 $$
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2
 $$
 
 Legyen a gyorsulás y, az idő pedig x, és helyettesítsük be az adatokat!
@@ -20,7 +20,7 @@ y = \frac {600} {x}
 $$
 
 $$
-0.7 = \frac {y} {2} \times x^2
+0.7 = \frac {y} {2} \cdot x^2
 $$
 
 Egyenleteink átrendezhetők:
@@ -48,7 +48,7 @@ y = \frac {600} {0.002333} = 2572 \frac {m} {s^2}
 $$
 
 $$
-F_e = ma = 0.0200 \times 2572 = 51.44N
+F_e = ma = 0.0200 \cdot 2572 = 51.44N
 $$
 
 Tehát a csőben a golyót $51.4N$ erő gyorsítja fel $2.33ms$ idő alatt.
@@ -60,7 +60,7 @@ a = \frac {v - v_0} {t}
 $$
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2
 $$
 
 $$
@@ -68,7 +68,7 @@ y = \frac {-600} {x}
 $$
 
 $$
-0.3 = 600x + \frac {y} {2} \times x^2
+0.3 = 600x + \frac {y} {2} \cdot x^2
 $$
 
 $$
@@ -100,7 +100,7 @@ $$
 Tehát a lassulás nagysága $600000 \frac {m} {s^2}$.
 
 $$
-|F_e| = m|a| = 0.02 \times 600000 = 12000N = 12kN
+|F_e| = m|a| = 0.02 \cdot 600000 = 12000N = 12kN
 $$
 
 Tehát a fékező erő nagysága $12.0kN$.
@@ -112,7 +112,7 @@ a = \frac {v - v_0} {t}
 $$
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2
 $$
 
 $$
@@ -144,7 +144,7 @@ y = \frac {77.78} {15.43} = 5.041 \frac {m} {s^2}
 $$
 
 $$
-F_e = ma = 17000 \times 5.041 = 85690N = 85.69kN
+F_e = ma = 17000 \cdot 5.041 = 85690N = 85.69kN
 $$
 
 A tolóerő tehát 85.69kN. Itt nem szabad elfelejteni a sebességet átváltani a feladatmegoldás elején.

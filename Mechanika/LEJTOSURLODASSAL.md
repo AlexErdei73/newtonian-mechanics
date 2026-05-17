@@ -58,15 +58,15 @@ $$
 $$
 
 $$
-F = mg \sin \alpha = 0,1 \times 9,81 \times \sin(18,43^\circ) = 0,3101 N
+F = mg \sin \alpha = 0,1 \cdot 9,81 \cdot \sin(18,43^\circ) = 0,3101 N
 $$
 
 $$
-K = mg \cos \alpha = 0,1 \times 9,81 \times \cos(18,43^\circ) = 0,9307 N
+K = mg \cos \alpha = 0,1 \cdot 9,81 \cdot \cos(18,43^\circ) = 0,9307 N
 $$
 
 $$
-F_{t,max} = \mu_t K = 0,5 \times 0,9307 N = 0,4654 N
+F_{t,max} = \mu_t K = 0,5 \cdot 0,9307 N = 0,4654 N
 $$
 
 Mivel a tapadási erő maximuma nagyobb, mint a lejtőn lefelé húzó erő, a test nem csúszik meg.
@@ -123,15 +123,15 @@ $$
 $$
 
 $$
-F = mg \sin \alpha = 0,1 \times 9,81 \times \sin(33,69^\circ) = 0,5442 N
+F = mg \sin \alpha = 0,1 \cdot 9,81 \cdot \sin(33,69^\circ) = 0,5442 N
 $$
 
 $$
-K = mg \cos \alpha = 0,1 \times 9,81 \times \cos(33,69^\circ) = 0,8162 N
+K = mg \cos \alpha = 0,1 \cdot 9,81 \cdot \cos(33,69^\circ) = 0,8162 N
 $$
 
 $$
-F_s = \mu K = 0,5 \times 0,8162 = 0,4081 N
+F_s = \mu K = 0,5 \cdot 0,8162 = 0,4081 N
 $$
 
 $$

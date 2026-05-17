@@ -154,7 +154,7 @@ $$
 Mekkora sebességgel kell egy testet elhajítanunk a Föld felszínén, hogy sose térjen vissza? (A légellenállást elhanyagoljuk.) A válasz egyszerű, ha meggondoljuk, hogy el kell jusson végtelen távolságra, tehát $a = \infty$.
 
 $$
-v = \sqrt{GM\frac {2} {R}} = \sqrt {2gR} = \sqrt {2} \sqrt{gR} = 1,4142 \times 7,902 \text{ km/s} = 11,18 \text{ km/s}
+v = \sqrt{GM\frac {2} {R}} = \sqrt {2gR} = \sqrt {2} \sqrt{gR} = 1,4142 \cdot 7,902 \text{ km/s} = 11,18 \text{ km/s}
 $$
 
 Ezt a sebességet nevezzük második kozmikus sebességnek.
@@ -174,7 +174,7 @@ $$
 A testnek ezzel a sebességgel kell rendelkeznie a Föld elhagyása után a Naphoz képest, hogy elhagyja a Naprendszert. Tudjuk, hogy a Föld elhagyásához is kell $11,18 \text{ km/s}$ sebesség, mely eltűnik, mikor a test már nagy távolságra kerül a Föld sugarához képest a Földtől. A Föld maga is rendelkezik Nap körüli sebességgel, ez könnyen ki is számítható:
 
 $$
-v_{\text{Föld}} = \frac {2 \pi r} {T} = \frac {2 \times 3,1415 \times 1,496 \times 10^8} {365,26 \times 86400} = 29,78 \text{ km/s}
+v_{\text{Föld}} = \frac {2 \pi r} {T} = \frac {2 \cdot 3,1415 \cdot 1,496 \cdot 10^8} {365,26 \cdot 86400} = 29,78 \text{ km/s}
 $$
 
 Ez annyit tesz, hogy a Földhöz képest a Föld elhagyása után elegendő

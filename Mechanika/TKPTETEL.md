@@ -144,13 +144,13 @@ Egy fa  blokk és egy tégla együtt mozog egy vízszintes asztallapon. Mi a fá
 Számítsuk ki először a súrlódási erőket a csúszás folyamán!
 
 $$
-F_{s,1} = \mu_1K_1 = \mu_1m_1g = 0,3 \times 0,5 \times 9,81 = 1,472 N
+F_{s,1} = \mu_1K_1 = \mu_1m_1g = 0,3 \cdot 0,5 \cdot 9,81 = 1,472 N
 $$
 
 
 
 $$
-F_{s,2} = \mu_2K_2 = \mu_2m_2g = 0,7 \times 1,50 \times 9,81 = 10,30 N
+F_{s,2} = \mu_2K_2 = \mu_2m_2g = 0,7 \cdot 1,50 \cdot 9,81 = 10,30 N
 $$
 
 
@@ -180,7 +180,7 @@ $$
 
 
 $$
-K = m_2a + F_{s,2} = 1,50 \times 4,114 + 10,30 = 16,47 N
+K = m_2a + F_{s,2} = 1,50 \cdot 4,114 + 10,30 = 16,47 N
 $$
 
 
@@ -210,7 +210,7 @@ $$
 
 
 $$
-K^{uj} = m_2a^{uj} + F_{s,2} = 1,50 \times (-5,886) + 10,3 = 1,471 N
+K^{uj} = m_2a^{uj} + F_{s,2} = 1,50 \cdot (-5,886) + 10,3 = 1,471 N
 $$
 
 

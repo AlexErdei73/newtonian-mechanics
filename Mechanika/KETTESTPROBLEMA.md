@@ -126,7 +126,7 @@ $$
 
 
 $$
-\frac {g} {a_{cp}} = \frac {gr^2} {4 \pi^2} \times \frac {T^2} {r^3} = \frac {gr^2 4 \pi^2} {4 \pi^2 GM(1 + m/M)} = \frac {gr^2} {gR^2(1 + m/M)}
+\frac {g} {a_{cp}} = \frac {gr^2} {4 \pi^2} \cdot \frac {T^2} {r^3} = \frac {gr^2 4 \pi^2} {4 \pi^2 GM(1 + m/M)} = \frac {gr^2} {gR^2(1 + m/M)}
 $$
 
 
@@ -156,8 +156,8 @@ Ezen korrekciók hatása csak a 4. és 5. jegyben mutatkozik meg, különösen a
 
 ## Feladatok
 
-4. **Plútó és Charon rendszere:** A Plútó tömege $1,3 \times 10^{22}kg$, legnagyobb holdjáé, a Charoné pedig $1,6 \times 10^{21}kg$. A két égitest távolsága $19\,600\,km$. Milyen távol van a rendszer közös tömegközéppontja a Plútó középpontjától? A Plútó sugara kb. $1190\,km$. A tömegközéppont a Plútó felszínén belülre vagy kívülre esik? (Ez magyarázza, miért szokás a rendszert inkább ikerbolygónak nevezni.)
+4. **Plútó és Charon rendszere:** A Plútó tömege $1,3 \cdot 10^{22}kg$, legnagyobb holdjáé, a Charoné pedig $1,6 \cdot 10^{21}kg$. A két égitest távolsága $19\,600\,km$. Milyen távol van a rendszer közös tömegközéppontja a Plútó középpontjától? A Plútó sugara kb. $1190\,km$. A tömegközéppont a Plútó felszínén belülre vagy kívülre esik? (Ez magyarázza, miért szokás a rendszert inkább ikerbolygónak nevezni.)
 
-5. **Kettőscsillag keringési ideje:** Két azonos, egyenként a Nap tömegével megegyező ($M = 2 \times 10^{30}kg$) csillag kering egymás körül a közös tömegközéppontjuk körül, körpályán. A csillagok közötti távolság megegyezik a Föld–Nap-távolsággal ($1,5 \times 10^{11}m$). Mennyi a rendszer keringési ideje? Hasonlítsuk ezt össze a Föld keringési idejével (1 év)!
+5. **Kettőscsillag keringési ideje:** Két azonos, egyenként a Nap tömegével megegyező ($M = 2 \cdot 10^{30}kg$) csillag kering egymás körül a közös tömegközéppontjuk körül, körpályán. A csillagok közötti távolság megegyezik a Föld–Nap-távolsággal ($1,5 \cdot 10^{11}m$). Mennyi a rendszer keringési ideje? Hasonlítsuk ezt össze a Föld keringési idejével (1 év)!
 
-6. **Redukált tömeg hidrogénatomban:** A hidrogénatom egy protonból és egy elektronból áll. A proton tömege $m_p = 1,67 \times 10^{-27}kg$, az elektron tömege $m_e = 9,11 \times 10^{-31}kg$. Számítsuk ki a rendszer redukált tömegét ($\mu$)! Hány százalékkal tér el ez az érték az elektron tömegétől? (Ez a kis eltérés a kvantummechanikai számításokban is megjelenik az energiaszintek korrekciójaként.)
+6. **Redukált tömeg hidrogénatomban:** A hidrogénatom egy protonból és egy elektronból áll. A proton tömege $m_p = 1,67 \cdot 10^{-27}kg$, az elektron tömege $m_e = 9,11 \cdot 10^{-31}kg$. Számítsuk ki a rendszer redukált tömegét ($\mu$)! Hány százalékkal tér el ez az érték az elektron tömegétől? (Ez a kis eltérés a kvantummechanikai számításokban is megjelenik az energiaszintek korrekciójaként.)
