@@ -1,138 +1,139 @@
 # Mérések, mértékegységek
 
-A mérés mindig annak a megállapítása, hogy a mennyiség hányszorosa egy mértékegységnek.
+A mérés mindig annak a megállapítása, hogy a vizsgált mennyiség hányszorosa egy választott mértékegységnek.
 
-Ha például lemérjük a szoba hosszát, és azt találjuk, hogy 3 m, az azt jelenti, hogy a méterrúd háromszor fér el a szoba hosszában egymás után.
+Ha például lemérjük a szoba hosszát, és azt tapasztaljuk, hogy az $3\text{ m}$, az azt jelenti, hogy az egységnyi méterrúd pontosan háromszor fér el egymás után a szoba hossza mentén.
 
-Fontos megjegyezni, hogy a mennyiség mindig a mértékszám és a mértékegység szorzata.
-Például:
+Fontos megjegyezni, hogy a fizikai mennyiség mindig a mértékszám és a mértékegység szorzata. Például:
 
 $$
-3m = 3 \times 1m
+3\text{ m} = 3 \cdot 1\text{ m}
 $$
 
-Itt a 3 a mértékszám, és `m` a méter mértékegység jele. A `3 m` úgy értendő, hogy a hosszúság háromszorosa az 1 méternek.
+Itt a $3$ a mértékszám, az $\text{m}$ pedig a méter mértékegység jele. A $3\text{ m}$ kifejezés úgy értendő, hogy a kérdéses hosszúság háromszorosa az $1\text{ méternek}$.
 
-A mechanikában három alapmennyiségről beszélünk, és ezek mérését illetve egységeit tárgyaljuk.
+A mechanikában három alapmennyiségről beszélünk, a következőkben ezek mérését és egységeit tárgyaljuk.
 
 ## Alapmennyiségek
 
 ### Hosszúság
 
-> **A hosszúság egysége a méter. Egy méter a Föld hosszúsági körének 40 000 000-ad része. Úgy is mondhatjuk, hogy a hosszúsági kör hossza 40 000 km.**
+> **A hosszúság egysége a méter (jele: $\text{m}$). Egy méter a Föld párizsi meridiánja (hosszúsági köre) hosszának 40\,000\,000-ad része. Úgy is fogalmazhatunk, hogy a teljes hosszúsági kör hossza 40\,000 km.**
 
-A kilométer a méter 1000-szerese. A "kilo-" előtag más egységekhez is kapcsolható; mindig 1000-szeres szorzót jelent. A kilo előtag jelölése `k`, amelyet a mértékegység jele (ez esetben `m`) elé írunk. Az ilyen előtagokat (prefixumokat) általában táblázatban foglaljuk össze.
+A kilométer a méter $1000$-szerese. A „kilo-” előtag más egységekhez is kapcsolható; minden esetben $1000$-szeres szorzót jelent. A kilo előtag jelölése $\text{k}$, amelyet közvetlenül a mértékegység jele (ez esetben az $\text{m}$) elé írunk. Az ilyen előtagokat (prefixumokat) táblázatban szoktuk összefoglalni.
 
-Érdekességként megjegyezzük, hogy a definíció az első definíciója a méternek. Ma már egy pontosabb definíciót használunk, mely a fény egy másodperc alatt üres térben megtett útján alapul.
+Érdekességként megjegyezzük, hogy ez a megfogalmazás a méter legelső, történelmi definíciója. Ma már egy ennél lényegesen pontosabb meghatározást használunk, amely a fény vákuumban, a másodperc törtrésze alatt megtett útján alapul.
 
 ### Idő
 
-Régóta felismerték, hogy a folyamatok összehasonlíthatók az alapján, hogy milyen gyorsan mennek végbe. Ez alapján mérhető az idő, amelyet kezdetben homokórákkal, illetve vízórákkal mértek. Később egyre pontosabb órákat készítettek, amelyek az inga lengései alapján működtek. Az idő egységét korábban a Föld mozgásához kötötték, egészen az atomórák elterjedéséig.
+Régóta felismerték, hogy a különféle folyamatok összehasonlíthatók az alapján, hogy milyen gyorsan mennek végbe. Ez teremti meg az alapját az idő mérésének, amelyet kezdetben homokórákkal, illetve vízórákkal valósítottak meg. Később egyre pontosabb mechanikus órákat készítettek, amelyek az inga lengései, illetve a billegőkerék periodikus mozgása alapján működtek. Az idő egységét korábban a Föld forgásmozgásához kötötték, egészen a modern atomórák elterjedéséig.
 
-> **Az idő egysége a másodperc (szekundum, jele `s`). A másodperc a Föld egy teljes tengely körüli fordulatának (a Naphoz viszonyítva) 1/86400-a; ezért egy nap 86400 s.**
+> **Az idő egysége a másodperc (szekundum, jele: $\text{s}$). A másodperc a Föld egy teljes, Naphoz viszonyított tengely körüli fordulatának (azaz egy középnapnak) az $\frac{1}{86\,400}$-ad része; ebből adódóan egy nap pontosan 86\,400 s.**
 
-Ez a szám onnan jön, hogy egy nap 24 óra, egy óra 60 perc, egy perc pedig 60 másodperc.
-
-$$
-1min = 60s
-$$
+Ez a számérték abból adódik, hogy egy nap $24$ órából áll, egy óra $60$ percet, egy perc pedig $60$ másodpercet tartalmaz:
 
 $$
-1h = 60min = 60 \times 60s = 3600s
+1\text{ min} = 60\text{ s}
 $$
 
 $$
-1nap = 24h = 24 \times 3600s = 86400s
+1\text{ h} = 60\text{ min} = 60 \cdot 60\text{ s} = 3600\text{ s}
 $$
 
-Másodperces inga: Az egy méter hosszú inga kis lengései kb. 2 s periódussal ismétlődnek; tehát egy fél lengés az egyik szélső helyzetből a másikig körülbelül 1 másodperc.
+$$
+1\text{ nap} = 24\text{ h} = 24 \cdot 3600\text{ s} = 86\,400\text{ s}
+$$
 
-Az inga lengései nem alkalmasak pontos definícióra, mivel az inga periódusideje függ a földrajzi helytől, a hőmérséklettől és magának a lengés amplitúdójától is.
+**Másodperces inga:** Az $1\text{ m}$ hosszú inga kis lengései körülbelül $2\text{ s}$ periódusidővel (lengésidővel) ismétlődnek; így az egyik szélső helyzetből a másikba történő átlendülés (fél periódus) szinte pontosan $1\text{ másodpercet}$ vesz igénybe.
+
+Az inga lengései azonban nem alkalmasak az idő precíz definiálására, mivel az inga periódusideje kismértékben függ a földrajzi helytől (a nehézségi gyorsulás ingadozása miatt), a hőmérséklettől (a hőtágulás miatt) és magától a lengési amplitúdótól is.
 
 ### Tömeg
 
-A testek tömegét mérleggel hasonlítjuk össze. A mérlegek működése általában a testek súlyának összehasonlításán alapul. A súlyról később részletesen fogunk beszélni. Egyelőre elegendő annyit tudnunk róla, hogy a Föld felszínének közelében a testeket alá kell támasztani vagy fel kell függeszteni ahhoz, hogy nyugalomban tartsuk őket. A test ilyenkor erőt fejt ki a felfüggesztésre vagy az alátámasztásra, amely a test tömegétől függ. A test nyomja az alátámasztást vagy húzza a felfüggesztést, és a tömege ez alapján megmérhető.
+A testek tömegét mérleggel hasonlítjuk össze. A mechanikus mérlegek működése általában a testekre ható nehézségi erő (súly) kiegyenlítésén alapul. A súly fogalmáról a későbbiekben részletesen lesz szó. Egyelőre elegendő annyit tudnunk, hogy a Föld felszínének közelében a testeket alá kell támasztani vagy fel kell függeszteni ahhoz, hogy nyugalomban tartsuk őket. A test ilyenkor erőt fejt ki az alátámasztásra vagy a felfüggesztésre, amely egyenesen arányos a test tömegével. A test nyomja az alátámasztást vagy húzza a傾felfüggesztést, és a tömege ezen hatás alapján mérhető meg.
 
-> **A tömeg egysége a kilogramm (kg). Egy kilogramm az a tömeg, amelyet egy köbdeciméter kémiailag tiszta (desztillált) víz tölt 4 °C-on.**
+> **A tömeg egysége a kilogramm (jele: $\text{kg}$). Egy kilogramm az a tömeg, amelyet pontosan egy köbdeciméter ($1\text{ dm}^3$) térfogatú, $4\text{ }^\circ\text{C}$-os, kémiailag tiszta (desztillált) víz képvisel.**
 
-Ez a definíció tartalmazza a térfogat fogalmát. A téglatestek térfogata az oldalaik hosszainak szorzata. Mivel a kocka is téglatest (minden oldala egyenlő hosszú), a térfogata az oldalainak a szorzata. Egy köbdeciméter egy deciméter oldalú kocka térfogata. Egy deciméter az egy tized méter, tehát 10 deciméter = 1 méter. A köbdeciméter térfogategység másik elnevezése a liter (l).
-
-$$
-1l = 1dm^3 = 1dm \times 1dm \times 1dm = 0.1m \times 0.1m \times 0.1m = 0.001m^3
-$$
+Ez a definíció épít a térfogat fogalmára. A téglatestek térfogata az egymásra merőleges oldalaik hosszának szorzata. Mivel a kocka is egy speciális téglatest (minden oldala egyenlő hosszú), a térfogata az élhosszának a harmadik hatványa. Egy köbdeciméter egy $1\text{ dm}$ élhosszúságú kocka térfogatát jelenti. Egy deciméter a méter tizedrésze ($10\text{ dm} = 1\text{ m}$). A köbdeciméter térfogategység hétköznapi, elterjedt elnevezése a liter ($\text{l}$ vagy $\text{L}$).
 
 $$
-1m^3 = 1m \times 1m \times 1m = 10dm \times 10dm \times 10dm = 1000dm^3 = 1000l
+1\text{ l} = 1\text{ dm}^3 = 1\text{ dm} \cdot 1\text{ dm} \cdot 1\text{ dm} = 0{,}1\text{ m} \cdot 0{,}1\text{ m} \cdot 0{,}1\text{ m} = 0{,}001\text{ m}^3
 $$
 
-A definíció szintén tartalmazza a hőmérséklet fogalmát. A víz 4 °C-on a legsűrűbb; ez azt jelenti, hogy egy liter víz tömege 4 °C-on a legnagyobb.
+$$
+1\text{ m}^3 = 1\text{ m} \cdot 1\text{ m} \cdot 1\text{ m} = 10\text{ dm} \cdot 10\text{ dm} \cdot 10\text{ dm} = 1000\text{ dm}^3 = 1000\text{ l}
+$$
 
-Ez a viszonylag bonyolult definíció a korábbi, régi megfogalmazás volt. A 2019-ig elfogadott definíció szerint az egy kilogrammot a Párizsban őrzött platina henger tömege határozta meg. Így nem volt szükség hőmérséklet- vagy térfogatmérésre a definícióhoz, de minden 1 kg-os etalont méréssel kellett hitelesíteni, összehasonlítva a Párizsban őrzött példánnyal. A tömeg kismértékben változott az idő folyamán a szennyeződések és a kopás miatt. Ezért 2019-ben a definíciót módosították, és a kilogramm definícióját a Planck-állandó méréséhez kötötték. Ezt 1:100 000 000 pontossággal ismerjük, és értékét időben állandónak tekinthetjük.
+A fenti megfogalmazás a hőmérséklet fogalmát is beemeli a rendszerbe. A víz ugyanis $4\text{ }^\circ\text{C}$-on a legsűrűbb; ez azt jelenti, hogy egységnyi térfogatú víz tömege pontosan ezen a hőmérsékleten a legnagyobb.
 
-## Érdekességek
+Ez a viszonylag összetett és nehezen reprodukálható definíció szintén egy korábbi, történelmi megfogalmazás volt. A 2019-ig érvényben lévő rendszer szerint az egy kilogrammot a Párizsban (Sèvres-ben) őrzött nemzetközi platina-irídium henger (az etalon) tömege határozta meg. Bár ez kiküszöbölte a hőmérséklet- és térfogatmérés szükségességét, komoly hátránya volt, hogy minden másodlagos mintát közvetlen méréssel kellett hitelesíteni az eredeti darabhoz képest. Ráadásul az őstalont érő mikroszkopikus szennyeződések és a kopás miatt a tömege az idő múlásával kismértékben megváltozott. Emiatt 2019-ben a SI-rendszert alapjaiban megújították, és a kilogramm definícióját a természeti állandónak tekinthető Planck-állandó rögzített értékéhez kötötték.
+
+## Érdekességek (Videók)
 
 - [A méter története](https://www.youtube.com/watch?v=e3eHHwcMVcA)
 - [A mechanikus óra működése](https://www.youtube.com/watch?v=9_QsCLYs2mY)
-- [A kvarcóra](https://www.youtube.com/watch?v=1pM6uD8nePo)
-- [Az atomóra működése](https://www.youtube.com/watch?v=p2BxAu6WZI8)
+- [A kvarcóra működési elve](https://www.youtube.com/watch?v=1pM6uD8nePo)
+- [Az atomóra működése és a GPS](https://www.youtube.com/watch?v=p2BxAu6WZI8)
 
 ## Prefixumok
-| Előtag | Jel | Kitevő |
-|---------|-----|--------|
-| atto    | a   | -18    |
-| femto   | f   | -15    |
-| piko    | p   | -12    |
-| nano    | n   | -9     |
-| mikro   | μ   | -6     |
-| mili    | m   | -3     |
-| centi   | c   | -2    |
-| deci    | d   | -1    |
-| deka    | da  | 1      |
-| hekto   | h   | 2      |
-| kilo    | k   | 3      |
-| mega    | M   | 6      |
-| giga    | G   | 9      |
-| tera    | T   | 12     |
-| peta    | P   | 15     |
-| exa     | E   | 18     |
+
+
+| Előtag | Jel | Kitevős alak | Szorzóérték |
+| :--- | :--- | :--- | :--- |
+| **atto** | a | $10^{-18}$ | $0{,}000\ 000\ 000\ 000\ 000\ 001$ |
+| **femto** | f | $10^{-15}$ | $0{,}000\ 000\ 000\ 000\ 001$ |
+| **piko** | p | $10^{-12}$ | $0{,}000\ 000\ 000\ 001$ |
+| **nano** | n | $10^{-9}$ | $0{,}000\ 000\ 001$ |
+| **mikro** | μ | $10^{-6}$ | $0{,}000\ 001$ |
+| **milli** | m | $10^{-3}$ | $0{,}001$ |
+| **centi** | c | $10^{-2}$ | $0{,}01$ |
+| **deci** | d | $10^{-1}$ | $0{,}1$ |
+| **deka** | dk | $10^{1}$ | $10$ |
+| **hekto** | h | $10^{2}$ | $100$ |
+| **kilo** | k | $10^{3}$ | $1\ 000$ |
+| **mega** | M | $10^{6}$ | $1\ 000\ 000$ |
+| **giga** | G | $10^{9}$ | $1\ 000\ 000\ 000$ |
+| **tera** | T | $10^{12}$ | $1\ 000\ 000\ 000\ 000$ |
+| **peta** | P | $10^{15}$ | $1\ 000\ 000\ 000\ 000\ 000$ |
+| **exa** | E | $10^{18}$ | $1\ 000\ 000\ 000\ 000\ 000\ 000$ |
 
 ## Példák
 
-1. A H-atom sugara alapállapotban a Bohr-rádiusz, amely 0.053 nm. Hány méter ez és hány pikométer? Egy angstrom (Å) az $10^{-10}$ m. Hány angstrom a Bohr-rádiusz?
+1. A hidrogénatom sugara alapállapotban (az úgynevezett Bohr-sugár) értéke $0{,}053\text{ nm}$. Hány méter és hány pikométer ez? Egy angström ($\text{Å}$) egyenlő $10^{-10}\text{ m}$-rel. Hány angström a Bohr-sugár?
 
 $$
-0.053nm = 0.053 \times 10^{-9}m = 5.3 \times 10^{-11}m
-$$
-
-$$
-5.3 \times 10^{-11}m = 53 \times 10^{-12}m = 53pm
+0{,}053\text{ nm} = 0{,}053 \cdot 10^{-9}\text{ m} = 5{,}3 \cdot 10^{-11}\text{ m}
 $$
 
 $$
-5.3 \times 10^{-11}m = 0.53 \times 10^{-10}m = 0.53Å
-$$
-
-2. A Föld sugara 6371 km. Hány méternek felel ez meg? Számítsuk ki az egyenlítő hosszát méterben és kilométerben!
-
-$$
-6371km = 6371 \times 10^{3}m = 6.371 \times 10^{6}m
+5{,}3 \cdot 10^{-11}\text{ m} = 53 \cdot 10^{-12}\text{ m} = 53\text{ pm}
 $$
 
 $$
-K = 2 \pi R = 2 \times 3.1415 \times 6.371 \times 10^{6}m = 40 029 000m = 40 029km
+5{,}3 \cdot 10^{-11}\text{ m} = 0{,}53 \cdot 10^{-10}\text{ m} = 0{,}53\text{ Å}
 $$
 
-Az eltérés a 40 000 km-tól a francia mérések hibája miatt lép fel. Nem sikerült egész pontosan úgy definiálni a métert, ahogyan szerették volna. További eltérést okoz, hogy a Föld nem szabályos gömb alakú, hanem kismértékben lapult a tengely körüli forgása miatt. Így az egyenlítőnél nagyobb a sugara, mint az átlagos sugár. Így az egyenlítő hossza kissé meg nagyobb, mint a számításunk (40 075 km).
+2. A Föld átlagos sugara $6371\text{ km}$. Hány méternek felel ez meg? Számítsuk ki a gömbnek feltételezett Föld egyenlítői kerületét méterben és kilométerben!
+
+$$
+6371\text{ km} = 6371 \cdot 10^{3}\text{ m} = 6{,}371 \cdot 10^{6}\text{ m}
+$$
+
+$$
+K = 2\pi R = 2 \cdot 3{,}14159 \cdot 6\ 371\ 000\text{ m} \approx 40\ 029\ 115\text{ m} \approx 40\ 029\text{ km}
+$$
+
+A kapott érték és a kerek $40\ 000\text{ km}$ közötti eltérés hátterében az első francia földmérési expedíciók kismértékű pontatlanságai állnak – így a méter gyakorlai hossza hajszálnyit rövidebb lett a tervezettnél. További eltérést eredményez, hogy a Föld a valóságban nem szabályos gömb, hanem a forgásából adódó centrifugális erő miatt egy forgási ellipszoidhoz hasonlít (az egyenlítői sugár nagyobb a sarkvidékinél). Emiatt a valós egyenlítői kerület hossza még valamivel nagyobb, körülbelül $40\ 075\text{ km}$.
 
 ## Feladatok
 
-1. Egy 6 megaohm ellenállás (6 MΩ): hány ohm és hány kiloohm?
-2. Az elektron tömege $9.11\times10^{-31}\ \mathrm{kg}$. Hány gramm az elektron? Hány gramm egy mol elektron, ha egy mol elektron $6.022\times10^{23}$ darab?
-3. A fénysebesség vákuumban körülbelül $300\,000\ \mathrm{km/s}$. Hány métert tesz meg a fény egy másodperc alatt?
-4. A Napról a Földre érkező fény körülbelül 8 perc 20 másodperc alatt érkezik. Mekkora a Nap–Föld távolság kilométerben?
-5. Egy fényév az a távolság, amelyet a fény vákuumban egy év alatt megtesz. Hány méter és hány kilométer egy fényév?
-6. A Naphoz legközelebbi csillag, a Proxima Centauri, körülbelül 4 fényév távolságra van. Hány méterre van a csillag a Naptól?
-7. Az Andromeda-köd (a hozzánk legközelebbi nagyobb galaxis) kb. $2.537\times10^{6}$ fényév távolságra van. Hány méter és hány kilométer ez?
-8. A He–Ne lézer vörös fényének hullámhossza $632.8\ \mathrm{nm}$. Hány méter és hány mikrométer ez?
-9. A megfigyelhető világegyetem sugara körülbelül $46.5\times10^{9}$ fényév. Hány kilométer ez a távolság?
-10. A proton sugara 0.84 fm. Hány méter és hány milliméter ez a távolság?
+1. Egy $6\text{ megaohm}$ ellenállás ($6\text{ M}\Omega$) hány ohm ($\Omega$) és hány kiloohm ($\text{k}\Omega$)?
+2. Az elektron nyugalmi tömege $9{,}11 \cdot 10^{-31}\text{ kg}$. Hány gramm egyetlen elektron? Hány gramm egy mol elektron, ha egy mol anyagmennyiség $6{,}022 \cdot 10^{23}$ darab elektront foglal magában?
+3. A fény sebessége vákuumban kerekítve $300\ 000\text{ km/s}$. Hány métert tesz meg a fény egyetlen másodperc alatt?
+4. A Napról induló fénysugár nagyjából $8\text{ perc } 20\text{ másodperc}$ alatt éri el a Földet. Mekkora a Nap–Föld átlagos távolság kilométerben kifejezve?
+5. A fényév az a távolság, amelyet a fény vákuumban egy csillagászati év ($365{,}25\text{ nap}$) alatt megtesz. Hány méternek és hány kilométernek felel meg egy fényév?
+6. A Naprendszerhez legközelebbi csillag, a Proxima Centauri, körülbelül $4{,}24\text{ fényév}$ távolságra helyezkedik el. Hány méter távolságra van ez a csillag a Naptól?
+7. Az Androméda-köd (a tejútrendszerünkhöz legközelebbi nagy galaxis) nagyjából $2{,}537 \cdot 10^{6}\text{ fényév}$ távolságra van. Hány méter és hány kilométer ez a roppant nagy távolság?
+8. A hélium-neon (He–Ne) gázlézer vörös fényének hullámhossza $632{,}8\text{ nm}$. Hány méter és hány mikrométer ($\mu\text{m}$) ez az érték?
+9. A belátható (megfigyelhető) világegyetem sugara jelenlegi ismereteink szerint körülbelül $46{,}5 \cdot 10^{9}\text{ fényév}$. Hány kilométerrel egyenlő ez a távolság?
+10. A proton töltéssugarának legújabb mérési értéke körülbelül $0{,}84\text{ fm}$. Hány méter és hány milliméter ez a szubatomi távolság?
