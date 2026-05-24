@@ -79,6 +79,6 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	63. [Forgási rezgések](Mechanika/FORGASIREZGESEK.md)
 	64. [Csattolt rezgések *](Mechanika/CSATTOLTREZGESEK.md)
 	65. [Mechanikai hullámok](Mechanika/HULLAMOK.md)
-	66. [A szuperpozíció elve](Mechanika/SZUPERPOZICIO.md)
+	66. [A szuperpozíció elve *](Mechanika/SZUPERPOZICIO.md)
 	67. [Állóhullámok *](Mechanika/ALLOHULLAMOK.md)
 	68. [Kísérletek állóhullámokkal](Mechanika/KISERLETEKALLOHULLAM.md)

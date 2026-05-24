@@ -1,203 +1,206 @@
-# Ferde Hajítás
+# Ferde hajítás
 
 ## A derékszögű háromszög trigonometriája
 
-Legyen ismert a derékszögű háromszög mindhárom oldala és legyen az egyik $90 \degree$-nél kisebb szöge $\alpha$, a vele szemközti befogó a, a mellette levő befogó b és a c pedig az átfogó. Ekkor az $\alpha$ szög trigonometrikus függvényeit három egyenlettel definiáljuk.
+Legyen ismert egy derékszögű háromszög mindhárom oldala, és jelölje a háromszög egyik $90^\circ$-nál kisebb szögét $\alpha$. A szöggel szemközti befogó legyen $a$, a mellette fekvő befogó $b$, az átfogó pedig $c$. Ekkor az $\alpha$ szög trigonometrikus függvényeit a következő három egyenlettel definiáljuk:
 
 $$
-sin \alpha = \frac {a} {c} 
-$$
-
-$$
-cos \alpha = \frac {b} {c}
+\sin \alpha = \frac {a} {c} 
 $$
 
 $$
-tan \alpha = \frac {a} {b}
+\cos \alpha = \frac {b} {c}
 $$
 
-Ezen függvények megtalálhatók minden tudományos zsebszámológépen és így képesek vagyunk kiszámítani ezeket. A zsebszámológéppel kiszámítható még az ismert függvényérték ismeretében az ismeretlen szög is.
+$$
+\tan \alpha = \frac {a} {b}
+$$
+
+Ezek a szögfüggvények megtalálhatók minden tudományos zsebszámológépen, így könnyedén kiszámíthatjuk az értéküket. A számológéppel az ismert függvényérték birtokában az ismeretlen szög visszakeresése (arkusz függvények) is elvégezhető.
 
 ### Példák a szögfüggvényekre
-1. Számítsuk ki a következő értékeket!
-$sin 30\degree$, $sin 45\degree$, $sin 60\degree$, $sin 90\degree$,
-$cos 30\degree$, $cos 45\degree$, $cos 60\degree$, $cos 90\degree$
 
->**Figyelem:** Nagyon fontos, hogy a zsebszámológép fok szög egységre legyen állítva! 
+1. Számítsuk ki a következő alapvető szögfüggvényértékeket zsebszámológéppel:
+$\sin 30^\circ$, $\sin 45^\circ$, $\sin 60^\circ$, $\sin 90^\circ$,
+$\cos 30^\circ$, $\cos 45^\circ$, $\cos 60^\circ$, $\cos 90^\circ$
 
-A zsebszámológéppel a következő értékek adódnak:
-0.5, 0.7071, 0.8660, 1, 0.8660, 0.7071, 0.5, 0
+> **Figyelem:** Rendkívül fontos, hogy a zsebszámológép szögmértéke fok (DEG) egységre legyen állítva!
 
-2. A fenti értékekből számítsuk ki a szöget a zsebszámológéppel! Vissza kell kapjuk a szöget az 1. példában.
+A zsebszámológéppel végzett számítások a következő értékeket adják:
+$\sin 30^\circ = 0{,}5$; $\sin 45^\circ \approx 0{,}7071$; $\sin 60^\circ \approx 0{,}8660$; $\sin 90^\circ = 1$
+$\cos 30^\circ \approx 0{,}8660$; $\cos 45^\circ \approx 0{,}7071$; $\cos 60^\circ = 0{,}5$; $\cos 90^\circ = 0$
 
-## A kezdősebesség koordinátai
-Legyen adott a ferde hajítás kezdősebesség ének nagysága, amely $v_0$, és zárjon be a vektor $\alpha$ szöget az vízszintes x-tengellyel. A függőleges y-tengely felfelé mutat. A következő ábra mutatja a vektort:
+2. A kapott tizedes értékekből az inverz szögfüggvények ($\sin^{-1}$ / $\text{asin}$ vagy $\cos^{-1}$ / $\text{acos}$) segítségével keressük vissza a szögeket a számológéppel! Eredményül pontosan az 1. példában szereplő kiindulási fokértékeket kell visszakapnunk.
 
-![vektor komponensek](Kepek/vektorkomponensek.png)
+## A kezdősebesség koordinátái
 
-[vektor komponensek](https://www.geogebra.org/m/hrhnmnmm)
+Legyen adott a ferde hajítással elindított test kezdősebességének nagysága, amelyet $v_0$ jelöl, és zárjon be ez a sebességvektor egy $\alpha$ szöget a vízszintes $x$-tengellyel. A függőleges $y$-tengely mutasson egyenesen felfelé. A sebességvektor felbontását az alábbi ábra szemlélteti:
 
-A vektor koordinátái az ábran látható derékszögű háromszög alapján kiszámíthatók a szögfüggvények segítségével.
+![Vektor-komponensek felbontása](Kepek/vektorkomponensek.png)
 
-$$
-cos \alpha = \frac {v_{0x}} {v_0} 
-$$
+[Vektor-komponensek interaktív ábrázolása (GeoGebra)](https://www.geogebra.org/m/hrhnmnmm)
 
-$$
-v_{0x} = v_0 cos \alpha
-$$
-
-Hasonlóan kapjuk, hogy
+A sebességvektor tengelyirányú koordinátái az ábrán látható derékszögű háromszög alapján, a szögfüggvények segítségével határozhatók meg:
 
 $$
-v_{0y} = v_0 sin \alpha
+\cos \alpha = \frac {v_{0x}} {v_0} \implies v_{0x} = v_0 \cdot \cos \alpha
 $$
 
-Összefoglalva:
+Hasonló módon a függőleges komponensre kapjuk, hogy:
 
 $$
-\overrightarrow{v_0} = (v_0 cos \alpha, v_0 sin \alpha)
+\sin \alpha = \frac {v_{0y}} {v_0} \implies v_{0y} = v_0 \cdot \sin \alpha
 $$
 
-## A ferde hajítás
+Összefoglalva a kezdősebesség-vektor komponensei koordinátás alakban:
+
+$$
+\vec{v}_0 = (v_0 \cdot \cos \alpha,\ v_0 \cdot \sin \alpha)
+$$
+
+## A ferde hajítás fizikai modellje
 
 ### Kísérlet
-
-[Ferde hajítás](https://www.youtube.com/watch?v=KacTRPL1MtE)
+[A vízszintes sebesség állandóságának demonstrációja (Walter Lewin / MIT)](https://www.youtube.com/watch?v=KacTRPL1MtE)
 
 ### Szimuláció
+[Ferde hajítás interaktív szimulátor](https://alexerdei73.github.io/physics-engine/project/#b2325a19-cfb5-49fa-91e5-0d11b2955e2b)
 
-[Ferde hajítás](https://alexerdei73.github.io/physics-engine/project/#b2325a19-cfb5-49fa-91e5-0d11b2955e2b)
-
-Miután megtekintettük a szimulációt, készítsük el a $v_x$ és $v_y$ mennyiségek időfüggését mutató grafikonokat!
+Miután megtekintettük a szimulációt, készítsük el a test $v_x$ és $v_y$ sebességkomponenseinek időfüggését mutató grafikonokat!
 
 ### A ferde hajítás képletei
 
-A kísérlet és a szimuláció is igazolja, hogy a sebesség vízszintes komponense állandó, míg a függőleges komponens pontosan úgy változik, mint a függőleges hajítás esetében, tehát a nehézségi gyorsulás ütemében csökken, míg nem a test eléri maximális magasságát és ezután megfordul a mozgás iránya és gyorsulva zuhan.
+Mind a kísérleti videó (ahol a mozgó kocsiból függőlegesen kilőtt labda pontosan visszaesik a kocsiba), mind a szimuláció egyértelműen igazolja, hogy a **sebesség vízszintes komponense a mozgás során végig állandó**. Ezzel szemben a függőleges komponens pontosan úgy változik, mint a függőleges hajítás esetében: a nehézségi gyorsulás ütemében folyamatosan csökken, amíg a test el nem éri a pályája maximális magasságát (ahol $v_y = 0$), majd a mozgásirány megfordulása után egyre gyorsulva zuhan lefelé.
 
-Indítsuk a testet a koordináta rendszer kezdőpontjából $v_0$ nagyságú sebességgel, mely az x-tengely irányával $\alpha$ szöget zár be. A vízszintes x-tengely balról jobbra mutat, míg a függőleges y-tengely felfelé irányul. A gyorsulás vektor ekkor:
-
-$$
-\overrightarrow{a} = (a_x, a_y) = (0, -g)
-$$
+Indítsuk a testet a koordináta-rendszer origójából ($x_0 = 0$, $y_0 = 0$) $v_0$ nagyságú kezdősebességgel, amely a vízszintes tengellyel $\alpha$ szöget zár be. A vízszintes $x$-tengely mutasson balról jobbra, a függőleges $y$-tengely pedig felfelé. A gyorsulásvektor komponensei:
 
 $$
-\overrightarrow{v_0} = (v_{0x}, v_{0y}) = (v_0cos \alpha, v_0 sin \alpha)
+\vec{a} = (a_x,\ a_y) = (0,\ -g)
+$$
+
+A kezdősebesség-vektor:
+
+$$ 
+\vec{v}_0 = (v_{0x},\ v_{0y}) = (v_0 \cdot \cos \alpha,\ v_0 \cdot \sin \alpha)
+$$
+
+A helykoordináták meghatározásához idézzük fel a négyzetes úttörvény elmozdulás-komponensekre felírt alakját:
+
+$$
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2
+$$
+
+Ha ebbe a képletbe behelyettesítjük a megfelelő tengelyirányú kezdősebesség- és gyorsuláskoordinátákat, megkapjuk a ferde hajítás mozgásegyenleteit:
+
+$$
+x = v_0 \cdot \cos(\alpha) \cdot t
 $$
 
 $$
-(x_0, y_0) = (0, 0)
-$$
-
-$$
-s = v_0 \times t + \frac {a} {2} \times t^2
-$$
-
-Ebbe a képletbe s helyére kell írjuk a megfelelő elmozdulás komponensét, míg a $v_0$ és $a$ helyébe a kezdősebesség és a gyorsulás megfelelő komponensét. Így a következő képleteket kapjuk:
-
-$$
-x = v_0 cos (\alpha) t
-$$
-
-$$
-y = v_0 sin (\alpha) t - \frac {g} {2} \times t^2
+y = v_0 \cdot \sin(\alpha) \cdot t - \frac {g} {2} \cdot t^2
 $$
 
 ### Példák
-1. Egy testet vízszintes talajon ferdeán elhajítunk a talajszint magasságáról $5 \frac {m} {s}$ nagyságú és a vízszintessel $30°$ szöget bezáró irányban. Mennyi idő alatt ér talajt a test? Milyen messze kerül a kiindulási helyétől ezalatt az idő alatt? A légellenállás elhanyagolható és a nehézségi gyorsulás $9.81 \frac {m} {s^2}$.
+
+1. Egy testet vízszintes talajon elhajítunk a talajszintről $5\text{ }\frac{\text{m}}{\text{s}}$ nagyságú, a vízszintessel $30^\circ$-os szöget bezáró kezdősebességgel. Mennyi idő alatt ér újra talajt a test? Milyen messze kerül a kiindulási helyétől ezalatt az idő alatt? A légellenállás elhanyagolható, a nehézségi gyorsulás $9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$.
+
+Számítsuk ki a kezdősebesség-vektor két komponensét:
 
 $$
-\overrightarrow{v_0} = (v_0cos \alpha, v_0sin \alpha) = (4.330 \frac {m} {s}, 2.500 \frac {m} {s})
+\vec{v}_0 = (v_0 \cdot \cos \alpha,\ v_0 \cdot \sin \alpha) = (5 \cdot \cos 30^\circ,\ 5 \cdot \sin 30^\circ) \approx (4{,}330\text{ }\frac {\text{m}} {\text{s}},\ 2{,}500\text{ }\frac {\text{m}} {\text{s}})
 $$
 
-$$
-y = v_0 sin(\alpha)t - \frac {g} {2} \times t^2
-$$
+Amikor a test visszaérkezik a vízszintes talajra, a függőleges koordinátája nullává válik ($y = 0$). Írjuk fel a függőleges mozgásegyenletet:
 
 $$
-0 = 2.500t - 4.905t^2
-$$
-
-A $t=0$ megoldás a kilövés, minket a másik megoldás érdekel. 
-
-$$
-t = 0.5097 \text{ s}
-$$
-
-Tehát a keresett idő $0.510 \text{ s}$.
-
-$$
-x = v_0 cos(\alpha)t = 4.330 \times 0.5097 = 2.207 \text{ m}
-$$
-
-Tehát a keresett távolság $2.21 \text{ m}$.
-
-2. Egy testet a talaj szintjéről kilövünk $v_0 = 20 \frac {m} {s}$ nagyságú kezdősebességgel vízszintes talajon, a vízszintessel $45°$-ot bezáró szögben. A test egy $10.0 \text{ m}$ mély gödör alján csapódik be. Mennyi idő telik el a kilövés és a becsapódás közt? Legfeljebb milyen messze lehet tőlünk a gödör közelebbi szele? Legalább milyen széles a gödör? A légellenállás elhanyagolható és a nehézségi gyorsulás $9.81 \frac {m} {s^2}$.
-
-$$
-\overrightarrow{v_0} = (v_0 cos \alpha, v_0 sin \alpha) = (14.14 \frac {m} {s}, 14.14 \frac {m} {s})
+y = v_0 \cdot \sin(\alpha) \cdot t - \frac {g} {2} \cdot t^2
 $$
 
 $$
-y = v_0 sin(\alpha)t - \frac {g} {2} \times t^2
+0 = 2{,}500 \cdot t - 4{,}905 \cdot t^2
 $$
 
-$$
--10 = 14.14t - 4.905t^2
-$$
+A $t = 0\text{ s}$ megoldás a hajítás kezdőpillanatára utal, minket a folyamat végét jelentő másik gyök érdekel:
 
 $$
-4.905t^2 - 14.14t - 10.0 = 0
+t = \frac{2{,}500}{4{,}905} \approx 0{,}5097\text{ s}
 $$
 
-$$
-t_{12} = \frac {14.14 \pm \sqrt {14.14^2 - 4 \times 4.905 \times (-10.0)}} {2 \times 4.905} = \frac {14.14 \pm \sqrt {200 + 196.2}} {9.81} = 3.470 \text{ s}, -0.5876 \text{ s}
-$$
+A keresett repülési idő három értékes jegyre kerekítve $0{,}510\text{ s}$.
 
-A keresett idő $3.47 \text{ s}$. 
+Ezt az időt a vízszintes elmozdulás egyenletébe behelyettesítve megkapjuk a hajítástávolságot:
 
 $$
-x = v_0 cos (\alpha) t = 14.14 \times 3.470 = 49.07 \text{ m}
+x = v_0 \cdot \cos(\alpha) \cdot t = 4{,}330 \cdot 0{,}5097 \approx 2{,}207\text{ m}
 $$
 
-A gödör szele nem lehet messzebb, mint:
+A test a kiindulópontjától pontosan $2{,}21\text{ m}$ távolságban csapódik be.
+
+2. Egy testet a talaj szintjéről kilövünk $v_0 = 20\text{ }\frac{\text{m}}{\text{s}}$ nagyságú kezdősebességgel, a vízszintessel $45^\circ$-os szögben. A test egy $10{,}0\text{ m}$ mély gödör alján csapódik be. Mennyi idő telik el a kilövés és a becsapódás között? Legfeljebb milyen messze lehet tőlünk a gödör közelebbi széle, és legalább milyen szélesnek kell lennie a gödörnek, hogy a test az aljára érkezzen? A légellenállás elhanyagolható, a nehézségi gyorsulás $9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$.
+
+Számítsuk ki a kezdősebesség-komponenseket (mivel $\sin 45^\circ = \cos 45^\circ \approx 0{,}7071$):
 
 $$
-y = v_0 sin(\alpha) t - \frac {g} {2} \times t^2
+\vec{v}_0 = (v_0 \cdot \cos \alpha,\ v_0 \cdot \sin \alpha) \approx (14{,}14\text{ }\frac {\text{m}} {\text{s}},\ 14{,}14\text{ }\frac {\text{m}} {\text{s}})
 $$
 
-$$
-0 = 14.14t - 4.905t^2
-$$
-
-A $t=0$ megoldás nem érdekes, így:
+Mivel a becsapódási pont a talajszint alatt van $10{,}0\text{ méterrel}$, a függőleges koordináta a végponton $y = -10\text{ m}$. Írjuk fel az $y$-egyenletet:
 
 $$
-t = 14.14 / 4.905 = 2.883 \text{ s}
+-10 = 14{,}14 \cdot t - 4{,}905 \cdot t^2
 $$
 
-A test $2.88 \text{ s}$-kor ér vissza a vízszintes talajszintre, ekkor a távolsága:
+Rendezve a másodfokú egyenletet:
 
 $$
-x = v_0 cos(\alpha) t = 14.14 \times 2.883 = 40.77 \text{ m}
+4{,}905 \cdot t^2 - 14{,}14 \cdot t - 10{,}0 = 0
 $$
 
-Így a gödör közelebbi szele legfeljebb $40.8 \text{ m}$-re lehet a kilövés helyétől. 
+Alkalmazzuk a megoldóképletet:
 
 $$
-49.07 - 40.77 = 8.30 \text{ m}
+t_{1,2} = \frac {14{,}14 \pm \sqrt {14{,}14^2 - 4 \cdot 4{,}905 \cdot (-10{,}0)}} {2 \cdot 4{,}905} = \frac {14{,}14 \pm \sqrt {200 + 196{,}2}} {9{,}81} \implies t_1 \approx 3{,}470\text{ s};\ \ t_2 \approx -0{,}5876\text{ s}
 $$
 
-A gödör legalább $8.30 \text{ m}$ széles.
+A fizikailag helyes, pozitív időérték $t = 3{,}47\text{ s}$. Ennyi idő telik el a becsapódásig.
+
+Számítsuk ki a becsapódási pont teljes vízszintes távolságát ($x$):
+
+$$
+x = v_0 \cdot \cos (\alpha) \cdot t = 14{,}14 \cdot 3{,}470 \approx 49{,}07\text{ m}
+$$
+
+Ahhoz, hogy meghatározzuk a gödör széleinek határait, számítsuk ki, hogy a test hol és mikor érne vissza a kiindulási talajszintre ($y = 0$), ha nem lenne ott a gödör:
+
+$$
+0 = 14{,}14 \cdot t - 4{,}905 \cdot t^2 \implies t = \frac{14{,}14}{4{,}905} \approx 2{,}883\text{ s}
+$$
+
+A test tehát $2{,}88\text{ s}$-kor érne vissza a talajszintre, ekkor a vízszintes pozíciója:
+
+$$
+x_{\text{talaj}} = v_0 \cdot \cos(\alpha) \cdot t = 14{,}14 \cdot 2{,}883 \approx 40{,}77\text{ m}
+$$
+
+Ez azt jelenti, hogy a gödör közelebbi széle legfeljebb $40{,}8\text{ m}$ távolságra lehet a kilövési ponttól, különben a test még a gödör előtt a talajnak csapódna.
+
+A gödör minimális szélessége a becsapódási pont és a talajszinti visszatérési pont különbsége:
+
+$$
+\Delta x = 49{,}07 - 40{,}77 = 8{,}30\text{ m}
+$$
+
+A gödörnek legalább $8{,}30\text{ m}$ szélesnek kell lennie, hogy a test szabadon berepülhessen a belsejébe.
 
 ## Feladatok
 
-1. Egy testet 35° szögben kilövünk a talajtól $12.0 \frac {m} {s}$ kezdősebességgel. Maximálisan mekkora magasságra emelkedik a test? Milyen messze csapódik be a talajba? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
+1. Egy testet $35^\circ$-os szögben lövünk ki a talajról $12{,}0\text{ }\frac{\text{m}}{\text{s}}$ kezdősebességgel. Maximálisan mekkora magasságra emelkedik a test, és milyen messze csapódik be a talajba? (A légellenállás elhanyagolható és $g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$.)
 
-2. Egy kőgolyót egy domb tetejéről 40° szögben lövünk ki $18.0 \frac {m} {s}$ kezdősebességgel. A lövés helyétől vízszintesen 25.0 m távolságban és 15.0 m mélységben egy tó található. Beesik-e a kőgolyó a tóba? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
+2. Egy kőgolyót egy domb tetejéről $40^\circ$-os szögben lőnek ki $18{,}0\text{ }\frac{\text{m}}{\text{s}}$ kezdősebességgel. A lövés helyétől vízszintesen $25{,}0\text{ m}$ távolságban és $15{,}0\text{ m}$ mélységben egy tó kezdődik. Beesik-e a kőgolyó a tóba? (A légellenállás elhanyagolható és $g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$.)
 
-3. Egy labdát 60° szögben kilövünk a talajtól $18.0 \frac {m} {s}$ kezdősebességgel. Határozd meg, hogy milyen hosszú ideig volt a labda a levegőben! Mekkora volt a labda maximális magassága? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
+3. Egy labdát $60^\circ$-os szögben kilövünk a talajról $18{,}0\text{ }\frac{\text{m}}{\text{s}}$ kezdősebességgel. Határozd meg, hogy milyen hosszú ideig volt a labda a levegőben, és mekkora volt a maximális magassága! (A légellenállás elhanyagolható és $g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$.)
 
-4. Egy katapult 25° szögben lő ki egy kőgolyót $30.0 \frac {m} {s}$ sebességgel. Az ellenség vára $40.0 \text{ m}$ távolságban található. Eléri-e a kőgolyó a várat? Ha igen, milyen magasságban csapódik be a falba? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
+4. Egy katapult $25^\circ$-os szögben lő ki egy sziklát $30{,}0\text{ }\frac{\text{m}}{\text{s}}$ sebességgel. Az ellenséges vár fala pontosan $40{,}0\text{ m}$ távolságban található. Eléri-e a kőgolyó a várat? Ha igen, milyen magasságban csapódik be a falba? (A légellenállás elhanyagolható és $g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$.)
 
-5. Egy teniszezőnek egy célpontot kell eltalálnia. A célpont 50.0 m távolságban található és 3.50 m magasságban. Egy teniszlabdát 35° szögben kilövünk $22.0 \frac {m} {s}$ sebességgel a talajtól. Eltaláljuk-e a célpontot? (A légellenállás elhanyagolható és $g = 9.81 \frac {m} {s^2}$.)
+5. Egy teniszezőnek egy rögzített célpontot kell eltalálnia, amely tőle vízszintesen $50{,}0\text{ m}$ távolságban és $3{,}50\text{ m}$ magasságban helyezkedik el. A teniszlabdát $35^\circ$-os szögben lövi ki $22{,}0\text{ }\frac{\text{m}}{\text{s}}$ sebességgel a talajról. Eltalálja-e a célpontot? (A légellenállás elhanyagolható és $g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$.)
+

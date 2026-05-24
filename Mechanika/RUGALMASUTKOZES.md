@@ -257,10 +257,10 @@ $$
 
 ### Feladatok
 
-1. Egy $0,50 \text{ kg}$ tömegű kiskocsi $4,0 \text{ m/s}$ sebességgel halad egy légpárnás sínen, amikor centrálisan és tökéletesen rugalmasan ütközik egy előtte, azonos irányban, de lassabban, $1,0 \text{ m/s}$ sebességgel haladó $0,30 \text{ kg}$ tömegű kiskocsival. Számítsa ki mindkét kiskocsi sebességét az ütközés után!
+1. Egy $0{,}50\text{ kg}$ tömegű kiskocsi $4point0\text{ }\frac{\text{m}}{\text{s}}$ sebességgel halad egy légpárnás sínen, amikor centrálisan és tökéletesen rugalmasan ütközik egy előtte, azonos irányban, de lassabban, $1point0\text{ }\frac{\text{m}}{\text{s}}$ sebességgel haladó $0{,}30\text{ kg}$ tömegű kiskocsival. Számítsa ki mindkét kiskocsi sebességét az ütközés után!
 
-2. Két jégkorong súrlódásmentesen csúszik egymással szemben egy vízszintes jégpályán. Az „A” korong tömege $0,20 \text{ kg}$, sebessége $3,0 \text{ m/s}$. A „B” korong tömege $0,40 \text{ kg}$, sebessége $2,0 \text{ m/s}$ (az „A” koronggal ellentétes irányban). Mekkora lesz a korongok sebessége és haladási iránya a tökéletesen rugalmas, centrális ütközés után?
+2. Két jégkorong súrlódásmentesen csúszik egymással szemben egy vízszintes jégpályán. Az „A” korong tömege $0{,}20\text{ kg}$, sebessége $3point0\text{ }\frac{\text{m}}{\text{s}}$. A „B” korong tömege $0{,}40\text{ kg}$, sebessége $2point0\text{ }\frac{\text{m}}{\text{s}}$ (az „A” koronggal ellentétes irányban). Mekkora lesz a korongok sebessége és haladási iránya a tökéletesen rugalmas, centrális ütközés után?
 
-3. Egy proton ($m$) $v_0$ sebességgel frontálisan, rugalmasan ütközik egy nyugalomban lévő héliumatommaggal (alfa-részecske, tömege $4m$).
-a) Mekkora sebességgel halad tovább a proton és a héliummag az ütközés után $v_0$ függvényében?
-b) A proton eredeti mozgási energiájának hányad részét adta át a héliummagnak?
+3. Egy proton ($m$) $v_0$ sebességgel frontálisan, rugalmasan ütközik egy nyugalomban lévő héliumatommaggal (alfa-részecske, tömege $4 \cdot m$).
+   * **a)** Mekkora sebességgel halad tovább a proton és a héliummag az ütközés után a $v_0$ függvényében?
+   * **b)** A proton eredeti mozgási energiájának hányad részét adta át a héliummagnak?

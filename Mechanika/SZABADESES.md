@@ -1,6 +1,6 @@
 # A szabadesés
 
-## Kísérlet
+## Kísérletek
 
 [A szabadesés kísérlet a legnagyobb vákuumkamrában](https://www.youtube.com/watch?v=E43-CfukEgs)
 
@@ -10,102 +10,106 @@
 
 ## Szimuláció
 
-[Szabadesés](https://alexerdei73.github.io/physics-engine/project/#0dc5f5ff-96d5-4814-a91d-ee64042e037b)
+[Szabadesés interaktív szimulátor](https://alexerdei73.github.io/physics-engine/project/#0dc5f5ff-96d5-4814-a91d-ee64042e037b)
 
-Vizsgáljuk meg a szabadon eső test sebesség-idő és út-idő grafikonjait a szimuláció alapján!
-
+Vizsgáljuk meg a szabadon eső test sebesség-idő és út-idő grafikonjait a szimuláció futtatása alapján!
 
 ## A szabadesés és feltételei
 
-Galileo Galilei megfigyelései szerint a különböző tömegű testek, anyagi minőségtől függetlenül azonos magasságból elengedve azonos idő alatt érnek földet, feltéve hogy a mozgás során a légellenállás elhanyagolható, tehát a testek szabadon esnek, külső hatások nélkül. 
+Galileo Galilei megfigyelései szerint a különböző tömegű testek – anyagi minőségüktől függetlenül –, ha azonos magasságból engedjük el őket, azonos idő alatt érnek földet. Ez a törvényszerűség azonban csak akkor érvényesül maradéktalanul, ha a mozgás során a légellenállás elhanyagolható, vagyis a testek minden más külső hatástól mentesen, tisztán szabadon esnek.
 
-Galilei azt is megállapította, hogy a mozgás egyenletesen gyorsuló mozgás, melynek gyorsulása a nehézségi gyorsulás. Ennek értéke a Földön kb. $9.81 \frac {m} {s^2}$. A nehézségi gyorsulás kismértékben változik a földrajzi hellyel.
+Galilei azt is megállapította, hogy a szabadesés egyenletesen változó (gyorsuló) mozgás, melynek állandó gyorsulását **nehézségi gyorsulásnak** nevezzük. Ennek átlagos értéke a Föld felszínén körülbelül $9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$. A nehézségi gyorsulás értéke a Föld alakja és tömegeloszlása miatt kismértékben változik a földrajzi hely függvényében.
 
-> **Szabadon eső testek a Föld felszíne közelében egyenletesen gyorsuló mozgást végeznek, melynek gyorsulása a nehézségi gyorsulás. A nehézségi gyorsulás jele g, értéke $9.81 \frac{m}{s^2}$, mely kismértékben függ a földrajzi helytől. A nehézségi gyorsulás minden testre egyforma értékű egy adott helyen.** 
+> **A szabadon eső testek a Föld felszíne közelében egyenletesen gyorsuló mozgást végeznek, melynek gyorsulása a nehézségi gyorsulás. A nehézségi gyorsulás jele: $g$, átlagos értéke $9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$, amely kismértékben függ a földrajzi helytől. Egy adott helyen a nehézségi gyorsulás minden testre nézve pontosan ugyanakkora.**
 
-Érvényes a négyzetes úttörvény a nulla kezdősebességű esésre:
+A nulla kezdősebességű esésre teljes mértékben érvényes a négyzetes úttörvény:
 
 $$
-h = \frac {g} {2} \times t^2
+h = \frac {g} {2} \cdot t^2
 $$
 
-Itt h az elengedés magassága, t az esés ideje és g a nehézségi gyorsulás.
+Itt $h$ az elengedés magassága (a megtett függőleges út), $t$ az esés időtartama, $g$ pedig a nehézségi gyorsulás.
 
 ### Példák
 
-1. Egy $5.00 \text{ m}$ magasból elejtett test mennyi idő alatt ér talajt, ha szabadon esik? Mekkora sebességgel csapódik be? 
+1. Egy $5{,}00\text{ m}$ magasságból kiejtett test mennyi idő alatt ér talajt, ha szabadon esik? Mekkora sebességgel csapódik be?
+
+Írjuk fel a négyzetes úttörvényt, és jelöljük az ismeretlen időt $x$-szel:
 
 $$
-h = \frac {g} {2} \times t^2
-$$
-
-$$
-5.00 = \frac {9.81} {2} \times x^2
-$$
-
-$$
-5.00 = 4.905x^2
+h = \frac {g} {2} \cdot t^2
 $$
 
 $$
-x^2 = 1.019
+5{,}00 = \frac {9{,}81} {2} \cdot x^2
 $$
 
 $$
-x = \pm 1.010
-$$
-
-A test $1.01 \text{ s}$ alatt zuhan le. 
-
-$$
-a = g = \frac {v - v_0} {t}
+5{,}00 = 4{,}905 \cdot x^2
 $$
 
 $$
-9.81 = \frac {x - 0} {1.010}
+x^2 \approx 1{,}019
 $$
 
 $$
-x = 9.90
+x = \pm 1{,}010
 $$
 
-A talajba csapódás sebessége $9.90 \frac {m} {s}$.
+A negatív időértéket mint fizikailag értelmezhetetlen megoldást elvetjük, így a test $1{,}01\text{ s}$ alatt zuhan le.
 
-2. Egy szabadon eső test $30.0 \frac {m} {s}$ sebességgel csapódik a talajba. Mennyi ideig zuhant a test és mekkora magasságból engedték el?
+A becsapódási sebesség kiszámítása a gyorsulás alapdefiníciójából történik:
 
 $$
 a = g = \frac {v - v_0} {t}
 $$
 
 $$
-9.81 = \frac {30.0 - 0} {x}
+9{,}81 = \frac {v - 0} {1{,}0096}
 $$
 
 $$
-9.81x = 30.0
+v \approx 9{,}90
+$$
+
+A talajba csapódás pillanatnyi sebessége tehát $9{,}90\text{ }\frac {\text{m}} {\text{s}}$.
+
+2. Egy szabadon eső test $30{,}0\text{ }\frac {\text{m}} {\text{s}}$ sebességgel csapódik a talajba. Mennyi ideig zuhant a test, és mekkora magasságból engedték el?
+
+Határozzuk meg először a zuhanás időtartamát, ahol az ismeretlent $x$ jelöli:
+
+$$
+a = g = \frac {v - v_0} {t}
 $$
 
 $$
-x = 3.058
+9{,}81 = \frac {30{,}0 - 0} {x}
 $$
 
-Az idő $3.06 \text{ s}$.
-
 $$
-h = \frac {g} {2} \times t^2 = \frac {9.81} {2} \times 3.058^2 = 45.9 \text{ m}
+9{,}81 \cdot x = 30{,}0
 $$
 
-A magasság tehát $45.9 \text{ m}$.
+$$
+x \approx 3{,}058
+$$
 
-### Feladatok
+A zuhanás időtartama három értékes jegyre kerekítve $3{,}06\text{ s}$.
 
-1. Egy $80.0 \text{ m}$ magasságból elejtett test mennyi idő alatt ér talajt, és mekkora sebességgel csapódik be?
+Ezt felhasználva a kezdőmagasság már közvetlenül számítható:
 
-2. Egy szabadon eső test $20.0 \frac {m} {s}$ sebességgel érkezik a talajra. Mennyi ideig zuhant, és milyen magasságból dobták le?
+$$
+h = \frac {g} {2} \cdot t^2 = \frac {9{,}81} {2} \cdot 3{,}058^2 \approx 45{,}9\text{ m}
+$$
 
-3. Egy $150.0 \text{ m}$ magas toronyból esik le egy tárgy. Mennyi idő alatt érkezik meg a földre, és mekkora a végsebesség?
+A testet tehát $45{,}9\text{ m}$ magasságból engedték el.
 
-4. Egy test becsapódási sebessége $60.0 \frac {m} {s}$. Mennyi ideig zuhant, és mekkora magasságból?
+## Feladatok
 
-5. Egy leejtett test az esés 3. másodpercének végén éri el a talajt. Mennyit esett a földet érésig, és mekkora volt a sebessége az 1. másodperc végén?
+1. Egy $80{,}0\text{ m}$ magasságból szabadon ejtett test mennyi idő alatt ér talajt, és mekkora sebességgel csapódik be a földbe?
+2. Egy szabadon eső tárgy $20{,}0\text{ }\frac {\text{m}} {\text{s}}$ sebességgel érkezik meg a talajra. Mennyi ideig zuhant, és milyen magasról ejtették le?
+3. Egy $150{,}0\text{ m}$ magas torony tetejéről leejtenek egy kavicsot. Mennyi idő alatt érkezik meg a földre, és mekkora lesz a végsebessége közvetlenül a becsapódás előtt?
+4. Egy szabadon eső test becsapódási sebessége $60{,}0\text{ }\frac {\text{m}} {\text{s}}$. Mennyi ideig tartott a zuhanása, és mekkora magasságból indult el?
+5. Egy kiejtett test az esésének pontosan a 3. másodperce végén éri el a talajt. Mekkora utat tett meg a földet érésig, és mekkora volt a pillanatnyi sebessége az 1. másodperc végén?
+
 

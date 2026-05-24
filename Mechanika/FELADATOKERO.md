@@ -1,188 +1,209 @@
 # Feladatok az erő témakörében
 
 ## Példák a második törvényre
-1. Egy $1300kg$ tömegű autó $8.00s$ alatt gyorsul fel $100.0 \frac {km} {h}$ sebességre. Mekkora az elért sebesség $\frac {m} {s}$-ban? Mekkora a gyorsulás? Milyen hosszú úton gyorsít fel a kocsi? Mekkora a gyorsítóerő $N$-ban?
+
+1. Egy $1300\text{ kg}$ tömegű autó $8{,}00\text{ s}$ alatt gyorsul fel $100{,}0\text{ }\frac{\text{km}}{\text{h}}$ sebességre. Mekkora az elért sebesség $\text{m/s}$-ban? Mekkora a gyorsulás? Milyen hosszú úton gyorsít fel a kocsi? Mekkora a gyorsítóerő $\text{N}$-ban?
 
 $$
-v = \frac {s} {t} = \frac {100km} {1h} = \frac {100 000m} {3600s} = 27.7 \frac {m} {s}
+v = \frac {s} {t} = \frac {100\text{ km}} {1\text{ h}} = \frac {100\ 000\text{ m}} {3600\text{ s}} \approx 27{,}78\text{ }\frac {\text{m}} {\text{s}}
+$$
+
+Itt az elért sebesség átváltásához az egyenletes mozgás alapgondolatát használtuk, hiszen feltételezhetjük, hogy az autó a gyorsítási szakasz után ezzel az állandó sebességgel haladna tovább. Ez azt jelenti, hogy $100\text{ km}$ utat tenne meg $1\text{ h}$ alatt. Tudjuk, hogy $1\text{ óra} = 3600\text{ másodperc}$, mivel minden perc $60\text{ s}$.
+
+$$
+a = \frac {\Delta v} {t} = \frac {v - v_0} {t} = \frac {27{,}78 - 0} {8{,}00} \approx 3{,}473\text{ }\frac {\text{m}} {\text{s}^2}
 $$
 
 $$
-a = \frac {\Delta v} {t} = \frac {v - v_0} {t} = \frac {27.7 - 0} {8.00} = 3.463 \frac {m} {s^2}
+s = \frac {a} {2} \cdot t^2 = \frac {3{,}473} {2} \cdot 8{,}00^2 \approx 111{,}1\text{ m}
 $$
 
 $$
-s = \frac {a} {2} \times t^2 = \frac {3.463} {2} \times 8.00^2 = 110.8m
+F_e = m \cdot a = 1300 \cdot 3{,}473 \approx 4515\text{ N} \approx 4{,}52\text{ kN}
 $$
 
-$$
-F_e = ma = 1300 \times 3.463 = 4502N = 4.50kN
-$$
-
-2. Egy $1500kg$ tömegű gépkocsi egyenletesen halad $50 \frac {km} {h}$ sebességgel. A vezető elé hirtelen kilép egy gyalogos, aki hirtelen fékez. A vezető reakcióideje $0.300s$. A gépkocsit lassító erő $8.83kN$. Számítsd ki a lassulást $\frac {m} {s^2}$-ban! Mennyi a fékezési idő és mennyi idő telik el a gyalogos megpillantásától a teljes megállásig? Mennyi utat tesz meg az autó a reakcióidő alatt és a fékezés alatt? Mennyi a teljes út a megállásig? 
+2. Egy $1500\text{ kg}$ tömegű gépkocsi egyenletesen halad $50\text{ }\frac{\text{km}}{\text{h}}$ sebességgel. A vezető elé hirtelen kilép egy gyalogos, ezért hirtelen fékez. A vezető reakcióideje $0{,}300\text{ s}$. A gépkocsit lassító erő $8{,}83\text{ kN}$. Számítsd ki a lassulást $\frac{\text{m}}{\text{s}^2}$-ban! Mennyi a fékezési idő, és mennyi idő telik el a gyalogos megpillantásától a teljes megállásig? Mennyi utat tesz meg az autó a reakcióidő alatt és a fékezés alatt? Mennyi a teljes fékút a megállásig?
 
 $$
-v_0 = \frac {s} {t} = \frac {50km} {1h} = \frac {50 000m} {3600s} = 13.89 \frac {m} {s}
+v_0 = \frac {s} {t} = \frac {50\text{ km}} {1\text{ h}} = \frac {50\ 000\text{ m}} {3600\text{ s}} \approx 13{,}89\text{ }\frac {\text{m}} {\text{s}}
 $$
 
-Az elején az autó lassítás nélkül halad.
+A reakcióidő alatt az autó még lassítás nélkül halad:
 
 $$
 v_0 = \frac {s_1} {t_1} 
 $$
 
 $$
-13.89 = \frac {s_1} {0.3} 
+13{,}89 = \frac {s_1} {0{,}3} 
 $$
 
 $$
-s_1 = 13.89 \times 0.3 = 4.167m
+s_1 = 13{,}89 \cdot 0{,}3 \approx 4{,}167\text{ m}
+$$
+
+A fékezőerő nagyságából a gyorsulás abszolút értéke:
+
+$$
+F_e = m \cdot |a|
 $$
 
 $$
-F_e = ma
+8830 = 1500 \cdot |a|
 $$
 
 $$
-8830 = 1500 \times |a|
+|a| = \frac {8830} {1500} \approx 5{,}887\text{ }\frac {\text{m}} {\text{s}^2}
 $$
 
-$$
-|a| = \frac {8830} {1500} =  5.887 \frac {m} {s^2}
-$$
-
-Tehát a gyorsulás $-5.887 \frac {m} {s^2}$, hisz fékezésről van szó.
+Mivel fékezésről van szó, a gyorsulás értéke a mozgással ellentétes, azaz $-5{,}887\text{ }\frac{\text{m}}{\text{s}^2}$.
 
 $$
 a = \frac {\Delta v} {t} = \frac {v - v_0} {t}
 $$
 
 $$
--5.887 = \frac {0 - 13.89} {t}
+-5{,}887 = \frac {0 - 13{,}89} {t}
 $$
 
 $$
-t = \frac {-13.89} {-5.887} = 2.359s
+t = \frac {-13{,}89} {-5{,}887} \approx 2{,}359\text{ s}
 $$
 
-$$
-s_2 = v_0 \times t + \frac {a} {2} \times t^2 = 13.89 \times 2.359 + \frac {-5.887} {2} \times 2.359^2 = 16.39m
-$$
-
-A teljes idő a megállásig:
+A tiszta fékezési fékút a négyzetes úttörvény alapján:
 
 $$
-t_1 + t = 0.3s + 2.359s = 2.66s
+s_2 = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 13{,}89 \cdot 2{,}359 + \frac {-5{,}887} {2} \cdot 2{,}359^2 \approx 16{,}39\text{ m}
 $$
 
-A teljes út:
+A teljes időtartam a megpillantástól a megállásig:
 
 $$
-s_1 + s_2 = 4.167m + 16.39m = 20.6m
+t_{\text{teljes}} = t_1 + t = 0{,}3\text{ s} + 2{,}359\text{ s} \approx 2{,}66\text{ s}
 $$
 
-Tehát ha a gyalogos 20.6m-en belül van a megpillantás pillanatában, nincs esély a megállásra.
+A teljes megtett út (totális fékút):
 
-***
+$$
+s_{\text{teljes}} = s_1 + s_2 = 4{,}167\text{ m} + 16{,}39\text{ m} \approx 20{,}6\text{ m}
+$$
 
-### Feladatok
+Tehát ha a gyalogos $20{,}6\text{ m}$-en belül van a megpillantás pillanatában, akkor az autónak fizikai esélye sincs a gázolás elkerülésére.
+
+---
+
+### Gyakorló feladatok
 
 **1. Gyorsulás és erő kiszámítása**
-Egy $2000kg$ tömegű teherautó álló helyzetből indulva $12s$ alatt éri el az $54 \frac {km} {h}$ sebességet. Számítsd ki a jármű gyorsulását! Mekkora gyorsítóerő hat a teherautóra a gyorsítás közben (súrlódástól tekintsünk el)? Mekkora utat tesz meg ez alatt az idő alatt?
+Egy $2000\text{ kg}$ tömegű teherautó álló helyzetből indulva $12\text{ s}$ alatt éri el az $54\text{ }\frac{\text{km}}{\text{h}}$ sebességet. Számítsd ki a jármű egyenletes gyorsulását! Mekkora gyorsítóerő hat a teherautóra a gyorsítás közben, ha a súrlódástól eltekintünk? Mekkora utat tesz meg ez alatt az idő alatt?
 
 **2. Fékezés vészhelyzetben**
-Egy $900kg$ tömegű sportautó versenypályán halad $144 \frac {km} {h}$ sebességgel. A pilóta hirtelen fékezni kényszerül, a fékek által kifejtett lassítóerő $4500N$. Mennyi idő alatt áll meg az autó? Mekkora a fékút hossza? (A reakcióidőt ebben az esetben hanyagoljuk el).
+Egy $900\text{ kg}$ tömegű sportautó a versenypályán $144\text{ }\frac{\text{km}}{\text{h}}$ sebességgel halad. A pilóta hirtelen fékezni kényszerül, a fékek által kifejtett állandó lassítóerő $4500\text{ N}$. Mennyi idő alatt áll meg az autó, és mekkora a tiszta fékút hossza? (A vezető reakcióidejét ebben az esetben hanyagoljuk el).
 
 **3. Mozgás állandó erő hatására**
-Egy $50kg$ tömegű ládát vízszintes padlón tolunk egyenletesen gyorsulva. A ládára ható vízszintes tolóerő $200N$, a padló és a láda között fellépő súrlódási erő $50N$. Mekkora a ládára ható erők eredője? Mekkora gyorsulással mozog a láda? Hány métert tesz meg 4 másodperc alatt, ha álló helyzetből indult?
+Egy $50\text{ kg}$ tömegű ládát vízszintes padlón tolunk egyenletesen gyorsulva. A ládára ható vízszintes tolóerő $200\text{ N}$, a padló és a láda között fellépő súrlódási erő pedig $50\text{ N}$. Mekkora a ládára ható erők eredője, és mekkora gyorsulással mozog a láda? Hány métert tesz meg $4\text{ másodperc}$ alatt, ha álló helyzetből indult?
+
+---
 
 ## Példák a súlyerőre
-1. Egy $60.0kg$ tömegű tornász a dobbantóra ráugorva $2.00 \frac {m} {s}$ függőleges lefelé irányú sebességgel ugrik rá és $0.300s$ múlva függőleges felfelé irányú $4.00 \frac {m} {s}$ sebességgel pattan fel. Mekkora a tornász függőleges gyorsulás komponense? Mekkora a tornászt érő gravitációs erő? Mekkora a tornász súlya nyugalomban? Mekkora a tornász súlya a dobbantás alatt? Mekkora a tornász súlya a levegőben? Számítsuk ki a tornász súlypontja milyen magasra emelkedik az ugrás során? A nehézségi gyorsulás $9.81 \frac {m} {s^2}$.
+
+1. Egy $60{,}0\text{ kg}$ tömegű tornász a dobbantóra ráugorva $2{,}00\text{ }\frac{\text{m}}{\text{s}}$ függőlegesen lefelé irányú sebességgel érkezik meg, majd $0{,}300\text{ s}$ múlva függőlegesen felfelé irányú $4{,}00\text{ }\frac{\text{m}}{\text{s}}$ sebességgel pattan fel. Mekkora a tornász függőleges gyorsulása? Mekkora a tornászra ható nehézségi erő, és mekkora a súlya nyugalomban? Mekkora a tornász súlya a dobbantás ideje alatt, valamint a levegőben? Számítsuk ki, hogy a tornász súlypontja milyen magasra emelkedik az elrugaszkodás után! A nehézségi gyorsulás értéke $9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$.
 
 $$
-G = mg = 60 \times 9.81 = 588.6N
+G = m \cdot g = 60 \cdot 9{,}81 = 588{,}6\text{ N}
 $$
 
-A tornász súlya nyugalomban tehát $588.6N$.
+A tornászra ható nehézségi erő és a súlya nyugalomban egyaránt $588{,}6\text{ N}$.
 
-A dobbantás alatt a gyorsulás:
-
-$$
-a = \frac {v - v_0} {t} = \frac {4.00 - (-2.00)} {0.3} = 20.00 \frac {m} {s^2}
-$$
-
-A tornászt a dobbantó gyorsítja felfelé és a gravitáció lefelé húzza. Az eredő erő könnyen számítható:
+Vegyünk egy felfelé mutató koordinátatengelyt! Ekkor a kezdősebesség lefelé mutat, tehát negatív ($-2{,}00\text{ }\frac{\text{m}}{\text{s}}$), a végsebesség pedig pozitív ($4{,}00\text{ }\frac{\text{m}}{\text{s}}$). A dobbantás alatti egyenletes gyorsulás:
 
 $$
-F_e = ma = 60.0 \times 20.0 = 1200N
+a = \frac {v - v_0} {t} = \frac {4{,}00 - (-2{,}00)} {0{,}3} = \frac{6{,}00}{0{,}3} = 20{,}00\text{ }\frac{\text{m}}{\text{s}^2}
 $$
 
-$$
-F_e = F_k - G
-$$
+A tornászt a dobbantó rugalmas $K$ kényszerereje gyorsítja felfelé, miközben a gravitáció lefelé húzza. Az eredő erő nagysága a dinamika alaptörvényéből:
 
 $$
-1200 = F_k - 588.6
+F_e = m \cdot a = 60{,}0 \cdot 20{,}0 = 1200\text{ N}
+$$
+
+Mivel a gyorsulás felfelé mutat, a $K$ kényszererő a nagyobb:
+
+$$
+F_e = K - G
 $$
 
 $$
-F_k = 1200 + 588.6 = 1789N
+1200 = K - 588{,}6
 $$
 
-Tehát a tornász súlya a dobbantón 1790N, hisz erőteljesen gyorsul felfelé rövid ideig. A levegőben a súlytalanság állapotában van, hisz csak a nehézségi erő hat rá. A súlypont emelkedési magassága a függőleges hajítás alapján számítható ki.
+$$
+K = 1200 + 588{,}6 = 1788{,}6\text{ N}
+$$
+
+Mivel a test súlya megegyezik a kényszererővel ($F_s = K$), a tornász súlya a dobbantás alatt kerekítve $1790\text{ N}$-ra növekszik a hirtelen felfelé gyorsulás miatt. A levegőben a test a súlytalanság állapotában van ($F_s = 0\text{ N}$), hiszen ott már csak a nehézségi erő hat rá. A súlypont emelkedési magassága a függőleges hajítás egyenleteivel számítható ki:
 
 $$
 a = \frac {v - v_0} {t}  
 $$
 
 $$
--9.81 = \frac {0 - 4.00} {x}
+-9{,}81 = \frac {0 - 4{,}00} {t}
 $$
 
 $$
-x = \frac {-4.00} {-9.81} = 0.4077s
+t = \frac {-4{,}00} {-9{,}81} \approx 0{,}4077\text{ s}
 $$
 
 $$
-h = s = v_0 \times t + \frac {a} {2} \times t^2 = 4.00 \times 0.4077 + \frac {-9.81} {2} \times 0.4077^2 = 0.8155m
+h = s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 4{,}00 \cdot 0{,}4077 + \frac {-9{,}81} {2} \cdot 0{,}4077^2 \approx 0{,}8155\text{ m}
 $$
 
-Itt nyilván a nehézségi gyorsulás fékezi a tornászt, tehát a gyorsulást negatívnak vettük. Az is nyilvánvaló, hogy addig tud emelkedni, amíg a függőleges sebesség komponens nem 0, tehát $v = 0$ az emelkedés végsebessége.
+A levegőben a nehézségi gyorsulás fékezi a tornászt, ezért vettük az $a$ értékét negatívnak. A test nyilvánvalóan addig emelkedik, amíg a sebessége nullává nem csökken ($v = 0\text{ }\frac{\text{m}}{\text{s}}$). Az emelkedés magassága tehát kerekítve $0{,}816\text{ m}$.
 
-2. Egy 100g tömegű test függőlegesen lefelé gyorsul $2 \frac {m} {s^2}$ gyorsulással. A nehézségi gyorsulás $9.81 \frac {m} {s^2}$ Mekkora a testre ható nehézségi erő? Mekkora az eredő erő? Mekkora erővel húzzuk a testet függőlegesen felfelé?
+2. Egy $100\text{ g}$ tömegű test függőlegesen lefelé gyorsul $2\text{ }\frac{\text{m}}{\text{s}^2}$ gyorsulással. A nehézségi gyorsulás $9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$. Mekkora a testre ható nehézségi erő, mekkora az eredő erő, és mekkora $K$ kényszererővel tartjuk a testet függőlegesen felfelé?
 
-Válaszainkat ellenőrizhetjük az alábbi szimuláció alapján:
+A kapott válaszokat ellenőrizhetjük az alábbi szimuláció futtatásával:
 
-[Függőlegesen lefelé gyorsuló test súlya](https://alexerdei73.github.io/physics-engine/project/#ab26cafb-9a10-491b-a55b-97408d43f06e)
+[Függőlegesen lefelé gyorsuló test súlya szimulátor](https://alexerdei73.github.io/physics-engine/project/#ab26cafb-9a10-491b-a55b-97408d43f06e)
 
-$$
-G = mg = 0.1 \times 9.81 = 0.981N
-$$
-
-$100g$ az $0.1kg$, ami közel $1N$ erőt jelent. Az eredő erő lefelé mutat:
+A nehézségi erő kiszámítása (átváltva a tömeget kilogrammra: $100\text{ g} = 0{,}1\text{ kg}$):
 
 $$
-F_e = ma = 0.1 \times 2 = 0.2N
+G = m \cdot g = 0{,}1 \cdot 9{,}81 = 0{,}981\text{ N}
+$$
+
+A Földhöz rögzített inerciarendszerben az eredő erő lefelé mutat, nagysága:
+
+$$
+F_e = m \cdot a = 0{,}1 \cdot 2 = 0{,}2\text{ N}
+$$
+
+Mivel a mozgás és a gyorsulás lefelé irányul, a nehézségi erő nagyobb, mint a felfelé tartó $K$ kényszererő ($G > K$):
+
+$$
+F_e = G - K
 $$
 
 $$
-F_e = G - F_k
+0{,}2\text{ N} = 0{,}981\text{ N} - K
 $$
 
 $$
-0.2N = 0.981N - F_k
+K = 0{,}981 - 0{,}2 = 0{,}781\text{ N}
 $$
 
-$$
-F_k = 0.781N
-$$
+Mivel a test súlya megegyezik a kényszererővel ($F_s = K$), a lefelé gyorsuló test súlya $0{,}781\text{ N}$-ra csökken.
 
-Itt nyilván tudtuk, hogy $F_k < G$, hisz a test lefelé gyorsul.
+---
 
-### Feladatok
+### Gyakorló feladatok
 
-1. Egy $75kg$ tömegű ember egy liftben áll, amely éppen elindul felfelé. A gyorsítási szakaszban a lift gyorsulása $1.5 \frac {m} {s^2}$. Mekkora tartóerővel nyomja a lift padlója az embert ebben a szakaszban? Hogyan változik ez az erő, ha a lift később állandó sebességgel halad tovább? ($g=9.81 \frac {m} {s^2}$)
+**1. Ember a liftben**
+Egy $75\text{ kg}$ tömegű ember egy liftben áll, amely éppen elindul függőlegesen felfelé. A gyorsítási szakaszban a lift gyorsulása $1{,}5\text{ }\frac{\text{m}}{\text{s}^2}$. Mekkora $K$ kényszererővel nyomja a lift padlója az embert (azaz mekkora az ember súlya) ebben a szakaszban? Hogyan változik ez a súlyerő, ha a lift később állandó sebességgel halad tovább függőlegesen? ($g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$)
 
-2. Egy építkezésen egy daru egy $400kg$ tömegű betonelemet emel fel függőlegesen. A drótkötélben ébredő feszítőerő $4500N$. Mekkora gyorsulással indul el a betonelem felfelé? Mekkora utat tesz meg az első 3 másodpercben? ($g=9.81 \frac {m} {s^2}$)
+**2. Betonelem emelése daruval**
+Egy építkezésen a daru egy $400\text{ kg}$ tömegű betonelemet emel fel függőlegesen. A drótkötélben ébredő feszítő kényszererő nagysága $4500\text{ N}$. Mekkora gyorsulással indul el a betonelem felfelé a Földhöz képest? Mekkora magasságba emelkedik fel az első $3\text{ másodperc}$ alatt, ha álló helyzetből indult? ($g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$)
 
-3. Egy $0.5kg$ tömegű rakétamodell hajtóműve $10N$ tolóerőt fejt ki függőlegesen felfelé. Mekkora a rakéta gyorsulása az indítás pillanatában? Mekkora a rakétára ható erők eredője? (A légellenállást hanyagoljuk el, $g=9.81 \frac {m} {s^2}$).
+**3. Rakétamodell indítása**
+Egy $0{,}5\text{ kg}$ tömegű kis rakétamodell szilárd hajtóanyagú motorja $10\text{ N}$ tolóerőt fejt ki függőlegesen felfelé az indítóállványon. Mekkora a rakéta gyorsulása az indítás pillanatában? Mekkora a rakétára ható erők eredője? (A mozgást gátló légellenállást ebben a kezdeti fázisban hanyagoljuk el, $g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$).

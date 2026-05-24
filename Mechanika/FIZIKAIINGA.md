@@ -16,7 +16,7 @@ $$
 $$
 
 
-*(Itt $\Theta$ a forgástengelyre vonatkozó tehetetlenségi nyomaték, $\beta$ pedig a szöggyorsulás.)*
+*(Itt* $\Theta$ *a forgástengelyre vonatkozó tehetetlenségi nyomaték,* $\beta$ *pedig a szöggyorsulás.)*
 
 Csupán a nehézségi erőnek – melyet a tömegközéppontba vagy súlypontba képzelhetünk egyesítve – van nyomatéka, mivel a felfüggesztésnél fellépő erő hatásvonala átmegy a felfüggesztésen, tehát ennek az erőkarja nulla. Legyen a súlypont a felfüggesztéstől $s$ távolságra! Ekkor a nyomaték:
 

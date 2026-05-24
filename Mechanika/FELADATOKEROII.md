@@ -1,164 +1,168 @@
 # Feladatok az erő témakörében II
 
 ## Példák
-1. Egy fegyver csöve $70.0cm$ hosszú, a golyó tömege $20.0g$, a torkolati sebesség $600 \frac {m} {s}$. Mekkora a golyó gyorsulása a csőben? Mekkora erő gyorsítja a golyót? Mennyi idő alatt gyorsul fel a golyó a csőben?
 
-Ez a feladat nehéznek tűnhet, hisz se a gyorsulás, se az idő nem ismert. Két egyenletünk van azonban. Egyik a gyorsulás, a másik az út kiszámítására. 
+1. Egy fegyver csöve $70{,}0\text{ cm}$ hosszú, a golyó tömege $20{,}0\text{ g}$, a torkolati sebesség pedig $600\text{ }\frac{\text{m}}{\text{s}}$. Mekkora a golyó gyorsulása a csőben? Mekkora erő gyorsítja a golyót? Mennyi idő alatt gyorsul fel a golyó a csőben? A gyorsulást tekintsük egyenletesnek!
 
-$$
-a = \frac {v - v_0} {t}
-$$
+Ez a feladat elsőre nehéznek tűnhet, hiszen sem a gyorsulás, sem az idő nem ismert közvetlenül. Két egyenletünk van azonban: az egyik a gyorsulás, a másik a megtett út kiszámítására szolgál ($v_0 = 0$):
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2
-$$
-
-Legyen a gyorsulás y, az idő pedig x, és helyettesítsük be az adatokat!
-
-$$
-y = \frac {600} {x}
+a = \frac {v} {t}
 $$
 
 $$
-0.7 = \frac {y} {2} \times x^2
+s = \frac {a} {2} \cdot t^2
 $$
 
-Egyenleteink átrendezhetők:
+Váltsuk át az adatokat alapvető SI-mértékegységekbe ($s = 0{,}7\text{ m}$ és $m = 0{,}02\text{ kg}$), majd helyettesítsük be őket a képletekbe:
 
 $$
-xy = 600
-$$
-
-$$
-1.4 = (xy)x  
-$$
-
-Behelyettesítve $xy$-t a második egyenletbe az első egyenletből:
-
-$$
-1.4 = 600x
+a = \frac {600} {t}
 $$
 
 $$
-x = \frac {1.4} {600} = 0.002333s = 2.333ms
+0{,}7 = \frac {a} {2} \cdot t^2
+$$
+
+Az egyenletrendszer algebrailag egyszerűen átrendezhető:
+
+$$
+a \cdot t = 600
 $$
 
 $$
-y = \frac {600} {0.002333} = 2572 \frac {m} {s^2}
+1{,}4 = (a \cdot t) \cdot t
+$$
+
+Behelyettesítve az első egyenletből kapott $a \cdot t = 600$ értéket a második összefüggésbe:
+
+$$
+1{,}4 = 600 \cdot t
 $$
 
 $$
-F_e = ma = 0.0200 \times 2572 = 51.44N
+t = \frac {1{,}4} {600} \approx 0{,}002333\text{ s} = 2{,}333\text{ ms}
 $$
 
-Tehát a csőben a golyót $51.4N$ erő gyorsítja fel $2.33ms$ idő alatt.
-
-2. A golyó egy fahasábba behatol $600 \frac {m} {s}$ sebességgel és $30.0cm$ távolságon fékeződik le. A golyó tömege $20g$. Mekkora a lassulás, a fékeződés ideje és a fékező erő a fahasábban?
+Most a kapott időértékkel kiszámíthatjuk a golyó hatalmas gyorsulását:
 
 $$
-a = \frac {v - v_0} {t}
+a = \frac {600} {0{,}002333} \approx 257\ 143\text{ }\frac {\text{m}} {\text{s}^2}
 $$
 
-$$
-s = v_0 \times t + \frac {a} {2} \times t^2
-$$
+Végül a dinamika alaptörvénye alapján a gyorsítóerő:
 
 $$
-y = \frac {-600} {x}
+F_e = m \cdot a = 0{,}020 \cdot 257\ 143 \approx 5143\text{ N} \approx 5{,}14\text{ kN}
 $$
 
-$$
-0.3 = 600x + \frac {y} {2} \times x^2
-$$
+A fegyver csövében a golyót tehát $5{,}14\text{ kN}$ átlagos erő gyorsítja fel mindössze $2{,}33\text{ ms}$ idő alatt.
+
+2. A golyó egy fahasábra érkezve $600\text{ }\frac{\text{m}}{\text{s}}$ sebességgel fúródik be, és $30{,}0\text{ cm}$ távolságon teljesen lefékeződik. A golyó tömege továbbra is $20\text{ g}$. Mekkora a lassulás, a fékeződés időtartama és a fahasáb által kifejtett fékezőerő?
+
+A mozgásegyenletek ($v = 0$ és $s = 0{,}3\text{ m}$ behelyettesítésével):
 
 $$
-xy = -600
+a = \frac {v - v_0} {t} \implies a = \frac {-600} {t}
 $$
 
 $$
-0.6 = 1200x + (xy)x
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 \implies 0{,}3 = 600 \cdot t + \frac {a} {2} \cdot t^2
+$$
+
+Rendezzük az egyenletrendszert:
+
+$$
+a \cdot t = -600
 $$
 
 $$
-0.6 = 1200x - 600x
+0{,}6 = 1200 \cdot t + (a \cdot t) \cdot t
+$$
+
+Helyettesítsük be az $a \cdot t = -600$ értéket a második egyenletbe:
+
+$$
+0{,}6 = 1200 \cdot t - 600 \cdot t
 $$
 
 $$
-0.6 = 600x
+0{,}6 = 600 \cdot t
 $$
 
 $$
-x = 0.001
+t = \frac{0{,}6}{600} = 0{,}001\text{ s} = 1{,}00\text{ ms}
 $$
 
-Tehát a golyó 1.00ms alatt fékeződik le.
+A golyó pontosan $1\text{ ms}$ alatt fékeződik le a fában. Számítsuk ki a lassulást:
 
 $$
-y = \frac {-600} {0.001} = -600000 \frac {m} {s^2}
+a = \frac {-600} {0{,}001} = -600\ 000\text{ }\frac {\text{m}} {\text{s}^2}
 $$
 
-Tehát a lassulás nagysága $600000 \frac {m} {s^2}$.
+A negatív előjel jelzi, hogy a gyorsulásvektor a mozgással ellentétes irányú (lassulás). A fékezőerő nagysága:
 
 $$
-|F_e| = m|a| = 0.02 \times 600000 = 12000N = 12kN
+|F_e| = m \cdot |a| = 0{,}02 \cdot 600\ 000 = 12\ 000\text{ N} = 12{,}0\text{ kN}
 $$
 
-Tehát a fékező erő nagysága $12.0kN$.
+A fahasáb által kifejtett átlagos fékezőerő nagysága $12{,}0\text{ kN}$.
 
-3. Egy vadászrepülőgép 600m hosszú kifutópályán száll fel $280 \frac {km} {h}$ sebességgel. Ha a gép tömege $17000kg$, mekkora a tolóerő a felszállásnál?
+3. Egy vadászrepülőgép egy $600\text{ m}$ hosszú kifutópályán gyorsítva száll fel, az elemelkedési sebessége $280\text{ }\frac{\text{km}}{\text{h}}$. Ha a gép tömege $17\ 000\text{ kg}$, mekkora tolóerő szükséges a felszálláshoz? A mozgást tekintsük állandó gyorsulásúnak!
 
-$$
-a = \frac {v - v_0} {t}
-$$
+A feladatmegoldás legelején ne felejtsük el átváltani a sebességet SI-egységbe: $v = \frac{280}{3{,}6} \approx 77{,}78\text{ }\frac{\text{m}}{\text{s}}$.
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2
+a = \frac {77{,}78} {t}
 $$
 
 $$
-y = \frac {77.78} {x}
+600 = \frac {a} {2} \cdot t^2
+$$
+
+Átrendezve:
+
+$$
+a \cdot t = 77{,}78
 $$
 
 $$
-600 = \frac {y} {2} x^2
+1200 = (a \cdot t) \cdot t \implies 1200 = 77{,}78 \cdot t
 $$
 
 $$
-xy = 77.78
+t = \frac {1200} {77{,}78} \approx 15{,}43\text{ s}
 $$
 
-$$
-1200 = (xy)x
-$$
+A felszálláshoz szükséges egyenletes gyorsulás értéke:
 
 $$
-1200 = 77.78x
+a = \frac {77{,}78} {15{,}43} \approx 5{,}041\text{ }\frac {\text{m}} {\text{s}^2}
 $$
 
-$$
-x = 15.43s
-$$
+A dinamika alaptörvénye szerint a gyorsító eredő tolóerő:
 
 $$
-y = \frac {77.78} {15.43} = 5.041 \frac {m} {s^2}
+F_e = m \cdot a = 17\ 000 \cdot 5{,}041 \approx 85\ 697\text{ N} \approx 85{,}70\text{ kN}
 $$
 
-$$
-F_e = ma = 17000 \times 5.041 = 85690N = 85.69kN
-$$
+A hajtóművek által kifejtett hasznos tolóerő nagysága tehát $85{,}70\text{ kN}$.
 
-A tolóerő tehát 85.69kN. Itt nem szabad elfelejteni a sebességet átváltani a feladatmegoldás elején.
+---
 
-***
+### Gyakorló feladatok
 
-### Feladatok
+**1. Vonat vészfékezése**
+Egy $400\text{ tonna}$ tömegű szerelvény $108\text{ }\frac{\text{km}}{\text{h}}$ sebességgel halad a pályán. Vészfékezés során a fékek $200\text{ kN}$ állandó fékezőerőt fejtenek ki. Számítsd ki a vonat lassulását! Mennyi idő telik el a teljes megállásig, és mekkora a fékút hossza?
 
-1. Egy $400 tonna$ tömegű vonat $108 \frac {km} {h}$ sebességgel halad. Vészfékezés során a fékek $200kN$ állandó fékezőerőt fejtenek ki. Számítsd ki a vonat lassulását! Mennyi idő telik el a teljes megállásig, és mekkora a fékút hossza?
+**2. Focilabda elrúgása**
+Egy eredetileg álló, $450\text{ g}$ tömegű focilabdát a játékos úgy rúg el, hogy a lábfeje pontosan $0{,}05\text{ s}$ ideig érintkezik a labdával. A labda a rúgás után $30\text{ }\frac{\text{m}}{\text{s}}$ sebességgel repül el. Mekkora egyenletes gyorsulást szerzett a labda az érintkezés alatt, és mekkora volt a rúgás átlagos ereje?
 
-2. Egy álló, $450g$ tömegű focilabdát a játékos úgy rúg el, hogy a lába $0.05s$ ideig érintkezik a labdával. A labda $30 \frac {m} {s}$ sebességgel repül el. Mekkora gyorsulást szerzett a labda az érintkezés alatt? Mekkora volt a rúgás átlagos ereje?
+**3. Nyílvessző kilövése íjból**
+Egy íjász $70\text{ cm}$ hosszan feszíti meg az íj idegét. A kilőtt nyílvessző tömege $50\text{ g}$, és a kilövés pillanatában a torkolati sebessége $70\text{ }\frac{\text{m}}{\text{s}}$. Tételezzük fel, hogy a gyorsító erő állandó az íj teljes megfeszített hosszán! Mekkora gyorsulással indul el a nyílvessző, és mekkora átlagos erőt fejtett ki rá az íj?
 
-3. Egy íjász $70cm$ hosszan feszíti meg az íjat. A kilőtt nyílvessző tömege $50g$, és a kilövés pillanatában a sebessége $70 \frac {m} {s}$. Tételezzük fel, hogy a gyorsító erő állandó az íj teljes megfeszített hosszán. Mekkora gyorsulással indul a nyílvessző, és mekkora átlagos erőt fejtett ki az íj?
+**4. Repülőgép indítása katapulttal**
+Egy repülőgép-hordozó anyahajón a gőzkatapult egy $90\text{ méter}$ hosszú pályán gyorsítja fel a repülőgépet álló helyzetből $270\text{ }\frac{\text{km}}{\text{h}}$ sebességre. A vadászgép tömege $25\,000\text{ kg}$. Mennyi ideig tart a katapultálás, és mekkora a katapult által kifejtett átlagos tolóerő (a repülőgép saját hajtóművének tolóerejét most hanyagoljuk el)?
 
-4. Egy repülőgép-hordozó anyahajón a gőzkatapult $90 méter$ hosszú úton gyorsítja fel a repülőgépet álló helyzetből $270 \frac {km} {h}$ sebességre. A repülőgép tömege $25000kg$. Mennyi ideig tart a gyorsítás? Mekkora a katapult által kifejtett átlagos tolóerő (a hajtómű tolóerejét most ne vegyük figyelembe)?
-
-5. Egy $1200kg$ tömegű tesztautót $54 \frac {km} {h}$ sebességgel vezetnek neki egy falnak. Az autó eleje az ütközés során $0.6m$-t gyűrődik össze, amíg az utastér teljesen meg nem áll. Tekintsük a lassulást egyenletesnek a gyűrődés során. Mekkora lassulás éri az autót, és mekkora átlagos erő hat rá az ütközés alatt?
+**5. Autó töréstesztje**
+Egy $1200\text{ kg}$ tömegű tesztautót $54\text{ }\frac{\text{km}}{\text{h}}$ sebességgel vezetnek neki egy merev betonfalnak. Az autó eleje az ütközés során pontosan $0{,}6\text{ m}$-t gyűrődik össze, amíg az utastér teljesen meg nem áll. Tekintsük a lassulást egyenletesnek a deformáció alatt! Mekkora lassulás éri az autót az ütközés közben, és mekkora átlagos erő hat rá a gyűrődési zónában?

@@ -2,123 +2,159 @@
 
 ## A gyorsítási munka
 
-Vizsgáljuk meg, mekkora a gyorsítási munka, ha egy $m$ tömegű testet $v_0$ kezdősebességről $v$ sebességre gyorsítunk fel. Legyen a gyorsítás ideje $t$, a gyorsulás állandó, és jelöljük $a$-val.
+Vizsgáljuk meg, mekkora a gyorsítási munka, ha egy $m$ tömegű testet $v_0$ kezdősebességről $v$ sebességre gyorsítunk fel. Legyen a gyorsítás időtartama $t$, a gyorsulás állandó, és jelöljük $a$-val.
+
+A testre ható gyorsító eredő erő:
 
 $$
-F_e = ma = m \frac {v - v_0} {t}
+F_e = m \cdot a = m \cdot \frac {v - v_0} {t}
 $$
 
-$$
-s = v_0t + \frac {a} {2} t^2 = (v_0 + \frac {v - v_0} {2})t = \frac {2v_0 + (v - v_0)} {2}t
-$$
+A gyorsítási szakasz hossza a négyzetes úttörvényből kifejezve ($a$ helyére a sebességváltozást behelyettesítve):
 
 $$
-s = \frac {v_0 + v} {2}t
-$$
-
-$$
-W = F_e s = m \frac {v - v_0} {t} \times \frac {v_0 + v} {2}t = \frac {m} {2} (v - v_0)(v + v_0) = \frac {m} {2} (v^2 - v_0^2)  
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = \left(v_0 + \frac {v - v_0} {2}\right) \cdot t = \frac {2v_0 + (v - v_0)} {2} \cdot t
 $$
 
 $$
-W = \frac {mv^2} {2} - \frac {mv_0^2} {2}
+s = \frac {v_0 + v} {2} \cdot t
 $$
 
-Eredményünk azt mutatja, hogy az $\frac {mv^2} {2}$ mennyiség fontos a gyorsítási munka kiszámításánál. Ennek a mennyiségnek a megváltozása adja a gyorsítási munkát. Ezt a mennyiséget mozgási energiának nevezzük. A gyorsítási munka a mozgási energia növelésére fordítódik. Az energia egysége is joule (J).
+A végzett gyorsítási munka az erő és az elmozdulás szorzataként:
+
+$$
+W = F_e \cdot s = m \cdot \frac {v - v_0} {t} \cdot \frac {v_0 + v} {2} \cdot t = \frac {m} {2} \cdot (v - v_0) \cdot (v + v_0) = \frac {m} {2} \cdot (v^2 - v_0^2)  
+$$
+
+$$
+W = \frac {m \cdot v^2} {2} - \frac {m \cdot v_0^2} {2}
+$$
+
+Eredményünk egyértelműen megmutatja, hogy a $\frac {m \cdot v^2} {2}$ szerkezetű mennyiség kulcsfontosságú a gyorsítási munka kiszámításánál, hiszen ennek a fizikai állapotjelzőnek a megváltozása (különbsége) határozza meg a végzett munkát. Ezt a mennyiséget **mozgási energiának** (kinetikus energiának) nevezzük. A gyorsítási munka a test mozgási energiájának növelésére fordítódik. Mint minden energiafajta, ennek az egysége is a **joule** (J).
 
 ## Mozgási energia
 
->**A mozgási energia a tömeg és a sebesség négyzetének a szorzata osztva 2-vel.** 
+> **A mozgási energia a test tömegének és a pillanatnyi sebessége négyzetének szorzatának a fele. Jele: $E_m$ vagy $E_k$.**
+
+$$
+E_m = \frac{1}{2} \cdot m \cdot v^2
+$$
 
 ## A munkatétel
 
->**A gyorsítási munka egyenlő a mozgási energia megváltozásával.**
+> **A testen végzett gyorsítási (vagy lassítási) munka egyenlő a test mozgási energiájának megváltozásával.**
 
-A munkatételt mi csak egyenes vonalú, egyenletesen gyorsuló mozgásra mutattuk meg, de általánosan érvényes minden esetben.
+$$
+W = \Delta E_m = E_m - E_{m,0}
+$$
+
+A munkatételt mi a fenti levezetésben csak az egyenes vonalú, egyenletesen változó mozgás speciális esetére igazoltuk, de a tétel tetszőleges pályán történő, tetszőlegesen változó mozgásokra is általánosan érvényes.
 
 ## Példák
-1. Egy $1300 kg$ tömegű gépkocsi felgyorsít $10,0 \frac {m} {s}$ sebességről $20,0 \frac {m} {s}$ sebességre. Mekkora a mozgási energia kezdetben? Mekkorára nő a mozgási energia a gyorsítás során? Mekkora a motor gyorsítási munkája, ha a veszteségektől eltekintünk? Számítsuk ki a munkát úgy is, hogy a gyorsulást és az erőt is kiszámítjuk! Így is ugyanannyit kapunk?
+
+1. Egy $1300\text{ kg}$ tömegű gépkocsi felgyorsít $10{,}0\text{ }\frac{\text{m}}{\text{s}}$ sebességről $20{,}0\text{ }\frac{\text{m}}{\text{s}}$ sebességre. Mekkora a mozgási energiája kezdetben, és mekkorára nő a gyorsítás végére? Mekkora a motor által végzett gyorsítási munka, ha a belső veszteségektől eltekintünk? Számítsuk ki a munkát hagyományosan is, a gyorsulás, a gyorsítóerő és a megtett út meghatározásával! Egyeznek az eredmények?
+
+A test kezdeti mozgási energiája:
 
 $$
-E_{m,0} = \frac {mv_0^2} {2} = \frac {1300 \times 10^2} {2} = 65000 J
+E_{m,0} = \frac {m \cdot v_0^2} {2} = \frac {1300 \cdot 10^2} {2} = 65\ 000\text{ J}
 $$
 
-$$
-E_m = \frac {mv^2} {2} = \frac {1300 \times 20^2} {2} = 260000 J
-$$
+A test végső mozgási energiája:
 
 $$
-W = \Delta {E_m} = E_m - E_{m,0} = 260000 J - 65000 J = 195000 J = 195,0 kJ
+E_m = \frac {m \cdot v^2} {2} = \frac {1300 \cdot 20^2} {2} = 260\ 000\text{ J}
 $$
 
-Tehát a gyorsítási munka $195 kJ$. Számítsuk ki ezt másképp is! Tegyük fel, hogy a gyorsítás ideje $10 s$!
+A munkatétel alapján a motor gyorsítási munkája a két energiaérték különbsége:
 
 $$
-a = \frac {v - v_0} {t} = \frac {20 - 10} {10} = 1 \frac {m} {s^2}
+W = \Delta {E_m} = E_m - E_{m,0} = 260\ 000 - 65\ 000 = 195\ 000\text{ J} = 195{,}0\text{ kJ}
 $$
 
-$$
-F_e = ma = 1300 \times 1 = 1300 N
-$$
+A gyorsítási munka tehát $195\text{ kJ}$. Számítsuk ki ezt a kinematika és dinamika felől is! Tételezzük fel önkényesen, hogy a gyorsítás időtartama pontosan $10\text{ s}$ volt:
 
 $$
-s = v_0 \times t + \frac {a} {2} \times t^2 = 10 \times 10 + \frac {1} {2} \times 10^2 = 150 m
-$$
-
-$$
-W = F_e s = 1300 \times 150 = 195000 J = 195,0 kJ
-$$
-
-Tehát így is pontosan ugyanannyit kapunk, ahogy annak lennie is kell.
-
-2. Egy $0,10 kg$ tömegű követ függőlegesen feldobunk $5 \frac {m} {s}$ sebességgel. Mekkora a nehézségi erő munkája, amikor $2 \frac {m} {s}$ sebességre fékeződik le? Itt is számítsuk ki az eredményt a munkatétel nélkül is!
-
-$$
-E_{m,0} = \frac {mv_0^2} {2} = \frac {0,10 \times 5^2} {2} = 1,25 J
+a = \frac {v - v_0} {t} = \frac {20 - 10} {10} = 1\text{ }\frac {\text{m}} {\text{s}^2}
 $$
 
 $$
-E_m = \frac {mv^2} {2} = \frac {0,10 \times 2^2} {2} = 0,20 J
+F_e = m \cdot a = 1300 \cdot 1 = 1300\text{ N}
+$$
+
+A gyorsítási szakasz hossza a négyzetes úttörvény alapján:
+
+$$
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 10 \cdot 10 + \frac {1} {2} \cdot 10^2 = 100 + 50 = 150\text{ m}
+$$
+
+A mechanikai munka definíciója szerint:
+
+$$
+W = F_e \cdot s = 1300 \cdot 150 = 195\ 000\text{ J} = 195{,}0\text{ kJ}
+$$
+
+Látható, hogy a két különböző megközelítés pontosan ugyanazt a végeredményt adja, ami igazolja, hogy a munkatétel használatával rengeteg felesleges köztes számítást takaríthatunk meg.
+
+2. Egy $0{,}10\text{ kg}$ tömegű követ függőlegesen feldobunk $5\text{ }\frac{\text{m}}{\text{s}}$ kezdősebességgel. Mekkora a nehézségi erő munkája, amíg a kő sebessége $2\text{ }\frac{\text{m}}{\text{s}}$-ra fékeződik le? Határozzuk meg az eredményt a munkatétel nélkül, a nehézségi erő és az elmozdulás közvetlen szorzatából is!
+
+A kezdő és végső kinetikus energiák:
+
+$$
+E_{m,0} = \frac {m \cdot v_0^2} {2} = \frac {0{,}10 \cdot 5^2} {2} = 1{,}25\text{ J}
 $$
 
 $$
-W = \Delta E_m = 0,2 J - 1,25 J = -1,05 J
+E_m = \frac {m \cdot v^2} {2} = \frac {0{,}10 \cdot 2^2} {2} = 0{,}20\text{ J}
 $$
 
-$$
-F_e = G = mg = 0,1 \times 9,81 = 0,981 N
-$$
+A munkatétel alapján a gravitáció által végzett munka:
 
 $$
-a = \frac {\Delta v} {t}
+W = \Delta E_m = 0{,}20 - 1{,}25 = -1{,}05\text{ J}
 $$
 
-$$
--9,81 = \frac {-3} {t}
-$$
+A nehézségi erő munkája negatív, mivel akadályozza a mozgást (lassítja a követ). Ellenőrizzük ezt dinamikai úton! A testre ható nehézségi erő nagysága ($g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$):
 
 $$
-t = \frac {-3} {-9,81} = 0,3058 s
+F_e = G = m \cdot g = 0{,}1 \cdot 9{,}81 = 0{,}981\text{ N}
 $$
 
-$$
-s = h = v_0 \times t + \frac {a} {2} \times t^2 = 5 \times 0,3058 + \frac {-9,81} {2} \times 0,3058^2 = 1,070 m
-$$
+A függőleges tengely menti lassulás értéke $a = -9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$, a sebességváltozás pedig $\Delta v = v - v_0 = 2 - 5 = -3\text{ }\frac{\text{m}}{\text{s}}$. Az emelkedés időtartama:
 
 $$
-W = -F_e s = -0,981 N \times 1,070 m = -1,050 J 
+a = \frac {\Delta v} {t} \implies -9{,}81 = \frac {-3} {t} \implies t = \frac {-3} {-9{,}81} \approx 0{,}3058\text{ s}
 $$
 
-Látjuk, hogy a számítási pontosságon belül eredményeink egyeznek.
+Az ezalatt megtett függőleges elmozdulás (emelkedési magasság):
+
+$$
+s = h = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 5 \cdot 0{,}3058 + \frac {-9{,}81} {2} \cdot 0{,}3058^2 \approx 1{,}529 - 0{,}458 = 1{,}071\text{ m}
+$$
+
+Mivel a felfelé mutató elmozdulás és a lefelé ható nehézségi erő ellentétes irányúak ($\alpha = 180^\circ$):
+
+$$
+W = -F_e \cdot s = -0{,}981 \cdot 1{,}071 \approx -1{,}050\text{ J}
+$$
+
+A számítási pontosság határain belül az eredmények tökéletesen megegyeznek.
+
+---
 
 ## Feladatok
 
-1. Mekkora a mozgási energiája egy 1200 kg tömegű személygépkocsinak, amikor 72 km/h sebességgel halad az autópályán?
+**1. Haladó autó energiája**
+Mekkora a mozgási energiája egy $1200\text{ kg}$ tömegű személygépkocsinak, amikor kerekítve $72\text{ km/h}$ állandó sebességgel halad az autópályán? (A számítás előtt ne felejtsd el átváltani a sebességet SI-egységbe!)
 
-2. Egy 2 kg tömegű, kezdetben álló testet 40 J gyorsítási munka árán hozunk mozgásba. Mekkora lesz a test végsebessége?
+**2. Test felgyorsítása nyugalomból**
+Egy $2\text{ kg}$ tömegű, kezdetben álló testet pontosan $40\text{ J}$ gyorsítási munka árán hozunk mozgásba egy súrlódásmentes vízszintes felületen. Mekkora lesz a test végsebessége a gyorsítási folyamat lezárulásakor?
 
-3. Egy 0,4 kg tömegű labda 15 m/s sebességgel érkezik, majd a kapus megfogja. Mekkora munkát végzett a labda megállításakor a kapus keze?
+**3. Labda megállítása**
+Egy $0{,}4\text{ kg}$ tömegű labda $15\text{ }\frac{\text{m}}{\text{s}}$ sebességgel érkezik a kapura, majd a kapus magabiztosan megfogja azt (a labda megáll). Mekkora munkát végzett a labda megállítása során a kapus keze által kifejtett fékezőerő? Miért negatív vagy pozitív ez a munka?
 
-4. Hányszorosára változik egy test mozgási energiája, ha a sebességét a kétszeresére növeljük, de a tömege változatlan marad?
+**4. Sebességváltozás hatása az energiára**
+Hányszorosára változik meg egy tetszőleges mozgó test mozgási energiája, ha a sebességét a pontosan kétszeresére növeljük, miközben a tömege szigorúan változatlan marad?
 
-5. Egy 1500 kg tömegű autó sebességét 20 m/s-ról 30 m/s-ra növeljük. Mennyi gyorsítási munkát kell végeznie a motornak, ha a súrlódástól eltekintünk?
+**5. Autó sebességének növelése**
+Egy $1500\text{ kg}$ tömegű gépkocsi sebességét egyenletesen $20\text{ }\frac{\text{m}}{\text{s}}$-ról $30\text{ }\frac{\text{m}}{\text{s}}$-ra növeljük. Mennyi hasznos gyorsítási munkát kell végeznie a motornak a folyamat alatt, ha a gördülési ellenállástól és a súrlódástól eltekintünk?

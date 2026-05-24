@@ -1,159 +1,175 @@
 # A súrlódás
 
-## Kísérlet
-[Csúszási súrlódás megszűnik szabadeséskor](https://www.youtube.com/shorts/qBAdyNVEi_c)
+## Kísérlet és szimuláció
 
-## Szimuláció
-[Csúszási súrlódás és szabadesés](https://alexerdei73.github.io/physics-engine/project/#186187e3-eb58-4a34-a098-e4c35f6f0323)
+[Csúszási súrlódás megszűnik szabadeséskor (Kísérleti videó)](https://www.youtube.com/shorts/qBAdyNVEi_c)
 
-A kísérlet illetve a szimuláció is mutatja, hogy van egy csúszási súrlódási erő a felületek között, ha ezek egymáson csúsznak, miközben a felületre merőleges erő nyomja őket össze. Ez az erő a felületek egymáson való elcsúszását akadályozni igyekszik és a felülettel párhuzamos irányú. A csúszó test lassul, majd megáll, mivel más erő, mely a felülettel párhuzamos, nem hat. 
+[Csúszási súrlódás és szabadesés interaktív szimulátor](https://alexerdei73.github.io/physics-engine/project/#186187e3-eb58-4a34-a098-e4c35f6f0323)
 
-Nincs azonban csúszási súrlódási erő a felületek közt, ha azokat nem nyomja össze semmilyen erő, mint például a szabadon eső, súlytalanság állapotában végzett kísérlet esetében.
+A kísérlet, valamint az interaktív szimuláció egyértelműen megmutatja, hogy az egymáson elmozduló felületek között csúszási súrlódási erő lép fel, amennyiben a felületekre merőleges kényszererő nyomja össze őket. Ez az erő a felületek egymáson való elcsúszását akadályozni igyekszik, és a felülettel párhuzamos irányú. Ha a felülettel párhuzamosan más külső erő nem hat a csúszó testre, az egyenletesen lassul, majd teljesen megáll.
 
-## Kísérletek
+Nincs azonban csúszási súrlódási erő a felületek között abban az esetben, ha azokat semmilyen külső hatás nem nyomja össze – mint például a szabadon eső, súlytalanság állapotában végzett kísérlet során.
 
-Nézzük meg a következő videókat is, melyek a súrlódási erő tulajdonságait mutatják be.
+## Kísérletek a súrlódás tulajdonságairól
 
-[A súrlódás 1](https://www.youtube.com/watch?v=9w-ORd14Ucs)
+Nézzük meg a következő videókat is, amelyek részletesen bemutatják a súrlódási erő különböző tulajdonságait és törvényszerűségeit!
 
-[A súrlódás 2](https://www.youtube.com/watch?v=idYX7kkRqbs)
+[A súrlódás mérése és a súlyerő kapcsolata](https://www.youtube.com/watch?v=9w-ORd14Ucs)
 
-[A súrlódás 3](https://www.youtube.com/watch?v=oEaxJ7NqNPA)
+[A súrlódás függetlensége az érintkező felületek nagyságától](https://www.youtube.com/watch?v=idYX7kkRqbs)
 
-[A súrlódás 4](https://www.youtube.com/watch?v=oxtBa90bpww)
+[A merőleges kényszererő szerepe a súrlódásban](https://www.youtube.com/watch?v=oEaxJ7NqNPA)
 
-[A súrlódás 5](https://www.youtube.com/watch?v=z9pxjS924AQ)
+[A súrlódási együttható meghatározása különböző felületekre](https://www.youtube.com/watch?v=oxtBa90bpww)
+
+[A tapadási és a csúszási súrlódás közötti különbség](https://www.youtube.com/watch?v=z9pxjS924AQ)
 
 ## A csúszási súrlódás
 
-A kísérletek alapján megállapíthatjuk, hogy az egymáson csúszó felületek a felülettel párhuzamos irányú, a csúszást fékező erőt fejtenek ki. Ez a csúszási súrlódási erő. 
+A kísérleti megfigyelések alapján megállapíthatjuk, hogy az egymáson elcsúszó felületek a felülettel párhuzamos irányú, a relatív mozgást fékező erőt fejtenek ki egymásra. Ezt az erőt **csúszási súrlódási erőnek** nevezzük.
 
-Ennek nagysága csak az érintkező felületek anyagi minőségétől és a felületeket összenyomó kényszererőtől függ, mely a felületekre merőleges. Nem függ az erő azonban az érintkező felületek nagyságától. 
+A csúszási súrlódási erő nagysága kizárólag az érintkező felületek anyagi minőségétől és a felületeket merőlegesen összenyomó $K$ kényszererőtől függ. Nem függ viszont az érintkező felületek látszólagos nagyságától.
 
->**A csúszási súrlódási erő arányos a felületeket összenyomó erővel, az arányossági tényező a súrlódási együttható ($\mu$), mely a felületek anyagi minőségére jellemző dimenzió nélküli szám 0 és 1 között. A súrlódási erő a felületek relatív mozgását fékezi és a felülettel párhuzamos irányú.**
+> **A csúszási súrlódási erő nagysága egyenesen arányos a felületeket merőlegesen összenyomó erővel. Az arányossági tényező a súrlódási együttható ($\mu$), amely a felületek anyagi minőségére jellemző, dimenzió nélküli szám (értéke általában $0$ és $1$ közé esik). A súrlódási erő a felületek relatív mozgását fékezi, és mindig a felülettel párhuzamos irányú.**
 
 $$
-F_s = \mu \times K
+F_s = \mu \cdot K
 $$
 
 ### Példa
-A szimulációban látott esetben a test tömege $0,05kg$ és $5,00 \frac {m} {s}$ kezdősebességgel indítjuk. A súrlódási együttható a felületek közt 0,5. Mekkora a test súlya? Mekkora súrlódási erő? Mekkora a test gyorsulása? Mennyi idő alatt áll meg a test? Milyen hosszú úton áll meg a test?
+A szimulációban bemutatott esetben a test tömege $0{,}05\text{ kg}$, és $5{,}00\text{ }\frac{\text{m}}{\text{s}}$ kezdősebességgel indítjuk el egy vízszintes felületen. A súrlódási együttható a felületek között $0{,}5$. Mekkora a test nehézségi ereje? Mekkora a fellépő súrlódási erő és a test gyorsulása? Mennyi idő alatt, és milyen hosszú úton áll meg a test? A nehézségi gyorsulás értéke $g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$.
 
 ![Súrlódás fékez egy vízszintes felületen mozgó testet](Kepek/surlodasfekezvizszintestalajon.png)
 
+A testre ható nehézségi erő nagysága:
+
 $$
-G = mg = 0,05 \times 9,81 = 0,4905N
+G = m \cdot g = 0{,}05 \cdot 9{,}81 = 0{,}4905\text{ N}
+$$
+
+Mivel a talaj vízszintes és a test függőleges irányban nem mozog, a felületeket összenyomó merőleges kényszererő egyenlő nagyságú a nehézségi erővel:
+
+$$
+K = G = 0{,}4905\text{ N}
+$$
+
+A csúszási súrlódási erő nagysága:
+
+$$
+F_s = \mu \cdot K = 0{,}5 \cdot 0{,}4905 = 0{,}24525\text{ N}
+$$
+
+A dinamika alaptörvénye alapján ($F_e = m \cdot |a|$), mivel a vízszintes síkon csak a súrlódási erő hat rá:
+
+$$
+0{,}24525 = 0{,}05 \cdot |a|
 $$
 
 $$
-K = G
+|a| = \frac {0{,}24525} {0{,}05} = 4{,}905\text{ }\frac {\text{m}} {\text{s}^2}
 $$
 
-$$
-F_s = \mu \times K = 0,5 \times 0,4905 = 0,2453N
-$$
+Mivel a súrlódás a mozgást fékezi, a gyorsulás előjeles értéke a mozgásirányhoz képest negatív: $a = -4{,}905\text{ }\frac {\text{m}} {\text{s}^2}$.
 
-$$
-F_e = m|a|
-$$
-
-$$
-0,2453 = 0,05 \times |a|
-$$
-
-$$
-|a| = \frac {0,2453} {0,05} = 4.906 \frac {m} {s^2}
-$$
-
-$$
-a = -4,906 \frac {m} {s^2}
-$$
+A megállásig ($v = 0\text{ }\frac{\text{m}}{\text{s}}$) eltelt időtartam a gyorsulás alapképletéből kiszámítva:
 
 $$
 a = \frac {v - v_0} {t}
 $$
 
 $$
--4,906 = \frac {0 - 5} {t}
+-4{,}905 = \frac {0 - 5} {t}
 $$
 
 $$
-t = \frac {-5} {-4,906} = 1,019s
+t = \frac {-5} {-4{,}905} \approx 1{,}019\text{ s}
 $$
 
-$$
-s = v_0 \times t + \frac {a} {2} \times t^2 = 5 \times 1,019 + \frac {-4,906} {2} \times 1,019^2 = 2,548m
-$$
-
-## A tapadási erő
-
-A súrlódás másik fajtája a tapadási súrlódás. Itt is érvényes, hogy a felületek a felülettel párhuzamos irányú erőt fejtenek ki egymásra, de nem mozognak egymáshoz képest, mert a megcsúszást a tapadási erő megakadályozza. Ennek az erőnek az irányát úgy állapítjuk meg, hogy gondolatban elhagyjuk a tapadási erőt és kiszámítjuk, milyen irányú lenne a gyorsulás. A tapadási erő ezzel ellentétes irányú erő. 
-
-A tapadási erő nem lehet nagyobb egy maximális értéknél, különben a felületek megcsúsznak és a csúszási súrlódás fog fellépni. Amennyiben kevesebb erő is elég a megcsúszás megakadályozásához, mint a tapadási erő maximuma, akkor a tapadási erő akkora, hogy a megcsúszást megakadályozza.
-
-A tapadási erő maximumára hasonló összefüggés vonatkozik, mint a csúszási súrlódási erőre:
+A test három értékes jegyre kerekítve $1{,}02\text{ s}$ alatt áll meg. A fékút hossza a négyzetes úttörvény alapján:
 
 $$
-F_{t,max} = \mu_t \times K
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 5 \cdot 1{,}019 + \frac {-4{,}905} {2} \cdot 1{,}019^2 \approx 5{,}095 - 2{,}547 \approx 2{,}548\text{ m}
 $$
 
-Vagyis:
+A test kerekítve $2{,}55\text{ m}$ hosszú úton áll meg.
+
+## A tapadási súrlódási erő
+
+A súrlódás másik alapvető fajtája a **tapadási súrlódás**. Ebben az esetben is igaz, hogy a felületek a felülettel párhuzamos irányú erőt fejtenek ki egymásra, de a testek nem mozdulnak el egymáshoz képest, mert a megcsúszást a tapadási erő megakadályozza. Ennek az erőnek az irányát úgy állapíthatjuk meg a legegyszerűbben, ha gondolatban elhagyjuk a tapadási erőt, és kiszámítjuk, hogy a többi erő hatására milyen irányú lenne a test gyorsulása. A valóságos tapadási súrlódási erő ezzel a virtuális mozgásiránnyal ellentétes irányba mutat.
+
+A tapadási erő nem növekedhet egy maximális határérték fölé; ha a külső húzó- vagy tolóerő ezt meghaladja, a felületek megcsúsznak, és a mozgás megindulásával átváltanak csúszási súrlódásba. Amennyiben a megcsúszás megakadályozásához a maximális értéknél kisebb erő is elegendő, a tapadási súrlódási erő hajszálpontosan akkora lesz, mint a mozgásra kényszerítő külső erők eredője.
+
+A tapadási súrlódási erő maximumára a csúszási súrlódáshoz hasonló összefüggés érvényes:
 
 $$
-F_t \leqslant \mu_t \times K
+F_{t,\text{max}} = \mu_t \cdot K
 $$
 
-A kísérletekből láttuk, hogy adott felületek és K erő esetén a tapadási erő nagyobb, mint a csúszási súrlódási erő, tehát:
+Vagyis a tapadási erőre általánosan igaz, hogy:
+
+$$
+F_t \leqslant \mu_t \cdot K
+$$
+
+A kísérletekből láthattuk, hogy adott felületek és $K$ erő esetén a megcsúszás elindításához nagyobb erőre van szükség, mint a mozgás fenntartásához, vagyis a tapadási súrlódási együttható nagyobb (vagy egyenlő), mint a csúszási súrlódási együttható:
 
 $$
 \mu \leqslant \mu_t
 $$
 
 ### Példa
-Egy test tömege $0,500kg$ és a testet vízszintes talajra helyezzük és toljuk $3,00N$ erővel vízszintes irányban. A tapadási együttható $0,7$, a csúszási súrlódási együttható pedig $0,5$. Mekkora a súrlódási erő? Mekkora a test gyorsulása? Számítsuk ki ugyanezt akkor is, ha a tolóerő $4,00N$!
+Egy $0{,}500\text{ kg}$ tömegű testet vízszintes talajra helyezünk, és megpróbáljuk eltolni egy $3{,}00\text{ N}$ nagyságú, vízszintes irányú erővel. A felületek közötti tapadási súrlódási együttható $\mu_t = 0{,}7$, a csúszási súrlódási együttható pedig $\mu = 0{,}5$. Mekkora a testre ható súrlódási erő és a test gyorsulása? Számítsuk ki ugyanezeket a mennyiségeket abban az esetben is, ha a vízszintes tolóerőt $4{,}00\text{ N}$-ra növeljük!
+
+A test nehézségi ereje és a merőleges kényszererő vízszintes talajon:
 
 $$
-G = mg = 0,5 \times 9,81 = 4,905N
-$$
-
-$$
-K = G = 4,905N
-$$
-
-$$
-F_{t,max} = \mu_t \times K = 0,7 \times 4,905 = 3,434N
-$$
-
-Mivel a tapadási erő maximuma nagyobb, mint $3N$, így a $3N$ erőt a tapadási erő kiegyensúlyozza, tehát a gyorsulás 0, a test nyugalomban marad. A tapadási erő ez esetben $3N$ és az általunk kifejtett tolóerővel ellentétes irányú. A $4N$ erő az nagyobb, mint a tapadási erő maximuma, ez esetben a test megcsúszik és a csúszási súrlódással kell számoljunk.
-
-$$
-F_s = \mu \times K = 0,5 \times 4,905 = 2,453N
+G = m \cdot g = 0{,}5 \cdot 9{,}81 = 4{,}905\text{ N}
 $$
 
 $$
-F_e = F - F_s = 4 - 2,453 = 1,547N
+K = G = 4{,}905\text{ N}
+$$
+
+Számítsuk ki a tapadási súrlódási erő maximális lehetséges értékét:
+
+$$
+F_{t,\text{max}} = \mu_t \cdot K = 0{,}7 \cdot 4{,}905 \approx 3{,}434\text{ N}
+$$
+
+Mivel a tapadási erő maximuma ($3{,}434\text{ N}$) nagyobb, mint az általunk alkalmazott $3{,}00\text{ N}$-os tolóerő, a tapadási súrlódás képes teljesen kiegyenlíteni a külső hatást. Így a testre ható erők eredője nulla, a gyorsulás $0\text{ }\frac{\text{m}}{\text{s}^2}$, a test nyugalomban marad. A fellépő tapadási súrlódási erő nagysága ebben a fázisban pontosan $3\text{ N}$, iránya pedig ellentétes a tolóerővel.
+
+Ha a tolóerőt $4{,}00\text{ N}$-ra növeljük, ez az érték már meghaladja a tapadási erő maximumát ($3{,}434\text{ N}$). A test ekkor megcsúszik, mozgásba lendül, így a továbbiakban már a csúszási súrlódási erővel kell számolnunk:
+
+$$
+F_s = \mu \cdot K = 0{,}5 \cdot 4{,}905 \approx 2{,}453\text{ N}
+$$
+
+A mozgást biztosító vízszintes eredő erő nagysága:
+
+$$
+F_e = F - F_s = 4 - 2{,}453 = 1{,}547\text{ N}
+$$
+
+A dinamika alaptörvényéből ($F_e = m \cdot a$) a mozgó test gyorsulása:
+
+$$
+1{,}547 = 0{,}5 \cdot a
 $$
 
 $$
-F_e = ma
+a = \frac{1{,}547}{0{,}5} = 2 \cdot 1{,}547 \approx 3{,}094\text{ }\frac {\text{m}} {\text{s}^2}
 $$
 
-$$
-1,547 = 0,5a
-$$
+A megcsúszás után a test kerekítve $3{,}09\text{ }\frac{\text{m}}{\text{s}^2}$ állandó gyorsulással mozog.
 
-$$
-a = 2 \times 1,547 = 3,094 \frac {m} {s^2}
-$$
+---
 
 ## Feladatok
 
-1. Egy jégkorongozó $15,0 \frac{m}{s}$ sebességgel üti meg a $0,170 kg$ tömegű korongot a jégen. A korong és a jég közötti csúszási súrlódási együttható $\mu = 0,05$. Mekkora a súrlódási erő? Milyen messzire csúszik a korong, mielőtt megállna?
+1. Egy jégkorongozó $15{,}0\text{ }\frac{\text{m}}{\text{s}}$ kezdősebességgel megüti a vízszintes jégen fekvő, $0{,}170\text{ kg}$ tömegű korongot. A korong és a jégfelület közötti csúszási súrlódási együttható $\mu = 0{,}05$. Mekkora a korongra ható csúszási súrlódási erő, és milyen messzire csúszik el a korong, mielőtt teljesen megállna?
+2. Egy $2{,}00\text{ kg}$ tömegű hasábot egy vízszintes asztallapra helyezünk, és elkezdjük vízszintes irányban húzni egy rugós erőmérő segítségével. Azt tapasztaljuk, hogy a test pontosan abban a pillanatban indul meg, amikor az erőmérő kijelzője elérte a $8{,}00\text{ N}$ értéket. Mekkora a tapadási súrlódási együttható ($\mu_t$) a fa és az asztallap felülete között?
+3. Egy $50{,}0\text{ kg}$ tömegű nehéz szekrényt szeretnénk eltolni a vízszintes parkettán. A felületek közötti tapadási súrlódási együttható $0{,}6$, a csúszási súrlódási együttható pedig $0{,}4$. Mekkora vízszintes erővel kell megnyomnunk a szekrényt ahhoz, hogy éppen megmozduljon? Ha a szekrény már mozgásban van, mekkora állandó erő szükséges ahhoz, hogy egyenletes, állandó sebességgel toljuk tovább?
+4. Egy gépkocsi vészfékez egy vízszintes aszfaltozott úton, aminek következtében a kerekek teljesen blokkolnak (csúsznak). A gumi és a száraz aszfalt közötti csúszási súrlódási együttható $0{,}7$. Mekkora az autó lassulása a csúszás során? Függ-e a lassulás mértéke a jármű tömegétől?
+5. Egy $10{,}0\text{ kg}$ tömegű ládát $60\text{ N}$ nagyságú, vízszintes irányú erővel húzunk a padlón. A láda és a padló közötti csúszási súrlódási együttható $0{,}3$. Számítsuk ki a ládára ható csúszási súrlódási erőt, valamint a láda mozgásának gyorsulását!
 
-2. Egy $2,00 kg$ tömegű fatéglát helyezünk egy vízszintes asztallapra. A testet vízszintes irányban húzzuk egy rugós erőmérővel. Azt tapasztaljuk, hogy a test akkor indul meg, ha az erőmérő $8,00 N$ erőt mutat. Mekkora a tapadási súrlódási együttható ($\mu_t$) a fa és az asztal között?
-
-3. Egy $50,0 kg$ tömegű szekrényt szeretnénk eltolni a parkettán. A tapadási súrlódási együttható $0,6$, a csúszási súrlódási együttható $0,4$. Mekkora vízszintes erővel kell tolnunk a szekrényt ahhoz, hogy éppen megmozduljon? Ha már mozog, mekkora erő szükséges ahhoz, hogy állandó sebességgel toljuk tovább?
-
-4. Egy autó vészfékez egy vízszintes úton. A kerekek blokkolnak (csúsznak). A gumi és az aszfalt közötti csúszási súrlódási együttható $0,7$. Mekkora az autó lassulása? (Számoljunk $g=9,81 \frac{m}{s^2}$ értékkel!) Függ-e a lassulás mértéke az autó tömegétől?
-
-5. Egy $10,0 kg$ tömegű ládát $60 N$ vízszintes erővel húzunk a padlón. A láda és a padló közötti csúszási súrlódási együttható $0,3$. Számítsuk ki a ládára ható súrlódási erőt, valamint a láda gyorsulását!
+*A számítások során a nehézségi gyorsulás értékét tekintsük* $g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$ *-nek.*

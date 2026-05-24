@@ -1,155 +1,160 @@
 # Feladatok gyorsuló mozgásra
 
 ## Példák nulla kezdősebességű gyorsuló mozgásra
-1. Egy gépkocsi álló helyzetből felgyorsít $100 \frac {km} {h}$-ra $8.00s$ alatt. Mekkora az elért sebesség $\frac {m} {s}$-ban? Mekkora a gyorsulás? Mekkora a megtett út a gyorsítás alatt? A gyorsulás egyenletesnek tekinthető a gyorsítás során.
+
+1. Egy gépkocsi álló helyzetből felgyorsít $100\text{ km/h}$-ra $8{,}00\text{ s}$ alatt. Mekkora az elért sebesség $\text{m/s}$-ban? Mekkora a gyorsulás? Mekkora a megtett út a gyorsítás alatt? A gyorsulás egyenletesnek tekinthető a gyorsítás során.
 
 $$
-v = \frac {s} {t} = \frac {100km} {1h} = \frac {100 000m} {3600s} = 27.8 \frac {m} {s}
+v = \frac {s} {t} = \frac {100\text{ km}} {1\text{ h}} = \frac {100\ 000\text{ m}} {3600\text{ s}} \approx 27{,}8\text{ }\frac {\text{m}} {\text{s}}
 $$
 
-Itt az elért sebességre az egyenletes mozgás formuláját használtuk, hisz gondolhatjuk, hogy az autó egyenletesen halad tovább a gyorsítási folyamat után az elért sebességgel. Ez azt jelenti, hogy 100km-t tesz meg 1h alatt. 1h az 60min tehát 3600s, hisz minden perc 60s.
+Itt az elért sebesség átváltásához az egyenletes mozgás alapgondolatát használtuk, hiszen feltételezhetjük, hogy az autó a gyorsítási szakasz után ezzel az állandó sebességgel haladna tovább. Ez azt jelenti, hogy $100\text{ km}$ utat tenne meg $1\text{ h}$ alatt. Tudjuk, hogy $1\text{ óra} = 60\text{ perc} = 3600\text{ másodperc}$, mivel minden perc $60\text{ s}$.
 
 $$
-a = \frac {\Delta v} {t} = \frac {v - v_0} {t} = \frac {27.8 \frac {m} {s} - 0} {8s} = 3.48 \frac {m} {s^2}
-$$
-
-$$
-s = \frac {a} {2} \times {t^2} = \frac {3.48 \frac {m} {s^2}} {2} \times (8s)^2 = 111m 
-$$
-
-Itt az eredményeket 3 értékes jegyre kerekítettük, hisz az adatok is ezzel a pontossággal adottak, tehát az eredmény sem lehet pontosabb.
-
-2. Egy test 30 fokos lejtőn csúszik le súrlódásmentesen álló helyzetből indulva, miközben gyorsulása $5.00 \frac {m} {s^2}$. Ha a lejtő hossza $10.0m$, hány másodperc kell, hogy leérjen a lejtő aljára? Mekkora sebességgel ér a lejtő aljára?
-
-$$
-s = \frac {a} {2} \times t^2
-$$
-
-Behelyettesítjük az adatokat, az ismeretlen idő legyen x. Az egységeket elhagyjuk az egyszerűség végett. Az eredmény másodpercben értendő.
-
-$$
-10.0 = \frac {5.00} {2} \times x^2
+a = \frac {\Delta v} {t} = \frac {v - v_0} {t} = \frac {27{,}8\text{ }\frac {\text{m}} {\text{s}} - 0} {8\text{ s}} \approx 3{,}48\text{ }\frac {\text{m}} {\text{s}^2}
 $$
 
 $$
-10.0 = 2.50x^2
+s = \frac {a} {2} \cdot t^2 = \frac {3{,}48\text{ }\frac {\text{m}} {\text{s}^2}} {2} \cdot (8\text{ s})^2 = 111\text{ m}
+$$
+
+Az eredményeket három értékes jegyre kerekítettük, mivel a kiinduló adatok pontossága is ezt követeli meg, így a végeredmény sem sugallhat nagyobb precizitást.
+
+2. Egy test egy $30^\circ$-os hajlásszögű lejtőn csúszik le súrlódásmentesen, álló helyzetből indulva, miközben a gyorsulása $5{,}00\text{ }\frac{\text{m}}{\text{s}^2}$. Ha a lejtő hossza $10{,}0\text{ m}$, hány másodpercre van szükség ahhoz, hogy leérjen a lejtő aljára? Mekkora sebességgel érkezik meg?
+
+$$
+s = \frac {a} {2} \cdot t^2
+$$
+
+Behelyettesítve az ismert adatokat, ahol az ismeretlen időt $x$ jelöli (a számítás során a mértékegységeket elhagyjuk, az eredmény másodpercben értendő):
+
+$$
+10{,}0 = \frac {5{,}00} {2} \cdot x^2
 $$
 
 $$
-4.00 = x^2
+10{,}0 = 2{,}50 \cdot x^2
 $$
 
 $$
-x = \pm {2.00}
+4{,}00 = x^2
 $$
 
-Az eltelt idő nyilván pozitív, tehát $t=2.00s$. A pontosság itt is 3 értékes jegy.
+$$
+x = \pm 2{,}00
+$$
+
+Mivel az eltelt idő fizikailag csak pozitív érték lehet, a helyes megoldás $t = 2{,}00\text{ s}$. A pontosságot itt is három értékes jegyre kerekítve adjuk meg.
+
+A végsebesség kiszámítása a gyorsulás képletéből:
 
 $$
 a = \frac {v - v_0} {t}
 $$
 
 $$
-5.00 = \frac {x - 0} {2.00}
+5{,}00 = \frac {x - 0} {2{,}00}
 $$
 
 $$
-x = 10.0
+x = 10{,}0
 $$
 
-Tehát a test $10.0 \frac {m} {s}$-ot ér el.
+A test tehát pontosan $10{,}0\text{ }\frac{\text{m}}{\text{s}}$ sebességet ér el a lejtő alján.
 
-### Feladatok
+### Gyakorló feladatok
 
-1. Egy autó álló helyzetből felgyorsít $60.0 \frac{km}{h}$-ra $5.00 s$ alatt. Mekkora a gyorsulása? Mekkora a megtett út?
+1. Egy autó álló helyzetből egyenletesen felgyorsít $60{,}0\text{ km/h}$-ra $5{,}00\text{ s}$ alatt. Mekkora a gyorsulása, és mekkora utat tesz meg a gyorsítás ideje alatt?
+2. A labda legurul egy domboldalon. A mozgás súrlódásmentesnek tekinthető, a gyorsulása $3{,}00\text{ }\frac{\text{m}}{\text{s}^2}$. A domb hossza $15{,}0\text{ m}$. Mennyi idő alatt ér le a labda, és mekkora lesz a sebessége az alján?
+3. Egy lift álló helyzetből indulva felfelé gyorsít $2{,}00\text{ }\frac{\text{m}}{\text{s}^2}$ egyenletes gyorsulással, pontosan $10{,}0\text{ s}$ hosszan. Mekkora lesz a lift végsebessége, és mekkora utat tesz meg ezalatt?
 
-2. Egy labda lefelé gurul egy dombon súrlódásmentesen, gyorsulása $3.00 \frac{m}{s^2}$. A domb hossza $15.0 m$. Mennyi idő alatt ér le? Mekkora sebességgel?
-
-
-3. Egy lift álló helyzetből felfelé gyorsít $2.00 \frac{m}{s^2}$ gyorsulással $10.0 s$ ideig. Mekkora a végsebessége? Mekkora a megtett út?
+---
 
 ## Példák nem nulla kezdősebességű gyorsuló mozgásokra
 
-1. Egy feldobott labda lassulása $9.81 \frac {m} {s^2}$. Milyen magasra repül fel, ha $5.00 \frac {m} {s}$ sebességgel dobjuk fel? Mennyi idő alatt éri el ezt a magasságot?
+1. Egy függőlegesen felfelé feldobott labda lassulása a nehézségi erő miatt $9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$. Milyen magasra repül fel, ha $5{,}00\text{ }\frac{\text{m}}{\text{s}}$ kezdősebességgel indítjuk, és mennyi idő alatt éri el a pálya legfelső pontját?
 
-Ha a szokásos formulát használjuk, akkor a gyorsulást negatívnak kell vennünk, hisz a labda lassul.
-
-$$
-a = \frac {v - v_0} {t}
-$$
-
-$$
--9.81 = \frac {0 - 5.00} {x}
-$$
-
-$$
--9.81x = -5.00
-$$
-
-$$
-x = \frac {-5.00} {-9.81} = 0.510
-$$
-
-Az emelkedési idő $0.510s$.
-
-$$
-s = v_0 \times t + \frac {a} {2} \times t^2 = 5.00 \times 0.510 + \frac {-9.81} {2} \times 0.510^2 = 1.27m
-$$
-
-2. Egy autó $30.0 \frac {m} {s}$ sebességről fékez $3.00 \frac {m} {s^2}$ lassulással, miközben 113m utat tesz meg. Mennyi ideig tartott a fékezés és mekkora sebességre lassított le? 
-
-Ez a feladat nehéznek tűnhet, de vegyük észre, hogy minden adat adott a négyzetes úttörvényben, kivéve az eltelt időt. Tehát az idő kiszámítható kell legyen egy egyenlet megoldásával.
-
-$$
-s = v_0 \times t + \frac {a} {2} \times t^2
-$$
-
-$$
-113 = 30.0 \times x + \frac {-3.00} {2} \times x^2
-$$
-
-$$
-1.50x^2 - 30.0x + 113 = 0
-$$
-
-Ez egy másodfokú egyenlet az idő meghatározására, melyet az x ismeretlen jelöl. Erre ismerjük a megoldóképletet.
-
-$$
-x_{12} = \frac {-b \pm \sqrt {b^2 - 4ac}} {2a} = \frac {30.0 \pm \sqrt {30.0^2 - 4 \times 1.50 \times 113}} {3.00} = \frac {30.0 \pm 14.9} {3.00} = 15.0 , 5.03
-$$
-
-Két megoldást kapunk. Az egyik esetben a test úgy tesz meg 113m-t, hogy nem fordul meg, a másik esetben nem a megtett út 113m, hanem a test távolsága az eredeti pozíciójától. A test 0-ra fékez és megfordul, majd elindul visszafele és gyorsulva jut 113m távolságra az eredeti helytől, ahol fékezni kezdett a kocsi. Ez persze akkor történne, ha a gyorsulás nem szűnne meg, amint a kocsi nullára fekezett, hanem változatlanul fennállna. Nyilván minket a rövidebb idő érdekel csak, amikor a test mozgás iránya nem fordul meg. Tehát a lassítás ideje 5.03s.
-
-A sebesség könnyedén kiszámítható.
+Ha a megszokott formulát alkalmazzuk, a gyorsulás értékét negatív előjellel kell számításba vennünk, hiszen a labda sebessége folyamatosan csökken (lassul). A legfelső ponton a pillanatnyi sebessége nullává válik ($v = 0$).
 
 $$
 a = \frac {v - v_0} {t}
 $$
 
 $$
--3.00 = \frac {x - 30.0} {5.03}
+-9{,}81 = \frac {0 - 5{,}00} {x}
 $$
 
 $$
--15.1 = x - 30.0
+-9{,}81 \cdot x = -5{,}00
 $$
 
 $$
-x = 14.9
+x = \frac {-5{,}00} {-9{,}81} \approx 0{,}510
 $$
 
-A sebesség tehát $14.9 \frac {m} {s}$.
+Az emelkedés időtartama tehát $t = 0{,}510\text{ s}$.
 
-### Feladatok
+A maximális magasságot a négyzetes úttörvény segítségével határozzuk meg:
 
-1. Egy autó $20.0 \frac {m} {s}$ sebességről $2.00 \frac {m} {s^2}$ lassulással fékez. Mennyi idő alatt tesz meg 60.0 métert a fékezés során?
+$$
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 5{,}00 \cdot 0{,}510 + \frac {-9{,}81} {2} \cdot 0{,}510^2 \approx 1{,}27\text{ m}
+$$
 
-2. Egy labdát a talajról felhajítunk $15.0 \frac {m} {s}$ kezdősebességgel. A labda lassulása $9.81 \frac {m} {s^2}$. Mekkora idő alatt ér el 10.0 méteres magasságot az emelkedés során?
+A labda legfeljebb $1{,}27\text{ m}$ magasra repül fel.
 
-3. Egy vonat $25.0 \frac {m} {s}$ sebességgel halad, majd egyenletes $5.00 \frac {m} {s^2}$ gyorsulással $10.0$ másodpercig gyorsít. Mekkora végsebességet ér el? Mekkora utat tesz meg a gyorsítás alatt?
+2. Egy autó $30{,}0\text{ }\frac{\text{m}}{\text{s}}$ kezdősebességről fékez $3{,}00\text{ }\frac{\text{m}}{\text{s}^2}$ állandó lassulással, miközben $113\text{ m}$ utat tesz meg a fékút során. Mennyi ideig tartott a fékezési folyamat, és mekkora sebességre lassult le a jármű?
 
-4. Egy segédmotor $12.0 \frac {m} {s}$ sebességgel halad, majd $1.50 \frac {m} {s^2}$ lassulással fékez. Mennyi idő alatt tesz meg 50.0 métert a fékezés során?
+Ez a feladat elsőre összetettnek tűnhet, de vegyük észre, hogy a négyzetes úttörvényben az idő kivételével minden paraméter adott. Az időtartam így egy másodfokú egyenlet megoldásával egyértelműen meghatározható.
 
-5. Egy sportautó $40.0 \frac {m} {s}$ sebességgel halad és $5.00 \frac {m} {s^2}$ gyorsulással $8.00$ másodpercig gyorsít. Mekkora sebességre gyorsul fel? Mekkora távolságot tesz meg a gyorsítás során?
+$$
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2
+$$
 
-6. Egy síelő lesiklik a pályán $30.0 \frac {m} {s}$ sebességgel, majd a lejtő vége felé egyenletes $4.00 \frac {m} {s^2}$ lassulással fékez. Mennyi idő alatt lassul le $10.0 \frac {m} {s}$ sebességre? Mekkora távolságot tesz meg ezalatt?
+$$
+113 = 30{,}0 \cdot x + \frac {-3{,}00} {2} \cdot x^2
+$$
+
+Rendezve az egyenletet a nullára:
+
+$$
+1{,}50 \cdot x^2 - 30{,}0 \cdot x + 113 = 0
+$$
+
+Az $x$ idő meghatározásához alkalmazzuk a jól ismert másodfokú egyenlet megoldóképletét:
+
+$$
+x_{1,2} = \frac {-b \pm \sqrt {b^2 - 4ac}} {2a} = \frac {30{,}0 \pm \sqrt {30{,}0^2 - 4 \cdot 1{,}50 \cdot 113}} {2 \cdot 1{,}50} = \frac {30{,}0 \pm \sqrt {900 - 678}} {3{,}00} = \frac {30{,}0 \pm 14{,}9} {3{,}00}
+$$
+
+A számítás végén két matematikai megoldást kapunk: $x_1 = 15{,}0$ és $x_2 = 5{,}03$. 
+
+Fizikailag a két érték a következő jelentéssel bír: az első esetben ($5{,}03\text{ s}$) az autó egyenesen haladva, irányváltás nélkül éri el a megadott távolságot. A nagyobb időérték ($15{,}0\text{ s}$) akkor valósulna meg, ha a fékező gyorsulás a jármű teljes megállása után is folyamatosan hatna tovább: az autó lelassulna nullára, megfordulna, majd hátrafelé felgyorsítva jutna el újra az indítóponttól mért $113\text{ m}$-es távolságba. Mivel a valóságban a fékezés a megállásnál vagy a kívánt sebesség elérésekor véget ér, számunkra kizárólag a rövidebb, a mozgásirány megfordulása előtti időpont a releváns. A lassítás ideje tehát $t = 5{,}03\text{ s}$.
+
+Az elért sebesség ezután már egyszerűen kiszámítható a gyorsulás alapképletéből:
+
+$$
+a = \frac {v - v_0} {t}
+$$
+
+$$
+-3{,}00 = \frac {x - 30{,}0} {5{,}03}
+$$
+
+$$
+-15{,}1 = x - 30{,}0
+$$
+
+$$
+x = 14{,}9
+$$
+
+Az autó sebessége a szakasz végén $14{,}9\text{ }\frac{\text{m}}{\text{s}}$.
+
+### Gyakorló feladatok
+
+1. Egy gépkocsi $20{,}0\text{ }\frac{\text{m}}{\text{s}}$ kezdősebességről indulva $2{,}00\text{ }\frac{\text{m}}{\text{s}^2}$ állandó lassulással fékez. Mennyi idő alatt tesz meg pontosan $60{,}0\text{ métert}$ a fékezés kezdetétől számítva?
+2. Egy labdát a talajról függőlegesen felhajítunk $15{,}0\text{ }\frac{\text{m}}{\text{s}}$ kezdősebességgel. A nehézségi erő okozta lassulás értéke $9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$. Mennyi idő elteltével éri el a labda a $10{,}0\text{ méteres}$ magasságot az emelkedési szakasz során?
+3. Egy vonat gőzmozdonya $25{,}0\text{ }\frac{\text{m}}{\text{s}}$ sebességgel halad, majd egyenletes $5{,}00\text{ }\frac{\text{m}}{\text{s}^2}$ gyorsulással $10{,}0\text{ másodpercig}$ növeli a sebességét. Mekkora végsebességet ér el a szerelvény, és mekkora utat tesz meg a gyorsítási szakasz alatt?
+4. Egy segédmotoros kerékpár $12{,}0\text{ }\frac{\text{m}}{\text{s}}$ sebességgel halad, amikor hirtelen $1{,}50\text{ }\frac{\text{m}}{\text{s}^2}$ lassulással fékezni kezd. Mennyi időre van szüksége ahhoz, hogy a fékút alatt $50{,}0\text{ métert}$ tegyen meg?
+5. Egy sportautó $40{,}0\text{ }\frac{\text{m}}{\text{s}}$ sebességgel robog, majd $5{,}00\text{ }\frac{\text{m}}{\text{s}^2}$ gyorsulással pontosan $8{,}00\text{ másodpercig}$ intenzíven gyorsít. Mekkora sebességre emelkedik a jármű sebessége, és mekkora távolságot hagy maga mögött a folyamat végére?
+6. Egy síelő $30{,}0\text{ }\frac{\text{m}}{\text{s}}$ sebességgel siklik le a pályán, majd a vízszintes kifutóhoz érve egyenletes $4{,}00\text{ }\frac{\text{m}}{\text{s}^2}$ lassulással fékezni kezd. Mennyi idő alatt mérséklődik a sebessége $10{,}0\text{ }\frac{\text{m}}{\text{s}}$-ra, és mekkora távolságot tesz meg ezen lassulási folyamat közben?

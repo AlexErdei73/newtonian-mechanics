@@ -4,101 +4,79 @@ Az előző leckében a kísérletből és a szimulációból is látható, hogy 
 
 Newton második törvénye alapján a centripetális erő a kör középpontja felé mutató gyorsulással jár együtt. Ez a centripetális gyorsulás. Ez azért lép fel, mert a test sebességének iránya folyamatosan változik. A test elmozdulása minden pillanatban összetethető egy egyenes vonalú, egyenletes sebességű elmozdulásból és egy a kör középpontja felé mutató, egyenletesen gyorsuló mozgás elmozdulásából.
 
->**Az egyenletes körmozgást végző test körmozgásának fenntartásához a kör középpontja felé mutató centripetális erő szükséges. A centripetális erő centripetális gyorsulással jár együtt.**
+> **Az egyenletes körmozgást végző test körmozgásának fenntartásához a kör középpontja felé mutató centripetális erő szükséges. A centripetális erő centripetális gyorsulással jár együtt.**
 
 ## A centripetális gyorsulás kiszámítása
 
-Vezessük le a centripetális gyorsulásra vonatkozó formulát! Legyen a test a körpálya legfelső pontjában és mozgását vizsgáljuk $t$ ideig! A $t$ idő sokkal kisebb, mint a $T$ periódusidő, hogy néhány közelítéssel élhessünk.
+Vezessük le a centripetális gyorsulásra vonatkozó formulát! Legyen a test a körpálya legfelső pontjában, és mozgását vizsgáljuk $t$ ideig! A $t$ idő sokkal kisebb, mint a $T$ periódusidő, hogy néhány közelítéssel élhessünk.
 
 A test elmozdulása összetethető a vízszintes, egyenes vonalú, egyenletes mozgás elmozdulásából és a középpont felé mutató, egyenletesen gyorsuló mozgás elmozdulásából. A függőleges sugár, az elmozdulások és a sugár, mely az elmozdulás végpontjába mutat, egy derékszögű háromszöget alkot.
 
 ![A centripetális gyorsulás levezetése](Kepek/centripetalisgyorsulas.svg)
 
-
 $$
 (R + s)^2 = R^2 + (vt)^2
 $$
 
-
-
 $$
-R^2 + 2Rs + s^2 = R^2 + v^2t^2
+R^2 + 2Rs + s^2 = R^2 + v^2 t^2
 $$
 
-
-
 $$
-2Rs + s^2 = v^2t^2
+2Rs + s^2 = v^2 t^2
 $$
-
-
 
 $$
 t \ll T
 $$
 
-
-Az időtartam igen kicsiny, tehát a $t^4$-t tartalmazó tag elhanyagolható a $t^2$-tel arányos tagok mellett.
-
+Az időtartam igen kicsiny, tehát a $t^4$-et tartalmazó tag elhanyagolható a $t^2$-tel arányos tagok mellett.
 
 $$
-s = \frac {a} {2}t^2
+s = \frac{a}{2}t^2
 $$
 
-
-$s^2$ elhanyagolható, hisz ez $t^4$-el arányos tag.
-
+$s^2$ elhanyagolható, hiszen ez $t^4$-gyel arányos tag.
 
 $$
-2Rs = v^2t^2
+2Rs = v^2 t^2
 $$
 
-
-
 $$
-s = \frac {\frac {v^2} {R}} {2} t^2
+s = \frac{\frac{v^2}{R}}{2}t^2
 $$
-
 
 Ezt a formulát összehasonlítva az egyenletesen gyorsuló mozgásra vonatkozó képletünkkel, kapjuk:
 
-
 $$
-a = \frac {v^2} {R}
+a = \frac{v^2}{R}
 $$
 
-
->**A centripetális gyorsulás a sebesség négyzetének és a sugárnak a hányadosa.**
+> **A centripetális gyorsulás a sebesség négyzetének és a sugárnak a hányadosa.**
 
 Ez a szimulációval is könnyen ellenőrizhető.
 
 ### Példák
-1. Egy $0,100 \text{ kg}$ tömegű követ egy parittyában pörgetünk $0,4 \text{ s}$ periódusidővel $0,200 \text{ m}$ sugarú körpályán. A kő egyenletes körmozgást végez. Mekkora a kő sebessége? Mekkora a kő mozgási energiája? Mekkora a kő centripetális gyorsulása? Mekkora erő tartja pályáján a követ?
 
-
-$$
-v = \frac {2 \pi R} {T} = \frac {2 \times 3,1415 \times 0,2} {0,4} = 3,142 \frac {\text{m}} {\text{s}}
-$$
-
-
+1. Egy $0,100\text{ kg}$ tömegű követ egy parittyában pörgetünk $0,4\text{ s}$ periódusidővel $0,200\text{ m}$ sugarú körpályán. A kő egyenletes körmozgást végez. Mekkora a kő sebessége? Mekkora a kő mozgási energiája? Mekkora a kő centripetális gyorsulása? Mekkora erő tartja pályáján a követ?
 
 $$
-E_m = \frac {mv^2} {2} = \frac {0,1 \times 3,142^2} {2} = 0,4933 \text{ J}
+v = \frac{2\pi R}{T} = \frac{2 \cdot 3,1415 \cdot 0,2}{0,4} \approx 3,142\text{ m/s}
 $$
 
-
-
 $$
-a = \frac {v^2} {R} = \frac {3,142^2} {0,2} = 49,36 \frac {\text{m}} {\text{s}^2}
+E_{\text{m}} = \frac{mv^2}{2} = \frac{0,1 \cdot 3,142^2}{2} \approx 0,4933\text{ J}
 $$
 
-
-
 $$
-F_e = ma = 0,1 \times 49,36 = 4,936 \text{ N}
+a = \frac{v^2}{R} = \frac{3,142^2}{0,2} \approx 49,36\text{ m/s}^2
 $$
 
-2. Egy vödörben víz van és függőleges síkban forgatjuk úgy egy kötélen, hogy körmozgást végez. A pálya legfelső pontján a vödör sebessége $5 \frac {m} {s}$, a kör sugara $0,77m$. Mekkora erővel nyomja a víz a vödör fenekét, ha tömege $1,50kg$? Kifolyik-e a víz a vödörből? Mekkora a minimális szögsebesség, melynél a víz nem folyik ki a vödörből?
+$$
+F_{\text{e}} = ma = 0,1 \cdot 49,36 = 4,936\text{ N}
+$$
+
+2. Egy vödörben víz van, és függőleges síkban forgatjuk úgy egy kötélen, hogy körmozgást végez. A pálya legfelső pontján a vödör sebessége $5\text{ m/s}$, a kör sugara $0,77\text{ m}$. Mekkora erővel nyomja a víz a vödör fenekét, ha tömege $1,50\text{ kg}$? Kifolyik-e a víz a vödörből? Mekkora a minimális szögsebesség, melynél a víz nem folyik ki a vödörből?
 
 ### Kísérlet
 
@@ -106,82 +84,58 @@ $$
 
 Felírjuk Newton második törvényét a pálya felső pontjában:
 
-
 $$
-mg + K = ma_{cp}
-$$
-
-
-
-$$
-a_{cp} = \frac {v^2} {R} = \frac {5^2} {0,77} = 32,47 \frac {m} {s^2}
+mg + K = ma_{\text{cp}}
 $$
 
-
-
 $$
-K = ma_{cp} - mg = 1,50 \times 32,47 - 1,50 \times 9,81 = 33,99N
+a_{\text{cp}} = \frac{v^2}{R} = \frac{5^2}{0,77} \approx 32,47\text{ m/s}^2
 $$
 
+$$
+K = ma_{\text{cp}} - mg = 1,50 \cdot 32,47 - 1,50 \cdot 9,81 = 33,99\text{ N}
+$$
 
-Tehát a víz nem folyik ki, hanem tekintélyes erővel nyomja a vödör alját. Nézzük most azt az esetet, amikor a víz még épp nem folyik ki, de már nem nyomja a vödör alját!
-
+Tehát a víz nem folyik ki, hanem tekintélyes erővel nyomja a vödör alját. Nézzük most azt az esetet, amikor a víz még éppen nem folyik ki, de már nem nyomja a vödör alját!
 
 $$
 K = 0
 $$
 
-
-
 $$
-mg = ma_{cp,min}
+mg = ma_{\text{cp,min}}
 $$
 
-
-
 $$
-g = a_{cp,min}
+g = a_{\text{cp,min}}
 $$
 
-
-
 $$
-g = \frac {v_{min}^2} {R}
+g = \frac{v_{\text{min}}^2}{R}
 $$
 
-
-
 $$
-gR = v_{min}^2
+gR = v_{\text{min}}^2
 $$
 
-
-
 $$
-v_{min} = \sqrt {gR} = \sqrt {9,81 \times 0,77} = 2,748 \frac {m} {s}
+v_{\text{min}} = \sqrt{gR} = \sqrt{9,81 \cdot 0,77} \approx 2,748\text{ m/s}
 $$
 
-
-
 $$
-v_{min} = R \omega_{min}
+v_{\text{min}} = R\omega_{\text{min}}
 $$
 
-
-
 $$
-\omega_{min} = \frac {v_{min}} {R} = \frac {2,748} {0,77} = 3,569 \frac {rad} {s}
+\omega_{\text{min}} = \frac{v_{\text{min}}}{R} = \frac{2,748}{0,77} \approx 3,569\text{ rad/s}
 $$
 
+---
 
+## Feladatok
 
-
-***
-
-### Feladatok:
-
-1. Egy forma-1-es autó $180 \frac{\text{km}}{\text{h}}$ ($50 \frac{\text{m}}{\text{s}}$) sebességgel halad egy $100 \text{ m}$ sugarú kanyarban. Mekkora a jármű centripetális gyorsulása?
-2. Egy műhold a Föld felszíne felett kering. A keringési sebessége $7800 \frac{\text{m}}{\text{s}}$, a pályasugara pedig (a Föld középpontjától számítva) kb. $6600 \text{ km}$. Számítsd ki a műholdra ható centripetális gyorsulást! Hasonlítsd össze ezt az értéket a földi nehézségi gyorsulással ($g \approx 9,81 \frac{\text{m}}{\text{s}^2}$)!
-3. Egy atléta a $7,26 \text{ kg}$ tömegű kalapácsot $2 \text{ m}$ sugarú körpályán forgatja. A kalapács sebessége a kidobás pillanatában $28 \frac{\text{m}}{\text{s}}$. Mekkora erővel húzza a kalapács az atléta karját (mekkora a centripetális erő)?
-4. Egy űrállomás gyűrű alakú lakóegysége forog, hogy mesterséges gravitációt hozzon létre. A gyűrű sugara $20 \text{ m}$. Mekkora kerületi sebességgel kell forognia a gyűrűnek, hogy a peremén a centripetális gyorsulás megegyezzen a földi gravitációs gyorsulással ($g = 9,81 \frac{\text{m}}{\text{s}^2}$)?
-5. Egy láncos körhintán a gyerekek a középponttól $5 \text{ m}$ távolságra keringenek. A hinta szögsebessége $\omega = 0,8 \frac{\text{rad}}{\text{s}}$. Használd az $a_{cp} = \omega^2 \cdot R$ összefüggést (vagy számold át kerületi sebességre), és határozd meg a gyerekek centripetális gyorsulását!
+1. Egy Formula–1-es autó $180\text{ km/h}$ ($50\text{ m/s}$) sebességgel halad egy $100\text{ m}$ sugarú kanyarban. Mekkora a jármű centripetális gyorsulása?
+2. Egy műhold a Föld felszíne felett kering. A keringési sebessége $7800\text{ m/s}$, a pályasugara pedig (a Föld középpontjától számítva) kb. $6600\text{ km}$. Számítsd ki a műholdra ható centripetális gyorsulást! Hasonlítsd össze ezt az értéket a földi nehézségi gyorsulással ($g \approx 9,81\text{ m/s}^2$)!
+3. Egy atléta a $7,26\text{ kg}$ tömegű kalapácsot $2\text{ m}$ sugarú körpályán forgatja. A kalapács sebessége a kidobás pillanatában $28\text{ m/s}$. Mekkora erővel húzza a kalapács az atléta karját (mekkora a centripetális erő)?
+4. Egy űrállomás gyűrű alakú lakóegysége forog, hogy mesterséges gravitációt hozzon létre. A gyűrű sugara $20\text{ m}$. Mekkora kerületi sebességgel kell forognia a gyűrűnek, hogy a peremén a centripetális gyorsulás megegyezzen a földi gravitációs gyorsulással ($g = 9,81\text{ m/s}^2$)?
+5. Egy láncos körhintán a gyerekek a középponttól $5\text{ m}$ távolságra keringenek. A hinta szögsebessége $\omega = 0,8\text{ rad/s}$. Használd az $a_{\text{cp}} = \omega^2 R$ összefüggést (vagy számold át kerületi sebességre), és határozd meg a gyerekek centripetális gyorsulását!
