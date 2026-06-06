@@ -83,3 +83,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	67. [Állóhullámok *](Mechanika/ALLOHULLAMOK.md)
 	68. [Kísérletek állóhullámokkal](Mechanika/KISERLETEKALLOHULLAM.md)
 	69. [A nyomás](Mechanika/NYOMAS.md)
+	70. [Pascal törvénye](Mechanika/PASCALTORVENY.md)
