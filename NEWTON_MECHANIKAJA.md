@@ -85,3 +85,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	69. [A nyomás](Mechanika/NYOMAS.md)
 	70. [Pascal törvénye](Mechanika/PASCALTORVENY.md)
 	71. [A hidrosztatikai nyomás](Mechanika/HIDROSZTATIKAINYOMAS.md)
+	72. [Torricelli kísérlete](Mechanika/TORRICELLI.md)
