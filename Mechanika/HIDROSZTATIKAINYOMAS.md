@@ -2,9 +2,11 @@
 
 ## A hidrosztatikai nyomás fogalma
 
-### Kísérlet
+### Kísérletek
 
 [A hidrosztatikai nyomás és függése a folyadékoszlop magasságától](https://www.youtube.com/watch?v=DDFjFb72f94)
+
+[Pascal-mérleg](https://www.youtube.com/watch?v=Fodof4gSIA0&t=1188s)
 
 A kísérletben láthatjuk, hogy a folyadék súlyánál fogva nyomást fejt ki. Ezt a nyomást nevezzük hidrosztatikai nyomásnak.
 
