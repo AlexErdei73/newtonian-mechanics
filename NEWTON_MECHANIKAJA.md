@@ -87,3 +87,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	71. [A hidrosztatikai nyomás](Mechanika/HIDROSZTATIKAINYOMAS.md)
 	72. [Torricelli kísérlete](Mechanika/TORRICELLI.md)
 	73. [Arkhimédesz törvénye](Mechanika/ARKHIMEDESZ.md)
+	74. [A felületi feszültség](Mechanika/FELULETIFESZULTSEG.md)
