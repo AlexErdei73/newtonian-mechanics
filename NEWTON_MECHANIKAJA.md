@@ -88,3 +88,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	72. [Torricelli kísérlete](Mechanika/TORRICELLI.md)
 	73. [Arkhimédesz törvénye](Mechanika/ARKHIMEDESZ.md)
 	74. [A felületi feszültség](Mechanika/FELULETIFESZULTSEG.md)
+	75. [A kapilláris nyomás](Mechanika/KAPILLARISNYOMAS.md)
