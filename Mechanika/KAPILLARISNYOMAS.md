@@ -79,6 +79,8 @@ A $p_g$ görbületi nyomást itt levonjuk, mivel feltételezzük, hogy a felszí
 
 Legyen a folyadékfelszín érintője és a cső fala által bezárt illeszkedési (nedvesítési) szög $\theta$. Ez a szög nedvesítő folyadékokra $90^\circ$-nál kisebb, míg nem nedvesítő folyadékokra $90^\circ$-nál nagyobb. Nagyon tiszta üveg és tiszta víz esetén ez a szög jó közelítéssel $0^\circ$.
 
+![A meniszkusz sugara es a hajszalcső sugara közötti kapcsolat](Kepek/meniszkusz.svg)
+
 A geometriai elrendezés alapján a cső $r$ sugara és a meniszkusz gömbfelületének $R$ sugara közötti összefüggés:
 
 $$\cos\theta = \frac{r}{R} \implies R = \frac{r}{\cos\theta}$$

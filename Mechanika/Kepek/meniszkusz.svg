@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="400">
+  <defs>
+    <style>
+      .bg { fill: #FFFFFF; }
+      .wall { stroke: #4A5568; stroke-width: 4; fill: none; }
+      .glass { fill: #EDF2F7; opacity: 0.6; }
+      .water { fill: #EBF8FF; stroke: #3182CE; stroke-width: 3; }
+      .line { stroke: #2D3748; stroke-width: 2; fill: none; }
+      .dash { stroke: #718096; stroke-width: 1.5; stroke-dasharray: 4,4; fill: none; }
+      .vector { stroke: #E53E3E; stroke-width: 2; fill: none; }
+      .text { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 14px; fill: #2D3748; }
+      .math { font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: 18px; }
+      .title { font-weight: bold; font-size: 16px; }
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#2D3748"/>
+    </marker>
+  </defs>
+
+  <!-- 1. Fehér háttér biztosítása -->
+  <rect width="500" height="500" class="bg" />
+
+  <!-- Folyadékoszlop az edényben (alsó rész) -->
+  <rect x="150" y="250" width="200" height="200" fill="#EBF8FF" />
+
+  <!-- Meniszkusz (Homorú folyadékfelszín fentről nézve, a gömb középpontja C(250, 150)) -->
+  <path d="M 150 250 A 141.42 141.42 0 0 0 350 250 L 350 450 L 150 450 Z" class="water" />
+  
+  <!-- Üvegcső falai -->
+  <rect x="120" y="50" width="30" height="400" class="glass" />
+  <rect x="350" y="50" width="30" height="400" class="glass" />
+  <line x1="150" y1="50" x2="150" y2="450" class="wall" />
+  <line x1="350" y1="50" x2="350" y2="450" class="wall" />
+
+  <!-- Cső függőleges középtengelye -->
+  <line x1="250" y1="50" x2="250" y2="450" class="dash" />
+
+  <!-- GEOMETRIAI SZERKESZTÉS (A homorú oldal, azaz a meniszkusz FÖLÖTT) -->
+  <!-- C pont: a gömb középpontja (250, 150) -->
+  <!-- B pont: a meniszkusz és a bal fal találkozása (150, 250) -->
+  <!-- A pont: a cső tengelyén lévő vetület ugyanabban a magasságban (250, 250) -->
+  <polygon points="250,150 150,250 250,250" stroke="#2B6CB0" stroke-width="2" fill="none" />
+  
+  <!-- Derékszög jelzése (A pontnál, a tengely és a sugárvetület között) -->
+  <path d="M 250 240 L 240 240 L 240 250" stroke="#2B6CB0" stroke-width="1" fill="none" />
+
+  <!-- Felszín érintője a falnál (felfelé mutat, szöget bezárva a függőlegessel) -->
+  <line x1="150" y1="250" x2="50" y2="150" stroke="#E53E3E" stroke-width="2" fill="none" />
+  <!-- Függőleges referenciavonal a fal mentén felfelé a szögméréshez -->
+  <line x1="150" y1="250" x2="150" y2="100" class="dash" />
+
+  <!-- Ívek a szögek kiméréséhez -->
+  <!-- Külső illeszkedési szög (Theta) az érintő és a függőleges fal között fönn -->
+  <path d="M 150 210 A 40 40 0 0 0 121.7 221.7" stroke="#E53E3E" stroke-width="2" fill="none" />
+  
+  <!-- JAVÍTOTT: Belső szög (Theta) a B(150, 250) pontnál, a háromszög belsejében (az r vízszintes és az R átfogó között) -->
+  <path d="M 190 250 A 40 40 0 0 0 178.3 221.7" stroke="#E53E3E" stroke-width="2" fill="none" />
+
+  <!-- Jelölések és feliratok -->
+  <!-- r sugár (a derékszögű háromszög alsó vízszintes befogója) -->
+  <line x1="152" y1="265" x2="248" y2="265" stroke="#2D3748" stroke-width="1" marker-start="url(#arrow)" marker-end="url(#arrow)" />
+  <text x="195" y="285" class="math">r</text>
+
+  <!-- R sugár (a gömb sugara, az átfogó C és B között) -->
+  <text x="200" y="195" class="math">R</text>
+
+  <!-- C pont (Gömb középpontja fönn, a homorú oldalon) -->
+  <circle cx="250" cy="150" r="4" fill="#2D3748" />
+  <text x="265" y="155" class="text">C (Gömb középpontja)</text>
+
+  <!-- A Θ (Theta) szögek szöveges feliratai -->
+  <text x="125" y="195" class="math" font-size="22px">Θ</text>
+  <!-- JAVÍTOTT: A belső szög felirata a bal alsó sarokba, a friss ív mellé került -->
+  <text x="185" y="240" class="math" font-size="22px">Θ</text>
+
+  <!-- Strukturális feliratok -->
+  <text x="95" y="40" class="text title">Üvegfal</text>
+  <text x="345" y="40" class="text title">Üvegfal</text>
+  <text x="260" y="80" class="text">Középtengely</text>
+  <text x="35" y="135" class="text" fill="#E53E3E">Felszín érintője</text>
+
+  <!-- JAVÍTOTT ÖSSZEFÜGGÉS DOBOZ FIX POZÍCIÓKKAL -->
+  <rect x="310" y="340" width="160" height="70" rx="5" fill="white" stroke="#3182CE" stroke-width="2" />
+  
+  <!-- Fő szöveg (cos Θ =) -->
+  <text x="325" y="382" class="math" font-size="24px">cos Θ =</text>
+  
+  <!-- Számláló (r) -->
+  <text x="428" y="367" class="math" font-size="24px" text-anchor="middle">r</text>
+  
+  <!-- Grafikus törtvonal -->
+  <line x1="415" y1="373" x2="441" y2="373" stroke="#2D3748" stroke-width="2" />
+  
+  <!-- Nevező (R) -->
+  <text x="428" y="397" class="math" font-size="24px" text-anchor="middle">R</text>
+
+</svg>
