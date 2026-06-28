@@ -91,3 +91,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	75. [A kapilláris nyomás](Mechanika/KAPILLARISNYOMAS.md)
 	76. [A folyadékok áramlása](Mechanika/ARAMLASOK.md)
 	77. [A Bernoulli-törvény](Mechanika/BERNOULLI.md)
+	78. [A viszkozítás](Mechanika/VISZKOZITAS.md)
