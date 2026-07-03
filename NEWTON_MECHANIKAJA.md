@@ -94,3 +94,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	78. [A viszkozítás](Mechanika/VISZKOZITAS.md)
 	79. [A lamináris áramlas I.](Mechanika/LAMINARISARAMLAS1.md)
 	80. [A lamináris áramlas II.](Mechanika/LAMINARISARAMLAS2.md)
+	81. [Út a turbulenciához a Kármán-féle örvénysoron át](Mechanika/KARMANORVENYSOR.md)
