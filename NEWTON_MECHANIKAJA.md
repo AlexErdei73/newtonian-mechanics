@@ -95,4 +95,5 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	79. [A lamináris áramlas I.](Mechanika/LAMINARISARAMLAS1.md)
 	80. [A lamináris áramlas II.](Mechanika/LAMINARISARAMLAS2.md)
 	81. [Út a turbulenciához a Kármán-féle örvénysoron át](Mechanika/KARMANORVENYSOR.md)
-	82. [A kifejlett turbulencia és az energia kaszkád](Mechanika/TURBULENCIA.md)
+	82. [A kifejlett turbulencia és az energia kaszkád](Mechanika/TURBULENCIA1.md)
+	83. [Kolmogorov K41 modellje az energiakaszkádra *](Mechanika/TURBULENCIA2.md)
