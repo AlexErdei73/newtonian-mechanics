@@ -18,7 +18,7 @@ A mechanikában három alapmennyiségről beszélünk, a következőkben ezek m�
 
 ### Hosszúság
 
-> **A hosszúság egysége a méter (jele: $\text{m}$). Egy méter a Föld párizsi meridiánja (hosszúsági köre) hosszának 40\ 000\ 000-ad része. Úgy is fogalmazhatunk, hogy a teljes hosszúsági kör hossza 40\ 000 km.**
+> **A hosszúság egysége a méter (jele: $\text{m}$). Egy méter a Föld párizsi meridiánja (hosszúsági köre) hosszának 40 000 000-ad része. Úgy is fogalmazhatunk, hogy a teljes hosszúsági kör hossza 40 000 km.**
 
 A kilométer a méter $1000$-szerese. A „kilo-” előtag más egységekhez is kapcsolható; minden esetben $1000$-szeres szorzót jelent. A kilo előtag jelölése $\text{k}$, amelyet közvetlenül a mértékegység jele (ez esetben az $\text{m}$) elé írunk. Az ilyen előtagokat (prefixumokat) táblázatban szoktuk összefoglalni.
 

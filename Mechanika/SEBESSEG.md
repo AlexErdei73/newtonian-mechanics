@@ -15,7 +15,7 @@ Egyenletes mozgás során a test egyenlő időközök alatt egyenlő utakat fut 
 [Egyenletes és egyenletesen változó mozgás demonstrációja air track segítségével](https://www.youtube.com/watch?v=PCLjIjAUBnw&t)
 
 ### Szimuláció
-[Egyenes vonalú, egyenletes mozgás szimulátor](https://alexerdei73.github.io/physics-engine/project/#2bb04c3c-0905-425f-bbba-301a5a455867)
+[Egyenes vonalú, egyenletes mozgás szimulátor](https://alexerdei73.github.io/physics-engine/project/#c1c7278a-8c14-4386-ad82-477930ee81d2)
 
 A szimuláció segítségével grafikusan is ábrázolhatjuk a test által megtett utat az idő függvényében. Ehhez jelölje be a **Graphs** jelölőnégyzetet, majd nyissa meg a **Results** panelt. Válassza ki a **Path Length** (megtett út) mezőt, majd a **Switch back** gombbal térjen vissza a főképernyőre, és indítsa el az animációt. Ekkor az alábbihoz hasonló grafikon rajzolódik ki:
 
