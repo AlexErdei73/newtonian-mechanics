@@ -97,3 +97,4 @@ A fizikai mozgásokat szimulációkkal szemléltetjük, és számításainkat sz
 	81. [Út a turbulenciához a Kármán-féle örvénysoron át](Mechanika/KARMANORVENYSOR.md)
 	82. [A kifejlett turbulencia és az energia kaszkád](Mechanika/TURBULENCIA1.md)
 	83. [Kolmogorov K41 modellje az energiakaszkádra *](Mechanika/TURBULENCIA2.md)
+	84. [A közegellenállás](Mechanika/KOZEGELLENALLAS.md)
