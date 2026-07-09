@@ -69,7 +69,7 @@ Bár a valódi fluidumok áramlásakor a szuperfolyékony hélium kivételével 
 
 ## Példa
 
-Egy vízszintes Venturi-csőben a levegő sebessége a tágabb csőszakaszban $u_1 = 2\text{ m/s}$, átmérője itt $d_1 = 1\text{ cm}$. A szűkület átmérője $d_2 = 4\text{ mm}$. Mekkora a szűkületben a sebesség és a statikus nyomás? Az áramlás stacionárius, örvénymentes, és a levegőt ideális gáznak tekintjük (a súrlódástól és az összenyomhatóságtól eltekintünk). A levegő sűrűsége $\rho = 1{,}20\text{ kg/m}^3$, kezdeti nyomása $p_1 = 101\\ 300\text{ Pa}$.
+Egy vízszintes Venturi-csőben a levegő sebessége a tágabb csőszakaszban $u_1 = 2\text{ m/s}$, átmérője itt $d_1 = 1\text{ cm}$. A szűkület átmérője $d_2 = 4\text{ mm}$. Mekkora a szűkületben a sebesség és a statikus nyomás? Az áramlás stacionárius, örvénymentes, és a levegőt ideális gáznak tekintjük (a súrlódástól és az összenyomhatóságtól eltekintünk). A levegő sűrűsége $\rho = 1{,}20\text{ kg/m}^3$, kezdeti nyomása $p_1 = 101\ 300\text{ Pa}$.
 
 A szűkületben a sebességet a kontinuitási egyenletből számíthatjuk ki:
 
@@ -90,7 +90,7 @@ p_2 = p_1 - \frac{1}{2}\rho(u_2^2 - u_1^2)
 $$
 
 $$
-p_2 = 101\\ 300 - \frac{1}{2} \cdot 1{,}20 \cdot (12{,}5^2 - 2^2) = 101\\ 208{,}65\text{ Pa}
+p_2 = 101\ 300 - \frac{1}{2} \cdot 1{,}20 \cdot (12{,}5^2 - 2^2) = 101\ 208{,}65\text{ Pa}
 $$
 
 ## Feladatok
@@ -98,9 +98,9 @@ $$
 1. Egy vízszintes kerti locsolócső belső átmérője a vastagabb szakaszon $d_1 = 2\text{ cm}$, itt a víz sebessége $u_1 = 1{,}5\text{ m/s}$. A cső végére egy szűkítő fejet szerelünk, amelynek kimeneti átmérője mindössze $d_2 = 5\text{ mm}$.
 Mekkora a víz kiáramlási sebessége a szűkítésnél? (A vizet tekintsük ideális, összenyomhatatlan folyadéknak).
 
-2. Egy repülőgép szárnya felett a levegő sebessége egy adott ponton $u_2 = 60\text{ m/s}$, míg a szárny alatt a zavartalan áramlásban $u_1 = 50\text{ m/s}$. A szárny alatti áramlásban a statikus légnyomás $p_1 = 100\\ 000\text{ Pa}$. A levegő sűrűsége $\rho = 1{,}2\text{ kg/m}^3$.
+2. Egy repülőgép szárnya felett a levegő sebessége egy adott ponton $u_2 = 60\text{ m/s}$, míg a szárny alatt a zavartalan áramlásban $u_1 = 50\text{ m/s}$. A szárny alatti áramlásban a statikus légnyomás $p_1 = 100\ 000\text{ Pa}$. A levegő sűrűsége $\rho = 1{,}2\text{ kg/m}^3$.
 Mekkora a nyomás a szárny feletti pontban? (A szárny vastagságából adódó magasságkülönbséget hanyagoljuk el).
 
-3. Egy függőlegesen felfelé szűkülő csőben víz áramlik. A cső alsó, tágasabb keresztmetszeténél az átmérő $d_1 = 10\text{ cm}$, a víz sebessége $u_1 = 2\text{ m/s}$, a nyomás pedig $p_1 = 200\\ 000\text{ Pa}$. A cső $h = 3\text{ méterrel}$ magasabban lévő felső végénél az átmérő $d_2 = 5\text{ cm}$-re szűkül. 
+3. Egy függőlegesen felfelé szűkülő csőben víz áramlik. A cső alsó, tágasabb keresztmetszeténél az átmérő $d_1 = 10\text{ cm}$, a víz sebessége $u_1 = 2\text{ m/s}$, a nyomás pedig $p_1 = 200\ 000\text{ Pa}$. A cső $h = 3\text{ méterrel}$ magasabban lévő felső végénél az átmérő $d_2 = 5\text{ cm}$-re szűkül. 
 $\rho_{\text{víz}} = 1000\text{ kg/m}^3$, $g = 10\text{ m/s}^2$
 Mekkora a sebesség és a statikus nyomás a cső felső, szűkebb keresztmetszetében?

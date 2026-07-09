@@ -79,13 +79,13 @@ $$
 
 Pontosan visszakaptuk a Stokes-féle lineáris erőtörvényt! Igen kis Reynolds-számoknál tehát a fékezés mechanizmusa a testre tapadó folyadék belső, ragacsos súrlódása.
 
-Nagy Reynolds-számok esetén ($1000 < Re < 300\\ 000$) a gömb alaktényezője szinte állandóvá válik, értéke kb. $0{,}47$. Itt már a folyadék tehetetlensége és a test mögött kialakuló örvénycsóva miatti nyomáskülönbség (alaki ellenállás) uralkodynamikája uralkodik, így az erő tiszta $u^2$ függést mutat.
+Nagy Reynolds-számok esetén ($1000 < Re < 300\ 000$) a gömb alaktényezője szinte állandóvá válik, értéke kb. $0{,}47$. Itt már a folyadék tehetetlensége és a test mögött kialakuló örvénycsóva miatti nyomáskülönbség (alaki ellenállás) uralkodynamikája uralkodik, így az erő tiszta $u^2$ függést mutat.
 
 ![A gömb alaktényezője a Reynolds-szám függvényében](Kepek/gomb_alaktenyezoje_Re_fuggvenyeben.webp)
 
 #### A közegellenállási válság (Drag crisis)
 
-Sima felületű gömbnél $Re \approx 300\\ 000$ környékén egy egészen megdöbbentő fizikai tünemény játszódik le: a gömb alaktényezője hirtelen és drasztikusan leesik $0{,}47$-ről kb. $0{,}2$-re! 
+Sima felületű gömbnél $Re \approx 300\ 000$ környékén egy egészen megdöbbentő fizikai tünemény játszódik le: a gömb alaktényezője hirtelen és drasztikusan leesik $0{,}47$-ről kb. $0{,}2$-re! 
 
 Ennek oka, hogy a gömb elején kialakuló vékony, lamináris határréteg hirtelen összeomlik és turbulenssé válik. Bár a turbulencia helyileg növeli a súrlódást, a turbulens határréteg sokkal nagyobb mozgási energiával rendelkezik. Emiatt sokkal hosszabban képes követni a gömb görbületét, és a leválási pont hátratolódik (lamináris esetben kb. $80^\circ$-nál, turbulens esetben $120^\circ$ körül válik le az áramlás). Emiatt a gömb mögötti kis nyomású örvénycsóva drasztikusan összeszűkül, és a test alaki ellenállása bezuhan.
 
@@ -143,6 +143,7 @@ $$
 **Konklúzió:** Vegyük észre a drámai különbséget! Ejtőernyő nélkül az emberi test kiterítve is közel $168\text{ km/h}$-s sebességgel csapódna a földbe, ami a fellépő óriási (több mint $800\text{ g}$-s) lassulás miatt azonnali halálos sérülést okoz. Az ejtőernyő hatalmas vetületi felülete és magas alaktényezője a becsapódást egy teljesen biztonságos, kb. $17\text{ km/h}$-s zökkenéssé szelídíti.
 
 ---
+
 ## Az aerodinamikai emelőerő megszületése
 
 A repülőgép-szárnyprofil körüli áramlás szimulációjakor kis szögeknél szép lamináris áramlás alakul ki, melynél a szárny stabil emeloerőt biztosít. Ha jól megnézzük a szimulációt a videón, láthatunk egy kis örvényt leválni a mozgás kezdetén a szárny hátsó csücskénél (ez az úgynevezett indulási örvény). 

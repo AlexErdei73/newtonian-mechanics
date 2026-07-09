@@ -50,7 +50,7 @@ Ha laboratóriumban megmérjük, hogyan változik a Strouhal-szám a Reynolds-sz
 
 ![A Strouhal-szám a Reynolds-szám függvényében henger esetén](Kepek/strouhal.gif)
 
-A grafikonból számunkra az a legfontosabb elméleti tanulság, hogy egy igen széles Reynolds-szám tartományban – nagyjából $250 < Re < 250\\ 000$ között – a Strouhal-szám szinte teljesen állandónak tekinthető, méghozzá $St \approx 0{,}21$. Ez azt jelenti, hogy az áramlás sebességével egyenesen arányos lesz a kialakuló frekvencia ebben a hatalmas gépészeti tartományban. Nyilvánvalóan kisebb Reynolds-számokra ez a linearitás már nem igaz, nagyon kis Reynolds-számok esetén pedig az örvények le sem válnak a testről.
+A grafikonból számunkra az a legfontosabb elméleti tanulság, hogy egy igen széles Reynolds-szám tartományban – nagyjából $250 < Re < 250\ 000$ között – a Strouhal-szám szinte teljesen állandónak tekinthető, méghozzá $St \approx 0{,}21$. Ez azt jelenti, hogy az áramlás sebességével egyenesen arányos lesz a kialakuló frekvencia ebben a hatalmas gépészeti tartományban. Nyilvánvalóan kisebb Reynolds-számokra ez a linearitás már nem igaz, nagyon kis Reynolds-számok esetén pedig az örvények le sem válnak a testről.
 
 Kifejezetten érdekes, hogy mi történik hatalmas Reynolds-számok esetén. Itt a hengerre tapadó folyadék-határréteg, amely sokáig az elülső falon megőrzi a lamináris jellegét, szinten turbulenssé válik. Ez azt jelenti, hogy az örvényleválás pontos geometriai helye is fluktuálni kezd, így a szigorúan szabályos periodikus jelleg és az állandó, tiszta frekvencia felbomlik. Ez még magasabb Reynolds-számoknál újra visszaáll egy stabilabb állapotba, de ott a Strouhal-szám értéke már magasabb, nagyjából $0{,}25 - 0{,}30$ között mozog.
 
@@ -72,13 +72,13 @@ A levegő sűrűsége $20\text{ }^{\circ}\text{C}$-on $\rho = 1{,}204\text{ kg/m
 Váltsuk át a szélsebességet SI alapmértékegységre:
 
 $$
-u = 36\text{ km/h} = \frac{36\\ 000\text{ m}}{3600\text{ s}} = 10\text{ m/s}
+u = 36\text{ km/h} = \frac{36\ 000\text{ m}}{3600\text{ s}} = 10\text{ m/s}
 $$
 
 A cső vagy az oszlop karakterisztikus mérete az átmérő: $d = 30\text{ cm} = 0{,}3\text{ m}$. Számítsuk ki az áramlásra jellemző globális Reynolds-számot:
 
 $$
-Re = \frac{\rho d u}{\eta} = \frac{1{,}204 \cdot 0{,}3 \cdot 10}{1{,}82 \cdot 10^{-5}} = 198\\ 461
+Re = \frac{\rho d u}{\eta} = \frac{1{,}204 \cdot 0{,}3 \cdot 10}{1{,}82 \cdot 10^{-5}} = 198\ 461
 $$
 
 Ez egy kifejezetten magas Reynolds-szám, de ha ránézünk a St(Re) diagramra, látható, hogy ez az érték még szigorúan a stabil fennsíkon belül helyezkedik el. Így a Strouhal-szám állandónak vehető:
