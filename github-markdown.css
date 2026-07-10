@@ -1246,21 +1246,6 @@
   min-height: 52px;
 }
 
-/* Global Page Margins & Centering */
-.markdown-body {
-    box-sizing: border-box;
-    min-width: 200px;
-    max-width: 980px;
-    margin: 0 auto !important;
-    padding: 45px !important;
-}
-
-@media (max-width: 767px) {
-    .markdown-body {
-        padding: 15px !important;
-    }
-}
-
 /* 1. Alapállapot: a videó egy mély, sötét, elegáns feketeségbe burkolózik */
 lite-youtube {
     background-color: #000 !important; /* Biztosítjuk a tiszta fekete hátteret */

@@ -2,20 +2,72 @@
 
 PROJECT_TITLE="Newton Mechanikája"
 
-ROOT_HEADER='<link rel="icon" type="image/x-icon" href="favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>'
-SUB_HEADER='<link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>'
+# GOLYÓÁLLÓ EGYEDI SABLON: Eleve beépítve tartalmazza a <main class="markdown-body"> burkolót!
+# Így a gyári GitHub CSS azonnal életre kel, és a felesleges dupla <h1> header is örökre eltűnik.
+cat << 'EOF' > pandoc_clean_template.html
+<!DOCTYPE html>
+<html xmlns="http://w3.org" lang="hu" xml:lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>$title$</title>
+  $for(css)$
+  <link rel="stylesheet" href="$css$" />
+  $endfor$
+  $for(header-includes)$
+  $header-includes$
+  $endfor$
+</head>
+<body>
+<main class="markdown-body">
+$body$
+</main>
+</body>
+</html>
+EOF
+
+# TISZTA, IZOLÁLT NAVIGÁCIÓS STÍLUSOK (A gyári github-markdown.css 100% érintetlen marad!)
+GLOBAL_STYLE='<style>
+  .global-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 99999; }
+  .global-navbar { background-color: #0969da; padding: 12px 24px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 12px rgba(0,0,0,0.15); font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; }
+  .global-navbar a { color: #ffffff !important; font-size: 14px; font-weight: 500; text-decoration: none !important; }
+  .navbar-brand { font-weight: 700 !important; font-size: 16px !important; }
+  .nav-group, .nav-group-center { display: flex; align-items: center; gap: 20px; }
+  .nav-btn { background-color: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 6px 16px; font-weight: 600; }
+  .nav-btn:hover { background-color: rgba(255,255,255,0.25); border-color: rgba(255,255,255,0.4); }
+  .topic-label { font-size: 13px; color: rgba(255,255,255,0.75); font-weight: 500; }
+  /* ... (A GLOBAL_STYLE változó többi része teljesen változatlan marad, csak a legalját írjuk át:) */
+  main.markdown-body { 
+      padding-top: 95px !important; /* Emelt felső távolság a menütől */
+      padding-bottom: 45px !important; /* Alsó tiszta távolság */
+      padding-left: 30px !important; /* Oldalsó belső margók mobilra */
+      padding-right: 30px !important;
+      max-width: 980px !important; /* A hivatalos GitHub maximális szövegszélesség */
+      margin: 0 auto !important; /* EZ ZÁRJA KÖZÉPRE A TELJES TARTALMAT a képernyőn */
+      box-sizing: border-box !important;
+  }
+</style>'
+
+ROOT_HEADER="$GLOBAL_STYLE"'<link rel="icon" type="image/x-icon" href="favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>'
+SUB_HEADER="$GLOBAL_STYLE"'<link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>'
 
 echo "=== STEP 1: Compiling Markdown to Pure HTML via Pandoc ==="
 
 if [ -f "README.md" ]; then
-    pandoc -f markdown -t html5 --standalone --mathml --no-highlight -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE - Előszó" README.md -o index.html
+    pandoc -f markdown -t html5 --standalone --mathml --no-highlight \
+           --template=pandoc_clean_template.html \
+           -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE - Előszó" README.md -o index.html
 fi
 
 if [ -f "NEWTON_MECHANIKAJA.md" ]; then
-    pandoc -f markdown -t html5 --standalone --mathml --no-highlight -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE - Tartalomjegyzék" NEWTON_MECHANIKAJA.md -o NEWTON_MECHANIKAJA.html
+    pandoc -f markdown -t html5 --standalone --mathml --no-highlight \
+           --template=pandoc_clean_template.html \
+           -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE - Tartalomjegyzék" NEWTON_MECHANIKAJA.md -o NEWTON_MECHANIKAJA.html
 fi
 
 if [ -d "Mechanika" ]; then
+    cp pandoc_clean_template.html Mechanika/
     cd Mechanika
     find . -maxdepth 1 -type f \( -iname "*.md" \) | while read -r lecke; do
         lecke_clean=$(basename "$lecke")
@@ -23,129 +75,20 @@ if [ -d "Mechanika" ]; then
         output_html="${basename}.html"
         
         pandoc "$lecke_clean" -f markdown -t html5 --standalone --mathml --no-highlight \
+               --template=pandoc_clean_template.html \
                --shift-heading-level-by=-1 \
                -c ../github-markdown.css \
                -H <(echo "$SUB_HEADER") \
                -o "$output_html"
     done
+    rm pandoc_clean_template.html
     cd ..
 fi
 
+rm pandoc_clean_template.html
+
 echo ""
-echo "=== STEP 2: Running Node.js Post-Processor (Fixing Layout & Injecting Facades) ==="
+echo "=== STEP 2: Running Node.js Post-Processor Engine ==="
+node process.js
 
-node -e '
-const fs = require("fs");
-const path = require("path");
-
-function extractStartTime(url) {
-    let tIdx = url.indexOf("t=");
-    if (tIdx === -1) return "";
-    
-    let rawTime = url.substring(tIdx + 2);
-    let endIdx = rawTime.indexOf("&");
-    if (endIdx !== -1) rawTime = rawTime.substring(0, endIdx);
-    endIdx = rawTime.indexOf("\"");
-    if (endIdx !== -1) rawTime = rawTime.substring(0, endIdx);
-    endIdx = rawTime.indexOf("\x27");
-    if (endIdx !== -1) rawTime = rawTime.substring(0, endIdx);
-    
-    let cleanSec = rawTime.replace("amp;", "").replace("s", "").trim();
-    
-    if (cleanSec.includes("m")) {
-        let parts = cleanSec.split("m");
-        let minutes = parseInt(parts[0], 10) || 0;
-        let seconds = parseInt(parts[1], 10) || 0;
-        return (minutes * 60 + seconds).toString();
-    }
-    
-    if (cleanSec && !isNaN(cleanSec)) {
-        return cleanSec;
-    }
-    return "";
-}
-
-function processFile(filePath) {
-    if (!fs.existsSync(filePath)) return;
-    let content = fs.readFileSync(filePath, "utf8");
-    let modified = false;
-
-    if (content.includes("<body>")) { content = content.split("<body>").join("<body class=\"markdown-body\">"); modified = true; }
-    if (content.includes(".md\"")) { content = content.split(".md\"").join(".html\""); modified = true; }
-    if (content.includes(".MD\"")) { content = content.split(".MD\"").join(".html\""); modified = true; }
-
-    let result = "";
-    let i = 0;
-    
-    while (i < content.length) {
-        if (content.substring(i, i + 2).toLowerCase() === "<a") {
-            let nextChar = content[i + 2];
-            if (nextChar === " " || nextChar === ">" || nextChar === "\n" || nextChar === "\r" || nextChar === "\t") {
-                
-                let closeTagIndex = content.toLowerCase().indexOf("</a>", i);
-                if (closeTagIndex !== -1) {
-                    let fullAnchorTag = content.substring(i, closeTagIndex + 4);
-                    let tagLower = fullAnchorTag.toLowerCase();
-                    let hrefIndex = tagLower.indexOf("href=");
-                    
-                    if (hrefIndex !== -1) {
-                        let startQuoteChar = fullAnchorTag[hrefIndex + 5];
-                        let hrefValueEndIndex = fullAnchorTag.indexOf(startQuoteChar, hrefIndex + 6);
-                        
-                        if (hrefValueEndIndex !== -1) {
-                            let hrefStringValue = fullAnchorTag.substring(hrefIndex + 6, hrefValueEndIndex);
-                            
-                            if (tagLower.includes("youtube") || tagLower.includes("youtu.be")) {
-                                let videoId = "";
-                                
-                                if (hrefStringValue.includes("v=")) {
-                                    let idx = hrefStringValue.indexOf("v=");
-                                    videoId = hrefStringValue.substring(idx + 2, idx + 13);
-                                } else if (hrefStringValue.includes("shorts/")) {
-                                    let idx = hrefStringValue.indexOf("shorts/");
-                                    videoId = hrefStringValue.substring(idx + 7, idx + 18);
-                                } else if (hrefStringValue.includes("youtu.be/")) {
-                                    let idx = hrefStringValue.indexOf("youtu.be/");
-                                    videoId = hrefStringValue.substring(idx + 9, idx + 20);
-                                }
-
-                                if (videoId && videoId.length === 11) {
-                                    let startSeconds = extractStartTime(hrefStringValue);
-                                    let startAttr = startSeconds ? ` videoStartAt="${startSeconds}"` : "";
-                                    
-                                    // AUTOMATIKUS ATTRIBÚTUM: Ha a link shorts videóra mutat, hozzácsapjuk a "short" flaget!
-                                    let isShorts = hrefStringValue.toLowerCase().includes("shorts");
-                                    let shortAttr = isShorts ? " short" : "";
-                                    
-                                    result += `<lite-youtube videoid="${videoId}"${startAttr}${shortAttr}></lite-youtube>`;
-                                    i = closeTagIndex + 4;
-                                    modified = true;
-                                    continue;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        result += content[i];
-        i++;
-    }
-
-    if (modified) {
-        fs.writeFileSync(filePath, result, "utf8");
-    }
-}
-
-processFile("index.html");
-processFile("NEWTON_MECHANIKAJA.html");
-
-const subDir = "Mechanika";
-if (fs.existsSync(subDir)) {
-    fs.readdirSync(subDir).forEach(file => {
-        if (file.endsWith(".html")) processFile(path.join(subDir, file));
-    });
-}
-'
-
-echo "=== SUCCESS! Standalone build complete with native short attribute support. ==="
+echo "=== SUCCESS! Site built with unique H1 and pure main.markdown-body isolation! ==="
