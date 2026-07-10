@@ -39,7 +39,6 @@ const fs = require("fs");
 const path = require("path");
 
 function extractStartTime(url) {
-    // Megkeressük a t= kezdetét
     let tIdx = url.indexOf("t=");
     if (tIdx === -1) return "";
     
@@ -51,10 +50,8 @@ function extractStartTime(url) {
     endIdx = rawTime.indexOf("\x27");
     if (endIdx !== -1) rawTime = rawTime.substring(0, endIdx);
     
-    // KIPURCANTJUK A PANDOC ÁLTAL BEILLESZTETT HORDALÉKOKAT (pl. amp; vagy s betű)
     let cleanSec = rawTime.replace("amp;", "").replace("s", "").trim();
     
-    // Kezeljük, ha percben van megadva (pl. 3m15s vagy 3m15)
     if (cleanSec.includes("m")) {
         let parts = cleanSec.split("m");
         let minutes = parseInt(parts[0], 10) || 0;
@@ -114,10 +111,13 @@ function processFile(filePath) {
 
                                 if (videoId && videoId.length === 11) {
                                     let startSeconds = extractStartTime(hrefStringValue);
-                                    // A lite-youtube hivatalos, belső start paramétere: video-start="MASODPERC"
                                     let startAttr = startSeconds ? ` videoStartAt="${startSeconds}"` : "";
                                     
-                                    result += `<lite-youtube videoid="${videoId}"${startAttr}></lite-youtube>`;
+                                    // AUTOMATIKUS ATTRIBÚTUM: Ha a link shorts videóra mutat, hozzácsapjuk a "short" flaget!
+                                    let isShorts = hrefStringValue.toLowerCase().includes("shorts");
+                                    let shortAttr = isShorts ? " short" : "";
+                                    
+                                    result += `<lite-youtube videoid="${videoId}"${startAttr}${shortAttr}></lite-youtube>`;
                                     i = closeTagIndex + 4;
                                     modified = true;
                                     continue;
@@ -148,4 +148,4 @@ if (fs.existsSync(subDir)) {
 }
 '
 
-echo "=== SUCCESS! Standalone build complete with fixed native video-start parameters. ==="
+echo "=== SUCCESS! Standalone build complete with native short attribute support. ==="

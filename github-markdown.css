@@ -1284,6 +1284,12 @@ lite-youtube {
     transition: filter 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+lite-youtube[short] {
+    max-width: 360px; /* Korlátozzuk a szélességet mobilméretre */
+    aspect-ratio: 9 / 16; /* Kényszerítjük a hivatalos függőleges arányt */
+    margin: 25px auto; /* Középre igazítjuk a szöveg között */
+}
+
 /* 2. HOVER ÁLLAPOT: Egérmozgásra a videó gyönyörűen kivilágosodik a tiszta, eredeti színeibe! */
 lite-youtube:hover {
     filter: brightness(1) !important;
