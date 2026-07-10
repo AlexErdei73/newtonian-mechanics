@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="ferde-hajítás">Ferde hajítás</h1>
+<h2 id="a-derékszögű-háromszög-trigonometriája">A derékszögű háromszög
+trigonometriája</h2>
+<p>Legyen ismert egy derékszögű háromszög mindhárom oldala, és jelölje a
+háromszög egyik
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>90</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">90^\circ</annotation></semantics></math>-nál
+kisebb szögét
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>.
+A szöggel szemközti befogó legyen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>,
+a mellette fekvő befogó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>,
+az átfogó pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>.
+Ekkor az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+szög trigonometrikus függvényeit a következő három egyenlettel
+definiáljuk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><mi>a</mi><mi>c</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\sin \alpha = \frac {a} {c} 
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><mi>b</mi><mi>c</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\cos \alpha = \frac {b} {c}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><mi>a</mi><mi>b</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\tan \alpha = \frac {a} {b}
+</annotation></semantics></math></p>
+<p>Ezek a szögfüggvények megtalálhatók minden tudományos
+zsebszámológépen, így könnyedén kiszámíthatjuk az értéküket. A
+számológéppel az ismert függvényérték birtokában az ismeretlen szög
+visszakeresése (arkusz függvények) is elvégezhető.</p>
+<h3 id="példák-a-szögfüggvényekre">Példák a szögfüggvényekre</h3>
+<ol type="1">
+<li>Számítsuk ki a következő alapvető szögfüggvényértékeket
+zsebszámológéppel:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>30</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\sin 30^\circ</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>45</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\sin 45^\circ</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>60</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\sin 60^\circ</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>90</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\sin 90^\circ</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msup><mn>30</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\cos 30^\circ</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msup><mn>45</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\cos 45^\circ</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msup><mn>60</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\cos 60^\circ</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msup><mn>90</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\cos 90^\circ</annotation></semantics></math></li>
+</ol>
+<blockquote>
+<p><strong>Figyelem:</strong> Rendkívül fontos, hogy a zsebszámológép
+szögmértéke fok (DEG) egységre legyen állítva!</p>
+</blockquote>
+<p>A zsebszámológéppel végzett számítások a következő értékeket adják:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>30</mn><mo>∘</mo></msup><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\sin 30^\circ = 0{,}5</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>45</mn><mo>∘</mo></msup><mo>≈</mo><mn>0</mn><mo>,</mo><mn>7071</mn></mrow><annotation encoding="application/x-tex">\sin 45^\circ \approx 0{,}7071</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>60</mn><mo>∘</mo></msup><mo>≈</mo><mn>0</mn><mo>,</mo><mn>8660</mn></mrow><annotation encoding="application/x-tex">\sin 60^\circ \approx 0{,}8660</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>90</mn><mo>∘</mo></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sin 90^\circ = 1</annotation></semantics></math>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msup><mn>30</mn><mo>∘</mo></msup><mo>≈</mo><mn>0</mn><mo>,</mo><mn>8660</mn></mrow><annotation encoding="application/x-tex">\cos 30^\circ \approx 0{,}8660</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msup><mn>45</mn><mo>∘</mo></msup><mo>≈</mo><mn>0</mn><mo>,</mo><mn>7071</mn></mrow><annotation encoding="application/x-tex">\cos 45^\circ \approx 0{,}7071</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msup><mn>60</mn><mo>∘</mo></msup><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\cos 60^\circ = 0{,}5</annotation></semantics></math>;
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msup><mn>90</mn><mo>∘</mo></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\cos 90^\circ = 0</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>A kapott tizedes értékekből az inverz szögfüggvények
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">\sin^{-1}</annotation></semantics></math>
+/
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">asin</mtext><annotation encoding="application/x-tex">\text{asin}</annotation></semantics></math>
+vagy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">\cos^{-1}</annotation></semantics></math>
+/
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">acos</mtext><annotation encoding="application/x-tex">\text{acos}</annotation></semantics></math>)
+segítségével keressük vissza a szögeket a számológéppel! Eredményül
+pontosan az 1. példában szereplő kiindulási fokértékeket kell
+visszakapnunk.</li>
+</ol>
+<h2 id="a-kezdősebesség-koordinátái">A kezdősebesség koordinátái</h2>
+<p>Legyen adott a ferde hajítással elindított test kezdősebességének
+nagysága, amelyet
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
+jelöl, és zárjon be ez a sebességvektor egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+szöget a vízszintes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-tengellyel.
+A függőleges
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-tengely
+mutasson egyenesen felfelé. A sebességvektor felbontását az alábbi ábra
+szemlélteti:</p>
+<figure>
+<img src="Kepek/vektorkomponensek.png"
+alt="Vektor-komponensek felbontása" />
+<figcaption aria-hidden="true">Vektor-komponensek
+felbontása</figcaption>
+</figure>
+<p><a href="https://www.geogebra.org/m/hrhnmnmm">Vektor-komponensek
+interaktív ábrázolása (GeoGebra)</a></p>
+<p>A sebességvektor tengelyirányú koordinátái az ábrán látható
+derékszögű háromszög alapján, a szögfüggvények segítségével határozhatók
+meg:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><msub><mi>v</mi><mrow><mn>0</mn><mi>x</mi></mrow></msub><msub><mi>v</mi><mn>0</mn></msub></mfrac><mo>⟹</mo><msub><mi>v</mi><mrow><mn>0</mn><mi>x</mi></mrow></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+\cos \alpha = \frac {v_{0x}} {v_0} \implies v_{0x} = v_0 \cdot \cos \alpha
+</annotation></semantics></math></p>
+<p>Hasonló módon a függőleges komponensre kapjuk, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><msub><mi>v</mi><mrow><mn>0</mn><mi>y</mi></mrow></msub><msub><mi>v</mi><mn>0</mn></msub></mfrac><mo>⟹</mo><msub><mi>v</mi><mrow><mn>0</mn><mi>y</mi></mrow></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+\sin \alpha = \frac {v_{0y}} {v_0} \implies v_{0y} = v_0 \cdot \sin \alpha
+</annotation></semantics></math></p>
+<p>Összefoglalva a kezdősebesség-vektor komponensei koordinátás
+alakban:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>0</mn></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+\vec{v}_0 = (v_0 \cdot \cos \alpha,\ v_0 \cdot \sin \alpha)
+</annotation></semantics></math></p>
+<h2 id="a-ferde-hajítás-fizikai-modellje">A ferde hajítás fizikai
+modellje</h2>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=KacTRPL1MtE">A vízszintes
+sebesség állandóságának demonstrációja (Walter Lewin / MIT)</a></p>
+<h3 id="szimuláció">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#b2325a19-cfb5-49fa-91e5-0d11b2955e2b">Ferde
+hajítás interaktív szimulátor</a></p>
+<p>Miután megtekintettük a szimulációt, készítsük el a test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>x</mi></msub><annotation encoding="application/x-tex">v_x</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>y</mi></msub><annotation encoding="application/x-tex">v_y</annotation></semantics></math>
+sebességkomponenseinek időfüggését mutató grafikonokat!</p>
+<h3 id="a-ferde-hajítás-képletei">A ferde hajítás képletei</h3>
+<p>Mind a kísérleti videó (ahol a mozgó kocsiból függőlegesen kilőtt
+labda pontosan visszaesik a kocsiba), mind a szimuláció egyértelműen
+igazolja, hogy a <strong>sebesség vízszintes komponense a mozgás során
+végig állandó</strong>. Ezzel szemben a függőleges komponens pontosan
+úgy változik, mint a függőleges hajítás esetében: a nehézségi gyorsulás
+ütemében folyamatosan csökken, amíg a test el nem éri a pályája
+maximális magasságát (ahol
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>y</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_y = 0</annotation></semantics></math>),
+majd a mozgásirány megfordulása után egyre gyorsulva zuhan lefelé.</p>
+<p>Indítsuk a testet a koordináta-rendszer origójából
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x_0 = 0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y_0 = 0</annotation></semantics></math>)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
+nagyságú kezdősebességgel, amely a vízszintes tengellyel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+szöget zár be. A vízszintes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-tengely
+mutasson balról jobbra, a függőleges
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-tengely
+pedig felfelé. A gyorsulásvektor komponensei:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>a</mi><mo accent="true">→</mo></mover><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>a</mi><mi>x</mi></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mi>y</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mspace width="0.222em"></mspace><mo>−</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+\vec{a} = (a_x,\ a_y) = (0,\ -g)
+</annotation></semantics></math></p>
+<p>A kezdősebesség-vektor:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>0</mn></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>v</mi><mrow><mn>0</mn><mi>x</mi></mrow></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>v</mi><mrow><mn>0</mn><mi>y</mi></mrow></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex"> 
+\vec{v}_0 = (v_{0x},\ v_{0y}) = (v_0 \cdot \cos \alpha,\ v_0 \cdot \sin \alpha)
+</annotation></semantics></math></p>
+<p>A helykoordináták meghatározásához idézzük fel a négyzetes úttörvény
+elmozdulás-komponensekre felírt alakját:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2
+</annotation></semantics></math></p>
+<p>Ha ebbe a képletbe behelyettesítjük a megfelelő tengelyirányú
+kezdősebesség- és gyorsuláskoordinátákat, megkapjuk a ferde hajítás
+mozgásegyenleteit:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
+x = v_0 \cdot \cos(\alpha) \cdot t
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mi>t</mi><mo>−</mo><mfrac><mi>g</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+y = v_0 \cdot \sin(\alpha) \cdot t - \frac {g} {2} \cdot t^2
+</annotation></semantics></math></p>
+<h3 id="példák">Példák</h3>
+<ol type="1">
+<li>Egy testet vízszintes talajon elhajítunk a talajszintről
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">5\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+nagyságú, a vízszintessel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>30</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">30^\circ</annotation></semantics></math>-os
+szöget bezáró kezdősebességgel. Mennyi idő alatt ér újra talajt a test?
+Milyen messze kerül a kiindulási helyétől ezalatt az idő alatt? A
+légellenállás elhanyagolható, a nehézségi gyorsulás
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.</li>
+</ol>
+<p>Számítsuk ki a kezdősebesség-vektor két komponensét:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>0</mn></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>5</mn><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msup><mn>30</mn><mo>∘</mo></msup><mo>,</mo><mspace width="0.222em"></mspace><mn>5</mn><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>30</mn><mo>∘</mo></msup><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo>,</mo><mn>330</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac><mo>,</mo><mspace width="0.222em"></mspace><mn>2</mn><mo>,</mo><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+\vec{v}_0 = (v_0 \cdot \cos \alpha,\ v_0 \cdot \sin \alpha) = (5 \cdot \cos 30^\circ,\ 5 \cdot \sin 30^\circ) \approx (4{,}330\text{ }\frac {\text{m}} {\text{s}},\ 2{,}500\text{ }\frac {\text{m}} {\text{s}})
+</annotation></semantics></math></p>
+<p>Amikor a test visszaérkezik a vízszintes talajra, a függőleges
+koordinátája nullává válik
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y = 0</annotation></semantics></math>).
+Írjuk fel a függőleges mozgásegyenletet:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mi>t</mi><mo>−</mo><mfrac><mi>g</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+y = v_0 \cdot \sin(\alpha) \cdot t - \frac {g} {2} \cdot t^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mn>2</mn><mo>,</mo><mn>500</mn><mo>⋅</mo><mi>t</mi><mo>−</mo><mn>4</mn><mo>,</mo><mn>905</mn><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+0 = 2{,}500 \cdot t - 4{,}905 \cdot t^2
+</annotation></semantics></math></p>
+<p>A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 0\text{ s}</annotation></semantics></math>
+megoldás a hajítás kezdőpillanatára utal, minket a folyamat végét
+jelentő másik gyök érdekel:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mo>,</mo><mn>500</mn></mrow><mrow><mn>4</mn><mo>,</mo><mn>905</mn></mrow></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>5097</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+t = \frac{2{,}500}{4{,}905} \approx 0{,}5097\text{ s}
+</annotation></semantics></math></p>
+<p>A keresett repülési idő három értékes jegyre kerekítve
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>510</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}510\text{ s}</annotation></semantics></math>.</p>
+<p>Ezt az időt a vízszintes elmozdulás egyenletébe behelyettesítve
+megkapjuk a hajítástávolságot:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mi>t</mi><mo>=</mo><mn>4</mn><mo>,</mo><mn>330</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>5097</mn><mo>≈</mo><mn>2</mn><mo>,</mo><mn>207</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+x = v_0 \cdot \cos(\alpha) \cdot t = 4{,}330 \cdot 0{,}5097 \approx 2{,}207\text{ m}
+</annotation></semantics></math></p>
+<p>A test a kiindulópontjától pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>21</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}21\text{ m}</annotation></semantics></math>
+távolságban csapódik be.</p>
+<ol start="2" type="1">
+<li>Egy testet a talaj szintjéről kilövünk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">v_0 = 20\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+nagyságú kezdősebességgel, a vízszintessel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>45</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">45^\circ</annotation></semantics></math>-os
+szögben. A test egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">10{,}0\text{ m}</annotation></semantics></math>
+mély gödör alján csapódik be. Mennyi idő telik el a kilövés és a
+becsapódás között? Legfeljebb milyen messze lehet tőlünk a gödör
+közelebbi széle, és legalább milyen szélesnek kell lennie a gödörnek,
+hogy a test az aljára érkezzen? A légellenállás elhanyagolható, a
+nehézségi gyorsulás
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.</li>
+</ol>
+<p>Számítsuk ki a kezdősebesség-komponenseket (mivel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>45</mn><mo>∘</mo></msup><mo>=</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msup><mn>45</mn><mo>∘</mo></msup><mo>≈</mo><mn>0</mn><mo>,</mo><mn>7071</mn></mrow><annotation encoding="application/x-tex">\sin 45^\circ = \cos 45^\circ \approx 0{,}7071</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>0</mn></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><mo stretchy="false" form="prefix">(</mo><mn>14</mn><mo>,</mo><mn>14</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac><mo>,</mo><mspace width="0.222em"></mspace><mn>14</mn><mo>,</mo><mn>14</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+\vec{v}_0 = (v_0 \cdot \cos \alpha,\ v_0 \cdot \sin \alpha) \approx (14{,}14\text{ }\frac {\text{m}} {\text{s}},\ 14{,}14\text{ }\frac {\text{m}} {\text{s}})
+</annotation></semantics></math></p>
+<p>Mivel a becsapódási pont a talajszint alatt van
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> méterrel</mtext></mrow></mrow><annotation encoding="application/x-tex">10{,}0\text{ méterrel}</annotation></semantics></math>,
+a függőleges koordináta a végponton
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>−</mi><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">y = -10\text{ m}</annotation></semantics></math>.
+Írjuk fel az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-egyenletet:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>10</mn><mo>=</mo><mn>14</mn><mo>,</mo><mn>14</mn><mo>⋅</mo><mi>t</mi><mo>−</mo><mn>4</mn><mo>,</mo><mn>905</mn><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+-10 = 14{,}14 \cdot t - 4{,}905 \cdot t^2
+</annotation></semantics></math></p>
+<p>Rendezve a másodfokú egyenletet:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>905</mn><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>14</mn><mo>,</mo><mn>14</mn><mo>⋅</mo><mi>t</mi><mo>−</mo><mn>10</mn><mo>,</mo><mn>0</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+4{,}905 \cdot t^2 - 14{,}14 \cdot t - 10{,}0 = 0
+</annotation></semantics></math></p>
+<p>Alkalmazzuk a megoldóképletet:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>14</mn><mo>,</mo><mn>14</mn><mo>±</mo><msqrt><mrow><mn>14</mn><mo>,</mo><msup><mn>14</mn><mn>2</mn></msup><mo>−</mo><mn>4</mn><mo>⋅</mo><mn>4</mn><mo>,</mo><mn>905</mn><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>10</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow></msqrt></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>4</mn><mo>,</mo><mn>905</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>14</mn><mo>,</mo><mn>14</mn><mo>±</mo><msqrt><mrow><mn>200</mn><mo>+</mo><mn>196</mn><mo>,</mo><mn>2</mn></mrow></msqrt></mrow><mrow><mn>9</mn><mo>,</mo><mn>81</mn></mrow></mfrac><mo>⟹</mo><msub><mi>t</mi><mn>1</mn></msub><mo>≈</mo><mn>3</mn><mo>,</mo><mn>470</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow><mo>;</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><msub><mi>t</mi><mn>2</mn></msub><mo>≈</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>5876</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+t_{1,2} = \frac {14{,}14 \pm \sqrt {14{,}14^2 - 4 \cdot 4{,}905 \cdot (-10{,}0)}} {2 \cdot 4{,}905} = \frac {14{,}14 \pm \sqrt {200 + 196{,}2}} {9{,}81} \implies t_1 \approx 3{,}470\text{ s};\ \ t_2 \approx -0{,}5876\text{ s}
+</annotation></semantics></math></p>
+<p>A fizikailag helyes, pozitív időérték
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>3</mn><mo>,</mo><mn>47</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 3{,}47\text{ s}</annotation></semantics></math>.
+Ennyi idő telik el a becsapódásig.</p>
+<p>Számítsuk ki a becsapódási pont teljes vízszintes távolságát
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mi>t</mi><mo>=</mo><mn>14</mn><mo>,</mo><mn>14</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>470</mn><mo>≈</mo><mn>49</mn><mo>,</mo><mn>07</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+x = v_0 \cdot \cos (\alpha) \cdot t = 14{,}14 \cdot 3{,}470 \approx 49{,}07\text{ m}
+</annotation></semantics></math></p>
+<p>Ahhoz, hogy meghatározzuk a gödör széleinek határait, számítsuk ki,
+hogy a test hol és mikor érne vissza a kiindulási talajszintre
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y = 0</annotation></semantics></math>),
+ha nem lenne ott a gödör:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mn>14</mn><mo>,</mo><mn>14</mn><mo>⋅</mo><mi>t</mi><mo>−</mo><mn>4</mn><mo>,</mo><mn>905</mn><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>⟹</mo><mi>t</mi><mo>=</mo><mfrac><mrow><mn>14</mn><mo>,</mo><mn>14</mn></mrow><mrow><mn>4</mn><mo>,</mo><mn>905</mn></mrow></mfrac><mo>≈</mo><mn>2</mn><mo>,</mo><mn>883</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+0 = 14{,}14 \cdot t - 4{,}905 \cdot t^2 \implies t = \frac{14{,}14}{4{,}905} \approx 2{,}883\text{ s}
+</annotation></semantics></math></p>
+<p>A test tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>88</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}88\text{ s}</annotation></semantics></math>-kor
+érne vissza a talajszintre, ekkor a vízszintes pozíciója:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mtext mathvariant="normal">talaj</mtext></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mi>t</mi><mo>=</mo><mn>14</mn><mo>,</mo><mn>14</mn><mo>⋅</mo><mn>2</mn><mo>,</mo><mn>883</mn><mo>≈</mo><mn>40</mn><mo>,</mo><mn>77</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+x_{\text{talaj}} = v_0 \cdot \cos(\alpha) \cdot t = 14{,}14 \cdot 2{,}883 \approx 40{,}77\text{ m}
+</annotation></semantics></math></p>
+<p>Ez azt jelenti, hogy a gödör közelebbi széle legfeljebb
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40</mn><mo>,</mo><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">40{,}8\text{ m}</annotation></semantics></math>
+távolságra lehet a kilövési ponttól, különben a test még a gödör előtt a
+talajnak csapódna.</p>
+<p>A gödör minimális szélessége a becsapódási pont és a talajszinti
+visszatérési pont különbsége:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi><mo>=</mo><mn>49</mn><mo>,</mo><mn>07</mn><mo>−</mo><mn>40</mn><mo>,</mo><mn>77</mn><mo>=</mo><mn>8</mn><mo>,</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\Delta x = 49{,}07 - 40{,}77 = 8{,}30\text{ m}
+</annotation></semantics></math></p>
+<p>A gödörnek legalább
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>,</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">8{,}30\text{ m}</annotation></semantics></math>
+szélesnek kell lennie, hogy a test szabadon berepülhessen a
+belsejébe.</p>
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Egy testet
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>35</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">35^\circ</annotation></semantics></math>-os
+szögben lövünk ki a talajról
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">12{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+kezdősebességgel. Maximálisan mekkora magasságra emelkedik a test, és
+milyen messze csapódik be a talajba? (A légellenállás elhanyagolható és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.)</p></li>
+<li><p>Egy kőgolyót egy domb tetejéről
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>40</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">40^\circ</annotation></semantics></math>-os
+szögben lőnek ki
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>18</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">18{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+kezdősebességgel. A lövés helyétől vízszintesen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">25{,}0\text{ m}</annotation></semantics></math>
+távolságban és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">15{,}0\text{ m}</annotation></semantics></math>
+mélységben egy tó kezdődik. Beesik-e a kőgolyó a tóba? (A légellenállás
+elhanyagolható és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.)</p></li>
+<li><p>Egy labdát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>60</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">60^\circ</annotation></semantics></math>-os
+szögben kilövünk a talajról
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>18</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">18{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+kezdősebességgel. Határozd meg, hogy milyen hosszú ideig volt a labda a
+levegőben, és mekkora volt a maximális magassága! (A légellenállás
+elhanyagolható és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.)</p></li>
+<li><p>Egy katapult
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>25</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">25^\circ</annotation></semantics></math>-os
+szögben lő ki egy sziklát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">30{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességgel. Az ellenséges vár fala pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">40{,}0\text{ m}</annotation></semantics></math>
+távolságban található. Eléri-e a kőgolyó a várat? Ha igen, milyen
+magasságban csapódik be a falba? (A légellenállás elhanyagolható és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.)</p></li>
+<li><p>Egy teniszezőnek egy rögzített célpontot kell eltalálnia, amely
+tőle vízszintesen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">50{,}0\text{ m}</annotation></semantics></math>
+távolságban és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">3{,}50\text{ m}</annotation></semantics></math>
+magasságban helyezkedik el. A teniszlabdát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>35</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">35^\circ</annotation></semantics></math>-os
+szögben lövi ki
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>22</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">22{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességgel a talajról. Eltalálja-e a célpontot? (A légellenállás
+elhanyagolható és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.)</p></li>
+</ol>
+</body>
+</html>

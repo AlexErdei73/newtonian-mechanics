@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-felületi-feszültség">A felületi feszültség</h1>
+<h2
+id="potenciális-energia-minimuma-mechanikai-egyensúlyban">Potenciális
+energia minimuma mechanikai egyensúlyban</h2>
+<p>Amikor az energiával foglalkoztunk, láttuk, hogy általános esetben a
+munkavégzésre fordítható energia a természeti folyamatokban csökken,
+ameddig be nem következik az egyensúlyi állapot, amely időben állandó.
+Ilyenkor tehát a munkavégzésre fordítható energia minimális. Mechanikai
+rendszerek esetében ez annyit jelent, hogy a mozgási energia nulla, és a
+potenciális energia felveszi az adott körülmények közt legkisebb
+értékét, amely egy úgynevezett lokális minimum.</p>
+<p>A lokális minimum itt pusztán annyit jelent, hogy ha a rendszert az
+egyensúlyi helyzetből csupán kissé mozdítjuk ki, a potenciális energia
+mindig nő. Ha azonban nagymértékben mozdítjuk ki a rendszert,
+találhatunk olyan helyzetet, amelyben a potenciális energia még kisebb,
+hiszen több lokális minimum is létezhet, különböző minimális energiákkal
+a rendszer különböző pozícióiban.</p>
+<blockquote>
+<p><strong>Mechanikai rendszerek stabil egyensúlyi helyzetében a
+potenciális energiájuknak lokális minimuma van.</strong></p>
+</blockquote>
+<h3 id="példák">Példák</h3>
+<ol type="1">
+<li>Egy labda szabadon gurulhat egy görbült felületen, ahol két völgy és
+több domborulat is található. Az egyik völgy mélyebben helyezkedik el,
+mint a másik. Ekkor a labda helyzeti energiája a mélyebb völgyben
+abszolút értelemben minimális, de mindkét völgypontban lokálisan
+minimális. Tehát mindkét völgypont lokális minimum, és mindkettőben
+stabil egyensúlyban van a labda.</li>
+<li>Folyadékok egyensúlya is akkor következik be, amikor a folyadék
+helyzeti energiája minimális.</li>
+</ol>
+<p>Legyen például egy közlekedőedény két szárának keresztmetszete
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mn>1</mn></msub><annotation encoding="application/x-tex">A_1</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mn>2</mn></msub><annotation encoding="application/x-tex">A_2</annotation></semantics></math>,
+a folyadék össztérfogata
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>,
+illetve sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>.
+Ekkor a teljes helyzeti energiát a szárakban lévő folyadékoszlopok
+tömegközéppontjának magasságával
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>h</mi><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{h}{2}</annotation></semantics></math>)
+írhatjuk fel:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>h</mi></msub><mo>=</mo><msub><mi>E</mi><mrow><mi>h</mi><mo>,</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>E</mi><mrow><mi>h</mi><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><mi>g</mi><mfrac><msub><mi>h</mi><mn>1</mn></msub><mn>2</mn></mfrac><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi><mfrac><msub><mi>h</mi><mn>2</mn></msub><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">E_h = E_{h,1} + E_{h,2} = m_1 g \frac {h_1} 2 + m_2 g \frac {h_2} 2</annotation></semantics></math></p>
+<p>Mivel a tömegek a sűrűség, a keresztmetszet és a magasság
+szorzatai:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>=</mo><mi>ρ</mi><msub><mi>A</mi><mn>1</mn></msub><msub><mi>h</mi><mn>1</mn></msub><mspace width="1.0em"></mspace><mtext mathvariant="normal">és</mtext><mspace width="1.0em"></mspace><msub><mi>m</mi><mn>2</mn></msub><mo>=</mo><mi>ρ</mi><msub><mi>A</mi><mn>2</mn></msub><msub><mi>h</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">m_1 = \rho A_1 h_1 \quad \text{és} \quad m_2 = \rho A_2 h_2</annotation></semantics></math></p>
+<p>A folyadék össztérfogata a folyamat során állandó:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><msub><mi>A</mi><mn>1</mn></msub><msub><mi>h</mi><mn>1</mn></msub><mo>+</mo><msub><mi>A</mi><mn>2</mn></msub><msub><mi>h</mi><mn>2</mn></msub><mo>⟹</mo><msub><mi>h</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mi>V</mi><mo>−</mo><msub><mi>A</mi><mn>1</mn></msub><msub><mi>h</mi><mn>1</mn></msub></mrow><msub><mi>A</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">V = A_1 h_1 + A_2 h_2 \implies h_2 = \frac {V - A_1 h_1} {A_2}</annotation></semantics></math></p>
+<p>Írjuk fel a teljes helyzeti energiát a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>1</mn></msub><annotation encoding="application/x-tex">h_1</annotation></semantics></math>
+magasság függvényeként:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>h</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><msubsup><mi>h</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msub><mi>A</mi><mn>2</mn></msub><msubsup><mi>h</mi><mn>2</mn><mn>2</mn></msubsup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">E_h = \frac 1 2 \rho g \left( A_1 h_1^2 + A_2 h_2^2 \right)</annotation></semantics></math></p>
+<p>Nézzük meg külön a zárójeles kifejezést a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>2</mn></msub><annotation encoding="application/x-tex">h_2</annotation></semantics></math>
+behelyettesítése után:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><msubsup><mi>h</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msub><mi>A</mi><mn>2</mn></msub><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mi>V</mi><mo>−</mo><msub><mi>A</mi><mn>1</mn></msub><msub><mi>h</mi><mn>1</mn></msub><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><msubsup><mi>A</mi><mn>2</mn><mn>2</mn></msubsup></mfrac><mo>=</mo><msub><mi>A</mi><mn>1</mn></msub><msubsup><mi>h</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mfrac><mrow><msubsup><mi>A</mi><mn>1</mn><mn>2</mn></msubsup><msubsup><mi>h</mi><mn>1</mn><mn>2</mn></msubsup><mo>−</mo><mn>2</mn><mi>V</mi><msub><mi>A</mi><mn>1</mn></msub><msub><mi>h</mi><mn>1</mn></msub><mo>+</mo><msup><mi>V</mi><mn>2</mn></msup></mrow><msub><mi>A</mi><mn>2</mn></msub></mfrac><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo>+</mo><mfrac><msubsup><mi>A</mi><mn>1</mn><mn>2</mn></msubsup><msub><mi>A</mi><mn>2</mn></msub></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><msubsup><mi>h</mi><mn>1</mn><mn>2</mn></msubsup><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>2</mn><mi>V</mi><msub><mi>A</mi><mn>1</mn></msub></mrow><msub><mi>A</mi><mn>2</mn></msub></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>h</mi><mn>1</mn></msub><mo>+</mo><mfrac><msup><mi>V</mi><mn>2</mn></msup><msub><mi>A</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">A_1 h_1^2 + A_2 \frac{(V - A_1 h_1)^2} {A_2^2} = A_1 h_1^2 + \frac {A_1^2 h_1^2 - 2 V A_1 h_1 + V^2} {A_2} = \left( A_1 + \frac{A_1^2}{A_2} \right) h_1^2 - \left( \frac{2 V A_1}{A_2} \right) h_1 + \frac{V^2}{A_2}</annotation></semantics></math></p>
+<p>Ez egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><msubsup><mi>h</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mi>b</mi><msub><mi>h</mi><mn>1</mn></msub><mo>+</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">f(h_1) = a h_1^2 + b h_1 + c</annotation></semantics></math>
+alakú másodfokú polinom, amelynek minimumhelye az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mtext mathvariant="normal">1,min</mtext></msub><mo>=</mo><mi>−</mi><mfrac><mi>b</mi><mrow><mn>2</mn><mi>a</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">h_{\text{1,min}} = - \frac b {2a}</annotation></semantics></math>
+összefüggés alapján határozható meg.</p>
+<p>Itt a kifejezésünk együtthatói:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><msub><mi>A</mi><mn>1</mn></msub><mo>+</mo><mfrac><msubsup><mi>A</mi><mn>1</mn><mn>2</mn></msubsup><msub><mi>A</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">a = A_1 + \frac {A_1^2} {A_2}</annotation></semantics></math>
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mi>−</mi><mfrac><mrow><mn>2</mn><mi>V</mi><msub><mi>A</mi><mn>1</mn></msub></mrow><msub><mi>A</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">b = - \frac {2 V A_1} {A_2}</annotation></semantics></math></p>
+<p>Behelyettesítve a minimumhely képletébe:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mn>1</mn><mo>,</mo><mtext mathvariant="normal">min</mtext></mrow></msub><mo>=</mo><mi>−</mi><mfrac><mi>b</mi><mrow><mn>2</mn><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mfrac><mrow><mn>2</mn><mi>V</mi><msub><mi>A</mi><mn>1</mn></msub></mrow><msub><mi>A</mi><mn>2</mn></msub></mfrac><mrow><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo>+</mo><mfrac><msubsup><mi>A</mi><mn>1</mn><mn>2</mn></msubsup><msub><mi>A</mi><mn>2</mn></msub></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac><mfrac><mrow><mi>V</mi><msub><mi>A</mi><mn>1</mn></msub></mrow><msub><mi>A</mi><mn>2</mn></msub></mfrac><mfrac><mrow><msub><mi>A</mi><mn>1</mn></msub><msub><mi>A</mi><mn>2</mn></msub><mo>+</mo><msubsup><mi>A</mi><mn>1</mn><mn>2</mn></msubsup></mrow><msub><mi>A</mi><mn>2</mn></msub></mfrac></mfrac><mo>=</mo><mfrac><mrow><mi>V</mi><msub><mi>A</mi><mn>1</mn></msub></mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><msub><mi>A</mi><mn>2</mn></msub><mo>+</mo><msubsup><mi>A</mi><mn>1</mn><mn>2</mn></msubsup></mrow></mfrac><mo>=</mo><mfrac><mi>V</mi><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>+</mo><msub><mi>A</mi><mn>2</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">h_{1,\text{min}} = -\frac b {2a} = \frac{\frac {2 V A_1} {A_2}}{2 \left( A_1 + \frac{A_1^2}{A_2} \right)} = \frac{\frac {V A_1} {A_2}}{\frac{A_1 A_2 + A_1^2}{A_2}} = \frac{V A_1}{A_1 A_2 + A_1^2} = \frac {V} {A_1 + A_2}</annotation></semantics></math></p>
+<p>Nem maradt más hátra, mint belátni, hogy az edény két szárában a
+folyadék ugyanabban a magasságban áll egyensúlyban, vagyis
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mn>2</mn><mo>,</mo><mtext mathvariant="normal">min</mtext></mrow></msub><mo>=</mo><msub><mi>h</mi><mrow><mn>1</mn><mo>,</mo><mtext mathvariant="normal">min</mtext></mrow></msub></mrow><annotation encoding="application/x-tex">h_{2,\text{min}} = h_{1,\text{min}}</annotation></semantics></math>.</p>
+<p>Valóban:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mn>2</mn><mo>,</mo><mtext mathvariant="normal">min</mtext></mrow></msub><mo>=</mo><mfrac><mrow><mi>V</mi><mo>−</mo><msub><mi>A</mi><mn>1</mn></msub><msub><mi>h</mi><mrow><mn>1</mn><mo>,</mo><mtext mathvariant="normal">min</mtext></mrow></msub></mrow><msub><mi>A</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><mrow><mi>V</mi><mo>−</mo><mfrac><mrow><mi>V</mi><msub><mi>A</mi><mn>1</mn></msub></mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>+</mo><msub><mi>A</mi><mn>2</mn></msub></mrow></mfrac></mrow><msub><mi>A</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><mfrac><mrow><mi>V</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo>+</mo><msub><mi>A</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>V</mi><msub><mi>A</mi><mn>1</mn></msub></mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>+</mo><msub><mi>A</mi><mn>2</mn></msub></mrow></mfrac><msub><mi>A</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><mfrac><mrow><mi>V</mi><msub><mi>A</mi><mn>2</mn></msub></mrow><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>+</mo><msub><mi>A</mi><mn>2</mn></msub></mrow></mfrac><msub><mi>A</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><mi>V</mi><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>+</mo><msub><mi>A</mi><mn>2</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">h_{2,\text{min}} = \frac {V - A_1 h_{1,\text{min}}} {A_2} = \frac {V - \frac {V A_1} {A_1 + A_2}} {A_2} = \frac {\frac{V(A_1 + A_2) - V A_1}{A_1 + A_2}} {A_2} = \frac {\frac{V A_2}{A_1 + A_2}} {A_2} = \frac {V} {A_1 + A_2}</annotation></semantics></math></p>
+<p>Tehát megállapíthatjuk, hogy a közlekedőedény száraiban a folyadék
+helyzeti energiája akkor minimális, amikor a folyadék mindkét szárban
+egyforma magasságban áll. Ez valóban az egyensúlyi állapot ebben a
+rendszerben.</p>
+<hr />
+<h2 id="a-felületi-feszültség-1">A felületi feszültség</h2>
+<h3 id="kísérletek">Kísérletek</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=H_qPWZbxFl8">Víz
+viselkedése az űrállomáson</a></li>
+<li><a href="https://www.youtube.com/shorts/iKmm7GZ7G_0">Szappanhártya
+feszítőereje</a></li>
+</ul>
+<p>Az első kísérletben a víz az űrállomáson, egyensúlyi állapotban gömb
+alakot vesz fel. Amíg az egyensúly be nem áll, addig természetesen a víz
+felszíne vibrál, és így a gömb folyamatos rezgésben van. Azt is
+megfigyelhetjük, hogy a jelenség olyan, mintha a víz felszínén (a
+víz-levegő határfelületen) egy rugalmas hártya helyezkedne el. A
+kialakult rendszer stabil, mivel a gravitáció elhanyagolható, így a
+folyadék szabadon lebeg a súlytalanság állapotában.</p>
+<p>A második kísérletet szappanhártyával végezzük, amely földi
+körülmények közt is sokkal stabilabb, mint a tiszta víz felszínén
+kialakuló hártya. Ennek a stabilitásnak az oka a szappanoldat kémiájában
+van: a vízmolekulák a film belsejében, míg a szappanmolekulák az
+oldat-levegő határfelületen helyezkednek el. A molekuláknak ez az
+elrendeződése stabilizálja a vékony szappanhártyát úgy, hogy az akár
+jelentősen meg is nyújtható vagy össze is húzódhat.</p>
+<p>Fizikai szempontból a legfontosabb, hogy az ilyen határfelületi
+hártyák a felülettel érintőirányú erőt fejtenek ki. Ennek az erőnek
+tulajdonítható, hogy a mozgatható drót, amelyet a szappanhártya határol,
+gyorsulva indul el befelé, amint a mozgása lehetővé válik.</p>
+<p>Miért éppen gömb alakot vesz fel a víz, miközben lebeg az
+űrállomáson? Miért gömb alakú a szappanhártya, amikor szappanbuborékot
+formál? Ennek az oka a fent említett érintőirányú összehúzó erő, amelyet
+felületi feszültségnek nevezünk.</p>
+<blockquote>
+<p><strong>A felületi feszültség az a fizikai mennyiség, amely
+megmutatja, hogy a folyadékhártyában mekkora erő lép fel a hártya
+egységnyi hossza mentén, a hártya érintőjének irányában. Jele:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>,
+mértékegysége: N/m.</strong></p>
+</blockquote>
+<hr />
+<h2 id="a-felületi-energia">A felületi energia</h2>
+<p>A szappanhártyás kísérletben a mozgatható drótot a szappanhártya
+mindkét oldalról közrefogja, így valójában két folyadék-levegő
+határfelület (két hártya) fejti ki a feszítőerőt. Ha a drót hossza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>,
+akkor a drótot húzó teljes erő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>α</mi><mo>⋅</mo><mn>2</mn><mi>L</mi></mrow><annotation encoding="application/x-tex">F = \alpha \cdot 2L</annotation></semantics></math></p>
+<p>Itt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+az oldat felületi feszültsége. Mi történik, ha a drótot egy külső,
+ellentétes irányú erőt alkalmazva elmozdítjuk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">\Delta s</annotation></semantics></math>
+távolsággal úgy, hogy a szappanhártya felülete növekedjen? Ekkor a külső
+erő munkát végez, amely növeli a hártya energiáját. A felület
+növeléséhez tehát munka szükséges, míg a felület csökkenésekor energia
+szabadul fel (például mozgási energiává alakulva felgyorsítja a szabadon
+hagyott drótot). Ezt az energiát felületi energiának nevezzük:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mtext mathvariant="normal">felületi</mtext></msub><mo>=</mo><mi>W</mi><mo>=</mo><mi>F</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>s</mi><mo>=</mo><mi>α</mi><mo>⋅</mo><mn>2</mn><mi>L</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>s</mi><mo>=</mo><mi>α</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">\Delta E_{\text{felületi}} = W = F \cdot \Delta s = \alpha \cdot 2L \cdot \Delta s = \alpha \cdot \Delta A</annotation></semantics></math></p>
+<p>Ahol
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>A</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><mi>L</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">\Delta A = 2 \cdot L \cdot \Delta s</annotation></semantics></math>
+a hártya kétoldali teljes felületváltozása.</p>
+<blockquote>
+<p><strong>A folyadékok felszíne úgynevezett felületi energiával
+rendelkezik, amely egyenesen arányos a felület nagyságával. A felületi
+feszültség
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>)
+számszerűen megmutatja, hogy mennyi munka szükséges az egységnyi új
+folyadékfelület létrehozásához.</strong></p>
+</blockquote>
+<h3 id="a-felületi-energia-mikroszkopikus-magyarázata">A felületi
+energia mikroszkopikus magyarázata</h3>
+<p>A folyadék belsejében elhelyezkedő részecskét minden irányból homogén
+módon veszik körül a szomszédos folyadékrészecskék, így a köztük fellépő
+vonzó kohéziós erők minden irányból érik, eredőjük nulla.</p>
+<p>Ezzel szemben a folyadék felszínén lévő molekulára csak a folyadék
+belseje felől hatnak erős vonzóerők (mivel a gázfázisú levegő molekulái
+elszórtan vannak és alig vonzzák). Emiatt a felszíni molekulák
+kölcsönhatási energiája kevésbé negatív, mint a belsőké. Egy molekulát a
+folyadék belsejéből a felszínre hozni tehát csak külső munka (energia
+befektetése) árán lehet. Ennek a mikroszkopikus jelenségnek a
+makroszkopikus megnyilvánulása a felületi feszültség és a felületi
+energia.</p>
+<p>Most már könnyen megválaszolhatjuk a kérdéseinket. A szabadon lebegő
+vízcsepp és a szappanbuborék azért vesz fel gömb alakot, mert ezekben az
+esetekben a gravitáció hatása elhanyagolható. A rendszer teljes
+potenciális energiáját a felületi energia adja.</p>
+<p>A mechanikai rendszerek az egyensúlyra törekedve igyekeznek
+minimalizálni a potenciális energiájukat, ami jelen esetben a
+folyadékfelület minimalizálását jelenti. Mivel adott térfogat mellett a
+<strong>gömb geometriai formájának a legkisebb a felülete</strong>, a
+folyadékok egyensúlyi állapotban automatikusan ezt a formát veszik
+fel.</p>
+<h3 id="kísérletek-1">Kísérletek</h3>
+<ul>
+<li><a
+href="https://www.youtube.com/watch?v=Yg0TPid2Yt4&amp;t=28m35s">Szappanhártyák
+minimálfelületei</a></li>
+</ul>
+<h2 id="példák-1">Példák</h2>
+<ol type="1">
+<li>Két különböző méretű szappanbuborékot egy csappal elzárt csővel
+kötünk össze. Az egyik buborék sugara
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">R = 2\text{ cm}</annotation></semantics></math>,
+a másiké
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">r = 1\text{ cm}</annotation></semantics></math>.
+Ha a csapot kinyitjuk, a levegő a kisebb buborékból a nagyobb felé
+áramlik (a kicsi még kisebb lesz, a nagy tovább nő), amíg a kisebb
+teljesen be nem olvad a nagyobbikba. Igazold matematikailag, hogy a
+folyamat során a hártyák teljes felülete valóban csökken! (A bezárt
+levegő össztérfogatát a minimális nyomásváltozás miatt tekintsük
+állandónak.)</li>
+</ol>
+<p>A buborékok gömb alakúak. Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+sugarú gömb felülete
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>4</mn><mi>π</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A = 4\pi R^2</annotation></semantics></math>,
+térfogata
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>R</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">V = \frac{4}{3}\pi R^3</annotation></semantics></math>.
+Mivel a szappanhártyának külső és belső felülete is van, a tényleges
+folyadék-levegő határfelület a geometriai felület kétszerese
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mi>π</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">8\pi R^2</annotation></semantics></math>).</p>
+<p>A buborékok sugarai:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>02</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">R_1 = 2\text{ cm} = 0,02\text{ m}</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>01</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">r_1 = 1\text{ cm} = 0,01\text{ m}</annotation></semantics></math>.
+A rendszer kezdeti össztérfogata
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>V</mi><mtext mathvariant="normal">összes</mtext></msub><annotation encoding="application/x-tex">V_{\text{összes}}</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mtext mathvariant="normal">összes</mtext></msub><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msubsup><mi>R</mi><mn>1</mn><mn>3</mn></msubsup><mo>+</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msubsup><mi>r</mi><mn>1</mn><mn>3</mn></msubsup><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><mo stretchy="false" form="prefix">(</mo><msup><mn>2</mn><mn>3</mn></msup><mo>+</mo><msup><mn>1</mn><mn>3</mn></msup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><mo>⋅</mo><mn>9</mn><mo>=</mo><mn>12</mn><mi>π</mi><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">V_{\text{összes}} = \frac{4}{3}\pi R_1^3 + \frac{4}{3}\pi r_1^3 = \frac{4}{3}\pi (2^3 + 1^3) = \frac{4}{3}\pi \cdot 9 = 12\pi\text{ cm}^3</annotation></semantics></math></p>
+<p>A rendszer kezdeti hártyafelülete
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mtext mathvariant="normal">kezdeti</mtext></msub><annotation encoding="application/x-tex">A_{\text{kezdeti}}</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mtext mathvariant="normal">kezdeti</mtext></msub><mo>=</mo><mn>2</mn><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>4</mn><mi>π</mi><msubsup><mi>R</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mn>4</mn><mi>π</mi><msubsup><mi>r</mi><mn>1</mn><mn>2</mn></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>8</mn><mi>π</mi><mo stretchy="false" form="prefix">(</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><msup><mn>1</mn><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>8</mn><mi>π</mi><mo>⋅</mo><mn>5</mn><mo>=</mo><mn>40</mn><mi>π</mi><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>2</mn></msup><mo>≈</mo><mn>125</mn><mo>,</mo><mn>66</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A_{\text{kezdeti}} = 2 \cdot \left( 4\pi R_1^2 + 4\pi r_1^2 \right) = 8\pi (2^2 + 1^2) = 8\pi \cdot 5 = 40\pi\text{ cm}^2 \approx 125,66\text{ cm}^2</annotation></semantics></math></p>
+<p>A folyamat végén a kis buborék teljesen eltűnik
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r_2 = 0</annotation></semantics></math>),
+és minden levegő a nagy buborékba áramlik. A végállapot sugarát jelöljük
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mn>2</mn></msub><annotation encoding="application/x-tex">R_2</annotation></semantics></math>-vel.
+Mivel az össztérfogat állandó:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mtext mathvariant="normal">összes</mtext></msub><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msubsup><mi>R</mi><mn>2</mn><mn>3</mn></msubsup><mo>=</mo><mn>12</mn><mi>π</mi><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>3</mn></msup><mo>⟹</mo><msubsup><mi>R</mi><mn>2</mn><mn>3</mn></msubsup><mo>=</mo><mn>9</mn><mo>⟹</mo><msub><mi>R</mi><mn>2</mn></msub><mo>=</mo><mroot><mn>9</mn><mn>3</mn></mroot><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>≈</mo><mn>2</mn><mo>,</mo><mn>08</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">V_{\text{összes}} = \frac{4}{3}\pi R_2^3 = 12\pi\text{ cm}^3 \implies R_2^3 = 9 \implies R_2 = \sqrt[3]{9}\text{ cm} \approx 2,08\text{ cm}</annotation></semantics></math></p>
+<p>A rendszer végső hártyafelülete
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mtext mathvariant="normal">végső</mtext></msub><annotation encoding="application/x-tex">A_{\text{végső}}</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mtext mathvariant="normal">végső</mtext></msub><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>4</mn><mi>π</mi><msubsup><mi>R</mi><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><mn>8</mn><mi>π</mi><mo stretchy="false" form="prefix">(</mo><mroot><mn>9</mn><mn>3</mn></mroot><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>=</mo><mn>8</mn><mi>π</mi><mo>⋅</mo><mroot><mn>81</mn><mn>3</mn></mroot><mo>≈</mo><mn>8</mn><mi>π</mi><mo>⋅</mo><mn>4</mn><mo>,</mo><mn>327</mn><mo>=</mo><mn>34</mn><mo>,</mo><mn>61</mn><mi>π</mi><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>2</mn></msup><mo>≈</mo><mn>108</mn><mo>,</mo><mn>74</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A_{\text{végső}} = 2 \cdot 4\pi R_2^2 = 8\pi (\sqrt[3]{9})^2 = 8\pi \cdot \sqrt[3]{81} \approx 8\pi \cdot 4,327 = 34,61\pi\text{ cm}^2 \approx 108,74\text{ cm}^2</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>A</mi><mo>=</mo><msub><mi>A</mi><mtext mathvariant="normal">végső</mtext></msub><mo>−</mo><msub><mi>A</mi><mtext mathvariant="normal">kezdeti</mtext></msub><mo>=</mo><mn>108</mn><mo>,</mo><mn>74</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>2</mn></msup><mo>−</mo><mn>125</mn><mo>,</mo><mn>66</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>2</mn></msup><mo>=</mo><mi>−</mi><mn>16</mn><mo>,</mo><mn>92</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Delta A = A_{\text{végső}} - A_{\text{kezdeti}} = 108,74\text{ cm}^2 - 125,66\text{ cm}^2 = -16,92\text{ cm}^2</annotation></semantics></math></p>
+<p>A teljes felület
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mo>,</mo><mn>92</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">16,92\text{ cm}^2</annotation></semantics></math>-rel
+csökkent. Ez bizonyítja, hogy a levegő átáramlása során a rendszer
+felületi energiája csökkent, így a folyamat spontán végbement a
+potenciális energia minimumára törekedve.</p>
+<ol start="2" type="1">
+<li>Egy keretben lévő szappanhártyát egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">L = 10\text{ cm}</annotation></semantics></math>
+hosszú mozgatható drót határol. A szappanoldat felületi feszültsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>03</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">\alpha = 0,03\text{ N/m}</annotation></semantics></math>.
+Mekkora külső erővel lehet egyensúlyt tartani a hártya összehúzó
+erejével, és mennyi munkát végzünk, ha a drótot egyenletesen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">s = 5\text{ cm}</annotation></semantics></math>
+távolsággal kijebb húzzuk?</li>
+</ol>
+<p>A szappanhártyának két oldala van, így a drótra ható összehúzó
+erő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>α</mi><mo>⋅</mo><mn>2</mn><mi>L</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>03</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>006</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">F = \alpha \cdot 2L = 0,03\text{ N/m} \cdot 2 \cdot 0,1\text{ m} = 0,006\text{ N}</annotation></semantics></math></p>
+<p>Az egyensúly tartásához pontosan ugyanekkora,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>006</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">0,006\text{ N}</annotation></semantics></math>
+nagyságú külső erőre van szükség.</p>
+<p>A végzett munka a felületi energia megváltozásával egyenlő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi>F</mi><mo>⋅</mo><mi>s</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>006</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>05</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>0003</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mJ</mtext></mrow></mrow><annotation encoding="application/x-tex">W = F \cdot s = 0,006\text{ N} \cdot 0,05\text{ m} = 0,0003\text{ J} = 0,3\text{ mJ}</annotation></semantics></math></p>
+<p>Az egyensúlyt tartó erő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>006</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">0,006\text{ N}</annotation></semantics></math>,
+a végzett munka pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mJ</mtext></mrow></mrow><annotation encoding="application/x-tex">0,3\text{ mJ}</annotation></semantics></math>.</p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Egy tiszta vízbe mártott üvegcsőből lassan vízcseppeket engedünk
+kiszakadni. A cseppek közvetlenül a leválás előtt közelítőleg gömb
+alakúak, és a cső
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 2\text{ mm}</annotation></semantics></math>
+átmérőjű peremén függenek. A leválás pillanatában a csepp súlya
+egyenlővé válik a cső peremének kerülete mentén ható felületi
+feszültségi erővel. Számítsd ki egy darab leszakadó vízcsepp tömegét, ha
+a víz felületi feszültsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>072</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">\alpha = 0,072\text{ N/m}</annotation></semantics></math>!
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>≈</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g \approx 9,81\text{ m/s}^2</annotation></semantics></math>)</p></li>
+<li><p>Egy finom, vízszintes drótkeretre feszített szappanhártyán egy
+hurokká csomózott cérnaszál fekszik lazán. Ha a hurok belsejében a
+szappanhártyát egy tűvel átszúrjuk, a cérnaszál a külső hártya
+feszítőereje miatt azonnal egy tökéletes,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">R = 3\text{ cm}</annotation></semantics></math>
+sugarú körré rándul ki. Mekkora mechanikai feszítőerő ébred a cérnaszál
+keresztmetszetében, ha a szappanoldat felületi feszültsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>025</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">\alpha = 0,025\text{ N/m}</annotation></semantics></math>?</p></li>
+<li><p>Egy ultrahangos párásító készülék
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mn>1</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">V = 1\text{ cm}^3</annotation></semantics></math>
+térfogatú vízcseppet milliónyi apró, egyforma méretű,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>1</mn><mspace width="0.222em"></mspace><mi>μ</mi><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">r = 1\ \mu\text{m}</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>10</mn><mrow><mi>−</mi><mn>6</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">10^{-6}\text{ m}</annotation></semantics></math>)
+sugarú ködcseppé porlaszt szét. Mennyi külső munkát kell végeznie a
+készüléknek pusztán a vízfelület ilyen hatalmas mértékű megnöveléséhez?
+(A víz felületi feszültsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>072</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">\alpha = 0,072\text{ N/m}</annotation></semantics></math>,
+a porlasztott cseppek összefüggő folyadékgömbök, így csak külső
+felületük van.)</p></li>
+</ol>
+</body>
+</html>

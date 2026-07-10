@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="newton-mechanikája">NEWTON MECHANIKÁJA</h1>
+<h2 id="előszó">Előszó</h2>
+<figure>
+<img src="Mechanika/Kepek/alex-dev.jpeg" alt="Kép a szerzőről" />
+<figcaption aria-hidden="true">Kép a szerzőről</figcaption>
+</figure>
+<p>Kedves Olvasó!</p>
+<p>Kérlek, fogadd szeretettel ezt a bevezető munkát Newton
+mechanikájába, amely elsősorban az önálló tanulást hivatott segíteni.
+Hasznodra válhat ez az anyag az iskolai fizika és matematika
+kiegészítéseként, de akkor is, ha nincs lehetőséged jó oktatást igénybe
+venni, viszont szeretnél elindulni a mérnöki pálya felé — ahol a
+matematika és a fizika számodra elengedhetetlen.</p>
+<p>A fizikai mozgásokat interaktív szimulációkkal szemléltetjük, és a
+számításainkat a beépített fizikai motorral ellenőrizhetjük is. Mivel az
+anyag digitális formában készül, a jelenségeket bemutató videókat is
+mellékelem. Remélem, ez az alapos, mégis bevezető jellegű tárgyalásmód
+segíti a fizika és a szükséges matematika jobb megértését, akár önálló
+tanulás esetén is.</p>
+<h3 id="szükséges-matematikai-előtudás">Szükséges matematikai
+előtudás</h3>
+<p>A matematikát tudatosan középiskolai szinten tartjuk. Ez azt jelenti,
+hogy nem alkalmazzuk a differenciál- és integrálszámítást, sem pedig a
+differenciálegyenleteket. Szükséged lesz viszont az alábbi témakörök
+alapos ismeretére:</p>
+<ul>
+<li><strong>Számhalmazok:</strong> A valós számok alapos ismerete,
+beleértve a természetes, az egész, valamint a racionális számokra
+vonatkozó tulajdonságokat.</li>
+<li><strong>Algebra:</strong> Az első- és másodfokú egyenletek, a gyökös
+egyenletek, valamint az elsőfokú egyenletrendszerek magabiztos
+megoldása. Helyenként előbukkan a hatványozás alkalmazása és a
+logaritmus is. Az összegek tömör jelölésére a szumma
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∑</mo><annotation encoding="application/x-tex">\sum</annotation></semantics></math>)
+jelet is használni fogjuk.</li>
+<li><strong>Geometria:</strong> A szögek ismerete, különös tekintettel a
+párhuzamos és merőleges szárú szögekre, valamint a Pitagorasz-tételre.
+Alapvető elvárás a síkidomok és testek kerület-, terület-, felszín- és
+térfogatszámítása.</li>
+<li><strong>Trigonometria:</strong> A derékszögű háromszögek
+trigonometriájának ismerete, valamint a forgásszögek trigonometriája.
+Fontos a szögek mérése radiánban, valamint a trigonometrikus addíciós
+tételek alkalmazása.</li>
+</ul>
+<p>Ezt a matematikai hátteret egy másik weboldalon fogjuk összefoglalni
+a későbbiekben, amennyiben ez a projekt nagyobb érdeklődésre tart
+számot.</p>
+<h3 id="hogyan-használd-a-jegyzetet">Hogyan használd a jegyzetet?</h3>
+<p>Igyekszem az anyag belső logikáját megtanítani, nem pedig egy száraz
+képlethalmazt bemutatni. Az alaptörvényeket jól meg kell tanulnod,
+ezeket külön kiemelt definíciókban is rögzítjük. Ezeken kívül nem
+szükséges minden képletet bemagolni vagy emlékezetben tartani.</p>
+<p>A fejezetek között találsz néhány csillaggal (<code>*</code>)
+megjelölt leckét is. Ezek megértéséhez szükség lehet a trigonometriára,
+vagy egyszerűen csak nehezebbek a többi anyagnál. Első olvasásra ezeket
+nyugodtan kihagyhatod, de javaslom a szükséges matematikai háttér
+pótlását és ezen haladó leckék áttanulmányozását is a későbbiekben.</p>
+<p>A kidolgozott feladatokat azonban rendkívül fontos papírral és tollal
+a kézben végigszámolni, a gyakorló feladatokat pedig szintén önállóan
+megoldani. A kapott megoldásokat mindig próbáld meg ellenőrizni
+mértékegység-egyeztetéssel, a szimuláció segítségével, vagy éppen
+nagyságrendi becsléssel. Ilyen módon a legtöbb hiba azonnal
+kiszűrhető.</p>
+<p>A végeredményeket soha ne add meg pontosabban, mint a feladatban
+szereplő legkisebb pontosságú adat! Maximum egy tizedesjeggyel lehet
+pontosabb az eredményed, mint a kiindulási adatok, hogy a kerekítési
+hibákat hatékonyan csökkentsük.</p>
+<p>Jó tanulást kívánok, csapjunk a lovak közé!</p>
+<p><a href="NEWTON_MECHANIKAJA.html">Newton Mechanikája</a></p>
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="lamináris-áramlások-ii.">Lamináris áramlások II.</h1>
+<h2 id="a-hagenpoiseuille-törvény">A Hagen–Poiseuille-törvény</h2>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=wn6eRMIOJ1k">16 cső
+egyenértékű egyetlen kétszer olyan vastag csővel</a></p>
+<p>A kísérletben látható, hogy a csőben az áramlás fenntartásához
+nyomáskülönbség szükséges. A kísérlet elején feltöltik a tartályokat,
+így a hidrosztatikai nyomás fogja a folyadékot a csövön átpréselni a
+folyadéksúrlódás ellenében. Az is látható továbbá, hogy a tartályokból a
+folyadék pontosan ugyanannyi idő alatt folyik ki. Az egyik tartály 16
+vékony csövön át ürül ki, a másik tartály viszont csak egyetlen csövön
+keresztül.</p>
+<p>Az egycsöves tartály esetében a cső belső átmérője pontosan kétszer
+olyan vastag, mint a másik tartály egyedi csöveinek vastagsága. Ebből
+arra következtethetünk, hogy az időegység alatt átfolyó folyadéktérfogat
+a cső sugarának vagy átmérőjének a 4. hatványával arányos, hiszen egy
+kétszer olyan vastag cső, ugyanolyan körülmények között, 16-szor annyi
+folyadékot szállít
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>4</mn></msup><mo>=</mo><mn>16</mn></mrow><annotation encoding="application/x-tex">2^4 = 16</annotation></semantics></math>),
+mint egyetlen, egységnyi vastagságú cső.</p>
+<p>Jelöljük
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>-val
+az időegység alatt átfolyó folyadék térfogatát, amelyet a továbbiakban
+<strong>térfogatáram</strong> néven fogunk emlegetni. Ekkor az alábbi
+összefüggés írható fel a nyomáskülönbség és a térfogatáram között:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>r</mi><mn>4</mn></msup></mrow><mrow><mn>8</mn><mi>η</mi><mi>l</mi></mrow></mfrac><mi mathvariant="normal">Δ</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">
+Q = \frac{\pi r^4}{8\eta l} \Delta p
+</annotation></semantics></math></p>
+<p>Ez az összefüggés olyan hengeres alakú, egyenes csövekre érvényes,
+amelyek hossza jóval nagyobb, mint a belső átmérőjük. Az áramlásnak
+szigorúan laminárisnak kell lennie, ami a gyakorlatban azt jelenti, hogy
+a Reynolds-szám jóval kisebb, mint 2300. A képletben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+a cső belső sugara,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
+a folyadék dinamikus viszkozitása,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>
+pedig a vizsgált csőszakasz hossza, amelynek két vége között
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\Delta p</annotation></semantics></math>
+nyomáskülönbség lép fel, hogy a stacionárius, lamináris áramlás
+kialakulhasson.</p>
+<p>Az összefüggést eredetileg kísérleti úton határozták meg, de később
+elméletileg is levezették az áramlások Navier–Stokes-alapegyenletéből. A
+levezetés során feltételezik, hogy a cső falánál a folyadék sebessége
+pontosan nulla, vagyis a folyadék legalsó rétege gyakorlatilag
+„hozzátapad” a cső falához. Ez a feltétel teljesen általánosan érvényes
+a súrlódásos áramlások esetén, a neve <strong>tapadási feltétel (no-slip
+condition)</strong>.</p>
+<p>Az áramlási sebesség a cső legközepén (a tengelyében) a legnagyobb. A
+matematikai levezetésből az is kiderül, hogy a kialakuló sebességprofil
+parabolikus, vagyis egy másodfokú függvény írja le a sebesség változását
+a cső tengelyétől mért sugár függvényében. Ezt az alábbi látványos
+kísérletben is megfigyelhetjük:</p>
+<h3 id="kísérlet-1">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=vhDaCZZ0Sc4&amp;t=117s">A
+parabolikus sebességprofil demonstrációja</a></p>
+<h3 id="példa">Példa</h3>
+<p>Egy vízszintes,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ mm}</annotation></semantics></math>
+belső átmérőjű üvegcső hossza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ m}</annotation></semantics></math>.
+A cső egyik vége egy tartályba torkollik, amelyben a glicerin
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ cm}</annotation></semantics></math>
+magasan áll. A cső másik vége szabadon nyílik a levegőre. Számítsuk ki a
+csővégek közötti nyomáskülönbséget! Mekkora a térfogatáram és az átlagos
+áramlási sebesség? Mekkora a Reynolds-szám? Alkalmazhatjuk-e a
+Hagen–Poiseuille-törvényt?<br />
+<em>(Adatok: A glicerin sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1261</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1261\text{ kg/m}^3</annotation></semantics></math>,
+dinamikus viszkozitása
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>412</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 1{,}412\text{ Pa}\cdot\text{s}</annotation></semantics></math>,
+a nehézségi gyorsulás
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ m/s}^2</annotation></semantics></math>)</em></p>
+<p>A cső bemeneténél uralkodó hajtónyomást a tartályban lévő glicerin
+hidrosztatikai nyomása biztosítja, míg a szabad végen a nyomás nulla. A
+hajtó nyomáskülönbség tehát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mi>ρ</mi><mi>g</mi><mi>h</mi><mo>=</mo><mn>1261</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo>=</mo><mn>3711</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\Delta p = \rho g h = 1261 \cdot 9{,}81 \cdot 0{,}3 = 3711\text{ Pa}
+</annotation></semantics></math></p>
+<p>A cső belső sugara az átmérő fele:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mfrac><mi>d</mi><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow><mo>=</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>3</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">r = \frac{d}{2} = 2{,}5\text{ mm} = 2{,}5 \cdot 10^{-3}\text{ m}</annotation></semantics></math>.
+Helyettesítsük be az adatokat a Hagen–Poiseuille-törvénybe a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+térfogatáram kiszámításához:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mfrac><mrow><mi>π</mi><msup><mi>r</mi><mn>4</mn></msup></mrow><mrow><mn>8</mn><mi>η</mi><mi>l</mi></mrow></mfrac><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mfrac><mrow><mn>3</mn><mo>,</mo><mn>1416</mn><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>3</mn></mrow></msup><msup><mo stretchy="false" form="postfix">)</mo><mn>4</mn></msup></mrow><mrow><mn>8</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>412</mn><mo>⋅</mo><mn>2</mn></mrow></mfrac><mo>⋅</mo><mn>3711</mn><mo>=</mo><mn>2</mn><mo>,</mo><mn>016</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>8</mn></mrow></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup><mi>/</mi><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">
+Q = \frac{\pi r^4}{8\eta l} \Delta p = \frac{3{,}1416 \cdot (2{,}5 \cdot 10^{-3})^4}{8 \cdot 1{,}412 \cdot 2} \cdot 3711 = 2{,}016 \cdot 10^{-8}\text{ m}^3/\text{s}
+</annotation></semantics></math></p>
+<p>Az átlagos áramlási sebességet
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>)
+úgy kapjuk meg, ha a térfogatáramot elosztjuk a cső keresztmetszeti
+területével
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A = \pi r^2</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mfrac><mi>Q</mi><mrow><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>,</mo><mn>016</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>8</mn></mrow></msup></mrow><mrow><mn>3</mn><mo>,</mo><mn>1416</mn><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>3</mn></mrow></msup><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mn>1</mn><mo>,</mo><mn>027</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>3</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+u = \frac{Q}{\pi r^2} = \frac{2{,}016 \cdot 10^{-8}}{3{,}1416 \cdot (2{,}5 \cdot 10^{-3})^2} = 1{,}027 \cdot 10^{-3}\text{ m/s}
+</annotation></semantics></math></p>
+<p>Ellenőrizzük az áramlás jellegét a Reynolds-szám kiszámításával (ahol
+a karakterisztikus méret a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+belső átmérő):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>=</mo><mfrac><mrow><mi>ρ</mi><mi>d</mi><mi>u</mi></mrow><mi>η</mi></mfrac><mo>=</mo><mfrac><mrow><mn>1261</mn><mo>⋅</mo><mn>5</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>3</mn></mrow></msup><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>027</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>3</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>,</mo><mn>412</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>00459</mn></mrow><annotation encoding="application/x-tex">
+Re = \frac{\rho d u}{\eta} = \frac{1261 \cdot 5 \cdot 10^{-3} \cdot 1{,}027 \cdot 10^{-3}}{1{,}412} = 0{,}00459
+</annotation></semantics></math></p>
+<p>Mivel a kapott Reynolds-szám nagyságrendekkel kisebb a kritikus
+értéknél
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>00459</mn><mo>≪</mo><mn>2300</mn></mrow><annotation encoding="application/x-tex">Re = 0{,}00459 \ll 2300</annotation></semantics></math>),
+az áramlás tökéletesen stacionárius és lamináris. A törvény alkalmazása
+teljes mértékben jogos és pontos.</p>
+<h2 id="analógia-az-elektromosságtan-ohm-törvényével">Analógia az
+elektromosságtan Ohm-törvényével</h2>
+<h3 id="kísérlet-2">Kísérlet</h3>
+<p><a
+href="https://www.youtube.com/shorts/ewW0j5dC3J4">Ohm-törvény</a></p>
+<p>Az elektromosságtanban tanulhattuk, hogy a vezetékek ellenállással
+rendelkeznek, és ez a fogyasztókra is igaz. Ha egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+feszültségű, ideális telepre egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+ellenállású fogyasztót kötünk, akkor az áramkörben állandó erősségű áram
+fog folyni, amely a következőképpen számítható ki:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mi>U</mi><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">
+I = \frac{U}{R}
+</annotation></semantics></math></p>
+<p>Ez az összefüggés az Ohm-törvény. Ez teljesen analóg a mi
+hidrodinamikai összefüggésünkkel. A Hagen–Poiseuille-törvény ugyanis
+felírható a következő alakban is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi></mrow><msub><mi>R</mi><mtext mathvariant="normal">hidr</mtext></msub></mfrac></mrow><annotation encoding="application/x-tex">
+Q = \frac{\Delta p}{R_{\text{hidr}}}
+</annotation></semantics></math></p>
+<p>Itt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mtext mathvariant="normal">hidr</mtext></msub><annotation encoding="application/x-tex">R_{\text{hidr}}</annotation></semantics></math>
+a hidrodinamikai (vagy hidraulikai) ellenállás. A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+térfogatáram az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+elektromos áramerősséggel analóg, míg a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\Delta p</annotation></semantics></math>
+nyomáskülönbség a telep
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+feszültségének felel meg.</p>
+<p>Ez az analógia más összefüggésekre is érvényes. Például a telep által
+időegység alatt végzett munka (az úgynevezett elektromos teljesítmény)
+az elektromosságtanban a következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>W</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>U</mi><mo>⋅</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">
+P = \frac{\Delta W}{\Delta t} = U \cdot I
+</annotation></semantics></math></p>
+<p>A csőben lévő folyadékon a gravitáció (vagy egy pumpa) által
+időegység alatt végzett munka (a hidraulikai teljesítmény)
+hajszálpontosan ugyanilyen szerkezetű:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>W</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>F</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>⋅</mo><msup><mi>R</mi><mn>2</mn></msup><mi>π</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi mathvariant="normal">Δ</mi><mi>p</mi><mfrac><mrow><msup><mi>R</mi><mn>2</mn></msup><mi>π</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi mathvariant="normal">Δ</mi><mi>p</mi><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>V</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>⋅</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">
+P = \frac{\Delta W}{\Delta t} = \frac{F \cdot \Delta x}{\Delta t} = \frac{\Delta p \cdot R^2\pi \cdot \Delta x}{\Delta t} = \Delta p \frac{R^2\pi \cdot \Delta x}{\Delta t} = \Delta p \frac{\Delta V}{\Delta t} = \Delta p \cdot Q 
+</annotation></semantics></math></p>
+<p>Az összefüggések tehát tökéletesen megfelelnek egymásnak. A
+hidrodinamikai ellenállás kiszámítása a cső sugara alapján a
+következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mtext mathvariant="normal">hidr</mtext></msub><mo>=</mo><mfrac><mrow><mn>8</mn><mi>η</mi><mi>l</mi></mrow><mrow><mi>π</mi><msup><mi>r</mi><mn>4</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+R_{\text{hidr}} = \frac{8\eta l}{\pi r^4}
+</annotation></semantics></math></p>
+<p>Az analógia azonban itt egy ponton izgalmasan kettéválik. Az
+elektromos ellenállás függ az anyagi minőségtől, egyenesen arányos a
+vezeték
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>
+hosszával, valamint fordítottan arányos a vezeték keresztmetszetével,
+azaz a sugár négyzetével
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>r</mi><mn>2</mn></msup><annotation encoding="application/x-tex">r^2</annotation></semantics></math>).
+A hidrodinamikai ellenállásra ez majdnem ugyanígy érvényes, de ott a
+nevezőben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>r</mi><mn>2</mn></msup><annotation encoding="application/x-tex">r^2</annotation></semantics></math>
+helyett a sugár negyedik hatványa
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>r</mi><mn>4</mn></msup><annotation encoding="application/x-tex">r^4</annotation></semantics></math>)
+szerepel. Ennek oka, hogy míg a vezetékben az összes töltés átlagosan
+egyenletes sebességgel sodródik (mint egy tömb), addig a csőben folyó
+folyadékban a tapadási feltétel miatt parabolikus sebességeloszlás
+alakul ki.</p>
+<hr />
+<h2 id="az-analógia-fizikai-magyarázata">Az analógia fizikai
+magyarázata</h2>
+<p>A vezetőkben mozgó töltött részecskék (elektronok) elektromos térerő
+hatására sodródnak. Ezek a részecskék sem akadálytalanul mozognak a
+fémben. Az elektromos erő gyorsítja őket, hasonlóan a viszkózus
+folyadékba ejtett golyóhoz, amelyet a gravitáció gyorsít.</p>
+<p>Az elektronokra is egy olyan átlagos, a sodródási sebességükkel
+arányos fékezőerő hat, mint amilyen a viszkózus folyadékban süllyedő
+golyóra ható, a sebességgel arányos Stokes-féle közegellenállási erő.
+Amikor az elektronok elérik az egyenletes sodródási sebességet, az
+elektromos hajtóerő és a belső fékezőerő egyensúlyba kerül
+egymással:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>U</mi><mo>⋅</mo><mi>e</mi></mrow><mi>l</mi></mfrac><mo>=</mo><mi>β</mi><mo>⋅</mo><msub><mi>v</mi><mtext mathvariant="normal">sodródás</mtext></msub></mrow><annotation encoding="application/x-tex">
+\frac{U \cdot e}{l} = \beta \cdot v_{\text{sodródás}}
+</annotation></semantics></math></p>
+<ul>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>:
+az elektron töltése
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">C</mtext><annotation encoding="application/x-tex">\text{C}</annotation></semantics></math>)</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mi>/</mi><mi>l</mi></mrow><annotation encoding="application/x-tex">U/l</annotation></semantics></math>:
+az elektromos térerő a vezetékben
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">V/m</mtext><annotation encoding="application/x-tex">\text{V/m}</annotation></semantics></math>)</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>:
+az anyagszerkezetre jellemző mikroszkopikus súrlódási tényező</li>
+</ul>
+<p>Ha a vezetékben térfogategységenként
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+darab szabad elektron található, akkor az áramkörben folyó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+áramerősség könnyedén kiszámítható:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>Q</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>n</mi><mo>⋅</mo><msup><mi>r</mi><mn>2</mn></msup><mi>π</mi><mo>⋅</mo><msub><mi>v</mi><mtext mathvariant="normal">sodródás</mtext></msub><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>⋅</mo><mi>e</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>n</mi><mo>⋅</mo><mi>e</mi><mo>⋅</mo><msup><mi>r</mi><mn>2</mn></msup><mi>π</mi><mo>⋅</mo><msub><mi>v</mi><mtext mathvariant="normal">sodródás</mtext></msub></mrow><annotation encoding="application/x-tex">
+I = \frac{\Delta Q}{\Delta t} = \frac{n \cdot r^2\pi \cdot v_{\text{sodródás}}\Delta t \cdot e}{\Delta t} = n \cdot e \cdot r^2\pi \cdot v_{\text{sodródás}}
+</annotation></semantics></math></p>
+<p>Helyettesítsük be ide a sodródási sebességre az erők egyenlőségéből
+kapott kifejezést:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi>n</mi><mo>⋅</mo><mi>e</mi><mo>⋅</mo><msup><mi>r</mi><mn>2</mn></msup><mi>π</mi><mo>⋅</mo><mfrac><mrow><mi>U</mi><mo>⋅</mo><mi>e</mi></mrow><mrow><mi>β</mi><mo>⋅</mo><mi>l</mi></mrow></mfrac><mo>=</mo><mfrac><mi>U</mi><mfrac><mrow><mi>β</mi><mo>⋅</mo><mi>l</mi></mrow><mrow><mi>n</mi><mo>⋅</mo><msup><mi>e</mi><mn>2</mn></msup><mo>⋅</mo><msup><mi>r</mi><mn>2</mn></msup><mi>π</mi></mrow></mfrac></mfrac><mo>=</mo><mfrac><mi>U</mi><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">
+I = n \cdot e \cdot r^2\pi \cdot \frac{U \cdot e}{\beta \cdot l} = \frac{U}{\frac{\beta \cdot l}{n \cdot e^2 \cdot r^2\pi}} = \frac{U}{R}
+</annotation></semantics></math></p>
+<p>Ebből a levezetésből az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+elektromos ellenállásra a következő zárt formulát kapjuk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac><mi>β</mi><mrow><mi>n</mi><mo>⋅</mo><msup><mi>e</mi><mn>2</mn></msup></mrow></mfrac><mo>⋅</mo><mfrac><mi>l</mi><mrow><msup><mi>r</mi><mn>2</mn></msup><mi>π</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+R = \frac{\beta}{n \cdot e^2} \cdot \frac{l}{r^2\pi}
+</annotation></semantics></math></p>
+<p>Hajszálpontosan megkaptuk tehát az Ohm-törvényt! A levezetésből
+tisztán látszik, hogy a vezeték ellenállása az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>
+hosszal egyenesen, és az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>r</mi><mn>2</mn></msup><mi>π</mi></mrow><annotation encoding="application/x-tex">r^2\pi</annotation></semantics></math>
+keresztmetszettel fordítottan arányos. Az arányossági tényező
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>β</mi><mrow><mi>n</mi><mo>⋅</mo><msup><mi>e</mi><mn>2</mn></msup></mrow></mfrac><annotation encoding="application/x-tex">\frac{\beta}{n \cdot e^2}</annotation></semantics></math>)
+nem más, mint a fém <strong>fajlagos ellenállása</strong>, amely
+kizárólag az anyagi minőségtől függő konstansokat tartalmazza.</p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Egy orvosi laboratóriumban
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">l = 50\text{ cm}</annotation></semantics></math>
+hosszú,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 2\text{ mm}</annotation></semantics></math>
+belső átmérőjű egyenes kapilláriscsövön tiszta vizet préselnek át. A víz
+dinamikus viszkozitása a mérés hőmérsékletén
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>001</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 0{,}001\text{ Pa}\cdot\text{s}</annotation></semantics></math>.
+A cső két vége között fenntartott hajtó nyomáskülönbség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>2000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow></mrow><annotation encoding="application/x-tex">\Delta p = 2000\text{ Pa}</annotation></semantics></math>.
+Mekkora a vízáramlás
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+térfogatárama a csőben a Hagen–Poiseuille-törvény alapján?</p></li>
+<li><p>Egy egészséges emberi verőérben az áramló vér térfogatáramát a
+szervezet állandó szinten tartja. Feltételezzük, hogy egy betegség
+(meszesedés) miatt az ér belső sugara
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>)
+egy adott szakaszon az eredeti értékének pontosan a felére
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math>-ére)
+csökken, miközben a szakasz hossza és a vér viszkozitása változatlan
+marad. Hányszorosára növekszik a szakasz hidraulikai ellenállása a
+szűkülés hatására? Hányszorosára kell növekednie a két végpont közötti
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi></mrow><annotation encoding="application/x-tex">\Delta p</annotation></semantics></math>
+nyomáskülönbségnek ahhoz, hogy a szállított
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+térfogatáram ne csökkenjen?</p></li>
+<li><p>Egy hidraulikus gépcsoport vízszinteskenőcsövének hossza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">l = 4\text{ m}</annotation></semantics></math>,
+belső átmérője
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 10\text{ mm}</annotation></semantics></math>.
+A csőben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-os
+5W-30-as motorolaj áramlik, melynek sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>850</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 850\text{ kg/m}^3</annotation></semantics></math>,
+dinamikus viszkozitása pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>175</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 0{,}175\text{ Pa}\cdot\text{s}</annotation></semantics></math>.
+A rendszerben uralkodó hajtó nyomáskülönbség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><msup><mn>10</mn><mn>5</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow></mrow><annotation encoding="application/x-tex">\Delta p = 2 \cdot 10^5\text{ Pa}</annotation></semantics></math>.
+Számítsd ki a csőben kialakuló
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+térfogatáramot és az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+átlagsebességet! A kapott sebesség alapján határozd meg a
+Reynolds-számot, és döntsd el, hogy valóban érvényes-e a
+Hagen–Poiseuille-törvény (azaz
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>&lt;</mo><mn>2300</mn></mrow><annotation encoding="application/x-tex">Re &lt; 2300</annotation></semantics></math>)?</p></li>
+</ol>
+</body>
+</html>

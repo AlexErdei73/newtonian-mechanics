@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-forgómozgás-alapegyenlete">A forgómozgás alapegyenlete</h1>
+<h2 id="a-szöggyorsulás">A szöggyorsulás</h2>
+<p>A merev test forgását fogjuk leírni rögzített tengely körül, mely
+ismét a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+tengely lesz. A mozgás ilyenkor síkmozgás, ahogy megbeszéltük. Ha a
+merev testre ható külső erők forgatónyomatékainak eredője nem nulla,
+akkor a test forgása gyorsul vagy lassul. Ezt a szöggyorsulással
+jellemezzük, mely a szögsebesség időegységre eső változása. Ez is
+előjeles mennyiség, akárcsak a szögsebesség.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mfrac><mrow><mi>ω</mi><mo>−</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\beta = \frac{\omega - \omega_0}{t}
+</annotation></semantics></math></p>
+<blockquote>
+<p><strong>Az időegységre eső szögsebesség-változás neve szöggyorsulás.
+A szöggyorsulás előjeles mennyiség, jele
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>,
+egysége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><msup><mi mathvariant="normal">s</mi><mn>2</mn></msup></mfrac><annotation encoding="application/x-tex">\frac{1}{\mathrm{s}^2}</annotation></semantics></math>.</strong></p>
+</blockquote>
+<h2 id="a-forgómozgás-alapegyenlete-1">A forgómozgás alapegyenlete</h2>
+<p>Az impulzusnyomaték (perdület) tétele szerint írhatjuk az alábbi
+összefüggést:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mfrac><mrow><msub><mi>N</mi><mi>z</mi></msub><mo>−</mo><msub><mi>N</mi><mrow><mi>z</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}}^{\text{k}} = \frac{N_z - N_{z,0}}{t}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>z</mi></msub><mo>=</mo><mi mathvariant="normal">Θ</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">
+N_z = \Theta \omega
+</annotation></semantics></math></p>
+<p>Ezt beírva az előző egyenletben azt kapjuk, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Θ</mi><mi>ω</mi><mo>−</mo><mi mathvariant="normal">Θ</mi><msub><mi>ω</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mi mathvariant="normal">Θ</mi><mfrac><mrow><mi>ω</mi><mo>−</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}}^{\text{k}} = \frac{\Theta \omega - \Theta \omega_0}{t} = \Theta \frac{\omega - \omega_0}{t}
+</annotation></semantics></math></p>
+<p>Itt kiemeltük a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Θ</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>
+tehetetlenségi nyomatékot, mely a forgástengelyre vonatkozik és nem
+változik, hiszen a test merev. Megkapjuk a következő, végső
+összefüggésünket:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mi mathvariant="normal">Θ</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}}^{\text{k}} = \Theta \beta
+</annotation></semantics></math></p>
+<blockquote>
+<p><strong>A forgómozgás alapegyenlete szerint a külső erők eredő
+forgatónyomatéka nem más, mint a tehetetlenségi nyomaték és a
+szöggyorsulás szorzata. Ez Newton második törvényének megfelelője
+forgómozgás esetére.</strong></p>
+</blockquote>
+<p>Itt a forgatónyomatékokat és a tehetetlenségi nyomatékot a
+forgástengelyre vonatkoztatva kell megállapítani. Az egyenlet tehát függ
+a forgástengely helyétől és helyzetétől, akárcsak a tehetetlenségi
+nyomaték és a forgatónyomaték is. A tengelynek inerciarendszerben kell
+rögzítve lennie, hiszen a fizika törvényei erre vonatkoznak.</p>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=O4PSeSuyKZU">Körlap alakú
+test tehetetlenségi nyomatékának mérése</a></p>
+<p>A videóban bemutatott kísérlet során egy merev körlap (korong)
+tehetetlenségi nyomatékát határozzák meg egy légcsapágyas asztal (air
+bearing table) segítségével. A légcsapágy állandó sűrített levegőt fúj a
+felületek közé, ami szinte teljesen kiküszöböli a tengely körüli
+súrlódást, így a külső fékezőnyomaték elhanyagolhatónak tekinthető
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mtext mathvariant="normal">súrlódás</mtext></msub><mo>≈</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">M_{\text{súrlódás}} \approx 0</annotation></semantics></math>).
+A forgatónyomatékot egy fonálra függesztett, szabadon süllyedő nehézségi
+test biztosítja, amelyet egy rögzített kiegészítő csigán vetnek át. A
+kísérletből nyert mérési adatok alapján a forgómozgás alapegyenletével
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi mathvariant="normal">Θ</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">M = \Theta \beta</annotation></semantics></math>)
+pontosan meghatározható a korong tehetetlenségi nyomatéka.</p>
+<h3 id="példa">Példa</h3>
+<p>A fenti kísérlet mérési adatai alapján számítsuk ki a tehetetlenségi
+nyomatékot! A süllyedő test tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0,1\text{ kg}</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">100\text{ g}</annotation></semantics></math>),
+amely álló helyzetből indulva
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>86</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">s = 0,86\text{ m}</annotation></semantics></math>
+függőleges utat tesz meg a talajig. Öt mérés átlagából számított
+süllyedési idő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>5</mn><mo>,</mo><mn>04</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 5,04\text{ s}</annotation></semantics></math>.
+A meghajtó kis csiga (pulley) átmérője
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">5,5\text{ cm}</annotation></semantics></math>,
+azaz a sugara
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>0275</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">r = 0,0275\text{ m}</annotation></semantics></math>.
+- Mekkora a süllyedő test lineáris gyorsulása? - Mekkora a fonalat
+feszítő kényszererő? - Mekkora forgatónyomaték gyorsítja a körlapot? -
+Mekkora a rendszer szöggyorsulása? - Számítsuk ki a kísérleti
+tehetetlenségi nyomatékot!</p>
+<p>A test nyugvó helyzetből indul ((v_0 = 0)), így a megtett út:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = \frac{a}{2}t^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>s</mi></mrow><msup><mi>t</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>86</mn></mrow><mrow><mn>5</mn><mo>,</mo><msup><mn>04</mn><mn>2</mn></msup></mrow></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>0677</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a = \frac{2s}{t^2} = \frac{2 \cdot 0,86}{5,04^2} \approx 0,0677\text{ m/s}^2
+</annotation></semantics></math></p>
+<p>Newton második törvénye a süllyedő nehézségi testre felírva:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mo>−</mo><mi>K</mi><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">
+mg - K = ma
+</annotation></semantics></math></p>
+<p>Amikor a függőlegesen függő tömeg gyorsulva süllyed lefelé, a
+kötélben ébredő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+feszítőerő (kényszererő) a gyorsulás miatt kis mértékben kisebb lesz,
+mint a test statikus súlya ((mg)):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>m</mi><mi>g</mi><mo>−</mo><mi>m</mi><mi>a</mi><mo>=</mo><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mi>g</mi><mo>−</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>0677</mn><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><mn>0</mn><mo>,</mo><mn>9742</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+K = mg - ma = m(g - a) = 0,1 \cdot (9,81 - 0,0677) \approx 0,9742\text{ N}
+</annotation></semantics></math></p>
+<p>A csiga peremén ható fonalerő által kifejtett külső
+forgatónyomaték:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>z</mi></msub><mo>=</mo><mi>K</mi><mi>r</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>9742</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>0275</mn><mo>≈</mo><mn>0</mn><mo>,</mo><mn>0268</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">
+M_z = Kr = 0,9742 \cdot 0,0275 \approx 0,0268\text{ N}\cdot\text{m}
+</annotation></semantics></math></p>
+<p>A szöggyorsulás meghatározásához kihasználjuk, hogy a csiga kerületi
+sebessége megegyezik a kötél lineáris sebességével ((v = r)):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mi>r</mi><mi>ω</mi><mo>−</mo><mi>r</mi><msub><mi>ω</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mi>r</mi><mfrac><mrow><mi>ω</mi><mo>−</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mi>r</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">
+a = \frac{v - v_0}{t} = \frac{r\omega - r\omega_0}{t} = r\frac{\omega - \omega_0}{t} = r\beta
+</annotation></semantics></math></p>
+<p>A rendszer szöggyorsulása tehát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mfrac><mi>a</mi><mi>r</mi></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>0677</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>0275</mn></mrow></mfrac><mo>≈</mo><mn>2</mn><mo>,</mo><mn>462</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> 1/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\beta = \frac{a}{r} = \frac{0,0677}{0,0275} \approx 2,462\text{ 1/s}^2
+</annotation></semantics></math></p>
+<p>A forgómozgás alapegyenletéből ((M_z = )) kifejezve a tehetetlenségi
+nyomatékot:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><mfrac><msub><mi>M</mi><mi>z</mi></msub><mi>β</mi></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>0268</mn></mrow><mrow><mn>2</mn><mo>,</mo><mn>462</mn></mrow></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>0109</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><mo>≈</mo><mn>0</mn><mo>,</mo><mn>011</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta = \frac{M_z}{ \beta} = \frac{0,0268}{2,462} \approx 0,0109\text{ kg}\cdot\text{m}^2 \approx 0,011\text{ kg}\cdot\text{m}^2
+</annotation></semantics></math></p>
+<p>A kapott mérési eredmény hajszálpontosan megegyezik a korong aljára
+gyárilag rányomtatott
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>011</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta = 0,011\text{ kg}\cdot\text{m}^2</annotation></semantics></math>
+névleges értékkel.</p>
+<h2 id="a-tiszta-gördülés">A tiszta gördülés</h2>
+<p>Eddig rögzített tengely körüli forgással foglalkoztunk, most
+megnézzük, mi a helyzet, ha a tengely nem rögzített. Ilyen mozgás
+például egy kerék gördülése. A kerék talajjal érintkező pontjának
+sebessége nulla, amíg meg nem csúszik. Ezt a tapadási erő biztosítja, és
+onnan lehet biztosan tudni, hogy a nyom, amit a kerék hagy, nincs
+elmosódva. Ez azt jelenti, hogy a kerék talajjal érintkező pontján
+átmenő tengely, amely merőleges a gördülés síkjára, az ún.
+<em>pillanatnyi forgástengely</em>. Ennek sebessége nulla, és a mozgás
+leírható egy rövid ideig tiszta forgásként ezen tengely körül. A pont
+helyzete változik a gördülés során, de egy olyan inerciarendszerben
+dolgozunk, amely ezzel pillanatnyilag együtt mozog (az igen rövid
+időtartam alatt). Ilyenkor is alkalmazható a forgómozgás
+alapegyenlete.</p>
+<p>Tiszta gördülés esetén a tömegközéppont is csupán forgómozgást végez
+a pillanatnyi forgástengely körül, tehát a következőt írhatjuk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><msub><mi>r</mi><mtext mathvariant="normal">TKP</mtext></msub><mi>ω</mi></mrow><annotation encoding="application/x-tex">
+v_{\text{TKP}} = r_{\text{TKP}}\omega
+</annotation></semantics></math></p>
+<p>Illetve a gyorsulásra írhatjuk a következő összefüggést:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>−</mo><msub><mi>v</mi><mrow><mtext mathvariant="normal">TKP</mtext><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac><mo>=</mo><msub><mi>r</mi><mtext mathvariant="normal">TKP</mtext></msub><mfrac><mrow><mi>ω</mi><mo>−</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a_{\text{TKP}} = \frac{v_{\text{TKP}} - v_{\text{TKP},0}}{t} = r_{\text{TKP}}\frac{\omega - \omega_0}{t}
+</annotation></semantics></math></p>
+<p>Itt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mtext mathvariant="normal">TKP</mtext></msub><annotation encoding="application/x-tex">r_{\text{TKP}}</annotation></semantics></math>
+nem változik a forgás során, tehát kiemelhető. Így végül eredményünk ez
+lesz:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><msub><mi>r</mi><mtext mathvariant="normal">TKP</mtext></msub><mi>β</mi></mrow><annotation encoding="application/x-tex">
+a_{\text{TKP}} = r_{\text{TKP}}\beta
+</annotation></semantics></math></p>
+<h3 id="példák">Példák</h3>
+<ol type="1">
+<li>Egy kereket vízszintesen húzunk a középpontjában
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">N</mtext></mrow><annotation encoding="application/x-tex">5\ \text{N}</annotation></semantics></math>
+erővel, aminek hatására tisztán gördül egyenes vonalban a vízszintes
+talajon, gyorsulva. A kerék tehetetlenségi nyomatéka
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">kg</mtext><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">0,2\ \text{kg}\cdot\text{m}^2</annotation></semantics></math>
+a középpontjára vonatkozólag, mely egyben a tömegközéppontja is, tömege
+pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">kg</mtext></mrow><annotation encoding="application/x-tex">1\ \text{kg}</annotation></semantics></math>.
+A kerék sugara
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0,5\text{ m}</annotation></semantics></math>.</li>
+</ol>
+<ul>
+<li>Mekkora a kerék gyorsulása?</li>
+<li>Mekkora a tapadási erő, ha a kerék tisztán gördül?</li>
+</ul>
+<figure>
+<img src="Kepek/kerekgordulesevizszintesen.svg"
+alt="Kerék gördülése vízszintes talajon" />
+<figcaption aria-hidden="true">Kerék gördülése vízszintes
+talajon</figcaption>
+</figure>
+<p>Írjuk fel a forgómozgás alapegyenletét a pillanatnyi forgástengelyre
+vonatkozólag!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mi mathvariant="normal">Θ</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}}^{\text{k}} = \Theta \beta
+</annotation></semantics></math></p>
+<p>Tudjuk, hogy az egyetlen erő, amelynek van nyomatéka a pillanatnyi
+forgástengelyre nézve, az a húzóerő, mivel az összes többi erő
+hatásvonala átmegy a pillanatnyi forgástengelyen.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mi>F</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}}^{\text{k}} = Fr
+</annotation></semantics></math></p>
+<p>Itt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+a középpont távolsága a pillanatnyi forgástengelytől, tehát a kerék
+sugara.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>r</mi><mi>β</mi><mo>⟹</mo><mi>β</mi><mo>=</mo><mfrac><mi>a</mi><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = r\beta \implies \beta = \frac{a}{r}
+</annotation></semantics></math></p>
+<p>A tehetetlenségi nyomatékra alkalmazzuk a Steiner-tételt!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>+</mo><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta = \Theta_{\text{TKP}} + mr^2
+</annotation></semantics></math></p>
+<p>Mindezeket behelyettesítve kapjuk az alábbi összefüggést:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>r</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>+</mo><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo><mfrac><mi>a</mi><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">
+Fr = (\Theta_{\text{TKP}} + mr^2) \frac{a}{r}
+</annotation></semantics></math></p>
+<p>Innen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>-t
+kifejezzük:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>F</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>+</mo><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mfrac><mi>F</mi><mi>m</mi></mfrac><mrow><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac{Fr^2}{\Theta_{\text{TKP}} + mr^2} = \frac{\frac{F}{m}}{1 + \frac{\Theta_{\text{TKP}}}{mr^2}}
+</annotation></semantics></math></p>
+<p>Látjuk, hogy ha
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>≪</mo><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta_{\text{TKP}} \ll mr^2</annotation></semantics></math>,
+akkor visszakapjuk a haladó mozgás gyorsulását, mintha forgás nem is
+lenne. Ez várható is.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mfrac><mn>5</mn><mn>1</mn></mfrac><mrow><mn>1</mn><mo>+</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow><mrow><mn>1</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><msup><mn>5</mn><mn>2</mn></msup></mrow></mfrac></mrow></mfrac><mo>≈</mo><mn>2</mn><mo>,</mo><mn>778</mn><mspace width="0.222em"></mspace><msup><mtext mathvariant="normal">m/s</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a = \frac{\frac{5}{1}}{1 + \frac{0,2}{1 \cdot 0,5^2}} \approx 2,778\ \text{m/s}^2
+</annotation></semantics></math></p>
+<p>A dinamika alapegyenlete (Newton második törvénye) a haladó mozgásra
+pedig ez:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>−</mo><msub><mi>F</mi><mtext mathvariant="normal">t</mtext></msub><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">
+F - F_{\text{t}} = ma
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">t</mtext></msub><mo>=</mo><mi>F</mi><mo>−</mo><mi>m</mi><mi>a</mi><mo>=</mo><mi>F</mi><mo>−</mo><mfrac><mi>F</mi><mrow><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfrac><mo>=</mo><mi>F</mi><mfrac><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mrow><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+F_{\text{t}} = F - ma = F - \frac{F}{1 + \frac{\Theta_{\text{TKP}}}{mr^2}} = F \frac{\frac{\Theta_{\text{TKP}}}{mr^2}}{1 + \frac{\Theta_{\text{TKP}}}{mr^2}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>25</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">
+\frac{\Theta_{\text{TKP}}}{mr^2} = \frac{0,2}{0,25} = 0,8
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">t</mtext></msub><mo>=</mo><mn>5</mn><mo>⋅</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>8</mn></mrow><mrow><mn>1</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>8</mn></mrow></mfrac><mo>≈</mo><mn>2</mn><mo>,</mo><mn>222</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">N</mtext></mrow><annotation encoding="application/x-tex">
+F_{\text{t}} = 5 \cdot \frac{0,8}{1 + 0,8} \approx 2,222\ \text{N}
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>Az előző kerék egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\alpha = 30^\circ</annotation></semantics></math>-os
+hajlásszögű lejtőn tisztán gördül lefelé álló helyzetből. Mekkora a
+gyorsulása és a tapadási erő, ha a veszteségektől eltekinthetünk?</li>
+</ol>
+<figure>
+<img src="Kepek/kerekgorduleselejton.svg"
+alt="Kerék gördülése lejtőn lefelé" />
+<figcaption aria-hidden="true">Kerék gördülése lejtőn
+lefelé</figcaption>
+</figure>
+<p>A lejtőn lefelé húzó erőre már láttuk a kiszámítást:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+F = mg \sin \alpha
+</annotation></semantics></math></p>
+<p>Ezt formuláinkba helyettesítve
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+helyére, megkapjuk a válaszokat!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><mrow><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac{g \sin \alpha}{1 + \frac{\Theta_{\text{TKP}}}{mr^2}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">t</mtext></msub><mo>=</mo><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mfrac><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mrow><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+F_{\text{t}} = mg \sin \alpha \frac{\frac{\Theta_{\text{TKP}}}{mr^2}}{1 + \frac{\Theta_{\text{TKP}}}{mr^2}}
+</annotation></semantics></math></p>
+<h3 id="kísérlet-1">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=CHQOctEvtTY">Tömör henger
+versenyez ugyanakkora üreges hengerrel lejtőn</a></p>
+<p>A tehetetlenségi nyomaték és a tömegeloszlás kapcsolatát kiválóan
+demonstrálja a lejtőn legördülő testek versenye. Ha egy fémgyűrűt
+(üreges hengert) és egy azonos sugarú fadarabot (tömör hengert)
+egyszerre engedünk el a lejtő tetejéről, a tömör henger látványosan
+megnyeri a versenyt. Ennek oka, hogy a fémgyűrű esetében a teljes tömeg
+a forgástengelytől a lehető legtávolabb, a peremen helyezkedik el, ami
+sokkal nagyobb tehetetlenségi nyomatékot
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">gyűrű</mtext></msub><mo>=</mo><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta_{\text{gyűrű}} = mR^2</annotation></semantics></math>)
+eredményez. A nagyobb tehetetlenségi nyomaték miatt a gyűrű nagyobb
+ellenállást fejt ki a forgási állapotának megváltoztatásával szemben,
+így a szöggyorsulása, és ezáltal a lejtő irányú lineáris gyorsulása is
+kisebb lesz.</p>
+<p>A forgási tehetetlenség ezen elvét – miszerint a nagy tehetetlenségi
+nyomatékkal rendelkező, tengely körüli súrlódásmentes forgó testek
+nagyon lassan veszítik el a sebességüket – hatalmas fémtárcsák,
+úgynevezett <strong>lendkerekek</strong> (flywheels) formájában
+mechanikai energiatárolásra is használják a mérnöki gyakorlatban.</p>
+<h3 id="szimuláció">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#04fb3b7b-f9fe-41a0-9dbe-063628267662">Lejtőn
+legördülő kerék</a></p>
+<p>A szimuláció magáért beszél. Az adatokból határozd meg a
+tehetetlenségi nyomatékát a keréknek és az össztömeget! Határozd meg a
+lejtő szögét is! Számítsd ki a gyorsulást a formulánkkal, majd mérd is
+meg a megtett út és a megtételéhez szükséges idő kiolvasásával a
+szimulációs adatokból a kerék középső pontjára. A gyorsulás közvetlen
+kiolvasása pontatlan! Ezt a grafikonokból láthatod! A szimuláció némileg
+alacsonyabb gyorsuláshoz vezet, mint az elmélet. Miért van ez vajon?
+<em>(Tipp: Nézd meg, mit csinál az összenergia a gördülés során! A
+háttérben futu numerikus integrátor időlépései és a kényszeregyenletek
+kerekítési hibái enyhe numerikus disszipációt, azaz mesterséges
+súrlódási veszteséget okoznak az energiagrafikonon.)</em></p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<p><strong>1. Feladat: Szöggyorsulás és kinematika</strong></p>
+<p>Egy mosógép centrifugája nyugalmi helyzetből indulva, egyenletesen
+gyorsulva
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> másodperc</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{ másodperc}</annotation></semantics></math>
+alatt éri el az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mspace width="0.222em"></mspace><mn>200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> fordulat/perc</mtext></mrow></mrow><annotation encoding="application/x-tex">1\ 200\text{ fordulat/perc}</annotation></semantics></math>
+fordulatszámot. - Mekkora a mosógép dobjának szöggyorsulása? - Hány
+fordulatot tesz meg a dob a felgyorsulás
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> másodperce</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{  másodperce}</annotation></semantics></math>
+alatt?</p>
+<p><strong>2. Feladat: Forgómozgás alapegyenlete (rögzített
+tengely)</strong></p>
+<p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">M = 5\text{ kg}</annotation></semantics></math>
+tömegű,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">R = 0,2\text{ m}</annotation></semantics></math>
+sugarú homogén tömör henger súrlódásmentesen foroghat a geometriai
+tengelye körül. A henger palástjára vékony, súlytalan fonalat tekerünk,
+melynek végét állandó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">F = 20\text{ N}</annotation></semantics></math>
+nagyságú erővel húzzuk. - Mekkora a henger szöggyorsulása? - Mekkora
+lesz a henger szögsebessége a húzás megkezdésétől számított
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> másodperc</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ másodperc}</annotation></semantics></math>
+múlva? <strong>Segítség:</strong> A homogén tömör henger tehetetlenségi
+nyomatéka:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>M</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta = \frac{1}{2}MR^2</annotation></semantics></math>.</p>
+<p><strong>3. Feladat: Tiszta gördülés vízszintes talajon</strong></p>
+<p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 3\text{ kg}</annotation></semantics></math>
+tömegű tömör gömböt egyenes vonalban, vízszintes talajon húzunk a
+tömegközéppontjában támadó vízszintes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">F = 15\text{ N}</annotation></semantics></math>
+erővel. A gömb megcsúszás nélkül, tisztán gördül. - Mekkora a gömb
+tömegközéppontjának gyorsulása? - Mekkora a talaj és a gömb között
+fellépő tapadási súrlódási erő nagysága? <strong>Segítség:</strong> A
+tömör gömb tehetetlenségi nyomatéka:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta_{\text{TKP}} = \frac{2}{5}mR^2</annotation></semantics></math>.</p>
+<p><strong>4. Feladat: Lejtőn gördülő testek versenye</strong></p>
+<p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><msup><mn>25</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\alpha = 25^\circ</annotation></semantics></math>-os
+hajlásszögű lejtő tetejéről, azonos magasságból, nyugalmi helyzetből
+egyszerre elengedünk egy tömör hengert és egy vékony falú csövet (üreges
+hengert). Mindkét test tisztán gördül lefelé a lejtőn. A
+közegellenállástól eltekintünk. - Írja fel mindkét test
+tömegközéppontjának gyorsulását! - Melyik test ér le hamarabb a lejtő
+aljára? Válaszát a kiszámított gyorsulások alapján indokolja! Függ-e az
+eredmény a testek tömegétől vagy sugarától? <strong>Segítség:</strong> A
+tömör henger tehetetlenségi nyomatéka
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\frac{1}{2}mR^2</annotation></semantics></math>,
+az üreges hengeré
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">mR^2</annotation></semantics></math>.</p>
+<p><strong>5. Feladat: Csiga tehetetlenségi nyomatékának
+figyelembevétele</strong></p>
+<p>Két test, amelyek tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m_1 = 2\text{ kg}</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m_2 = 4\text{ kg}</annotation></semantics></math>,
+egy hajlékony, nyújthatatlan kötél két végére van erősítve. A kötél egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">M = 3\text{ kg}</annotation></semantics></math>
+tömegű,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">R = 0,15\text{ m}</annotation></semantics></math>
+sugarú, homogén tömör henger alakú csigán van átvetve. A kötél nem
+csúszik meg a csigán, a tengelysúrlódás elhanyagolható. - Határozza meg
+a rendszer gyorsulását! - Mekkora erők ébrednek a kötélben a csiga bal,
+illetve jobb oldalán? Mutassa meg, hogy a kötélben ébredő erők nem
+egyenlők, és ennek oka a csiga forgásában keresendő!</p>
+</body>
+</html>

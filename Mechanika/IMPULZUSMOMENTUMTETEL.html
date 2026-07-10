@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="az-impulzusmomentum-tétel">Az impulzusmomentum-tétel</h1>
+<h2 id="az-impulzusmomentum-tétel-1">Az impulzusmomentum-tétel</h2>
+<p>Nézzük most meg az eredő forgatónyomatékot, mert arra lesz a
+legtöbbször szükségünk!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>r</mi><mi>i</mi></msub><msub><mi>F</mi><mi>i</mi></msub><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msub><mi>α</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}} = \sum_{i = 1}^{N} r_i F_i \sin \alpha_i
+</annotation></semantics></math></p>
+<p>Az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>i</mi></msub><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msub><mi>α</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">F_i \sin \alpha_i</annotation></semantics></math>
+nem más, mint az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>-edik
+pontra ható erő érintőirányú komponense. Jelöljük ezt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mrow><mi>i</mi><mo>,</mo><mtext mathvariant="normal">t</mtext></mrow></msub><annotation encoding="application/x-tex">F_{i,\text{t}}</annotation></semantics></math>-vel.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>r</mi><mi>i</mi></msub><msub><mi>F</mi><mrow><mi>i</mi><mo>,</mo><mtext mathvariant="normal">t</mtext></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>r</mi><mi>i</mi></msub><msub><mi>m</mi><mi>i</mi></msub><msub><mi>a</mi><mrow><mi>i</mi><mo>,</mo><mtext mathvariant="normal">t</mtext></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>r</mi><mi>i</mi></msub><msub><mi>m</mi><mi>i</mi></msub><mfrac><mrow><msub><mi>v</mi><mi>i</mi></msub><mo>−</mo><msub><mi>v</mi><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}} = \sum_{i = 1}^{N} r_i F_{i,\text{t}} = \sum_{i = 1}^{N} r_i m_i a_{i,\text{t}} = \sum_{i = 1}^{N} r_i m_i \frac{v_i - v_{i,0}}{t}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow></msub><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>r</mi><mi>i</mi></msub><msub><mi>m</mi><mi>i</mi></msub><msub><mi>v</mi><mi>i</mi></msub><mo>−</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>r</mi><mi>i</mi></msub><msub><mi>m</mi><mi>i</mi></msub><msub><mi>v</mi><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}} = \frac{\sum_{i = 1}^{N} r_i m_i v_i - \sum_{i = 1}^{N} r_i m_i v_{i,0}}{t}
+</annotation></semantics></math></p>
+<p>Ezek szerint az eredő forgatónyomaték nem más, mint az
+impulzusmomentum-változás és az eltelt idő hányadosa. Itt ugye
+felhasználtuk, hogy körmozgás esetén a gyorsulás érintőirányú
+komponensének nagysága a sebesség nagyságának változása osztva az
+idővel, hiszen a sebesség érintőirányú.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>N</mi><mi>z</mi></msub><mo>−</mo><msub><mi>N</mi><mrow><mi>z</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mi>N</mi><mi>z</mi></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}} = \frac{N_z - N_{z,0}}{t} = \frac{\Delta N_z}{t}
+</annotation></semantics></math></p>
+<p>Megmutatjuk még, hogy az eredő forgatónyomaték csak a külső erők
+forgatónyomatékainak eredője, mert a belső erők forgatónyomatékainak
+eredője mindig nulla. Ehhez Newton azt feltételezte, hogy a pontrendszer
+pontjai között ható erők ún. <em>centrális erők</em>. Ez azt jelenti,
+hogy nemcsak egyenlő nagyságúak és ellentétes irányúak, ahogy azt a
+harmadik törvény kimondja, hanem a hatásvonaluk is a két pontot
+összekötő egyenes. Ez azt eredményezi, hogy az erő-ellenerő pár együttes
+forgatónyomatéka nulla, bármely két pont esetén. Ez a feltételezés nem
+magától értetődő, de igaz például a gravitációs vagy éppen rugalmas
+erőkre, és általában igaz a részecskék között működő alaperőkre is.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>M</mi><mrow><mi>j</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>=</mo><mn>0</mn><mo>,</mo><mspace width="1.0em"></mspace><mi>i</mi><mo>≠</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">
+M_{i,j} + M_{j,i} = 0, \quad i \neq j
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>M</mi><mi>i</mi><mtext mathvariant="normal">k</mtext></msubsup><mo>+</mo><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>i</mi><mo>≠</mo><mi>j</mi></mrow><mi>N</mi></munderover><msub><mi>M</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msubsup><mi>M</mi><mi>i</mi><mtext mathvariant="normal">k</mtext></msubsup><mo>+</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>i</mi><mo>≠</mo><mi>j</mi></mrow><mi>N</mi></munderover><msub><mi>M</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}} = \sum_{i = 1}^{N} \left( M_i^{\text{k}} + \sum_{j = 1, i \neq j}^{N} M_{i,j} \right) = \sum_{i = 1}^{N} M_i^{\text{k}} + \sum_{i = 1}^{N} \sum_{j = 1, i \neq j}^{N} M_{i,j}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>M</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></munderover><msub><mi>M</mi><mrow><mi>j</mi><mo>,</mo><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
+\sum_{i = 1}^{N}\sum_{j = i + 1}^{N} M_{i,j} = \sum_{i = 1}^{N}\sum_{j = 1}^{i - 1} M_{j,i}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>i</mi><mo>≠</mo><mi>j</mi></mrow><mi>N</mi></munderover><msub><mi>M</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></munderover><msub><mi>M</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>+</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></munderover><msub><mi>M</mi><mrow><mi>j</mi><mo>,</mo><mi>i</mi></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></munderover><mo stretchy="false" form="prefix">(</mo><msub><mi>M</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>+</mo><msub><mi>M</mi><mrow><mi>j</mi><mo>,</mo><mi>i</mi></mrow></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+\sum_{i = 1}^{N} \sum_{j = 1, i \neq j}^{N} M_{i,j} = \sum_{i = 1}^{N} \sum_{j = 1}^{i - 1} M_{i,j} + \sum_{i = 1}^{N}\sum_{j = 1}^{i - 1} M_{j,i} = \sum_{i = 1}^{N} \sum_{j = 1}^{i - 1} (M_{i,j} + M_{j,i}) = 0
+</annotation></semantics></math></p>
+<p>Tehát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow></msub><mo>=</mo><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow><mtext mathvariant="normal">k</mtext></msubsup></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}} = M_{z,\text{e}}^{\text{k}}
+</annotation></semantics></math></p>
+<p>Eljutottunk tehát az impulzusmomentum-tételének pontrendszerekre
+vonatkozó alakjáig, amelyet mi csak a merev test rögzített tengely
+körüli forgásának speciális esetére láttunk be, de általánosan igaz.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mi>N</mi><mi>z</mi></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}}^{\text{k}} = \frac{\Delta N_z}{t}
+</annotation></semantics></math></p>
+<blockquote>
+<p><strong>A pontrendszer impulzusmomentumának időegységre eső változása
+a rá ható külső erők forgatónyomatékainak összege.</strong></p>
+</blockquote>
+<p>Ez a tétel tehát általánosan igaz, de mi csak a rögzített tengely
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+tengely) körüli forgást vizsgáltuk, és csak merev testek esetén, tehát
+amikor a pontrendszerben nincsenek deformációk.</p>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=PwE3eiREYA4">Az
+impulzusmomentum megmaradás demonstrációi</a></p>
+<p>A bemutatott kísérletben két alapvető demonstrációt láthatunk az
+impulzusmomentum megmaradásának szemléltetésére: 1. <strong>Súlyzókkal
+forgó zsámoly</strong>: Egy forgózsámolyon ülő diák kinyújtott karokkal
+nehéz súlyokat tart a függőleges forgástengelytől távol, ami kezdetben
+nagy tehetetlenségi nyomatékot
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">kezdet</mtext></msub><annotation encoding="application/x-tex">\Theta_{\text{kezdet}}</annotation></semantics></math>)
+eredményez. Amikor a karjait behúzza a teste mellé, a tömeg eloszlása
+közelebb kerül a forgástengelyhez, így a rendszer tehetetlenségi
+nyomatéka drasztikusan lecsökken. Mivel a csapágyak kiváló minőségűek és
+a függőleges tengely mentén fellépő külső forgatónyomaték
+elhanyagolhatóan kicsi
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mtext mathvariant="normal">k</mtext></msup><mo>≈</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">M^{\text{k}} \approx 0</annotation></semantics></math>),
+az impulzusmomentum megmarad
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>z</mi></msub><mo>=</mo><mtext mathvariant="normal">const.</mtext></mrow><annotation encoding="application/x-tex">N_z = \text{const.}</annotation></semantics></math>).
+A csökkenő tehetetlenségi nyomatékot kompenzálva a zsámoly szögsebessége
+látványosan megemelkedik, a diák hirtelen felgyorsul. 2. <strong>Forgó
+kerék átfordítása</strong>: A diák egy kezdetben álló zsámolyon ül,
+miközben a kezében tart egy gyorsan pörgő kerékpárkereket, amelynek
+impulzusmomentum-vektora a jobbkéz-szabály szerint függőlegesen felfelé
+mutat. Amikor a diák a kereket vízszintes tengely körül
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>180</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">180^\circ</annotation></semantics></math>-kal
+átfordítja (fejjel lefelé), a kerék saját perdülete függőlegesen lefelé
+kezd mutatni. Mivel a teljes rendszerre ható külső függőleges nyomaték
+nulla, a függőleges tengely menti teljes impulzusmomentum megmarad. Hogy
+a kezdeti felfelé mutató perdület megmaradjon, a zsámoly és a diák
+együttesen gyors forgásba jönnek abba az irányba, amely visszaadja a
+hiányzó impulzusmomentumot. A kerék visszabillentésével a diák azonnal
+megáll.</p>
+<h3 id="példák">Példák</h3>
+<ol type="1">
+<li>A bolygók mozgásánál Kepler második törvénye is egy példája az
+impulzusmomentum-tételének. Ez ugyan síkmozgás, de a bolygó nem végez
+körmozgást, távolsága változik a Naptól, amelyen a forgástengely megy
+keresztül merőlegesen a bolygómozgás síkjára.</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>z</mi></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mn>1</mn></munderover><msub><mi>m</mi><mi>i</mi></msub><msub><mi>v</mi><mi>i</mi></msub><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msub><mi>α</mi><mi>i</mi></msub><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msub><mi>α</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><msub><mi>m</mi><mn>1</mn></msub><mfrac><msub><mi>T</mi><mtext mathvariant="normal">ellipszis</mtext></msub><mi>T</mi></mfrac></mrow><annotation encoding="application/x-tex">
+N_z = \sum_{i = 1}^{1} m_i v_i \sin \alpha_i = m_1 v_1 \sin \alpha_1 = 2m_1 \frac{T_{\text{ellipszis}}}{T}
+</annotation></semantics></math></p>
+<p>Tehát az impulzusmomentum a területi sebesség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>m</mi></mrow><annotation encoding="application/x-tex">2m</annotation></semantics></math>-szerese,
+amennyiben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">m = m_1</annotation></semantics></math>
+a bolygó tömege. A területi sebességről bebizonyítottuk, hogy állandó,
+tehát az impulzusmomentum is az, ahogy ennek lennie is kell, hiszen a
+gravitációs erő hatásvonala átmegy a Napon, vagyis a
+forgástengelyen.</p>
+<ol start="2" type="1">
+<li>Egy csapágyazott rúd függőleges síkban képes forogni a felső
+végpontja körül. A súrlódástól és a légellenállástól eltekinthetünk. A
+rúd hossza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1,20\text{ m}</annotation></semantics></math>,
+tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>800</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0,800\text{ kg}</annotation></semantics></math>.
+A rúd szabad végére erősítettek egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0,500\text{ kg}</annotation></semantics></math>
+tömegű, pontszerűnek tekinthető testet. Mekkora a rendszer
+tehetetlenségi nyomatéka? Egy vízszintesen mozgó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">20,0\text{ g}</annotation></semantics></math>
+tömegű lövedék a forgás irányában találja el a rudat a tengelytől
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>900</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0,900\text{ m}</annotation></semantics></math>
+távolságra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>250</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">250\text{ m/s}</annotation></semantics></math>
+sebességgel. Az ütközés tökéletesen rugalmatlan, tehát ütközés után a
+rúd és a lövedék együtt mozognak. Mekkora a tengelyre vonatkozó
+impulzusmomentum az ütközés előtti pillanatban? Mekkora az ütközést
+közvetlenül követő pillanatban? Megmaradó mennyiség-e a lendület az
+ütközés során? Mekkora a szögsebesség az ütközés utáni pillanatban?
+Mekkora szögben tér ki a rúd?</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">rúd</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>M</mi><msup><mi>l</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>8</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><msup><mn>2</mn><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo>,</mo><mn>384</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{rúd}} = \frac{1}{3}Ml^2 = \frac{1}{3} \cdot 0,8 \cdot 1,2^2 = 0,384\text{ kg}\cdot\text{m}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">pont</mtext></msub><mo>=</mo><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><msup><mn>2</mn><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo>,</mo><mn>72</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{pont}} = m l^2 = 0,5 \cdot 1,2^2 = 0,72\text{ kg}\cdot\text{m}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">rúd</mtext></msub><mo>+</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">pont</mtext></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>384</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>72</mn><mo>=</mo><mn>1</mn><mo>,</mo><mn>104</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta = \Theta_{\text{rúd}} + \Theta_{\text{pont}} = 0,384 + 0,72 = 1,104\text{ kg}\cdot\text{m}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mrow><mi>z</mi><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>m</mi><mtext mathvariant="normal">golyó</mtext></msub><mi>r</mi><mi>v</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>02</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>9</mn><mo>⋅</mo><mn>250</mn><mo>=</mo><mn>4</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><mtext mathvariant="normal">/s</mtext></mrow><annotation encoding="application/x-tex">
+N_{z,0} = m_{\text{golyó}} r v = 0,02 \cdot 0,9 \cdot 250 = 4,50\text{ kg}\cdot\text{m}^2\text{/s}
+</annotation></semantics></math></p>
+<p>Mivel a rendszerre ható külső erők (a nehézségi erő és a csapágynál
+fellépő tartóerő) hatásvonala átmegy a forgástengelyen, nincs erőkarjuk,
+tehát forgatónyomatékuk sem. Így az impulzusmomentum megmaradó mennyiség
+az ütközés során.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>z</mi></msub><mo>=</mo><mn>4</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><mtext mathvariant="normal">/s</mtext></mrow><annotation encoding="application/x-tex">
+N_z = 4,50\text{ kg}\cdot\text{m}^2\text{/s}
+</annotation></semantics></math></p>
+<p>Ez az ütközés utáni pillanatban érvényes közvetlenül.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>z</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">Θ</mi><mo>+</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">golyó</mtext></msub><mo stretchy="false" form="postfix">)</mo><mi>ω</mi></mrow><annotation encoding="application/x-tex">
+N_z = (\Theta + \Theta_{\text{golyó}}) \omega
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">golyó</mtext></msub><mo>=</mo><msub><mi>m</mi><mtext mathvariant="normal">golyó</mtext></msub><msup><mi>r</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo>,</mo><mn>02</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><msup><mn>9</mn><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo>,</mo><mn>0162</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{golyó}} = m_{\text{golyó}} r^2 = 0,02 \cdot 0,9^2 = 0,0162\text{ kg}\cdot\text{m}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mfrac><msub><mi>N</mi><mi>z</mi></msub><mrow><mi mathvariant="normal">Θ</mi><mo>+</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">golyó</mtext></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><mo>,</mo><mn>50</mn></mrow><mrow><mn>1</mn><mo>,</mo><mn>104</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>0162</mn></mrow></mfrac><mo>≈</mo><mn>4</mn><mo>,</mo><mn>017</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\omega = \frac{N_z}{\Theta + \Theta_{\text{golyó}}} = \frac{4,50}{1,104 + 0,0162} \approx 4,017\text{ rad/s}
+</annotation></semantics></math></p>
+<p>Számítsuk ki a tömegközéppont távolságát a forgástengelytől!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><msub><mi>r</mi><mi>i</mi></msub></mrow><msub><mi>M</mi><mtext mathvariant="normal">össz</mtext></msub></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>8</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>6</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>02</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>9</mn></mrow><mrow><mn>1</mn><mo>,</mo><mn>320</mn></mrow></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>8318</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+r_{\text{TKP}} = \frac{\sum_{i = 1}^{N} m_i r_i}{M_{\text{össz}}} = \frac{0,8 \cdot 0,6 + 0,5 \cdot 1,2 + 0,02 \cdot 0,9}{1,320} \approx 0,8318\text{ m}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><msub><mi>r</mi><mtext mathvariant="normal">TKP</mtext></msub><mi>ω</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>8318</mn><mo>⋅</mo><mn>4</mn><mo>,</mo><mn>017</mn><mo>≈</mo><mn>3</mn><mo>,</mo><mn>341</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_{\text{TKP}} = r_{\text{TKP}} \omega = 0,8318 \cdot 4,017 \approx 3,341\text{ m/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><msub><mi>M</mi><mtext mathvariant="normal">össz</mtext></msub><msub><mi>v</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>32</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>341</mn><mo>≈</mo><mn>4</mn><mo>,</mo><mn>411</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">m/s</mtext></mrow><annotation encoding="application/x-tex">
+I = M_{\text{össz}} v_{\text{TKP}} = 1,32 \cdot 3,341 \approx 4,411\text{ kg}\cdot\text{m/s}
+</annotation></semantics></math></p>
+<p>Ez tehát az ütközés utáni lendület közvetlenül.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>0</mn></msub><mo>=</mo><msub><mi>m</mi><mtext mathvariant="normal">golyó</mtext></msub><msub><mi>v</mi><mtext mathvariant="normal">golyó</mtext></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>02</mn><mo>⋅</mo><mn>250</mn><mo>=</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">m/s</mtext></mrow><annotation encoding="application/x-tex">
+I_0 = m_{\text{golyó}} v_{\text{golyó}} = 0,02 \cdot 250 = 5\text{ kg}\cdot\text{m/s}
+</annotation></semantics></math></p>
+<p>Ez az ütközés előtti lendület, tehát a lendület nem marad meg, mivel
+a csapágy által kifejtett külső erő ezt megváltoztatja. Az utolsó kérdés
+megválaszolásához szükségünk lesz a forgási energia kiszámítására.</p>
+<h2 id="forgási-energia">Forgási energia</h2>
+<p>Rögzített tengely körüli forgás energiáját könnyen
+kiszámíthatjuk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mfrac><mrow><msub><mi>m</mi><mi>i</mi></msub><msubsup><mi>v</mi><mi>i</mi><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mfrac><mrow><msub><mi>m</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>r</mi><mi>i</mi></msub><mi>ω</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+E_{\text{m}} = \sum_{i = 1}^{N} \frac{m_i v_i^2}{2} = \sum_{i = 1}^{N} \frac{m_i(r_i \omega)^2}{2}
+</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ω</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\omega^2</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{1}{2}</annotation></semantics></math>
+kiemelhető:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><mfrac><msup><mi>ω</mi><mn>2</mn></msup><mn>2</mn></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><msubsup><mi>r</mi><mi>i</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+E_{\text{m}} = \frac{\omega^2}{2} \sum_{i = 1}^{N} m_i r_i^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Θ</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+E_{\text{m}} = \frac{\Theta \omega^2}{2}
+</annotation></semantics></math></p>
+<p>Pontosan olyan képletet kaptunk, mint a haladó mozgásra, csak a tömeg
+helyett a tehetetlenségi nyomaték és a sebesség helyett a szögsebesség
+szerepel.</p>
+<h3 id="példa">Példa</h3>
+<p>Fejezzük be az előző példát!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mtext mathvariant="normal">m</mtext><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>E</mi><mtext mathvariant="normal">h</mtext></msub></mrow><annotation encoding="application/x-tex">
+E_{\text{m},0} = E_{\text{h}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">Θ</mi><mo>+</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">golyó</mtext></msub><mo stretchy="false" form="postfix">)</mo><msup><mi>ω</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><msub><mi>M</mi><mtext mathvariant="normal">össz</mtext></msub><mi>g</mi><msub><mi>h</mi><mtext mathvariant="normal">TKP</mtext></msub></mrow><annotation encoding="application/x-tex">
+\frac{(\Theta + \Theta_{\text{golyó}})\omega^2}{2} = M_{\text{össz}} g h_{\text{TKP}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">Θ</mi><mo>+</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">golyó</mtext></msub><mo stretchy="false" form="postfix">)</mo><msup><mi>ω</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><msub><mi>M</mi><mtext mathvariant="normal">össz</mtext></msub><mi>g</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>104</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>0162</mn><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mn>4</mn><mo>,</mo><msup><mn>017</mn><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>32</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn></mrow></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>6980</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+h_{\text{TKP}} = \frac{(\Theta + \Theta_{\text{golyó}})\omega^2}{2 M_{\text{össz}} g} = \frac{(1,104 + 0,0162) \cdot 4,017^2}{2 \cdot 1,32 \cdot 9,81} \approx 0,6980\text{ m}
+</annotation></semantics></math></p>
+<p>A szög kiszámításához a következő egyenletre van szükség:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><msub><mi>r</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>−</mo><msub><mi>r</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+h_{\text{TKP}} = r_{\text{TKP}} - r_{\text{TKP}} \cos \phi
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>=</mo><mfrac><mrow><msub><mi>r</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>−</mo><msub><mi>h</mi><mtext mathvariant="normal">TKP</mtext></msub></mrow><msub><mi>r</mi><mtext mathvariant="normal">TKP</mtext></msub></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>8318</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>6980</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>8318</mn></mrow></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>1609</mn></mrow><annotation encoding="application/x-tex">
+\cos \phi = \frac{r_{\text{TKP}} - h_{\text{TKP}}}{r_{\text{TKP}}} = \frac{0,8318 - 0,6980}{0,8318} \approx 0,1609
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>≈</mo><mn>80</mn><mo>,</mo><msup><mn>74</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">
+\phi \approx 80,74^\circ
+</annotation></semantics></math></p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta_1 = 3\text{ kg}\cdot\text{m}^2</annotation></semantics></math>
+tehetetlenségi nyomatékú műkorcsolyázó forgásba jön, és kinyújtott
+karokkal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">\omega_1 = 2\text{ rad/s}</annotation></semantics></math>
+szögsebességgel forog. Amikor a karjait behúzza a teste mellé, a
+tehetetlenségi nyomatéka
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta_2 = 1,2\text{ kg}\cdot\text{m}^2</annotation></semantics></math>-re
+csökken. A súrlódástól tekintsünk el!</p>
+<ul>
+<li><ol type="a">
+<li>Mekkora lesz a korcsolyázó szögsebessége a karjai behúzása
+után?</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Mennyivel változott meg a forgási energiája, és honnan származik ez
+a többletenergia?</li>
+</ol></li>
+</ul></li>
+<li><p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">L = 1,5\text{ m}</annotation></semantics></math>
+hosszú,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">M = 2\text{ kg}</annotation></semantics></math>
+tömegű homogén rúd a felső végpontjánál fogva súrlódásmentesen
+csapágyazott. A rúd kezdetben nyugalomban lóg. Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 10\text{ g}</annotation></semantics></math>
+tömegű lövedék vízszintesen,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mn>400</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">v = 400\text{ m/s}</annotation></semantics></math>
+sebességgel repülve eltalálja a rúd legalsó pontját, és abba belefúródik
+(tökéletesen rugalmatlan ütközés).</p>
+<ul>
+<li><ol type="a">
+<li>Mekkora a rendszer (rúd és lövedék együttes) tehetetlenségi
+nyomatéka a tengelyre vonatkozóan az ütközés után?</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Mekkora lesz a rúd szögsebessége közvetlenül az ütközés után?</li>
+</ol></li>
+</ul></li>
+<li><p>Egy üstökös a Nap körül elnyújtott elliptikus pályán kering.
+Amikor a legközelebb van a Naphoz (perihélium,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> CSE</mtext></mrow></mrow><annotation encoding="application/x-tex">r_1 = 0,5\text{ CSE}</annotation></semantics></math>
+távolságra), a sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">v_1 = 60\text{ km/s}</annotation></semantics></math>.
+Mekkora a sebessége az üstökösnek, amikor a Naptól a legtávolabb van
+(afélium), ha ez a távolság
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>2</mn></msub><mo>=</mo><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> CSE</mtext></mrow></mrow><annotation encoding="application/x-tex">r_2 = 15\text{ CSE}</annotation></semantics></math>?
+(Tudjuk, hogy az impulzusmomentum állandó.)</p></li>
+<li><p>Egy nagy gép lendkerekének tehetetlenségi nyomatéka
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><mn>25</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta = 25\text{ kg}\cdot\text{m}^2</annotation></semantics></math>,
+és másodpercenként 10 fordulatot tesz
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">f = 10\text{ Hz}</annotation></semantics></math>).
+A gép kikapcsolásakor egy fék állandó forgatónyomatékot fejt ki a
+lendkerékre, amely így
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 20\text{ s}</annotation></semantics></math>
+alatt áll meg teljesen.</p>
+<ul>
+<li><ol type="a">
+<li>Mekkora a lendkerék kezdeti impulzusmomentuma?</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Mekkora a fékező forgatónyomaték
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mtext mathvariant="normal">f</mtext></msub><annotation encoding="application/x-tex">M_{\text{f}}</annotation></semantics></math>)
+nagysága?</li>
+</ol></li>
+</ul></li>
+<li><p>Egy játszótéri körhinta (amelyet tekinthetünk egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">M = 100\text{ kg}</annotation></semantics></math>
+tömegű,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">R = 2\text{ m}</annotation></semantics></math>
+sugarú homogén tömör korongnak) súrlódásmentesen foroghat a függőleges
+tengelye körül. A körhinta kezdetben nyugalomban van. Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>40</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 40\text{ kg}</annotation></semantics></math>
+tömegű gyerek érintőirányban,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">v = 3\text{ m/s}</annotation></semantics></math>
+sebességgel futva felugrik a körhinta szélére. Határozd meg a rendszer
+(körhinta és gyerek együttesen) szögsebességét a felugrás után! (A tömör
+korong tehetetlenségi nyomatéka a tengelyére vonatkozóan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>M</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta = \frac{1}{2}MR^2</annotation></semantics></math>,
+a gyereket a számítás során tekinthetjük pontszerűnek.)</p></li>
+</ol>
+</body>
+</html>

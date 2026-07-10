@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="kolmogorov-k41-modellje-az-energiakaszkádra">Kolmogorov K41
+modellje az energiakaszkádra</h1>
+<h2 id="a-modell-története">A modell története</h2>
+<p>A turbulencia a klasszikus fizika szinte egyetlen, máig is
+megoldatlan problémája. A Navier–Stokes-egyenletekről még azt sem
+sikerült bebizonyítani, hogy minden fizikailag megvalósítható helyzetben
+matematikailag jól viselkedő, fizikailag értelmes megoldással
+rendelkeznek-e. Nem tudjuk biztosan, hogy nincsenek-e olyan pontok az
+áramlási térben, ahol az energiasűrűség vagy a sebesség hirtelen
+végtelenné válna. Ez a matematikai probléma olyannyira alapvető, hogy a
+Clay Matematikai Intézet egymillió dolláros díjat tűzött ki a megoldás
+létezésének bizonyítására (vagy egy cáfoló ellenpélda bemutatására).</p>
+<p>Mivel az alapegyenletek közvetlen megoldása rendkívül nehéz, érthető,
+hogy a turbulencia kialakulásának egzakt leírása még várat magára. A
+gyakorlatban a mérnököknek viszont égető szükségük van olyan matematikai
+módszerekre, amelyekkel a turbulencia jellemezhető, vagy a leírása
+annyira leegyszerűsíthető, hogy hasznos információkhoz juthassanak a
+mindennapi áramlástani problémák megoldásához.</p>
+<p>Ilyen zseniális és rendkívül hasznos eszköz Andrej Kolmogorov
+1941-ben született turbulenciamodellje (a K41 modell). Ez a megközelítés
+nem az alapegyenletek közvetlen megoldásán, hanem néhány egyszerű,
+statisztikus feltételezésen és a mértékegységek egyeztetésén alapul.</p>
+<h2 id="a-modell-bemutatása">A modell bemutatása</h2>
+<p>Képzeljük el megint a csőben az áramlást, de most víz áramlik ott,
+nem glicerin, és az áramlás jó gyors, a cső is vastag, tehát a
+Reynolds-szám magas. A folyadék a nagy nyomású helyről áramlik a kis
+nyomású hely felé, tehát a nyomáskülönbség erőt jelent, mely munkát
+végez a folyadékon, hogy fenntartsa a folyadékban folyamatosan belső
+energiává alakuló mechanikai energiát.</p>
+<p>A kialakuló turbulens áramlás egy pontjában mérjük valamilyen módon a
+folyadék sebességét, és turbulencia esetén azt tapasztaljuk, hogy ez a
+sebesség egy átlag körül igen gyors ingadozásokat végez:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mover><mi>u</mi><mo accent="true">¯</mo></mover><mo>+</mo><msup><mi>u</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+u(t) = \overline{u} + u&#39;(t)
+</annotation></semantics></math></p>
+<p>Itt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>u</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{u}</annotation></semantics></math>
+az áramlás állandó átlagos sebessége, mely mindenhol azonos a csőben. Az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">u&#39;(t)</annotation></semantics></math>
+a sebesség gyorsan ingadozó része (fluktuációja), amelynek az időbeli
+átlaga pontosan nulla. Ezek az ingadozások abból adódnak, hogy az adott
+ponton sok-sok kisebb-nagyobb örvény halad át rövid idő alatt, és ezek
+belsejében a víz sebessége eltér kisebb-nagyobb mértékben az átlagtól.
+Anélkül, hogy elvesznénk a részletekben, az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">u&#39;(t)</annotation></semantics></math>
+függvényt kísérletileg megmérve, számítógépes módszerekkel
+meghatározhatjuk a különböző méretű örvényekben az energia eloszlását az
+örvények mérete szerint, egységnyi tömegű folyadékra vonatkoztatva. Ez
+az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+mennyiség a mozgási energia spektrumsűrűsége.</p>
+<p>Tulajdonképpen azt kell csinálni, amit egy grafikus ekvalézer is
+csinál a hanggal, amikor egy hangimpulzust szétválaszt a mély (kisebb
+frekvenciájú) komponensekre, majd a közepes frekvenciájú és végül a
+magas frekvenciájú összetevőre. Ez a számítás számítógéppel ma már
+rutinmunka. Kolmogorov az örvények méretét nem a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+távolsággal (átmérővel) jellemezte, hanem a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+hullámszámmal:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">
+k = \frac{2\pi}{r}
+</annotation></semantics></math></p>
+<p>Tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+a hullámszám, mely az örvények
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+sugarának reciproka. A spektrumsűrűség így a hullámszám függvénye
+lesz:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+E = E(k)
+</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+tehát az a mozgási energia, amit
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ kg}</annotation></semantics></math>
+folyadék tárol azokban az örvényekben, melyek hullámszáma
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>+</mo><mi mathvariant="normal">Δ</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">k + \Delta k</annotation></semantics></math>
+közé esik, egységnyi hullámszám-hosszra vonatkoztatva. Tehát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mrow><mtext mathvariant="normal">Energia </mtext><mspace width="0.333em"></mspace></mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg folyadékban </mtext><mspace width="0.333em"></mspace></mrow><mi>k</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> és </mtext><mspace width="0.333em"></mspace></mrow><mi>k</mi><mo>+</mo><mi mathvariant="normal">Δ</mi><mi>k</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> közötti hullámszámú örvényekben</mtext></mrow></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>k</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+E = \frac{\text{Energia } 1\text{ kg folyadékban } k \text{ és } k + \Delta k \text{ közötti hullámszámú örvényekben}}{\Delta k}
+</annotation></semantics></math></p>
+<p>Számítsuk ki az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+spektrumsűrűség alapvető SI mértékegységét:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>E</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mfrac><mrow><mtext mathvariant="normal">J</mtext><mi>/</mi><mtext mathvariant="normal">kg</mtext></mrow><mrow><mn>1</mn><mi>/</mi><mtext mathvariant="normal">m</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mtext mathvariant="normal">N</mtext><mo>⋅</mo><mtext mathvariant="normal">m</mtext><mi>/</mi><mtext mathvariant="normal">kg</mtext></mrow><mrow><mn>1</mn><mi>/</mi><mtext mathvariant="normal">m</mtext></mrow></mfrac><mo>=</mo><mfrac><mrow><mtext mathvariant="normal">kg</mtext><mo>⋅</mo><mtext mathvariant="normal">m</mtext><mi>/</mi><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup><mo>⋅</mo><mtext mathvariant="normal">m</mtext><mi>/</mi><mtext mathvariant="normal">kg</mtext></mrow><mrow><mn>1</mn><mi>/</mi><mtext mathvariant="normal">m</mtext></mrow></mfrac><mo>=</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+[E] = \frac{\text{J}/\text{kg}}{1/\text{m}} = \frac{\text{N}\cdot\text{m}/\text{kg}}{1/\text{m}} = \frac{\text{kg}\cdot\text{m}/\text{s}^2 \cdot \text{m} / \text{kg}}{1/\text{m}} = \frac{\text{m}^3}{\text{s}^2}
+</annotation></semantics></math></p>
+<p>Most először nézzük meg, mivel jellemzi Kolmogorov a viszkozitást. Ő
+a <em>kinematikai viszkozitást</em>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ν</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math>)
+használja, mely a dinamikus viszkozitás
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>η</mi><mtext mathvariant="normal">din</mtext></msub><annotation encoding="application/x-tex">\eta_{\text{din}}</annotation></semantics></math>)
+és a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>
+sűrűség hányadosa:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ν</mi><mo>=</mo><mfrac><msub><mi>η</mi><mtext mathvariant="normal">din</mtext></msub><mi>ρ</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\nu = \frac{\eta_{\text{din}}}{\rho}
+</annotation></semantics></math></p>
+<p>Ennek egysége a mértékegységek egyszerűsítése után:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>ν</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mfrac><mrow><mtext mathvariant="normal">Pa</mtext><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><mrow><mtext mathvariant="normal">kg</mtext><mi>/</mi><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mfrac><mrow><mtext mathvariant="normal">kg</mtext><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><mrow><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup></mrow></mfrac><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><mrow><mtext mathvariant="normal">kg</mtext><mi>/</mi><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mtext mathvariant="normal">kg</mtext><mrow><mtext mathvariant="normal">m</mtext><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow></mfrac><mo>⋅</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup><mtext mathvariant="normal">kg</mtext></mfrac><mo>=</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">
+[\nu] = \frac{\text{Pa}\cdot\text{s}}{\text{kg}/\text{m}^3} = \frac{\frac{\text{kg}\cdot\text{m}}{\text{s}^2\cdot\text{m}^2}\cdot\text{s}}{\text{kg}/\text{m}^3} = \frac{\text{kg}}{\text{m}\cdot\text{s}} \cdot \frac{\text{m}^3}{\text{kg}} = \frac{\text{m}^2}{\text{s}}
+</annotation></semantics></math></p>
+<p>Kolmogorov az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
+jelölést fogja használni a legkisebb örvények sugarára. Amikor az
+energia az energiakaszkádon lecsorogva eléri az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
+örvénysugarat, akkor fog a viszkozitás jelentőssé válni és hővé
+alakítani az energiát. Ezen örvényekben a folyadék forgásából adódó
+sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>η</mi></msub><annotation encoding="application/x-tex">v_{\eta}</annotation></semantics></math>.</p>
+<p>Most már meg tudjuk határozni a legkisebb örvényfonalak méretét.
+Kolmogorov szerint ez csak két dologtól függhet: függ attól, hogy mennyi
+energia érkezik egységnyi tömegű folyadékban a kaszkádban időegység
+alatt
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>,
+aminek az egysége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><mi>/</mi><msup><mtext mathvariant="normal">s</mtext><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\text{m}^2/\text{s}^3</annotation></semantics></math>),
+és a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ν</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math>
+kinematikai viszkozitástól. A feltételezett összefüggés:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mi>C</mi><mo>⋅</mo><msup><mi>ε</mi><mi>a</mi></msup><mo>⋅</mo><msup><mi>ν</mi><mi>b</mi></msup></mrow><annotation encoding="application/x-tex">
+\eta = C \cdot \varepsilon^a \cdot \nu^b
+</annotation></semantics></math></p>
+<p>Elvégezzük a dimenzióanalízist, tehát a mértékegységek azonosak kell
+legyenek a jobb és bal oldalon:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext mathvariant="normal">m</mtext><mn>1</mn></msup><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><msup><mtext mathvariant="normal">s</mtext><mn>3</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>a</mi></msup><mo>⋅</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><mtext mathvariant="normal">s</mtext></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>b</mi></msup><mo>=</mo><msup><mtext mathvariant="normal">m</mtext><mrow><mn>2</mn><mi>a</mi><mo>+</mo><mn>2</mn><mi>b</mi></mrow></msup><mo>⋅</mo><msup><mtext mathvariant="normal">s</mtext><mrow><mi>−</mi><mn>3</mn><mi>a</mi><mo>−</mo><mi>b</mi></mrow></msup></mrow><annotation encoding="application/x-tex">
+\text{m}^1 = \left(\frac{\text{m}^2}{\text{s}^3}\right)^a \cdot \left(\frac{\text{m}^2}{\text{s}}\right)^b = \text{m}^{2a+2b} \cdot \text{s}^{-3a-b}
+</annotation></semantics></math></p>
+<p>A hatványozást elvégezve a kitevők a bal és jobb oldalon
+egyenlők:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mn>2</mn><mi>a</mi><mo>+</mo><mn>2</mn><mi>b</mi></mrow><annotation encoding="application/x-tex">
+1 = 2a + 2b
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mi>−</mi><mn>3</mn><mi>a</mi><mo>−</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">
+0 = -3a - b
+</annotation></semantics></math></p>
+<p>Összeadva a második egyenlet kétszeresét és az első egyenletet, a
+következőt kapjuk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mi>−</mi><mn>4</mn><mi>a</mi><mo>⟹</mo><mi>a</mi><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">
+1 = -4a \implies a = -\frac{1}{4}
+</annotation></semantics></math></p>
+<p>Ezt behelyettesítve a második egyenletbe:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>−</mo><mi>b</mi><mo>⟹</mo><mi>b</mi><mo>=</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">
+0 = \frac{3}{4} - b \implies b = \frac{3}{4}
+</annotation></semantics></math></p>
+<p>Ezek alapján a legkisebb örvényméretre kapott negyedik gyökös
+képlet:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>∼</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mi>ν</mi><mn>3</mn></msup><mi>ε</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">
+\eta \sim \left(\frac{\nu^3}{\varepsilon}\right)^{1/4}
+</annotation></semantics></math></p>
+<p>Hasonlóan levezethető a sebességre vonatkozó összefüggés is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>η</mi></msub><mo>=</mo><mi>K</mi><mo>⋅</mo><msup><mi>ε</mi><mi>c</mi></msup><mo>⋅</mo><msup><mi>ν</mi><mi>d</mi></msup></mrow><annotation encoding="application/x-tex">
+v_{\eta} = K \cdot \varepsilon^c \cdot \nu^d
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><msup><mtext mathvariant="normal">s</mtext><mn>3</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>c</mi></msup><mo>⋅</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><mtext mathvariant="normal">s</mtext></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi></msup></mrow><annotation encoding="application/x-tex">
+\frac{\text{m}}{\text{s}} = \left(\frac{\text{m}^2}{\text{s}^3}\right)^c \cdot \left(\frac{\text{m}^2}{\text{s}}\right)^d
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mn>2</mn><mi>c</mi><mo>+</mo><mn>2</mn><mi>d</mi></mrow><annotation encoding="application/x-tex">
+1 = 2c + 2d
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn><mo>=</mo><mi>−</mi><mn>3</mn><mi>c</mi><mo>−</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">
+-1 = -3c - d
+</annotation></semantics></math></p>
+<p>Az egyenletrendszert megoldva a kitevők:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mi>d</mi><mo>=</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">
+c = \frac{1}{4}, \quad d = \frac{1}{4}
+</annotation></semantics></math></p>
+<p>Innen a mikroszkopikus sebességképlet:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>η</mi></msub><mo>∼</mo><mo stretchy="false" form="prefix">(</mo><mi>ε</mi><mo>⋅</mo><mi>ν</mi><msup><mo stretchy="false" form="postfix">)</mo><mrow><mn>1</mn><mi>/</mi><mn>4</mn></mrow></msup></mrow><annotation encoding="application/x-tex">
+v_{\eta} \sim (\varepsilon \cdot \nu)^{1/4}
+</annotation></semantics></math></p>
+<p>Nézzük meg a két levezetett mikroszkopikus paraméter szorzatát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>η</mi></msub><mo>⋅</mo><mi>η</mi><mo>∼</mo><mo stretchy="false" form="prefix">(</mo><mi>ε</mi><mo>⋅</mo><mi>ν</mi><msup><mo stretchy="false" form="postfix">)</mo><mrow><mn>1</mn><mi>/</mi><mn>4</mn></mrow></msup><mo>⋅</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mi>ν</mi><mn>3</mn></msup><mi>ε</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mn>4</mn></mrow></msup><mo>=</mo><mi>ν</mi></mrow><annotation encoding="application/x-tex">
+v_{\eta} \cdot \eta \sim (\varepsilon \cdot \nu)^{1/4} \cdot \left(\frac{\nu^3}{\varepsilon}\right)^{1/4} = \nu
+</annotation></semantics></math></p>
+<p>Tehát a legkisebb skálára felírt helyi Reynolds-szám:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><msub><mi>e</mi><mi>η</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mi>η</mi></msub><mo>⋅</mo><mi>η</mi></mrow><mi>ν</mi></mfrac><mo>∼</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
+Re_{\eta} = \frac{v_{\eta} \cdot \eta}{\nu} \sim 1 
+</annotation></semantics></math></p>
+<p>Ez azt jelenti Kolmogorov elméletének nyelvén, hogy hajszálpontosan
+azok az örvények disszipálják el (alakítják hővé) a mozgási energiát,
+melyek egyedi örvényszintű Reynolds-száma
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+nagyságrendű, azaz elég kicsi ahhoz, hogy a belső súrlódás legyen a
+domináns tényező a mozgásukra nézve.</p>
+<h2 id="kolmogorov-eredménye-az-ek-függvényre">Kolmogorov eredménye az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E(k)</annotation></semantics></math>
+függvényre</h2>
+<p>Kolmogorov feltételezte, hogy a súrlódás az energiakaszkád középső
+részén (az inerciális tartományban) már nem számít, tehát az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E(k)</annotation></semantics></math>
+függvény itt már csak az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+energiaáramlási sebességtől és a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+hullámszámtól függhet. Nem függ tehát a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ν</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math>
+kinematikai viszkozitástól:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>D</mi><mo>⋅</mo><msup><mi>ε</mi><mi>x</mi></msup><mo>⋅</mo><msup><mi>k</mi><mi>y</mi></msup></mrow><annotation encoding="application/x-tex">
+E(k) = D \cdot \varepsilon^x \cdot k^y
+</annotation></semantics></math></p>
+<p>Áttérve a mértékegységekre:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><msup><mtext mathvariant="normal">s</mtext><mn>3</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>x</mi></msup><mo>⋅</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><mtext mathvariant="normal">m</mtext></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>y</mi></msup></mrow><annotation encoding="application/x-tex">
+\frac{\text{m}^3}{\text{s}^2} = \left(\frac{\text{m}^2}{\text{s}^3}\right)^x \cdot \left(\frac{1}{\text{m}}\right)^y
+</annotation></semantics></math></p>
+<p>A kitevők egyeztetése:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">
+3 = 2x - y
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>2</mn><mo>=</mo><mi>−</mi><mn>3</mn><mi>x</mi><mo>⟹</mo><mi>x</mi><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">
+-2 = -3x \implies x = \frac{2}{3}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>−</mo><mfrac><mn>9</mn><mn>3</mn></mfrac><mo>=</mo><mi>−</mi><mfrac><mn>5</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">
+y = 2x - 3 = \frac{4}{3} - \frac{9}{3} = -\frac{5}{3}
+</annotation></semantics></math></p>
+<p>Eredményünk tehát a híres <strong>Kolmogorov-féle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>5</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">-5/3</annotation></semantics></math>-os
+spektrumtörvény</strong>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>∼</mo><msup><mi>ε</mi><mrow><mn>2</mn><mi>/</mi><mn>3</mn></mrow></msup><mo>⋅</mo><msup><mi>k</mi><mrow><mi>−</mi><mn>5</mn><mi>/</mi><mn>3</mn></mrow></msup></mrow><annotation encoding="application/x-tex">
+E(k) \sim \varepsilon^{2/3} \cdot k^{-5/3}
+</annotation></semantics></math></p>
+<h2 id="kísérleti-ellenőrzés">Kísérleti ellenőrzés</h2>
+<p>Az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E(k)</annotation></semantics></math>
+függvény az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>u</mi><mo>′</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">u&#39;(t)</annotation></semantics></math>
+sebességjel mért értékeiből meghatározható számítógépes kiértékeléssel
+(Fourier-transzformációval). Ezután már csak ábrázolni kell logaritmikus
+skálán a függvényt. Ahol az elméleti összefüggés fennáll, azoknál a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+értékeknél a görbének egy egyenest kell alkotnia, melynek meredeksége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mfrac><mn>5</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">-\frac{5}{3}</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>D</mi><mo>⋅</mo><msup><mi>ε</mi><mrow><mn>2</mn><mi>/</mi><mn>3</mn></mrow></msup><mo>⋅</mo><msup><mi>k</mi><mrow><mi>−</mi><mn>5</mn><mi>/</mi><mn>3</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>D</mi><mo>⋅</mo><msup><mi>ε</mi><mrow><mn>2</mn><mi>/</mi><mn>3</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mfrac><mn>5</mn><mn>3</mn></mfrac><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">
+\log E(k) = \log\left(D \cdot \varepsilon^{2/3} \cdot k^{-5/3}\right) = \log\left(D \cdot \varepsilon^{2/3}\right) - \frac{5}{3} \log k
+</annotation></semantics></math></p>
+<p>Bevezetve, hogy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">Y = \log E(k)</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">X = \log k</annotation></semantics></math>,
+egy klasszikus lineáris egyenes egyenletét kapjuk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mi>−</mi><mfrac><mn>5</mn><mn>3</mn></mfrac><mi>X</mi><mo>+</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">
+Y = -\frac{5}{3} X + B
+</annotation></semantics></math></p>
+<h2
+id="gyakorlati-felhasználás-a-számítógépes-szimulációkban-cfd">Gyakorlati
+felhasználás a számítógépes szimulációkban (CFD)</h2>
+<p>Mivel az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+könnyen meghatározható a folyadékon végzett globális munka (például a
+szivattyú teljesítménye) mérésével, és a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ν</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math>
+kinematikai viszkozitás is jól ismert táblázati adat, pontosan
+kiszámítható a legkisebb örvények mérettartományának nagysága
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>)
+és ezen örvények sebessége
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>η</mi></msub><annotation encoding="application/x-tex">v_{\eta}</annotation></semantics></math>).
+Ezek a paraméterek határozzák meg szigorúan, hogy milyen méretű cellákra
+(rácsokra) kell az áramlási teret felosztani, amikor a
+Navier–Stokes-egyenleteket közvetlen számítógépes szimulációval (DNS -
+Direct Numerical Simulation) oldjuk meg.</p>
+<p>Ha ennél nagyobb méretű felosztást alkalmazunk, akkor a számítógép
+nem tud számolni a leggyorsabb, legkisebb örvényekkel, az energia
+felhalmozódik a rácspontokon, és a szimuláció hibás lesz vagy
+numerikusan felrobban. Sajnos ez az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
+méret rendkívül pici (akár pár mikrométeres), így a közvetlen DNS
+megoldás általában gigantikus szuperszámítógépeket igényel, és egy autó
+vagy repülőgép teljes áramlására kivitelezhetetlen.</p>
+<p>Ez a számítási idő azonban jócskán lecsökkenthető, ha csak az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>u</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{u}</annotation></semantics></math>
+átlagos sebességet akarjuk kiszámítani a mérnöki tervezés során (RANS -
+Reynolds-Averaged Navier-Stokes modellek). Ilyenkor sokkal durvább
+felosztás is elegendő, csak az a fontos, hogy a folyadék valós fizikai
+viszkozitásához a szimuláció során hozzá kell adni egy úgynevezett
+<strong>turbulens viszkozitást</strong>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ν</mi><mi>t</mi></msub><annotation encoding="application/x-tex">\nu_t</annotation></semantics></math>),
+ami a kis skálájú örvények fékező hatását helyettesíti. Ezt a
+hozzáadandó értéket a számítógép cellánként a Kolmogorov-modell
+statisztikus elvei alapján számítja ki, és így a kísérletekkel jól
+egyező, gyors közelítő eredmények kaphatók, melyeket a mérnökök kiválóan
+tudnak használni a mindennapi tervezés során.</p>
+<hr />
+<h2 id="kidolgozott-példák">Kidolgozott példák</h2>
+<h3 id="példa-csőáramlás-mikroszkopikus-örvényei">1. Példa: Csőáramlás
+mikroszkopikus örvényei</h3>
+<p>Egy egyenes csőben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-os
+tiszta víz áramlik durva turbulenciával. Az áramlás globális
+Reynolds-száma
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>=</mo><mn>100</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow><annotation encoding="application/x-tex">Re = 100\ 000</annotation></semantics></math>,
+az átlagsebesség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>u</mi><mo accent="true">¯</mo></mover><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">\overline{u} = 10\text{ m/s}</annotation></semantics></math>.
+A mérések szerint a súrlódás miatti nyomásesés a csőben méterenként
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mi>/</mi><mi>L</mi><mo>=</mo><mn>400</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa/m</mtext></mrow></mrow><annotation encoding="application/x-tex">\Delta p/L = 400\text{ Pa/m}</annotation></semantics></math>.</p>
+<p><strong>Kérdés:</strong> Mekkora a cső belső átmérője? Mekkora a
+folyadékban másodpercenként hővé alakuló
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+fajlagos energia-disszipáció, és mekkora a kialakuló legkisebb örvények
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
+mérete, valamint a bennük ébredő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>η</mi></msub><annotation encoding="application/x-tex">v_{\eta}</annotation></semantics></math>
+sebesség?<br />
+<em>(Adatok a vízre: sűrűség</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1000\text{ kg/m}^3</annotation></semantics></math>
+<em>, dinamikus viszkozitás</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>η</mi><mtext mathvariant="normal">din</mtext></msub><mo>=</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>3</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta_{\text{din}} = 10^{-3}\text{ Pa}\cdot\text{s}</annotation></semantics></math>
+<em>)</em></p>
+<p><strong>Megoldás:</strong> Határozzuk meg a víz
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ν</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math>
+kinematikai viszkozitását:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ν</mi><mo>=</mo><mfrac><msub><mi>η</mi><mtext mathvariant="normal">din</mtext></msub><mi>ρ</mi></mfrac><mo>=</mo><mfrac><msup><mn>10</mn><mrow><mi>−</mi><mn>3</mn></mrow></msup><mn>1000</mn></mfrac><mo>=</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>6</mn></mrow></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup><mi>/</mi><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">
+\nu = \frac{\eta_{\text{din}}}{\rho} = \frac{10^{-3}}{1000} = 10^{-6}\text{ m}^2/\text{s}
+</annotation></semantics></math></p>
+<p>A globális Reynolds-számból
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>=</mo><mfrac><mrow><mover><mi>u</mi><mo accent="true">¯</mo></mover><mo>⋅</mo><mi>d</mi></mrow><mi>ν</mi></mfrac></mrow><annotation encoding="application/x-tex">Re = \frac{\overline{u}\cdot d}{\nu}</annotation></semantics></math>)
+számítsuk ki a cső
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+átmérőjét:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mspace width="0.222em"></mspace><mn>000</mn><mo>=</mo><mfrac><mrow><mn>10</mn><mo>⋅</mo><mi>d</mi></mrow><msup><mn>10</mn><mrow><mi>−</mi><mn>6</mn></mrow></msup></mfrac><mo>⟹</mo><mi>d</mi><mo>=</mo><mfrac><mrow><mn>100</mn><mspace width="0.222em"></mspace><mn>000</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>6</mn></mrow></msup></mrow><mn>10</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>01</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">
+100\ 000 = \frac{10 \cdot d}{10^{-6}} \implies d = \frac{100\ 000 \cdot 10^{-6}}{10} = 0{,}01\text{ m} = 1\text{ cm}
+</annotation></semantics></math></p>
+<p>Számítsuk ki az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+fajlagos energia-disszipációt! A pumpa által méterenként végzett
+hidraulikai teljesítmény
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mi>Q</mi><mo>⋅</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi></mrow><mi>L</mi></mfrac></mrow><annotation encoding="application/x-tex">P = Q \cdot \frac{\Delta p}{L}</annotation></semantics></math>.
+A térfogatáram
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><mo>=</mo><mi>A</mi><mo>⋅</mo><mover><mi>u</mi><mo accent="true">¯</mo></mover><mo>=</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>π</mi></mrow><mn>4</mn></mfrac><mo>⋅</mo><mover><mi>u</mi><mo accent="true">¯</mo></mover></mrow><annotation encoding="application/x-tex">Q = A \cdot \overline{u} = \frac{d^2\pi}{4} \cdot \overline{u}</annotation></semantics></math>.
+Az 1 méteres csőszakaszban lévő víztömeg
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mfrac><mrow><msup><mi>d</mi><mn>2</mn></msup><mi>π</mi></mrow><mn>4</mn></mfrac><mo>⋅</mo><mn>1</mn><mo>⋅</mo><mi>ρ</mi></mrow><annotation encoding="application/x-tex">m = \frac{d^2\pi}{4} \cdot 1 \cdot \rho</annotation></semantics></math>.
+A tömegegységre vetített energiaáramlás
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mi>P</mi><mi>/</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">\varepsilon = P/m</annotation></semantics></math>)
+kifejezéséből a geometriai tagok kiesnek:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mfrac><mrow><mover><mi>u</mi><mo accent="true">¯</mo></mover><mo>⋅</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi></mrow><mi>L</mi></mfrac></mrow><mi>ρ</mi></mfrac><mo>=</mo><mfrac><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mo>⋅</mo><mn>400</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa/m</mtext></mrow></mrow><mrow><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow></mfrac><mo>=</mo><mn>4</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup><mi>/</mi><msup><mtext mathvariant="normal">s</mtext><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">
+\varepsilon = \frac{\overline{u} \cdot \frac{\Delta p}{L}}{\rho} = \frac{10\text{ m/s} \cdot 400\text{ Pa/m}}{1000\text{ kg/m}^3} = 4\text{ m}^2/\text{s}^3
+</annotation></semantics></math></p>
+<p>Alkalmazzuk Kolmogorov negyedik gyökös képleteit a mikroszkopikus
+örvények sugarára és forgási sebességére:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mi>ν</mi><mn>3</mn></msup><mi>ε</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mn>4</mn></mrow></msup><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>6</mn></mrow></msup><msup><mo stretchy="false" form="postfix">)</mo><mn>3</mn></msup></mrow><mn>4</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mn>4</mn></mrow></msup><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mn>10</mn><mrow><mi>−</mi><mn>18</mn></mrow></msup><mn>4</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mn>4</mn></mrow></msup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>19</mn></mrow></msup><msup><mo stretchy="false" form="postfix">)</mo><mrow><mn>1</mn><mi>/</mi><mn>4</mn></mrow></msup><mo>≈</mo><mn>22</mn><mo>,</mo><mn>4</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>6</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>22</mn><mo>,</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mi>μ</mi><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">
+\eta = \left( \frac{\nu^3}{\varepsilon} \right)^{1/4} = \left( \frac{(10^{-6})^3}{4} \right)^{1/4} = \left( \frac{10^{-18}}{4} \right)^{1/4} = (2{,}5 \cdot 10^{-19})^{1/4} \approx 22{,}4 \cdot 10^{-6}\text{ m} = 22{,}4\text{ }\mu\text{m}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>η</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>ε</mi><mo>⋅</mo><mi>ν</mi><msup><mo stretchy="false" form="postfix">)</mo><mrow><mn>1</mn><mi>/</mi><mn>4</mn></mrow></msup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>6</mn></mrow></msup><msup><mo stretchy="false" form="postfix">)</mo><mrow><mn>1</mn><mi>/</mi><mn>4</mn></mrow></msup><mo>≈</mo><mn>0</mn><mo>,</mo><mn>0447</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mo>=</mo><mn>4</mn><mo>,</mo><mn>47</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_{\eta} = (\varepsilon \cdot \nu)^{1/4} = (4 \cdot 10^{-6})^{1/4} \approx 0{,}0447\text{ m/s} = 4{,}47\text{ cm/s}
+</annotation></semantics></math></p>
+<p><strong>Konklúzió:</strong> A makroszkopikus cső átmérője
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ cm}</annotation></semantics></math>.
+Ezzel szemben a csőben a legkisebb, hőt termelő örvényszálak sugara
+mindössze
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>22</mn><mo>,</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mi>μ</mi><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">22{,}4\text{ }\mu\text{m}</annotation></semantics></math>
+(átmérőjük kb.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>45</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mi>μ</mi><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">45\text{ }\mu\text{m}</annotation></semantics></math>),
+és bennük a víz
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>47</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm/s</mtext></mrow></mrow><annotation encoding="application/x-tex">4{,}47\text{ cm/s}</annotation></semantics></math>-os
+sebességgel örvénylik a legkisebb viszkózus zónában.</p>
+<hr />
+<h3 id="példa-egy-online-ismeretterjesztő-videó-cáfolata">2. Példa: Egy
+online ismeretterjesztő videó cáfolata</h3>
+<p>Egy népszerű online ismeretterjesztő videóban a következő állítás
+hangzik el: <em>„A különböző méretű örvényekben tárolt kinetikus energia
+– egységnyi tömegű folyadékra vonatkoztatva – arányos az örvények</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+<em>átmérőjének</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">5/3</annotation></semantics></math>
+<em>-os hatványával (</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>D</mi></msub><mo>∼</mo><msup><mi>D</mi><mrow><mn>5</mn><mi>/</mi><mn>3</mn></mrow></msup></mrow><annotation encoding="application/x-tex">E_D \sim D^{5/3}</annotation></semantics></math>
+<em>).”</em></p>
+<p><strong>Kérdés:</strong> Mutassuk meg pusztán dimenzióanalízissel
+(mértékegység-egyeztetéssel), hogy ez az állítás ebben a formában hibás!
+Vezessük le a térbeli örvényméret szerinti valódi energiasűrűség helyes
+hatványkitevőjét!</p>
+<p><strong>Megoldás:</strong> A videó szerint a valós térbeli
+örvényméret szerinti energiaeloszlás
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>D</mi></msub><annotation encoding="application/x-tex">E_D</annotation></semantics></math>)
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+átmérőtől és az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+fajlagos energia-disszipációtól függ
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>D</mi></msub><mo>∼</mo><msup><mi>ε</mi><mrow><mn>2</mn><mi>/</mi><mn>3</mn></mrow></msup><mo>⋅</mo><msup><mi>D</mi><mrow><mn>5</mn><mi>/</mi><mn>3</mn></mrow></msup></mrow><annotation encoding="application/x-tex">E_D \sim \varepsilon^{2/3} \cdot D^{5/3}</annotation></semantics></math>).
+Ellenőrizzük le a jobb oldal mértékegységét a Kolmogorov-elmélet gyári
+SI egységeivel: * Az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+egysége:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><mi>/</mi><msup><mtext mathvariant="normal">s</mtext><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\text{m}^2/\text{s}^3</annotation></semantics></math>,
+így az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ε</mi><mrow><mn>2</mn><mi>/</mi><mn>3</mn></mrow></msup><annotation encoding="application/x-tex">\varepsilon^{2/3}</annotation></semantics></math>
+egysége:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext mathvariant="normal">m</mtext><mrow><mn>4</mn><mi>/</mi><mn>3</mn></mrow></msup><mi>/</mi><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\text{m}^{4/3}/\text{s}^2</annotation></semantics></math>
+* A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+átmérő egysége:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m</mtext><annotation encoding="application/x-tex">\text{m}</annotation></semantics></math>,
+így a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>D</mi><mrow><mn>5</mn><mi>/</mi><mn>3</mn></mrow></msup><annotation encoding="application/x-tex">D^{5/3}</annotation></semantics></math>
+egysége:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mtext mathvariant="normal">m</mtext><mrow><mn>5</mn><mi>/</mi><mn>3</mn></mrow></msup><annotation encoding="application/x-tex">\text{m}^{5/3}</annotation></semantics></math></p>
+<p>Szorozzuk össze a két mértékegységet a videó képlete szerint:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><msub><mi>E</mi><mtext mathvariant="normal">videó</mtext></msub><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mrow><mn>4</mn><mi>/</mi><mn>3</mn></mrow></msup><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>⋅</mo><msup><mtext mathvariant="normal">m</mtext><mrow><mn>5</mn><mi>/</mi><mn>3</mn></mrow></msup><mo>=</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>/</mi><mn>3</mn><mo>+</mo><mn>5</mn><mi>/</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo></mrow></msup><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mrow><mn>9</mn><mi>/</mi><mn>3</mn></mrow></msup><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+[E_{\text{videó}}] = \left(\frac{\text{m}^{4/3}}{\text{s}^2}\right) \cdot \text{m}^{5/3} = \frac{\text{m}^{(4/3 + 5/3)}}{\text{s}^2} = \frac{\text{m}^{9/3}}{\text{s}^2} = \frac{\text{m}^3}{\text{s}^2}
+</annotation></semantics></math></p>
+<p>A kapott mértékegység
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup><mi>/</mi><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\text{m}^3/\text{s}^2</annotation></semantics></math>.
+Ez azonban a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+hullámszám szerinti
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E(k)</annotation></semantics></math>
+spektrumsűrűség egysége, ahol a sávszélességet a hullámszám reciproka
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">1/\text{m}</annotation></semantics></math>)
+határozza meg!</p>
+<p><strong>A helyes térbeli dimenzió meghatározása:</strong> Ha a
+sűrűségfüggvényt nem hullámszámonként, hanem a valóságos térbeli méret
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>,
+méterben mérve) szerint értelmezzük, akkor a térbeli spektrumsűrűség
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>D</mi></msub><annotation encoding="application/x-tex">E_D</annotation></semantics></math>)
+azt adja meg, hogy egységnyi <em>métertartományra</em> mekkora fajlagos
+mozgási energia
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">J</mtext><mi>/</mi><mtext mathvariant="normal">kg</mtext><mo>=</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><mi>/</mi><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\text{J}/\text{kg} = \text{m}^2/\text{s}^2</annotation></semantics></math>)
+jut. Ennek a helyes SI mértékegysége:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><msub><mi>E</mi><mi>D</mi></msub><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mfrac><mrow><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><mi>/</mi><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mrow><mtext mathvariant="normal">m</mtext></mfrac><mo>=</mo><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+[E_D] = \frac{\text{m}^2/\text{s}^2}{\text{m}} = \frac{\text{m}}{\text{s}^2}
+</annotation></semantics></math></p>
+<p><strong>A helyes összefüggés levezetése dimenzióanalízissel:</strong>
+Tegyük fel, hogy a helyes térbeli energiaeloszlás az inerciális
+tartományban szintén csak az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>ε</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><mi>/</mi><msup><mtext mathvariant="normal">s</mtext><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">[\varepsilon] = \text{m}^2/\text{s}^3</annotation></semantics></math>)
+és a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>d</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">[d] = \text{m}</annotation></semantics></math>)
+változóktól függ:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>D</mi></msub><mo>=</mo><mi>C</mi><mo>⋅</mo><msup><mi>ε</mi><mi>a</mi></msup><mo>⋅</mo><msup><mi>D</mi><mi>b</mi></msup></mrow><annotation encoding="application/x-tex">
+E_D = C \cdot \varepsilon^a \cdot D^b
+</annotation></semantics></math></p>
+<p>Írjuk fel a helyes mértékegység-egyeztetést a két oldalra:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mtext mathvariant="normal">m</mtext><mn>1</mn></msup><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><msup><mtext mathvariant="normal">s</mtext><mn>3</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>a</mi></msup><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mtext mathvariant="normal">m</mtext><msup><mo stretchy="false" form="postfix">)</mo><mi>b</mi></msup><mo>=</mo><msup><mtext mathvariant="normal">m</mtext><mrow><mn>2</mn><mi>a</mi><mo>+</mo><mi>b</mi></mrow></msup><mo>⋅</mo><msup><mtext mathvariant="normal">s</mtext><mrow><mi>−</mi><mn>3</mn><mi>a</mi></mrow></msup></mrow><annotation encoding="application/x-tex">
+\frac{\text{m}^1}{\text{s}^2} = \left(\frac{\text{m}^2}{\text{s}^3}\right)^a \cdot (\text{m})^b = \text{m}^{2a+b} \cdot \text{s}^{-3a}
+</annotation></semantics></math></p>
+<p>A hatványok egyenlősége alapján az alábbi rendszert kapjuk: * Az
+időre
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">s</mtext><annotation encoding="application/x-tex">\text{s}</annotation></semantics></math>):
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>3</mn><mi>a</mi><mo>=</mo><mi>−</mi><mn>2</mn><mo>⟹</mo><mi>a</mi><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">-3a = -2 \implies a = \frac{2}{3}</annotation></semantics></math>
+* A hosszúságra
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m</mtext><annotation encoding="application/x-tex">\text{m}</annotation></semantics></math>):
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">2a + b = 1</annotation></semantics></math></p>
+<p>Helyettesítsük be az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>2</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">a = 2/3</annotation></semantics></math>
+értéket a hosszúság egyenletébe:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>b</mi><mo>=</mo><mn>1</mn><mo>⟹</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>+</mo><mi>b</mi><mo>=</mo><mfrac><mn>3</mn><mn>3</mn></mfrac><mo>⟹</mo><mi>b</mi><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">
+2 \cdot \left(\frac{2}{3}\right) + b = 1 \implies \frac{4}{3} + b = \frac{3}{3} \implies b = -\frac{1}{3}
+</annotation></semantics></math></p>
+<p>A helyes fizikai és dimenziós eredményünk tehát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>D</mi></msub><mo>∼</mo><msup><mi>ε</mi><mrow><mn>2</mn><mi>/</mi><mn>3</mn></mrow></msup><mo>⋅</mo><msup><mi>D</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>3</mn></mrow></msup></mrow><annotation encoding="application/x-tex">
+E_D \sim \varepsilon^{2/3} \cdot D^{-1/3}
+</annotation></semantics></math></p>
+<p><strong>Konklúzió:</strong> A videó készítői elkövették azt a súlyos
+matematikai hibát, hogy a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>∝</mo><mn>1</mn><mi>/</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">k \propto 1/D</annotation></semantics></math>
+helyettesítést közvetlenül, a sűrűségfüggvények
+koordináta-transzformációs szabályai (a differenciálok átváltása, azaz a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>d</mi><mi>k</mi><mo stretchy="false" form="prefix">|</mo><mo>∝</mo><msup><mi>D</mi><mrow><mi>−</mi><mn>2</mn></mrow></msup><mi>d</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">|dk| \propto D^{-2}dD</annotation></semantics></math>
+sávszélesség-tényező) nélkül végezték el.</p>
+<p>Mi is láttuk a gravitációs energiáról szóló leckénkben, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><mi>r</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>≈</mo><mi>−</mi><mfrac><mn>1</mn><msup><mi>r</mi><mn>2</mn></msup></mfrac><mi mathvariant="normal">Δ</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">
+\Delta \left(\frac{1}{r}\right) \approx -\frac{1}{r^2} \Delta r
+</annotation></semantics></math></p>
+<p>Ezt az összefüggést (a differenciálok transzformációját) kell
+alkalmazni akkor is, amikor a spektrumsűrűség kiszámításakor a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+hullámszámról áttérünk az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+sugárra vagy a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+átmérőre.</p>
+<p>A dimenzióanalízis mint csalhatatlan „hazugságvizsgáló” azonnal
+megmutatja, hogy a valós térben az örvények energiasűrűsége nem a
+pozitív
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">5/3</annotation></semantics></math>-os,
+hanem a <strong>negatív
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">1/3</annotation></semantics></math>-os
+hatvány szerint változik</strong>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>D</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>3</mn></mrow></msup><annotation encoding="application/x-tex">D^{-1/3}</annotation></semantics></math>).</p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p><strong>Szélcsatorna mikroskálái:</strong> Egy szélcsatorna
+turbulens magáramában a mért fajlagos energia-disszipáció értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mn>12</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup><mi>/</mi><msup><mtext mathvariant="normal">s</mtext><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\varepsilon = 12\text{ m}^2/\text{s}^3</annotation></semantics></math>.
+A levegő kinematikai viszkozitása a kísérlet során
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ν</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>5</mn></mrow></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup><mi>/</mi><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\nu = 1{,}5 \cdot 10^{-5}\text{ m}^2/\text{s}</annotation></semantics></math>.
+Számítsd ki Kolmogorov képletei alapján a legkisebb kialakuló örvények
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
+sugarát és a bennük mérhető
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>η</mi></msub><annotation encoding="application/x-tex">v_{\eta}</annotation></semantics></math>
+sebességét!</p></li>
+<li><p><strong>Kémiai reaktor örvényei:</strong> Egy kémiai reaktorban
+sűrű folyadékot kevernek nagy fordulatszámon, a betáplált fajlagos
+energia
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ε</mi><mo>=</mo><mn>5</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup><mi>/</mi><msup><mtext mathvariant="normal">s</mtext><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\varepsilon = 5\text{ m}^2/\text{s}^3</annotation></semantics></math>.
+A folyadék kinematikai viszkozitása a vízének pontosan a kétszázszorosa:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ν</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>4</mn></mrow></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup><mi>/</mi><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\nu = 2 \cdot 10^{-4}\text{ m}^2/\text{s}</annotation></semantics></math>.
+Határozd meg a reaktorban kialakuló legkisebb örvények
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
+sugarát! Hányszorosára nőtt meg ez a mikroszkopikus határ a tiszta
+vízben mérhető értékhez
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ν</mi><mtext mathvariant="normal">víz</mtext></msub><mo>=</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>6</mn></mrow></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup><mi>/</mi><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\nu_{\text{víz}} = 10^{-6}\text{ m}^2/\text{s}</annotation></semantics></math>)
+képest ugyanezen az energiaszinten?</p></li>
+<li><p><strong>Spektrum-jóslás log-log skálán:</strong> Egy
+aerodinamikai kutatócsoport egy gépkocsi mögött kialakuló turbulens
+csóva
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E(k)</annotation></semantics></math>
+energia-spektrumát elemzi az inerciális tartományban log-log grafikonon.
+Egy nagyobb örvényméretnek megfelelő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">k_1 = 2\text{ m}^{-1}</annotation></semantics></math>
+hullámszámon a mért spektrális energiasűrűség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>30</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup><mi>/</mi><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E(k_1) = 0{,}30\text{ m}^3/\text{s}^2</annotation></semantics></math>.
+Számítsd ki a Kolmogorov-féle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>5</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">-5/3</annotation></semantics></math>-os
+törvény alapján a várható spektrális energiaértéket egy jóval kisebb
+örvényméretnél, ahol a hullámszám pontosan a négyszerese az elsőnek
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>k</mi><mn>2</mn></msub><mo>=</mo><mn>8</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">k_2 = 8\text{ m}^{-1}</annotation></semantics></math>)!</p></li>
+</ol>
+</body>
+</html>

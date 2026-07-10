@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-rugalmas-energia">A rugalmas energia</h1>
+<h2 id="változó-erő-munkája">Változó erő munkája</h2>
+<h3 id="példa">Példa</h3>
+<p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>203</mn><mo>,</mo><mn>9</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">203,9\text{ g}</annotation></semantics></math>
+tömegű jégkorong csúszik a jégen. A korong kezdősebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ m/s}</annotation></semantics></math>.
+A csúszási súrlódási együttható a jég és a korong között
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>05</mn></mrow><annotation encoding="application/x-tex">0,05</annotation></semantics></math>.
+A korong az első
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">100\text{ m}</annotation></semantics></math>
+megtétele után lecsúszik a pályáról és a betonon csúszik, ahol a
+súrlódási együttható
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">0,5</annotation></semantics></math>.
+* Mekkora erő lassítja a korongot a jégen? * Mekkora sebességre lassul
+le a korong, mikor a betonra ér? * Mekkora erő lassítja a korongot a
+betonon? * Mekkora utat tesz meg a korong a betonon a megállásig? *
+Mekkora a súrlódási erő munkája a jégen? * Mekkora a súrlódási erő
+munkája a betonon? * Rajzoljuk fel a súrlódási erő grafikonját a megtett
+út függvényében! Mekkora a grafikon görbéje alatti terület?</p>
+<p>Mozogjon a korong az x-tengely irányában. Ekkor az x-komponensekkel
+dolgozhatunk.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mn>1</mn></mrow></msub><mo>=</mo><mi>−</mi><msub><mi>μ</mi><mn>1</mn></msub><mi>m</mi><mi>g</mi><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>05</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>2039</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>1000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F_{x,1} = -\mu_1 mg = -0,05 \cdot 0,2039 \cdot 9,81 = -0,1000\text{ N}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>1</mn></mrow></msub><mo>=</mo><mfrac><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mn>1</mn></mrow></msub><mi>m</mi></mfrac><mo>=</mo><mfrac><mrow><mi>−</mi><mn>0</mn><mo>,</mo><mn>1000</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>2039</mn></mrow></mfrac><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>4905</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a_{x,1} = \frac {F_{x,1}} {m} = \frac {-0,1000} {0,2039} = -0,4905\text{ m/s}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>=</mo><msub><mi>v</mi><mrow><mi>x</mi><mo>,</mo><mn>0</mn></mrow></msub><mi>t</mi><mo>+</mo><mfrac><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>1</mn></mrow></msub><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s_1 = v_{x,0}t + \frac {a_{x,1}} {2}t^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mo>=</mo><mn>20</mn><mi>t</mi><mo>+</mo><mfrac><mrow><mi>−</mi><mn>0</mn><mo>,</mo><mn>4905</mn></mrow><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+100 = 20t + \frac {-0,4905} {2}t^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>4905</mn><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>40</mn><mi>t</mi><mo>+</mo><mn>200</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+0,4905t^2 - 40t + 200 = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mi>−</mi><mi>b</mi><mo>±</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>40</mn><mo>±</mo><msqrt><mrow><msup><mn>40</mn><mn>2</mn></msup><mo>−</mo><mn>4</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>4905</mn><mo>⋅</mo><mn>200</mn></mrow></msqrt></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>4905</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>40</mn><mo>±</mo><mn>34</mn><mo>,</mo><mn>75</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>981</mn></mrow></mfrac><mo>=</mo><mn>5</mn><mo>,</mo><mn>351</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow><mo>,</mo><mspace width="1.0em"></mspace><mn>76</mn><mo>,</mo><mn>19</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+t = \frac {-b \pm \sqrt{b^2 - 4ac}} {2a} = \frac {40 \pm \sqrt{40^2 - 4 \cdot 0,4905 \cdot 200}} {2 \cdot 0,4905} = \frac {40 \pm 34,75} {0,981} = 5,351\text{ s}, \quad 76,19\text{ s}
+</annotation></semantics></math></p>
+<p>A másodfokú egyenlet két megoldása közül a rövidebb idő a fizikailag
+helyes (a hosszabb idő azt jelentené, hogy a test a megállás után
+visszafelé indulna, de a súrlódás miatt ez nem történik meg). Tehát az
+idő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>351</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">5,351\text{ s}</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><msub><mi>v</mi><mrow><mi>x</mi><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>1</mn></mrow></msub><mi>t</mi><mo>=</mo><mn>20</mn><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>4905</mn><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mn>5</mn><mo>,</mo><mn>351</mn><mo>=</mo><mn>17</mn><mo>,</mo><mn>38</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mspace width="1.0em"></mspace><mrow><mtext mathvariant="normal">(pontosabban: </mtext><mspace width="0.333em"></mspace></mrow><mn>17</mn><mo>,</mo><mn>375</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s)</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_x = v_{x,0} + a_{x,1}t = 20 + (-0,4905) \cdot 5,351 = 17,38\text{ m/s} \quad \text{(pontosabban: } 17,375\text{ m/s)}
+</annotation></semantics></math></p>
+<p>A további számolási hibák elkerülése végett a pontos
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>17</mn><mo>,</mo><mn>375</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">17,375\text{ m/s}</annotation></semantics></math>
+értékkel számolunk tovább.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mi>−</mi><msub><mi>μ</mi><mn>2</mn></msub><mi>m</mi><mi>g</mi><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>2039</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>=</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>0001</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F_{x,2} = -\mu_2 mg = -0,5 \cdot 0,2039 \cdot 9,81 = -1,0001\text{ N}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub><mi>m</mi></mfrac><mo>=</mo><mfrac><mrow><mi>−</mi><mn>1</mn><mo>,</mo><mn>0001</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>2039</mn></mrow></mfrac><mo>=</mo><mi>−</mi><mn>4</mn><mo>,</mo><mn>905</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a_{x,2} = \frac {F_{x,2}} {m} = \frac {-1,0001} {0,2039} = -4,905\text{ m/s}^2
+</annotation></semantics></math></p>
+<p>A gyorsulás kiszámítása:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mi>v</mi><mi>x</mi></msub></mrow><msub><mi>t</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">
+a_{x,2} = \frac {\Delta v_x} {t_2}
+</annotation></semantics></math></p>
+<p>Ez átrendezhető, hogy az ismeretlen időt kiszámítsuk.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mi>v</mi><mi>x</mi></msub></mrow><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>−</mo><mn>17</mn><mo>,</mo><mn>375</mn></mrow><mrow><mi>−</mi><mn>4</mn><mo>,</mo><mn>905</mn></mrow></mfrac><mo>=</mo><mn>3</mn><mo>,</mo><mn>542</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+t_2 = \frac {\Delta v_x} {a_{x,2}} = \frac {0 - 17,375} {-4,905} = 3,542\text{ s}
+</annotation></semantics></math></p>
+<p>Mivel a korong kezdősebességét
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>x</mi></msub><annotation encoding="application/x-tex">v_x</annotation></semantics></math>
+jelöli a betonon való fékeződéskor, ezért a következő képlet adja az
+utat:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>2</mn></msub><mo>=</mo><msub><mi>v</mi><mi>x</mi></msub><msub><mi>t</mi><mn>2</mn></msub><mo>+</mo><mfrac><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub><mn>2</mn></mfrac><msubsup><mi>t</mi><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><mn>17</mn><mo>,</mo><mn>375</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>542</mn><mo>+</mo><mfrac><mrow><mi>−</mi><mn>4</mn><mo>,</mo><mn>905</mn></mrow><mn>2</mn></mfrac><mo>⋅</mo><mn>3</mn><mo>,</mo><msup><mn>542</mn><mn>2</mn></msup><mo>=</mo><mn>30</mn><mo>,</mo><mn>77</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+s_2 = v_x t_2 + \frac {a_{x,2}} {2}t_2^2 = 17,375 \cdot 3,542 + \frac{-4,905}{2} \cdot 3,542^2 = 30,77\text{ m}
+</annotation></semantics></math></p>
+<p>Most már könnyű kiszámolni a munkákat!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mn>1</mn></msub><mo>=</mo><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mn>1</mn></mrow></msub><msub><mi>s</mi><mn>1</mn></msub><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>1000</mn><mo>⋅</mo><mn>100</mn><mo>=</mo><mi>−</mi><mn>10</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+W_1 = F_{x,1} s_1 = -0,1000 \cdot 100 = -10,00\text{ J}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mn>2</mn></msub><mo>=</mo><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub><msub><mi>s</mi><mn>2</mn></msub><mo>=</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>0001</mn><mo>⋅</mo><mn>30</mn><mo>,</mo><mn>77</mn><mo>=</mo><mi>−</mi><mn>30</mn><mo>,</mo><mn>78</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+W_2 = F_{x,2} s_2 = -1,0001 \cdot 30,77 = -30,78\text{ J}
+</annotation></semantics></math></p>
+<p>A teljes munka, mely meg kell egyezzen a mozgási energia
+csökkenésével, a következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><msub><mi>W</mi><mn>1</mn></msub><mo>+</mo><msub><mi>W</mi><mn>2</mn></msub><mo>=</mo><mi>−</mi><mn>10</mn><mo>,</mo><mn>00</mn><mo>−</mo><mn>30</mn><mo>,</mo><mn>78</mn><mo>=</mo><mi>−</mi><mn>40</mn><mo>,</mo><mn>78</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+W = W_1 + W_2 = -10,00 - 30,78 = -40,78\text{ J}
+</annotation></semantics></math></p>
+<p>Valóban, a mozgási energia megváltozása a következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mi>m</mi></msub><mo>=</mo><msub><mi>E</mi><mrow><mi>m</mi><mo>,</mo><mi>v</mi><mi>é</mi><mi>g</mi></mrow></msub><mo>−</mo><msub><mi>E</mi><mrow><mi>m</mi><mo>,</mo><mi>k</mi><mi>e</mi><mi>z</mi><mi>d</mi><mi>e</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>0</mn><mo>−</mo><mfrac><mrow><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mi>−</mi><mfrac><mrow><mn>0</mn><mo>,</mo><mn>2039</mn><mo>⋅</mo><msup><mn>20</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mi>−</mi><mn>40</mn><mo>,</mo><mn>78</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\Delta E_m = E_{m,vég} - E_{m,kezdet} = 0 - \frac {m v_0^2} {2} = -\frac {0,2039 \cdot 20^2} {2} = -40,78\text{ J}
+</annotation></semantics></math></p>
+<p>A két eredmény tökéletesen megegyezik.</p>
+<figure>
+<img src="Kepek/ero-elmozdulas.svg" alt="Erő-elmozdulás grafikon" />
+<figcaption aria-hidden="true">Erő-elmozdulás grafikon</figcaption>
+</figure>
+<p>Az ábráról látszik, hogy változó erő esetén, amikor az erő
+szakaszosan állandó, a munka az erő-elmozdulás grafikon alatti terület.
+A súrlódási erő példánkban negatív, hisz a mozgást fékezi, tehát az
+elmozdulással ellentétes irányú. Ilyenkor a terület negatív előjelű és
+az erő az elmozdulás tengelye alatt halad.</p>
+<p>Ez a kijelentés általánosan igaz tetszőleges, változó erő esetén.</p>
+<blockquote>
+<p><strong>A végzett munka nem más, mint az erő-elmozdulás grafikon
+alatti (előjeles) terület.</strong></p>
+</blockquote>
+<h2 id="rugó-megnyújtásakor-végzett-munka">Rugó megnyújtásakor végzett
+munka</h2>
+<p>Legyen a rugó kezdetben nyújtatlan, majd nyújtsuk meg lassan,
+gyorsulásmentesen úgy, hogy megnyúlása a folyamat végére
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+legyen! Mekkora munkát kell ehhez végeznünk? Az erő a megnyújtás
+kezdetén szinte nulla, hisz a rugó itt még nem fejt ki erőt, majd a
+folyamat végén
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Dx</annotation></semantics></math>
+erőt kell kifejteni, hogy a rugó nyújtva maradjon. Az erő az
+elmozdulással egyenes arányban nő. Ábrázoljuk a megnyújtáshoz szükséges
+erőt az elmozdulás függvényében! A következő grafikont kapjuk:</p>
+<figure>
+<img src="Kepek/rugalmasero-megnyulas.svg"
+alt="Nyújtó erő a megnyúlás függvényében" />
+<figcaption aria-hidden="true">Nyújtó erő a megnyúlás
+függvényében</figcaption>
+</figure>
+<p>A grafikonról látszik, hogy a rugó megnyújtásához szükséges munka egy
+derékszögű háromszög területe:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mfrac><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>x</mi></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>x</mi></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>D</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+W = \frac {F(x)x} {2} = \frac{(Dx)x} {2} = \frac {Dx^2} {2}
+</annotation></semantics></math></p>
+<h2 id="a-rugalmas-energia-1">A rugalmas energia</h2>
+<p>A rugó megnyújtásához szükséges munka a rugalmas energiát növeli meg.
+A rugalmas erő is konzervatív erő, és így az általa végzett munka a rugó
+rugalmas energiáját csökkenti. A rugalmas energia kiszámítása tehát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>r</mi></msub><mo>=</mo><mfrac><mrow><mi>D</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+E_r = \frac {Dx^2} {2}
+</annotation></semantics></math></p>
+<p>A rugalmas energia is a helyzeti energia egy formája, akárcsak a
+gravitációs helyzeti energia.</p>
+<h3 id="példa-1">Példa</h3>
+<p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">200\text{ N/m}</annotation></semantics></math>
+rugóállandójú rugót
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0,2\text{ m}</annotation></semantics></math>-rel
+megnyújtunk. * Mekkora erő kell a rugó nyújtva tartásához? * Mekkora
+munkát végeztünk, és mennyi a rugalmas energia? * Egy veszteségmentes
+katapultban ez a rugó mekkora sebességre tud gyorsítani egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ g}</annotation></semantics></math>
+tömegű golyót, ha a veszteségektől eltekinthetünk? * A golyót a katapult
+függőlegesen felfelé lövi ki. Milyen magasra emelkedik? A
+légellenállástól eltekintünk.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>−</mi><msub><mi>F</mi><mi>r</mi></msub><mo>=</mo><mi>D</mi><mi>x</mi><mo>=</mo><mn>200</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>=</mo><mn>40</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F = -F_r = Dx = 200 \cdot 0,2 = 40\text{ N}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><msub><mi>E</mi><mi>r</mi></msub><mo>=</mo><mfrac><mrow><mi>D</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>200</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><msup><mn>2</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+W = E_r = \frac {Dx^2} {2} = \frac {200 \cdot 0,2^2} {2} = 4\text{ J}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>r</mi></msub><mo>=</mo><msub><mi>E</mi><mi>m</mi></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+E_r = E_m = \frac {mv^2} {2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><msub><mi>E</mi><mi>r</mi></msub></mrow><mi>m</mi></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mn>8</mn><mrow><mn>0</mn><mo>,</mo><mn>01</mn></mrow></mfrac></msqrt><mo>=</mo><mn>28</mn><mo>,</mo><mn>28</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v = \sqrt {\frac {2E_r} {m}} = \sqrt {\frac{8}{0,01}} = 28,28\text{ m/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>h</mi></msub><mo>=</mo><msub><mi>E</mi><mi>m</mi></msub><mo>=</mo><mi>m</mi><mi>g</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">
+E_h = E_m = mgh
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><msub><mi>E</mi><mi>m</mi></msub><mrow><mi>m</mi><mi>g</mi></mrow></mfrac><mo>=</mo><mfrac><mn>4</mn><mrow><mn>0</mn><mo>,</mo><mn>01</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn></mrow></mfrac><mo>=</mo><mn>40</mn><mo>,</mo><mn>77</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+h = \frac {E_m} {mg} = \frac {4} {0,01 \cdot 9,81} = 40,77\text{ m}
+</annotation></semantics></math></p>
+<h3 id="szimulació">Szimulació</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#804a06d3-a20a-401b-94c2-b5989a56c61c">A
+katapultos példa</a></p>
+<p>Ellenőrizzük a golyó által elért magasságot a szimulátorban!</p>
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">500\text{ g}</annotation></semantics></math>
+tömegű dobozt meglökünk a padlón
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ m/s}</annotation></semantics></math>
+kezdősebességgel. A csúszási súrlódási együttható a doboz és a padló
+között
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\mu = 0,2</annotation></semantics></math>.<br />
+<em>Mekkora utat tesz meg a doboz a megállásig, és mennyi a súrlódási
+erő által végzett munka? Ellenőrizd az eredményedet a munkatétel
+segítségével!</em></p></li>
+<li><p>Egy vízszintes felületen fekvő,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mn>120</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D = 120\text{ N/m}</annotation></semantics></math>
+direkciós erejű (rugóállandójú) rugónak nekiütköztetünk egy játékkocsit
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>150</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 150\text{ g}</annotation></semantics></math>).
+A kocsi sebessége az ütközés pillanatában
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ m/s}</annotation></semantics></math>.<br />
+<em>Legfeljebb mekkora lesz a rugó maximális összenyomódása, ha a
+súrlódástól teljes mértékben eltekintünk?</em></p></li>
+<li><p>Egy rugós kilövő
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D = 500\text{ N/m}</annotation></semantics></math>)
+rugóját
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ cm}</annotation></semantics></math>-rel
+összenyomjuk, majd egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">50\text{ g}</annotation></semantics></math>-os
+golyót lövünk ki vele egy vízszintes asztalon. Az asztalon a súrlódási
+együttható
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">0,15</annotation></semantics></math>.<br />
+<em>Milyen messzire jut a golyó a kilövés pontjától (a rugó nyugalmi
+helyzetétől mérve), mire a súrlódás miatt teljesen megáll?</em></p></li>
+</ol>
+</body>
+</html>

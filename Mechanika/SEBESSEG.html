@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-sebesség">A sebesség</h1>
+<h2 id="az-egyenes-vonalú-egyenletes-mozgás-fogalma">Az egyenes vonalú,
+egyenletes mozgás fogalma</h2>
+<p>Amikor egy test egyenes vonalú pálya mentén, állandó nagyságú és
+irányú sebességgel mozog, akkor <strong>egyenes vonalú, egyenletes
+mozgásról</strong> beszélünk.</p>
+<p><em>Példa:</em> Egy autó egyenletesen halad
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">60\text{ km/h}</annotation></semantics></math>
+sebességgel. Mit jelent ez a gyakorlatban? A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">60\text{ km/h}</annotation></semantics></math>-s
+sebesség azt jelenti, hogy az autó óránként
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">60\text{ km}</annotation></semantics></math>
+utat tesz meg. Mivel egy óra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>60</mn><annotation encoding="application/x-tex">60</annotation></semantics></math>
+percből áll, az autó percenként pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ km}</annotation></semantics></math>-t
+halad előre.</p>
+<p>Egyenletes mozgás során a test egyenlő időközök alatt egyenlő utakat
+fut be. Úgy is fogalmazhatunk, hogy a megtett út és az eltelt idő között
+egyenes arányosság áll fenn.</p>
+<blockquote>
+<p><strong>Egyenes vonalú, egyenletes mozgás esetén a test egyenes
+vonalú pályán mozog úgy, hogy tetszőlegesen választott, egyenlő időközök
+alatt mindig egyenlő utakat tesz meg.</strong></p>
+</blockquote>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a
+href="https://www.youtube.com/watch?v=PCLjIjAUBnw&amp;t">Egyenletes és
+egyenletesen változó mozgás demonstrációja air track
+segítségével</a></p>
+<h3 id="szimuláció">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#c1c7278a-8c14-4386-ad82-477930ee81d2">Egyenes
+vonalú, egyenletes mozgás szimulátor</a></p>
+<p>A szimuláció segítségével grafikusan is ábrázolhatjuk a test által
+megtett utat az idő függvényében. Ehhez jelölje be a
+<strong>Graphs</strong> jelölőnégyzetet, majd nyissa meg a
+<strong>Results</strong> panelt. Válassza ki a <strong>Path
+Length</strong> (megtett út) mezőt, majd a <strong>Switch back</strong>
+gombbal térjen vissza a főképernyőre, és indítsa el az animációt. Ekkor
+az alábbihoz hasonló grafikon rajzolódik ki:</p>
+<figure>
+<img src="./Kepek/utidografikonegyenletesmozgas.png"
+alt="Egyenletes mozgás út-idő grafikonja" />
+<figcaption aria-hidden="true">Egyenletes mozgás út-idő
+grafikonja</figcaption>
+</figure>
+<p>A grafikon függőleges tengelye a megtett utat, a vízszintes tengelye
+pedig az eltelt időt mutatja. A négyzetháló az egységnyi felbontást
+jelöli mindkét tengelyen. A grafikon alapján látható, hogy a mozgás
+kezdetén
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 0\text{ s}</annotation></semantics></math>)
+a megtett út is nulla, vagyis a vonal az origóból indul.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ s}</annotation></semantics></math>
+elteltével az út
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ m}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ s}</annotation></semantics></math>
+múlva
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ m}</annotation></semantics></math>,
+és így tovább. Ebből következik, hogy a vizsgált test sebessége pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">1\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>.</p>
+<h2 id="a-sebesség-fogalma-és-képlete">A sebesség fogalma és
+képlete</h2>
+<p>A sebesség az időegység alatt megtett utat adja meg; értéke
+egyenletes mozgás esetén állandó. A sebesség valójában
+<strong>vektormennyiség</strong>: iránya megegyezik a mozgás pillanatnyi
+irányával. Egyenletes mozgásnál a sebesség nagysága, egyenes vonalú
+mozgásnál pedig a sebesség iránya
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>v</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{v}</annotation></semantics></math>)
+is szigorúan állandó marad.</p>
+<blockquote>
+<p><strong>A sebesség megmutatja a megtett út és a megtételéhez
+szükséges idő hányadosát egyenletes mozgás esetén. Jele:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>,
+alapvető SI-mértékegysége:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m/s</mtext><annotation encoding="application/x-tex">\text{m/s}</annotation></semantics></math>.</strong></p>
+</blockquote>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mi>s</mi><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+v = \frac{s}{t}
+</annotation></semantics></math></p>
+<p>Ebben a képletben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+a megtett utat,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+pedig a hozzá tartozó időtartamot jelöli.</p>
+<h3 id="példák">Példák</h3>
+<ol type="1">
+<li>Egy autó egyenletesen halad, a sebességmérője
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">60\text{ km/h}</annotation></semantics></math>-t
+mutat. Mekkora ez a sebesség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m/s</mtext><annotation encoding="application/x-tex">\text{m/s}</annotation></semantics></math>
+egységben? Mekkora utat tesz meg az autó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ s}</annotation></semantics></math>
+alatt? Mennyi idő alatt tesz meg
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">100\text{ m}</annotation></semantics></math>-t?</li>
+</ol>
+<p>A sebesség átváltása:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mi>s</mi><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> h</mtext></mrow></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>60</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><mrow><mn>3600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow></mfrac><mo>≈</mo><mn>16</mn><mo>,</mo><mn>7</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">
+v = \frac{s}{t} = \frac{60\text{ km}}{1\text{ h}} = \frac{60\ 000\text{ m}}{3600\text{ s}} \approx 16{,}7\text{ }\frac{\text{m}}{\text{s}}
+</annotation></semantics></math></p>
+<p><em>(Mivel a kiinduló adatot két értékes jegyre adtuk meg, a köztes
+számításban megtarthatunk három értékes jegyet, de a végső gyakorlati
+válaszoknál ügyelnünk kell a pontosságra.)</em></p>
+<p>Keressük meg a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ s}</annotation></semantics></math>
+alatt megtett utat (legyen ez az ismeretlen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mo>,</mo><mn>7</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac><mo>=</mo><mfrac><mi>x</mi><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+16{,}7\text{ }\frac{\text{m}}{\text{s}} = \frac{x}{20\text{ s}}
+</annotation></semantics></math></p>
+<p>Az egyenlet mindkét oldalát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ s}</annotation></semantics></math>-sel
+megszorozva kapjuk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>16</mn><mo>,</mo><mn>7</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac><mo>⋅</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow><mo>=</mo><mn>334</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+x = 16{,}7\text{ }\frac{\text{m}}{\text{s}} \cdot 20\text{ s} = 334\text{ m}
+</annotation></semantics></math></p>
+<p>A kiindulási adatok pontossága alapján az utolsó jegy már
+bizonytalan, így a valóságban az autó kerekítve <strong>körülbelül
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>330</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">330\text{ m}</annotation></semantics></math>-t</strong>
+tesz meg.</p>
+<p>Keressük meg a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">100\text{ m}</annotation></semantics></math>
+megtételéhez szükséges időt, ahol az ismeretlent szintén
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+jelöli:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mo>,</mo><mn>7</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac><mo>=</mo><mfrac><mrow><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">
+16{,}7\text{ }\frac{\text{m}}{\text{s}} = \frac{100\text{ m}}{x}
+</annotation></semantics></math></p>
+<p>A számítás egyszerűsítése érdekében a rendezés során elhagyhatjuk a
+mértékegységeket, hiszen az időt automatikusan másodpercben kapjuk
+meg:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mo>,</mo><mn>7</mn><mo>⋅</mo><mi>x</mi><mo>=</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">
+16{,}7 \cdot x = 100
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>100</mn><mrow><mn>16</mn><mo>,</mo><mn>7</mn></mrow></mfrac><mo>≈</mo><mn>6</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+x = \frac{100}{16{,}7} \approx 6{,}0\text{ s}
+</annotation></semantics></math></p>
+<p>Az autó tehát pontosan
+<strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">6\text{ s}</annotation></semantics></math>
+alatt</strong> teszi meg a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">100\text{ m}</annotation></semantics></math>-es
+távolságot.</p>
+<ol start="2" type="1">
+<li>Egy autó egyenletesen halad
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">30\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességgel. Mekkora utat tesz meg
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">3600\text{ s}</annotation></semantics></math>
+(azaz egy óra) alatt? Mekkora a sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">km/h</mtext><annotation encoding="application/x-tex">\text{km/h}</annotation></semantics></math>-ban?
+Mennyi idő alatt ér el egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>150</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">150\text{ km}</annotation></semantics></math>
+távolságra lévő városba?</li>
+</ol>
+<p>Számítsuk ki az egy óra alatt megtett utat
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mo>=</mo><mfrac><mi>x</mi><mn>3600</mn></mfrac></mrow><annotation encoding="application/x-tex">
+30 = \frac{x}{3600}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>30</mn><mo>⋅</mo><mn>3600</mn><mo>=</mo><mn>108</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>108</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">
+x = 30 \cdot 3600 = 108\ 000\text{ m} = 108\text{ km}
+</annotation></semantics></math></p>
+<p>Mivel az autó egyetlen óra alatt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>108</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">108\text{ km}</annotation></semantics></math>-t
+tesz meg, a sebessége közvetlenül felírható
+<strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>108</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">108\text{ km/h}</annotation></semantics></math></strong>
+alakban is.</p>
+<p>Most határozzuk meg a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>150</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">150\text{ km}</annotation></semantics></math>-es
+távolsághoz szükséges időt
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>),
+már a kiszámított
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">km/h</mtext><annotation encoding="application/x-tex">\text{km/h}</annotation></semantics></math>
+egységet használva:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>108</mn><mo>=</mo><mfrac><mn>150</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">
+108 = \frac{150}{x}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>108</mn><mo>⋅</mo><mi>x</mi><mo>=</mo><mn>150</mn></mrow><annotation encoding="application/x-tex">
+108 \cdot x = 150
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>150</mn><mn>108</mn></mfrac><mo>≈</mo><mn>1</mn><mo>,</mo><mn>39</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> h</mtext></mrow></mrow><annotation encoding="application/x-tex">
+x = \frac{150}{108} \approx 1{,}39\text{ h}
+</annotation></semantics></math></p>
+<p>Mivel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>39</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> óra</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>39</mn><mo>⋅</mo><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> perc</mtext></mrow><mo>≈</mo><mn>23</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> perc</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}39\text{ óra} = 0{,}39 \cdot 60\text{ perc} \approx 23\text{ perc}</annotation></semantics></math>,
+az utazási idő
+<strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> óra </mtext><mspace width="0.333em"></mspace></mrow><mn>23</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> perc</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ óra } 23\text{ perc}</annotation></semantics></math></strong>.</p>
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li>Egy vonat egyenletesen halad
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>80</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">80\text{ km/h}</annotation></semantics></math>
+sebességgel. Mekkora ez a sebesség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m/s</mtext><annotation encoding="application/x-tex">\text{m/s}</annotation></semantics></math>
+egységben? Mekkora utat tesz meg a vonat
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>45</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">45\text{ s}</annotation></semantics></math>
+alatt?</li>
+<li>Egy kerékpáros
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ m/s}</annotation></semantics></math>
+sebességgel halad. Mekkora utat tesz meg
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> perc</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ perc}</annotation></semantics></math>
+alatt? Mennyi idő alatt tesz meg
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{ km}</annotation></semantics></math>
+távolságot?</li>
+<li>Egy futó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">6\text{ m/s}</annotation></semantics></math>
+sebességgel fut. Mekkora ez a sebesség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">km/h</mtext><annotation encoding="application/x-tex">\text{km/h}</annotation></semantics></math>
+egységben? Mennyi idő alatt fut le egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">100\text{ m}</annotation></semantics></math>-es
+szakaszt?</li>
+<li>Egy autó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">25\text{ m/s}</annotation></semantics></math>
+sebességgel halad. Mekkora utat tesz meg
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> óra</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ óra}</annotation></semantics></math>
+alatt? Mekkora a sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">km/h</mtext><annotation encoding="application/x-tex">\text{km/h}</annotation></semantics></math>-ban?</li>
+<li>Egy önjáró jármű
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>72</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">72\text{ km/h}</annotation></semantics></math>
+sebességgel mozog. Mekkora ez a sebesség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m/s</mtext><annotation encoding="application/x-tex">\text{m/s}</annotation></semantics></math>
+egységben? Mennyi idő alatt tesz meg
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">500\text{ m}</annotation></semantics></math>-t?</li>
+<li>Egy éti csiga
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>01</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}01\text{ m/s}</annotation></semantics></math>
+sebességgel halad. Mekkora utat tesz meg
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> perc</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ perc}</annotation></semantics></math>
+alatt? Mennyi idő alatt tesz meg pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> métert</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ métert}</annotation></semantics></math>?</li>
+<li>Egy repülőgép
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>900</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">900\text{ km/h}</annotation></semantics></math>
+sebességgel repül. Mekkora ez a sebesség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m/s</mtext><annotation encoding="application/x-tex">\text{m/s}</annotation></semantics></math>
+egységben? Mekkora a távolság két város között, ha a gép
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> óra</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ óra}</annotation></semantics></math>
+alatt ér át az egyikből a másikba?</li>
+<li>Egy bolygóközi űrszonda
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">50\ 000\text{ km/h}</annotation></semantics></math>
+sebességgel halad. Mekkora ez a sebesség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m/s</mtext><annotation encoding="application/x-tex">\text{m/s}</annotation></semantics></math>
+egységben? Mekkora távolságot tesz meg egy teljes nap
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>24</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> óra</mtext></mrow></mrow><annotation encoding="application/x-tex">24\text{ óra}</annotation></semantics></math>)
+alatt?</li>
+<li>Egy motoros
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{ m/s}</annotation></semantics></math>
+sebességgel halad. Mekkora ez a sebesség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">km/h</mtext><annotation encoding="application/x-tex">\text{km/h}</annotation></semantics></math>
+egységben? Mekkora utat tesz meg
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> perc</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ perc}</annotation></semantics></math>
+alatt?</li>
+<li>Két város között
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>240</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">240\text{ km}</annotation></semantics></math>
+a távolság. Egy autó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>80</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">80\text{ km/h}</annotation></semantics></math>,
+egy másik pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">100\text{ km/h}</annotation></semantics></math>
+állandó sebességgel halad. Mekkora az eltérés az utazási időkben? Hány
+perccel érkezik később az első autó, mint a második?</li>
+</ol>
+</body>
+</html>

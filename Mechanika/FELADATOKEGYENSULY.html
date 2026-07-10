@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="feladatok-az-egyensúlyra">Feladatok az egyensúlyra</h1>
+<h2 id="példák">Példák</h2>
+<ol type="1">
+<li>Egy vízszintes plafonon egymástól
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">3{,}00\text{ m}</annotation></semantics></math>
+távolságra van két kampó, amelyekre kötelet akasztunk úgy, hogy a kötél
+közepén egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}10\text{ kg}</annotation></semantics></math>
+tömegű test lóg. A test pontosan a kötél felezőpontján helyezkedik el,
+így a kötélszárak egyenlő hosszúak, és a test a plafon szintje alatt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}00\text{ m}</annotation></semantics></math>-rel
+függőlegesen lejjebb van. Mekkora a kötél hossza? Mekkora a kötélben
+ébredő húzóerő, ha a test egyensúlyban van? A nehézségi gyorsulás
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>,
+de a szimuláció a kerekített
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>80</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}80\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>
+értéket használja, így a számításban is ezzel dolgozunk.</li>
+</ol>
+<h3 id="szimuláció">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#d90c17ac-3c4c-47fa-b91e-46157c5a3069">Statika
+első példa interaktív szimuláció</a></p>
+<p>A példa elrendezése és a szimuláció eredményei az alábbi ábrákon
+láthatók a testre és az egyik kötélszárra vonatkozóan:</p>
+<p><img src="Kepek/elsostatikapelda.png" alt="Az első statikai példa" />
+<img src="Kepek/elsostatikapeldatestadatai.png"
+alt="A test adatai az első példában" /> <img
+src="Kepek/elsostatikapeldakoteladatai.png"
+alt="A kötélszár adatai az első példában" /></p>
+<p>Végezzük el a számításokat! A kötélszárak egyenlő hosszúak, és a
+geometriai szimmetria miatt a bennük ébredő húzóerő is egyenlő nagyságú,
+jelöljük ezt egyszerűen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-val.
+Legyen a koordináta-rendszer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-tengelye
+vízszintes és jobbra mutató, az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-tengelye
+pedig függőleges és felfelé irányuló. A derékszögű háromszög alapján az
+egyik kötélszár hossza
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><msqrt><mrow><mn>1</mn><mo>,</mo><msup><mn>5</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>2</mn><mo>,</mo><mn>25</mn><mo>+</mo><mn>4</mn></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>6</mn><mo>,</mo><mn>25</mn></mrow></msqrt><mo>=</mo><mn>2</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+l = \sqrt {1{,}5^2 + 2^2} = \sqrt{2{,}25 + 4} = \sqrt{6{,}25} = 2{,}50\text{ m}
+</annotation></semantics></math></p>
+<p>Tehát a kötél teljes hossza
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>l</mi></mrow><annotation encoding="application/x-tex">2l</annotation></semantics></math>)
+pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">5{,}00\text{ m}</annotation></semantics></math>.
+Jelölje a kötélszár függőlegessel bezárt szögét
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>.
+Ekkor a szögfüggvények értékei:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>,</mo><mn>5</mn></mrow><mrow><mn>2</mn><mo>,</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">
+\sin \alpha = \frac {1{,}5} {2{,}5} = 0{,}6
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><mn>2</mn><mrow><mn>2</mn><mo>,</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">
+\cos \alpha = \frac {2} {2{,}5} = 0{,}8
+</annotation></semantics></math></p>
+<p>A test statikus egyensúlyának feltétele, hogy a rá ható erők eredője
+nullvektor legyen:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>K</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo>+</mo><msub><mover><mi>K</mi><mo accent="true">→</mo></mover><mn>2</mn></msub><mo>+</mo><mover><mi>G</mi><mo accent="true">→</mo></mover><mo>=</mo><mover><mn>0</mn><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">
+\vec{K}_1 + \vec{K}_2 + \vec{G} = \vec{0}
+</annotation></semantics></math></p>
+<p>Itt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>-es
+a bal oldali kötélszár indexe,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>-es
+pedig a jobb oldali kötélszáré. A szimmetria miatt az erők nagysága
+megegyezik:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msub><mover><mi>K</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mo stretchy="false" form="prefix">|</mo><msub><mover><mi>K</mi><mo accent="true">→</mo></mover><mn>2</mn></msub><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">
+|\vec{K}_1| = |\vec{K}_2| = K
+</annotation></semantics></math></p>
+<p>Írjuk fel a vektoregyenletet a tengelyirányú koordináták szerint:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mn>1</mn><mi>x</mi></mrow></msub><mo>+</mo><msub><mi>K</mi><mrow><mn>2</mn><mi>x</mi></mrow></msub><mo>+</mo><msub><mi>G</mi><mi>x</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+K_{1x} + K_{2x} + G_x = 0 
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mn>1</mn><mi>y</mi></mrow></msub><mo>+</mo><msub><mi>K</mi><mrow><mn>2</mn><mi>y</mi></mrow></msub><mo>+</mo><msub><mi>G</mi><mi>y</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+K_{1y} + K_{2y} + G_y = 0
+</annotation></semantics></math></p>
+<p>A geometriai felbontás alapján a komponensek értékei:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mn>1</mn><mi>x</mi></mrow></msub><mo>=</mo><mi>−</mi><mi>K</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+K_{1x} = -K \cdot \sin \alpha
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mn>2</mn><mi>x</mi></mrow></msub><mo>=</mo><mi>K</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+K_{2x} = K \cdot \sin \alpha
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mn>1</mn><mi>y</mi></mrow></msub><mo>=</mo><msub><mi>K</mi><mrow><mn>2</mn><mi>y</mi></mrow></msub><mo>=</mo><mi>K</mi><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+K_{1y} = K_{2y} = K \cdot \cos \alpha
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>x</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><msub><mi>G</mi><mi>y</mi></msub><mo>=</mo><mi>−</mi><mi>G</mi><mo>=</mo><mi>−</mi><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>10</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>80</mn><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>98</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+G_x = 0,\ \ G_y = -G = -m \cdot g = -0{,}10 \cdot 9{,}80 = -0{,}98\text{ N}
+</annotation></semantics></math></p>
+<p>Behelyettesítve ezeket a komponenseket az egyenletekbe:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>K</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>+</mo><mi>K</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>+</mo><mn>0</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+-K \cdot \sin \alpha + K \cdot \sin \alpha + 0 = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>+</mo><mi>K</mi><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>−</mo><mi>G</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+K \cdot \cos \alpha + K \cdot \cos \alpha - G = 0
+</annotation></semantics></math></p>
+<p>Az első (vízszintes) egyenlet egy triviális azonosság
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">-0 + 0 = 0</annotation></semantics></math>),
+a második (függőleges) egyenletből pedig:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>K</mi><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">
+2K \cdot \cos \alpha = G
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mfrac><mi>G</mi><mrow><mn>2</mn><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>98</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>8</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>98</mn></mrow><mrow><mn>1</mn><mo>,</mo><mn>6</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>6125</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+K = \frac {G} {2 \cdot \cos \alpha} = \frac {0{,}98\text{ N}} {2 \cdot 0{,}8} = \frac{0{,}98}{1{,}6} = 0{,}6125\text{ N}
+</annotation></semantics></math></p>
+<p>A kötélben ébredő húzóerő három értékes jegyre kerekítve pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>613</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}613\text{ N}</annotation></semantics></math>,
+ami hajszálpontosan megegyezik a szimulátorban mért értékkel.</p>
+<ol start="2" type="1">
+<li>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}10\text{ kg}</annotation></semantics></math>
+tömegű testet egy kötéllel a vízszintes mennyezethez rögzítünk. Egy
+másik kötél segítségével a testet vízszintesen jobbra húzzuk úgy, hogy a
+felfüggesztési pont függőleges vonalától pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1{,}50\text{ m}</annotation></semantics></math>-rel
+jobbra mozdul el, és így kerül egyensúlyba a mennyezet szintje alatt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}00\text{ m}</annotation></semantics></math>
+mélységben. Milyen hosszú a testet a mennyezethez rögzítő ferde kötél?
+Mekkora erők feszítik a köteleket ebben az egyensúlyi állapotban? (A
+gyorsulás itt is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>80</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}80\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>).</li>
+</ol>
+<h3 id="szimuláció-1">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#69d5f6ba-1609-4b80-b2ef-e200344051f2">Statika
+második példa interaktív szimuláció</a></p>
+<p>A geometriai elrendezés és a mért eredmények az alábbi ábrákon
+láthatók:</p>
+<p><img src="Kepek/masodikstatikapelda.png"
+alt="A második statikai példa" /> <img
+src="Kepek/masodikstatikapeldatestadatai.png" alt="A test adatai" />
+<img src="Kepek/masodikstatikapeldabalkoteladatai.png"
+alt="A bal kötél adatai" /> <img
+src="Kepek/masodikstatikapeldajobbkoteladatai.png"
+alt="A jobb kötél adatai" /></p>
+<p>A bal oldali (ferde) kötél hossza megegyezik az első példában
+kiszámított hosszal, hiszen a háromszög befogói pontosan ugyanazok. Így
+a kötél hosszára
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}50\text{ m}</annotation></semantics></math>-t
+kapunk. Ebből kifolyólag a függőlegessel bezárt szögfüggvények értékei
+most is:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">\sin \alpha = 0{,}6</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">\cos \alpha = 0{,}8</annotation></semantics></math>
+(ahol
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+a bal oldali kötél függőlegessel bezárt szöge).</p>
+<p>A vektoros egyensúlyi egyenlet:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>K</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo>+</mo><msub><mover><mi>K</mi><mo accent="true">→</mo></mover><mn>2</mn></msub><mo>+</mo><mover><mi>G</mi><mo accent="true">→</mo></mover><mo>=</mo><mover><mn>0</mn><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">
+\vec{K}_1 + \vec{K}_2 + \vec{G} = \vec{0}
+</annotation></semantics></math></p>
+<p>A koordinátás komponensek egyenletrendszere:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mn>1</mn><mi>x</mi></mrow></msub><mo>+</mo><msub><mi>K</mi><mrow><mn>2</mn><mi>x</mi></mrow></msub><mo>+</mo><msub><mi>G</mi><mi>x</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+K_{1x} + K_{2x} + G_x = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mn>1</mn><mi>y</mi></mrow></msub><mo>+</mo><msub><mi>K</mi><mrow><mn>2</mn><mi>y</mi></mrow></msub><mo>+</mo><msub><mi>G</mi><mi>y</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+K_{1y} + K_{2y} + G_y = 0
+</annotation></semantics></math></p>
+<p>Az erők irányultsága alapján a koordináták értékei:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mn>1</mn><mi>x</mi></mrow></msub><mo>=</mo><mi>−</mi><msub><mi>K</mi><mn>1</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+K_{1x} = -K_1 \cdot \sin \alpha
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mn>1</mn><mi>y</mi></mrow></msub><mo>=</mo><msub><mi>K</mi><mn>1</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+K_{1y} = K_1 \cdot \cos \alpha
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mrow><mn>2</mn><mi>x</mi></mrow></msub><mo>=</mo><msub><mi>K</mi><mn>2</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><msub><mi>K</mi><mrow><mn>2</mn><mi>y</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+K_{2x} = K_2,\ \ K_{2y} = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>x</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mspace width="0.222em"></mspace><mspace width="0.222em"></mspace><msub><mi>G</mi><mi>y</mi></msub><mo>=</mo><mi>−</mi><mi>G</mi><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>98</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+G_x = 0,\ \ G_y = -G = -0{,}98\text{ N}
+</annotation></semantics></math></p>
+<p>Behelyettesítve ezeket a komponenseket az egyenletrendszerbe:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><msub><mi>K</mi><mn>1</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>+</mo><msub><mi>K</mi><mn>2</mn></msub><mo>+</mo><mn>0</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+-K_1 \cdot \sin \alpha + K_2 + 0 = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>+</mo><mn>0</mn><mo>−</mo><mi>G</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+K_1 \cdot \cos \alpha + 0 - G = 0
+</annotation></semantics></math></p>
+<p>A második (függőleges) egyenletből közvetlenül kifejezhető a ferde
+kötélben ébredő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mn>1</mn></msub><annotation encoding="application/x-tex">K_1</annotation></semantics></math>
+erő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><mo>=</mo><mfrac><mi>G</mi><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>98</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><mrow><mn>0</mn><mo>,</mo><mn>8</mn></mrow></mfrac><mo>=</mo><mn>1</mn><mo>,</mo><mn>225</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+K_1 = \frac {G} {\cos \alpha} = \frac {0{,}98\text{ N}} {0{,}8} = 1{,}225\text{ N}
+</annotation></semantics></math></p>
+<p>Ezt az értéket az első (vízszintes) egyenletbe visszahelyettesítve
+megkapjuk a vízszintes húzóerő nagyságát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>2</mn></msub><mo>=</mo><msub><mi>K</mi><mn>1</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>225</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>6</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>735</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+K_2 = K_1 \cdot \sin \alpha = 1{,}225\text{ N} \cdot 0{,}6 = 0{,}735\text{ N}
+</annotation></semantics></math></p>
+<p>A bal oldali ferde kötél tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>23</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">1{,}23\text{ N}</annotation></semantics></math>
+erővel feszül, míg a jobb oldali vízszintes feszítőkötélben ébredő
+húzóerő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>735</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}735\text{ N}</annotation></semantics></math>.</p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Egy vízszintes plafonon két kampó távolsága
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4{,}00\text{ m}</annotation></semantics></math>.
+Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}50\text{ kg}</annotation></semantics></math>
+tömegű testet két kötéllel függesztünk fel úgy, hogy az egyik kötél
+hossza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">3{,}00\text{ m}</annotation></semantics></math>,
+a másiké pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4{,}00\text{ m}</annotation></semantics></math>.
+Számítsd ki a kötelekben ébredő erőket, ha a test nyugalomban van!</p>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#b7f8397b-e4ea-4f20-9a85-cddec0155428">Statika
+első feladat interaktív szimuláció</a></p></li>
+<li><p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>30</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">30^\circ</annotation></semantics></math>-os
+hajlásszögű, súrlódásmentes lejtőn egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}00\text{ kg}</annotation></semantics></math>
+tömegű testet a lejtő tetejéhez rögzített, a lejtő síkjával párhuzamos
+kötéllel tartunk egyensúlyban. Mekkora a kötélben ébredő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mn>1</mn></msub><annotation encoding="application/x-tex">K_1</annotation></semantics></math>
+húzóerő, és mekkora a lejtő felülete által kifejtett merőleges
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mn>2</mn></msub><annotation encoding="application/x-tex">K_2</annotation></semantics></math>
+kényszererő?</p></li>
+<li><p>Egy utcai lámpát, amelynek tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{ kg}</annotation></semantics></math>,
+két oszlop közé kifeszített acélhuzal tart. A huzal két fele pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>170</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">170^\circ</annotation></semantics></math>-os
+szöget zár be egymással (vagyis mindkét oldalon csupán
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>5</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">5^\circ</annotation></semantics></math>-ot
+tér el a tökéletesen vízszintestől). Mekkora
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+erő feszíti az acélhuzal szárait?</p></li>
+<li><p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">5{,}00\text{ kg}</annotation></semantics></math>
+tömegű testet a mennyezethez rögzített két kötél tart egyensúlyban,
+amelyek a függőlegessel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>30</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">30^\circ</annotation></semantics></math>-os
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>45</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">45^\circ</annotation></semantics></math>-os
+szöget zárnak be. Határozd meg a két kötélben ébredő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mn>1</mn></msub><annotation encoding="application/x-tex">K_1</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mn>2</mn></msub><annotation encoding="application/x-tex">K_2</annotation></semantics></math>
+húzóerő nagyságát!</p></li>
+<li><p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ kg}</annotation></semantics></math>
+tömegű közlekedési lámpa egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">6{,}00\text{ m}</annotation></semantics></math>
+hosszú, vízszintes merev rúd végén lóg. A rudat a falnál egy csukló
+tartja, a rúd végét pedig egy, a függőleges falhoz
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>45</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">45^\circ</annotation></semantics></math>-os
+szögben csatlakozó merevítő drótkötél rögzíti a rúd felett. Mekkora
+húzóerő ébred a drótban, ha a rúd saját súlyát elhanyagolhatónak
+tekintjük?</p>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#83d3b11c-0a5a-4eca-9e5e-74b36177f4dc">Statika
+ötödik feladat interaktív szimuláció</a></p></li>
+</ol>
+<p><em>A feladatok megoldása során a nehézségi gyorsulás alapértelmezett
+értéke</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>
+<em>.</em></p>
+</body>
+</html>

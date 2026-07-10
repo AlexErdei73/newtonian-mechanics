@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-gyorsulás">A gyorsulás</h1>
+<h2 id="az-egyenletesen-gyorsuló-mozgás">Az egyenletesen gyorsuló
+mozgás</h2>
+<p>Ha egy test sebességének nagysága vagy mozgásának iránya változik,
+akkor gyorsuló mozgásról beszélünk. Most a legegyszerűbb esettel fogunk
+foglalkozni, amikor a mozgás egyenes vonalú, így a sebesség iránya nem
+változik meg, csupán a nagysága növekszik vagy csökken.</p>
+<blockquote>
+<p><strong>Egyenletesen gyorsuló mozgásról beszélünk, amikor a test
+sebessége egyenlő időközök alatt egyenlő mértékben
+változik.</strong></p>
+</blockquote>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a
+href="https://www.youtube.com/watch?v=PCLjIjAUBnw&amp;t">Egyenletes és
+egyenletesen változó mozgás demonstrációja air track
+segítségével</a></p>
+<h3 id="szimuláció">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#94f47c36-ead0-4d85-a1ff-ac1827797ce9">Súrlódásmentes
+mozgás lejtőn szimulátor</a></p>
+<p>Mind a kísérlet, mind a szimuláció mutatja, hogy a test a lejtőn
+gyorsulva mozog súrlódásmentes esetben. Gyakorlásképp a szimulátorral
+ábrázoljuk a test sebesség-idő grafikonját! Ez látható a következő
+ábrán:</p>
+<figure>
+<img src="Kepek/egyenletesengyorsulomozgassebidograf.png"
+alt="Egyenletesen gyorsuló test sebesség-idő grafikonja" />
+<figcaption aria-hidden="true">Egyenletesen gyorsuló test sebesség-idő
+grafikonja</figcaption>
+</figure>
+<p>A test sebessége másodpercenként
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">0{,}5\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>-mal
+nő a grafikon alapján. A mozgás tehát egyenletesen gyorsuló mozgás. A
+kezdeti sebesség 0, a test álló helyzetből indul.</p>
+<h2 id="a-gyorsulás-fogalma-és-képlete">A gyorsulás fogalma és
+képlete</h2>
+<blockquote>
+<p><strong>A gyorsulás az időegységre eső sebességváltozással egyenlő.
+Kiszámítható a sebességváltozás és az idő hányadosaként. Jele:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>,
+egysége:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac><annotation encoding="application/x-tex">\frac{\text{m}}{\text{s}^2}</annotation></semantics></math></strong></p>
+</blockquote>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>v</mi></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {\Delta v} {t} = \frac {v - v_0} {t}
+</annotation></semantics></math></p>
+<p>A gyorsulás valójában vektormennyiség, amely mindig a
+sebességváltozás-vektor irányába mutat. A sebességváltozás-vektor az
+elért sebességvektor és a kezdősebesség-vektor különbsége. Bár a fizikai
+összefüggés általánosan csak a vektorokra igaz, mi egyelőre olyan
+esetekkel foglalkozunk, ahol a vektorok egyetlen egyenesbe esnek és a
+mozgás iránya sem változik meg, így a számolásokat egyszerűbb, skaláris
+formában végezhetjük.</p>
+<h3 id="példák">Példák</h3>
+<ol type="1">
+<li>A lejtőn lefelé mozgó test a szimuláció során
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">0{,}5\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>-ról
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">2\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>-ra
+gyorsult fel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">3\text{ s}</annotation></semantics></math>
+alatt. Mekkora a gyorsulás?</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac><mo>−</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><mrow><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {v - v_0} {t} = \frac {2\text{ }\frac{\text{m}}{\text{s}} - 0{,}5\text{ }\frac{\text{m}}{\text{s}}} {3\text{ s}} = 0{,}5\text{ }\frac{\text{m}}{\text{s}^2}
+</annotation></semantics></math></p>
+<p>Tehát a test gyorsulása
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">0{,}5\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.</p>
+<ol start="2" type="1">
+<li>Egy autó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">20\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességről
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">6\text{ s}</annotation></semantics></math>
+alatt lefékez
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">5\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességre. Mekkora az autó gyorsulása?</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac><mo>−</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><mrow><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow></mfrac><mo>=</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {v - v_0} {t} = \frac {5\text{ }\frac{\text{m}}{\text{s}} - 20\text{ }\frac{\text{m}}{\text{s}}} {6\text{ s}} = -2{,}5\text{ }\frac{\text{m}}{\text{s}^2}
+</annotation></semantics></math></p>
+<p>Az autó gyorsulására a formulánk fékezés esetén negatív értéket ad.
+Az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+jelölés a gyorsulásvektor tiszta nagyságát szokta jelenteni, amely
+definíció szerint nem lehetne negatív. Fékezéskor a fenti formula
+valójában a gyorsulásvektor mozgásirányú összetevőjét adja meg
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>x</mi></msub><annotation encoding="application/x-tex">a_x</annotation></semantics></math>,
+ha a mozgás az x-tengely irányába történik). A gyorsulás x-komponense
+már felvehet negatív értéket, amennyiben a gyorsulásvektor a választott
+tengellyel ellentétes irányba mutat – fékezésnél pedig pontosan ez
+történik. A formula alkalmazása az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>x</mi></msub><annotation encoding="application/x-tex">a_x</annotation></semantics></math>
+jelölés helyett a sima
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+betűvel matematikailag kissé pontatlan, de a középiskolai gyakorlatban a
+rövidség kedvéért így szoktuk használni.</p>
+<blockquote>
+<p><strong>Fékezés (lassulás) esetén a gyorsulás számszerű értéke
+negatív, ami azt jelenti, hogy a gyorsulásvektor iránya a mozgás
+pillanatnyi irányával ellentétes.</strong></p>
+</blockquote>
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Egy versenyző 0 sebességről indul, és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> másodperc</mtext></mrow></mrow><annotation encoding="application/x-tex">8\text{ másodperc}</annotation></semantics></math>
+alatt eléri a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">10\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességet. Mekkora az átlagos gyorsulása?</p></li>
+<li><p>Egy vonat
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">15\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességről
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> másodperc</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ másodperc}</annotation></semantics></math>
+alatt lassít, és a sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">5\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>-ra
+csökken. Mekkora a gyorsulása?</p></li>
+<li><p>Egy labdát függőlegesen felfelé dobunk. Az első másodpercben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">25\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>-ről
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">15\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>-ra
+csökken a sebessége. Mekkora a gravitációs gyorsulás értéke ebből a
+mérésből?</p></li>
+<li><p>Egy motorkerékpár
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>-ról
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> másodperc</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ másodperc}</annotation></semantics></math>
+alatt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">30\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességre gyorsul fel. Mekkora a gyorsulása?</p></li>
+<li><p>Egy repülőgép landoláskor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">60\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességről
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> másodperc</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{ másodperc}</annotation></semantics></math>
+alatt teljesen állóra fékez. Mekkora a fékezés során a
+gyorsulása?</p></li>
+</ol>
+</body>
+</html>

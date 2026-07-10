@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-szuperpozíció-elve">A szuperpozíció elve</h1>
+<h2 id="hullámok-szuperpozíciója">Hullámok szuperpozíciója</h2>
+<h3 id="kísérletek">Kísérletek</h3>
+<p><a href="https://www.youtube.com/watch?v=JUCLoczzwPo">Transzverzális
+hullámok szuperpozíciója</a></p>
+<p><a href="https://www.youtube.com/watch?v=N5MltLd05MI">Longitudinális
+hullámok szuperpozíciója</a></p>
+<p><a href="https://www.youtube.com/watch?v=hnZ1FKVWN4k">Szuperpozíciót
+szemléltető eszköz</a></p>
+<blockquote>
+<p><strong>A szuperpozíció elve:</strong> Ha két vagy több hullám terjed
+ugyanabban a térrészben, akkor ezek terjedése egymástól független. A
+hullámtér bármely tetszőleges pontjában az eredő kitérés bármely
+tetszőleges pillanatban az egyes hullámok kitéréseinek összege.</p>
+</blockquote>
+<p>A kísérletek szépen szemléltetik a szuperpozíció elvét, amely
+mechanikai hullámok esetében matematikai úton is levezethető a
+Newton-törvényekből. Ezt a levezetést meghagyjuk későbbre. Itt csak
+felírjuk az eredményt matematikai alakban is két, egydimenziós,
+transzverzális hullám esetére.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+y_1 = f(x, t)
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>=</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+y_2 = g(x, t)
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+y = y_1 + y_2 = f(x, t) + g(x, t)
+</annotation></semantics></math></p>
+<h2 id="young-féle-interferenciakísérlet">Young-féle
+interferenciakísérlet</h2>
+<h3 id="kísérletek-1">Kísérletek</h3>
+<p><a href="https://www.youtube.com/watch?v=5raMmc7BeEY">Interferencia
+hullámkádban</a></p>
+<p><a href="https://www.youtube.com/watch?v=b87QZtYKmqo">Interferencia
+hanghullámokkal</a></p>
+<p><a href="https://www.youtube.com/watch?v=Iuv6hY6zsd0">Az eredeti
+Young kíserlet fénnyel</a></p>
+<blockquote>
+<p><strong>Koherens hullámforrások:</strong> Egyenlő frekvenciájú
+harmonikus hullámokat kibocsátó hullámforrások, amelyek között a
+fáziskülönbség állandó.</p>
+</blockquote>
+<blockquote>
+<p><strong>Interferencia:</strong> Koherens hullámforrásokból származó
+hullámok találkozásakor fellépő jelenség. A hullámtér bizonyos
+pontjaiban, ahol a hullámok azonos fázisban találkoznak, a hullámok
+erősítik egymást. Ahol a hullámok ellentétes fázisban találkoznak, ott
+gyengítik egymást.</p>
+</blockquote>
+<p>A matematikai leírás megmutatja, hogy az, hogy erősítés vagy
+gyengítés tapasztalható-e a hullámtér egy adott pontjában, a
+hullámforrásoktól a megfigyelési pontig megtett utak különbségétől
+függ.</p>
+<p>Írjuk fel a két hullámfüggvényt! Legyen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+az amplitúdó,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>
+a körfrekvencia, és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+a hullám terjedési sebessége.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>ω</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>−</mo><mfrac><msub><mi>x</mi><mn>1</mn></msub><mi>c</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+y_1 = A\cos\left(\omega\left(t - \frac {x_1} c\right)\right)
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mn>2</mn></msub><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>ω</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>t</mi><mo>−</mo><mfrac><msub><mi>x</mi><mn>2</mn></msub><mi>c</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+y_2 = A\cos\left(\omega\left(t - \frac {x_2} c\right)\right)
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><msub><mi>y</mi><mn>2</mn></msub><mo>=</mo><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+y = y_1 + y_2 = A(\cos(\omega t - k x_1) + \cos(\omega t - k x_2))
+</annotation></semantics></math></p>
+<p>Ahol bevezettük a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><mfrac><mi>ω</mi><mi>c</mi></mfrac></mrow><annotation encoding="application/x-tex">k = \frac \omega c</annotation></semantics></math>
+hullámszámot.</p>
+<p>Most felhasználjuk a trigonometrikus azonosságot, amelyet már
+korábban is használtunk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo>−</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">
+\cos (\alpha + \beta) + \cos (\alpha - \beta) = 2\cos\alpha\cos\beta
+</annotation></semantics></math></p>
+<p>Legyen most:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>+</mo><mi>β</mi><mo>=</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><msub><mi>x</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">
+\alpha + \beta = \omega t - k x_1
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>−</mo><mi>β</mi><mo>=</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><msub><mi>x</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">
+\alpha - \beta = \omega t - k x_2
+</annotation></semantics></math></p>
+<p>Ekkor ugye:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mfrac><mrow><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><msub><mi>x</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow><mn>2</mn></mfrac><mo>=</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+\alpha = \frac {\omega t - k x_1 + \omega t - k x_2} 2 = \frac {2\omega t - k(x_1 + x_2)} 2 = \omega t - k\frac {x_1 + x_2} 2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mfrac><mrow><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><msub><mi>x</mi><mn>1</mn></msub><mo>−</mo><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><msub><mi>x</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>k</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mn>2</mn></msub><mo>−</mo><msub><mi>x</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow><mn>2</mn></mfrac><mo>=</mo><mi>k</mi><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+\beta = \frac {\omega t - k x_1 - (\omega t - k  x_2)} 2 = \frac{k(x_2 - x_1)}{2} = k\frac{\Delta x}{2}
+</annotation></semantics></math></p>
+<p>Így végül a kitérés a hullámtér azon pontjában, ahol az útkülönbség a
+forrásoktól
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\Delta x</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><mn>2</mn><mi>A</mi><mi mathvariant="normal">cos</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">]</mo></mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+y = \left[ 2A\cos\left(k\frac{\Delta x}{2}\right) \right] \cos\left(\omega t - k\frac {x_1 + x_2} 2\right)
+</annotation></semantics></math></p>
+<p><strong>Figyeljük meg a kapott eredményt!</strong> A képlet
+csodálatos módon két jól elkülöníthető részre szakadt: 1. Az első,
+szögletes zárójelben lévő részben csak a hely
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\Delta x</annotation></semantics></math>)
+szerepel, az idő nem. Ez az időtől független rész adja meg a térben
+“álló” interferenciaképet, azaz az eredő amplitúdót az adott pontban. 2.
+A második rész (a jobb oldali koszinusz) tartalmazza az időt
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>),
+ami azt mutatja, hogy az adott térbeli pontban a közeg részecskéi
+továbbra is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>
+körfrekvenciájú harmonikus rezgőmozgást végeznek.</p>
+<p>Az eredő rezgés amplitúdója tehát a térben pontról pontra
+változik:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mtext mathvariant="normal">eredő</mtext></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mn>2</mn><mi>A</mi><mi mathvariant="normal">cos</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>k</mi><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mn>2</mn><mi>A</mi><mi mathvariant="normal">cos</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>λ</mi></mfrac><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">|</mo><mn>2</mn><mi>A</mi><mi mathvariant="normal">cos</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>π</mi><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mi>λ</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">
+A_{\text{eredő}} = \left| 2A\cos\left(k \frac{\Delta x}{2}\right) \right| = \left| 2A\cos\left(\frac{2\pi}{\lambda}\frac {\Delta x}{2}\right) \right| = \left| 2A\cos\left(\pi\frac {\Delta x} \lambda\right) \right|
+</annotation></semantics></math></p>
+<p>A kioltás feltétele, hogy az amplitúdó, tehát a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">cos</mi><annotation encoding="application/x-tex">\cos</annotation></semantics></math>
+függvény értéke 0 legyen.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mi>λ</mi></mfrac><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>π</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>n</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\pi \frac {\Delta x} \lambda = \left(n + \frac 1 2\right)\pi, \quad n = 0, 1, 2, 3, ...
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">
+\Delta x = \left(n + \frac 1 2\right) \lambda
+</annotation></semantics></math></p>
+<p><em>(Fizikai szemlélettel ez teljesen logikus: ha az útkülönbség egy
+fél hullámhossz, vagy annak páratlan többszöröse, akkor az egyik hullám
+hullámhegye pont a másik hullámvölgyével találkozik, teljesen lerontva
+egymást.)</em></p>
+<p>Az erősítés feltétele, hogy az amplitúdó a maximális
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>A</mi></mrow><annotation encoding="application/x-tex">2A</annotation></semantics></math>
+legyen, tehát a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">cos</mi><annotation encoding="application/x-tex">\cos</annotation></semantics></math>
+függvény értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>±</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">\pm 1</annotation></semantics></math>
+legyen.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi></mrow><mi>λ</mi></mfrac><mo>=</mo><mi>n</mi><mi>π</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>n</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\pi \frac {\Delta x} \lambda = n\pi, \quad n = 0, 1, 2, 3, ...
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi><mo>=</mo><mi>n</mi><mi>λ</mi></mrow><annotation encoding="application/x-tex">
+\Delta x = n \lambda
+</annotation></semantics></math></p>
+<p><em>(Ekkor a hullámhegy hullámheggyel találkozik, a fáziskülönbség
+nulla, vagy teljes hullámhossznyi.)</em></p>
+<h3 id="példa">Példa</h3>
+<p>Két pontszerűnek tekinthető hangszóró távolsága egymástól
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ m}</annotation></semantics></math>.
+A generátor egyenlő amplitúdójú,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kHz</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ kHz}</annotation></semantics></math>
+frekvenciájú jelet ad rájuk. A hang sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>340</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">340\text{ m/s}</annotation></semantics></math>.
+Egy megfigyelő a két hangszórót összekötő szakasz felezőmerőlegesén áll
+úgy, hogy mindkét hangszórótól pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math>
+távolságra van. Mennyit mozduljon el a megfigyelő a hangszórók síkjával
+párhuzamosan jobbra az első kioltási helyig?</p>
+<p><strong>Megoldás:</strong></p>
+<p>Számoljuk ki a hullámhosszt!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><mfrac><mi>c</mi><mi>f</mi></mfrac><mo>=</mo><mfrac><mn>340</mn><mn>2000</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>17</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\lambda = \frac c f = \frac {340} {2000} = 0,17\text{ m}
+</annotation></semantics></math></p>
+<p>Az első kioltás
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n=0</annotation></semantics></math>)
+útkülönbsége:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>0</mn><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>λ</mi><mo>=</mo><mfrac><mi>λ</mi><mn>2</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>085</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>8</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\Delta x = \left(0 + \frac 1 2\right) \lambda = \frac \lambda 2 = 0,085\text{ m} = 8,5\text{ cm}
+</annotation></semantics></math></p>
+<p>A megfigyelő eredetileg 4 m-re van a hangszóróktól, és a fél távolság
+a hangszórók között 1 m. Pithagorasz-tétellel a megfigyelő egyenese és a
+hangszórók síkja közötti merőleges távolság:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mrow><msup><mn>4</mn><mn>2</mn></msup><mo>−</mo><msup><mn>1</mn><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mn>15</mn></msqrt><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">\sqrt{4^2 - 1^2} = \sqrt{15}\text{ m}</annotation></semantics></math>.</p>
+<p>Tegyük fel, hogy elmozdulunk jobbra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+távolsággal. Ekkor a két hangszórótól vett új távolságok
+Pithagorasz-tétellel felírva az alábbi útkülönbséget adják:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi><mo>=</mo><msqrt><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>d</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mn>15</mn></mrow></msqrt><mo>−</mo><msqrt><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>d</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mn>15</mn></mrow></msqrt><mo>=</mo><mn>0</mn><mo>,</mo><mn>085</mn></mrow><annotation encoding="application/x-tex">
+\Delta x = \sqrt{(1 + d)^2 + 15} - \sqrt{(1 - d)^2 + 15} = 0,085
+</annotation></semantics></math></p>
+<p>Ezt az egyenletet (megfelelő matematikai közelítéssel, vagy algebrai
+úton) megoldva
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>≈</mo><mn>0</mn><mo>,</mo><mn>17</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">d \approx 0,17\text{ m}</annotation></semantics></math>-t
+kapunk, vagyis <strong>17 cm</strong>-t kell elmozdulnia. Ezt
+visszahelyettesítéssel ellenőrizhetjük.</p>
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Két koherens, azonos amplitúdójú és frekvenciájú hullám
+interferál egy közegben. A hullámhossz
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">40\text{ cm}</annotation></semantics></math>.
+Milyen lesz az eredő hullám amplitúdója ahhoz a maximális amplitúdóhoz
+képest (százalékosan), amelyet konstruktív interferencia esetén mérnénk
+egy olyan pontban, amelynek a két hullámforrástól mért távolságainak
+különbsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ cm}</annotation></semantics></math>?</p></li>
+<li><p>Két hangszóró egymástól
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">3\text{ m}</annotation></semantics></math>-re
+helyezkedik el, és azonos fázisban sugároznak
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+frekvenciájú hangot. Egy megfigyelő az egyik hangszórótól
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math>-re,
+a másiktól
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ m}</annotation></semantics></math>-re
+áll (a három pont derékszögű háromszöget alkot). Határozza meg azt a
+legkisebb frekvenciát, amelynél a megfigyelő maximális erősítést
+(konstruktív interferenciát) tapasztal! A hang terjedési sebessége a
+levegőben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>340</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">340\text{ m/s}</annotation></semantics></math>.</p></li>
+<li><p>Egy Young-féle kétréses kísérletben a két rés távolsága
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">0,2\text{ mm}</annotation></semantics></math>.
+A résekre merőlegesen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> nm</mtext></mrow></mrow><annotation encoding="application/x-tex">600\text{ nm}</annotation></semantics></math>
+hullámhosszúságú monokromatikus lézerfény esik. A megfigyelőernyő a
+résektől
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ m}</annotation></semantics></math>
+távolságra található. Határozza meg az interferenciakép nulladrendű
+(középső) maximuma és az első interferenciaminimum (első sötét sáv)
+közötti lineáris távolságot az ernyőn!</p></li>
+</ol>
+</body>
+</html>

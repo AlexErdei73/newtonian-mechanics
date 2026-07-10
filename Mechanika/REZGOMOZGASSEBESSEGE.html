@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-harmonikus-rezgőmozgás-sebessége">A harmonikus rezgőmozgás
+sebessége</h1>
+<h2 id="a-sebesség-meghatározása">A sebesség meghatározása</h2>
+<p>A harmonikus rezgőmozgás esetén a sebesség nyilván a mozgás
+egyenesébe esik, de vajon hogyan változik, hiszen a kitérés látszólag
+bonyolultan, folyamatosan változik. Szerencsére az egyenletes
+körmozgással való kapcsolat itt is segít. Ennek ismerjük a sebességét.
+Mivel a körmozgást végző test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-koordinátája
+pontosan egyenlő a rezgőmozgást végző test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-koordinátájával
+minden pillanatban, így világos, hogy a testek sebességeinek
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-komponensei
+is minden pillanatban megegyeznek! Az átlagsebesség ugyanis:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><msub><mi>v</mi><mi>x</mi></msub><mo accent="true">¯</mo></mover><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\overline {v_x} = \frac {x - x_0} {t}
+</annotation></semantics></math></p>
+<p>Ez természetesen nem egyezik a pillanatnyi sebességgel, de ha a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+időtartamot oly kicsinyre választjuk, hogy a sebesség változása ezen idő
+alatt már elhanyagolhatóan kicsiny, akkor az átlagsebesség már számítási
+pontosságunkon belül megegyezik a pillanatnyi sebességgel. Így látható,
+hogy a pillanatnyi sebesség csakugyan minden pillanatban meg kell
+egyezzen a körmozgást végző test sebességének
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-komponensével.</p>
+<figure>
+<img src="Kepek/rezgessebessege.svg" alt="A rezgőmozgás sebessége" />
+<figcaption aria-hidden="true">A rezgőmozgás sebessége</figcaption>
+</figure>
+<p>A körmozgást végző test sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">r\omega</annotation></semantics></math>
+nagyságú és minden pillanatban érintő irányú, vagyis a függőleges,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-tengely
+irányába mutató egyenessel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\omega t</annotation></semantics></math>
+szöget zár be. Így azt kapjuk, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mi>A</mi><mi>ω</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+v_x = -A\omega \sin (\omega t)
+</annotation></semantics></math></p>
+<p>Itt felhasználtuk, hogy az eddigiek alapján
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">r = A</annotation></semantics></math>
+a rezgőmozgás esetén. A test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t = 0</annotation></semantics></math>-kor
+az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>+</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">x = +A</annotation></semantics></math>
+helyzetben van, ahogy azt az előző leckében is feltételeztük.</p>
+<h3 id="példa">Példa</h3>
+<p>Harmonikus rezgőmozgást végző, rugóra akasztott test kitérését leíró
+függvény:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>π</mi><mo>⋅</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+x = 0{,}2 \cos (4\pi \cdot t)
+</annotation></semantics></math></p>
+<p>Itt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+méterben (m),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+pedig másodpercben (s) értendő! Keresésük meg a mozgás legfontosabb
+paramétereit! * Mennyi az amplitúdó?<br />
+* Mennyi a körfrekvencia? * Írjuk fel a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>x</mi></msub><annotation encoding="application/x-tex">v_x</annotation></semantics></math>
+sebességet leíró összefüggést! * Mekkora a kitérés és a sebesség
+előjeles értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 0{,}1\text{ s}</annotation></semantics></math>-kor?
+* Mekkora a sebesség maximális értéke?</p>
+<p>A kitérés-idő függvény általános alakjából, amely
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x = A \cos(\omega t)</annotation></semantics></math>
+leolvasható:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+A = 0{,}2\text{ m}
+</annotation></semantics></math></p>
+<p>Szintén a függvényből leolvasható a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+szorzója:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mn>4</mn><mi>π</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\omega = 4 \pi \text{ rad/s}
+</annotation></semantics></math></p>
+<p>A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mi>A</mi><mi>ω</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">v_x = -A\omega \sin(\omega t)</annotation></semantics></math>
+összefüggésbe behelyettesítve az ismert adatokat
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0</mn><mo>,</mo><mn>2</mn><mo>⋅</mo><mn>4</mn><mi>π</mi><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>8</mn><mi>π</mi></mrow><annotation encoding="application/x-tex">-0{,}2 \cdot 4\pi = -0{,}8\pi</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>x</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>8</mn><mi>π</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>π</mi><mo>⋅</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+v_x(t) = -0{,}8\pi \sin (4\pi \cdot t)
+</annotation></semantics></math></p>
+<p>A kitérés értéke az eredeti függvénybe behelyettesítve:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>π</mi><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>06180</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+x = 0{,}2 \cos (4 \pi \cdot 0{,}1) = 0{,}06180\text{ m}
+</annotation></semantics></math></p>
+<p>A sebesség értéke az általunk felírt sebességfüggvénybe
+behelyettesítve:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>2</mn><mo>⋅</mo><mn>4</mn><mi>π</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>π</mi><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>390</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_x = -0{,}2 \cdot 4 \pi \cdot \sin (4 \pi \cdot 0{,}1) = -2{,}390\text{ m/s}
+</annotation></semantics></math></p>
+<p>A sebesség akkor maximális, ha a szinuszos tag értéke 1 (vagy -1).
+Így a maximális sebesség nagysága:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi mathvariant="normal">max</mi></msub><mo>=</mo><mi>A</mi><mi>ω</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>⋅</mo><mn>4</mn><mi>π</mi><mo>≈</mo><mn>2</mn><mo>,</mo><mn>513</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_{\max} = A\omega = 0{,}2 \cdot 4\pi \approx 2{,}513\text{ m/s}
+</annotation></semantics></math></p>
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Egy harmonikus rezgőmozgást végző test kitérés-idő függvénye:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>π</mi><mo>⋅</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x(t) = 0{,}5 \sin(2\pi \cdot t)</annotation></semantics></math>
+(ahol a mértékegységek az SI-rendszernek megfelelőek). Határozd meg a
+rezgés amplitúdóját, periódusidejét, valamint a test maximális
+sebességét!</p></li>
+<li><p>Egy vízszintes felületen, rugóhoz rögzített test harmonikus
+rezgőmozgást végez. A mozgás amplitúdója
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">A = 4\text{ cm}</annotation></semantics></math>,
+rezgésideje (periódusideje) pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">T = 2\text{ s}</annotation></semantics></math>.
+Írd fel a test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>x</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">v_x(t)</annotation></semantics></math>
+sebesség-idő függvényét, feltételezve, hogy a test a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 0\text{ s}</annotation></semantics></math>
+pillanatban a pozitív maximális kitérés
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">+A</annotation></semantics></math>)
+helyén volt!</p></li>
+<li><p>Egy harmonikus rezgőmozgást végző pontszerű test maximális
+sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi mathvariant="normal">max</mi></msub><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">v_{\max} = 3\text{ m/s}</annotation></semantics></math>,
+körfrekvenciája pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mn>10</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\omega = 10\text{ s}^{-1}</annotation></semantics></math>.
+Mekkora a test sebességének nagysága abban a pillanatban, amikor a
+kitérése pontosan az amplitúdó fele
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>A</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">x = A/2</annotation></semantics></math>)?</p></li>
+</ol>
+</body>
+</html>

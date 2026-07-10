@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="merev-testek">Merev testek</h1>
+<h2 id="a-merev-test-fogalma">A merev test fogalma</h2>
+<p>Eddig főként olyan testek mozgásával foglalkoztunk, amelyek
+pontszerűeknek voltak tekinthetők a mozgásuk során, mivel az
+elmozdulások méretei jóval nagyobbak voltak, mint a test saját méretei.
+Az ilyen tömegpontok forgásával sem foglalkoztunk, a belső szerkezetüket
+teljesen figyelmen kívül hagytuk.</p>
+<p>Foglalkoztunk még tömegpontok rendszerével is, amikor két vagy több
+tömegpont együttes mozgását figyeltük meg. Ilyen volt például a
+kéttest-probléma, vagy a pontrendszerekre vonatkozó tömegközéppont
+fogalma és a rá vonatkozó tétel.</p>
+<blockquote>
+<p><strong>A merev testek tulajdonképpen speciális pontrendszerek,
+amelyeknél bármely két kiválasztott tömegpont távolsága
+állandó.</strong></p>
+</blockquote>
+<p>Ideális merev testek a valóságban nincsenek, hiszen bármely szilárd
+test elegendően nagy erő hatására az alakját szemmel láthatóan
+megváltoztatja. Ilyen változás például autóbaleset esetén a kocsi
+deformációja, vagy egy rugó elszakadása, ha túlterhelik. Sokszor a
+deformációk kicsik, és a test képes visszanyerni az alakját az erőhatás
+megszűntével. Ilyen esetre példa a nem túl nagy erővel megfeszített
+rugó, amely alakját visszanyeri, ha az erőhatás megszűnik. Az ilyen
+deformációkat rugalmasnak nevezzük, és ezekkel a rugalmasságtan
+foglalkozik. A merev testeket úgy tekintjük, hogy a lépő erőhatások
+olyan kicsinyek, hogy a test deformációi teljesen elhanyagolhatók.</p>
+<h2 id="a-merev-test-mozgása">A merev test mozgása</h2>
+<p>A merev test alakját tehát a mozgás során nem változtatja meg, így
+elmozdulása minden esetben összetevődik egy eltolás és egy elforgatás
+egymásutánjaként. Ezért a merev test a haladó mozgáson kívül
+forgómozgást is képes végezni.</p>
+<h2 id="a-merev-test-síkmozgása">A merev test síkmozgása</h2>
+<p>Minket leginkább a merev test egy speciális mozgása fog érdekelni.
+Ilyenkor a merev test pontjai egy síkkal párhuzamosan mozdulnak el,
+tehát minden pont sebessége párhuzamos ugyanazon megadott síkkal. Az
+ilyen mozgást a merev test síkmozgásának nevezzük.</p>
+<blockquote>
+<p><strong>Merev test síkmozgásakor a test pontjai egy adott síkkal
+párhuzamos sebességvektorokkal mozognak.</strong></p>
+</blockquote>
+<p>Gondoljunk például egy kerék gördülésére, amikor a kerék egyenes
+vonalon gurul. Ilyenkor a kerék pontjai általában függőleges síkban
+mozognak, amely párhuzamos a gördülés egyenes irányával. Az ilyen mozgás
+esetén mi csak a mozgás síkbeli vetületével fogunk foglalkozni, tehát a
+test térbeli kiterjedése a síkra merőlegesen nem lesz túl fontos.</p>
+<p>Síkmozgás esetén a test helyzetét két pontjának koordinátái
+meghatározzák. Itt a két pont távolsága nem változik, tehát csak 3
+független adat kell. Lehet ez mondjuk a tömegközéppont 2 koordinátája a
+síkban és a test elfordulási szöge a síkban. Kerék esetében például a
+középpont általában a tömegközéppont is egyben, és a kerék még az ezen a
+ponton áthaladó, a mozgás síkjára merőleges képzeletbeli tengely körül
+el is fordul a gördülése során. Az elfordulási szög, mint látni fogjuk,
+előjeles szám. Ha a test az óramutató járásával ellentétes irányban
+fordult el a síkban, akkor az elfordulási szög pozitív, ellenkező
+esetben negatív.</p>
+<h2 id="a-forgatónyomaték">A forgatónyomaték</h2>
+<p>Mi az erő megfelelője forgómozgás esetén, ami felelős a forgás
+gyorsításáért vagy éppen lassításáért? Ez a mennyiség a
+forgatónyomaték.</p>
+<p>Itt néhány fogalmat kell megbeszélnünk:</p>
+<blockquote>
+<p><strong>Az erő támadáspontja az a pont, ahol az erő a testre a
+hatását kifejti.</strong></p>
+<p><strong>Az erő hatásvonala az az egyenes, amely a támadásponton halad
+át, és az erővektor irányával párhuzamos.</strong></p>
+<p><strong>Az erőkar az erő hatásvonalának a forgástengelytől mért
+távolsága.</strong></p>
+</blockquote>
+<p>Ezek után könnyen megfogalmazhatjuk a forgatónyomaték definícióját
+is.</p>
+<blockquote>
+<p><strong>Az erő forgatónyomatéka az erő és az erőkar
+szorzata.</strong></p>
+</blockquote>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi>F</mi><mi>k</mi><mo>=</mo><mi>F</mi><mi>r</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+M = Fk = Fr \sin \alpha
+</annotation></semantics></math></p>
+<p>Itt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+az a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>180</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">180^\circ</annotation></semantics></math>-nál
+nem nagyobb szög, amelyet az erővektor bezár a támadáspont
+helyvektorával, ha az origó a forgástengely. A szög előjeles forgásszög.
+Amennyiben az erő pozitív irányba forgat, tehát az óramutató járásával
+ellentétes értelemben, akkor a szöget pozitívnak, ellenkező esetben
+negatívnak tekintjük. Így a forgatónyomaték is előjeles szám, hiszen az
+ilyen szögekre a szinuszfüggvény ugyanolyan előjelű, mint a szög.</p>
+<figure>
+<img src="Kepek/forgatonyomatek.svg" alt="Forgatónyomaték" />
+<figcaption aria-hidden="true">Forgatónyomaték</figcaption>
+</figure>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=Fodof4gSIA0&amp;t=8m50s">Sas
+Elemér bemutatja a cérnaorsó paradoxont</a></p>
+<p>A forgatónyomaték elvét és az erőkar szerepét kiválóan szemlélteti a
+klasszikus cérnaorsó-kísérlet. Ha a cérnaszálat meredeken, a
+függőlegeshez közel húzzuk meg, az orsó elgördül. Ha azonban a szálat a
+vízszinteshez közeli, kis szögben húzzuk, az orsó megváltoztatja a
+forgásirányát, és visszagördül a húzás irányába. A jelenség oka, hogy a
+forgástengely nem az orsó szimmetriatengelye, hanem az orsó és az asztal
+pillanatnyi érintkezési vonala. Meredek húzásnál az erő hatásvonala a
+forgástengelytől olyan irányban halad el, amely előrefelé forgató
+nyomatékot hoz létre. Kis hajlásszögnél a hatásvonal az érintkezési pont
+alatt döfi át az asztal síkját, így az erőkar helyzete felcserélődez, és
+az ellentétes irányú forgatónyomaték visszagörgeti az orsót. Ha az erő
+hatásvonala pontosan átmegy a forgástengelyen, az erőkar hossza nulla
+lesz, így nincs forgatóhatás, és az orsó tiszta csúszó mozgást
+végez.</p>
+<h3 id="példák">Példák</h3>
+<ol type="1">
+<li>Egy csavarkulcs hossza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">30,0\text{ cm}</annotation></semantics></math>.
+A kulcs végénél
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">60\text{ N}</annotation></semantics></math>
+erőt fejtünk ki. Mikor nagyobb a forgatónyomaték? Az első esetben az erő
+merőleges a csavarkulcsra. A második esetben az erő a csavarkulccsal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>60</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">60^\circ</annotation></semantics></math>-os
+szöget zár be.</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mn>1</mn></msub><mo>=</mo><mi>F</mi><mi>r</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mn>60</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>90</mn><mo>∘</mo></msup><mo>=</mo><mn>18</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">
+M_1 = Fr \sin \alpha = 60 \cdot 0,3 \cdot \sin 90^\circ = 18\text{ N}\cdot\text{m}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mn>2</mn></msub><mo>=</mo><mi>F</mi><mi>r</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mn>60</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>60</mn><mo>∘</mo></msup><mo>≈</mo><mn>15</mn><mo>,</mo><mn>58</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">
+M_2 = Fr \sin \alpha = 60 \cdot 0,3 \cdot \sin 60^\circ \approx 15,58\text{ N}\cdot\text{m}
+</annotation></semantics></math></p>
+<p>Tehát a második esetben kisebb a forgatónyomaték, vagyis az erő
+forgató hatása.</p>
+<ol start="2" type="1">
+<li>Egy emelő rúdja vízszintesen áll. A forgástengelytől
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2,00\text{ m}</annotation></semantics></math>-re
+van ráhelyezve egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ kg}</annotation></semantics></math>-os
+tömegű súly. A forgástengely másik oldalán a rudat függőlegesen lefelé
+nyomjuk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">3,00\text{ m}</annotation></semantics></math>
+távolságra a tengelytől
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>130</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">130\text{ N}</annotation></semantics></math>
+erővel. A nehézségi gyorsulás
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">9,81\text{ m/s}^2</annotation></semantics></math>.
+Mekkorák a rúdra ható forgatónyomatékok, és merre billen a rúd?</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>M</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">|</mo><mo>=</mo><msub><mi>F</mi><mn>1</mn></msub><msub><mi>k</mi><mn>1</mn></msub><mo>=</mo><mi>m</mi><mi>g</mi><msub><mi>r</mi><mn>1</mn></msub><mo>=</mo><mn>20</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>392</mn><mo>,</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">
+|M_1| = F_1 k_1 = m g r_1 = 20 \cdot 9,81 \cdot 2 = 392,4\text{ N}\cdot\text{m}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>M</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">|</mo><mo>=</mo><msub><mi>F</mi><mn>2</mn></msub><msub><mi>k</mi><mn>2</mn></msub><mo>=</mo><msub><mi>F</mi><mn>2</mn></msub><msub><mi>r</mi><mn>2</mn></msub><mo>=</mo><mn>130</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>390</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">
+|M_2| = F_2 k_2 = F_2 r_2 = 130 \cdot 3 = 390,0\text{ N}\cdot\text{m}
+</annotation></semantics></math></p>
+<p>Mivel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>M</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|M_2|</annotation></semantics></math>
+kisebb, mint
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>M</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|M_1|</annotation></semantics></math>,
+ezért a teher felé billen a rúd.</p>
+<h2 id="a-nehézségi-erő-forgatónyomatéka">A nehézségi erő
+forgatónyomatéka</h2>
+<p>Nagyon fontos kérdés, hogy hogyan vehető figyelembe a nehézségi erő
+forgatónyomatéka. Legyen most is a forgástengely az origóban, a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+tengely. A nehézségi erő hasson az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+tengellyel ellentétesen, lefelé. Ekkor az erőkar az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+koordináta lesz.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>z</mi></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mo>−</mo><msub><mi>m</mi><mi>i</mi></msub><mi>g</mi><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mi>−</mi><mi>M</mi><mi>g</mi><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><msub><mi>x</mi><mi>i</mi></msub></mrow><mi>M</mi></mfrac><mo>=</mo><mi>−</mi><mi>M</mi><mi>g</mi><msub><mi>x</mi><mtext mathvariant="normal">TKP</mtext></msub></mrow><annotation encoding="application/x-tex">
+M_z = \sum_{i = 1}^{N} -m_i g x_i = -Mg \frac{\sum_{i = 1}^{N} m_i x_i}{M} = -Mg x_{\text{TKP}}
+</annotation></semantics></math></p>
+<p>A nehézségi erő támadáspontja természetesen a függőleges hatásvonal
+mentén tetszőlegesen eltolható a forgatónyomaték megváltoztatása
+nélkül.</p>
+<blockquote>
+<p><strong>A nehézségi erő hatása egyesíthető egyetlen erő hatásával,
+amelynek nagysága
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">Mg</annotation></semantics></math>,
+támadáspontja a test tömegközéppontja, iránya pedig függőlegesen lefelé
+mutat.</strong></p>
+</blockquote>
+<p>Így a példák megoldása során a nehézségi erő forgatónyomatéka könnyen
+kiszámítható.</p>
+<h3 id="példa">Példa</h3>
+<p>Egy gerenda hossza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">6,00\text{ m}</annotation></semantics></math>,
+tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">60,0\text{ kg}</annotation></semantics></math>.
+A vízszintes gerenda alá van támasztva az egyik végpontjánál, illetve a
+másik végponttól
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2,00\text{ m}</annotation></semantics></math>
+távolságra, amely pont körül elfordulhat. Milyen messze sétálhat a
+gerendán a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>80</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">80\text{ kg}</annotation></semantics></math>
+tömegű munkás az elfordulási ponttól a szabad vég felé, hogy a gerenda
+éppen ne billenjen le?</p>
+<p>Legyen a szabad vég a jobb oldalon. Ekkor a gerenda tömegközéppontja
+a forgástengelytől balra,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1,00\text{ m}</annotation></semantics></math>
+távolságra van. Mivel ez az oldal az óramutató járásával ellentétes
+irányba forgatna, a nyomaték pozitív:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mn>1</mn></mrow></msub><mo>=</mo><mi>−</mi><mi>M</mi><mi>g</mi><msub><mi>x</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mi>−</mi><mn>60</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>588</mn><mo>,</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">
+M_{z,1} = -Mg x_{\text{TKP}} = -60 \cdot 9,81 \cdot (-1) = 588,6\text{ N}\cdot\text{m}
+</annotation></semantics></math></p>
+<p>A munkás legyen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+távolságra a forgásponttól a jobb oldalon. Mivel ő az óramutató
+járásával megegyező irányba forgatna, a nyomaték negatív:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mi>−</mi><mi>m</mi><mi>g</mi><mi>x</mi><mo>=</mo><mi>−</mi><mn>80</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mi>x</mi><mo>=</mo><mi>−</mi><mn>784</mn><mo>,</mo><mn>8</mn><mi>x</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">
+M_{z,2} = -mgx = -80 \cdot 9,81 \cdot x = -784,8x\text{ N}\cdot\text{m}
+</annotation></semantics></math></p>
+<p>A két külső nyomaték összege éppen nulla, amikor a gerenda még nem
+billen át.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mtext mathvariant="normal">z,e</mtext><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><msub><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+M_{\text{z,e}}^{\text{k}} = M_{z,1} + M_{z,2} = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>588</mn><mo>,</mo><mn>6</mn><mo>−</mo><mn>784</mn><mo>,</mo><mn>8</mn><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+588,6 - 784,8x = 0
+</annotation></semantics></math></p>
+<p>A megoldás:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mrow><mn>588</mn><mo>,</mo><mn>6</mn></mrow><mrow><mn>784</mn><mo>,</mo><mn>8</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>75</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+x = \frac{588,6}{784,8} = 0,75\text{ m}
+</annotation></semantics></math></p>
+<p>Tehát a munkás nem mehet az alátámasztási ponttól távolabb, mint
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>75</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0,75\text{ m}</annotation></semantics></math>
+a szabad vég felé, anélkül, hogy a gerenda le ne billenjen.</p>
+<h3 id="kísérlet-1">Kísérlet</h3>
+<p><a href="https://www.youtube.com/shorts/wuvrJnYLCV8">Táncoló
+baba</a></p>
+<h2 id="merev-test-egyensúlyának-feltételei">Merev test egyensúlyának
+feltételei</h2>
+<p>Korábbról tudjuk, hogy tetszőleges pontrendszer egyensúlyához
+szükséges, hogy a külső erők eredője nulla legyen. Ez, mint a példákból
+is láthatjuk, nem elég. Az is kell, hogy a külső erők eredő
+forgatónyomatéka is nulla legyen.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msubsup><mover><mi>F</mi><mo accent="true">→</mo></mover><mi>i</mi><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mover><mn>0</mn><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">
+\sum_{i = 1}^{N} \vec{F}_i^{\text{k}} = \vec{0}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mi>i</mi></mrow><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+\sum_{i = 1}^{N} M_{z,i}^{\text{k}} = 0
+</annotation></semantics></math></p>
+<p>Az utóbbi feltétel síkmozgásra vonatkozik, amely az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+síkban történne, ha nem volna egyensúly. A teljes egyensúlyhoz mindhárom
+tengelyre vonatkozó forgatónyomatéknak
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math>-nak
+kell lennie a háromdimenziós térben. Az egyensúlyhoz a tengely pozíciója
+nem lényeges, de az iránya igen. Mondhatjuk, hogy háromdimenziós térben
+a pontrendszer egyensúlyának feltétele, hogy tetszőleges tengelyre
+vonatkozó forgatónyomaték nulla legyen. Merev testekre ez a két feltétel
+elegendő is, hiszen ezek deformációkat nem szenvedhetnek, így csak forgó
+és haladó mozgás lehetséges.</p>
+<hr />
+<h2 id="gyakorló-feladatok">Gyakorló feladatok</h2>
+<ol type="1">
+<li><p><strong>A létra problémája:</strong> Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4,0\text{ m}</annotation></semantics></math>
+hosszú,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ kg}</annotation></semantics></math>
+tömegű létra a sima (súrlódásmentes) függőleges falnak támaszkodik. A
+létra alja
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1,5\text{ m}</annotation></semantics></math>
+távolságra van a faltól a vízszintes talajon. A talaj nem sima, ott van
+súrlódás. Mekkora erővel nyomja a létra a falat, és mekkora a függőleges
+nyomóerő, illetve a vízszintes súrlódási erő a létra aljánál, ha a létra
+egyensúlyban van? (Tipp: írjuk fel a nyomatéki egyenletet a létra alsó
+pontjára, majd az erőegyensúlyokat
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+irányban! A számítás során használjuk a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9,81\text{ m/s}^2</annotation></semantics></math>
+értéket!)</p></li>
+<li><p><strong>Híd alátámasztása:</strong> Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20,0\text{ m}</annotation></semantics></math>
+hosszú, egyenletes tömegeloszlású híd tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> t</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ t}</annotation></semantics></math>.
+A hidat a két végpontjánál
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+pont) támasztják alá. A hídon megáll egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> t</mtext></mrow></mrow><annotation encoding="application/x-tex">5,0\text{ t}</annotation></semantics></math>
+tömegű teherautó úgy, hogy a tömegközéppontja az
+„<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>”
+alátámasztásttól
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">5,0\text{ m}</annotation></semantics></math>
+távolságra van. Számítsuk ki, mekkora
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>A</mi></msub><annotation encoding="application/x-tex">F_A</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>B</mi></msub><annotation encoding="application/x-tex">F_B</annotation></semantics></math>
+tartóerő (reakcióerő) ébred a két alátámasztásnál!</p></li>
+<li><p><strong>Cégtábla:</strong> Egy üzlet bejárata felett egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2,0\text{ m}</annotation></semantics></math>
+hosszú,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">8,0\text{ kg}</annotation></semantics></math>
+tömegű, vízszintes rúdra van rögzítve a cégtábla. A rúd egyik vége a
+falhoz van csuklósan rögzítve, a másik végét egy kötél tartja, amely a
+fallal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>30</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">30^\circ</annotation></semantics></math>-os
+szöget zár be (felfelé). A cégtábla tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">12\text{ kg}</annotation></semantics></math>,
+és a rúd szabad végén lóg. Mekkora erő feszíti a kötelet?</p></li>
+<li><p><strong>Toronydaru:</strong> Egy toronydaru vízszintes gémje
+aszimmetrikus. A forgástengelytől az egyik irányba
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{ m}</annotation></semantics></math>
+hosszú a kar (ellensúly oldala), a másik irányba
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>45</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">45\text{ m}</annotation></semantics></math>
+(teher oldala). A gém teljes tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> t</mtext></mrow></mrow><annotation encoding="application/x-tex">3\text{ t}</annotation></semantics></math>,
+súlypontja a tengelyben van (így nem forgat). Az ellensúly tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> t</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ t}</annotation></semantics></math>,
+és a tengelytől
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">12\text{ m}</annotation></semantics></math>-re
+helyezték el. Mekkora tömegű terhet emelhetünk fel a gém végén
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>45</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">45\text{ m}</annotation></semantics></math>-re),
+hogy a daru még éppen ne billenjen ki az egyensúlyából?</p></li>
+<li><p><strong>Talicska:</strong> Egy talicska teljes hossza a kerék
+tengelyétől a fogantyú végéig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1,5\text{ m}</annotation></semantics></math>.
+A megrakott talicska súlypontja a kerék tengelyétől
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0,5\text{ m}</annotation></semantics></math>
+távolságra van. A teher és a talicska együttes tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">60\text{ kg}</annotation></semantics></math>.</p>
+<ul>
+<li><ol type="a">
+<li>Mekkora függőleges erővel kell emelnünk a fogantyút az egyensúly
+fenntartásához?</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Mekkora erő terheli eközben a talicska kerekének tengelyét?</li>
+</ol></li>
+</ul></li>
+</ol>
+</body>
+</html>

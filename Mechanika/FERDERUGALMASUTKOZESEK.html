@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="tökéletesen-rugalmas-ferde-ütközések">Tökéletesen rugalmas,
+ferde ütközések</h1>
+<p>Most néhány fontosabb, tökéletesen rugalmasnak tekinthető ütközést
+vizsgálunk meg, melyek nem tekinthetők centrális ütközésnek.</p>
+<h2
+id="tökéletesen-rugalmas-ütközés-hatalmas-tömegű-testtel">Tökéletesen
+rugalmas ütközés hatalmas tömegű testtel</h2>
+<p>Láttuk, hogy a centrális esetben a tökéletesen rugalmas ütközés
+ugyanakkora sebességű visszapattanáshoz vezet, mint amekkora a
+becsapódás sebessége. Most arra vagyunk kíváncsiak, mekkora a
+visszaverődés szöge a beesési szöghöz képest a ferde ütközés
+esetében.</p>
+<p>Tegyük fel, hogy a nagy tömegű céltárgy felülete egy sík felület, és
+ennek ütközik neki a kisebb tömegű test. A találati pontban merőleges
+egyenest állítunk a nagy tömegű test síkjára, ez a <strong>beesési
+merőleges</strong>. Ennek a szöge a kezdeti sebességvektorral a
+<strong>beesési szög</strong>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>).
+A <strong>visszaverődési szög</strong>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>)
+a beesési merőleges és az ütközés utáni sebességvektor szöge.</p>
+<h3 id="szimuláció">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#84fdb621-068e-4ead-9814-cc2862fb8e85">Tökéletesen
+rugalmas, ferde ütközés nagy tömegű céltárggyal</a></p>
+<p>Amint a szimulációból is látszik, a beesési szög és a visszaverődési
+szög egyenlő. Miért van ez így? Két dolgot tudunk: 1. A mechanikai
+energia megmarad az ütközésben, hisz tökéletesen rugalmas ütközésről van
+szó. 2. A nagy tömegű test a felületére merőleges irányú erőt fejt ki a
+nekiütköző testre (a súrlódástól eltekintünk).</p>
+<p>Legyen a koordináta-rendszer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+tengelye merőleges a falra, az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+tengely pedig párhuzamos vele. Ekkor az energiamegmaradás:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>m</mi><mo>⋅</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><mo>⋅</mo><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{m \cdot v_0^2}{2} = \frac{m \cdot v^2}{2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">
+v_0 = v
+</annotation></semantics></math></p>
+<p>Vagyis az energiamegmaradás alapján az ütközés előtti sebesség
+nagysága egyenlő az ütközés utáni sebesség nagyságával. Mivel a falra
+párhuzamos erő
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>y</mi></msub><annotation encoding="application/x-tex">F_y</annotation></semantics></math>)
+nem hat (nincs súrlódás), a lendület
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+komponense megmarad:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mtext mathvariant="normal">e</mtext><mo>,</mo><mi>y</mi></mrow></msub><mo>=</mo><mn>0</mn><mspace width="1.0em"></mspace><mo>→</mo><mspace width="1.0em"></mspace><mi mathvariant="normal">Δ</mi><msub><mi>I</mi><mi>y</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+F_{\text{e},y} = 0 \quad \rightarrow \quad \Delta I_y = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⋅</mo><msub><mi>v</mi><mrow><mn>0</mn><mo>,</mo><mi>y</mi></mrow></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><msub><mi>v</mi><mi>y</mi></msub></mrow><annotation encoding="application/x-tex">
+m \cdot v_{0,y} = m \cdot v_y
+</annotation></semantics></math></p>
+<p>Tehát a falra párhuzamos lendületkomponens megmarad az ütközés során.
+Ha a beesési szög
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+és a visszaverődési szög
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+(a merőlegestől mérve):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>0</mn><mo>,</mo><mi>y</mi></mrow></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+v_{0,y} = v_0 \cdot \sin \alpha
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>y</mi></msub><mo>=</mo><mi>v</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">
+v_y = v \cdot \sin \beta
+</annotation></semantics></math></p>
+<p>Mivel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">v_0 = v</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>0</mn><mo>,</mo><mi>y</mi></mrow></msub><mo>=</mo><msub><mi>v</mi><mi>y</mi></msub></mrow><annotation encoding="application/x-tex">v_{0,y} = v_y</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⋅</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>v</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">
+m \cdot v_0 \cdot \sin \alpha = m \cdot v \cdot \sin \beta
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">
+\sin \alpha = \sin \beta
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mi>β</mi></mrow><annotation encoding="application/x-tex">
+\alpha = \beta
+</annotation></semantics></math></p>
+<p>Itt kihasználtuk, hogy a sebesség nagysága nem változik meg, tehát az
+egyenlet mindkét oldala osztható vele.</p>
+<h3 id="példa">Példa</h3>
+<p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>100</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">kg</mtext></mrow><annotation encoding="application/x-tex">0{,}100 \ \text{kg}</annotation></semantics></math>
+tömegű labda
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>00</mn><mspace width="0.222em"></mspace><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">3{,}00 \ \frac{\text{m}}{\text{s}}</annotation></semantics></math>
+nagyságú sebességgel tökéletesen rugalmasan ütközik a falnak és
+visszapattan. A beesési szög
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>30</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">30^\circ</annotation></semantics></math>,
+az ütközés ideje
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>00</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">ms</mtext></mrow><annotation encoding="application/x-tex">1{,}00 \ \text{ms}</annotation></semantics></math>.
+Mekkora a falra ható átlagos erő az ütközés alatt?</p>
+<p>A sebesség falra merőleges
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+irányú) komponense:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mrow><mn>0</mn><mo>,</mo><mi>x</mi></mrow></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><msub><mi>v</mi><mrow><mn>0</mn><mo>,</mo><mi>x</mi></mrow></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>100</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>00</mn><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msup><mn>30</mn><mo>∘</mo></msup><mo>≈</mo><mn>0</mn><mo>,</mo><mn>2598</mn><mspace width="0.222em"></mspace><mfrac><mrow><mtext mathvariant="normal">kg</mtext><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">
+I_{0,x} = m \cdot v_{0,x} = m \cdot v_0 \cdot \cos \alpha = 0{,}100 \cdot 3{,}00 \cdot \cos 30^\circ \approx 0{,}2598 \ \frac{\text{kg} \cdot \text{m}}{\text{s}}
+</annotation></semantics></math></p>
+<p>Mivel rugalmas az ütközés, a visszapattanás
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+irányú sebessége ellentétes irányú:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><msub><mi>v</mi><mrow><mn>0</mn><mo>,</mo><mi>x</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
+v_x = -v_{0,x}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⋅</mo><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mi>m</mi><mo>⋅</mo><msub><mi>v</mi><mrow><mn>0</mn><mo>,</mo><mi>x</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
+m \cdot v_x = -m \cdot v_{0,x}
+</annotation></semantics></math></p>
+<p>A lendületváltozás
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+irányban:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msub><mi>I</mi><mi>x</mi></msub><mo>=</mo><msub><mi>I</mi><mi>x</mi></msub><mo>−</mo><msub><mi>I</mi><mrow><mn>0</mn><mo>,</mo><mi>x</mi></mrow></msub><mo>=</mo><mi>−</mi><msub><mi>I</mi><mrow><mn>0</mn><mo>,</mo><mi>x</mi></mrow></msub><mo>−</mo><msub><mi>I</mi><mrow><mn>0</mn><mo>,</mo><mi>x</mi></mrow></msub><mo>=</mo><mi>−</mi><mn>2</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>2598</mn><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>5196</mn><mspace width="0.222em"></mspace><mfrac><mrow><mtext mathvariant="normal">kg</mtext><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">
+\Delta I_x = I_x - I_{0,x} = -I_{0,x} - I_{0,x} = -2 \cdot 0{,}2598 = -0{,}5196 \ \frac{\text{kg} \cdot \text{m}}{\text{s}}
+</annotation></semantics></math></p>
+<p>Az átlagos erő (a labdára ható):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mtext mathvariant="normal">e</mtext><mo>,</mo><mi>x</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mi>I</mi><mi>x</mi></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mi>−</mi><mn>0</mn><mo>,</mo><mn>5196</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>001</mn></mrow></mfrac><mo>=</mo><mi>−</mi><mn>519</mn><mo>,</mo><mn>6</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">N</mtext></mrow><annotation encoding="application/x-tex">
+F_{\text{e},x} = \frac{\Delta I_x}{t} = \frac{-0{,}5196}{0{,}001} = -519{,}6 \ \text{N}
+</annotation></semantics></math></p>
+<p>A falra ható erő ennek ellenerője (Newton III. törvénye):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>−</mi><msub><mi>F</mi><mrow><mtext mathvariant="normal">e</mtext><mo>,</mo><mi>x</mi></mrow></msub><mo>=</mo><mn>519</mn><mo>,</mo><mn>6</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">N</mtext></mrow><annotation encoding="application/x-tex">
+K = -F_{\text{e},x} = 519{,}6 \ \text{N}
+</annotation></semantics></math></p>
+<h2
+id="egyenlő-tömegű-testek-tökéletesen-rugalmas-ütközése-amikor-a-céltárgy-nyugalomban-van">Egyenlő
+tömegű testek tökéletesen rugalmas ütközése, amikor a céltárgy
+nyugalomban van</h2>
+<h3 id="szimuláció-1">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#2b3c424c-4e99-483b-a26e-c34d7ffa8834">Egyenlő
+tömegű testek tökéletesen rugalmas ütközése, amikor a céltárgy
+nyugalomban van</a></p>
+<p>A sebességek merőlegesek az ütközés után, amint a szimulációból
+látható! Miért is van ez így?</p>
+<p>Két dolgot tudunk: 1. Az összlendület megmarad az ütközésben. 2. A
+mechanikai energia megmarad az ütközés során.</p>
+<p>Lendületmegmaradás vektorosan:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⋅</mo><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>0</mn></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo>+</mo><mi>m</mi><mo>⋅</mo><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">
+m \cdot \vec{v}_0 = m \cdot \vec{v}_1 + m \cdot \vec{v}_2
+</annotation></semantics></math></p>
+<p>Egyszerűsítve a tömeggel:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>0</mn></msub><mo>=</mo><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo>+</mo><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">
+\vec{v}_0 = \vec{v}_1 + \vec{v}_2
+</annotation></semantics></math></p>
+<p>A kezdősebesség tehát a két végső sebesség vektori összege. Ez annyit
+jelent, hogy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><annotation encoding="application/x-tex">\vec{v}_1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>2</mn></msub><annotation encoding="application/x-tex">\vec{v}_2</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>0</mn></msub><annotation encoding="application/x-tex">\vec{v}_0</annotation></semantics></math>
+egy háromszög oldalai, amelynek leghosszabb oldala
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>0</mn></msub><annotation encoding="application/x-tex">\vec{v}_0</annotation></semantics></math>.</p>
+<p>Az energia megmaradása miatt:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>m</mi><mo>⋅</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><mo>⋅</mo><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mi>m</mi><mo>⋅</mo><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{m \cdot v_0^2}{2} = \frac{m \cdot v_1^2}{2} + \frac{m \cdot v_2^2}{2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+v_0^2 = v_1^2 + v_2^2
+</annotation></semantics></math></p>
+<p>A legutolsó egyenlet nem más, mint a
+<strong>Pitagorasz-tétel</strong> erre a háromszögre. Ez azt jelenti,
+hogy a háromszög derékszögű, tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><annotation encoding="application/x-tex">\vec{v}_1</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>2</mn></msub><annotation encoding="application/x-tex">\vec{v}_2</annotation></semantics></math>
+egymásra merőlegesek (amennyiben az ütközés nem centrális).</p>
+<h3 id="példa-1">Példa</h3>
+<p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>100</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">kg</mtext></mrow><annotation encoding="application/x-tex">0{,}100 \ \text{kg}</annotation></semantics></math>
+tömegű golyó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>00</mn><mspace width="0.222em"></mspace><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">5{,}00 \ \frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességgel ferdén ütközik tökéletesen rugalmasan egy ugyanolyan tömegű,
+álló golyóval, és lepattan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>00</mn><mspace width="0.222em"></mspace><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">4{,}00 \ \frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességgel. Mekkora lesz a kezdetben nyugvó golyó sebessége az ütközés
+után? A golyók forgása elhanyagolható, tehát pontszerűnek tekinthetők.
+Mekkora az átlagos erő a golyók között, ha az ütközés ideje
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>00</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">ms</mtext></mrow><annotation encoding="application/x-tex">1{,}00 \ \text{ms}</annotation></semantics></math>?</p>
+<p>Alkalmazzuk a Pitagorasz-tételt a sebességekre:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+v_0^2 = v_1^2 + v_2^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>5</mn><mn>2</mn></msup><mo>=</mo><msup><mn>4</mn><mn>2</mn></msup><mo>+</mo><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+5^2 = 4^2 + v_2^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><msqrt><mrow><msup><mn>5</mn><mn>2</mn></msup><mo>−</mo><msup><mn>4</mn><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>25</mn><mo>−</mo><mn>16</mn></mrow></msqrt><mo>=</mo><msqrt><mn>9</mn></msqrt><mo>=</mo><mn>3</mn><mspace width="0.222em"></mspace><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">
+v_2 = \sqrt{5^2 - 4^2} = \sqrt{25 - 16} = \sqrt{9} = 3 \ \frac{\text{m}}{\text{s}}
+</annotation></semantics></math></p>
+<p>Az erő számítása (a második golyó lendületváltozásából):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mi>I</mi><mn>2</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><mo>⋅</mo><msub><mi>v</mi><mn>2</mn></msub><mo>−</mo><mn>0</mn></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+F_{\text{e}} = \frac{\Delta I_2}{t} = \frac{m \cdot v_2 - 0}{t}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mn>3</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>001</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>3</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>001</mn></mrow></mfrac><mo>=</mo><mn>300</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">N</mtext></mrow><annotation encoding="application/x-tex">
+F_{\text{e}} = \frac{0{,}1 \cdot 3}{0{,}001} = \frac{0{,}3}{0{,}001} = 300 \ \text{N}
+</annotation></semantics></math></p>
+<p>Tehát
+<strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>300</mn><mo>,</mo><mn>0</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">N</mtext></mrow><annotation encoding="application/x-tex">300{,}0 \ \text{N}</annotation></semantics></math></strong>
+erő lép fel a golyók között átlagosan az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">ms</mtext></mrow><annotation encoding="application/x-tex">1 \ \text{ms}</annotation></semantics></math>
+ütközési idő alatt. Ez a kezdetben nyugvó golyót
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>00</mn><mspace width="0.222em"></mspace><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">3{,}00 \ \frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességre gyorsítja fel.</p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li>Egy teniszlabda
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>,</mo><mn>0</mn><mspace width="0.222em"></mspace><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">10{,}0 \ \frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességgel csapódik egy függőleges falnak. A beesési szög (a fal
+normálisához képest)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>45</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">45^\circ</annotation></semantics></math>.
+A labda tökéletesen rugalmasan pattan vissza.
+<ul>
+<li><ol type="a">
+<li>Mekkora a labda sebességváltozásának nagysága
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">\Delta v</annotation></semantics></math>)?</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Ha a labda tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>58</mn><mo>,</mo><mn>0</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">g</mtext></mrow><annotation encoding="application/x-tex">58{,}0 \ \text{g}</annotation></semantics></math>
+és az érintkezés
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>00</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">ms</mtext></mrow><annotation encoding="application/x-tex">5{,}00 \ \text{ms}</annotation></semantics></math>-ig
+tart, mekkora átlagos erőt fejt ki a fal a labdára?</li>
+</ol></li>
+</ul></li>
+<li>Egy jégkorong
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
+sebességgel súrlódásmentesen csúszik a jégen, és nekiütközik egy másik,
+azonos tömegű, álló jégkorongnak. Az ütközés után az első korong az
+eredeti irányához képest
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>30</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">30^\circ</annotation></semantics></math>-os
+szögben csúszik tovább
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math>
+sebességgel.
+<ul>
+<li><ol type="a">
+<li>Milyen szögben mozog a második korong az eredeti irányhoz
+képest?</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Fejezze ki a két korong ütközés utáni sebességét
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">v_1, v_2</annotation></semantics></math>)
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
+segítségével!</li>
+</ol></li>
+</ul></li>
+<li>Egy részecskegyorsítóban protonokat ütköztetnek álló protonokkal.
+Egy konkrét mérés során a detektorok azt mutatták, hogy a szétrepülő
+protonok sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>01</mn><mi>c</mi></mrow><annotation encoding="application/x-tex">v_1 = 0{,}01c</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>0173</mn><mi>c</mi></mrow><annotation encoding="application/x-tex">v_2 = 0{,}0173c</annotation></semantics></math>.
+<ul>
+<li><ol type="a">
+<li>Mekkora volt a bejövő proton
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
+sebessége, ha feltételezzük, hogy az ütközés során a mozgási energia
+megmaradt (azaz a sugárzási veszteségektől eltekintünk)?</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Igazolja számítással, hogy amennyiben az energiamegmaradás
+teljesült, úgy a két proton pályája pontosan derékszöget zárt be
+egymással!</li>
+</ol></li>
+</ul></li>
+</ol>
+</body>
+</html>

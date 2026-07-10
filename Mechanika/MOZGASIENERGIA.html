@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-mozgási-energia">A mozgási energia</h1>
+<h2 id="a-gyorsítási-munka">A gyorsítási munka</h2>
+<p>Vizsgáljuk meg, mekkora a gyorsítási munka, ha egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+tömegű testet
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
+kezdősebességről
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+sebességre gyorsítunk fel. Legyen a gyorsítás időtartama
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+a gyorsulás állandó, és jelöljük
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>-val.</p>
+<p>A testre ható gyorsító eredő erő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>a</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+F_e = m \cdot a = m \cdot \frac {v - v_0} {t}
+</annotation></semantics></math></p>
+<p>A gyorsítási szakasz hossza a négyzetes úttörvényből kifejezve
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+helyére a sebességváltozást behelyettesítve):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>⋅</mo><mi>t</mi><mo>=</mo><mfrac><mrow><mn>2</mn><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow><mn>2</mn></mfrac><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = \left(v_0 + \frac {v - v_0} {2}\right) \cdot t = \frac {2v_0 + (v - v_0)} {2} \cdot t
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>v</mi></mrow><mn>2</mn></mfrac><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
+s = \frac {v_0 + v} {2} \cdot t
+</annotation></semantics></math></p>
+<p>A végzett gyorsítási munka az erő és az elmozdulás szorzataként:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><msub><mi>F</mi><mi>e</mi></msub><mo>⋅</mo><mi>s</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>⋅</mo><mfrac><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>v</mi></mrow><mn>2</mn></mfrac><mo>⋅</mo><mi>t</mi><mo>=</mo><mfrac><mi>m</mi><mn>2</mn></mfrac><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mi>m</mi><mn>2</mn></mfrac><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>v</mi><mn>2</mn></msup><mo>−</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+W = F_e \cdot s = m \cdot \frac {v - v_0} {t} \cdot \frac {v_0 + v} {2} \cdot t = \frac {m} {2} \cdot (v - v_0) \cdot (v + v_0) = \frac {m} {2} \cdot (v^2 - v_0^2)  
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mo>⋅</mo><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>−</mo><mfrac><mrow><mi>m</mi><mo>⋅</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+W = \frac {m \cdot v^2} {2} - \frac {m \cdot v_0^2} {2}
+</annotation></semantics></math></p>
+<p>Eredményünk egyértelműen megmutatja, hogy a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>m</mi><mo>⋅</mo><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac {m \cdot v^2} {2}</annotation></semantics></math>
+szerkezetű mennyiség kulcsfontosságú a gyorsítási munka kiszámításánál,
+hiszen ennek a fizikai állapotjelzőnek a megváltozása (különbsége)
+határozza meg a végzett munkát. Ezt a mennyiséget <strong>mozgási
+energiának</strong> (kinetikus energiának) nevezzük. A gyorsítási munka
+a test mozgási energiájának növelésére fordítódik. Mint minden
+energiafajta, ennek az egysége is a <strong>joule</strong> (J).</p>
+<h2 id="mozgási-energia">Mozgási energia</h2>
+<blockquote>
+<p><strong>A mozgási energia a test tömegének és a pillanatnyi sebessége
+négyzetének szorzatának a fele. Jele:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>m</mi></msub><annotation encoding="application/x-tex">E_m</annotation></semantics></math>
+vagy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/x-tex">E_k</annotation></semantics></math>.</strong></p>
+</blockquote>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>m</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mi>m</mi><mo>⋅</mo><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+E_m = \frac{1}{2} \cdot m \cdot v^2
+</annotation></semantics></math></p>
+<h2 id="a-munkatétel">A munkatétel</h2>
+<blockquote>
+<p><strong>A testen végzett gyorsítási (vagy lassítási) munka egyenlő a
+test mozgási energiájának megváltozásával.</strong></p>
+</blockquote>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mi>m</mi></msub><mo>=</mo><msub><mi>E</mi><mi>m</mi></msub><mo>−</mo><msub><mi>E</mi><mrow><mi>m</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">
+W = \Delta E_m = E_m - E_{m,0}
+</annotation></semantics></math></p>
+<p>A munkatételt mi a fenti levezetésben csak az egyenes vonalú,
+egyenletesen változó mozgás speciális esetére igazoltuk, de a tétel
+tetszőleges pályán történő, tetszőlegesen változó mozgásokra is
+általánosan érvényes.</p>
+<h2 id="példák">Példák</h2>
+<ol type="1">
+<li>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1300</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1300\text{ kg}</annotation></semantics></math>
+tömegű gépkocsi felgyorsít
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">10{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességről
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">20{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességre. Mekkora a mozgási energiája kezdetben, és mekkorára nő a
+gyorsítás végére? Mekkora a motor által végzett gyorsítási munka, ha a
+belső veszteségektől eltekintünk? Számítsuk ki a munkát hagyományosan
+is, a gyorsulás, a gyorsítóerő és a megtett út meghatározásával!
+Egyeznek az eredmények?</li>
+</ol>
+<p>A test kezdeti mozgási energiája:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>m</mi><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>m</mi><mo>⋅</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>1300</mn><mo>⋅</mo><msup><mn>10</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>65</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+E_{m,0} = \frac {m \cdot v_0^2} {2} = \frac {1300 \cdot 10^2} {2} = 65\ 000\text{ J}
+</annotation></semantics></math></p>
+<p>A test végső mozgási energiája:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>m</mi></msub><mo>=</mo><mfrac><mrow><mi>m</mi><mo>⋅</mo><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>1300</mn><mo>⋅</mo><msup><mn>20</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>260</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+E_m = \frac {m \cdot v^2} {2} = \frac {1300 \cdot 20^2} {2} = 260\ 000\text{ J}
+</annotation></semantics></math></p>
+<p>A munkatétel alapján a motor gyorsítási munkája a két energiaérték
+különbsége:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mi>m</mi></msub><mo>=</mo><msub><mi>E</mi><mi>m</mi></msub><mo>−</mo><msub><mi>E</mi><mrow><mi>m</mi><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mn>260</mn><mspace width="0.222em"></mspace><mn>000</mn><mo>−</mo><mn>65</mn><mspace width="0.222em"></mspace><mn>000</mn><mo>=</mo><mn>195</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow><mo>=</mo><mn>195</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kJ</mtext></mrow></mrow><annotation encoding="application/x-tex">
+W = \Delta {E_m} = E_m - E_{m,0} = 260\ 000 - 65\ 000 = 195\ 000\text{ J} = 195{,}0\text{ kJ}
+</annotation></semantics></math></p>
+<p>A gyorsítási munka tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>195</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kJ</mtext></mrow></mrow><annotation encoding="application/x-tex">195\text{ kJ}</annotation></semantics></math>.
+Számítsuk ki ezt a kinematika és dinamika felől is! Tételezzük fel
+önkényesen, hogy a gyorsítás időtartama pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ s}</annotation></semantics></math>
+volt:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mn>20</mn><mo>−</mo><mn>10</mn></mrow><mn>10</mn></mfrac><mo>=</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {v - v_0} {t} = \frac {20 - 10} {10} = 1\text{ }\frac {\text{m}} {\text{s}^2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>a</mi><mo>=</mo><mn>1300</mn><mo>⋅</mo><mn>1</mn><mo>=</mo><mn>1300</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F_e = m \cdot a = 1300 \cdot 1 = 1300\text{ N}
+</annotation></semantics></math></p>
+<p>A gyorsítási szakasz hossza a négyzetes úttörvény alapján:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>=</mo><mn>10</mn><mo>⋅</mo><mn>10</mn><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><msup><mn>10</mn><mn>2</mn></msup><mo>=</mo><mn>100</mn><mo>+</mo><mn>50</mn><mo>=</mo><mn>150</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 10 \cdot 10 + \frac {1} {2} \cdot 10^2 = 100 + 50 = 150\text{ m}
+</annotation></semantics></math></p>
+<p>A mechanikai munka definíciója szerint:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><msub><mi>F</mi><mi>e</mi></msub><mo>⋅</mo><mi>s</mi><mo>=</mo><mn>1300</mn><mo>⋅</mo><mn>150</mn><mo>=</mo><mn>195</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow><mo>=</mo><mn>195</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kJ</mtext></mrow></mrow><annotation encoding="application/x-tex">
+W = F_e \cdot s = 1300 \cdot 150 = 195\ 000\text{ J} = 195{,}0\text{ kJ}
+</annotation></semantics></math></p>
+<p>Látható, hogy a két különböző megközelítés pontosan ugyanazt a
+végeredményt adja, ami igazolja, hogy a munkatétel használatával
+rengeteg felesleges köztes számítást takaríthatunk meg.</p>
+<ol start="2" type="1">
+<li>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}10\text{ kg}</annotation></semantics></math>
+tömegű követ függőlegesen feldobunk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">5\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+kezdősebességgel. Mekkora a nehézségi erő munkája, amíg a kő sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">2\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>-ra
+fékeződik le? Határozzuk meg az eredményt a munkatétel nélkül, a
+nehézségi erő és az elmozdulás közvetlen szorzatából is!</li>
+</ol>
+<p>A kezdő és végső kinetikus energiák:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>m</mi><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi>m</mi><mo>⋅</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>10</mn><mo>⋅</mo><msup><mn>5</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>1</mn><mo>,</mo><mn>25</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+E_{m,0} = \frac {m \cdot v_0^2} {2} = \frac {0{,}10 \cdot 5^2} {2} = 1{,}25\text{ J}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>m</mi></msub><mo>=</mo><mfrac><mrow><mi>m</mi><mo>⋅</mo><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>10</mn><mo>⋅</mo><msup><mn>2</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+E_m = \frac {m \cdot v^2} {2} = \frac {0{,}10 \cdot 2^2} {2} = 0{,}20\text{ J}
+</annotation></semantics></math></p>
+<p>A munkatétel alapján a gravitáció által végzett munka:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mi>m</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>20</mn><mo>−</mo><mn>1</mn><mo>,</mo><mn>25</mn><mo>=</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>05</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+W = \Delta E_m = 0{,}20 - 1{,}25 = -1{,}05\text{ J}
+</annotation></semantics></math></p>
+<p>A nehézségi erő munkája negatív, mivel akadályozza a mozgást
+(lassítja a követ). Ellenőrizzük ezt dinamikai úton! A testre ható
+nehézségi erő nagysága
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mi>G</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>981</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F_e = G = m \cdot g = 0{,}1 \cdot 9{,}81 = 0{,}981\text{ N}
+</annotation></semantics></math></p>
+<p>A függőleges tengely menti lassulás értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>−</mi><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">a = -9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>,
+a sebességváltozás pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>v</mi><mo>=</mo><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>2</mn><mo>−</mo><mn>5</mn><mo>=</mo><mi>−</mi><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">\Delta v = v - v_0 = 2 - 5 = -3\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>.
+Az emelkedés időtartama:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>v</mi></mrow><mi>t</mi></mfrac><mo>⟹</mo><mi>−</mi><mn>9</mn><mo>,</mo><mn>81</mn><mo>=</mo><mfrac><mrow><mi>−</mi><mn>3</mn></mrow><mi>t</mi></mfrac><mo>⟹</mo><mi>t</mi><mo>=</mo><mfrac><mrow><mi>−</mi><mn>3</mn></mrow><mrow><mi>−</mi><mn>9</mn><mo>,</mo><mn>81</mn></mrow></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>3058</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+a = \frac {\Delta v} {t} \implies -9{,}81 = \frac {-3} {t} \implies t = \frac {-3} {-9{,}81} \approx 0{,}3058\text{ s}
+</annotation></semantics></math></p>
+<p>Az ezalatt megtett függőleges elmozdulás (emelkedési magasság):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>h</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>=</mo><mn>5</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>3058</mn><mo>+</mo><mfrac><mrow><mi>−</mi><mn>9</mn><mo>,</mo><mn>81</mn></mrow><mn>2</mn></mfrac><mo>⋅</mo><mn>0</mn><mo>,</mo><msup><mn>3058</mn><mn>2</mn></msup><mo>≈</mo><mn>1</mn><mo>,</mo><mn>529</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>458</mn><mo>=</mo><mn>1</mn><mo>,</mo><mn>071</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+s = h = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 5 \cdot 0{,}3058 + \frac {-9{,}81} {2} \cdot 0{,}3058^2 \approx 1{,}529 - 0{,}458 = 1{,}071\text{ m}
+</annotation></semantics></math></p>
+<p>Mivel a felfelé mutató elmozdulás és a lefelé ható nehézségi erő
+ellentétes irányúak
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\alpha = 180^\circ</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi>−</mi><msub><mi>F</mi><mi>e</mi></msub><mo>⋅</mo><mi>s</mi><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>981</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>071</mn><mo>≈</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>050</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+W = -F_e \cdot s = -0{,}981 \cdot 1{,}071 \approx -1{,}050\text{ J}
+</annotation></semantics></math></p>
+<p>A számítási pontosság határain belül az eredmények tökéletesen
+megegyeznek.</p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<p><strong>1. Haladó autó energiája</strong> Mekkora a mozgási energiája
+egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1200\text{ kg}</annotation></semantics></math>
+tömegű személygépkocsinak, amikor kerekítve
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>72</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">72\text{ km/h}</annotation></semantics></math>
+állandó sebességgel halad az autópályán? (A számítás előtt ne felejtsd
+el átváltani a sebességet SI-egységbe!)</p>
+<p><strong>2. Test felgyorsítása nyugalomból</strong> Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ kg}</annotation></semantics></math>
+tömegű, kezdetben álló testet pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">40\text{ J}</annotation></semantics></math>
+gyorsítási munka árán hozunk mozgásba egy súrlódásmentes vízszintes
+felületen. Mekkora lesz a test végsebessége a gyorsítási folyamat
+lezárulásakor?</p>
+<p><strong>3. Labda megállítása</strong> Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}4\text{ kg}</annotation></semantics></math>
+tömegű labda
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">15\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességgel érkezik a kapura, majd a kapus magabiztosan megfogja azt (a
+labda megáll). Mekkora munkát végzett a labda megállítása során a kapus
+keze által kifejtett fékezőerő? Miért negatív vagy pozitív ez a
+munka?</p>
+<p><strong>4. Sebességváltozás hatása az energiára</strong>
+Hányszorosára változik meg egy tetszőleges mozgó test mozgási energiája,
+ha a sebességét a pontosan kétszeresére növeljük, miközben a tömege
+szigorúan változatlan marad?</p>
+<p><strong>5. Autó sebességének növelése</strong> Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1500\text{ kg}</annotation></semantics></math>
+tömegű gépkocsi sebességét egyenletesen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">20\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>-ról
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">30\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>-ra
+növeljük. Mennyi hasznos gyorsítási munkát kell végeznie a motornak a
+folyamat alatt, ha a gördülési ellenállástól és a súrlódástól
+eltekintünk?</p>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-szabadesés">A szabadesés</h1>
+<h2 id="kísérletek">Kísérletek</h2>
+<p><a href="https://www.youtube.com/watch?v=E43-CfukEgs">A szabadesés
+kísérlet a legnagyobb vákuumkamrában</a></p>
+<p><a href="https://www.youtube.com/watch?v=gZbsgk5KgpU">Szabadesés
+kísérletek vákuumkamra nélkül</a></p>
+<p><a href="https://www.youtube.com/watch?v=KDp1tiUsZw8">Szabadesés
+kísérlet a Holdon</a></p>
+<h2 id="szimuláció">Szimuláció</h2>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#0dc5f5ff-96d5-4814-a91d-ee64042e037b">Szabadesés
+interaktív szimulátor</a></p>
+<p>Vizsgáljuk meg a szabadon eső test sebesség-idő és út-idő
+grafikonjait a szimuláció futtatása alapján!</p>
+<h2 id="a-szabadesés-és-feltételei">A szabadesés és feltételei</h2>
+<p>Galileo Galilei megfigyelései szerint a különböző tömegű testek –
+anyagi minőségüktől függetlenül –, ha azonos magasságból engedjük el
+őket, azonos idő alatt érnek földet. Ez a törvényszerűség azonban csak
+akkor érvényesül maradéktalanul, ha a mozgás során a légellenállás
+elhanyagolható, vagyis a testek minden más külső hatástól mentesen,
+tisztán szabadon esnek.</p>
+<p>Galilei azt is megállapította, hogy a szabadesés egyenletesen változó
+(gyorsuló) mozgás, melynek állandó gyorsulását <strong>nehézségi
+gyorsulásnak</strong> nevezzük. Ennek átlagos értéke a Föld felszínén
+körülbelül
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.
+A nehézségi gyorsulás értéke a Föld alakja és tömegeloszlása miatt
+kismértékben változik a földrajzi hely függvényében.</p>
+<blockquote>
+<p><strong>A szabadon eső testek a Föld felszíne közelében egyenletesen
+gyorsuló mozgást végeznek, melynek gyorsulása a nehézségi gyorsulás. A
+nehézségi gyorsulás jele:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>,
+átlagos értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>,
+amely kismértékben függ a földrajzi helytől. Egy adott helyen a
+nehézségi gyorsulás minden testre nézve pontosan
+ugyanakkora.</strong></p>
+</blockquote>
+<p>A nulla kezdősebességű esésre teljes mértékben érvényes a négyzetes
+úttörvény:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mi>g</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+h = \frac {g} {2} \cdot t^2
+</annotation></semantics></math></p>
+<p>Itt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+az elengedés magassága (a megtett függőleges út),
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+az esés időtartama,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+pedig a nehézségi gyorsulás.</p>
+<h3 id="példák">Példák</h3>
+<ol type="1">
+<li>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">5{,}00\text{ m}</annotation></semantics></math>
+magasságból kiejtett test mennyi idő alatt ér talajt, ha szabadon esik?
+Mekkora sebességgel csapódik be?</li>
+</ol>
+<p>Írjuk fel a négyzetes úttörvényt, és jelöljük az ismeretlen időt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-szel:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mi>g</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+h = \frac {g} {2} \cdot t^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>00</mn><mo>=</mo><mfrac><mrow><mn>9</mn><mo>,</mo><mn>81</mn></mrow><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+5{,}00 = \frac {9{,}81} {2} \cdot x^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>00</mn><mo>=</mo><mn>4</mn><mo>,</mo><mn>905</mn><mo>⋅</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+5{,}00 = 4{,}905 \cdot x^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>≈</mo><mn>1</mn><mo>,</mo><mn>019</mn></mrow><annotation encoding="application/x-tex">
+x^2 \approx 1{,}019
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>±</mi><mn>1</mn><mo>,</mo><mn>010</mn></mrow><annotation encoding="application/x-tex">
+x = \pm 1{,}010
+</annotation></semantics></math></p>
+<p>A negatív időértéket mint fizikailag értelmezhetetlen megoldást
+elvetjük, így a test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>01</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">1{,}01\text{ s}</annotation></semantics></math>
+alatt zuhan le.</p>
+<p>A becsapódási sebesség kiszámítása a gyorsulás alapdefiníciójából
+történik:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>g</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = g = \frac {v - v_0} {t}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><mn>0</mn></mrow><mrow><mn>1</mn><mo>,</mo><mn>0096</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+9{,}81 = \frac {v - 0} {1{,}0096}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>≈</mo><mn>9</mn><mo>,</mo><mn>90</mn></mrow><annotation encoding="application/x-tex">
+v \approx 9{,}90
+</annotation></semantics></math></p>
+<p>A talajba csapódás pillanatnyi sebessége tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>90</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">9{,}90\text{ }\frac {\text{m}} {\text{s}}</annotation></semantics></math>.</p>
+<ol start="2" type="1">
+<li>Egy szabadon eső test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">30{,}0\text{ }\frac {\text{m}} {\text{s}}</annotation></semantics></math>
+sebességgel csapódik a talajba. Mennyi ideig zuhant a test, és mekkora
+magasságból engedték el?</li>
+</ol>
+<p>Határozzuk meg először a zuhanás időtartamát, ahol az ismeretlent
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+jelöli:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>g</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = g = \frac {v - v_0} {t}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mo>=</mo><mfrac><mrow><mn>30</mn><mo>,</mo><mn>0</mn><mo>−</mo><mn>0</mn></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">
+9{,}81 = \frac {30{,}0 - 0} {x}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mi>x</mi><mo>=</mo><mn>30</mn><mo>,</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+9{,}81 \cdot x = 30{,}0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≈</mo><mn>3</mn><mo>,</mo><mn>058</mn></mrow><annotation encoding="application/x-tex">
+x \approx 3{,}058
+</annotation></semantics></math></p>
+<p>A zuhanás időtartama három értékes jegyre kerekítve
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>06</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">3{,}06\text{ s}</annotation></semantics></math>.</p>
+<p>Ezt felhasználva a kezdőmagasság már közvetlenül számítható:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mi>g</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>9</mn><mo>,</mo><mn>81</mn></mrow><mn>2</mn></mfrac><mo>⋅</mo><mn>3</mn><mo>,</mo><msup><mn>058</mn><mn>2</mn></msup><mo>≈</mo><mn>45</mn><mo>,</mo><mn>9</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+h = \frac {g} {2} \cdot t^2 = \frac {9{,}81} {2} \cdot 3{,}058^2 \approx 45{,}9\text{ m}
+</annotation></semantics></math></p>
+<p>A testet tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>45</mn><mo>,</mo><mn>9</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">45{,}9\text{ m}</annotation></semantics></math>
+magasságból engedték el.</p>
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>80</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">80{,}0\text{ m}</annotation></semantics></math>
+magasságból szabadon ejtett test mennyi idő alatt ér talajt, és mekkora
+sebességgel csapódik be a földbe?</li>
+<li>Egy szabadon eső tárgy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">20{,}0\text{ }\frac {\text{m}} {\text{s}}</annotation></semantics></math>
+sebességgel érkezik meg a talajra. Mennyi ideig zuhant, és milyen
+magasról ejtették le?</li>
+<li>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>150</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">150{,}0\text{ m}</annotation></semantics></math>
+magas torony tetejéről leejtenek egy kavicsot. Mennyi idő alatt érkezik
+meg a földre, és mekkora lesz a végsebessége közvetlenül a becsapódás
+előtt?</li>
+<li>Egy szabadon eső test becsapódási sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">60{,}0\text{ }\frac {\text{m}} {\text{s}}</annotation></semantics></math>.
+Mennyi ideig tartott a zuhanása, és mekkora magasságból indult el?</li>
+<li>Egy kiejtett test az esésének pontosan a 3. másodperce végén éri el
+a talajt. Mekkora utat tett meg a földet érésig, és mekkora volt a
+pillanatnyi sebessége az 1. másodperc végén?</li>
+</ol>
+</body>
+</html>

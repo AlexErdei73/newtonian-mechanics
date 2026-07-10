@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="lejtő-súrlódással">Lejtő súrlódással</h1>
+<h2 id="tapadási-erő-a-lejtőn">Tapadási erő a lejtőn</h2>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=dGQS1j_aTj8">A
+lejtőhajlásszög és a súrlódási erők kapcsolata (Kísérleti videó)</a></p>
+<h3 id="szimuláció">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#ef6ee12e-a1f2-400e-b6ce-7815f010aa4f">Test
+lejtőn egyensúlyban a tapadási erő által interaktív szimulátor</a></p>
+<h3
+id="összefüggés-a-lejtőszög-és-a-tapadási-együttható-között">Összefüggés
+a lejtőszög és a tapadási együttható között</h3>
+<p>A Földhöz rögzített inerciarendszerben a testre ható nehézségi erő
+lejtőirányú (lefelé húzó) komponense:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+F = m \cdot g \cdot \sin \alpha
+</annotation></semantics></math></p>
+<p>A lejtő felületére merőleges kényszererő nagysága:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+K = m \cdot g \cdot \cos \alpha
+</annotation></semantics></math></p>
+<p>A felületek között ébredő tapadási súrlódási erőre általánosan
+érvényes:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mo>≤</mo><msub><mi>μ</mi><mi>t</mi></msub><mo>⋅</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">
+F_t \leqslant \mu_t \cdot K
+</annotation></semantics></math></p>
+<p>Amíg a test statikus egyensúlyban van (nem mozdul meg), a tapadási
+súrlódási erő hajszálpontosan egyenlő a lejtőirányú nehézségi
+erőkomponenssel:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mo>=</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">
+F_t = F
+</annotation></semantics></math></p>
+<p>Helyettesítsük be a komponenseket a tapadási feltétel
+egyenlőtlenségébe:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>≤</mo><msub><mi>μ</mi><mi>t</mi></msub><mo>⋅</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+m \cdot g \cdot \sin \alpha \leqslant \mu_t \cdot m \cdot g \cdot \cos \alpha
+</annotation></semantics></math></p>
+<p>Mivel a test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+tömege és a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+nehézségi gyorsulás mindkét oldalon szerepel, egyszerűsítés után a
+következőt kapjuk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>≤</mo><msub><mi>μ</mi><mi>t</mi></msub><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+\sin \alpha \leqslant \mu_t \cdot \cos \alpha
+</annotation></semantics></math></p>
+<p>Mindkét oldalt elosztva a pozitív
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\cos \alpha</annotation></semantics></math>
+értékkel (mivel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>&lt;</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\alpha &lt; 90^\circ</annotation></semantics></math>),
+eljutunk a keresett összefüggéshez:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>≤</mo><msub><mi>μ</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">
+\tan \alpha \leqslant \mu_t
+</annotation></semantics></math></p>
+<p>Ez a rendkívül fontos eredmény azt mutatja, hogy <strong>amennyiben a
+lejtő hajlásszögének tangense nem haladja meg a tapadási súrlódási
+együttható értékét, a test nem csúszik meg, a tömegétől függetlenül
+nyugalomban marad</strong>. A megcsúszás határhelyzetét (a maximális
+lejtőszöget) az egyenlőség állapota határozza meg:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><msub><mi>α</mi><mtext mathvariant="normal">max</mtext></msub><mo>=</mo><msub><mi>μ</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">\tan \alpha_{\text{max}} = \mu_t</annotation></semantics></math>.</p>
+<h3 id="példa">Példa</h3>
+<p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}00\text{ m}</annotation></semantics></math>
+magas és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">6{,}00\text{ m}</annotation></semantics></math>
+széles lejtőn egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}1\text{ kg}</annotation></semantics></math>
+tömegű test helyezkedik el. Mekkora szöget zár be a lejtő a
+vízszintessel? Mekkora a lejtőn lefelé húzó erő és mekkora a
+kényszererő? Mekkora a tapadási erő maximuma, ha
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><mi>t</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\mu_t = 0{,}5</annotation></semantics></math>?
+Mekkora lejtőszögnél csúszik meg a test? A nehézségi gyorsulás értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.</p>
+<p>A lejtő geometriája alapján a hajlásszög tangense:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mo>,</mo><mn>00</mn></mrow><mrow><mn>6</mn><mo>,</mo><mn>00</mn></mrow></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>3333</mn><mo>⟹</mo><mi>α</mi><mo>≈</mo><mn>18</mn><mo>,</mo><msup><mn>43</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">
+\tan \alpha = \frac{2{,}00}{6{,}00} \approx 0{,}3333 \implies \alpha \approx 18{,}43^\circ
+</annotation></semantics></math></p>
+<p>A lejtőirányú nehézségi erőkomponens nagysága:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>18</mn><mo>,</mo><msup><mn>43</mn><mo>∘</mo></msup><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><mn>0</mn><mo>,</mo><mn>3101</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F = m \cdot g \cdot \sin \alpha = 0{,}1 \cdot 9{,}81 \cdot \sin(18{,}43^\circ) \approx 0{,}3101\text{ N}
+</annotation></semantics></math></p>
+<p>A lejtőre merőleges kényszererő nagysága:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>18</mn><mo>,</mo><msup><mn>43</mn><mo>∘</mo></msup><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><mn>0</mn><mo>,</mo><mn>9307</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+K = m \cdot g \cdot \cos \alpha = 0{,}1 \cdot 9{,}81 \cdot \cos(18{,}43^\circ) \approx 0{,}9307\text{ N}
+</annotation></semantics></math></p>
+<p>Számítsuk ki a tapadási súrlódási erő maximális lehetséges
+értékét:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mi>t</mi><mo>,</mo><mtext mathvariant="normal">max</mtext></mrow></msub><mo>=</mo><msub><mi>μ</mi><mi>t</mi></msub><mo>⋅</mo><mi>K</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>9307</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow><mo>≈</mo><mn>0</mn><mo>,</mo><mn>4654</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F_{t,\text{max}} = \mu_t \cdot K = 0{,}5 \cdot 0{,}9307\text{ N} \approx 0{,}4654\text{ N}
+</annotation></semantics></math></p>
+<p>Mivel a tapadási súrlódási erő maximuma
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>4654</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}4654\text{ N}</annotation></semantics></math>)
+nagyobb, mint a testet lefelé kényszerítő erő
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>3101</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}3101\text{ N}</annotation></semantics></math>),
+a súrlódás képes megakadályozni a mozgást, így a test nyugalomban
+marad.</p>
+<p>Határozzuk meg azt a kritikus szöget, ahol a test éppen
+megcsúszna:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><msub><mi>α</mi><mtext mathvariant="normal">max</mtext></msub><mo>=</mo><msub><mi>μ</mi><mi>t</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo>⟹</mo><msub><mi>α</mi><mtext mathvariant="normal">max</mtext></msub><mo>≈</mo><mn>26</mn><mo>,</mo><msup><mn>57</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">
+\tan \alpha_{\text{max}} = \mu_t = 0{,}5 \implies \alpha_{\text{max}} \approx 26{,}57^\circ
+</annotation></semantics></math></p>
+<h2 id="súrlódási-erő-a-lejtőn-mozgás-közben">Súrlódási erő a lejtőn
+(Mozgás közben)</h2>
+<h3 id="szimuláció-1">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#310ef527-8324-47b6-a1bd-ac3682ef52bb">Lejtőn
+lecsúszó test, ha van súrlódás interaktív szimulátor</a></p>
+<h3 id="a-gyorsulás-kiszámítása">A gyorsulás kiszámítása</h3>
+<p>Amennyiben a lejtő hajlásszöge meghaladja a tapadási határértéket, a
+test megcsúszik, és lefelé gyorsulva mozog. A mozgás közben fellépő
+csúszási súrlódási erő már a csúszási együtthatótól függ
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>s</mi></msub><mo>=</mo><mi>μ</mi><mo>⋅</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">F_s = \mu \cdot K</annotation></semantics></math>).
+Írjuk fel a lejtőirányú eredő erőt:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+F = m \cdot g \cdot \sin \alpha
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+K = m \cdot g \cdot \cos \alpha
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mi>F</mi><mo>−</mo><msub><mi>F</mi><mi>s</mi></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>−</mo><mi>μ</mi><mo>⋅</mo><mi>K</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>−</mo><mi>μ</mi><mo>⋅</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+F_e = F - F_s = m \cdot g \cdot \sin \alpha - \mu \cdot K = m \cdot g \cdot \sin \alpha - \mu \cdot m \cdot g \cdot \cos \alpha
+</annotation></semantics></math></p>
+<p>Alkalmazzuk a dinamika alaptörvényét
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">F_e = m \cdot a</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>a</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>−</mo><mi>μ</mi><mo>⋅</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+m \cdot a = m \cdot g \cdot \sin \alpha - \mu \cdot m \cdot g \cdot \cos \alpha
+</annotation></semantics></math></p>
+<p>Mivel a test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+tömege az egyenlet minden tagjában szerepel, egyszerűsíthetünk vele. A
+lecsúszó test egyenletes gyorsulása tehát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>−</mo><mi>μ</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+a = g \cdot \sin \alpha - \mu \cdot g \cdot \cos \alpha
+</annotation></semantics></math></p>
+<p>Az összefüggésből látható, hogy a lecsúszó test gyorsulása – a
+szabadeséshez hasonlóan – <strong>teljesen független a test
+tömegétől</strong>.</p>
+<h3 id="példa-1">Példa</h3>
+<p>Egy lejtő magassága
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4{,}00\text{ m}</annotation></semantics></math>,
+vízszintes szélessége pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">6{,}00\text{ m}</annotation></semantics></math>.
+Mekkora a lejtő hajlásszöge? A lejtőre helyezett test tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}1\text{ kg}</annotation></semantics></math>.
+Mekkora a lejtőn lefelé húzó erő és a merőleges kényszererő? Mekkora a
+lecsúszó test gyorsulása, ha a csúszási súrlódási együttható
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">0{,}5</annotation></semantics></math>?
+A nehézségi gyorsulás értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.</p>
+<p>A hajlásszög meghatározása:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><mrow><mn>4</mn><mo>,</mo><mn>00</mn></mrow><mrow><mn>6</mn><mo>,</mo><mn>00</mn></mrow></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>6667</mn><mo>⟹</mo><mi>α</mi><mo>≈</mo><mn>33</mn><mo>,</mo><msup><mn>69</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">
+\tan \alpha = \frac{4{,}00}{6{,}00} \approx 0{,}6667 \implies \alpha \approx 33{,}69^\circ
+</annotation></semantics></math></p>
+<p>A lejtőirányú erőkomponens:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>33</mn><mo>,</mo><msup><mn>69</mn><mo>∘</mo></msup><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><mn>0</mn><mo>,</mo><mn>5442</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F = m \cdot g \cdot \sin \alpha = 0{,}1 \cdot 9{,}81 \cdot \sin(33{,}69^\circ) \approx 0{,}5442\text{ N}
+</annotation></semantics></math></p>
+<p>A felületre merőleges kényszererő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>33</mn><mo>,</mo><msup><mn>69</mn><mo>∘</mo></msup><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><mn>0</mn><mo>,</mo><mn>8162</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+K = m \cdot g \cdot \cos \alpha = 0{,}1 \cdot 9{,}81 \cdot \cos(33{,}69^\circ) \approx 0{,}8162\text{ N}
+</annotation></semantics></math></p>
+<p>A mozgás közben ébredő csúszási súrlódási erő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>s</mi></msub><mo>=</mo><mi>μ</mi><mo>⋅</mo><mi>K</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>8162</mn><mo>≈</mo><mn>0</mn><mo>,</mo><mn>4081</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F_s = \mu \cdot K = 0{,}5 \cdot 0{,}8162 \approx 0{,}4081\text{ N}
+</annotation></semantics></math></p>
+<p>A testet gyorsító vízszintes eredő erő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mi>F</mi><mo>−</mo><msub><mi>F</mi><mi>s</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>5442</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>4081</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>1361</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F_e = F - F_s = 0{,}5442 - 0{,}4081 = 0{,}1361\text{ N}
+</annotation></semantics></math></p>
+<p>A dinamika alaptörvényéből
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">F_e = m \cdot a</annotation></semantics></math>)
+a gyorsulás értéke:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1361</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mi>a</mi><mo>⟹</mo><mi>a</mi><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>1361</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></mfrac><mo>≈</mo><mn>1</mn><mo>,</mo><mn>361</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+0{,}1361 = 0{,}1 \cdot a \implies a = \frac{0{,}1361}{0{,}1} \approx 1{,}361\text{ }\frac{\text{m}}{\text{s}^2}
+</annotation></semantics></math></p>
+<p>A test három értékes jegyre kerekítve
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>36</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">1{,}36\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>
+állandó gyorsulással csúszik lefelé.</p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li>Egy lejtő függőleges magassága
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">3{,}00\text{ m}</annotation></semantics></math>,
+a lejtő saját (ferde) hossza pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">5{,}00\text{ m}</annotation></semantics></math>.
+Számítsd ki a lejtő vízszintessel bezárt hajlásszögét, valamint a
+lejtőirányú lefelé húzó erőt egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}200\text{ kg}</annotation></semantics></math>
+tömegű test esetén!</li>
+<li>Egy kísérlet során azt tapasztaljuk, hogy egy test pontosan akkor
+kezd el megcsúszni, amikor a lejtő hajlásszögét felemeljük
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><msup><mn>0</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">20{,}0^\circ</annotation></semantics></math>-ra.
+Határozd meg a felületek közötti tapadási súrlódási együttható
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>μ</mi><mi>t</mi></msub><annotation encoding="application/x-tex">\mu_t</annotation></semantics></math>)
+értékét!</li>
+<li>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}500\text{ kg}</annotation></semantics></math>
+tömegű test egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mo>,</mo><msup><mn>0</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">30{,}0^\circ</annotation></semantics></math>-os
+hajlásszögű lejtőn csúszik lefelé. A csúszási súrlódási együttható a
+felületek között
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">0{,}3</annotation></semantics></math>.
+Határozd meg a következő erők számszerű nagyságát: lejtőirányú erő
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>),
+kényszererő
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>),
+súrlódási erő
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>s</mi></msub><annotation encoding="application/x-tex">F_s</annotation></semantics></math>),
+valamint az eredő erő
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>e</mi></msub><annotation encoding="application/x-tex">F_e</annotation></semantics></math>)!</li>
+<li>Mekkora állandó gyorsulással csúszik le egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25</mn><mo>,</mo><msup><mn>0</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">25{,}0^\circ</annotation></semantics></math>-os
+hajlásszögű lejtőn egy tetszőleges test, ha a csúszási súrlódási
+együttható értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">0{,}2</annotation></semantics></math>?
+Függ-e a kapott gyorsulás a test tömegétől?</li>
+<li>Egy raktárban sima lejtőn csúsztatnak le ládákat. Mekkora legyen a
+lejtő minimális hajlásszöge ahhoz, hogy a ládák maguktól megcsússzanak
+és elinduljanak lefelé, ha a tapadási súrlódási együttható értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><mi>t</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\mu_t = 0{,}4</annotation></semantics></math>?</li>
+</ol>
+<p><em>A számítások során a nehézségi gyorsulás értékét tekintsük</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>
+<em>-nek.</em></p>
+</body>
+</html>

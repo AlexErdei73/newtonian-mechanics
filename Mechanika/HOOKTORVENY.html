@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="hooke-törvénye">Hooke törvénye</h1>
+<h2 id="a-harmonikus-rezgőmozgás-gyorsulása">A harmonikus rezgőmozgás
+gyorsulása</h2>
+<p>Most a harmonikus rezgőmozgást végző test gyorsulására vagyunk
+kíváncsiak. Ezt felsőbb matematikai ismeretek nélkül pontosan úgy
+határozhatjuk meg, mint ahogy a sebességnél tettük. A test kitérése
+legyen a szokásos:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+x = A\cos(\omega t)
+</annotation></semantics></math></p>
+<p>A test az x-tengellyel párhuzamos egyenes mentén mozog, és a
+gyorsulást nem könnyű meghatározni, mivel a sebesség folyamatosan
+változik, akárcsak maga a gyorsulás is. Szerencsére, mivel a test
+szinkronban mozog egy megfelelő egyenletes körmozgást végző testtel,
+amelynek gyorsulását minden pillanatban ismerjük, a test gyorsulása
+mégis meghatározható. Ez nyilván megegyezik a körmozgást végző test
+gyorsulásának x-komponensével. Ez pontosan úgy látható be, ahogy az
+előző leckében tettük a sebességgel:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>a</mi><mo accent="true">¯</mo></mover><mi>x</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mi>x</mi></msub><mo>−</mo><msub><mi>v</mi><mrow><mi>x</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\overline{a}_x = \frac{v_x - v_{x,0}}{t}
+</annotation></semantics></math></p>
+<p>Ez az összefüggés az átlaggyorsulásra tetszőleges
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+időtartamra fennáll. Bár az átlaggyorsulás nem egyezik meg
+szükségszerűen a pillanatnyi gyorsulással, ezek mérési pontosságon belül
+egyenlőkké válnak, ha a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+időtartamot elegendően rövidre választjuk. Tehát a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t \to 0</annotation></semantics></math>
+esetben a pillanatnyi gyorsulást kapjuk, amely megegyezik a körmozgást
+végző test gyorsulásának x-komponensével, hisz ez az egyezés igaz a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>x</mi></msub><annotation encoding="application/x-tex">v_x</annotation></semantics></math>
+sebességkomponensre is.</p>
+<p>Az egyenletes körmozgást végző test gyorsulásának nagysága
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac><mo>=</mo><mi>r</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">a = \frac{v^2}{r} = r\omega^2</annotation></semantics></math>.
+Itt alkalmazzuk az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">r = A</annotation></semantics></math>
+összefüggést, és így kapjuk az x-komponensre a következő
+összefüggést:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mi>A</mi><msup><mi>ω</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+a_x = -A\omega^2\cos(\omega t)
+</annotation></semantics></math></p>
+<figure>
+<img src="Kepek/rezgesgyorsulasa.svg"
+alt="A harmonikus rezgőmozgás gyorsulása" />
+<figcaption aria-hidden="true">A harmonikus rezgőmozgás
+gyorsulása</figcaption>
+</figure>
+<h3 id="példa">Példa</h3>
+<p>A harmonikus rezgőmozgást végző test kitérés-idő függvénye a
+következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>π</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+x = 0,2\cos(4\pi t)
+</annotation></semantics></math></p>
+<p>Itt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+m-ben értendő,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+pedig s-ban. Határozzuk meg a következő mennyiségeket! * Amplitúdó *
+Körfrekvencia * Gyorsulás az idő függvényében * Gyorsulás értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t = 0,1</annotation></semantics></math>
+s-kor * A gyorsulás maximális értéke</p>
+<p>A kitérés-idő függvényből leolvashatók a következő adatok:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+A = 0,2\text{ m}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mn>4</mn><mi>π</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\omega = 4\pi \text{ rad/s}
+</annotation></semantics></math></p>
+<p>Ez alapján felírhatjuk az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>a</mi><mi>x</mi></msub><annotation encoding="application/x-tex">a_x</annotation></semantics></math>
+értékét a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+idő függvényében:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mi>A</mi><msup><mi>ω</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>2</mn><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>π</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>π</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>31</mn><mo>,</mo><mn>58</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>12</mn><mo>,</mo><mn>566</mn><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+a_x = -A\omega^2 \cos(\omega t) = -0,2 \cdot (4\pi)^2 \cos (4\pi t) = -31,58\cos(12,566 t)
+</annotation></semantics></math></p>
+<p><em>(Megjegyzés: A gyorsulás előjele az egyenletben negatív, bár a
+nagyságát tekintve gyakran az abszolút értékkel számolunk. A maximális
+érték meghatározásához az amplitúdót vesszük.)</em></p>
+<p>Innen kiszámítható a gyorsulás a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t = 0,1</annotation></semantics></math>
+s időpontban, illetve leolvasható a gyorsulás maximális értéke is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mn>31</mn><mo>,</mo><mn>58</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>12</mn><mo>,</mo><mn>566</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>9</mn><mo>,</mo><mn>760</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a_x = -31,58\cos(12,566 \cdot 0,1) = -9,760\text{ m/s}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mn>31</mn><mo>,</mo><mn>58</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a_{x,max} = 31,58\text{ m/s}^2
+</annotation></semantics></math></p>
+<h2 id="a-harmonikus-rezgőmozgás-dinamikai-feltétele">A harmonikus
+rezgőmozgás dinamikai feltétele</h2>
+<p>A kitérés behelyettesíthető a gyorsulás kiszámításának képletébe, és
+ekkor a következő egyenletre jutunk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><msup><mi>ω</mi><mn>2</mn></msup><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><msup><mi>ω</mi><mn>2</mn></msup><mi>x</mi></mrow><annotation encoding="application/x-tex">
+a_x = -\omega^2A\cos(\omega t) = -\omega^2x
+</annotation></semantics></math></p>
+<p>A harmonikus rezgőmozgás gyorsulása a kitéréssel arányos, de
+ellentétes irányú. Az arányossági tényező a körfrekvencia négyzete. Ez
+azt jelenti, hogy Newton második törvénye alapján az eredő erő is
+arányos a kitéréssel és ellentétes irányú:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mi>e</mi></mrow></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mi>m</mi><msup><mi>ω</mi><mn>2</mn></msup><mi>x</mi></mrow><annotation encoding="application/x-tex">
+F_{x,e} = ma_x = -m\omega^2x
+</annotation></semantics></math></p>
+<blockquote>
+<p><strong>A harmonikus rezgőmozgás dinamikai feltétele a kitéréssel
+egyenesen arányos, de azzal ellentétes irányú erő, amely az egyensúlyi
+helyzet felé húzza vissza a testet.</strong></p>
+</blockquote>
+<h2 id="hooke-törvénye-1">Hooke törvénye</h2>
+<blockquote>
+<p><strong>A rugalmas erő a megnyúlással egyenesen arányos, de azzal
+ellentétes irányú. Az arányossági tényező a rugóállandó. Ennek jele
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>,
+egysége N/m.</strong></p>
+</blockquote>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mi>D</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">
+F_x = -Dx
+</annotation></semantics></math></p>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a href="https://www.youtube.com/shorts/PaIE7eTPzJA">Hooke
+törvényének demonstrációja Walter Lewin által</a></p>
+<h3 id="szimuláció">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#38c6b933-5bd4-42f2-a59e-1390633a14a3">A
+súly</a></p>
+<p>A szimuláció is alkalmas Hooke törvényének demonstrálására. Lépjünk
+ki az appból, ha be vagyunk jelentkezve, majd a <strong>Create</strong>
+menüben módosíthatjuk a 3-as test tömegét a kétszeresére. Ne felejtsük
+el a <strong>Save</strong> gombot megnyomni! Ekkor a szimulációt a
+<strong>Project</strong> menüben a <strong>Start</strong> gombbal
+újraindítva a test a rugón harmonikus rezgésbe kezd, amelynek egyensúlyi
+helyzete az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">y = 3</annotation></semantics></math>
+m-nél lesz. Ha átállítjuk a 3-as test kezdeti y-pozícióját is 3 m-re,
+akkor rezgés nem alakul ki, a test egyensúlyban marad. Ha a tömeget nem
+kétszeresére, hanem háromszorosára növeljük, az egyensúlyi helyzet is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">y = 4</annotation></semantics></math>
+m lesz, és így tovább.</p>
+<h2 id="a-rezgőmozgás-periódusideje">A rezgőmozgás periódusideje</h2>
+<p>A rezgőmozgás dinamikai feltételébe beírjuk a rugalmas erő
+Hooke-törvényét:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mi>m</mi><msup><mi>ω</mi><mn>2</mn></msup><mi>x</mi><mo>=</mo><mi>−</mi><mi>D</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">
+F_x = -m\omega^2x = -Dx
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><msup><mi>ω</mi><mn>2</mn></msup><mo>=</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">
+m\omega^2 = D
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>=</mo><mfrac><mi>D</mi><mi>m</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\omega^2 = \frac{D}{m}
+</annotation></semantics></math></p>
+<p>Most felhasználjuk az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>T</mi></mfrac></mrow><annotation encoding="application/x-tex">\omega = \frac{2\pi}{T}</annotation></semantics></math>
+összefüggést:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>T</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mfrac><mi>D</mi><mi>m</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\left(\frac{2\pi}{T}\right)^2 = \frac{D}{m}
+</annotation></semantics></math></p>
+<p>Vegyük mindkét oldal reciprokát!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>T</mi><mrow><mn>2</mn><mi>π</mi></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mfrac><mi>m</mi><mi>D</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\left(\frac{T}{2\pi}\right)^2 = \frac{m}{D}
+</annotation></semantics></math></p>
+<p>Vonjunk gyököt!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>T</mi><mrow><mn>2</mn><mi>π</mi></mrow></mfrac><mo>=</mo><msqrt><mfrac><mi>m</mi><mi>D</mi></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
+\frac{T}{2\pi} = \sqrt{\frac{m}{D}}
+</annotation></semantics></math></p>
+<p>Végül szorozzunk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>π</mi></mrow><annotation encoding="application/x-tex">2\pi</annotation></semantics></math>-vel:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>m</mi><mi>D</mi></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt{\frac{m}{D}}
+</annotation></semantics></math></p>
+<h3 id="példa-1">Példa</h3>
+<p>Egy elhanyagolható tömegű rugóra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>100</mn><annotation encoding="application/x-tex">100</annotation></semantics></math>
+g tömegű testet akasztottak. A rugó másik vége rögzített úgy, hogy a
+test függőlegesen rezeghet. A testet felemelik az egyensúlyi helyzettől
+akkora magasságba, hogy a rugó épp nyújtatlan legyen, majd elengedik. A
+rugóállandó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>100</mn><annotation encoding="application/x-tex">100</annotation></semantics></math>
+N/m. * Mekkora a kialakuló rezgés amplitúdója? * Mekkora a
+körfrekvencia? * Mekkora a periódusidő? * Írjuk fel a kitérés-idő
+függvényt, ha az x-tengely függőlegesen felfelé mutat és az origó az
+egyensúlyi helyzetben van! * Mikor halad át először a test az egyensúlyi
+helyzeten az elengedés után? * Mekkora a sebessége áthaladáskor?</p>
+<p>Egyensúlyban a nehézségi erő kiegyenlíti a rugóerőt:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>m</mi><mi>g</mi><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>D</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+-mg + (-Dx) = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>−</mo><mn>100</mn><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+-0,1 \cdot 9,81 - 100x = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0</mn><mo>,</mo><mn>981</mn><mo>=</mo><mn>100</mn><mi>x</mi></mrow><annotation encoding="application/x-tex">
+-0,981 = 100x
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>00981</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+x = -0,00981\text{ m}
+</annotation></semantics></math></p>
+<p>A rugó megnyúlása tehát kb.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+cm egyensúlyban. A továbbiakban az origót az egyensúlyi helyzetbe
+helyezzük, tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x = 0</annotation></semantics></math>
+lesz egyensúlyban, és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>00981</mn></mrow><annotation encoding="application/x-tex">0,00981</annotation></semantics></math>
+m az a pont, ahonnan a rezgést indítjuk.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>00981</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+A = 0,00981\text{ m}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><msqrt><mfrac><mi>D</mi><mi>m</mi></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mn>100</mn><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></mfrac></msqrt><mo>=</mo><mn>31</mn><mo>,</mo><mn>62</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\omega = \sqrt{\frac{D}{m}} = \sqrt{\frac{100}{0,1}} = 31,62\text{ rad/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>T</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\omega = \frac{2\pi}{T}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>ω</mi></mfrac><mo>=</mo><mfrac><mrow><mn>6</mn><mo>,</mo><mn>283</mn></mrow><mrow><mn>31</mn><mo>,</mo><mn>62</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>1987</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+T = \frac{2\pi}{\omega} = \frac{6,283}{31,62} = 0,1987\text{ s}
+</annotation></semantics></math></p>
+<p>A kitérés-idő függvény könnyen felírható, hisz a test az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>+</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">x = +A</annotation></semantics></math>
+pozícióból indul:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>00981</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>31</mn><mo>,</mo><mn>62</mn><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+x = A\cos(\omega t) = 0,00981\cos(31,62t)
+</annotation></semantics></math></p>
+<p>A test az egyensúlyi helyzeten akkor halad át, amikor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x = 0</annotation></semantics></math>,
+tehát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>00981</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>31</mn><mo>,</mo><mn>62</mn><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+0 = 0,00981\cos(31,62t)
+</annotation></semantics></math></p>
+<p>Innen azt kapjuk, hogy (amikor a koszinusz argumentuma
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mi>/</mi><mn>2</mn><mo>≈</mo><mn>1</mn><mo>,</mo><mn>571</mn></mrow><annotation encoding="application/x-tex">\pi/2 \approx 1,571</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>571</mn><mo>=</mo><mn>31</mn><mo>,</mo><mn>62</mn><mi>t</mi></mrow><annotation encoding="application/x-tex">
+1,571 = 31,62t
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mo>,</mo><mn>571</mn></mrow><mrow><mn>31</mn><mo>,</mo><mn>62</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>04968</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow><mo>=</mo><mfrac><mi>T</mi><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">
+t = \frac{1,571}{31,62} = 0,04968\text{ s} = \frac{T}{4}
+</annotation></semantics></math></p>
+<p>Tehát a test az első negyed periódus megtételekor halad át először az
+origón, vagyis az egyensúlyi helyzeten. Ekkor sebessége:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mi>A</mi><mi>ω</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>00981</mn><mo>⋅</mo><mn>31</mn><mo>,</mo><mn>62</mn><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>31</mn><mo>,</mo><mn>62</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>04968</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>3102</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_x = -A\omega \sin(\omega t) = -0,00981 \cdot 31,62 \sin(31,62 \cdot 0,04968) = -0,3102\text{ m/s}
+</annotation></semantics></math></p>
+<p>Az egyensúlyi helyzeten való áthaladáskor a sebesség maximális, hisz
+a szinuszfüggvény értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+vagy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math>.
+Az első áthaladáskor a szinuszfüggvény értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">+1</annotation></semantics></math>,
+így a sebesség negatív irányú.</p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Egy függőlegesen rögzített, elhanyagolható tömegű rugóra egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>400</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">400\text{ g}</annotation></semantics></math>
+tömegű súlyt akasztunk. Ennek hatására a rugó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">8\text{ cm}</annotation></semantics></math>-t
+nyúlik meg, mielőtt eléri az új egyensúlyi helyzetét. Határozd meg a
+rugóállandót!
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9,81\text{ m/s}^2</annotation></semantics></math>)</p></li>
+<li><p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mn>150</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D = 150\text{ N/m}</annotation></semantics></math>
+rugóállandójú vízszintes rugóra egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0,6\text{ kg}</annotation></semantics></math>
+tömegű kiskocsit rögzítünk. A súrlódás elhanyagolható. A rendszert
+kitérítjük egyensúlyi helyzetéből, majd elengedjük. Számítsd ki a
+kialakuló rezgőmozgás körfrekvenciáját és periódusidejét!</p></li>
+<li><p>Egy harmonikus rezgőmozgást végző test kitérés-idő függvénye:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>05</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mi>π</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x(t) = 0,05\cos(10\pi t)</annotation></semantics></math>
+(ahol az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-et
+méterben, a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>-t
+másodpercben mérjük). Határozd meg a test maximális sebességét és
+maximális gyorsulását!</p></li>
+<li><p>Egy rugón függő test periódusideje
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">1,2\text{ s}</annotation></semantics></math>.
+Mekkora lesz a rezgés periódusideje, ha az eredeti testet levesszük, és
+egy négyszer akkora tömegű testet akasztunk a rugóra?</p></li>
+<li><p>Egy harmonikus rezgőmozgást végző
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0,5\text{ kg}</annotation></semantics></math>
+tömegű test amplitúdója
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">12\text{ cm}</annotation></semantics></math>,
+a rezgés frekvenciája pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ Hz}</annotation></semantics></math>.
+Mekkora a testre ható maximális visszatérítő erő (eredő erő), és a pálya
+melyik pontján lép fel ez az erő?</p></li>
+</ol>
+</body>
+</html>

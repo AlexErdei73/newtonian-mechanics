@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="csillapított-rezgések">Csillapított rezgések</h1>
+<h2 id="szimulációk">Szimulációk</h2>
+<p>A szimulációban és elméletben is láttuk, hogy a rezgési energia és
+így az amplitúdó is állandó, amennyiben a rezgő testre csak a
+konzervatív rugalmas erő és esetleg a szintén konzervatív nehézségi erő
+hat. A valóságban azonban ilyesmit nem tapasztalunk, hiszen mindig
+vannak disszipatív erők. Nézzük meg, hogy egy harmonikus rezgést végző
+test esetében milyen erők okozzák a rezgés csillapodását, és ez hogyan
+csökkenti az amplitúdót, ahogy az idő múlik!</p>
+<h3 id="súrlódásos-csillapítás">Súrlódásos csillapítás</h3>
+<p>Először vizsgáljuk a súrlódási erő hatását, hisz ezt már jól
+ismerjük! A szimuláció annyiban lesz más, mint a példában láttuk a
+rezgési energia tárgyalásakor, hogy a rezgés a nehézségi erő hatása
+alatt történik egy vízszintes felületen, ahol súrlódás hat a testre. A
+rezgési energia most is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math>
+J kezdetben, de ha a szimulációt elindítjuk, az összenergia csak
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>853</mn></mrow><annotation encoding="application/x-tex">3,853</annotation></semantics></math>
+J! Ennek oka az állandó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0</mn><mo>,</mo><mn>147</mn></mrow><annotation encoding="application/x-tex">-0,147</annotation></semantics></math>
+J magassági helyzeti energia. Ha a test elveszti rezgési energiáját,
+akkor csak ez a magassági helyzeti energia marad, tehát a test energiája
+egyensúlyban
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0</mn><mo>,</mo><mn>147</mn></mrow><annotation encoding="application/x-tex">-0,147</annotation></semantics></math>
+J lesz. Vizsgáljuk meg a rezgés lefolyását, és rajzoltassuk ki a
+kitérés-idő grafikont (az 1-es test esetében), hogy láthassuk, az
+amplitúdó hogyan csillapodik!</p>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#763312f1-b675-4eea-9bbd-c6fb59026bb4">Harmonikus
+rezgés súrlódásos csillapítással</a></p>
+<ul>
+<li>Hogyan csillapodik az amplitúdó?</li>
+<li>Számítsuk ki a súrlódási erő munkáját a szimulációs adatok alapján!
+A test által megtett teljes út a <strong>path length</strong>. Az erő
+iránya mindig ellentétes a mozgás irányával, de nagysága állandó.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>9</mn></mrow><annotation encoding="application/x-tex">\mu = 0,9</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">mg</annotation></semantics></math>
+könnyen kiolvasható az adatokból. Maga a súrlódási erő is kiolvasható,
+de ezt a test megállása előtt kell megtenni, különben csak a tapadási
+erőt láthatjuk. Az algoritmus esetében valamilyen kicsiny sebességnél a
+testet állónak kell tekinteni, ez ebben a programban
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>10</mn><mrow><mi>−</mi><mn>4</mn></mrow></msup><annotation encoding="application/x-tex">10^{-4}</annotation></semantics></math>
+m/s, tehát ez a test maradék sebessége.</li>
+<li>Eléri-e a test megálláskor az egyensúlyi helyzetet? Ez pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x = 2</annotation></semantics></math>
+m-nél lenne.</li>
+</ul>
+<h3 id="légellenállás">Légellenállás</h3>
+<p>Most nézzük meg azt az esetet, mikor súrlódás ugyan nincs, de van
+légellenállás. Itt a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math>
+g-os test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>20</mn><annotation encoding="application/x-tex">20</annotation></semantics></math>
+cm átmérőjű gömb, így a légellenállása irreálisan nagy lesz. Ez azt
+jelenti, hogy a hatást kb. 100-szorosára felnagyítva láthatjuk (a
+valóságban egy ilyen tömegű golyó kb. tízszer kisebb, de az erő a
+felülettel arányos, amely 100-szor kisebb). Egyébként a valóságban ez a
+meghatározó tényező az iskolai kísérleteknél is, annak ellenére, hogy a
+csillapítás nem túl nagy. A súrlódást általában kiküszöböljük, de a
+légellenállás általában jelen van. Itt is figyeljük meg a kitérés-idő
+grafikont! Itt kezdetben igen gyors csillapodást láthatunk, de amikor
+már az amplitúdó és a sebesség kicsi, akkor a csillapodás igen lassú.
+Ennek oka, hogy a légellenállás a sebesség négyzetével arányos erő,
+tehát kis sebességeknél szinte teljesen elhanyagolható. Ennek
+köszönhető, hogy mire 4 értékes jegy pontossággal elérjük, hogy a teljes
+rezgési energia belső energiává alakuljon át, kb.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>26</mn><annotation encoding="application/x-tex">26</annotation></semantics></math>
+s telik el a szimulációban!</p>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#2d7bf5da-1455-4c4a-896d-a40baf1347a4">Harmonikus
+rezgés csillapodása a légellenállás miatt</a></p>
+<h3 id="a-sebességgel-arányos-csillapítás">A sebességgel arányos
+csillapítás</h3>
+<p>A valódi rugók igen kismértékben ugyan, de csillapítják a rezgést,
+akkor is, ha nincs légellenállás. Ennek mértéke acél esetén igen
+kicsiny, az acél szinte tökéletesen rugalmas. Ez a fajta csillapítás
+egyébként nem írható le az eddigi kifejezésekkel. Ennek oka, hogy a
+belső anyagszerkezeti mechanizmus amplitúdótól függő, nem pedig
+sebességfüggő csillapító erőt eredményez. Bár elméletileg helytelen, ezt
+sokszor szokták modellezni sebességfüggő, a sebességgel lineáris
+csillapítási erővel. Ennek oka, hogy a matematika viszonylag egyszerű,
+és a csillapítás általában igen kicsi. Ilyen csillapítási erő lép fel
+folyadékokban kis sebességű mozgás esetén, amikor az áramlás szabályos
+szerkezetű, tehát nem örvényes. A tipikus példa a lengéscsillapítókban
+fellépő csillapítási erők. A továbbiakban mi ezzel a csillapítással
+fogunk részletesebben foglalkozni.</p>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#8b2676f8-91a6-4f77-b2cd-e8f0c9b87a51">Harmonikus
+rezgés sebességgel arányos csillapítással</a></p>
+<h2
+id="mozgásegyenlet-sebességgel-arányos-csillapítás-esetén">Mozgásegyenlet
+sebességgel arányos csillapítás esetén</h2>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mi>e</mi></mrow></msub><mo>=</mo><mi>−</mi><mi>D</mi><mi>x</mi><mo>−</mo><mi>β</mi><msub><mi>v</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">
+F_{x,e} = -Dx - \beta v_x
+</annotation></semantics></math></p>
+<p>Ez az egyenlet azt mutatja, hogy a rugalmas erő mellett fellép egy a
+sebesség nagyságával arányos, de a sebességgel ellentétes irányú erő,
+mely a mozgást minden pillanatban lassítani igyekszik. Ezt
+behelyettesítve Newton második törvényébe, megkapjuk a
+mozgásegyenletet.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mi>e</mi></mrow></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">
+F_{x,e} = ma_x
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mi>D</mi><mi>x</mi><mo>−</mo><mi>β</mi><msub><mi>v</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">
+ma_x = -Dx - \beta v_x
+</annotation></semantics></math></p>
+<p>Nullára rendezve szokás az egyenletet felírni:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><msub><mi>a</mi><mi>x</mi></msub><mo>+</mo><mi>β</mi><msub><mi>v</mi><mi>x</mi></msub><mo>+</mo><mi>D</mi><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+ma_x + \beta v_x + Dx = 0
+</annotation></semantics></math></p>
+<p>Kérdés az, hogy milyen kitérés-idő függvény az egyenlet megoldása, ha
+a test álló helyzetből indul az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>+</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">x(0) = +A</annotation></semantics></math>
+helyzetből. Erre csak felsőbb matematikai ismeretek birtokában lehet
+válaszolni, tehát az egyenletet nem fogjuk megoldani, csak a megoldást
+magyarázzuk el.</p>
+<h2 id="az-amplitúdó-csökkenése">Az amplitúdó csökkenése</h2>
+<p>Először is vizsgáljuk meg, hogyan csökken az amplitúdó. Ha a
+szimulációnkban feljegyeznénk a kitérés értékét
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">nT</annotation></semantics></math>
+időnként, ahol
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+nem negatív egész szám, akkor észrevennénk, hogy a következő összefüggés
+áll fenn:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mi>T</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>A</mi><mn>0</mn></msub><msup><mi>q</mi><mi>n</mi></msup><mo>,</mo><mspace width="1.0em"></mspace><mn>0</mn><mo>&lt;</mo><mi>q</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
+x(nT) = A_0q^n, \quad 0 &lt; q &lt; 1
+</annotation></semantics></math></p>
+<p>Ezt a sorozatot a matematikában úgy ismerjük, mint a <em>mértani
+sorozat</em>. Tehát az amplitúdók mértani sorozat szerint csökkennek.
+Minél kisebb a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+tényező, annál gyorsabban csökken az amplitúdó, tehát annál gyorsabban
+hal el a rezgés. Bevezethetjük a <em>csillapítási tényezőt</em>, melyet
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi><annotation encoding="application/x-tex">\delta</annotation></semantics></math>-val
+fogunk jelölni. Ennek egysége 1/s, akárcsak a körfrekvenciának, tehát
+ezek összehasonlíthatók.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mfrac><mi>β</mi><mrow><mn>2</mn><mi>m</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+\delta = \frac \beta {2m}
+</annotation></semantics></math></p>
+<p>A mozgásegyenlet megoldásával megmutatható, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>δ</mi><mi>T</mi></mrow></msup></mrow><annotation encoding="application/x-tex">
+q = e^{-\delta T}
+</annotation></semantics></math></p>
+<p>Itt az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+szám a felsőbb matematikából jól ismert irracionális szám, nevét
+<em>Euler</em> matematikusról kapta. Értéke:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><mn>2</mn><mo>,</mo><mn>71828</mn><mi>.</mi><mi>.</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+e = 2,71828...
+</annotation></semantics></math></p>
+<p>Ez már majdnem elegendő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+kiszámításához, de a periódusidő egy kicsivel hosszabb, mint a
+csillapítatlan rezgés esetén. A mozgásegyenlet megoldásával
+megmutatható, hogy a körfrekvencia egy kicsit kisebb, mint a
+csillapítatlan esetben.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mfrac><mi>D</mi><mi>m</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\omega_0^2 = \frac D m
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><msqrt><mrow><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>−</mo><msup><mi>δ</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">
+\omega = \sqrt {\omega_0^2 - \delta^2}
+</annotation></semantics></math></p>
+<p>Ezen összefüggések segítségével a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+tényező már kiszámítható.</p>
+<h3 id="példa">Példa</h3>
+<p>Számítsuk ki az eddigi példánkban a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+tényező értékét! Mennyi idő alatt csökken a rezgés energiája 4 tizedes
+pontossággal 0-ra?
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>×</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>5</mn></mrow></msup></mrow><annotation encoding="application/x-tex">5 \times 10^{-5}</annotation></semantics></math>
+J energia maradhat maximum a rendszerben.) A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>06</mn></mrow><annotation encoding="application/x-tex">\beta = 0,06</annotation></semantics></math>
+kg/s a szimulációnkban.</p>
+<p>A csillapítási tényező kiszámítása a következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mfrac><mi>β</mi><mrow><mn>2</mn><mi>m</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>06</mn></mrow><mrow><mn>2</mn><mo>×</mo><mn>0</mn><mo>,</mo><mn>01</mn></mrow></mfrac><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> 1/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\delta = \frac {\beta} {2m} = \frac {0,06} {2 \times 0,01} = 3\text{ 1/s}
+</annotation></semantics></math></p>
+<p>A pontos körfrekvencia és periódusidő is kiszámítható:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mfrac><mi>D</mi><mi>m</mi></mfrac><mo>=</mo><mfrac><mn>200</mn><mrow><mn>0</mn><mo>,</mo><mn>01</mn></mrow></mfrac><mo>=</mo><mn>20000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow><mrow><mi>−</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">
+\omega_0^2 = \frac {D} {m} = \frac {200} {0,01} = 20000\text{ s}^{-2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><msqrt><mrow><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>−</mo><msup><mi>δ</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>20000</mn><mo>−</mo><mn>9</mn></mrow></msqrt><mo>=</mo><mn>141</mn><mo>,</mo><mn>39</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> 1/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\omega = \sqrt {\omega_0^2 - \delta^2} = \sqrt {20000 - 9} = 141,39\text{ 1/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>ω</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mrow><mn>141</mn><mo>,</mo><mn>39</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>044439</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+T = \frac {2 \pi} {\omega} = \frac {2 \pi} {141,39} = 0,044439\text{ s}
+</annotation></semantics></math></p>
+<p>Most már
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+kiszámítható:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>δ</mi><mi>T</mi></mrow></msup><mo>=</mo><msup><mi>e</mi><mrow><mi>−</mi><mn>3</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>044439</mn></mrow></msup><mo>=</mo><mn>0</mn><mo>,</mo><mn>87519</mn></mrow><annotation encoding="application/x-tex">
+q = e^{-\delta T} = e^{-3 \cdot 0,044439} = 0,87519
+</annotation></semantics></math></p>
+<p>A maradék energiából megkaphatjuk a maradék maximális kitérést!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>D</mi><msubsup><mi>x</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><msub><mi>E</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
+\frac {Dx_{max}^2} {2} = E_{max}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mo>√</mo><mfrac><mrow><mn>2</mn><msub><mi>E</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow><mi>D</mi></mfrac><mo>=</mo><mo>√</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>5</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>5</mn></mrow></msup></mrow><mn>200</mn></mfrac><mo>=</mo><mn>7</mn><mo>,</mo><mn>0711</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>4</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+x_{max} = \sqrt \frac {2E_{max}} {D} = \sqrt \frac {2 \cdot 5 \cdot 10^{-5}} {200} = 7,0711 \cdot 10^{-4}\text{ m}
+</annotation></semantics></math></p>
+<p>A maradék
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><annotation encoding="application/x-tex">x_{max}</annotation></semantics></math>
+kitérésből kiszámíthatjuk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+minimális értékét úgy, hogy a rezgés energiája négy tizedes pontossággal
+0 legyen!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><msub><mi>A</mi><mn>0</mn></msub><msup><mi>q</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">
+x_{max} = A_0 q^n
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>q</mi><mi>n</mi></msup><mo>=</mo><mfrac><msub><mi>x</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><msub><mi>A</mi><mn>0</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">
+q^n = \frac{x_{max}}{A_0}
+</annotation></semantics></math></p>
+<p>A kitevő kiszámítása a logaritmusfüggvény segítségével lehetséges. A
+logaritmus alapja a hatványalap, a függvény pedig a hatvány értékéből
+adja vissza a kitevőt. Ez a függvény a legtöbb tudományos számológépen
+megtalálható. Néha csak a 10-es alapú
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">log</mi><annotation encoding="application/x-tex">\log</annotation></semantics></math>
+vagy az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+alapú
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">ln</mi><annotation encoding="application/x-tex">\ln</annotation></semantics></math>
+függvények érhetők el. Ekkor a következő logaritmusazonosság segít
+visszavezetni a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+alapú logaritmust 10-es vagy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+alapú logaritmusra:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>a</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><msub><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>b</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><msub><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>b</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mi>a</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo><mi>b</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo><mi>a</mi><mo>≠</mo><mn>1</mn><mo>,</mo><mi>b</mi><mo>≠</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
+\log_a(x) = \frac{\log_b(x)}{\log_b(a)}, \quad a &gt; 0, b &gt; 0, a \neq 1, b \neq 1
+</annotation></semantics></math></p>
+<p>Ez alapján az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+alapú logaritmus segítségével a számítás a következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>q</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msub><mi>x</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><msub><mi>A</mi><mn>0</mn></msub></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msub><mi>x</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><msub><mi>A</mi><mn>0</mn></msub></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>q</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>7</mn><mo>,</mo><mn>0711</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>4</mn></mrow></msup></mrow><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mn>0</mn><mo>,</mo><mn>87519</mn></mrow></mfrac><mo>=</mo><mn>42</mn><mo>,</mo><mn>3427</mn></mrow><annotation encoding="application/x-tex">
+n = \log_q \left( \frac{x_{max}}{A_0} \right) = \frac{\ln \left( \frac{x_{max}}{A_0} \right)}{\ln q} = \frac{\ln \left( \frac{7,0711 \cdot 10^{-4}}{0,2} \right)}{\ln 0,87519} = 42,3427
+</annotation></semantics></math></p>
+<p>Az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+értékéből már az idő minimális értéke meghatározható:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub><mo>=</mo><mi>n</mi><mi>T</mi><mo>=</mo><mn>42</mn><mo>,</mo><mn>3427</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>044439</mn><mo>=</mo><mn>1</mn><mo>,</mo><mn>8817</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+t_{min} = nT = 42,3427 \cdot 0,044439 = 1,8817 \text{ s}
+</annotation></semantics></math></p>
+<p>Valóban a szimulációból látszik, hogy az energia
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>882</mn></mrow><annotation encoding="application/x-tex">1,882</annotation></semantics></math>
+s alatt éri el a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0</mn><mo>,</mo><mn>1470</mn></mrow><annotation encoding="application/x-tex">-0,1470</annotation></semantics></math>
+J-t! Figyeljük meg, hogy itt a pontos érték megkapásához
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-re
+a tört értéket kell használnunk, amit a zsebszámológéppel kaphatunk.</p>
+<h2 id="a-kitérés-idő-függvény">A kitérés-idő függvény</h2>
+<p>Matematikából tanultuk, hogy a hatványozás elvégezhető tetszőleges
+valós kitevővel is. Ha az alap az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+szám, ez az exponenciális függvényhez vezet. Ezt a függvényt találjuk a
+kitérés-idő függvényben, mint az amplitúdó szorzója. Így tehát az
+amplitúdó exponenciálisan csökken.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>A</mi><msup><mi>e</mi><mrow><mi>−</mi><mi>δ</mi><mi>t</mi></mrow></msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>ϕ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+x(t) = Ae^{-\delta t}\cos(\omega t + \phi)
+</annotation></semantics></math></p>
+<p>A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+fázistolás ahhoz kell, hogy a kezdeti időpillanatban a kezdősebesség
+nulla legyen. Ennek kiszámítása:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>=</mo><mi>−</mi><mfrac><mi>δ</mi><mi>ω</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\tan \phi = - \frac \delta \omega
+</annotation></semantics></math></p>
+<p>Itt az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+szorzó még nem az amplitúdó, mert a kezdeti amplitúdót
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t = 0</annotation></semantics></math>
+behelyettesítéssel kapjuk meg.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>0</mn></msub><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+A_0 = A\cos \phi
+</annotation></semantics></math></p>
+<h3 id="példa-1">Példa</h3>
+<p>Számítsuk ki a kitérést az idő függvényében a szimulációs
+példánkban!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>=</mo><mi>−</mi><mfrac><mi>δ</mi><mi>ω</mi></mfrac><mo>=</mo><mi>−</mi><mfrac><mn>3</mn><mrow><mn>141</mn><mo>,</mo><mn>39</mn></mrow></mfrac><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>021218</mn></mrow><annotation encoding="application/x-tex">
+\tan \phi = - \frac \delta \omega = - \frac {3} {141,39} = -0,021218
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>021215</mn></mrow><annotation encoding="application/x-tex">
+\phi = -0,021215
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><msub><mi>A</mi><mn>0</mn></msub><mi>/</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>/</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>021215</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>200045</mn></mrow><annotation encoding="application/x-tex">
+A = A_0 / \cos \phi = 0,2 / \cos(-0,021215) = 0,200045
+</annotation></semantics></math></p>
+<p>Ezeket behelyettesítve kapjuk, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>200045</mn><msup><mi>e</mi><mrow><mi>−</mi><mn>3</mn><mi>t</mi></mrow></msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>141</mn><mo>,</mo><mn>39</mn><mi>t</mi><mo>−</mo><mn>0</mn><mo>,</mo><mn>021215</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+x = 0,200045e^{-3t}\cos(141,39t - 0,021215)
+</annotation></semantics></math></p>
+<h2 id="kritikus-csillapítás">Kritikus csillapítás</h2>
+<p>Amikor a csillapítás akkora, hogy a körfrekvencia nullává válik,
+akkor a koszinusz függvény már állandóan 1, tehát a test egyszerűen
+exponenciálisan tart az egyensúlyi helyzethez. Ezt nevezzük kritikus
+csillapításnak.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>δ</mi><mi>k</mi></msub><mo>=</mo><msub><mi>ω</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+\delta_k = \omega_0
+</annotation></semantics></math></p>
+<p>A formula megkapható a korábbi képletből, de a levezetés felsőbb
+matematikát igényel, úgyhogy itt nem vezetjük le. A képletet a teljesség
+kedvéért közöljük:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>A</mi><mn>0</mn></msub><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><msub><mi>δ</mi><mi>k</mi></msub><mi>t</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mrow><mi>−</mi><msub><mi>δ</mi><mi>k</mi></msub><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">
+x = A_0(1 + \delta_k t)e^{-\delta_k t}
+</annotation></semantics></math></p>
+<p>A mérnöki gyakorlatban az autók lengéscsillapítójánál a kritikus
+csillapítás megvalósítására törekednek, mert ekkor kerül vissza az autó
+kerékfelfüggesztése a leggyorsabban az egyensúlyi helyzetébe, tehát a
+menetstabilitás a lehető legjobb lesz. A lengéscsillapítók azonban a
+rugó összenyomódása alatt kis csillapítást fejtenek ki, míg a
+visszatérés alatt a csillapítás nagyobb. Ez az aszimmetrikus csillapítás
+fontos, hogy ha a kereket nagy ütés érné felfelé, akkor ezt ne vigye át
+a felfüggesztés a karosszériára.</p>
+<h3 id="a-lengéscsillapító-működése">A lengéscsillapító működése</h3>
+<p><a href="https://www.youtube.com/watch?v=O-n7IvzPtME">A
+lengéscsillapító</a></p>
+<h3 id="példa-2">Példa</h3>
+<p>Írjuk fel a képletet a szimulációs példánk esetére!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mn>141</mn><mo>,</mo><mn>42</mn><mi>t</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mrow><mi>−</mi><mn>141</mn><mo>,</mo><mn>42</mn><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">
+x = 0,2(1 + 141,42t)e^{-141,42t}
+</annotation></semantics></math></p>
+<h3 id="szimuláció">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#1de4ac61-0df7-4a4c-b912-fbec97a261c1">Kritikus
+csillapítás</a></p>
+<h2 id="a-túlcsillapított-eset">A túlcsillapított eset</h2>
+<p>Ha a csillapítási együttható nagyobb, mint a csillapítatlan
+körfrekvencia, ami a kritikus csillapításra jellemző, a test nem végez
+rezgéseket, de annál lassabban jut vissza exponenciálisan az egyensúlyi
+helyzetbe, minél nagyobb a csillapítási együttható. Ez a képlet is
+levezethető felsőbb matematikai eszközökkel a gyenge csillapítás
+esetéből, de itt csak az eredményt közöljük.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>γ</mi><mo>=</mo><msqrt><mrow><msup><mi>δ</mi><mn>2</mn></msup><mo>−</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup></mrow></msqrt></mrow><annotation encoding="application/x-tex">
+\gamma = \sqrt {\delta^2 - \omega_0^2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mi>A</mi><mrow><mn>2</mn><mi>γ</mi></mrow></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mi>δ</mi><mo>+</mo><mi>γ</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>δ</mi><mo>+</mo><mi>γ</mi><mo stretchy="false" form="postfix">)</mo><mi>t</mi></mrow></msup><mo>−</mo><mo stretchy="false" form="prefix">(</mo><mi>δ</mi><mo>−</mo><mi>γ</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>δ</mi><mo>−</mo><mi>γ</mi><mo stretchy="false" form="postfix">)</mo><mi>t</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+x = \frac A {2\gamma} \left( (\delta + \gamma)e^{(-\delta+\gamma)t} - (\delta - \gamma)e^{(-\delta-\gamma)t} \right)
+</annotation></semantics></math></p>
+<p>Ilyen eset áll fenn ajtók csillapításánál, hogy ne csapódjanak be,
+hanem szép lassan csukódjanak be.</p>
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p><strong>Alapvető paraméterek kiszámítása:</strong> Egy rugóra
+függesztett
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">m = 0,2</annotation></semantics></math>
+kg tömegű test sebességgel arányos csillapítású közegben mozog. A
+rugóállandó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">D = 50</annotation></semantics></math>
+N/m, a csillapítási együttható
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">\beta = 0,4</annotation></semantics></math>
+kg/s. Számítsd ki a csillapítatlan körfrekvenciát
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ω</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\omega_0</annotation></semantics></math>),
+a csillapítási tényezőt
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>δ</mi><annotation encoding="application/x-tex">\delta</annotation></semantics></math>),
+és a csillapított rezgés körfrekvenciáját
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>)!</p></li>
+<li><p><strong>Elméleti kérdés a kritikus csillapításról:</strong>
+Magyarázd el saját szavaiddal a szöveg alapján, miért törekednek a
+mérnökök az autók lengéscsillapítóinak tervezésekor a kritikus
+csillapítás elérésére! Mi történne a jármű menetstabilitásával, ha a
+rendszer alulcsillapított, és mi történne, ha túlcsillapított
+lenne?</p></li>
+<li><p><strong>Kitérés-idő függvény felírása:</strong> Egy csillapított
+harmonikus rezgés esetén tudjuk, hogy az amplitúdó kezdeti értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">A = 5</annotation></semantics></math>
+cm, a csillapítási tényező
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>δ</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> 1/s</mtext></mrow></mrow><annotation encoding="application/x-tex">\delta = 0,5\text{ 1/s}</annotation></semantics></math>,
+a csillapított rezgés körfrekvenciája pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> 1/s</mtext></mrow></mrow><annotation encoding="application/x-tex">\omega = 10\text{ 1/s}</annotation></semantics></math>.
+A kezdeti fázist
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>)
+tekintsd nullának. Írd fel a kitérés-idő függvényt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x(t)</annotation></semantics></math>
+alakban, és határozd meg, mekkora lesz a kitérés
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">t = 2</annotation></semantics></math>
+másodperc múlva!</p></li>
+<li><p><strong>Gyenge csillapítás ellenőrzése:</strong> Ellenőrizzük a
+kitérés kiszámítását a szimulációs adatok alapján, gyenge csillapítás
+esetén! Indítsuk el a szimulációt, majd rövid idő múlva állítsuk meg!
+Olvassuk le az 1-es test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-koordinátáját.
+Mivel a szimulációban az egyensúlyi helyzet az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x = 2</annotation></semantics></math>
+m-nél van, ezt az értéket le kell vonnunk a leolvasott koordinátából
+(hiszen az elméleti képleteink az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x = 0</annotation></semantics></math>
+egyensúlyi helyzetre vonatkoznak). Olvassuk le az eltelt időt is, és
+helyettesítsünk be a képletbe! A számított és a szimulációból leolvasott
+kitérés között 4 értékes jegy pontosságú egyezés várható.</p></li>
+<li><p><strong>Kritikus csillapítás ellenőrzése:</strong> Végezzük el az
+előző (4.) feladatban leírt ellenőrzést a kritikus csillapítás esetére
+is! Ehhez a vizsgálathoz a gyors lefolyás miatt érdemes a szimuláció
+sebességét a tizedére lassítani.</p></li>
+</ol>
+</body>
+</html>

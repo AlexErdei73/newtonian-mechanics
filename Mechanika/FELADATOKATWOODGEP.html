@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="atwood-gép-jellegű-feladatok">Atwood-gép jellegű feladatok</h1>
+<h2 id="a-második-törvény-mérése">A második törvény mérése</h2>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=9WdTzubd89M">Newton második
+törvényének mérése</a></p>
+<p>Ebben a kísérletben a kicsiny súly gyorsítja a teljes tömeget, ahogy
+nemsokára ezt az elmélettel is megmagyarázzuk. A gyorsító erő egyenesen
+arányos a gyorsulással, amit egy gyorsulásérzékelővel mérünk, mely
+Bluetooth segítségével össze van kapcsolva a telefonnal. A gyorsító erő
+egyenesen arányos a gyorsulással, ahogyan azt Newton második törvénye
+alapján tudjuk. Az arányossági tényező az össztömeg. Mi arra fogunk
+koncentrálni, hogy megmutassuk: itt valóban csak a kicsiny súly a
+gyorsító erő, mely a teljes össztömeget gyorsítja.</p>
+<p>Legyen a kocsi tömege, mely a vízszintes asztallapon mozog, az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mn>1</mn></msub><annotation encoding="application/x-tex">m_1</annotation></semantics></math>
+tömeg, míg a függőlegesen lefelé gyorsuló tömeg
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mn>2</mn></msub><annotation encoding="application/x-tex">m_2</annotation></semantics></math>.
+A két tömeget egy csigán keresztül egy fonal köti össze. A fonal
+nyújthatatlan és elhanyagolható tömegű, akárcsak a csiga. A súrlódás és
+a légellenállás is elhanyagolható. Számsítsuk ki a rendszer gyorsulását
+és a fonalban ébredő erőt is!</p>
+<figure>
+<img src="Kepek/newtonsecondlawmeasurement.svg"
+alt="Newton második törvényének mérése" />
+<figcaption aria-hidden="true">Newton második törvényének
+mérése</figcaption>
+</figure>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><mi>a</mi></mrow><annotation encoding="application/x-tex">
+K = m_1 a
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi><mo>−</mo><mi>K</mi><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><mi>a</mi></mrow><annotation encoding="application/x-tex">
+m_2 g - K = m_2 a
+</annotation></semantics></math></p>
+<p>Ezek az egyenletek Newton második törvényét fejezik ki az első és a
+második testre. Ha az első egyenletből
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+értékét beírjuk a második egyenletbe, akkor ki tudjuk fejezni az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+gyorsulást.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi><mo>−</mo><msub><mi>m</mi><mn>1</mn></msub><mi>a</mi><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><mi>a</mi></mrow><annotation encoding="application/x-tex">
+m_2 g - m_1 a = m_2 a
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">
+m_2 g = (m_1 + m_2)a
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac{m_2 g}{m_1 + m_2}
+</annotation></semantics></math></p>
+<p>A gyorsulás az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi></mrow><annotation encoding="application/x-tex">m_2 g</annotation></semantics></math>
+súly és az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">m_1 + m_2</annotation></semantics></math>
+össztömeg hányadosa, tehát valóban a kis lefelé mozgó súly gyorsítja a
+rendszer teljes össztömegét.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac><mi>g</mi></mrow><annotation encoding="application/x-tex">
+K = \frac{m_1 m_2}{m_1 + m_2}g
+</annotation></semantics></math></p>
+<h3 id="példa">Példa</h3>
+<p>A videóból látszik, hogy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">200\text{ g}</annotation></semantics></math>
+lefelé gyorsuló tömeg
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>0</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">2,0\text{ m/s}^2</annotation></semantics></math>
+gyorsulással mozog. Mekkora a rendszer össztömege? Mennyi a kocsi
+tömege? Mekkora a fonalerő? (A számítás során használjuk a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9,81\text{ m/s}^2</annotation></semantics></math>
+értéket, a videóban látható kerekített
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>≈</mo><mn>10</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g \approx 10\text{ m/s}^2</annotation></semantics></math>
+helyett.)</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">
+m_2 g = (m_1 + m_2)a
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi></mrow><mi>a</mi></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>981</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>=</mo><mn>981</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">
+m_1 + m_2 = \frac{m_2 g}{a} = \frac{0,2 \cdot 9,81}{2} = 0,981\text{ kg} = 981\text{ g}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>=</mo><mn>781</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">
+m_1 = 781\text{ g}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><mi>a</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>781</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>1</mn><mo>,</mo><mn>562</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+K = m_1 a = 0,781 \cdot 2 = 1,562\text{ N}
+</annotation></semantics></math></p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Mekkora a példában a rendszer mechanikai energiája, ha a gyorsító
+tömeg
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">200\text{ g}</annotation></semantics></math>,
+és a rendszer
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">0,5\text{ s}</annotation></semantics></math>-on
+át gyorsul? Mitől függ ez a mechanikai energia? Válasszuk a helyzeti
+energia nullaszintjét az első test magasságában, és kezdetben a második
+test legyen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">-0,1\text{ m}</annotation></semantics></math>
+magasságban!</p></li>
+<li><p>Számítsuk ki a testek elmozdulásait
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">0,5\text{ s}</annotation></semantics></math>
+alatt! Számítsuk ki a tömegközéppont koordinátáit a kezdeti és a végső
+pillanatban is! Mekkora a tömegközéppont gyorsulásának
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+komponense? Mutassuk meg, hogy ugyanezt kapjuk, ha a
+tömegközéppont-tétel alapján számolunk!</p></li>
+<li><p>Legyen az asztallap síkja
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>30</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">30^\circ</annotation></semantics></math>-os
+szögben a vízszintessel úgy, hogy a rajta lévő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">500\text{ g}</annotation></semantics></math>-os
+test emelkedjen a másik test süllyedésekor. Milyen nagy a rendszer
+gyorsulása, ha az egyensúlyi tömegnél
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">50\text{ g}</annotation></semantics></math>-mal
+nagyobb a függőlegesen mozgó test tömege? Mekkora a kötélben ébredő erő?
+A rendszer ideális, veszteségmentes.</p></li>
+<li><p>Egy asztallapon vízszintesen mozoghat egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>300</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">300\text{ g}</annotation></semantics></math>
+tömegű test. Az asztal két végén egy-egy elhanyagolható tömegű csiga
+van, melyeken átvetett fonalak a testet egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>150</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">150\text{ g}</annotation></semantics></math>-os
+és egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>250</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">250\text{ g}</annotation></semantics></math>-os
+testtel kötik össze. Ezek a testek függőlegesen mozognak, és a fonalak
+elhanyagolható tömegűek és nyújthatatlanok. A súrlódás elhanyagolható.
+Mekkora a rendszer gyorsulása? Mekkora erők ébrednek a
+fonalakban?</p></li>
+<li><p>Mekkorák a 4. feladatbeli rendszer tömegközéppontjának
+gyorsuláskomponensei, ha a testek álló helyzetből
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">0,2\text{ s}</annotation></semantics></math>-on
+át gyorsulnak? Számítsuk ki a tömegközéppont elmozdulásának
+komponenseit, és ez alapján a gyorsuláskomponenseket is! Mutassuk ki,
+hogy érvényes a tömegközéppont tétele, mert az ez alapján kiszámított
+gyorsuláskomponensek megegyeznek a tömegközéppont előző úton kiszámított
+gyorsuláskomponenseivel!</p></li>
+</ol>
+</body>
+</html>

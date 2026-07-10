@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="az-impulzus">Az impulzus</h1>
+<h2 id="a-tömegpont-fogalma">A tömegpont fogalma</h2>
+<p>Az eddigiekben olyan mozgásokkal foglalkoztunk, amelyekben a test
+mérete elhanyagolhatónak tekinthető az elmozdulásához kőpest. Ilyen
+esetben a test forgásától is eltekintünk, sőt a test teljes belső
+szerkezete figyelmen kívül hagyható a mozgás leírásának
+szempontjából.</p>
+<blockquote>
+<p><strong>A tömegpont gyakori közelítés a mechanikában, amikor a testet
+egy kiterjedés nélküli, matematikai ponttal írjuk le, amelynek tömege
+van.</strong></p>
+</blockquote>
+<p>Egyelőre most is egyetlen tömegpont mozgásával foglalkozunk, majd
+áttérünk azokra az esetekre, amikor több tömegpont mozgását vizsgáljuk
+egyidejűleg.</p>
+<h2 id="newton-második-törvénye-eredeti-alakjában">Newton második
+törvénye eredeti alakjában</h2>
+<p>A második törvényt eddig az alábbi alakban használtuk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">
+F_e = m \cdot a
+</annotation></semantics></math></p>
+<p>Itt az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>e</mi></msub><annotation encoding="application/x-tex">F_e</annotation></semantics></math>
+eredő erő és az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+gyorsulás egy irányba mutató vektorok.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>v</mi></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {\Delta v} {t} = \frac {v - v_0} {t}
+</annotation></semantics></math></p>
+<p>Ha ezt beírjuk az előző egyenletbe, és feltételezzük, hogy a tömeg
+állandó, tehát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><msub><mi>m</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+m = m_0
+</annotation></semantics></math></p>
+<p>akkor:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><mo>⋅</mo><mi>v</mi><mo>−</mo><msub><mi>m</mi><mn>0</mn></msub><mo>⋅</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mo>⋅</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+F_e = m \cdot \frac {v - v_0} {t} = \frac {m \cdot v - m_0 \cdot v_0} {t} = \frac {\Delta (m \cdot v)} {t}
+</annotation></semantics></math></p>
+<p>A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">m \cdot v</annotation></semantics></math>
+mennyiséget impulzusnak (lendületnek) nevezzük. Jele:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>.
+Ez vektormennyiség, és a sebességvektor irányába mutat. A második
+törvény általános alakja tehát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>I</mi><mo accent="true">→</mo></mover><mo>=</mo><mi>m</mi><mo>⋅</mo><mover><mi>v</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">
+\vec{I} = m \cdot \vec{v}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mi>e</mi></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mover><mi>I</mi><mo accent="true">→</mo></mover></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\vec{F}_e = \frac {\Delta \vec{I}} {t}
+</annotation></semantics></math></p>
+<p>Ez az a formula, ahogyan Newton a második törvényt eredetileg
+megfogalmazta. Ez az eredeti megfogalmazás állandó erő esetén érvényes,
+tehát egyenletesen változó mozgásokra vonatkozik, amelyekkel egyelőre
+foglalkozunk.</p>
+<p>Amennyiben az erő változik, a képlet csak az átlagos erőt adja meg.
+Ez általában nem egyezik meg az erő pillanatnyi értékével. Azonban a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+időtartam csökkentésével elérhető, hogy az átlagerő a számítási
+pontosságunkon belül megegyezzen az erő pillanatnyi értékével. Ilyenkor
+a képlet úgy értendő, hogy a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+időtartamot elegendően rövidre választjuk a kívánt pontosság eléréséhez.
+Ennek jelölése a következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+t \to 0
+</annotation></semantics></math></p>
+<p>Az eddig használt alak
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">F_e = m \cdot a</annotation></semantics></math>)
+csak akkor érvényes, ha a tömeg állandónak tekinthető. Ezt eddig
+feltételeztük. A fizikában van két fő eset, amikor a tömeg nem
+tekinthető állandónak:</p>
+<ol type="1">
+<li>A fény vákuumbeli sebességével összemérhető sebességek esetén a
+tömeg nem állandó. A második törvény az eredeti alakjában ekkor is
+érvényes, de az impulzus kifejezése megváltozik. Ezzel a
+relativitáselmélet foglalkozik, ami nem tartozik a newtoni mechanika
+tárgykörébe.</li>
+<li>A rakéták üzemanyagot lövellnek ki nagy sebességgel, így tömegük
+csökken a mozgás során. A rakéta mozgásának leírására az eredeti,
+impulzussal megfogalmazott alak használatos.</li>
+</ol>
+<h2 id="az-impulzus-fogalma">Az impulzus fogalma</h2>
+<blockquote>
+<p><strong>A test tömegének és sebességének szorzatát impulzusnak
+(lendületnek) nevezzük. Jele:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>,
+egysége:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">kg</mtext><mo>⋅</mo><mtext mathvariant="normal">m/s</mtext></mrow><annotation encoding="application/x-tex">\text{kg} \cdot \text{m/s}</annotation></semantics></math>.
+Az impulzus vektormennyiség, amely a sebesség irányába
+mutat.</strong></p>
+</blockquote>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>I</mi><mo accent="true">→</mo></mover><mo>=</mo><mi>m</mi><mo>⋅</mo><mover><mi>v</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">
+\vec{I} = m \cdot \vec{v}
+</annotation></semantics></math></p>
+<p>A második törvény eredeti, impulzussal felírt megfogalmazása a
+fentebb szereplő formula.</p>
+<h2 id="az-impulzus-megmaradása-tömegpontra">Az impulzus megmaradása
+tömegpontra</h2>
+<p>Ha az eredő erő nulla, akkor az impulzus változása is nulla. Ez azt
+jelenti, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>I</mi><mo accent="true">→</mo></mover><mo>=</mo><msub><mover><mi>I</mi><mo accent="true">→</mo></mover><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+\vec{I} = \vec{I}_0
+</annotation></semantics></math></p>
+<p>Ha a test tömege is állandó, akkor:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><msub><mi>m</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+m = m_0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>⋅</mo><mover><mi>v</mi><mo accent="true">→</mo></mover><mo>=</mo><msub><mi>m</mi><mn>0</mn></msub><mo>⋅</mo><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+m \cdot \vec{v} = m_0 \cdot \vec{v}_0
+</annotation></semantics></math></p>
+<p>Tehát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>v</mi><mo accent="true">→</mo></mover><mo>=</mo><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+\vec{v} = \vec{v}_0
+</annotation></semantics></math></p>
+<p>A test tehát egyenes vonalú, egyenletes mozgást végez vagy
+nyugalomban van. Visszakaptuk tehát az első törvényt, amely csak
+inerciarendszerben érvényes. Ebből látszik, hogy a második törvény
+eredeti alakja inerciarendszerekre vonatkozik.</p>
+<h2 id="példák">Példák</h2>
+<ol type="1">
+<li>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1300</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1300\text{ kg}</annotation></semantics></math>
+tömegű gépkocsi egyenes úton felgyorsít
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">20{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességről
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">30{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességre
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}00\text{ s}</annotation></semantics></math>
+idő alatt. Mekkora a kezdeti lendület? Mekkora a lendület a gyorsítás
+végén? Mekkora a gyorsítóerő? Számítsuk ki a gyorsulást és a gyorsítás
+alatt megtett utat! A súrlódás és a közegellenállás elhanyagolható.</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>0</mn></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>1300</mn><mo>⋅</mo><mn>20</mn><mo>,</mo><mn>0</mn><mo>=</mo><mn>26</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mrow><mtext mathvariant="normal">kg</mtext><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">
+I_0 = m \cdot v_0 = 1300 \cdot 20{,}0 = 26\ 000\text{ }\frac{\text{kg} \cdot \text{m}}{\text{s}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>v</mi><mo>=</mo><mn>1300</mn><mo>⋅</mo><mn>30</mn><mo>,</mo><mn>0</mn><mo>=</mo><mn>39</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mrow><mtext mathvariant="normal">kg</mtext><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">
+I = m \cdot v = 1300 \cdot 30{,}0 = 39\ 000\text{ }\frac{\text{kg} \cdot \text{m}}{\text{s}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mfrac><mrow><mi>I</mi><mo>−</mo><msub><mi>I</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mn>39</mn><mspace width="0.222em"></mspace><mn>000</mn><mo>−</mo><mn>26</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>6500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow><mo>=</mo><mn>6</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kN</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F_e = \frac {I - I_0} {t} = \frac {39\ 000 - 26\ 000} {2} = 6500\text{ N} = 6{,}50\text{ kN}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">
+F_e = m \cdot a
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><msub><mi>F</mi><mi>e</mi></msub><mi>m</mi></mfrac><mo>=</mo><mfrac><mn>6500</mn><mn>1300</mn></mfrac><mo>=</mo><mn>5</mn><mo>,</mo><mn>00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {F_e} {m} = \frac {6500} {1300} = 5{,}00\text{ }\frac{\text{m}}{\text{s}^2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>=</mo><mn>20</mn><mo>,</mo><mn>0</mn><mo>⋅</mo><mn>2</mn><mo>+</mo><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>⋅</mo><msup><mn>2</mn><mn>2</mn></msup><mo>=</mo><mn>50</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 20{,}0 \cdot 2 + \frac {5} {2} \cdot 2^2 = 50{,}0\text{ m}
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>Egy vadászgép hajtóművei felszálláskor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>76</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kN</mtext></mrow></mrow><annotation encoding="application/x-tex">76\text{ kN}</annotation></semantics></math>
+erőt fejtenek ki. A gép tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>18</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">18\ 000\text{ kg}</annotation></semantics></math>.
+Mennyi idő alatt száll fel a gép, ha álló helyzetből
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>80</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">80{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességre kell felgyorsulnia? Mekkora a gép lendülete a felszállás
+pillanatában? Mekkora a gyorsulás és a felszálláshoz szükséges
+kifutópálya hossza?</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>v</mi><mo>=</mo><mn>18</mn><mspace width="0.222em"></mspace><mn>000</mn><mo>⋅</mo><mn>80</mn><mo>,</mo><mn>0</mn><mo>=</mo><mn>1</mn><mspace width="0.222em"></mspace><mn>440</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mrow><mtext mathvariant="normal">kg</mtext><mo>⋅</mo><mtext mathvariant="normal">m</mtext></mrow><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">
+I = m \cdot v = 18\ 000 \cdot 80{,}0 = 1\ 440\ 000\text{ }\frac{\text{kg} \cdot \text{m}}{\text{s}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+I_0 = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>e</mi></msub><mo>=</mo><mfrac><mrow><mi>I</mi><mo>−</mo><msub><mi>I</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+F_e = \frac {I - I_0} {t}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>76</mn><mspace width="0.222em"></mspace><mn>000</mn><mo>=</mo><mfrac><mrow><mn>1</mn><mspace width="0.222em"></mspace><mn>440</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+76\ 000 = \frac {1\ 440\ 000} {t}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mn>1</mn><mspace width="0.222em"></mspace><mn>440</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow><mrow><mn>76</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow></mfrac><mo>≈</mo><mn>18</mn><mo>,</mo><mn>95</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+t = \frac {1\ 440\ 000} {76\ 000} \approx 18{,}95\text{ s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mn>80</mn><mo>,</mo><mn>0</mn><mo>−</mo><mn>0</mn></mrow><mrow><mn>18</mn><mo>,</mo><mn>95</mn></mrow></mfrac><mo>≈</mo><mn>4</mn><mo>,</mo><mn>222</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {v - v_0} {t} = \frac {80{,}0 - 0} {18{,}95} \approx 4{,}222\text{ }\frac{\text{m}}{\text{s}^2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>4</mn><mo>,</mo><mn>222</mn></mrow><mn>2</mn></mfrac><mo>⋅</mo><mn>18</mn><mo>,</mo><msup><mn>95</mn><mn>2</mn></msup><mo>≈</mo><mn>758</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+s = \frac {a} {2} \cdot t^2 = \frac {4{,}222} {2} \cdot 18{,}95^2 \approx 758\text{ m}
+</annotation></semantics></math></p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<p><strong>1. A leggyorsabb emlős lendülete</strong> Mekkora a lendülete
+egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>45</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">45\text{ kg}</annotation></semantics></math>
+tömegű gepárdnak, ha éppen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>108</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">108\text{ km/h}</annotation></semantics></math>
+állandó sebességgel fut az áldozata után?</p>
+<p><strong>2. Labda megállítása a kapuban</strong> Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}4\text{ kg}</annotation></semantics></math>
+tömegű futballlabda
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">15\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
+sebességgel repül a kapu felé. A kapus elkapja a labdát, és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}1\text{ s}</annotation></semantics></math>
+alatt teljesen megállítja azt. Mekkora átlagos erőt fejtett ki a kapus a
+labdára a fékezési szakaszban?</p>
+<p><strong>3. Teniszadogatás</strong> Egy teniszjátékos a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">60\text{ g}</annotation></semantics></math>
+tömegű labdát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math>-ról
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>180</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">180\text{ km/h}</annotation></semantics></math>
+sebességre gyorsítja fel az adogatás során. Az ütés érintkezési ideje
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> ezredmásodperc</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ ezredmásodperc}</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>005</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}005\text{ s}</annotation></semantics></math>).
+Határozza meg a labda lendületváltozását és az ütő által kifejtett
+átlagos erőt!</p>
+<p><strong>4. Tehervonat fékezése</strong> Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> tonnás</mtext></mrow></mrow><annotation encoding="application/x-tex">2000\text{ tonnás}</annotation></semantics></math>
+tehervonat
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>54</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">54\text{ km/h}</annotation></semantics></math>
+sebességgel halad a pályán. Mekkora állandó fékezőerő szükséges ahhoz,
+hogy a vonat pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> másodperc</mtext></mrow></mrow><annotation encoding="application/x-tex">60\text{ másodperc}</annotation></semantics></math>
+alatt teljesen megálljon?</p>
+<p><strong>5. Műhold pályakorrekciója</strong> Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">600\text{ kg}</annotation></semantics></math>
+tömegű műhold pályakorrekciót végez a világűrben. A hajtóműve
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> másodpercen</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ másodpercen}</annotation></semantics></math>
+keresztül
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">1200\text{ N}</annotation></semantics></math>
+állandó erőt fejt ki a mozgás irányába. Mennyivel változott meg a műhold
+lendülete és sebessége a manőver végére?</p>
+</body>
+</html>

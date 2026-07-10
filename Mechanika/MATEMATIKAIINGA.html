@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-matematikai-inga">A matematikai inga</h1>
+<h2 id="a-matematikai-inga-fogalma">A matematikai inga fogalma</h2>
+<blockquote>
+<p><strong>Matematikai inga:</strong> Pontszerű test, mely rögzített
+hosszúságú, nyújthatatlan, elhanyagolható tömegű fonalon a nehézségi erő
+hatása alatt végezhet lengéseket. A fonal másik vége a Földhöz rögzített
+rendszerben rögzítve van. A lengések során a fonal feszes marad.</p>
+</blockquote>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=1R5jpNTSxDg">Kúpinga
+bemutatása</a></p>
+<p>A kísérlet szépen mutatja, hogy kis nyílásszögek esetére a kúpinga
+periódusideje közelítőleg megegyezik a matematikai inga
+periódusidejével. A kúpinga egyenletes körmozgása szinkronban történik
+az inga lengéseivel, feltéve, hogy a kúp nyílásszöge megegyezik az inga
+lengésének szögével és ezeket egyszerre indítják. Ezek szerint az inga
+jó közelítéssel harmonikus rezgőmozgást végez kis kitérések esetén.</p>
+<p>A periódusidőre is azt a képletet kaptuk, amelyet az inga lengéseire
+fogunk levezetni. Az egyezés azonban csak a kis kúpszögek határesetére
+igaz!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mrow><mi>l</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi></mrow><mi>g</mi></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt{ \frac {l \cos \Theta} {g} }
+</annotation></semantics></math></p>
+<p>Ha
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+a keringés sugara és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>
+a fonal hossza, akkor érvényes, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><mfrac><msqrt><mrow><msup><mi>l</mi><mn>2</mn></msup><mo>−</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></msqrt><mi>l</mi></mfrac><mo>=</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>r</mi><mi>l</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">
+\cos \Theta = \frac {\sqrt {l^2 - r^2}} {l} = \sqrt {1 - \left(\frac r l\right)^2}
+</annotation></semantics></math></p>
+<p>Amennyiben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>≪</mo><mi>l</mi></mrow><annotation encoding="application/x-tex">r \ll l</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi><mo>≈</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
+\cos \Theta \approx 1
+</annotation></semantics></math></p>
+<p>tehát a következő képletet kapjuk a kis kitérésű inga
+lengésidejére:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>l</mi><mi>g</mi></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt{ \frac l g }
+</annotation></semantics></math></p>
+<h2 id="a-mozgásegyenlet">A mozgásegyenlet</h2>
+<figure>
+<img src="Kepek/mathematicalpendulum.svg" alt="A matematikai inga" />
+<figcaption aria-hidden="true">A matematikai inga</figcaption>
+</figure>
+<p>A testre csak a nehézségi erő és a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+kötélerő hat. A kötélerő a kötél irányába mutat, míg a nehézségi erő
+függőlegesen lefelé. Bontsuk fel a nehézségi erőt kötél irányú és rá
+merőleges, tehát érintő irányú komponenseire! Az inga körmozgást végez,
+de ez nem egyenletes körmozgás. A kötél irányú komponensekre a következő
+összefüggés érvényes:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>−</mo><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>=</mo><mi>m</mi><msub><mi>a</mi><mrow><mi>c</mi><mi>p</mi></mrow></msub><mo>=</mo><mi>m</mi><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>l</mi></mfrac><mo>=</mo><mi>m</mi><mi>l</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+K - mg\cos\phi = ma_{cp} = m\frac {v^2} {l} = ml\omega^2
+</annotation></semantics></math></p>
+<p>Ez az egyenlet alkalmas a kötélben ébredő erő meghatározására. Erre
+most mi nem vagyunk kíváncsiak. A számunkra érdekes egyenlet az érintő
+irányú komponensekre vonatkozik. Legyen a komponensek pozitív iránya a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+kitérési szög növekedése által meghatározott irány! Ekkor az érintő
+irányú erő a következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mo>=</mo><mi>−</mi><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+F_t = -mg\sin\phi
+</annotation></semantics></math></p>
+<p>Az erő negatív, hiszen a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+kitérést csökkenteni igyekszik, amennyiben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+pozitív. Newton második törvénye szerint:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">
+F_t = ma_t
+</annotation></semantics></math></p>
+<p>Tehát</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><mi>−</mi><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+ma_t = -mg\sin\phi
+</annotation></semantics></math></p>
+<p>Vagyis</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><mi>−</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+a_t = -g\sin\phi
+</annotation></semantics></math></p>
+<p>Az érintő irányú gyorsulás előjeles értéke a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+szöggyorsulásból kapható meg a következőképpen:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><mi>l</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">
+a_t = l\beta
+</annotation></semantics></math></p>
+<p>Ez igaz, hiszen a körmozgás sugara esetünkben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>,
+a fonal hossza.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mi>β</mi><mo>=</mo><mi>−</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+l\beta = -g\sin\phi
+</annotation></semantics></math></p>
+<p>Tehát a mozgásegyenlet végleges alakja a következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mi>−</mi><mfrac><mi>g</mi><mi>l</mi></mfrac><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+\beta = - \frac g l \sin\phi
+</annotation></semantics></math></p>
+<p>A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+szögre hasonló egyenletet kaptunk, mint a harmonikus rezgőmozgással
+analóg mozgásegyenlet. A gyorsulás helyett itt a szöggyorsulás szerepel,
+de az egyenlet jobb oldalán a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+szög helyett annak szinusza szerepel. Mi a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+szög megjelenését várnánk, hisz akkor lehetne az egyenletet koszinusz
+függvénnyel megoldani az ismeretlen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+szög időbeli változására, tehát a mozgás ekkor lenne harmonikus
+rezgőmozgás a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+szögre! Ez az egyenlet bár megoldható, a megoldása csak felsőbb
+matematikával lehetséges és ott is nehéz, mivel speciális függvények
+alkalmazására vezet. Mi más utat választunk.</p>
+<h2 id="kis-szögek-határesete">Kis szögek határesete</h2>
+<figure>
+<img src="Kepek/kisszogek.svg" alt="A kis szogek hataresete" />
+<figcaption aria-hidden="true">A kis szogek hataresete</figcaption>
+</figure>
+<p>Legyen most a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+szög igen kicsiny a lengés teljes tartama alatt! Ekkor a szinusz
+függvény a következő lesz:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>=</mo><mfrac><mi>x</mi><mi>l</mi></mfrac><mo>≈</mo><mfrac><mi>s</mi><mi>l</mi></mfrac><mo>=</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+\sin\phi = \frac {x} {l} \approx \frac {s} {l} = \phi
+</annotation></semantics></math></p>
+<p>Itt a közelítésünk lényege, hogy az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>s</mi></mrow><annotation encoding="application/x-tex">2s</annotation></semantics></math>
+ívhosszat a hozzá tartozó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>x</mi></mrow><annotation encoding="application/x-tex">2x</annotation></semantics></math>
+hosszúságú húrral pótoltuk, amely egyenes szakasz. Ez nyilván annál
+pontosabb, minél kisebb a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+kitérés. Ez azt jelenti, hogy ebben a speciális esetben jogosak az
+alábbi közelítések:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≈</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">
+x \approx s
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>≈</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+\sin \phi \approx \phi
+</annotation></semantics></math></p>
+<p>Tehát az inga mozgásegyenlete kis kitérések esetén a következő alakot
+ölti:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mi>−</mi><mfrac><mi>g</mi><mi>l</mi></mfrac><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+\beta = -\frac g l \phi
+</annotation></semantics></math></p>
+<p>Vezessük be a következő jelölést!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>=</mo><mfrac><mi>g</mi><mi>l</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\omega^2 = \frac g l
+</annotation></semantics></math></p>
+<p>Ekkor az egyenlet megoldása periodikus rezgés a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+szögre. Ha az ingát a szélső helyzetéből sebesség nélkül engedjük el,
+akkor ez a függvény a következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>=</mo><msub><mi>ϕ</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+\phi = \phi_{max} \cos(\omega t)
+</annotation></semantics></math></p>
+<p>Ezt az egyenletet a fonal
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>
+hosszával megszorozva kapjuk, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+s = A\cos(\omega t)
+</annotation></semantics></math></p>
+<p>Közelítésünk alapján az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+ívhossz a függőleges szimmetriatengelytől mért
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+távolsággal pótolható, így:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+x = A\cos(\omega t)
+</annotation></semantics></math></p>
+<p>Ez persze csak akkor igaz, ha az inga
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ϕ</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><annotation encoding="application/x-tex">\phi_{max}</annotation></semantics></math>
+maximális kitérési szöge is igen kicsiny radiánban.</p>
+<h2 id="a-periódusidő">A periódusidő</h2>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>=</mo><mfrac><mi>g</mi><mi>l</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\omega^2 = \frac g l
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>T</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\omega = \frac {2\pi} {T}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow><msup><mi>T</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mi>g</mi><mi>l</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\frac {4\pi^2} {T^2} = \frac g l
+</annotation></semantics></math></p>
+<p>Vegyük mindkét oldal reciprokát!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>T</mi><mn>2</mn></msup><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mi>l</mi><mi>g</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\frac {T^2} {4\pi^2} = \frac l g
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><mfrac><mi>l</mi><mi>g</mi></mfrac></mrow><annotation encoding="application/x-tex">
+T^2 = 4\pi^2 \frac l g
+</annotation></semantics></math></p>
+<p>Végül mindkét oldalból gyököt vonva kapjuk a következő képletet:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>l</mi><mi>g</mi></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt {\frac l g}
+</annotation></semantics></math></p>
+<p>Látjuk, hogy a periódusidő nem függ sem az amplitúdótól, sem pedig a
+lengő test tömegétől. Az amplitúdótól való függetlenség azonban csak a
+kis kitérések határesetére igaz.</p>
+<h3 id="példa">Példa</h3>
+<p>Számítsuk ki az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ m}</annotation></semantics></math>
+hosszú inga periódusidejét! Ezt szokták másodpercingának is nevezni. Mi
+ennek az oka?</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>l</mi><mi>g</mi></mfrac></msqrt><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>1415</mn><mo>⋅</mo><msqrt><mfrac><mn>1</mn><mrow><mn>9</mn><mo>,</mo><mn>81</mn></mrow></mfrac></msqrt><mo>=</mo><mn>2</mn><mo>,</mo><mn>0060</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt{\frac l g} = 2 \cdot 3,1415 \cdot \sqrt {\frac{1}{9,81}} = 2,0060\text{ s}
+</annotation></semantics></math></p>
+<p>Ennek az ingának a fél periódusa (tehát amíg egyik szélső helyzetből
+a vele szemben lévő szélső helyzetbe lendül) kb. 1 másodperc. A hiba
+csak kb. 3 ezrelék, de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+és így a hiba is függ kissé a földrajzi helytől.</p>
+<h3 id="szimuláció">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#be74d75b-d4ef-49e0-ac4e-98ff80ff6a54">A
+matematikai inga</a></p>
+<p>A szimulációban a test az alsó, egyensúlyi helyzetből indul egy
+lökéssel. Az inga hossza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">3\text{ m}</annotation></semantics></math>,
+a nehézségi gyorsulás
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>80</mn><mspace width="0.222em"></mspace><msup><mtext mathvariant="normal">m/s</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">9,80\ \text{m/s}^2</annotation></semantics></math>.
+* Mérjük meg az első 10 lengés időtartamát! Mivel az inga nem a szélső
+helyzetből indul, de nekünk a szélső helyzetben célszerű megállítani a
+szimulátort, a periódusidő kiszámításához az időt, amit a szimulátor
+mutat 10,25-tel kell elosszuk, hisz 10 és egy negyed lengést mérünk. *
+Számítsuk is ki a lengésidőt az adatokból. Mekkora hibára számíthatunk?
+Melyik a legfontosabb hibaforrás és mekkora a tényleges hiba?</p>
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Egy diák egy olyan matematikai ingát szeretne készíteni az
+iskolai laboratóriumban, amelynek periódusideje pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">2,5\text{ s}</annotation></semantics></math>.
+Milyen hosszú fonalat kell ehhez használnia, ha a nehézségi gyorsulást
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mspace width="0.222em"></mspace><msup><mtext mathvariant="normal">m/s</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9,81\ \text{m/s}^2</annotation></semantics></math>-nek
+tekintjük?</p></li>
+<li><p>Egy űrhajós egy idegen bolygón landol, és egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0,8\text{ m}</annotation></semantics></math>
+hosszú matematikai ingával kísérletezik. Azt méri, hogy az inga
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>15</mn><annotation encoding="application/x-tex">15</annotation></semantics></math>
+teljes lengést pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ s}</annotation></semantics></math>
+alatt tesz meg. Mekkora a nehézségi gyorsulás ezen az ismeretlen
+bolygón?</p></li>
+<li><p>Két matematikai inga lengésidejét hasonlítjuk össze. Az egyik
+inga fonala pontosan kilencszer olyan hosszú, mint a másik ingáé. Milyen
+arányban áll egymással a két inga periódusideje? Válaszodat indokold a
+tanult képlet alapján!</p></li>
+</ol>
+</body>
+</html>

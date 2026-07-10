@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-tehetetlenségi-nyomaték">A tehetetlenségi nyomaték</h1>
+<h2 id="direkt-kiszámítás">Direkt kiszámítás</h2>
+<p>A tehetetlenségi nyomatéknak láttuk már a definícióját. Vesszük az
+egyes tömegeket, megszorozzuk őket a forgástengelytől mért távolságuk
+négyzetével, majd az így nyert szorzatokat összeadjuk. Formulában ez így
+nézett ki:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><msubsup><mi>r</mi><mi>i</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+\Theta = \sum_{i = 1}^{N} m_i r_i^2
+</annotation></semantics></math></p>
+<p>Ez a definíció felhasználható a kiszámításra, de ez általában
+számunkra nehézkes, mert nem ismerjük a szükséges matematikát még elég
+jól.</p>
+<h3 id="példa">Példa</h3>
+<p>Számítsuk ki egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+tömegű és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>
+hosszúságú rúd tehetetlenségi nyomatékát, ha a rudat a végpontján átmenő
+és a rúdra merőleges tengely körül megforgatjuk.</p>
+<p>Legyen például a rúd
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+tengely irányú, és az origón átmenő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+tengely körül forgatjuk meg. A rúd vastagsága elhanyagolható a hosszához
+képest! Először is felosztjuk jó sok
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+darabkára:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>i</mi></msub><mo>=</mo><mfrac><mi>m</mi><mi>N</mi></mfrac></mrow><annotation encoding="application/x-tex">
+m_i = \frac{m}{N}
+</annotation></semantics></math></p>
+<p>Az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>-edik
+darabka
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+koordinátája:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>i</mi></msub><mo>=</mo><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mi>i</mi><mo>⋅</mo><mfrac><mi>l</mi><mi>N</mi></mfrac></mrow><annotation encoding="application/x-tex">
+r_i = x_i = i \cdot \frac{l}{N}
+</annotation></semantics></math></p>
+<p>A definíció alapján felírhatjuk az alábbi összefüggést:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">rúd</mtext></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><msubsup><mi>r</mi><mi>i</mi><mn>2</mn></msubsup><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mfrac><mi>m</mi><mi>N</mi></mfrac><mo>⋅</mo><mfrac><mrow><msup><mi>i</mi><mn>2</mn></msup><msup><mi>l</mi><mn>2</mn></msup></mrow><msup><mi>N</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><msup><mi>N</mi><mn>3</mn></msup></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msup><mi>i</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{rúd}} = \sum_{i = 1}^{N} m_i r_i^2 = \sum_{i = 1}^{N} \frac{m}{N} \cdot \frac{i^2 l^2}{N^2} = \frac{m l^2}{N^3} \sum_{i = 1}^{N} i^2
+</annotation></semantics></math></p>
+<p>Matematikai nehézségünk most az összeg kiszámítása. Ebben már semmi
+fizika nincs, de nehéz problémának tűnik. Szerencsére már régen
+megoldott probléma, de sajnos általában nem tudjuk a megoldást
+rögtön.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><mi>…</mi><mo>+</mo><msup><mi>N</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>9</mn><mo>+</mo><mi>…</mi><mo>+</mo><msup><mi>N</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\sum_{i = 1}^{N} i^2 = 1^2 + 2^2 + 3^2 + \dots + N^2 = 1 + 4 + 9 + \dots + N^2
+</annotation></semantics></math></p>
+<p>Reméljük, találunk egy képletet erre! Nézzük meg az értékeket
+különböző
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+értékekre, és próbáljunk találni valami összefüggést!</p>
+<table>
+<thead>
+<tr>
+<th
+style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math></th>
+<th
+style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><msup><mi>i</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\sum_{i = 1}^{N} i^2</annotation></semantics></math></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">14</td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">30</td>
+</tr>
+</tbody>
+</table>
+<p>Sejtésünk szerint a formula
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>-ben
+harmadfokú polinom. Látni fogjuk, hogy egy ilyen képlet megoldaná a
+problémánkat, és a képlet ilyen alakú:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><mi>a</mi><msup><mi>N</mi><mn>3</mn></msup><mo>+</mo><mi>b</mi><msup><mi>N</mi><mn>2</mn></msup><mo>+</mo><mi>c</mi><mi>N</mi><mo>+</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">
+\sum_{i = 1}^{N} i^2 = aN^3 + bN^2 + cN + d
+</annotation></semantics></math></p>
+<p>Az ismeretlen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>,
+valamint
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+számokat megpróbáljuk meghatározni a táblázatunk alapján!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">
+0 = d
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">
+1 = a + b + c
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>=</mo><mn>8</mn><mi>a</mi><mo>+</mo><mn>4</mn><mi>b</mi><mo>+</mo><mn>2</mn><mi>c</mi></mrow><annotation encoding="application/x-tex">
+5 = 8a + 4b + 2c
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>14</mn><mo>=</mo><mn>27</mn><mi>a</mi><mo>+</mo><mn>9</mn><mi>b</mi><mo>+</mo><mn>3</mn><mi>c</mi></mrow><annotation encoding="application/x-tex">
+14 = 27a + 9b + 3c
+</annotation></semantics></math></p>
+<p>Megoldjuk az egyenletrendszert, és remélhetőleg megkapjuk a keresett
+képletet! Az első egyenletet kivonjuk a másik kettőből annyiszor, hogy a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+eltűnjön:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>=</mo><mn>6</mn><mi>a</mi><mo>+</mo><mn>2</mn><mi>b</mi></mrow><annotation encoding="application/x-tex">
+3 = 6a + 2b
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mo>=</mo><mn>24</mn><mi>a</mi><mo>+</mo><mn>6</mn><mi>b</mi></mrow><annotation encoding="application/x-tex">
+11 = 24a + 6b
+</annotation></semantics></math></p>
+<p>Már csak 2 egyenlet van és 2 ismeretlen. Most az itteni első egyenlet
+3-szorosát vonjuk ki a másik egyenletből!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><mn>6</mn><mi>a</mi></mrow><annotation encoding="application/x-tex">
+2 = 6a
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac{1}{3}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+b = \frac{1}{2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>1</mn><mo>−</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></mrow><annotation encoding="application/x-tex">
+c = 1 - a - b = 1 - \frac{1}{3} - \frac{1}{2} = \frac{1}{6}
+</annotation></semantics></math></p>
+<p>A formula sejtésünk szerint a következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msup><mi>i</mi><mn>2</mn></msup><mo>=</mo><mfrac><msup><mi>N</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo>+</mo><mfrac><msup><mi>N</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>+</mo><mfrac><mi>N</mi><mn>6</mn></mfrac></mrow><annotation encoding="application/x-tex">
+\sum_{i = 1}^{N} i^2 = \frac{N^3}{3} + \frac{N^2}{2} + \frac{N}{6}
+</annotation></semantics></math></p>
+<p>Kipróbálhatjuk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">N = 4</annotation></semantics></math>
+esetére, hátha működik arra is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mn>4</mn><mn>3</mn></msup><mn>3</mn></mfrac><mo>+</mo><mfrac><msup><mn>4</mn><mn>2</mn></msup><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>4</mn><mn>6</mn></mfrac><mo>=</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">
+\frac{4^3}{3} + \frac{4^2}{2} + \frac{4}{6} = 30
+</annotation></semantics></math></p>
+<p>Táblázatunkban is ennyit számoltunk, tehát a formula látszólag
+tökéletes nagyobb
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+értékekre is. Be lehet bizonyítani, hogy minden
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+természetes számra érvényes. Most már szinte készen is vagyunk.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">rúd</mtext></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>a</mi><mo>+</mo><mfrac><mi>b</mi><mi>N</mi></mfrac><mo>+</mo><mfrac><mi>c</mi><msup><mi>N</mi><mn>2</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{rúd}} = \left(a + \frac{b}{N} + \frac{c}{N^2}\right)ml^2
+</annotation></semantics></math></p>
+<p>Látjuk, hogy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Θ</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>
+még függ az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+értékétől, de ezt nagyon meg kell növelnünk, hogy a folytonos
+tömegeloszlásúnak tekintett rudat jól megközelíthessük. Ekkor a
+zárójelben csak az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">a = \frac{1}{3}</annotation></semantics></math>
+tag marad, a másik kettő elhanyagolható lesz. Így megkaptuk, amit
+akartunk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">rúd</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{rúd}} = \frac{1}{3}ml^2
+</annotation></semantics></math></p>
+<h2
+id="tehetetlenségi-nyomatékok-tömegközépponton-átmenő-tengelyre">Tehetetlenségi
+nyomatékok (tömegközépponton átmenő tengelyre)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Test</th>
+<th
+style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><annotation encoding="application/x-tex">\Theta_{\text{TKP}}</annotation></semantics></math></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Körvonal / vékony gyűrű</td>
+<td
+style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">mR^2</annotation></semantics></math></td>
+</tr>
+<tr>
+<td style="text-align: left;">Körlap / homogén tárcsa</td>
+<td
+style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\frac{1}{2}mR^2</annotation></semantics></math></td>
+</tr>
+<tr>
+<td style="text-align: left;">Henger (homogén)</td>
+<td
+style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\frac{1}{2}mR^2</annotation></semantics></math></td>
+</tr>
+<tr>
+<td style="text-align: left;">Rúd (homogén, hossztengelyre
+merőleges)</td>
+<td
+style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>12</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\frac{1}{12}ml^2</annotation></semantics></math></td>
+</tr>
+<tr>
+<td style="text-align: left;">Gömb (homogén, tömör)</td>
+<td
+style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>2</mn><mn>5</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\frac{2}{5}mR^2</annotation></semantics></math></td>
+</tr>
+</tbody>
+</table>
+<h2 id="a-tehetetlenségi-nyomatékra-vonatkozó-tételek">A tehetetlenségi
+nyomatékra vonatkozó tételek</h2>
+<p>Látjuk, hogy a közvetlen kiszámítás eléggé körülményes, főleg
+integrálszámítás nélkül, amit még nem tanultunk. Szükségünk van tehát
+táblázatokra és tételekre, hogy megkönnyítsük a dolgunkat.</p>
+<ol type="1">
+<li><strong>Lapítási tétel:</strong> Szabad a testet a forgástengellyel
+párhuzamosan nyújtani vagy lapítani anélkül, hogy a tehetetlenségi
+nyomatéka megváltozna.</li>
+</ol>
+<h3 id="példák">Példák</h3>
+<ol type="1">
+<li>Mennyi a tehetetlenségi nyomatéka az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+tömegű, valamint
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+oldalú téglalap alakú lemeznek, ha az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+oldal a forgástengely? A test összelapítható egy rúddá a forgástengely
+mentén, melynek hossza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+és tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+marad. A formula tehát a következő lesz:</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mrow><mi>a</mi><mo>,</mo><mtext mathvariant="normal">téglalap</mtext></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{a,\text{téglalap}} = \frac{1}{3}mb^2
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>Mennyi a tehetetlenségi nyomatéka egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+tömegű és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+sugarú homogén hengernek a szimmetriatengelyére vonatkozólag, ha egy
+ugyanilyen paraméterű körlapnak a tehetetlenségi nyomatéka:</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP,körlap</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{TKP,körlap}} = \frac{1}{2}mR^2
+</annotation></semantics></math></p>
+<p>Pontosan ugyanannyi, mert a hengert a körlap kinyújtásával kapjuk a
+szimmetriatengely mentén.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP,henger</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{TKP,henger}} = \frac{1}{2}mR^2
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li><strong>Addíciós tétel:</strong> Ha a test ismert tehetetlenségi
+nyomatékú testekből tehető össze, akkor a tehetetlenségi nyomatékok
+összege lesz a keresett tehetetlenségi nyomaték.</li>
+</ol>
+<h3 id="példa-1">Példa</h3>
+<p>Mekkora az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+tömegű és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>
+hosszúságú merev rúd tehetetlenségi nyomatéka a rúdra merőleges és a rúd
+felezőpontján átmenő forgástengelyre vonatkozólag?</p>
+<p>Ez két
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>m</mi><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{m}{2}</annotation></semantics></math>
+tömegű és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>l</mi><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{l}{2}</annotation></semantics></math>
+hosszúságú darabból tehető össze, amelyeket a végeiknél pörgetünk. Ez az
+az eset, amit már kiszámítottunk.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP,rúd</mtext></msub><mo>=</mo><mn>2</mn><mo>⋅</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>⋅</mo><mfrac><mi>m</mi><mn>2</mn></mfrac><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>l</mi><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{TKP,rúd}} = 2 \cdot \frac{1}{3} \cdot \frac{m}{2} \left(\frac{l}{2}\right)^2 = \frac{1}{12}ml^2
+</annotation></semantics></math></p>
+<ol start="3" type="1">
+<li><strong>Poláris-ekvatoriális tétel (Merőleges tengelyek
+tétele):</strong> Amennyiben a test egy lemez az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mtext mathvariant="normal">-</mtext><mi>y</mi></mrow><annotation encoding="application/x-tex">x\text{-}y</annotation></semantics></math>
+síkban (tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+irányú kiterjedése elhanyagolható), akkor a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+tengelyre vonatkozó tehetetlenségi nyomatéka egyenlő az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+tengelyekre vonatkozó tehetetlenségi nyomatékok összegével.</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mi>z</mi></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><msubsup><mi>r</mi><mi>i</mi><mn>2</mn></msubsup><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>y</mi><mi>i</mi><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><msubsup><mi>y</mi><mi>i</mi><mn>2</mn></msubsup><mo>=</mo><msub><mi mathvariant="normal">Θ</mi><mi>x</mi></msub><mo>+</mo><msub><mi mathvariant="normal">Θ</mi><mi>y</mi></msub></mrow><annotation encoding="application/x-tex">
+\Theta_z = \sum_{i = 1}^{N} m_i r_i^2 = \sum_{i = 1}^{N} m_i(x_i^2 + y_i^2) = \sum_{i = 1}^{N} m_i x_i^2 + \sum_{i = 1}^{N} m_i y_i^2 = \Theta_x + \Theta_y
+</annotation></semantics></math></p>
+<h3 id="példa-2">Példa</h3>
+<p>Mekkora egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+tömegű, valamint
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+oldalú homogén téglalap alakú lemez tehetetlenségi nyomatéka a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+tengely körül, ha a lap az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mtext mathvariant="normal">-</mtext><mi>y</mi></mrow><annotation encoding="application/x-tex">x\text{-}y</annotation></semantics></math>
+síkban van, és oldalai a tengelyekkel párhuzamosak, az origó pedig a
+téglalap középső pontja?</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP,téglalap</mtext></msub><mo>=</mo><msub><mi mathvariant="normal">Θ</mi><mi>x</mi></msub><mo>+</mo><msub><mi mathvariant="normal">Θ</mi><mi>y</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mi>m</mi><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mi>m</mi><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mi>m</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{TKP,téglalap}} = \Theta_x + \Theta_y = \frac{1}{12}ma^2 + \frac{1}{12}mb^2 = \frac{1}{12}m(a^2 + b^2)
+</annotation></semantics></math></p>
+<ol start="4" type="1">
+<li><strong>Steiner-tétel:</strong> Ha ismerjük egy test
+tömegközéppontján átmenő tengelyre vonatkozó tehetetlenségi nyomatékát,
+akkor egy ezzel párhuzamos és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+távolságra lévő tengelyre:</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>+</mo><mi>M</mi><msup><mi>d</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta = \Theta_{\text{TKP}} + Md^2
+</annotation></semantics></math></p>
+<p>ahol
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+a test össztömege.</p>
+<p>Legyen a tengely a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+tengely, de a test tömegközéppontja ne legyen az origóban, hanem legyen
+az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+tengelyen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">x_{\text{TKP}} = d</annotation></semantics></math>
+értéknél!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>y</mi><mi>i</mi><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+\Theta = \sum_{i = 1}^{N} m_i(x_i^2 + y_i^2)
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><mi>d</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><msubsup><mi>y</mi><mi>i</mi><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup><mo>−</mo><mn>2</mn><mi>d</mi><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><msup><mi>d</mi><mn>2</mn></msup><mo>+</mo><msubsup><mi>y</mi><mi>i</mi><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{TKP}} = \sum_{i = 1}^{N} m_i((x_i - d)^2 + y_i^2) = \sum_{i = 1}^{N} m_i(x_i^2 - 2dx_i + d^2 + y_i^2)
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><msubsup><mi>x</mi><mi>i</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>y</mi><mi>i</mi><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msup><mi>d</mi><mn>2</mn></msup><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><mo>−</mo><mn>2</mn><mi>d</mi><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{TKP}} = \sum_{i = 1}^{N} m_i(x_i^2 + y_i^2) + d^2\sum_{i = 1}^{N} m_i - 2d\sum_{i = 1}^{N} m_i x_i
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mi mathvariant="normal">Θ</mi><mo>+</mo><mi>M</mi><msup><mi>d</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>d</mi><mi>M</mi><msub><mi>x</mi><mtext mathvariant="normal">TKP</mtext></msub></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{TKP}} = \Theta + Md^2 - 2dMx_{\text{TKP}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mi mathvariant="normal">Θ</mi><mo>−</mo><mi>M</mi><msup><mi>d</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{TKP}} = \Theta - Md^2
+</annotation></semantics></math></p>
+<p>Itt felhasználtuk, hogy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><msub><mi>m</mi><mi>i</mi></msub><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mi>M</mi><msub><mi>x</mi><mtext mathvariant="normal">TKP</mtext></msub></mrow><annotation encoding="application/x-tex">\sum_{i = 1}^{N} m_i x_i = M x_{\text{TKP}}</annotation></semantics></math>
+a tömegközéppont definíciója alapján, és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">x_{\text{TKP}} = d</annotation></semantics></math>.
+Megkapjuk a tételt, ha átrendezzük az egyenletet
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Θ</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>
+értékre.</p>
+<h3 id="példák-1">Példák</h3>
+<ol type="1">
+<li>A rúdra mutassuk meg, hogy igaz a Steiner-tétel!</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">rúd</mtext></msub><mo>=</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP,rúd</mtext></msub><mo>+</mo><mi>m</mi><msup><mi>d</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{rúd}} = \Theta_{\text{TKP,rúd}} + md^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">rúd</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup><mo>+</mo><mi>m</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>l</mi><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>4</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{rúd}} = \frac{1}{12}ml^2 + m\left(\frac{l}{2}\right)^2 = \left(\frac{1}{12} + \frac{1}{4}\right)ml^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">rúd</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{rúd}} = \frac{1}{3}ml^2
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>Számítsuk ki a homogén
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+tömegű és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+sugarú henger tehetetlenségi nyomatékát, ha a tengely párhuzamos a
+henger szimmetriatengelyével, és a henger szélén halad, tehát a
+szimmetriatengelytől
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+távolságra!</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">henger</mtext></msub><mo>=</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP,henger</mtext></msub><mo>+</mo><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+\Theta_{\text{henger}} = \Theta_{\text{TKP,henger}} + mR^2 = \frac{1}{2}mR^2 + mR^2 = \frac{3}{2}mR^2
+</annotation></semantics></math></p>
+<h2 id="feladatok">Feladatok</h2>
+<p><strong>1. Feladat (Steiner-tétel alkalmazása)</strong></p>
+<p>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+tömegű és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+sugarú homogén tömör gömböt a felszínét érintő tengely körül forgatunk
+meg. Határozd meg a gömb ezen tengelyre vonatkozó tehetetlenségi
+nyomatékát! Használd a táblázatban megadott tömegközépponti nyomatékot!
+<em>(Tipp: A forgástengely távolsága a tömegközépponttól pontosan a gömb
+sugara lesz.)</em></p>
+<p><strong>2. Feladat (Addíciós tétel)</strong></p>
+<p>Két azonos paraméterekkel rendelkező vékony rúd (mindkettő tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+és hossza
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>)
+merőlegesen metszi egymást a felezőpontjukban (szimmetrikus keresztet
+alkotnak). Mekkora a rendszer tehetetlenségi nyomatéka a keresztezési
+ponton átmenő és a rudak síkjára merőleges tengelyre vonatkozólag?</p>
+<p><strong>3. Feladat (Poláris-ekvatoriális tétel / Merőleges tengelyek
+tétele)</strong></p>
+<p>Ismerjük egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+tömegű és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+sugarú vékony homogén körgyűrű tehetetlenségi nyomatékát a síkjára
+merőleges és a középpontján átmenő
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+irányú) tengelyre vonatkozóan, melynek értéke
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mi>z</mi></msub><mo>=</mo><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta_z = mR^2</annotation></semantics></math>.
+Határozd meg a körgyűrű tehetetlenségi nyomatékát a síkjába eső, egyik
+átmérője mentén haladó (például
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+irányú) tengelyre vonatkozóan! <em>(Tipp: Használd ki a kör
+szimmetriáját, ami miatt az</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+<em>és</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+<em>tengelyekre vonatkozó tehetetlenségi nyomatékok
+megegyeznek!)</em></p>
+</body>
+</html>

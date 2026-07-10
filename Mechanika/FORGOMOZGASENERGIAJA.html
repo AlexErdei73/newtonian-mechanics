@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="az-energia-megmaradása-forgómozgás-esetén">Az energia
+megmaradása forgómozgás esetén</h1>
+<h2 id="a-tömegközépponti-tengely">A tömegközépponti tengely</h2>
+<p>Eddig láttuk, hogy a forgómozgás alapegyenlete alkalmazható rögzített
+tengely esetén, vagy a pillanatnyi forgástengely esetén is, amennyiben a
+tengely nem rögzített.</p>
+<p>Most azt fogjuk megmutatni, hogy a tömegközépponton átmenő tengelyre
+is alkalmazható. Bizonyítani ezt nem fogjuk, de nézzünk meg egy
+példát!</p>
+<h3 id="példa">Példa</h3>
+<p>Egy homogén gömb alakú golyó gördül le a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>30</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">30^\circ</annotation></semantics></math>-os
+hajlásszögű lejtőn. A gömb tehetetlenségi nyomatéka
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta_{\text{TKP}} = \frac{2}{5}mr^2</annotation></semantics></math>.
+Mekkora a gömb gyorsulása?</p>
+<figure>
+<img src="Kepek/kerekgorduleselejton.svg"
+alt="Kerék gördülése lejtőn lefelé" />
+<figcaption aria-hidden="true">Kerék gördülése lejtőn
+lefelé</figcaption>
+</figure>
+<p>Ezt a problémát már megoldottuk a pillanatnyi forgástengely
+segítségével. Most oldjuk meg a tömegközépponton átmenő tengely
+segítségével is!</p>
+<p>A nyomaték most a tapadási erőből fakad, hiszen egyedül ennek a
+hatásvonala nem megy át a tömegközépponti tengelyen.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><msub><mi>F</mi><mtext mathvariant="normal">t</mtext></msub><mi>r</mi></mrow><annotation encoding="application/x-tex">
+M_{z,\text{e}}^{\text{k}} = F_{\text{t}}r
+</annotation></semantics></math></p>
+<p>Az alapegyenlet tehát ekkor a következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">t</mtext></msub><mi>r</mi><mo>=</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mi>β</mi></mrow><annotation encoding="application/x-tex">
+F_{\text{t}}r = \Theta_{\text{TKP}}\beta
+</annotation></semantics></math></p>
+<p>A tömegközépponthoz képest a lejtővel érintkező pont sebességének
+nagysága a következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>r</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">
+v = r\omega
+</annotation></semantics></math></p>
+<p>Valójában ennek a pontnak a sebessége az inerciarendszerben nulla,
+hiszen a tömegközéppont halad ugyanekkora nagyságú, de ellentétes irányú
+sebességgel. Írhatjuk tehát, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mi>r</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">
+v_{\text{TKP}} = r\omega
+</annotation></semantics></math></p>
+<p>amiből a lejtő irányú gyorsulásra azt kapjuk, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><msub><mi>a</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mi>r</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">
+a = a_{\text{TKP}} = r\beta
+</annotation></semantics></math></p>
+<p>Ez ismét csak igen fontos összefüggés. A Newton-féle második törvény
+alakja most is ugyanaz:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>−</mo><msub><mi>F</mi><mtext mathvariant="normal">t</mtext></msub><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">
+mg \sin \alpha - F_{\text{t}} = ma
+</annotation></semantics></math></p>
+<p>Ebből kifejezve a tapadási erőt és beírva az alapegyenletbe, továbbá
+a szöggyorsulást az előző összefüggésből kifejezve és beírva, megkapjuk
+a gyorsulásra vonatkozó egyenletet:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">t</mtext></msub><mo>=</mo><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>−</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">
+F_{\text{t}} = mg \sin \alpha - ma
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>−</mo><mi>m</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mfrac><mi>a</mi><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">
+r(mg \sin \alpha - ma) = \Theta_{\text{TKP}}\frac{a}{r}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>−</mo><mi>a</mi><mo>=</mo><mi>a</mi><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+g \sin \alpha - a = a\frac{\Theta_{\text{TKP}}}{mr^2}
+</annotation></semantics></math></p>
+<p>Innen fejezzük ki
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>-t,
+és meg is van az összefüggés, amit keresünk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mi>a</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+g \sin \alpha = a\left(1 + \frac{\Theta_{\text{TKP}}}{mr^2}\right)
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><mrow><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac{g \sin \alpha}{1 + \frac{\Theta_{\text{TKP}}}{mr^2}}
+</annotation></semantics></math></p>
+<p>Ez pontosan az az összefüggés, amelyet előzőleg a pillanatnyi
+forgástengely alkalmazásával vezettünk le. Ide beírhatjuk a gömb
+tehetetlenségi nyomatékát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>5</mn></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{\Theta_{\text{TKP}}}{mr^2} = \frac{2}{5}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><mrow><mn>1</mn><mo>+</mo><mfrac><mn>2</mn><mn>5</mn></mfrac></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>5</mn><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><mn>7</mn></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac{g \sin \alpha}{1 + \frac{2}{5}} = \frac{5g \sin \alpha}{7}
+</annotation></semantics></math></p>
+<p>Az adatokat behelyettesítve megkapjuk a gyorsulást:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mn>5</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><msup><mn>30</mn><mo>∘</mo></msup></mrow><mn>7</mn></mfrac><mo>≈</mo><mn>3</mn><mo>,</mo><mn>504</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a = \frac{5 \cdot 9,81 \cdot \sin 30^\circ}{7} \approx 3,504\text{ m/s}^2
+</annotation></semantics></math></p>
+<h2 id="a-mechanikai-energia-megmaradása">A mechanikai energia
+megmaradása</h2>
+<p>Forgómozgás esetén is igaz az, hogy a mechanikai energia megmaradhat.
+Ennek viszont fontos feltétele, hogy az összes külső és belső erő
+konzervatív legyen. A merev testekben ható belső erők konzervatívak.
+Tehát ha nincs csúszási súrlódás (csak tiszta gördülés), és csak egy
+merev test mozog, akkor a mechanikai energia megmaradó mennyiség. A
+mozgási energia kiszámításakor viszont figyelembe kell venni a forgást
+is! Itt is vagy a pillanatnyi forgástengely körüli forgással dolgozunk,
+vagy a tömegközéppont körüli forgás energiájához adjuk a haladó mozgás
+energiáját, amelyet úgy képzelünk el, mintha a test teljes tömege a
+tömegközéppontba lenne egyesítve, és úgy mozgona.</p>
+<h3 id="példa-1">Példa</h3>
+<p>A lejtőn legördülő gömb esetében mutassuk meg, hogy a mechanikai
+energia állandó!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><msup><mi>ω</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mi>m</mi><msubsup><mi>v</mi><mtext mathvariant="normal">TKP</mtext><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>+</mo><mi>m</mi><mi>g</mi><msub><mi>h</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mtext mathvariant="normal">állandó</mtext></mrow><annotation encoding="application/x-tex">
+E = \frac{\Theta_{\text{TKP}}\omega^2}{2} + \frac{mv_{\text{TKP}}^2}{2} + mgh_{\text{TKP}} = \text{állandó}
+</annotation></semantics></math></p>
+<p>Induljon a test mondjuk álló helyzetből az egyszerűség kedvéért!
+Ekkor a gyorsulás:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mfrac><mrow><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><mrow><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+a_{\text{TKP}} = \frac{g \sin \alpha}{1 + \frac{\Theta_{\text{TKP}}}{mr^2}}
+</annotation></semantics></math></p>
+<p>A szöggyorsulás:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mfrac><msub><mi>a</mi><mtext mathvariant="normal">TKP</mtext></msub><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\beta = \frac{a_{\text{TKP}}}{r}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><msub><mi>a</mi><mtext mathvariant="normal">TKP</mtext></msub><mi>t</mi></mrow><annotation encoding="application/x-tex">
+v_{\text{TKP}} = a_{\text{TKP}}t
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mi>β</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">
+\omega = \beta t
+</annotation></semantics></math></p>
+<p>Továbbá:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><msub><mi>h</mi><mrow><mtext mathvariant="normal">TKP</mtext><mo>,</mo><mn>0</mn></mrow></msub><mo>−</mo><mi>s</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+h_{\text{TKP}} = h_{\text{TKP},0} - s \sin \alpha
+</annotation></semantics></math></p>
+<p>ahol</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><msub><mi>a</mi><mtext mathvariant="normal">TKP</mtext></msub><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = \frac{a_{\text{TKP}}}{2}t^2
+</annotation></semantics></math></p>
+<p>Helyettesítsük ezeket be!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>g</mi><mn>2</mn></msup><msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mi>α</mi><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mfrac><mn>1</mn><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mfrac><mrow><msup><mi>g</mi><mn>2</mn></msup><msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mi>α</mi><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mi>m</mi><mi>g</mi><msub><mi>h</mi><mrow><mtext mathvariant="normal">TKP</mtext><mo>,</mo><mn>0</mn></mrow></msub><mo>−</mo><mi>m</mi><mi>g</mi><mfrac><mrow><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><mrow><mn>2</mn><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow></mfrac><msup><mi>t</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+E = \frac{1}{2}mg^2 \sin^2 \alpha \cdot t^2 \frac{1}{\left(1 + \frac{\Theta_{\text{TKP}}}{mr^2}\right)^2} + \frac{1}{2}\Theta_{\text{TKP}}\frac{g^2 \sin^2 \alpha \cdot t^2}{r^2\left(1 + \frac{\Theta_{\text{TKP}}}{mr^2}\right)^2} + mgh_{\text{TKP},0} - mg\frac{g \sin \alpha}{2\left(1 + \frac{\Theta_{\text{TKP}}}{mr^2}\right)}t^2 \sin \alpha
+</annotation></semantics></math></p>
+<p>Az első két tag összevonható:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>g</mi><mn>2</mn></msup><msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mi>α</mi><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mfrac><mn>1</mn><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mfrac><mrow><msup><mi>g</mi><mn>2</mn></msup><msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mi>α</mi><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><mrow><msup><mi>r</mi><mn>2</mn></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>g</mi><mn>2</mn></msup><msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mi>α</mi><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mfrac><mrow><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mrow><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{1}{2}mg^2 \sin^2 \alpha \cdot t^2 \frac{1}{\left(1 + \frac{\Theta_{\text{TKP}}}{mr^2}\right)^2} + \frac{1}{2}\Theta_{\text{TKP}}\frac{g^2 \sin^2 \alpha \cdot t^2}{r^2\left(1 + \frac{\Theta_{\text{TKP}}}{mr^2}\right)^2} = \frac{mg^2 \sin^2 \alpha \cdot t^2}{2}\frac{1 + \frac{\Theta_{\text{TKP}}}{mr^2}}{\left(1 + \frac{\Theta_{\text{TKP}}}{mr^2}\right)^2}
+</annotation></semantics></math></p>
+<p>Itt egyszerűsítés után pontosan az utolsó tag ellentettje áll, vagyis
+azt kapjuk, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>m</mi><mi>g</mi><msub><mi>h</mi><mrow><mtext mathvariant="normal">TKP</mtext><mo>,</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">
+E = mgh_{\text{TKP},0}
+</annotation></semantics></math></p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<p><strong>1. A letekeredő henger (A jojó-probléma):</strong></p>
+<p>A szövegben egy lejtőn guruló testet vizsgáltunk, ahol a
+forgatónyomatékot a tapadási erő adta. Képzeljünk el most egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+tömegű,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+sugarú tömör hengert
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta_{\text{TKP}} = \frac{1}{2}mr^2</annotation></semantics></math>),
+amelynek a palástjára fonalat tekertünk. A fonál végét rögzítjük a
+mennyezeten, majd a hengert elengedjük, így az lefelé esik, miközben
+letekeredik a fonálról (mint egy jojó). Alkalmazd a szövegben látott
+dinamikai logikát: a tapadási erőt cseréld le a kötélerőre
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>),
+írd fel a haladó mozgás és a forgómozgás alapegyenleteit, majd határozd
+meg a henger lefelé irányuló gyorsulását! Hogyan aránylik ez az érték a
+nehézségi gyorsuláshoz
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>)?</p>
+<p><a
+href="https://www.youtube.com/watch?v=NNXmOm9L-S8">Maxwell-kerék</a></p>
+<p>A Maxwell-kerék (vagy Maxwell-tárcsa) egy klasszikus demonstrációs
+eszköz, amely a jojó-probléma fizikai alapelveit szemlélteti. Egy
+viszonylag nagy tehetetlenségi nyomatékú, vastag tengelyű kereket
+függesztünk fel kétoldalt egy-egy fonálra. Amikor a fonalakat
+feltekerjük a tengelyre és a kereket elengedjük, az látványosan, de a
+szabadesésnél lényegesen lassabban gyorsulva gördül lefelé [0:01:16]. A
+mozgás során a helyzeti energia forgási és haladó mozgási energiává
+alakul át. A legalsó pontot elérve a fonalak hirtelen megfeszülnek, és a
+tárcsa forgási energiája miatt a fonalak elkezdenek visszatekeredni a
+tengelyre, így a kerék szinte teljesen visszatér a kezdeti kiindulási
+magasságába, folyamatos periodikus oszcillációt végezve [0:01:17].</p>
+<p><strong>2. Különböző testek versenye:</strong></p>
+<p>A szövegben egy tömör gömb gyorsulását számoltuk ki. Képzeljük el,
+hogy a gömb helyett egy homogén, tömör henger gördül le ugyanezen a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>30</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">30^\circ</annotation></semantics></math>-os
+lejtőn! A henger tehetetlenségi nyomatéka
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta_{\text{TKP}} = \frac{1}{2}mr^2</annotation></semantics></math>.
+* Használd a szövegben levezetett általános képletet, és számítsd ki a
+henger gyorsulását! * Hasonlítsd össze a kapott értéket a gömb
+gyorsulásával
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>504</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">3,504\text{ m/s}^2</annotation></semantics></math>)!
+Melyik test ér le hamarabb a lejtő aljára, ha azonos magasságból,
+egyszerre indítjuk őket? A testek tömege és sugara számít-e a
+végeredmény szempontjából?</p>
+<p><strong>3. Alternatív levezetés energiamegmaradásból:</strong></p>
+<p>A szövegben az erőtani összefüggésekből kiindulva igazoltuk, hogy az
+energia állandó. Végezd el a fordított műveletet! Írd fel az
+energiamegmaradás törvényét két állapotra: a test induljon egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+hosszúságú,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+hajlásszögű lejtő tetejéről álló helyzetből, majd érjen le a lejtő
+aljára
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+sebességgel. Ebből az egyenletből vezesd le a test tömegközéppontjának
+sebességét
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>),
+majd a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><mi>a</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">v^2 = 2as</annotation></semantics></math>
+kinematikai képlet felhasználásával mutasd meg matematikai úton, hogy
+pontosan ugyanazt a gyorsulást
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>)
+kapjuk, mint amit a szövegben a nyomatéki egyenlettel levezettünk!</p>
+<p><strong>4. A tiszta gördülés feltétele (Maximális
+hajlásszög):</strong></p>
+<p>A tiszta gördülés feltétele, hogy a test ne csússzon meg, azaz a
+fellépő tapadási erő
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mtext mathvariant="normal">t</mtext></msub><annotation encoding="application/x-tex">F_{\text{t}}</annotation></semantics></math>)
+ne lépje túl a maximális tapadási súrlódási erőt
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">t,max</mtext></msub><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><msub><mi>F</mi><mtext mathvariant="normal">nyomó</mtext></msub></mrow><annotation encoding="application/x-tex">F_{\text{t,max}} = \mu_0 F_{\text{nyomó}}</annotation></semantics></math>).
+A szövegben szereplő gyorsulásképletet és a tapadási erőt
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">t</mtext></msub><mo>=</mo><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>−</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">F_{\text{t}} = mg \sin \alpha - ma</annotation></semantics></math>)
+felhasználva vezesd le, <strong>mekkora lehet a lejtő maximális
+hajlásszöge
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>α</mi><mtext mathvariant="normal">max</mtext></msub><annotation encoding="application/x-tex">\alpha_{\text{max}}</annotation></semantics></math>)</strong>
+egy adott
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>μ</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\mu_0</annotation></semantics></math>
+tapadási súrlódási együttható esetén, hogy a tömör gömb még éppen
+tisztán gördüljön! <em>(Számítsd ki ezt a maximális szöget konkrétan, ha
+a lejtő és a gömb közötti tapadási súrlódási együttható</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>μ</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\mu_0 = 0,2</annotation></semantics></math>
+<em>!)</em></p>
+<p><strong>5. Gördülés a halálkanyarban:</strong></p>
+<p>A szövegben bemutatott mechanikai energiamegmaradást használjuk fel
+egy klasszikus feladathoz! Egy homogén tömör gömb nyugalmi helyzetből,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+magasságból legördül egy lejtőn, majd beérkezik egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+sugarú függőleges körpályába („halálkanyarba”). Határozd meg,
+<strong>legalább mekkora
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+magasságból kell indítani a gömböt</strong> ahhoz, hogy a hurok legfelső
+pontján se essen le (azaz végig a pályán maradva tisztán gördüljön)!
+<em>(Tipp: A hurok tetején a testnek kell, hogy legyen egy minimális
+sebessége, amit a súlytalanság állapota, azaz az</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mo>=</mo><mi>m</mi><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">mg = m\frac{v^2}{R}</annotation></semantics></math>
+<em>feltétel határoz meg. Ne felejtsd el a hurok tetején lévő test
+mozgási energiájába beleszámolni a forgást is! A gömb</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+<em>sugarát az</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+<em>sugárhoz képest elhanyagolhatónak tekinthetjük:</em>
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>≪</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">r \ll R</annotation></semantics></math>
+<em>.)</em></p>
+</body>
+</html>

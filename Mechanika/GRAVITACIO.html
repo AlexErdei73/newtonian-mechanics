@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-gravitáció-törvénye">A gravitáció törvénye</h1>
+<h2 id="az-első-kozmikus-sebesség">Az első kozmikus sebesség</h2>
+<p>Gondoljuk el, hogy egy testet vízszintes irányban a földfelszín
+közelében kilövünk megfelelően nagy sebességgel. Gondolatban most
+hanyagoljuk el a légellenállást! Ekkor a test elegendően nagy sebesség
+esetén a Föld körüli körpályára állna.</p>
+<p>Számítsuk ki ezt a sebességet:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub></mrow><annotation encoding="application/x-tex">
+F_{\text{e}} = ma_{\text{cp}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">
+F_{\text{e}} = mg
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mo>=</mo><mi>m</mi><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub></mrow><annotation encoding="application/x-tex">
+mg = ma_{\text{cp}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub></mrow><annotation encoding="application/x-tex">
+g = a_{\text{cp}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">
+g = \frac{v^2}{R}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mi>g</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">
+v^2 = gR
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mi>g</mi><mi>R</mi></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mn>6</mn><mo>,</mo><mn>370</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup></mrow></msqrt><mo>≈</mo><mn>7905</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mo>=</mo><mn>7</mn><mo>,</mo><mn>905</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v = \sqrt{gR} = \sqrt{9,81 \cdot 6,370 \cdot 10^6} \approx 7905\text{ m/s} = 7,905\text{ km/s}
+</annotation></semantics></math></p>
+<p>A számítás során felhasználtuk, hogy a Föld sugara
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6370</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">6370\text{ km}</annotation></semantics></math>.</p>
+<p>Ezt az elméletileg legkisebb sebességet, amellyel egy elhajított test
+a felszín közelében körpályára állítható, első kozmikus sebességnek
+nevezzük. A valóságban a légellenállás legyőzéséhez komoly meghajtás
+lenne szükséges a felszín közelében, de néhány száz kilométer
+magasságban már nem. Itt a levegő olyan ritka, hogy a testek körpályára
+állíthatók a Föld körül, ha megfelelő sebességre gyorsítjuk fel őket. Ha
+a test elérte ezt a sebességet, további meghajtás szinte nem is
+szükséges.</p>
+<h2 id="a-gravitáció-távolságfüggése">A gravitáció távolságfüggése</h2>
+<p>A fenti számítást Newton is elvégezte. Arra volt kíváncsi, vajon
+hogyan csökken a testet körpályán tartó nehézségi erő a magassággal.
+Arra gondolt, hogy a Holdat is ugyanaz az erő tartja körpályán, ami a
+testeket a Föld középpontja felé vonzza. Milyen arányban csökken az erő
+a távolsággal?</p>
+<p>Newton tudta, hogy a Hold a Földtől körülbelül 60 Föld-sugárnyi
+távolságra van
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>384</mn><mspace width="0.222em"></mspace><mn>400</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">384\ 400\text{ km}</annotation></semantics></math>).
+Ki tudjuk számítani a Hold gyorsulását, hiszen keringési ideje
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>27</mn><mo>,</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> nap</mtext></mrow></mrow><annotation encoding="application/x-tex">T = 27,3\text{ nap}</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>r</mi></mrow><mi>T</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>1415</mn><mo>⋅</mo><mn>384</mn><mspace width="0.222em"></mspace><mn>400</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow><mrow><mn>27</mn><mo>,</mo><mn>3</mn><mo>⋅</mo><mn>86400</mn></mrow></mfrac><mo>≈</mo><mn>1024</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v = \frac{2\pi r}{T} = \frac{2 \cdot 3,1415 \cdot 384\ 400\ 000}{27,3 \cdot 86400} \approx 1024\text{ m/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac><mo>=</mo><mfrac><msup><mn>1024</mn><mn>2</mn></msup><mrow><mn>384</mn><mspace width="0.222em"></mspace><mn>400</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>002728</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a_{\text{cp}} = \frac{v^2}{r} = \frac{1024^2}{384\ 400\ 000} \approx 0,002728\text{ m/s}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>g</mi><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub></mfrac><mo>=</mo><mfrac><mrow><mn>9</mn><mo>,</mo><mn>81</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>002728</mn></mrow></mfrac><mo>≈</mo><mn>3596</mn></mrow><annotation encoding="application/x-tex">
+\frac{g}{a_{\text{cp}}} = \frac{9,81}{0,002728} \approx 3596
+</annotation></semantics></math></p>
+<p>Látszik, hogy a számolási pontosságunkon belül jó közelítéssel
+3600-at kapunk
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>60</mn><mn>2</mn></msup><mo>=</mo><mn>3600</mn></mrow><annotation encoding="application/x-tex">60^2 = 3600</annotation></semantics></math>).
+Newton tehát azt kapta, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>g</mi><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub></mfrac><mo>=</mo><mfrac><msup><mi>r</mi><mn>2</mn></msup><msup><mi>R</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{g}{a_{\text{cp}}} = \frac{r^2}{R^2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub><mo>=</mo><mfrac><mrow><mi>g</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+a_{\text{cp}} = \frac{gR^2}{r^2}
+</annotation></semantics></math></p>
+<p>Tehát a testek nehézségi gyorsulása a Föld középpontjától vett
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+távolság négyzetével fordított arányban csökken. Ez nyilván a testekre
+ható erőre is érvényes. Így született meg a gravitációs erő
+törvénye.</p>
+<h2 id="a-gravitáció-törvénye-1">A gravitáció törvénye</h2>
+<blockquote>
+<p><strong>Bármely két test között gravitációs vonzóerő lép fel. Ez
+pontszerű testek között egyenesen arányos a testek tömegével, és
+fordítottan arányos a távolságuk négyzetével. Az erő a pontszerű
+testeket összekötő egyenes mentén hat, és mindig vonzóerő.</strong></p>
+</blockquote>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><mi>G</mi><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+F_{\text{g}} = G \frac{m_1 m_2}{r^2}
+</annotation></semantics></math></p>
+<p>Newton a gravitáció törvényéből sikeresen le tudta vezetni mindhárom
+Kepler-törvényt a bolygók mozgására. Sajnos az ellipszispályák általános
+levezetése magasabb matematikai ismereteket igényel, úgyhogy ezt mi nem
+fogjuk megtenni. Tanulságos viszont a második és a harmadik törvény
+levezetése. A harmadik törvényet mi itt csak körpályák esetére fogjuk
+levezetni.</p>
+<h2 id="kepler-második-törvényének-levezetése">Kepler második
+törvényének levezetése</h2>
+<p>A test mozgását figyeljük nagyon rövid
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+időtartamokon keresztül, tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≪</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">t \ll T</annotation></semantics></math>.
+Kezdetben a test az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+pontból a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+pontba jut egyenes vonalban az igen rövid
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+idő alatt. Ha erő nem hatna rá, akkor újabb
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+idő elteltével a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+pontba jutna az egyenes mentén tovább mozogva egyenletes
+sebességgel.</p>
+<figure>
+<img src="Kepek/kepler2.svg" alt="Bolygó mozgása a Nap körül" />
+<figcaption aria-hidden="true">Bolygó mozgása a Nap körül</figcaption>
+</figure>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent="true">¯</mo></mover><mo>=</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent="true">¯</mo></mover></mrow><annotation encoding="application/x-tex">
+\overline{AB} = \overline{BC}
+</annotation></semantics></math></p>
+<p>Legyen a Nap az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>
+pontban! Ekkor az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mi>A</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">OAB</annotation></semantics></math>
+háromszög és az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mi>B</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">OBC</annotation></semantics></math>
+háromszög területe egyenlő, hiszen a magasságaik és a rájuk merőleges
+alapjaik is egyenlők.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>O</mi><mi>A</mi><mi>B</mi></mrow></msub><mo>=</mo><msub><mi>T</mi><mrow><mi>O</mi><mi>B</mi><mi>C</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
+T_{OAB} = T_{OBC}
+</annotation></semantics></math></p>
+<p>Mivel a testre a Nap felé mutató erő hat, ezért a valóságban nem a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>,
+hanem a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+pontba jut. A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mrow><mi>C</mi><mi>D</mi></mrow><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{CD}</annotation></semantics></math>
+szakasz párhuzamos az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mrow><mi>O</mi><mi>B</mi></mrow><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{OB}</annotation></semantics></math>
+szakasszal, mivel a sebességváltozást okozó erő a Nap felé mutat. Ekkor
+viszont az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mi>B</mi><mi>C</mi></mrow><annotation encoding="application/x-tex">OBC</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mi>B</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">OBD</annotation></semantics></math>
+háromszögek területei is egyenlők, hiszen az alapjuk az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mrow><mi>O</mi><mi>B</mi></mrow><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{OB}</annotation></semantics></math>
+közös szakasz, és a hozzá tartozó magasságaik is egyenlők (a
+párhuzamosság miatt). Ez azt jelenti, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mrow><mi>O</mi><mi>A</mi><mi>B</mi></mrow></msub><mo>=</mo><msub><mi>T</mi><mrow><mi>O</mi><mi>B</mi><mi>D</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
+T_{OAB} = T_{OBD}
+</annotation></semantics></math></p>
+<p>Mivel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+tetszőleges, bár kicsiny időtartam, ez azt jelenti, hogy a területi
+sebesség állandó.</p>
+<h2 id="kepler-harmadik-törvénye-körpályák-esetére">Kepler harmadik
+törvénye körpályák esetére</h2>
+<p>Legyen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+a Nap tömege. Ekkor a gyorsulás egy körpályán mozgó bolygó esetén:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub><mo>=</mo><mfrac><msub><mi>F</mi><mtext mathvariant="normal">e</mtext></msub><mi>m</mi></mfrac><mo>=</mo><mfrac><msub><mi>F</mi><mtext mathvariant="normal">g</mtext></msub><mi>m</mi></mfrac><mo>=</mo><mfrac><mrow><mi>G</mi><mfrac><mrow><mi>m</mi><mi>M</mi></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><mi>m</mi></mfrac><mo>=</mo><mfrac><mrow><mi>G</mi><mi>M</mi></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+a_{\text{cp}} = \frac{F_{\text{e}}}{m} = \frac{F_{\text{g}}}{m} = \frac{G \frac{mM}{r^2}}{m} = \frac{GM}{r^2}
+</annotation></semantics></math></p>
+<p>A centripetális gyorsulás körpálya esetén:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>r</mi></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>r</mi></mrow><mi>T</mi></mfrac><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><mi>r</mi></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><msup><mi>r</mi><mn>2</mn></msup></mrow><mrow><msup><mi>T</mi><mn>2</mn></msup><mi>r</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><mi>r</mi></mrow><msup><mi>T</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+a_{\text{cp}} = \frac{v^2}{r} = \frac{(\frac{2\pi r}{T})^2}{r} = \frac{4\pi^2 r^2}{T^2 r} = \frac{4\pi^2 r}{T^2}
+</annotation></semantics></math></p>
+<p>A két kifejezést egyenlővé téve:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>G</mi><mi>M</mi></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><mi>r</mi></mrow><msup><mi>T</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{GM}{r^2} = \frac{4\pi^2 r}{T^2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>G</mi><mi>M</mi></mrow><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><msup><mi>r</mi><mn>3</mn></msup><msup><mi>T</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{GM}{4\pi^2} = \frac{r^3}{T^2}
+</annotation></semantics></math></p>
+<p>Tehát a Naptól mért középtávolság köbének és a keringési idő
+négyzetének hányadosa csak a Nap
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+tömegétől függő állandó.</p>
+<p>Bár levezetésünk csak körpályák esetére adja vissza a törvényt, a
+törvény igaz ellipszispályák esetére is. Ilyenkor az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+sugár helyére az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+kerül, amely a nagytengely hosszának fele. Ez körpályák esetére nem más,
+mint a sugár.</p>
+</body>
+</html>

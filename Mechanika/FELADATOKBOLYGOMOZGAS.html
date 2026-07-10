@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="feladatok-a-bolygómozgásra">Feladatok a bolygómozgásra</h1>
+<h2 id="példák-kepler-harmadik-törvényére">Példák Kepler harmadik
+törvényére</h2>
+<ol type="1">
+<li>A Nap–Föld átlagos távolság az ún. csillagászati egység (CSE).
+Tudjuk, hogy a Föld egy csillagászati egységre van a Naptól, és
+keringési ideje 1 év. Mekkora a Mars bolygó keringési ideje, ha átlagos
+Naptól mért távolsága
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>524</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> CSE</mtext></mrow></mrow><annotation encoding="application/x-tex">1,524\text{ CSE}</annotation></semantics></math>?
+A Vénusz bolygó keringési ideje
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>6152</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> év</mtext></mrow></mrow><annotation encoding="application/x-tex">0,6152\text{ év}</annotation></semantics></math>.
+Milyen messze van átlagosan a Naptól?</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>a</mi><mn>3</mn></msup><msup><mi>T</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
+\frac{a^3}{T^2} = 1
+</annotation></semantics></math></p>
+<p>Itt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>-t
+csillagászati egységben,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>-t
+években adtuk meg.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mtext mathvariant="normal">Mars</mtext></msub><mo>=</mo><msqrt><msubsup><mi>a</mi><mtext mathvariant="normal">Mars</mtext><mn>3</mn></msubsup></msqrt><mo>=</mo><msqrt><mrow><mn>1</mn><mo>,</mo><msup><mn>524</mn><mn>3</mn></msup></mrow></msqrt><mo>≈</mo><mn>1</mn><mo>,</mo><mn>881</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> év</mtext></mrow><mo>=</mo><mn>687</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> nap</mtext></mrow></mrow><annotation encoding="application/x-tex">
+T_{\text{Mars}} = \sqrt{a_{\text{Mars}}^3} = \sqrt{1,524^3} \approx 1,881\text{ év} = 687,0\text{ nap}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">Vénusz</mtext></msub><mo>=</mo><mroot><msubsup><mi>T</mi><mtext mathvariant="normal">Vénusz</mtext><mn>2</mn></msubsup><mn>3</mn></mroot><mo>=</mo><mroot><mrow><mn>0</mn><mo>,</mo><msup><mn>6152</mn><mn>2</mn></msup></mrow><mn>3</mn></mroot><mo>≈</mo><mn>0</mn><mo>,</mo><mn>7233</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> CSE</mtext></mrow></mrow><annotation encoding="application/x-tex">
+a_{\text{Vénusz}} = \sqrt[3]{T_{\text{Vénusz}}^2} = \sqrt[3]{0,6152^2} \approx 0,7233\text{ CSE}
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>Geostacionárius pályán keringő műholdak a Földdel együtt forognak,
+tehát keringési idejük 1 nap. Az első kozmikus sebesség alapján
+számítsuk ki, milyen magasságban vannak a felszín felett az ilyen
+távközlési műholdak!</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>a</mi><mn>3</mn></msup><msup><mi>T</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><msup><mi>R</mi><mn>3</mn></msup><mrow><mo stretchy="false" form="prefix">(</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>R</mi></mrow><msqrt><mrow><mi>g</mi><mi>R</mi></mrow></msqrt></mfrac><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{a^3}{T^2} = \frac{R^3}{(\frac{2\pi R}{\sqrt{gR}})^2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>a</mi><mn>3</mn></msup><msup><mi>T</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mrow><mi>g</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{a^3}{T^2} = \frac{gR^2}{4\pi^2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>3</mn></msup><mo>=</mo><mfrac><mrow><mi>g</mi><msup><mi>R</mi><mn>2</mn></msup><msup><mi>T</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mn>6</mn><mspace width="0.222em"></mspace><mn>370</mn><mspace width="0.222em"></mspace><msup><mn>000</mn><mn>2</mn></msup><mo>⋅</mo><mn>86</mn><mspace width="0.222em"></mspace><msup><mn>400</mn><mn>2</mn></msup></mrow><mrow><mn>4</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><msup><mn>1415</mn><mn>2</mn></msup></mrow></mfrac><mo>≈</mo><mn>7</mn><mo>,</mo><mn>527</mn><mo>⋅</mo><msup><mn>10</mn><mn>22</mn></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">
+a^3 = \frac{gR^2 T^2}{4\pi^2} = \frac{9,81 \cdot 6\ 370\ 000^2 \cdot 86\ 400^2}{4 \cdot 3,1415^2} \approx 7,527 \cdot 10^{22}\text{ m}^3
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mroot><mrow><mn>7</mn><mo>,</mo><mn>527</mn><mo>⋅</mo><msup><mn>10</mn><mn>22</mn></msup></mrow><mn>3</mn></mroot><mo>≈</mo><mn>42</mn><mspace width="0.222em"></mspace><mn>220</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>42</mn><mspace width="0.222em"></mspace><mn>220</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">
+a = \sqrt[3]{7,527 \cdot 10^{22}} \approx 42\ 220\ 000\text{ m} = 42\ 220\text{ km}
+</annotation></semantics></math></p>
+<p>A felszín feletti magasság:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mi>a</mi><mo>−</mo><mi>R</mi><mo>=</mo><mn>42</mn><mspace width="0.222em"></mspace><mn>220</mn><mo>−</mo><mn>6</mn><mspace width="0.222em"></mspace><mn>370</mn><mo>=</mo><mn>35</mn><mspace width="0.222em"></mspace><mn>850</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">
+h = a - R = 42\ 220 - 6\ 370 = 35\ 850\text{ km}
+</annotation></semantics></math></p>
+<p>A valóságban a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>35</mn><mspace width="0.222em"></mspace><mn>786</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">35\ 786\text{ km}</annotation></semantics></math>
+magasságot használják, amely 3 értékes jegyre megegyezik a mi
+számításunkból kapott értékkel.</p>
+<ol start="3" type="1">
+<li>A Nemzetközi Űrállomás (ISS)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>420</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">420\text{ km}</annotation></semantics></math>
+magasságban kering a Föld felszíne felett. Számítsuk ki a keringési
+idejét! Mekkora a sebessége ebben a magasságban? Hány százaléka ez az
+első kozmikus sebességnek?</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>a</mi><mn>3</mn></msup><msup><mi>T</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mrow><mi>g</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{a^3}{T^2} = \frac{gR^2}{4\pi^2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><msup><mi>a</mi><mn>3</mn></msup></mrow><mrow><mi>g</mi><msup><mi>R</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mspace width="0.222em"></mspace><mn>370</mn><mspace width="0.222em"></mspace><mn>000</mn><mo>+</mo><mn>420</mn><mspace width="0.222em"></mspace><mn>000</mn><msup><mo stretchy="false" form="postfix">)</mo><mn>3</mn></msup></mrow><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mn>6</mn><mspace width="0.222em"></mspace><mn>370</mn><mspace width="0.222em"></mspace><msup><mn>000</mn><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+T^2 = \frac{4\pi^2 a^3}{gR^2} = \frac{4\pi^2 \cdot (6\ 370\ 000 + 420\ 000)^3}{9,81 \cdot 6\ 370\ 000^2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>≈</mo><mn>5</mn><mspace width="0.222em"></mspace><mn>572</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow><mo>≈</mo><mn>93</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> min</mtext></mrow></mrow><annotation encoding="application/x-tex">
+T \approx 5\ 572\text{ s} \approx 93\text{ min}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>a</mi></mrow><mi>T</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>1415</mn><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mspace width="0.222em"></mspace><mn>370</mn><mspace width="0.222em"></mspace><mn>000</mn><mo>+</mo><mn>420</mn><mspace width="0.222em"></mspace><mn>000</mn><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mn>5</mn><mspace width="0.222em"></mspace><mn>572</mn></mrow></mfrac><mo>≈</mo><mn>7</mn><mspace width="0.222em"></mspace><mn>656</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v = \frac{2\pi a}{T} = \frac{2 \cdot 3,1415 \cdot (6\ 370\ 000 + 420\ 000)}{5\ 572} \approx 7\ 656\text{ m/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>7</mn><mspace width="0.222em"></mspace><mn>656</mn></mrow><mrow><mn>7</mn><mspace width="0.222em"></mspace><mn>905</mn></mrow></mfrac><mo>⋅</mo><mn>100</mn><mo>≈</mo><mn>96</mn><mo>,</mo><mn>85</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">
+\frac{7\ 656}{7\ 905} \cdot 100 \approx 96,85\%
+</annotation></semantics></math></p>
+<p>Ez tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>96</mn><mo>,</mo><mn>9</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">96,9\%</annotation></semantics></math>-a
+az első kozmikus sebességnek. Azért van ilyen közel, mivel a magasság
+viszonylag kicsi a Föld sugarához képest, így a keringés nagyon hasonló
+ahhoz, amit az első kozmikus sebesség kiszámításakor feltételeztük.
+Ebben a magasságban a légellenállás még nem teljesen nulla, ezért
+időnként alkalmaznak egy kis meghajtást, hogy az űrállomás ne veszítsen
+a magasságából.</p>
+<h2 id="a-területi-sebesség-kiszámítása-pályaadatok-alapján">A területi
+sebesség kiszámítása pályaadatok alapján</h2>
+<p>A következőkben szükségünk lesz a területi sebesség és a pályamenti
+sebesség közötti összefüggésre. Legyen a bolygó kezdetben az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+pontban, és igen rövid
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≪</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">t \ll T</annotation></semantics></math>
+idő alatt eljut a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+pontba. A Nap az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>O</mi><annotation encoding="application/x-tex">O</annotation></semantics></math>
+pontban van. Jelöljük
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>-rel
+a Naptól a bolygóhoz húzott szakasz hosszát! Legyen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{AB}</annotation></semantics></math>
+által bezárt,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>90</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">90^\circ</annotation></semantics></math>-nál
+nem nagyobb szög.</p>
+<figure>
+<img src="Kepek/teruletisebesseg.svg"
+alt="Területi sebesség és sebesség kapcsolata" />
+<figcaption aria-hidden="true">Területi sebesség és sebesség
+kapcsolata</figcaption>
+</figure>
+<p>Ekkor:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent="true">¯</mo></mover><mo>=</mo><mi>v</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">
+\overline{AB} = vt
+</annotation></semantics></math></p>
+<p>A területi sebesség:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>T</mi><mrow><mi>O</mi><mi>A</mi><mi>B</mi></mrow></msub><mi>t</mi></mfrac><mo>=</mo><mfrac><mfrac><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent="true">¯</mo></mover><mo>⋅</mo><msub><mi>m</mi><mrow><mi>A</mi><mi>B</mi></mrow></msub></mrow><mn>2</mn></mfrac><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mi>v</mi><mi>t</mi><mo>⋅</mo><mi>r</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><mrow><mn>2</mn><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>v</mi><mi>r</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
+\frac{T_{OAB}}{t} = \frac{\frac{\overline{AB} \cdot m_{AB}}{2}}{t} = \frac{vt \cdot r \sin \alpha}{2t} = \frac{1}{2}vr \sin \alpha
+</annotation></semantics></math></p>
+<p>Ha
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\alpha = 90^\circ</annotation></semantics></math>,
+akkor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\sin \alpha = 1</annotation></semantics></math>,
+vagyis a területi sebesség a sugár és a sebesség szorzatának a fele.</p>
+<h2 id="példák-kepler-második-törvényére">Példák Kepler második
+törvényére</h2>
+<ol type="1">
+<li>A Mars legkisebb távolsága a Naptól az ellipszispályáján
+(perihélium)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>206</mn><mo>,</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> millió km</mtext></mrow></mrow><annotation encoding="application/x-tex">206,6\text{ millió km}</annotation></semantics></math>,
+a legtávolabbi pontja (afélium) pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>249</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> millió km</mtext></mrow></mrow><annotation encoding="application/x-tex">249,2\text{ millió km}</annotation></semantics></math>.
+Mekkora a Mars átlagos távolsága a Naptól, vagyis a nagytengely
+hosszának fele? Hány csillagászati egység (CSE) ez a távolság? Ha a Mars
+keringési ideje
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>687</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> nap</mtext></mrow></mrow><annotation encoding="application/x-tex">687,0\text{ nap}</annotation></semantics></math>,
+akkor mekkora a területi sebesség? Használd az ellipszis
+területképletét:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mtext mathvariant="normal">ellipszis</mtext></msub><mo>=</mo><mi>a</mi><mi>b</mi><mi>π</mi></mrow><annotation encoding="application/x-tex">T_{\text{ellipszis}} = ab\pi</annotation></semantics></math>!
+Mekkora a bolygó sebessége a Naphoz legközelebbi és a Naptól
+legtávolabbi pontokban?</li>
+</ol>
+<figure>
+<img src="Kepek/ellipszis.svg" alt="A pálya ellipszis" />
+<figcaption aria-hidden="true">A pálya ellipszis</figcaption>
+</figure>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi><mo>=</mo><msub><mi>r</mi><mtext mathvariant="normal">min</mtext></msub><mo>+</mo><msub><mi>r</mi><mtext mathvariant="normal">max</mtext></msub><mo>=</mo><mn>206</mn><mo>,</mo><mn>6</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><mo>+</mo><mn>249</mn><mo>,</mo><mn>2</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><mo>=</mo><mn>455</mn><mo>,</mo><mn>8</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">
+2a = r_{\text{min}} + r_{\text{max}} = 206,6 \cdot 10^6 + 249,2 \cdot 10^6 = 455,8 \cdot 10^6\text{ km}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>227</mn><mo>,</mo><mn>9</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">
+a = 227,9 \cdot 10^6\text{ km}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mn>227</mn><mo>,</mo><mn>9</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><mrow><mn>149</mn><mo>,</mo><mn>6</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow></mfrac><mo>≈</mo><mn>1</mn><mo>,</mo><mn>523</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> CSE</mtext></mrow></mrow><annotation encoding="application/x-tex">
+a = \frac{227,9 \cdot 10^6\text{ km}}{149,6 \cdot 10^6\text{ km}} \approx 1,523\text{ CSE}
+</annotation></semantics></math></p>
+<p>A területi sebességhez ki kell számítanunk az ellipszis
+kistengelyét!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mi>a</mi><mo>−</mo><msub><mi>r</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><mn>227</mn><mo>,</mo><mn>9</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><mo>−</mo><mn>206</mn><mo>,</mo><mn>6</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><mo>=</mo><mn>21</mn><mo>,</mo><mn>3</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">
+c = a - r_{\text{min}} = 227,9 \cdot 10^6 - 206,6 \cdot 10^6 = 21,3 \cdot 10^6\text{ km}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mo stretchy="false" form="prefix">(</mo><mn>227</mn><mo>,</mo><mn>9</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>−</mo><mo stretchy="false" form="prefix">(</mo><mn>21</mn><mo>,</mo><mn>3</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></msqrt><mo>≈</mo><mn>226</mn><mo>,</mo><mn>9</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">
+b = \sqrt{a^2 - c^2} = \sqrt{(227,9 \cdot 10^6)^2 - (21,3 \cdot 10^6)^2} \approx 226,9 \cdot 10^6\text{ km}
+</annotation></semantics></math></p>
+<p>Most már könnyű az ellipszis területét kiszámolni:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mtext mathvariant="normal">ellipszis</mtext></msub><mo>=</mo><mi>a</mi><mi>b</mi><mi>π</mi><mo>=</mo><mn>227</mn><mo>,</mo><mn>9</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><mo>⋅</mo><mn>226</mn><mo>,</mo><mn>9</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>1415</mn><mo>≈</mo><mn>162</mn><mspace width="0.222em"></mspace><mn>400</mn><mo>⋅</mo><msup><mn>10</mn><mn>12</mn></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+T_{\text{ellipszis}} = ab\pi = 227,9 \cdot 10^6 \cdot 226,9 \cdot 10^6 \cdot 3,1415 \approx 162\ 400 \cdot 10^{12}\text{ km}^2
+</annotation></semantics></math></p>
+<p>Ha ezt elosztjuk a keringési idővel, megkapjuk a területi
+sebességet:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>T</mi><mtext mathvariant="normal">ellipszis</mtext></msub><mi>T</mi></mfrac><mo>=</mo><mfrac><mrow><mn>162</mn><mspace width="0.222em"></mspace><mn>400</mn><mo>⋅</mo><msup><mn>10</mn><mn>12</mn></msup></mrow><mrow><mn>687</mn><mo>⋅</mo><mn>86</mn><mspace width="0.222em"></mspace><mn>400</mn></mrow></mfrac><mo>≈</mo><mn>2</mn><mspace width="0.222em"></mspace><mn>736</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow><mn>2</mn></msup><mtext mathvariant="normal">/s</mtext></mrow><annotation encoding="application/x-tex">
+\frac{T_{\text{ellipszis}}}{T} = \frac{162\ 400 \cdot 10^{12}}{687 \cdot 86\ 400} \approx 2\ 736 \cdot 10^6\text{ km}^2\text{/s}
+</annotation></semantics></math></p>
+<p>A perihélium- és aféliumpontokban a területi sebesség a sugár és a
+sebesség szorzatának a fele. Ezekben a pontokban a sugár merőleges a
+sebességvektorra.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>r</mi><mtext mathvariant="normal">min</mtext></msub><msub><mi>v</mi><mtext mathvariant="normal">max</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>r</mi><mtext mathvariant="normal">max</mtext></msub><msub><mi>v</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><mn>2</mn><mo>,</mo><mn>736</mn><mo>⋅</mo><msup><mn>10</mn><mn>9</mn></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow><mn>2</mn></msup><mtext mathvariant="normal">/s</mtext></mrow><annotation encoding="application/x-tex">
+\frac{1}{2}r_{\text{min}} v_{\text{max}} = \frac{1}{2}r_{\text{max}} v_{\text{min}} = 2,736 \cdot 10^9\text{ km}^2\text{/s}
+</annotation></semantics></math></p>
+<p>Így:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">max</mtext></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>,</mo><mn>736</mn><mo>⋅</mo><msup><mn>10</mn><mn>9</mn></msup></mrow><mrow><mn>206</mn><mo>,</mo><mn>6</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup></mrow></mfrac><mo>≈</mo><mn>26</mn><mo>,</mo><mn>48</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_{\text{max}} = \frac{2 \cdot 2,736 \cdot 10^9}{206,6 \cdot 10^6} \approx 26,48\text{ km/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>,</mo><mn>736</mn><mo>⋅</mo><msup><mn>10</mn><mn>9</mn></msup></mrow><mrow><mn>249</mn><mo>,</mo><mn>2</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup></mrow></mfrac><mo>≈</mo><mn>21</mn><mo>,</mo><mn>96</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_{\text{min}} = \frac{2 \cdot 2,736 \cdot 10^9}{249,2 \cdot 10^6} \approx 21,96\text{ km/s}
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>Számítsuk ki ugyanazt, mint az első példában, de most a Hold
+esetében. A legkisebb Hold–Föld távolság (perigeum)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>363</mn><mspace width="0.222em"></mspace><mn>300</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">363\ 300\text{ km}</annotation></semantics></math>,
+a legnagyobb (apogeum) pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>405</mn><mspace width="0.222em"></mspace><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">405\ 500\text{ km}</annotation></semantics></math>.
+Mekkora a Hold–Föld átlagos távolság (a nagytengely fele)? Mekkora a
+területi sebesség, ha a keringési idő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>27</mn><mo>,</mo><mn>32</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> nap</mtext></mrow></mrow><annotation encoding="application/x-tex">27,32\text{ nap}</annotation></semantics></math>?
+Mekkora a minimális és maximális sebesség? (Használjuk az ellipszis
+területére a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mtext mathvariant="normal">ellipszis</mtext></msub><mo>=</mo><mi>a</mi><mi>b</mi><mi>π</mi></mrow><annotation encoding="application/x-tex">T_{\text{ellipszis}} = ab\pi</annotation></semantics></math>
+képletet!)</li>
+</ol>
+<p>Legyen
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+a Föld,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+a Hold tömege.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi><mo>=</mo><msub><mi>r</mi><mtext mathvariant="normal">min</mtext></msub><mo>+</mo><msub><mi>r</mi><mtext mathvariant="normal">max</mtext></msub><mo>=</mo><mn>363</mn><mspace width="0.222em"></mspace><mn>300</mn><mo>+</mo><mn>405</mn><mspace width="0.222em"></mspace><mn>500</mn><mo>=</mo><mn>768</mn><mspace width="0.222em"></mspace><mn>800</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">
+2a = r_{\text{min}} + r_{\text{max}} = 363\ 300 + 405\ 500 = 768\ 800\text{ km}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>384</mn><mspace width="0.222em"></mspace><mn>400</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">
+a = 384\ 400\text{ km}
+</annotation></semantics></math></p>
+<p>An ellipszis adatainak kiszámítása:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mi>a</mi><mo>−</mo><msub><mi>r</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><mn>384</mn><mspace width="0.222em"></mspace><mn>400</mn><mo>−</mo><mn>363</mn><mspace width="0.222em"></mspace><mn>300</mn><mo>=</mo><mn>21</mn><mspace width="0.222em"></mspace><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">
+c = a - r_{\text{min}} = 384\ 400 - 363\ 300 = 21\ 100\text{ km}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>c</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>384</mn><mspace width="0.222em"></mspace><msup><mn>400</mn><mn>2</mn></msup><mo>−</mo><mn>21</mn><mspace width="0.222em"></mspace><msup><mn>100</mn><mn>2</mn></msup></mrow></msqrt><mo>≈</mo><mn>383</mn><mspace width="0.222em"></mspace><mn>820</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">
+b = \sqrt{a^2 - c^2} = \sqrt{384\ 400^2 - 21\ 100^2} \approx 383\ 820\text{ km}
+</annotation></semantics></math></p>
+<p>A területi sebesség:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>a</mi><mi>b</mi><mi>π</mi></mrow><mi>T</mi></mfrac><mo>=</mo><mfrac><mrow><mn>384</mn><mspace width="0.222em"></mspace><mn>400</mn><mo>⋅</mo><mn>383</mn><mspace width="0.222em"></mspace><mn>820</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>14159</mn></mrow><mrow><mn>27</mn><mo>,</mo><mn>32</mn><mo>⋅</mo><mn>86</mn><mspace width="0.222em"></mspace><mn>400</mn></mrow></mfrac><mo>≈</mo><mn>196</mn><mspace width="0.222em"></mspace><mn>400</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow><mn>2</mn></msup><mtext mathvariant="normal">/s</mtext></mrow><annotation encoding="application/x-tex">
+\frac{ab\pi}{T} = \frac{384\ 400 \cdot 383\ 820 \cdot 3,14159}{27,32 \cdot 86\ 400} \approx 196\ 400\text{ km}^2\text{/s}
+</annotation></semantics></math></p>
+<p>Tudjuk, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>r</mi><mtext mathvariant="normal">min</mtext></msub><msub><mi>v</mi><mtext mathvariant="normal">max</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>r</mi><mtext mathvariant="normal">max</mtext></msub><msub><mi>v</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><mn>196</mn><mspace width="0.222em"></mspace><mn>400</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow><mn>2</mn></msup><mtext mathvariant="normal">/s</mtext></mrow><annotation encoding="application/x-tex">
+\frac{1}{2}r_{\text{min}} v_{\text{max}} = \frac{1}{2}r_{\text{max}} v_{\text{min}} = 196\ 400\text{ km}^2\text{/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">max</mtext></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>196</mn><mspace width="0.222em"></mspace><mn>400</mn></mrow><mrow><mn>363</mn><mspace width="0.222em"></mspace><mn>300</mn></mrow></mfrac><mo>≈</mo><mn>1</mn><mo>,</mo><mn>081</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_{\text{max}} = \frac{2 \cdot 196\ 400}{363\ 300} \approx 1,081\text{ km/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>196</mn><mspace width="0.222em"></mspace><mn>400</mn></mrow><mrow><mn>405</mn><mspace width="0.222em"></mspace><mn>500</mn></mrow></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>9687</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_{\text{min}} = \frac{2 \cdot 196\ 400}{405\ 500} \approx 0,9687\text{ km/s}
+</annotation></semantics></math></p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>A Jupiter bolygó átlagos távolsága a Naptól
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">Jupiter</mtext></msub><mo>=</mo><mn>5</mn><mo>,</mo><mn>203</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> CSE</mtext></mrow></mrow><annotation encoding="application/x-tex">a_{\text{Jupiter}} = 5,203\text{ CSE}</annotation></semantics></math>.
+A Föld adatai alapján
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">Föld</mtext></msub><mo>=</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> CSE</mtext></mrow></mrow><annotation encoding="application/x-tex">a_{\text{Föld}} = 1\text{ CSE}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mtext mathvariant="normal">Föld</mtext></msub><mo>=</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> év</mtext></mrow></mrow><annotation encoding="application/x-tex">T_{\text{Föld}} = 1\text{ év}</annotation></semantics></math>)
+számítsd ki a Kepler III. törvényének egyszerűsített alakjával
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>a</mi><mn>3</mn></msup><msup><mi>T</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{a^3}{T^2} = 1</annotation></semantics></math>),
+hány földi év alatt kerüli meg a Napot a Jupiter!</p></li>
+<li><p>Az Eris törpebolygó keringési ideje rendkívül hosszú,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mtext mathvariant="normal">Eris</mtext></msub><mo>=</mo><mn>558</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> földi év</mtext></mrow></mrow><annotation encoding="application/x-tex">T_{\text{Eris}} = 558\text{ földi év}</annotation></semantics></math>.
+Számítsd ki, mekkora az Eris átlagos távolsága a Naptól csillagászati
+egységben (CSE)!</p></li>
+<li><p>Alacsony pályás műhold mozgása: Egy megfigyelő műhold
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>250</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">250\text{ km}</annotation></semantics></math>
+magasságban kering a Föld felszíne felett.</p>
+<ul>
+<li>Mekkora a pálya sugara
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>),
+ha a Föld sugara
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>6</mn><mspace width="0.222em"></mspace><mn>370</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">R = 6\ 370\text{ km}</annotation></semantics></math>?</li>
+<li>Számítsd ki a műhold keringési idejét
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>)
+másodpercben!</li>
+</ul></li>
+<li><p>Egy üstökös a Nap körüli pályáján a napközelpontban (perihélium)
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> CSE</mtext></mrow></mrow><annotation encoding="application/x-tex">r_{\text{min}} = 0,6\text{ CSE}</annotation></semantics></math>
+távolságra van a Naptól, és itt a sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">max</mtext></msub><mo>=</mo><mn>55</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">v_{\text{max}} = 55\text{ km/s}</annotation></semantics></math>.
+Mekkora lesz a sebessége a naptávolpontban (afélium), ha ott a távolsága
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mtext mathvariant="normal">max</mtext></msub><mo>=</mo><mn>35</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> CSE</mtext></mrow></mrow><annotation encoding="application/x-tex">r_{\text{max}} = 35\text{ CSE}</annotation></semantics></math>?</p></li>
+<li><p>Egy képzeletbeli bolygó keringési ideje
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> év</mtext></mrow></mrow><annotation encoding="application/x-tex">T = 8\text{ év}</annotation></semantics></math>.
+A pályájának kistengelye
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>=</mo><mn>3</mn><mo>,</mo><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> CSE</mtext></mrow></mrow><annotation encoding="application/x-tex">b = 3,8\text{ CSE}</annotation></semantics></math>,
+nagytengelyének fele
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> CSE</mtext></mrow></mrow><annotation encoding="application/x-tex">a = 4\text{ CSE}</annotation></semantics></math>.</p>
+<ul>
+<li>Számítsd ki a pálya területét a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mtext mathvariant="normal">ellipszis</mtext></msub><mo>=</mo><mi>a</mi><mi>b</mi><mi>π</mi></mrow><annotation encoding="application/x-tex">T_{\text{ellipszis}} = ab\pi</annotation></semantics></math>
+képlettel!</li>
+<li>Mekkora a bolygó területi sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msup><mtext mathvariant="normal">CSE</mtext><mn>2</mn></msup><mtext mathvariant="normal">év</mtext></mfrac><annotation encoding="application/x-tex">\frac{\text{CSE}^2}{\text{év}}</annotation></semantics></math>
+egységben?</li>
+</ul></li>
+</ol>
+</body>
+</html>

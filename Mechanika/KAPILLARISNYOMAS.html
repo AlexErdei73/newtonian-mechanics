@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-kapilláris-nyomás">A kapilláris nyomás</h1>
+<h2 id="kísérletek">Kísérletek</h2>
+<p><a
+href="https://www.youtube.com/watch?v=Yg0TPid2Yt4&amp;t=14m06s">Sas
+Elemér kísérletei a felületi feszültségre</a></p>
+<p>A kísérletekben látjuk, hogy a folyadékfelületek meggörbülnek az
+edényfalak közelében. A nedvesítő folyadék mintegy felkúszik az edény
+falára, míg a nem nedvesítő folyadék éppenhogy alacsonyabban áll a
+falnál, mint a folyadék szintje a faltól messze.</p>
+<p>Hajszálcsövekben a folyadék határfelületének alakja jó közelítéssel
+gömbfelületnek tekinthető. A görbült folyadékfelület nyomást fejt ki a
+folyadékra vagy a gázra a határfelületen. Ez a nyomás mindig a homorú
+felület középpontja felé irányul. Ez okozza, hogy a hajszálcsőben a
+nedvesítő folyadék magasabban áll, mint a csövön kívül, és pont fordítva
+történik nem nedvesítő folyadék esetén. Szintén ez a nyomás próbálja a
+buborékban lévő levegőt összenyomni, ezért kell a buborékot fújni, hogy
+nőjön – azaz túlnyomást kell kifejteni a belső levegőre a külső
+légnyomáshoz képest.</p>
+<h2 id="a-kapilláris-nyomás-1">A kapilláris nyomás</h2>
+<blockquote>
+<p><strong>A görbült folyadékfelületek által kifejtett plusz nyomás a
+kapilláris vagy görbületi nyomás (Laplace-nyomás), mely mindig a
+folyadék homorú oldala felé mutató eredő erőt eredményez.</strong></p>
+</blockquote>
+<h3 id="a-térfogati-munka">A térfogati munka</h3>
+<p>Vizsgáljuk meg, mekkora munkát végzünk a gázon, ha a térfogatát
+állandó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+nyomáson
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>V</mi></mrow><annotation encoding="application/x-tex">\Delta V</annotation></semantics></math>-vel
+megváltoztatjuk! A gáz legyen egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+alapterületű hengerben, melyet dugattyú zár el. Mozgassuk el a dugattyút
+a henger belseje felé egy kicsiny
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+távolsággal. Ekkor a munka, amit végzünk (amennyiben a dugattyú nem
+gyorsul):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi>F</mi><mo>⋅</mo><mi>s</mi><mo>=</mo><mi>p</mi><mo>⋅</mo><mi>A</mi><mo>⋅</mo><mi>s</mi><mo>=</mo><mi>−</mi><mi>p</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>V</mi></mrow><annotation encoding="application/x-tex">W = F \cdot s = p \cdot A \cdot s = -p \cdot \Delta V</annotation></semantics></math></p>
+<p>Ez tehát a mi általunk a gázon végzett munka, mely a gáz térfogatát
+lecsökkenti, így itt a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>V</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta V &lt; 0</annotation></semantics></math>
+esetet vizsgáltuk (a gáz által végzett munka ennek az ellentettje
+lenne).</p>
+<h3 id="a-kapilláris-nyomás-kiszámítása">A kapilláris nyomás
+kiszámítása</h3>
+<p>A térfogati munkára vonatkozó formulánkat az egyszerűség kedvéért
+henger alakú edényre vezettük le, de tetszőleges alakú testre is
+érvényes, ha a folyamat közben a nyomás állandónak tekinthető. Ezt
+fogjuk most alkalmazni egy gömb alakú szappanbuborékra.</p>
+<p>Képzeljük el, hogy egy kevés levegőt fújunk a buborékba úgy, hogy a
+belső nyomás jó közelítéssel állandónak tekinthető. Ekkor munkát
+végzünk, de ez a munka elhanyagolható mértékben növeli a levegő belső
+energiáját, szinte teljes egészében a buborék felületi energiájának
+növelésére fordítódik. Mivel a buborékot határoló szappanhártyának külső
+és belső felszíne is van, a hártya két határfelülettel rendelkezik.</p>
+<p>Az általunk végzett térfogati munka a buborék tágításakor:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mn>2</mn><msub><mi>p</mi><mi>g</mi></msub><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>V</mi></mrow><annotation encoding="application/x-tex">W = 2p_g \cdot \Delta V</annotation></semantics></math></p>
+<p>Itt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>g</mi></msub><annotation encoding="application/x-tex">p_g</annotation></semantics></math>
+a buborékban uralkodó görbületi túlnyomás fele,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>V</mi></mrow><annotation encoding="application/x-tex">\Delta V</annotation></semantics></math>
+pedig a buborék térfogatának növekedése. Ha a sugár megváltozása
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">\Delta R</annotation></semantics></math>)
+igen kicsiny az eredeti
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+sugárhoz képest, a térfogatváltozás felírható a gömb felszínének és a
+sugárváltozásnak a szorzataként:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>V</mi><mo>=</mo><mn>4</mn><mi>π</mi><msup><mi>R</mi><mn>2</mn></msup><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">\Delta V = 4\pi R^2 \cdot \Delta R</annotation></semantics></math></p>
+<p>Nézzük meg, hogyan változik meg a buborék felülete! Ehhez szükségünk
+lesz a sugár négyzetének változására
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Delta R^2</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><msup><mi>R</mi><mn>2</mn></msup><mo>−</mo><msubsup><mi>R</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo>+</mo><msub><mi>R</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo>−</mo><msub><mi>R</mi><mn>0</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>R</mi><mo>−</mo><mi mathvariant="normal">Δ</mi><mi>R</mi><mo stretchy="false" form="postfix">)</mo><mi mathvariant="normal">Δ</mi><mi>R</mi><mo>≈</mo><mn>2</mn><mi>R</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">\Delta R^2 = R^2 - R_0^2 = (R + R_0)(R - R_0) = (2R - \Delta R)\Delta R \approx 2R \cdot \Delta R</annotation></semantics></math></p>
+<p>Az utolsó lépésben a kis
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">\Delta R</annotation></semantics></math>-et
+elhanyagoltuk a lényegesen nagyobb
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>R</mi></mrow><annotation encoding="application/x-tex">2R</annotation></semantics></math>
+mellett.</p>
+<p>Vizsgáljuk meg a felületi energia növekedését a két felszín (külső és
+belső) figyelembevételével:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>f</mi></msub><mo>=</mo><mi>α</mi><mo>⋅</mo><mn>2</mn><mi>A</mi><mo>=</mo><mi>α</mi><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mi>π</mi><msup><mi>R</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>α</mi><mo>⋅</mo><mn>8</mn><mi>π</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">E_f = \alpha \cdot 2A = \alpha \cdot 2 \cdot (4\pi R^2) = \alpha \cdot 8\pi R^2</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mi>f</mi></msub><mo>=</mo><mi>α</mi><mo>⋅</mo><mn>8</mn><mi>π</mi><msup><mi>R</mi><mn>2</mn></msup><mo>−</mo><mi>α</mi><mo>⋅</mo><mn>8</mn><mi>π</mi><msubsup><mi>R</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mi>α</mi><mo>⋅</mo><mn>8</mn><mi>π</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>R</mi><mn>2</mn></msup><mo>−</mo><msubsup><mi>R</mi><mn>0</mn><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>α</mi><mo>⋅</mo><mn>8</mn><mi>π</mi><mi mathvariant="normal">Δ</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Delta E_f = \alpha \cdot 8\pi R^2 - \alpha \cdot 8\pi R_0^2 = \alpha \cdot 8\pi (R^2 - R_0^2) = \alpha \cdot 8\pi \Delta R^2</annotation></semantics></math></p>
+<p>Behelyettesítve a korábbi közelítést
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msup><mi>R</mi><mn>2</mn></msup><mo>≈</mo><mn>2</mn><mi>R</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">\Delta R^2 \approx 2R \cdot \Delta R</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mi>f</mi></msub><mo>=</mo><mi>α</mi><mo>⋅</mo><mn>8</mn><mi>π</mi><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>R</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>R</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>α</mi><mo>⋅</mo><mn>16</mn><mi>π</mi><mi>R</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">\Delta E_f = \alpha \cdot 8\pi \cdot (2R \cdot \Delta R) = \alpha \cdot 16\pi R \cdot \Delta R</annotation></semantics></math></p>
+<p>A végzett térfogati munka teljes egészében a felületi energia
+növelésére fordítódik:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mi>f</mi></msub></mrow><annotation encoding="application/x-tex">W = \Delta E_f</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><msub><mi>p</mi><mi>g</mi></msub><mo>⋅</mo><mn>4</mn><mi>π</mi><msup><mi>R</mi><mn>2</mn></msup><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>R</mi><mo>=</mo><mi>α</mi><mo>⋅</mo><mn>16</mn><mi>π</mi><mi>R</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">2p_g \cdot 4\pi R^2 \cdot \Delta R = \alpha \cdot 16\pi R \cdot \Delta R</annotation></semantics></math></p>
+<p>Egyszerűsítés után kifejezhető a görbületi nyomás:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>g</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>α</mi></mrow><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">p_g = \frac{2\alpha}{R}</annotation></semantics></math></p>
+<h3 id="példa">1. Példa</h3>
+<p>Egy szappanbuborék sugara
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>03</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">3\text{ cm} = 0,03\text{ m}</annotation></semantics></math>,
+az oldat felületi feszültsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>03</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">\alpha = 0,03\text{ N/m}</annotation></semantics></math>.
+Mennyivel nagyobb a levegő nyomása a buborékban, mint a külső légköri
+nyomás?</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>2</mn><msub><mi>p</mi><mi>g</mi></msub><mo>=</mo><mfrac><mrow><mn>4</mn><mi>α</mi></mrow><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>03</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><mrow><mn>0</mn><mo>,</mo><mn>03</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow></mfrac><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow></mrow><annotation encoding="application/x-tex">p = 2p_g = \frac{4\alpha}{R} = \frac{4 \cdot 0,03\text{ N/m}}{0,03\text{ m}} = 4\text{ Pa}</annotation></semantics></math></p>
+<p>A buborékban lévő túlnyomás mindössze
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ Pa}</annotation></semantics></math>.</p>
+<hr />
+<h2 id="folyadék-emelkedése-hajszálcsőben">Folyadék emelkedése
+hajszálcsőben</h2>
+<p>A következőkben kiszámítjuk, hogy milyen magasra emelkedik a folyadék
+a hajszálcsőben. Igen vékony csövekben a folyadékfelszín alakja jó
+közelítéssel gömbsüvegnek tekinthető, míg a vastag csövekben a felszín
+nagy része vízszintes sík, kivéve a cső falának közvetlen környezetét.
+Az alábbi gondolatmenetünk kifejezetten a vékony kapillárisokra
+vonatkozik.</p>
+<p>A közlekedőedények törvénye alapján a csövön kívüli szabad felszín
+szintjében a nyomásnak meg kell egyeznie a cső belsejében uralkodó
+nyomással ugyanebben a magasságban.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><msub><mi>p</mi><mn>0</mn></msub><mo>+</mo><mi>ρ</mi><mi>g</mi><mi>h</mi><mo>−</mo><msub><mi>p</mi><mi>g</mi></msub></mrow><annotation encoding="application/x-tex">p_0 = p_0 + \rho g h - p_g</annotation></semantics></math></p>
+<p>A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>g</mi></msub><annotation encoding="application/x-tex">p_g</annotation></semantics></math>
+görbületi nyomást itt levonjuk, mivel feltételezzük, hogy a felszín
+homorú (nedvesítő folyadék), így a meniszkusz közvetlen közelében a
+folyadékban nyomáscsökkenés lép fel, ami „felszívja” az oszlopot.</p>
+<p>Legyen a folyadékfelszín érintője és a cső fala által bezárt
+illeszkedési (nedvesítési) szög
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>θ</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math>.
+Ez a szög nedvesítő folyadékokra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>90</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">90^\circ</annotation></semantics></math>-nál
+kisebb, míg nem nedvesítő folyadékokra
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>90</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">90^\circ</annotation></semantics></math>-nál
+nagyobb. Nagyon tiszta üveg és tiszta víz esetén ez a szög jó
+közelítéssel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>0</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">0^\circ</annotation></semantics></math>.</p>
+<figure>
+<img src="Kepek/meniszkusz.svg"
+alt="A meniszkusz sugara es a hajszalcső sugara közötti kapcsolat" />
+<figcaption aria-hidden="true">A meniszkusz sugara es a hajszalcső
+sugara közötti kapcsolat</figcaption>
+</figure>
+<p>A geometriai elrendezés alapján a cső
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+sugara és a meniszkusz gömbfelületének
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+sugara közötti összefüggés:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>θ</mi><mo>=</mo><mfrac><mi>r</mi><mi>R</mi></mfrac><mo>⟹</mo><mi>R</mi><mo>=</mo><mfrac><mi>r</mi><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>θ</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\cos\theta = \frac{r}{R} \implies R = \frac{r}{\cos\theta}</annotation></semantics></math></p>
+<p>Így az egyetlen határfelülettel rendelkező meniszkusz által kifejtett
+görbületi nyomás:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mi>g</mi></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>α</mi></mrow><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>α</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>θ</mi></mrow><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">p_g = \frac{2\alpha}{R} = \frac{2\alpha\cos\theta}{r}</annotation></semantics></math></p>
+<p>Ezt beírva a hidrosztatikai egyensúlyi egyenletünkbe:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><msub><mi>p</mi><mn>0</mn></msub><mo>+</mo><mi>ρ</mi><mi>g</mi><mi>h</mi><mo>−</mo><mfrac><mrow><mn>2</mn><mi>α</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>θ</mi></mrow><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">p_0 = p_0 + \rho g h - \frac{2\alpha\cos\theta}{r}</annotation></semantics></math></p>
+<p>Átrendezve a folyadékoszlop
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+magassága kifejezhető:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>α</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>θ</mi></mrow><mrow><mi>ρ</mi><mi>g</mi><mi>r</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">h = \frac{2\alpha\cos\theta}{\rho g r}</annotation></semantics></math></p>
+<h3 id="példa-1">2. Példa</h3>
+<p>Hány millimétert süllyed a higany a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>0001</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">r = 0,1\text{ mm} = 0,0001\text{ m}</annotation></semantics></math>
+sugarú kapilláris csőben? A higany felületi feszültsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>4865</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">\alpha = 0,4865\text{ N/m}</annotation></semantics></math>,
+sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>13</mn><mspace width="0.222em"></mspace><mn>600</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 13\ 600\text{ kg/m}^3</annotation></semantics></math>,
+az illeszkedési szöge pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>=</mo><msup><mn>140</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\theta = 140^\circ</annotation></semantics></math>.
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>≈</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g \approx 9,81\text{ m/s}^2</annotation></semantics></math>)</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>α</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>θ</mi></mrow><mrow><mi>ρ</mi><mi>g</mi><mi>r</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>4865</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msup><mn>140</mn><mo>∘</mo></msup><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mn>13</mn><mspace width="0.222em"></mspace><mn>600</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>0001</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow></mfrac></mrow><annotation encoding="application/x-tex">h = \frac{2\alpha\cos\theta}{\rho g r} = \frac{2 \cdot 0,4865\text{ N/m} \cdot \cos(140^\circ)}{13\ 600\text{ kg/m}^3 \cdot 9,81\text{ m/s}^2 \cdot 0,0001\text{ m}}</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>≈</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>973</mn><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>7660</mn><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mn>13</mn><mo>,</mo><mn>3416</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>−</mi><mn>0</mn><mo>,</mo><mn>7453</mn></mrow><mrow><mn>13</mn><mo>,</mo><mn>3416</mn></mrow></mfrac><mo>≈</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>05587</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>≈</mo><mi>−</mi><mn>55</mn><mo>,</mo><mn>9</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">h \approx \frac{0,973 \cdot (-0,7660)}{13,3416} = \frac{-0,7453}{13,3416} \approx -0,05587\text{ m} \approx -55,9\text{ mm}</annotation></semantics></math></p>
+<p>A csőben a higany szintje körülbelül
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">5,6\text{ cm}</annotation></semantics></math>-t
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>55</mn><mo>,</mo><mn>9</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">55,9\text{ mm}</annotation></semantics></math>-t)
+süllyed le.</p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p>Egy tiszta vízzel teli edénybe függőlegesen egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 0,6\text{ mm}</annotation></semantics></math>
+belső átmérőjű üveg hajszálcsövet mártunk. Milyen magasra kúszik fel a
+víz a kapillárisban, ha a víz az üveget tökéletesen nedvesíti
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>=</mo><msup><mn>0</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\theta = 0^\circ</annotation></semantics></math>)?
+A víz felületi feszültsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>072</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">\alpha = 0,072\text{ N/m}</annotation></semantics></math>,
+sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1000\text{ kg/m}^3</annotation></semantics></math>,
+a nehézségi gyorsulás
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>≈</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g \approx 9,81\text{ m/s}^2</annotation></semantics></math>.</p></li>
+<li><p>Két különböző méretű szappanbuborékot fújunk ugyanabból a
+szappanoldatból
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>028</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">\alpha = 0,028\text{ N/m}</annotation></semantics></math>).
+Az első buborék átmérője
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ cm}</annotation></semantics></math>,
+a második buborékban uralkodó belső túlnyomás pedig pontosan a fele az
+elsőben mérhető értéknek. Mekkora a második szappanbuborék
+sugara?</p></li>
+<li><p>Egy folyadékba mártott kapilláris csőben a kapilláris emelkedés
+magassága pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">h = 3\text{ cm}</annotation></semantics></math>.
+Egy másik, ugyanebből az anyagból készült, de feleakkora belső sugarú
+csőben a felemelkedés magassága
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">h = 6\text{ cm}</annotation></semantics></math>-nek
+adódik. Ha a folyadék sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>800</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 800\text{ kg/m}^3</annotation></semantics></math>,
+a cső sugara
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">r = 0,4\text{ mm}</annotation></semantics></math>,
+és az illeszkedési szög a tiszta felületek miatt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>θ</mi><mo>=</mo><msup><mn>0</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">\theta = 0^\circ</annotation></semantics></math>,
+mekkora a vizsgált folyadék felületi feszültsége?</p></li>
+</ol>
+</body>
+</html>

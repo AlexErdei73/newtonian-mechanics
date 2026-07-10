@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-közegellenállás-és-az-aerodinamikai-emelőerő">A
+közegellenállás és az aerodinamikai emelőerő</h1>
+<p>Eddig láttuk a Stokes-törvényt a kis Reynolds-számú lamináris
+áramlási rezsim esetére. Ilyenkor a mozgó gömbre a relatív sebességével
+ellentétes irányú erő hat, mely egyenesen arányos a sebesség
+nagyságával.</p>
+<p>Most vizsgáljuk meg a nagy Reynolds-számok általános esetét, amelyek
+a mindennapi életben szinte mindig előfordulnak! Megnézzük, hogyan függ
+a közegellenállási erő a relatív sebességtől, illetve milyen más
+tényezők befolyásolják ezen kívül a mozgást. Ez rendkívül fontos
+gyakorlati probléma, hiszen a járművek mechanikai energiaveszteségei
+jelentős részben a közegellenállás következményei.</p>
+<p>Mivel az áramlási alapegyenletek (Navier–Stokes-egyenletek) közvetlen
+megoldása ilyenkor matematikailag reménytelen, két fő eszközünk marad,
+hogy pontos információhoz jussunk: * Szélcsatornás kísérletek a
+közegellenállás fizikai mérésére. * Számítógépes áramlástani szimulációk
+(<strong>CFD</strong> - Computational Fluid Dynamics).</p>
+<h2 id="kísérletek-és-szimulációk">Kísérletek és szimulációk</h2>
+<p>A következő videók bemutatják a jelenség kísérleti és numerikus
+hátterét. Nézzük meg őket figyelmesen, mielőtt rátérnénk a matematikai
+levezetésre!</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=2L8TjobaFac&amp;t=24s">A
+közegellenállás mérése sima gömbön és golflabdán (YouTube
+videó)</a></li>
+<li><a
+href="https://www.youtube.com/watch?v=EbOpgUrwK7M">Közegellenállás és
+aerodinamikai emelőerő mérése szárnyformán (YouTube videó)</a></li>
+<li><a href="https://www.youtube.com/watch?v=skzddW_kEq0">Gömb körüli
+áramlás numerikus szimulációja Re=100 000 esetén (YouTube
+videó)</a></li>
+<li><a href="https://www.youtube.com/shorts/UKHjTZwSH_w">Áramlás
+repülőgép-szárnyprofil körül (YouTube Shorts)</a></li>
+</ul>
+<p>A kísérletek szemléltetik, hogyan mérhető a közegellenállási erő
+gömbön, illetve a közegellenállási erő és az aerodinamikai emelőerő
+szárnyprofilon, különböző állásszögek esetén. Foglalkozzunk először a
+közegellenállás kiszámításával, majd vizsgáljuk meg, hogyan jön létre a
+repülést biztosító emelőerő!</p>
+<hr />
+<h2 id="a-közegellenállási-erő-kiszámítása">A közegellenállási erő
+kiszámítása</h2>
+<p>Képzeljünk el egy hasábot, például egy kockát, amely
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+sebességgel halad előre! Legyen a kocka elülső lapja a haladási irányra
+merőleges, a lap területe pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.
+A levegő a kocka mozgását fékezni fogja. Ennek oka, hogy a test
+folyamatosan ütközik a közeg molekuláival: egyre több levegőt tol maga
+előtt, és felgyorsítja azt a saját
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+sebességére.</p>
+<p>Tegyük fel egyszerűsítésként, hogy a levegő noha megpróbál kitérni a
+kocka elől, de a test által kisöpört teljes térfogatban fel kell
+gyorsulnia a test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+sebességére. Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\Delta t</annotation></semantics></math>
+időintervallum alatt a kocka
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>x</mi><mo>=</mo><mi>u</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\Delta x = u \cdot \Delta t</annotation></semantics></math>
+utat tesz meg. Az ezalatt érintett levegő térfogata:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>V</mi><mo>=</mo><mi>A</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>x</mi><mo>=</mo><mi>A</mi><mo>⋅</mo><mi>u</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">
+\Delta V = A \cdot \Delta x = A \cdot u \cdot \Delta t
+</annotation></semantics></math></p>
+<p>A felgyorsított levegő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">\Delta m</annotation></semantics></math>
+tömege a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>
+sűrűség segítségével kifejezve:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>m</mi><mo>=</mo><mi>ρ</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>V</mi><mo>=</mo><mi>ρ</mi><mo>⋅</mo><mi>A</mi><mo>⋅</mo><mi>u</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">
+\Delta m = \rho \cdot \Delta V = \rho \cdot A \cdot u \cdot \Delta t
+</annotation></semantics></math></p>
+<p>A közegellenállási erőt a lendülettétel alapján számíthatjuk ki,
+amely Newton harmadik törvénye (akció-reakció) értelmében
+nagyságrendileg megegyezik a levegőnek átadott erővel:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>k</mi></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>I</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>u</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>m</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>u</mi><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mi>ρ</mi><mo>⋅</mo><mi>A</mi><mo>⋅</mo><mi>u</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mi>ρ</mi><mo>⋅</mo><msup><mi>u</mi><mn>2</mn></msup><mo>⋅</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">
+F_k = \frac{\Delta I}{\Delta t} = \frac{u \cdot \Delta m}{\Delta t} = \frac{u \cdot (\rho \cdot A \cdot u \cdot \Delta t)}{\Delta t} = \rho \cdot u^2 \cdot A
+</annotation></semantics></math></p>
+<p>Ez a számítás nyilvánvalóan csak egy elméleti becslés, hiszen a
+valóságos levegő egy része kitér a haladó test elől, így nem gyorsul fel
+teljesen a test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+sebességére. Az, hogy ez a becslés mennyire pontos, elsősorban a test
+geometriai alakja szabja meg.</p>
+<p>A mérések szerint a fenti gondolatmenet kiváló közelítést ad, ha az
+eredményt megszorozzuk egy a test alakjára jellemző, mértékegység
+nélküli állandóval, amelyet a fizikában
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>C</mi><mi>w</mi></msub></mrow><annotation encoding="application/x-tex">\frac{1}{2} C_w</annotation></semantics></math>
+formában szoktunk felírni. Itt a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>w</mi></msub><annotation encoding="application/x-tex">C_w</annotation></semantics></math>
+a test formájára jellemző <strong>közegellenállási tényező</strong>
+(vagy <em>alaktényező</em>, a nemzetközi szakirodalomban gyakran
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>D</mi></msub><annotation encoding="application/x-tex">C_D</annotation></semantics></math>).</p>
+<p>A közegellenállás végleges, négyzetes erőtörvénye tehát a
+következő:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>k</mi></msub><mo>=</mo><msub><mi>C</mi><mi>w</mi></msub><mo>⋅</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><mo>⋅</mo><msup><mi>u</mi><mn>2</mn></msup><mo>⋅</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">
+F_k = C_w \cdot \frac{1}{2} \rho \cdot u^2 \cdot A
+</annotation></semantics></math></p>
+<p>Vegyük észre a fizikai lényeget: a sebesség a négyzeten szerepel
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>u</mi><mn>2</mn></msup><annotation encoding="application/x-tex">u^2</annotation></semantics></math>)!
+Ennek oka, hogy ha kétszer olyan gyorsan megyünk, akkor másodpercenként
+<strong>kétszer annyi</strong> levegőmolekulát gázolunk el, és ezeket a
+molekulákat <strong>kétszer akkora</strong> sebességre is kell
+felgyorsítanunk.</p>
+<h3 id="különböző-alakú-testek-közegellenállási-tényezője">Különböző
+alakú testek közegellenállási tényezője</h3>
+<figure>
+<img src="Kepek/alaktenyezok.webp"
+alt="Különböző alakú testek alaktényezője" />
+<figcaption aria-hidden="true">Különböző alakú testek
+alaktényezője</figcaption>
+</figure>
+<hr />
+<h3 id="az-alaktényező-reynolds-szám-függése">Az alaktényező
+Reynolds-szám függése</h3>
+<p>A tompa és az áramvonalas testek áramlástani viselkedése drasztikusan
+eltér egymástól, amit a Reynolds-szám
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">Re</annotation></semantics></math>)
+befolyásol. Vizsgáljuk meg a klasszikus gömb esetét!</p>
+<p>Láttuk korábban, hogy igen kis Reynolds-számok esetén
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>≪</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">Re \ll 1</annotation></semantics></math>)
+a mozgás a Stokes-törvényt követi. Ilyenkor az áramlás stacionárius és
+lamináris, a folyadék teljesen rásimul a gömbre, és a tiszta viszkózus
+súrlódás dominál. Erre a tartományra az alaktényező elméleti úton is
+levezethető:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>w</mi></msub><mo>=</mo><mfrac><mn>24</mn><mrow><mi>R</mi><mi>e</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+C_w = \frac{24}{Re}
+</annotation></semantics></math></p>
+<p>Ha ezt visszahelyettesítjük a négyzetes közegellenállási egyenletbe
+(figyelembe véve, hogy a gömb keresztmetszete
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup><mi>π</mi></mrow><annotation encoding="application/x-tex">A = r^2\pi</annotation></semantics></math>,
+a Reynolds-szám pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>=</mo><mfrac><mrow><mi>ρ</mi><mo>⋅</mo><mn>2</mn><mi>r</mi><mo>⋅</mo><mi>u</mi></mrow><msub><mi>η</mi><mtext mathvariant="normal">din</mtext></msub></mfrac></mrow><annotation encoding="application/x-tex">Re = \frac{\rho \cdot 2r \cdot u}{\eta_{\text{din}}}</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>k</mi></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>C</mi><mi>w</mi></msub><mo>⋅</mo><mi>ρ</mi><mo>⋅</mo><msup><mi>u</mi><mn>2</mn></msup><mo>⋅</mo><mi>A</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>24</mn><msub><mi>η</mi><mtext mathvariant="normal">din</mtext></msub></mrow><mrow><mi>ρ</mi><mo>⋅</mo><mn>2</mn><mi>r</mi><mo>⋅</mo><mi>u</mi></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>⋅</mo><mi>ρ</mi><mo>⋅</mo><msup><mi>u</mi><mn>2</mn></msup><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>r</mi><mn>2</mn></msup><mi>π</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>6</mn><mi>π</mi><mo>⋅</mo><msub><mi>η</mi><mtext mathvariant="normal">din</mtext></msub><mo>⋅</mo><mi>r</mi><mo>⋅</mo><mi>u</mi></mrow><annotation encoding="application/x-tex">
+F_k = \frac{1}{2} C_w \cdot \rho \cdot u^2 \cdot A = \frac{1}{2} \cdot \left(\frac{24\eta_{\text{din}}}{\rho \cdot 2r \cdot u}\right) \cdot \rho \cdot u^2 \cdot (r^2\pi) = 6\pi \cdot \eta_{\text{din}} \cdot r \cdot u
+</annotation></semantics></math></p>
+<p>Pontosan visszakaptuk a Stokes-féle lineáris erőtörvényt! Igen kis
+Reynolds-számoknál tehát a fékezés mechanizmusa a testre tapadó folyadék
+belső, ragacsos súrlódása.</p>
+<p>Nagy Reynolds-számok esetén
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1000</mn><mo>&lt;</mo><mi>R</mi><mi>e</mi><mo>&lt;</mo><mn>300</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow><annotation encoding="application/x-tex">1000 &lt; Re &lt; 300\ 000</annotation></semantics></math>)
+a gömb alaktényezője szinte állandóvá válik, értéke kb.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>47</mn></mrow><annotation encoding="application/x-tex">0{,}47</annotation></semantics></math>.
+Itt már a folyadék tehetetlensége és a test mögött kialakuló örvénycsóva
+miatti nyomáskülönbség (alaki ellenállás) uralkodynamikája uralkodik,
+így az erő tiszta
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>u</mi><mn>2</mn></msup><annotation encoding="application/x-tex">u^2</annotation></semantics></math>
+függést mutat.</p>
+<figure>
+<img src="Kepek/gomb_alaktenyezoje_Re_fuggvenyeben.webp"
+alt="A gömb alaktényezője a Reynolds-szám függvényében" />
+<figcaption aria-hidden="true">A gömb alaktényezője a Reynolds-szám
+függvényében</figcaption>
+</figure>
+<h4 id="a-közegellenállási-válság-drag-crisis">A közegellenállási válság
+(Drag crisis)</h4>
+<p>Sima felületű gömbnél
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>≈</mo><mn>300</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow><annotation encoding="application/x-tex">Re \approx 300\ 000</annotation></semantics></math>
+környékén egy egészen megdöbbentő fizikai tünemény játszódik le: a gömb
+alaktényezője hirtelen és drasztikusan leesik
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>47</mn></mrow><annotation encoding="application/x-tex">0{,}47</annotation></semantics></math>-ről
+kb.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">0{,}2</annotation></semantics></math>-re!</p>
+<p>Ennek oka, hogy a gömb elején kialakuló vékony, lamináris határréteg
+hirtelen összeomlik és turbulenssé válik. Bár a turbulencia helyileg
+növeli a súrlódást, a turbulens határréteg sokkal nagyobb mozgási
+energiával rendelkezik. Emiatt sokkal hosszabban képes követni a gömb
+görbületét, és a leválási pont hátratolódik (lamináris esetben kb.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>80</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">80^\circ</annotation></semantics></math>-nál,
+turbulens esetben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>120</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">120^\circ</annotation></semantics></math>
+körül válik le az áramlás). Emiatt a gömb mögötti kis nyomású
+örvénycsóva drasztikusan összeszűkül, és a test alaki ellenállása
+bezuhan.</p>
+<p>A <strong>golflabda</strong> rücskös felületének pontosan ez a célja:
+a rücskök szándékosan felkorbácsolják és turbulenssé teszik a
+határréteget, így ez a közegellenállási válság már egy jóval kisebb
+Reynolds-számnál bekövetkezik, és a labda sokkal messzebbre képes
+repülni.</p>
+<ul>
+<li><strong>Szögletes testeknél</strong> (pl. kocka, sík lap) az áramlás
+leválását a geometria kényszeríti ki az éles sarkoknál. Emiatt náluk a
+leválási pont fix, az alaktényező
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>w</mi></msub><mo>≈</mo><mn>1</mn><mo>,</mo><mn>05</mn><mo>−</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">C_w \approx 1{,}05 - 1{,}2</annotation></semantics></math>)
+szinte egyáltalán nem függ a Reynolds-számtól, és nincs közegellenállási
+válságuk.</li>
+<li><strong>Áramvonalas testeknél</strong> (pl. csepp alak,
+szárnyprofil) a test alakját úgy tervezték, hogy a leválás még óriási
+Reynolds-számoknál se következzen be. Náluk a közegellenállás
+elképesztően alacsony
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>w</mi></msub><mo>≈</mo><mn>0</mn><mo>,</mo><mn>04</mn></mrow><annotation encoding="application/x-tex">C_w \approx 0{,}04</annotation></semantics></math>),
+ami a modern járműtervezés legfőbb célja.</li>
+</ul>
+<hr />
+<h2 id="a-végsebesség">A végsebesség</h2>
+<p>Amikor egy testet elengedünk egy közegben, a nehézségi erő hatására
+gyorsulni kezd. Ahogy nő a sebessége, a négyzetes erőtörvény értelmében
+a közegellenállási erő is rohamosan növekszik. Egy bizonyos ponton a
+közegellenállás hajszálpontosan egyenlővé válik a nehézségi erővel
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>k</mi></msub><mo>=</mo><msub><mi>F</mi><mi>G</mi></msub></mrow><annotation encoding="application/x-tex">F_k = F_G</annotation></semantics></math>).
+Ekkor a testre ható eredő erő nulla lesz, a gyorsulás megszűnik, és a
+tárgy eléri a maximális, állandó <strong>végsebességét</strong>.</p>
+<h3 id="szimulációs-ellenőrzés">Szimulációs ellenőrzés</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#621f3903-6d19-4d8a-867b-45fdd4a016ad">Gömb
+alakú test esése légellenállás hatása alatt (Interaktív
+szimuláció)</a></p>
+<p>Ebben a szimulációban a végsebesség értékét és a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>y</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">v_y(t)</annotation></semantics></math>
+grafikont érdemes megnézni!</p>
+<hr />
+<h3 id="kidolgozott-példák">Kidolgozott példák</h3>
+<p><strong>1. feladat:</strong> Számítsuk ki a fenti interaktív
+szimulációban szereplő test elméleti végsebességét! A test tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 0{,}1\text{ kg}</annotation></semantics></math>,
+a levegő sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>225</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1{,}225\text{ kg/m}^3</annotation></semantics></math>,
+a gömb alakú test sugara
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">r = 0{,}1\text{ m}</annotation></semantics></math>,
+a gömb alaktényezője pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>w</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>47</mn></mrow><annotation encoding="application/x-tex">C_w = 0{,}47</annotation></semantics></math>.</p>
+<p>Az egyensúlyi állapotból kiindulva
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ m/s}^2</annotation></semantics></math>):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>G</mi></msub><mo>=</mo><msub><mi>F</mi><mi>k</mi></msub><mo>⟹</mo><mi>m</mi><mo>⋅</mo><mi>g</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>C</mi><mi>w</mi></msub><mo>⋅</mo><mi>ρ</mi><mo>⋅</mo><msup><mi>u</mi><mn>2</mn></msup><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>r</mi><mn>2</mn></msup><mi>π</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+F_G = F_k \implies m \cdot g = \frac{1}{2} C_w \cdot \rho \cdot u^2 \cdot (r^2\pi)
+</annotation></semantics></math></p>
+<p>Fejezzük ki a sebességet, és helyettesítsünk be:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mo>⋅</mo><mi>m</mi><mo>⋅</mo><mi>g</mi></mrow><mrow><msub><mi>C</mi><mi>w</mi></msub><mo>⋅</mo><mi>ρ</mi><mo>⋅</mo><msup><mi>r</mi><mn>2</mn></msup><mi>π</mi></mrow></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>47</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>225</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><msup><mn>1</mn><mn>2</mn></msup><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>1415</mn></mrow></mfrac></msqrt><mo>≈</mo><mn>10</mn><mo>,</mo><mn>415</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+u = \sqrt{\frac{2 \cdot m \cdot g}{C_w \cdot \rho \cdot r^2\pi}} = \sqrt{\frac{2 \cdot 0{,}1 \cdot 9{,}81}{0{,}47 \cdot 1{,}225 \cdot 0{,}1^2 \cdot 3{,}1415}} \approx 10{,}415\text{ m/s}
+</annotation></semantics></math></p>
+<p>Eredményünk hajszálpontosan megegyezik a szimuláció által mutatott
+értékkel!</p>
+<p><strong>2. feladat:</strong> Mekkora egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>95</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">95\text{ kg}</annotation></semantics></math>
+össztömegű ejtőernyős süllyedési sebessége érkezéskor, ha a felgömb
+alakú ejtőernyő sugara nyitott állapotban
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">r = 4\text{ m}</annotation></semantics></math>,
+az alaktényezője pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>w</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">C_w = 1{,}4</annotation></semantics></math>?
+Mekkora lenne ugyanez a sebesség, ha az ejtőernyő nem nyílna ki, és a
+szerencsétlenül járt ember kiterített testtel, hassal lefelé zuhanna
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>7</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A = 0{,}7\text{ m}^2</annotation></semantics></math>
+vetületi homlokfelülettel és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>w</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">C_w = 1{,}0</annotation></semantics></math>
+alaktényezővel)?</p>
+<p><em>Nyitott ejtőernyővel:</em></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mo>⋅</mo><mi>m</mi><mo>⋅</mo><mi>g</mi></mrow><mrow><msub><mi>C</mi><mi>w</mi></msub><mo>⋅</mo><mi>ρ</mi><mo>⋅</mo><msup><mi>r</mi><mn>2</mn></msup><mi>π</mi></mrow></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>95</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn></mrow><mrow><mn>1</mn><mo>,</mo><mn>4</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>225</mn><mo>⋅</mo><msup><mn>4</mn><mn>2</mn></msup><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>1415</mn></mrow></mfrac></msqrt><mo>≈</mo><mn>4</mn><mo>,</mo><mn>65</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mo>≈</mo><mn>16</mn><mo>,</mo><mn>74</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">
+u_1 = \sqrt{\frac{2 \cdot m \cdot g}{C_w \cdot \rho \cdot r^2\pi}} = \sqrt{\frac{2 \cdot 95 \cdot 9{,}81}{1{,}4 \cdot 1{,}225 \cdot 4^2 \cdot 3,1415}} \approx 4{,}65\text{ m/s} \approx 16{,}74\text{ km/h}
+</annotation></semantics></math></p>
+<p><em>Ejtőernyő nélkül (szabadesésben):</em></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mo>⋅</mo><mi>m</mi><mo>⋅</mo><mi>g</mi></mrow><mrow><msub><mi>C</mi><mi>w</mi></msub><mo>⋅</mo><mi>ρ</mi><mo>⋅</mo><mi>A</mi></mrow></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>95</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn></mrow><mrow><mn>1</mn><mo>,</mo><mn>0</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>225</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>7</mn></mrow></mfrac></msqrt><mo>≈</mo><mn>46</mn><mo>,</mo><mn>62</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mo>≈</mo><mn>167</mn><mo>,</mo><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">
+u_2 = \sqrt{\frac{2 \cdot m \cdot g}{C_w \cdot \rho \cdot A}} = \sqrt{\frac{2 \cdot 95 \cdot 9{,}81}{1{,}0 \cdot 1{,}225 \cdot 0{,}7}} \approx 46{,}62\text{ m/s} \approx 167{,}8\text{ km/h}
+</annotation></semantics></math></p>
+<p><strong>Konklúzió:</strong> Vegyük észre a drámai különbséget!
+Ejtőernyő nélkül az emberi test kiterítve is közel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>168</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">168\text{ km/h}</annotation></semantics></math>-s
+sebességgel csapódna a földbe, ami a fellépő óriási (több mint
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>800</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">800\text{ g}</annotation></semantics></math>-s)
+lassulás miatt azonnali halálos sérülést okoz. Az ejtőernyő hatalmas
+vetületi felülete és magas alaktényezője a becsapódást egy teljesen
+biztonságos, kb.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>17</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">17\text{ km/h}</annotation></semantics></math>-s
+zökkenéssé szelídíti.</p>
+<hr />
+<h2 id="az-aerodinamikai-emelőerő-megszületése">Az aerodinamikai
+emelőerő megszületése</h2>
+<p>A repülőgép-szárnyprofil körüli áramlás szimulációjakor kis szögeknél
+szép lamináris áramlás alakul ki, melynél a szárny stabil emeloerőt
+biztosít. Ha jól megnézzük a szimulációt a videón, láthatunk egy kis
+örvényt leválni a mozgás kezdetén a szárny hátsó csücskénél (ez az
+úgynevezett indulási örvény).</p>
+<p>Ez a megfigyelés rendkívül lényeges! A perdületmegmaradás értelmében
+ugyanis a levegő a szárny körül ezáltal forgásba jön, és egy úgynevezett
+cirkuláció alakul ki. A folyamat lényege, hogy a leváló indulási örvény
+és a szárny körül kialakuló, vele ellentétes irányú forgás teljes eredő
+perdülete hajszálpontosan nulla marad.</p>
+<p>A szárny körüli kötött forgás az óramutató járásával megegyező
+értelmű. Emiatt a szárny felett ez a forgás hozzáadódik a szembejövő
+áramlás sebességéhez, a szárny alatt pedig levonódik belőle. Ezáltal
+lesz a szárny felett lényegesen nagyobb a levegő áramlási sebessége,
+mint a szárny alatt. Ez a Bernoulli-törvény értelmében
+nyomáskülönbséghez vezet (fent lecsökken, lent megnő a nyomás), amely
+végül biztosítja a repüléshez szükséges aerodinamikai emelőerőt.</p>
+<h3 id="az-átesés-stall-veszélye">Az átesés (Stall) veszélye</h3>
+<p>Ha a szárnyat túl nagy szögben (kb.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>15</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>18</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">15^\circ - 18^\circ</annotation></semantics></math>
+felett) döntjük meg az áramláshoz kélpest, a levegőmolekuláknak a
+felületi súrlódás miatt elfogy a mozgási energiájuk, és a
+tehetetlenségük miatt már nem képesek követni a szárny felső ívét.</p>
+<p>A határréteg hirtelen leválik, és a szárny felett a sima, gyors
+áramlás helyét egy kaotikus, lassú, örvénylő légtömeg veszi át. Ekkor a
+cirkuláció összeomlik: a szívóhatás eltűnik, az emelőerő bezuhan, a
+repülőgép pedig hirtelen <strong>átesik (stall)</strong> és zuhanni
+kezd.</p>
+<p>Hogy ezt elkerüljék, a modern repülőgépek szárnyaira apró
+fémlemezeket, úgynevezett <em>vortex generátorokat</em> szerelnek. Ezek
+szándékosan pici turbulenciát keltenek a felületen. Ahogy a golflabdánál
+is láttuk, ez a turbulens réteg jobban tapad a szárnyhoz, így a
+veszélyes áramlásleválás és az átesés csak sokkal nagyobb dőlésszögeknél
+következhet be, biztonságossá téve a repülést.</p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li><p><strong>Meteorológiai szonda süllyedése:</strong> Egy hengeres
+test alakú meteorológiai mérőszondát ejtünk el a légkör alsó rétegében,
+ahol a levegő sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1{,}2\text{ kg/m}^3</annotation></semantics></math>.
+A műszer össztömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 2\text{ kg}</annotation></semantics></math>,
+a haladási irányra merőleges vetületi homlokfelülete
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>15</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A = 0{,}15\text{ m}^2</annotation></semantics></math>,
+a test áramvonalas kialakításának köszönhető alaktényezője pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>w</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>32</mn></mrow><annotation encoding="application/x-tex">C_w = 0{,}32</annotation></semantics></math>.
+Határozd meg a szonda elméleti végsebességét a nehézségi és a négyzetes
+közegellenállási erő egyensúlyából!
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ m/s}^2</annotation></semantics></math>)</p></li>
+<li><p><strong>Vízi mentőeszköz fékezése:</strong> Egy árvízi mentőakció
+során egy helikopterről egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>12</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 12\text{ kg}</annotation></semantics></math>
+tömegű, felülről nyitott, üreges felgömb alakú mentőeszközt dobnak a
+folyóba. A víz sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1000\text{ kg/m}^3</annotation></semantics></math>,
+az üreges felgömb alaktényezője a vízben
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>C</mi><mi>w</mi></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>42</mn></mrow><annotation encoding="application/x-tex">C_w = 1{,}42</annotation></semantics></math>,
+a gömb sugara pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>25</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">r = 0{,}25\text{ m}</annotation></semantics></math>.
+Mekkora lesz a mentőeszköz állandósult süllyedési végsebessége a vízben,
+ha feltételezzük, hogy a mozgás a nagy Reynolds-számú négyzetes
+tartományba esik?
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ m/s}^2</annotation></semantics></math>)</p></li>
+<li><p><strong>Légellenállás-jóslás nagysebességű vonatnál:</strong> Egy
+vasúti kutatócsoport egy új prototípus szélcsatornatesztje során azt
+méri, hogy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_1 = 30\text{ m/s}</annotation></semantics></math>
+(kb.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>108</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">108\text{ km/h}</annotation></semantics></math>)
+sebesség mellett a szerelvényre ható teljes légellenállási erő
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mi>k</mi><mn>1</mn></mrow></msub><mo>=</mo><mn>4500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">F_{k1} = 4500\text{ N}</annotation></semantics></math>.
+Mivel a vonat éles törések nélküli, áramvonalas geometriájú, a vizsgált
+tartományban az alaktényezője
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>w</mi></msub><annotation encoding="application/x-tex">C_w</annotation></semantics></math>)
+állandónak tekinthető. A négyzetes közegellenállási törvény alapján
+jósold meg, mekkora fékezőerővel kell szembenéznie a vonatnak a
+tervezett utazósebességén, ami
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>90</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_2 = 90\text{ m/s}</annotation></semantics></math>
+(mely hajszálpontosan a háromszorosa az elsőnek)!</p></li>
+</ol>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="newton-törvényei">Newton törvényei</h1>
+<h2 id="a-tehetetlenség-törvénye-newton-i.-törvénye">A tehetetlenség
+törvénye (Newton I. törvénye)</h2>
+<blockquote>
+<p><strong>Minden test megtartja nyugalmi állapotát vagy egyenes vonalú,
+egyenletes mozgását mindaddig, amíg egy másik test ennek
+megváltoztatására nem kényszeríti.</strong></p>
+</blockquote>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=-luKN6mad5w">Newton első
+törvényének bemutatása az űrállomáson (NASA)</a></p>
+<p>A kísérleti videó világosan szemlélteti a törvényt, de a fizika
+történetében ez a felismerés nem volt mindig magától értetődő.
+Arisztotelész ókori filozófus szerint a mozgás fenntartásához
+folyamatosan egy másik test aktív hatására van szükség. Megfigyelései
+alapján egy lovaskocsi a lovak húzóhatása nélkül hamar megáll, míg a
+húzóhatás jelenlétében egyenletesen halad előre.</p>
+<p>Galileo Galilei fedezte fel elsőként, hogy a testeknek nem a
+mozgásban maradásához, hanem a mozgásállapotuk
+<em>megváltoztatásához</em> van szükségük egy másik test
+közreműködésére. A lovaskocsi azért áll meg a lovak leállása után, mert
+más testek (a talaj és a levegő) fékező hatást fejtenek ki rá a
+gördülési ellenállás és a légellenállás formájában. A lovak húzóhatása
+valójában csak ezeket a gátló hatásokat ellensúlyozza.</p>
+<p>A törvény demonstrációjához azért kiváló helyszín a Nemzetközi
+Űrállomás, mert a mikrogravitációs környezetben a testek szabadon
+lebegnek, így a súrlódás teljesen kiküszöbölhető, és a kis sebességeknél
+fellépő légellenállás is elhanyagolható. Hasonlóan ideális körülményeket
+láthattunk a korábbi kísérletekben is, amikor a vízszintes légpárnás
+sínen meglökött test egyenes vonalú, egyenletes mozgást végzett, és a
+mozgásállapota csak akkor változott meg, amikor a sín végén elhelyezett
+ütközővel (mint másik testtel) érintkezésbe lépett.</p>
+<h3 id="az-inerciarendszer">Az inerciarendszer</h3>
+<p>A tehetetlenség törvénye – és vele együtt a fizika többi dinamikai
+törvénye is – <strong>kizárólag inerciarendszerekben
+érvényes</strong>.</p>
+<blockquote>
+<p><strong>Inerciarendszernek nevezzük az olyan vonatkoztatási rendszert
+(koordináta-rendszert), amelyben a tehetetlenség törvénye érvényesül. A
+fizika törvényei inerciarendszerekben érvényesek.</strong></p>
+</blockquote>
+<p>Gondoljunk egy hirtelen felgyorsító, intenzíven fékező vagy éles
+kanyart bevevő autóbuszra: a benne álló utasok kapaszkodás nélkül
+kibillennek az egyensúlyukból, eldőlnek anélkül, hogy bármilyen
+valóságos másik test meglökte volna őket. Mivel ebben a rendszerben a
+testek mozgása látszólag „ok nélkül” változik meg, a gyorsuló jármű
+<strong>nem tekinthető inerciarendszernek</strong>.</p>
+<p>A NASA kísérleti videójában Jeff Williams bemutat egy ilyen esetet:
+amikor az űrállomás rakétamotorjai pályakorrekciót (úgynevezett
+re-boostot) végeznek, a benti térben szabadon lebegő, magára hagyott
+nehéz kamera hirtelen, külső behatás nélkül felgyorsul a képernyő felé.
+Valójában a kamera ekkor is megtartja korábbi egyenletes mozgását
+(tehetetlenség), és csak azért látjuk gyorsulni, mert a hajtóművek miatt
+maga az űrállomás válik átmenetileg egy nem-inerciarendszerré, amely
+egyszerűen rágurul a kamerára.</p>
+<p>A gyakorlatban a Föld felszínéhez rögzített koordináta-rendszer a
+legtöbb mechanikai probléma esetén kielégítő pontossággal
+inerciarendszernek tekinthető. Ugyanakkor a Föld saját tengely körüli
+forgása és Nap körüli keringése precíz kísérletekkel kimutatható, ami
+azt jelenti, hogy a földi laboratórium sem tökéletes
+inerciarendszer.</p>
+<p>Sokáig úgy gondolták, hogy az „állócsillagokhoz” rögzített
+koordináta-rendszer a tökéletes inerciarendszer. A modern csillagászat
+azonban bebizonyította, hogy saját galaxisunk, a Tejútrendszer csillagai
+is mozgásban vannak (keringenek a galaktikus mag körül), így ez a
+rendszer sem nyújt abszolút pontosságot. A mai legprecízebb tudományos
+inerciarendszert ezért már nem a csillagokhoz, hanem a tőlünk
+mérhetetlenül távoli, gyakorlatilag teljesen mozdulatlannak tekinthető
+<strong>galaxisokhoz és kvazárokhoz</strong> rögzítik.</p>
+<h2 id="newton-második-törvénye-a-dinamika-alaptörvénye">Newton második
+törvénye (A dinamika alaptörvénye)</h2>
+<blockquote>
+<p><strong>A test gyorsulása egyenesen arányos a rá ható erők vektori
+eredőjével, és fordítottan arányos a test tömegével.</strong></p>
+</blockquote>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mi>e</mi></msub><mo>=</mo><mi>m</mi><mo>⋅</mo><mover><mi>a</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">
+\vec{F}_e = m \cdot \vec{a}
+</annotation></semantics></math></p>
+<p>Ebben az összefüggésben az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mi>e</mi></msub><annotation encoding="application/x-tex">\vec{F}_e</annotation></semantics></math>
+eredő erő a testre ható egyedi erők vektoriális összege:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mi>e</mi></msub><mo>=</mo><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mn>1</mn></msub><mo>+</mo><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mn>2</mn></msub><mo>+</mo><mi>…</mi><mo>+</mo><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">
+\vec{F}_e = \vec{F}_1 + \vec{F}_2 + \dots + \vec{F}_n
+</annotation></semantics></math></p>
+<p>Az erő tehát a sebességhez és a gyorsuláshoz hasonlóan
+<strong>vektormennyiség</strong>. Az erő SI-mértékegysége a
+<strong>Newton</strong> (jele:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">N</mtext><annotation encoding="application/x-tex">\text{N}</annotation></semantics></math>).
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ N}</annotation></semantics></math>
+nagyságú az az erő, amely egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ kg}</annotation></semantics></math>
+tömegű testet pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">1\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>
+gyorsulással késztet mozgásra:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow><mo>=</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow><mo>⋅</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+1\text{ N} = 1\text{ kg} \cdot 1\text{ }\frac{\text{m}}{\text{s}^2}
+</annotation></semantics></math></p>
+<h3 id="kísérlet-1">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=sPZ2bjW53c8">Newton második
+törvényének demonstrációja az űrállomáson (NASA)</a></p>
+<h3 id="szimuláció">Szimuláció</h3>
+<p><a
+href="https://alexerdei73.github.io/physics-engine/project/#cb9b475b-53d9-4de4-8934-73b283fd0045">Állandó
+erő gyorsító hatása interaktív szimulátor</a></p>
+<p>Az interaktív szimuláció látványosan bemutatja, hogyan változik egy
+test gyorsulása, ha egyetlen állandó erő hat rá. A szoftverben a test
+tömege és az alkalmazott erő nagysága tetszőlegesen változtatható, így a
+diákok önállóan is ellenőrizhetik az összefüggés helyességét.</p>
+<h2 id="a-hatás-ellenhatás-törvénye-newton-harmadik-törvénye">A
+hatás-ellenhatás törvénye (Newton harmadik törvénye)</h2>
+<blockquote>
+<p><strong>Ha egy test hatást gyakorol egy másik testre, akkor a második
+test is ugyanakkora nagyságú, de ellentétes irányú hatást fejt ki az
+elsőre.</strong></p>
+</blockquote>
+<p>A törvényt röviden a hatás-ellenhatás (akció-reakció) elvének is
+nevezzük. Fontos megjegyezni, hogy ez a két erő mindig két
+<em>különböző</em> testre hat, ezért soha nem egyenlíthetik ki
+egymást!</p>
+<p>Gyakori tévhit a diákok körében, hogy a nagyobb vagy erősebb test
+nagyobb erőt fejt ki a kisebbre. Amint azt Mark Vande Hei kosárlabdás
+kísérlete is mutatja az űrállomáson: ha egy űrhajós eltol magától egy
+könnyű labdát, a két fellépő erő nagysága hajszálpontosan megegyezik.
+Mivel azonban az űrhajós tömege (és így a tehetetlensége) lényegesen
+nagyobb, az őt érő egyenlő nagyságú erő hatására az ő gyorsulása szinte
+észrevehetetlen lesz a labda nagy sebességű megugrásához képest
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mi>F</mi><mi>m</mi></mfrac></mrow><annotation encoding="application/x-tex">a = \frac{F}{m}</annotation></semantics></math>).
+Ha viszont két azonos tömegű űrhajós löki el egymást az űrben, a
+hatás-ellenhatás miatt mindketten teljesen egyforma gyorsulással
+repülnek hátra ellentétes irányban.</p>
+<h3 id="kísérlet-2">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=dCF--YOjiOw">A
+hatás-ellenhatás törvénye az űrállomáson (NASA)</a></p>
+<p><a href="https://www.youtube.com/watch?v=WmTt3CIJz_c">Newton harmadik
+törvényének gyakorlati demonstrációja (Walter Lewin / MIT)</a></p>
+</body>
+</html>

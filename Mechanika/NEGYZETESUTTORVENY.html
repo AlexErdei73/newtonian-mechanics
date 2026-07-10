@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-négyzetes-úttörvény">A négyzetes úttörvény</h1>
+<h2 id="az-út-kiszámítása">Az út kiszámítása</h2>
+<p>Idézzük fel a sebesség-idő grafikont a lejtőn lefelé mozgó test
+esetére, amikor a gyorsulás
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">0{,}5\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.</p>
+<figure>
+<img src="Kepek/egyenletesengyorsulomozgassebidograf.png"
+alt="egyenletesen gyorsuló test sebesség-idő grafikonja" />
+<figcaption aria-hidden="true">egyenletesen gyorsuló test sebesség-idő
+grafikonja</figcaption>
+</figure>
+<p>Arra is emlékezünk, hogy a pillanatnyi sebesség görbéje (egyenese)
+alatti terület általános esetben is a megtett út.</p>
+<p>Ez alapján könnyen kiszámíthatjuk a megtett utat abban az esetben, ha
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
+kezdősebesség
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math>.
+Ekkor a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+időpillanatban elért sebesség:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mi>v</mi><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {v - v_0} {t} = \frac {v} {t}
+</annotation></semantics></math></p>
+<p>Mindkét oldalt
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>-vel
+megszorozva kapjuk, hogy:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>a</mi><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
+v = a \cdot t
+</annotation></semantics></math></p>
+<p>Most egy derékszögű háromszög területét kell meghatároznunk, melynek
+derékszögű csúcsa az időtengelyen (vízszintes tengely) van a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+időpontnál. Az egyik befogó tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+a másik pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">a \cdot t</annotation></semantics></math>.
+A derékszögű háromszög területe éppen fele a téglalap területének,
+tehát:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>⋅</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mi>t</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+s = \frac {(a \cdot t) \cdot t} {2}
+</annotation></semantics></math></p>
+<p>A keresett formula, melyet négyzetes úttörvénynek nevezünk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = \frac {a} {2} \cdot t^2
+</annotation></semantics></math></p>
+<blockquote>
+<p><strong>A nulla kezdősebességű egyenletesen gyorsuló mozgás által
+megtett út az idő négyzetével egyenesen arányos, az arányossági tényező
+a gyorsulás fele.</strong></p>
+</blockquote>
+<h3 id="példa">Példa</h3>
+<p>Mekkora utat tesz meg az álló helyzetből lejtőn lecsúszó test
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math>
+alatt, ha gyorsulása
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">0{,}5\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>?</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><mn>2</mn></mfrac><mo>⋅</mo><mn>16</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow><mn>2</mn></msup><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+s = \frac {a} {2} \cdot t^2 = \frac {0{,}5\text{ }\frac{\text{m}}{\text{s}^2}} {2} \cdot 16\text{ s}^2 = 4\text{ m}
+</annotation></semantics></math></p>
+<p>Ez a példa pont a grafikonon ábrázolt mozgás. Látszik azonban a
+grafikonról, hogy a sebesség egyenese alatti terület
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math>-ig
+az pont
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> egységnégyzet</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ egységnégyzet}</annotation></semantics></math>
+(2 egész nagy négyzet és 2 kettévágott egész négyzet).</p>
+<h2 id="az-út-idő-grafikon">Az út-idő grafikon</h2>
+<p>Vizsgáljuk most meg az út-idő grafikont, amit megkaphatunk a
+szimuláció alapján is. Erről is nyilvánvalóan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math>-t
+kell leolvassunk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math>
+idő elteltével.</p>
+<p><a href="https://github.io">Súrlódásmentes mozgás lejtőn
+simulátor</a></p>
+<p>Gyakorlásképp nézzük meg az út-idő grafikon képét a szimuláció
+alapján! A következő grafikont kell kapnunk:</p>
+<figure>
+<img src="Kepek/negyzetesuttorvenygraf.png"
+alt="Négyzetes úttörvény grafikonja" />
+<figcaption aria-hidden="true">Négyzetes úttörvény
+grafikonja</figcaption>
+</figure>
+<p>Látszik is, hogy valóban a megtett út
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math>
+idő elteltével. A görbe neve parabola.</p>
+<h2 id="négyzetes-úttörvény-kezdősebességgel">Négyzetes úttörvény
+kezdősebességgel</h2>
+<p>Ha van kezdősebesség is, akkor a sebesség-idő grafikon a
+következő:</p>
+<figure>
+<img src="Kepek/sebessegidografkezdosebessegel.png"
+alt="Egyenletesen gyorsulo mozgas sebesseg-ido grafikonja kezdosebesseggel" />
+<figcaption aria-hidden="true">Egyenletesen gyorsulo mozgas sebesseg-ido
+grafikonja kezdosebesseggel</figcaption>
+</figure>
+<p>Nézzük meg az elért sebességet!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {v - v_0} {t}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mi>a</mi><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
+v - v_0 = a \cdot t
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>a</mi><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
+v = v_0 + a \cdot t
+</annotation></semantics></math></p>
+<p>A megtett út most a trapéz területe. Ez a terület láthatóan a korábbi
+derékszögű háromszög területe és egy téglalap területének az összege. A
+téglalap oldalai
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>,
+tehát a területe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">v_0 \cdot t</annotation></semantics></math>.
+Így a formula, amit keresünk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2
+</annotation></semantics></math></p>
+<p>Másképp is eljuthatunk ehhez a formulához. Tudjuk, hogy a trapéz
+területe a párhuzamos oldalak átlaga szorozva a párhuzamos oldalak
+távolságával. A párhuzamos oldalak
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
+és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>,
+a távolságuk pedig
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>.
+Eszerint:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>v</mi></mrow><mn>2</mn></mfrac><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
+s = \frac {v_0 + v} {2} \cdot t
+</annotation></semantics></math></p>
+<p>Ezt az összefüggést osztva
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>-vel
+az átlagsebességre kapjuk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>v</mi><mo accent="true">¯</mo></mover><mo>=</mo><mfrac><mi>s</mi><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>v</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+\overline{v} = \frac{s}{t} = \frac{v_0 + v}{2}
+</annotation></semantics></math></p>
+<blockquote>
+<p><strong>Az egyenletesen gyorsuló mozgás átlagsebessége a kezdő- és
+végsebesség számtani átlaga.</strong></p>
+</blockquote>
+<p>Más mozgásokra ez a megállapítás nem érvényes.</p>
+<p>Nézzük meg, megkapjuk-e némi algebrai átalakítással a megtett út
+kiszámítására szolgáló összefüggést!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>v</mi></mrow><mn>2</mn></mfrac><mo>⋅</mo><mi>t</mi><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>a</mi><mo>⋅</mo><mi>t</mi></mrow><mn>2</mn></mfrac><mo>⋅</mo><mi>t</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>a</mi><mo>⋅</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mi>t</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mi>a</mi><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = \frac {v_0 + v} {2} \cdot t = \frac {v_0 + v_0 + a \cdot t} {2} \cdot t = \frac{1} {2} \cdot (2v_0 + a \cdot t) \cdot t = \frac {1} {2} \cdot (2v_0 \cdot t + a \cdot t^2) = v_0 \cdot t + \frac {a} {2} \cdot t^2
+</annotation></semantics></math></p>
+<p>Így megkaptuk az összefüggést ezen a másik úton is.</p>
+<h3 id="példa-1">Példa</h3>
+<p>A lejtőn lefelé csúszó test súrlódás nélkül mozog
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">0{,}5\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>
+gyorsulással és kezdősebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">3\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>.
+Mekkora lesz a test sebessége az indítás után
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math>-kor?
+Mekkora utat tesz meg ezalatt?</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {v - v_0} {t}
+</annotation></semantics></math></p>
+<p>Behelyettesítve az adatokat, az ismeretlen sebességet
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-szel
+jelölve:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">
+0{,}5 = \frac {x - 3} {4}
+</annotation></semantics></math></p>
+<p>Megoldjuk az egyenletet:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><mi>x</mi><mo>−</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">
+2 = x - 3
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">
+5 = x
+</annotation></semantics></math></p>
+<p>Tehát a test sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math>-kor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">5\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>.</p>
+<p>Az utat egyszerű behelyettesítéssel számítjuk ki:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>=</mo><mn>3</mn><mo>⋅</mo><mn>4</mn><mo>+</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>⋅</mo><msup><mn>4</mn><mn>2</mn></msup><mo>=</mo><mn>12</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>25</mn><mo>⋅</mo><mn>16</mn><mo>=</mo><mn>16</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 3 \cdot 4 + \frac {0{,}5} {2} \cdot 4^2 = 12 + 0{,}25 \cdot 16 = 16\text{ m}
+</annotation></semantics></math></p>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="centripetális-gyorsulás">Centripetális gyorsulás</h1>
+<p>Az előző leckében a kísérletből és a szimulációból is látható, hogy
+az egyenletes körmozgás fenntartásához a kör középpontja felé mutató
+erőre van szükség. Ez az erő a centripetális erő.</p>
+<p>Newton második törvénye alapján a centripetális erő a kör középpontja
+felé mutató gyorsulással jár együtt. Ez a centripetális gyorsulás. Ez
+azért lép fel, mert a test sebességének iránya folyamatosan változik. A
+test elmozdulása minden pillanatban összetethető egy egyenes vonalú,
+egyenletes sebességű elmozdulásból és egy a kör középpontja felé mutató,
+egyenletesen gyorsuló mozgás elmozdulásából.</p>
+<blockquote>
+<p><strong>Az egyenletes körmozgást végző test körmozgásának
+fenntartásához a kör középpontja felé mutató centripetális erő
+szükséges. A centripetális erő centripetális gyorsulással jár
+együtt.</strong></p>
+</blockquote>
+<h2 id="a-centripetális-gyorsulás-kiszámítása">A centripetális gyorsulás
+kiszámítása</h2>
+<p>Vezessük le a centripetális gyorsulásra vonatkozó formulát! Legyen a
+test a körpálya legfelső pontjában, és mozgását vizsgáljuk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+ideig! A
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+idő sokkal kisebb, mint a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+periódusidő, hogy néhány közelítéssel élhessünk.</p>
+<p>A test elmozdulása összetethető a vízszintes, egyenes vonalú,
+egyenletes mozgás elmozdulásából és a középpont felé mutató,
+egyenletesen gyorsuló mozgás elmozdulásából. A függőleges sugár, az
+elmozdulások és a sugár, mely az elmozdulás végpontjába mutat, egy
+derékszögű háromszöget alkot.</p>
+<figure>
+<img src="Kepek/centripetalisgyorsulas.svg"
+alt="A centripetális gyorsulás levezetése" />
+<figcaption aria-hidden="true">A centripetális gyorsulás
+levezetése</figcaption>
+</figure>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo>+</mo><mi>s</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mi>t</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+(R + s)^2 = R^2 + (vt)^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>R</mi><mi>s</mi><mo>+</mo><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mi>v</mi><mn>2</mn></msup><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+R^2 + 2Rs + s^2 = R^2 + v^2 t^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>R</mi><mi>s</mi><mo>+</mo><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+2Rs + s^2 = v^2 t^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≪</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">
+t \ll T
+</annotation></semantics></math></p>
+<p>Az időtartam igen kicsiny, tehát a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>t</mi><mn>4</mn></msup><annotation encoding="application/x-tex">t^4</annotation></semantics></math>-et
+tartalmazó tag elhanyagolható a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>t</mi><mn>2</mn></msup><annotation encoding="application/x-tex">t^2</annotation></semantics></math>-tel
+arányos tagok mellett.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = \frac{a}{2}t^2
+</annotation></semantics></math></p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>s</mi><mn>2</mn></msup><annotation encoding="application/x-tex">s^2</annotation></semantics></math>
+elhanyagolható, hiszen ez
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>t</mi><mn>4</mn></msup><annotation encoding="application/x-tex">t^4</annotation></semantics></math>-gyel
+arányos tag.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>R</mi><mi>s</mi><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+2Rs = v^2 t^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>R</mi></mfrac><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = \frac{\frac{v^2}{R}}{2}t^2
+</annotation></semantics></math></p>
+<p>Ezt a formulát összehasonlítva az egyenletesen gyorsuló mozgásra
+vonatkozó képletünkkel, kapjuk:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac{v^2}{R}
+</annotation></semantics></math></p>
+<blockquote>
+<p><strong>A centripetális gyorsulás a sebesség négyzetének és a
+sugárnak a hányadosa.</strong></p>
+</blockquote>
+<p>Ez a szimulációval is könnyen ellenőrizhető.</p>
+<h3 id="példák">Példák</h3>
+<ol type="1">
+<li>Egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0,100\text{ kg}</annotation></semantics></math>
+tömegű követ egy parittyában pörgetünk
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">0,4\text{ s}</annotation></semantics></math>
+periódusidővel
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0,200\text{ m}</annotation></semantics></math>
+sugarú körpályán. A kő egyenletes körmozgást végez. Mekkora a kő
+sebessége? Mekkora a kő mozgási energiája? Mekkora a kő centripetális
+gyorsulása? Mekkora erő tartja pályáján a követ?</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>R</mi></mrow><mi>T</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>1415</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>2</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>4</mn></mrow></mfrac><mo>≈</mo><mn>3</mn><mo>,</mo><mn>142</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v = \frac{2\pi R}{T} = \frac{2 \cdot 3,1415 \cdot 0,2}{0,4} \approx 3,142\text{ m/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><msup><mn>142</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>4933</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+E_{\text{m}} = \frac{mv^2}{2} = \frac{0,1 \cdot 3,142^2}{2} \approx 0,4933\text{ J}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mo>,</mo><msup><mn>142</mn><mn>2</mn></msup></mrow><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow></mfrac><mo>≈</mo><mn>49</mn><mo>,</mo><mn>36</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a = \frac{v^2}{R} = \frac{3,142^2}{0,2} \approx 49,36\text{ m/s}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mi>m</mi><mi>a</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mn>49</mn><mo>,</mo><mn>36</mn><mo>=</mo><mn>4</mn><mo>,</mo><mn>936</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F_{\text{e}} = ma = 0,1 \cdot 49,36 = 4,936\text{ N}
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>Egy vödörben víz van, és függőleges síkban forgatjuk úgy egy
+kötélen, hogy körmozgást végez. A pálya legfelső pontján a vödör
+sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ m/s}</annotation></semantics></math>,
+a kör sugara
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>77</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0,77\text{ m}</annotation></semantics></math>.
+Mekkora erővel nyomja a víz a vödör fenekét, ha tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1,50\text{ kg}</annotation></semantics></math>?
+Kifolyik-e a víz a vödörből? Mekkora a minimális szögsebesség, melynél a
+víz nem folyik ki a vödörből?</li>
+</ol>
+<h3 id="kísérlet">Kísérlet</h3>
+<p><a href="https://www.youtube.com/watch?v=TIBcntHCxjQ">Víz körmozgást
+végez a vödörben függőleges síkban</a></p>
+<p>Felírjuk Newton második törvényét a pálya felső pontjában:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mo>+</mo><mi>K</mi><mo>=</mo><mi>m</mi><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub></mrow><annotation encoding="application/x-tex">
+mg + K = ma_{\text{cp}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>R</mi></mfrac><mo>=</mo><mfrac><msup><mn>5</mn><mn>2</mn></msup><mrow><mn>0</mn><mo>,</mo><mn>77</mn></mrow></mfrac><mo>≈</mo><mn>32</mn><mo>,</mo><mn>47</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a_{\text{cp}} = \frac{v^2}{R} = \frac{5^2}{0,77} \approx 32,47\text{ m/s}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>m</mi><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub><mo>−</mo><mi>m</mi><mi>g</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>50</mn><mo>⋅</mo><mn>32</mn><mo>,</mo><mn>47</mn><mo>−</mo><mn>1</mn><mo>,</mo><mn>50</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>=</mo><mn>33</mn><mo>,</mo><mn>99</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+K = ma_{\text{cp}} - mg = 1,50 \cdot 32,47 - 1,50 \cdot 9,81 = 33,99\text{ N}
+</annotation></semantics></math></p>
+<p>Tehát a víz nem folyik ki, hanem tekintélyes erővel nyomja a vödör
+alját. Nézzük most azt az esetet, amikor a víz még éppen nem folyik ki,
+de már nem nyomja a vödör alját!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+K = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mo>=</mo><mi>m</mi><msub><mi>a</mi><mtext mathvariant="normal">cp,min</mtext></msub></mrow><annotation encoding="application/x-tex">
+mg = ma_{\text{cp,min}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><msub><mi>a</mi><mtext mathvariant="normal">cp,min</mtext></msub></mrow><annotation encoding="application/x-tex">
+g = a_{\text{cp,min}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mfrac><msubsup><mi>v</mi><mtext mathvariant="normal">min</mtext><mn>2</mn></msubsup><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">
+g = \frac{v_{\text{min}}^2}{R}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mi>R</mi><mo>=</mo><msubsup><mi>v</mi><mtext mathvariant="normal">min</mtext><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+gR = v_{\text{min}}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><msqrt><mrow><mi>g</mi><mi>R</mi></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>77</mn></mrow></msqrt><mo>≈</mo><mn>2</mn><mo>,</mo><mn>748</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_{\text{min}} = \sqrt{gR} = \sqrt{9,81 \cdot 0,77} \approx 2,748\text{ m/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><mi>R</mi><msub><mi>ω</mi><mtext mathvariant="normal">min</mtext></msub></mrow><annotation encoding="application/x-tex">
+v_{\text{min}} = R\omega_{\text{min}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><mfrac><msub><mi>v</mi><mtext mathvariant="normal">min</mtext></msub><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>,</mo><mn>748</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>77</mn></mrow></mfrac><mo>≈</mo><mn>3</mn><mo>,</mo><mn>569</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\omega_{\text{min}} = \frac{v_{\text{min}}}{R} = \frac{2,748}{0,77} \approx 3,569\text{ rad/s}
+</annotation></semantics></math></p>
+<hr />
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li>Egy Formula–1-es autó
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>180</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">180\text{ km/h}</annotation></semantics></math>
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">50\text{ m/s}</annotation></semantics></math>)
+sebességgel halad egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">100\text{ m}</annotation></semantics></math>
+sugarú kanyarban. Mekkora a jármű centripetális gyorsulása?</li>
+<li>Egy műhold a Föld felszíne felett kering. A keringési sebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7800</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">7800\text{ m/s}</annotation></semantics></math>,
+a pályasugara pedig (a Föld középpontjától számítva) kb.
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">6600\text{ km}</annotation></semantics></math>.
+Számítsd ki a műholdra ható centripetális gyorsulást! Hasonlítsd össze
+ezt az értéket a földi nehézségi gyorsulással
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>≈</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g \approx 9,81\text{ m/s}^2</annotation></semantics></math>)!</li>
+<li>Egy atléta a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>,</mo><mn>26</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">7,26\text{ kg}</annotation></semantics></math>
+tömegű kalapácsot
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ m}</annotation></semantics></math>
+sugarú körpályán forgatja. A kalapács sebessége a kidobás pillanatában
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>28</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">28\text{ m/s}</annotation></semantics></math>.
+Mekkora erővel húzza a kalapács az atléta karját (mekkora a
+centripetális erő)?</li>
+<li>Egy űrállomás gyűrű alakú lakóegysége forog, hogy mesterséges
+gravitációt hozzon létre. A gyűrű sugara
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ m}</annotation></semantics></math>.
+Mekkora kerületi sebességgel kell forognia a gyűrűnek, hogy a peremén a
+centripetális gyorsulás megegyezzen a földi gravitációs gyorsulással
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9,81\text{ m/s}^2</annotation></semantics></math>)?</li>
+<li>Egy láncos körhintán a gyerekek a középponttól
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ m}</annotation></semantics></math>
+távolságra keringenek. A hinta szögsebessége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">\omega = 0,8\text{ rad/s}</annotation></semantics></math>.
+Használd az
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub><mo>=</mo><msup><mi>ω</mi><mn>2</mn></msup><mi>R</mi></mrow><annotation encoding="application/x-tex">a_{\text{cp}} = \omega^2 R</annotation></semantics></math>
+összefüggést (vagy számold át kerületi sebességre), és határozd meg a
+gyerekek centripetális gyorsulását!</li>
+</ol>
+</body>
+</html>

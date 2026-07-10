@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../github-markdown.css" />
+</head>
+<body class="markdown-body">
+<h1 id="a-sűrűség">A sűrűség</h1>
+<h2 id="egységek-gyakorlása">Egységek gyakorlása</h2>
+<h3 id="példák-területegységekkel">Példák területegységekkel</h3>
+<ol type="1">
+<li>Egy folyosó területe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>8</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">5{,}8\text{ m}^2</annotation></semantics></math>.
+Hány kőlappal lehet ezt lefedni minimálisan, ha egy kőlap
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>⋅</mo><mn>21</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{ cm} \cdot 21\text{ cm}</annotation></semantics></math>-es
+téglalap alakú?</li>
+</ol>
+<p>Egyszerűbb
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mtext mathvariant="normal">cm</mtext><mn>2</mn></msup><annotation encoding="application/x-tex">\text{cm}^2</annotation></semantics></math>
+egységben dolgozni, hiszen a kőlap méretei ebben vannak megadva.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>5</mn><mo>,</mo><mn>8</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup><mo>=</mo><mn>5</mn><mo>,</mo><mn>8</mn><mo>⋅</mo><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>⋅</mo><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>=</mo><mn>5</mn><mo>,</mo><mn>8</mn><mo>⋅</mo><msup><mn>10</mn><mn>4</mn></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+A = 5{,}8\text{ m}^2 = 5{,}8 \cdot 100\text{ cm} \cdot 100\text{ cm} = 5{,}8 \cdot 10^4\text{ cm}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mtext mathvariant="normal">lap</mtext></msub><mo>=</mo><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>⋅</mo><mn>21</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>=</mo><mn>315</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+A_{\text{lap}} = 15\text{ cm} \cdot 21\text{ cm} = 315\text{ cm}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mfrac><mi>A</mi><msub><mi>A</mi><mtext mathvariant="normal">lap</mtext></msub></mfrac><mo>=</mo><mfrac><mrow><mn>5</mn><mo>,</mo><mn>8</mn><mo>⋅</mo><msup><mn>10</mn><mn>4</mn></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>2</mn></msup></mrow><mrow><mn>315</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>2</mn></msup></mrow></mfrac><mo>≈</mo><mn>184</mn><mo>,</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
+N = \frac {A} {A_{\text{lap}}} = \frac {5{,}8 \cdot 10^4\text{ cm}^2} {315\text{ cm}^2} \approx 184{,}1
+</annotation></semantics></math></p>
+<p>Ez azt jelenti, hogy minimum
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>185</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> lap</mtext></mrow></mrow><annotation encoding="application/x-tex">185\text{ lap}</annotation></semantics></math>
+szükséges a folyosó burkolásához.</p>
+<ol start="2" type="1">
+<li>Egy erdő területe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">15\text{ km}^2</annotation></semantics></math>.
+Hány facsemete szükséges az erdő újratelepítéséhez, ha a fák között
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1{,}5\text{ m}</annotation></semantics></math>
+térközt tartunk, mind az oszlopokat, mind a sorokat tekintve? A szélek
+elhanyagolhatók.</li>
+</ol>
+<p>Itt érdemes
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mtext mathvariant="normal">m</mtext><mn>2</mn></msup><annotation encoding="application/x-tex">\text{m}^2</annotation></semantics></math>-ben
+számolnunk.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>15</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow><mn>2</mn></msup><mo>=</mo><mn>15</mn><mo>⋅</mo><mn>1000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>⋅</mo><mn>1000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>15</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+A = 15\text{ km}^2 = 15 \cdot 1000\text{ m} \cdot 1000\text{ m} = 15 \cdot 10^6\text{ m}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mtext mathvariant="normal">fa</mtext></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>2</mn><mo>,</mo><mn>25</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+A_{\text{fa}} = 1{,}5\text{ m} \cdot 1{,}5\text{ m} = 2{,}25\text{ m}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mfrac><mi>A</mi><msub><mi>A</mi><mtext mathvariant="normal">fa</mtext></msub></mfrac><mo>=</mo><mfrac><mrow><mn>15</mn><mo>⋅</mo><msup><mn>10</mn><mn>6</mn></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>,</mo><mn>25</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup></mrow></mfrac><mo>≈</mo><mn>6</mn><mspace width="0.222em"></mspace><mn>670</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow><annotation encoding="application/x-tex">
+N = \frac {A} {A_{\text{fa}}} = \frac {15 \cdot 10^6\text{ m}^2} {2{,}25\text{ m}^2} \approx 6\ 670\ 000
+</annotation></semantics></math></p>
+<p>Az erdősítéshez tehát
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mspace width="0.222em"></mspace><mn>670</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> facsemete</mtext></mrow></mrow><annotation encoding="application/x-tex">6\ 670\ 000\text{ facsemete}</annotation></semantics></math>
+szükséges. Itt három értékes jegyre kerekítettünk, mivel az eredményünk
+sem lehet pontosabb, mint a kiindulási adat, amely két értékes jegyre
+volt megadva (maximum eggyel több értékes jegyet tarthatunk meg a
+számítások során).</p>
+<h3 id="példák-térfogategységekkel">Példák térfogategységekkel</h3>
+<ol type="1">
+<li>Hány
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> ml</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ ml}</annotation></semantics></math>-es
+fecskendőt lehet megtölteni
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> l</mtext></mrow></mrow><annotation encoding="application/x-tex">1{,}5\text{ l}</annotation></semantics></math>-es
+fiziológiás sóoldattal? Hány
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mtext mathvariant="normal">cm</mtext><mn>3</mn></msup><annotation encoding="application/x-tex">\text{cm}^3</annotation></semantics></math>
+a fecskendő térfogata? Hány
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup><annotation encoding="application/x-tex">\text{m}^3</annotation></semantics></math>
+a sóoldat térfogata?</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> l</mtext></mrow><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> dm</mtext></mrow><mn>3</mn></msup><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>⋅</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>⋅</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>=</mo><mn>1500</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>3</mn></msup><mo>=</mo><mn>1500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> ml</mtext></mrow></mrow><annotation encoding="application/x-tex">
+V = 1{,}5\text{ l} = 1{,}5\text{ dm}^3 = 1{,}5 \cdot 10\text{ cm} \cdot 10\text{ cm} \cdot 10\text{ cm} = 1500\text{ cm}^3 = 1500\text{ ml}
+</annotation></semantics></math></p>
+<p>Ebből jól látszik, hogy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>3</mn></msup><mo>=</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> ml</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ cm}^3 = 1\text{ ml}</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mtext mathvariant="normal">fecskendő</mtext></msub><mo>=</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> ml</mtext></mrow><mo>=</mo><mn>5</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">
+V_{\text{fecskendő}} = 5\text{ ml} = 5\text{ cm}^3
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mfrac><mi>V</mi><msub><mi>V</mi><mtext mathvariant="normal">fecskendő</mtext></msub></mfrac><mo>=</mo><mfrac><mrow><mn>1500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> ml</mtext></mrow></mrow><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> ml</mtext></mrow></mrow></mfrac><mo>=</mo><mn>300</mn></mrow><annotation encoding="application/x-tex">
+N = \frac {V} {V_{\text{fecskendő}}} = \frac {1500\text{ ml}} {5\text{ ml}} = 300
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> l</mtext></mrow><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> dm</mtext></mrow><mn>3</mn></msup><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>0015</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">
+V = 1{,}5\text{ l} = 1{,}5\text{ dm}^3 = 1{,}5 \cdot 0{,}1\text{ m} \cdot 0{,}1\text{ m} \cdot 0{,}1\text{ m} = 0{,}0015\text{ m}^3
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>Egy tanker tartálya
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">6\text{ m}</annotation></semantics></math>
+hosszú és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1{,}5\text{ m}</annotation></semantics></math>
+sugarú henger. Hány liter üzemanyag fér bele, ha csak
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>70</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">70\%</annotation></semantics></math>-ig
+töltjük meg?</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mtext mathvariant="normal">tanker</mtext></msub><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup><mo>⋅</mo><mi>π</mi><mo>⋅</mo><mi>h</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>⋅</mo><mi>π</mi><mo>⋅</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>≈</mo><mn>42</mn><mo>,</mo><mn>41</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">
+V_{\text{tanker}} = r^2 \cdot \pi \cdot h = (1{,}5\text{ m})^2 \cdot \pi \cdot 6\text{ m} \approx 42{,}41\text{ m}^3
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>70</mn><mo>⋅</mo><msub><mi>V</mi><mtext mathvariant="normal">tanker</mtext></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>7</mn><mo>⋅</mo><mn>42</mn><mo>,</mo><mn>41</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup><mo>≈</mo><mn>29</mn><mo>,</mo><mn>69</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">
+V = 0{,}70 \cdot V_{\text{tanker}} = 0{,}7 \cdot 42{,}41\text{ m}^3 \approx 29{,}69\text{ m}^3
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mn>29</mn><mo>,</mo><mn>69</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup><mo>=</mo><mn>29</mn><mo>,</mo><mn>69</mn><mo>⋅</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> dm</mtext></mrow><mo>⋅</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> dm</mtext></mrow><mo>⋅</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> dm</mtext></mrow><mo>=</mo><mn>29</mn><mspace width="0.222em"></mspace><mn>690</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> dm</mtext></mrow><mn>3</mn></msup><mo>=</mo><mn>29</mn><mspace width="0.222em"></mspace><mn>690</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> l</mtext></mrow></mrow><annotation encoding="application/x-tex">
+V = 29{,}69\text{ m}^3 = 29{,}69 \cdot 10\text{ dm} \cdot 10\text{ dm} \cdot 10\text{ dm} = 29\ 690\text{ dm}^3 = 29\ 690\text{ l}
+</annotation></semantics></math></p>
+<p>A kiinduló adatok két értékes jegyre adottak, így a végeredményt sem
+szabad három értékes jegynél pontosabban megadni. A helyes válasz tehát:
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>29</mn><mspace width="0.222em"></mspace><mn>700</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> l</mtext></mrow></mrow><annotation encoding="application/x-tex">29\ 700\text{ l}</annotation></semantics></math>
+üzemanyag van a tankerben.</p>
+<h2 id="a-sűrűség-1">A sűrűség</h2>
+<blockquote>
+<p><strong>Egy test tömegének és térfogatának hányadosát a test
+sűrűségének nevezzük. A sűrűség az anyagi minőségre jellemző mennyiség.
+A sűrűség jele a görög
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>
+(ró) betű, alapvető SI-mértékegysége pedig a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mtext mathvariant="normal">kg</mtext><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup></mfrac><annotation encoding="application/x-tex">\frac {\text{kg}} {\text{m}^3}</annotation></semantics></math>.</strong></p>
+</blockquote>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mfrac><mi>m</mi><mi>V</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\rho = \frac {m} {V}
+</annotation></semantics></math></p>
+<h3 id="példák-a-sűrűséggel">Példák a sűrűséggel</h3>
+<ol type="1">
+<li>A tankerben az üzemanyag tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>21</mn><mspace width="0.167em"></mspace><mn>600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">21\,600\text{ kg}</annotation></semantics></math>.
+Kiszámítottuk az üzemanyag térfogatát, amely
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>29</mn><mo>,</mo><mn>7</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">29{,}7\text{ m}^3</annotation></semantics></math>.
+Mennyi az üzemanyag sűrűsége?</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mfrac><mi>m</mi><mi>V</mi></mfrac><mo>=</mo><mfrac><mrow><mn>21</mn><mspace width="0.222em"></mspace><mn>600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><mrow><mn>29</mn><mo>,</mo><mn>7</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup></mrow></mfrac><mo>≈</mo><mn>727</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">
+\rho = \frac{m}{V} = \frac{21\ 600\text{ kg}}{29{,}7\text{ m}^3} \approx 727\text{ kg/m}^3
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>Egy főzőpoharat
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">500\text{ g}</annotation></semantics></math>
+higannyal töltöttünk meg. Milyen magasan áll majd benne a higany, ha a
+pohár belső sugara
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">1{,}5\text{ cm}</annotation></semantics></math>?
+A higany sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mspace width="0.222em"></mspace><mn>600</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">13\ 600\text{ kg/m}^3</annotation></semantics></math>.</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mi>m</mi><mi>ρ</mi></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><mrow><mn>13</mn><mspace width="0.222em"></mspace><mn>600</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow></mfrac><mo>≈</mo><mn>3</mn><mo>,</mo><mn>68</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>5</mn></mrow></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">
+V = \frac{m}{\rho} = \frac{0{,}5\text{ kg}}{13\ 600\text{ kg/m}^3} \approx 3{,}68 \cdot 10^{-5}\text{ m}^3
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>π</mi><mo>⋅</mo><msup><mi>r</mi><mn>2</mn></msup><mo>=</mo><mi>π</mi><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>015</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>≈</mo><mn>7</mn><mo>,</mo><mn>07</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>4</mn></mrow></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+A = \pi \cdot r^2 = \pi \cdot (0{,}015\text{ m})^2 \approx 7{,}07 \cdot 10^{-4}\text{ m}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mi>V</mi><mi>A</mi></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mo>,</mo><mn>68</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>5</mn></mrow></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup></mrow><mrow><mn>7</mn><mo>,</mo><mn>07</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>4</mn></mrow></msup><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup></mrow></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>052</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>5</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">
+h = \frac{V}{A} = \frac{3{,}68 \cdot 10^{-5}\text{ m}^3}{7{,}07 \cdot 10^{-4}\text{ m}^2} \approx 0{,}052\text{ m} = 5{,}2\text{ cm}
+</annotation></semantics></math></p>
+<ol start="3" type="1">
+<li>Számítsd ki
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">1\text{ cm}^3</annotation></semantics></math>
+higany tömegét!
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">g</mtext><msup><mtext mathvariant="normal">cm</mtext><mn>3</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">1\text{ }\frac {\text{g}} {\text{cm}^3}</annotation></semantics></math>
+az hány
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mtext mathvariant="normal">kg</mtext><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup></mfrac><annotation encoding="application/x-tex">\frac {\text{kg}} {\text{m}^3}</annotation></semantics></math>?</li>
+</ol>
+<p>A higany sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mspace width="0.222em"></mspace><mn>600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">kg</mtext><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">13\ 600\text{ }\frac {\text{kg}}{\text{m}^3}</annotation></semantics></math>.
+Váltsuk át a sűrűséget
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mtext mathvariant="normal">g</mtext><msup><mtext mathvariant="normal">cm</mtext><mn>3</mn></msup></mfrac><annotation encoding="application/x-tex">\frac{\text{g}}{\text{cm}^3}</annotation></semantics></math>
+egységbe:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>13</mn><mspace width="0.222em"></mspace><mn>600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">kg</mtext><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup></mfrac><mo>=</mo><mn>13</mn><mspace width="0.222em"></mspace><mn>600</mn><mo>⋅</mo><mfrac><mrow><mn>1000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><mrow><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>⋅</mo><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>⋅</mo><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow></mfrac><mo>=</mo><mn>13</mn><mspace width="0.222em"></mspace><mn>600</mn><mo>⋅</mo><mfrac><mrow><mn>1000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><mrow><mn>1</mn><mspace width="0.222em"></mspace><mn>000</mn><mspace width="0.222em"></mspace><mn>000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>3</mn></msup></mrow></mfrac><mo>=</mo><mn>13</mn><mo>,</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">g</mtext><msup><mtext mathvariant="normal">cm</mtext><mn>3</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
+\rho = 13\ 600\text{ }\frac {\text{kg}}{\text{m}^3} = 13\ 600 \cdot \frac {1000\text{ g}} {100\text{ cm} \cdot 100\text{ cm} \cdot 100\text{ cm}} = 13\ 600 \cdot \frac{1000\text{ g}}{1\ 000\ 000\text{ cm}^3} = 13{,}6\text{ }\frac {\text{g}} {\text{cm}^3}
+</annotation></semantics></math></p>
+<p>Ebből a keresett tömeg:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mi>ρ</mi><mo>⋅</mo><mi>V</mi><mo>=</mo><mn>13</mn><mo>,</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">g</mtext><msup><mtext mathvariant="normal">cm</mtext><mn>3</mn></msup></mfrac><mo>⋅</mo><mn>1</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mn>3</mn></msup><mo>=</mo><mn>13</mn><mo>,</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">
+m = \rho \cdot V = 13{,}6\text{ }\frac {\text{g}} {\text{cm}^3} \cdot 1\text{ cm}^3 = 13{,}6\text{ g}
+</annotation></semantics></math></p>
+<p>Ebből következik, hogy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">g</mtext><msup><mtext mathvariant="normal">cm</mtext><mn>3</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">1\text{ }\frac {\text{g}} {\text{cm}^3}</annotation></semantics></math>
+pontosan
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">kg</mtext><msup><mtext mathvariant="normal">m</mtext><mn>3</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">1000\text{ }\frac {\text{kg}} {\text{m}^3}</annotation></semantics></math>-rel
+egyenlő.</p>
+<h2 id="feladatok">Feladatok</h2>
+<ol type="1">
+<li>Egy szoba padlójának területe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">12\text{ m}^2</annotation></semantics></math>.
+Hány
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>⋅</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ cm} \cdot 30\text{ cm}</annotation></semantics></math>-es
+csempével lehet ezt lefedni minimálisan?</li>
+<li>Egy kert területe
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>5</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">2{,}5\text{ km}^2</annotation></semantics></math>.
+Hány bokrot lehet ide ültetni, ha a bokrok között minden irányban
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ m}</annotation></semantics></math>
+térközt hagyunk? A széleket elhanyagoljuk.</li>
+<li>Hány
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> ml</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ ml}</annotation></semantics></math>-es
+pohárba lehet kitölteni egy
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> literes</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ literes}</annotation></semantics></math>
+üveg tartalmát? Hány
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mtext mathvariant="normal">cm</mtext><mn>3</mn></msup><annotation encoding="application/x-tex">\text{cm}^3</annotation></semantics></math>
+egy pohár térfogata? Hány
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mtext mathvariant="normal">dm</mtext><mn>3</mn></msup><annotation encoding="application/x-tex">\text{dm}^3</annotation></semantics></math>
+az üvegé?</li>
+<li>Egy henger alakú tartály
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math>
+magas és
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ m}</annotation></semantics></math>
+sugarú. Hány liter víz fér bele, ha a térfogatának csak
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>80</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">80\%</annotation></semantics></math>-áig
+töltjük meg?</li>
+<li>Egy alumíniumrúd tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1500\text{ kg}</annotation></semantics></math>,
+térfogata
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">0{,}5\text{ m}^3</annotation></semantics></math>.
+Mennyi az alumínium sűrűsége?</li>
+<li>Egy üveg víz tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1{,}2\text{ kg}</annotation></semantics></math>,
+térfogata
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> dm</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">1{,}2\text{ dm}^3</annotation></semantics></math>.
+Mennyi a víz sűrűsége?</li>
+<li>Egy alumíniumkocka oldaléle
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ cm}</annotation></semantics></math>,
+tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>7</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}7\text{ kg}</annotation></semantics></math>.
+Mennyi az alumínium sűrűsége?</li>
+<li>Egy héliumos ballon térfogata
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">5\text{ m}^3</annotation></semantics></math>,
+a benne lévő gáz tömege
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ kg}</annotation></semantics></math>
+(a burkolat tömege elhanyagolható). Mennyi a hélium sűrűsége ebben az
+állapotban?</li>
+<li>Egy főzőpohárba
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>300</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">300\text{ g}</annotation></semantics></math>
+olajat öntünk. Milyen magasan fog állni az olaj, ha a pohár belső sugara
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ cm}</annotation></semantics></math>?
+Az olaj sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>900</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">900\text{ kg/m}^3</annotation></semantics></math>.</li>
+<li>Számítsd ki
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> dm</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">1\text{ dm}^3</annotation></semantics></math>
+víz tömegét, ha a víz sűrűsége
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">1000\text{ kg/m}^3</annotation></semantics></math>!
+Hány gramm ez a tömeg?</li>
+</ol>
+</body>
+</html>
