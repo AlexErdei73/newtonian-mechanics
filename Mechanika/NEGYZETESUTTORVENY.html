@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>-</title>
+  <title>A négyzetes úttörvény</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,10 +25,13 @@
     }
   </style>
   <link rel="stylesheet" href="../github-markdown.css" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body class="markdown-body">
-<h1 id="a-négyzetes-úttörvény">A négyzetes úttörvény</h1>
-<h2 id="az-út-kiszámítása">Az út kiszámítása</h2>
+<header id="title-block-header">
+<h1 class="title">A négyzetes úttörvény</h1>
+</header>
+<h1 id="az-út-kiszámítása">Az út kiszámítása</h1>
 <p>Idézzük fel a sebesség-idő grafikont a lejtőn lefelé mozgó test
 esetére, amikor a gyorsulás
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">0{,}5\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.</p>
@@ -78,7 +81,7 @@ s = \frac {a} {2} \cdot t^2
 megtett út az idő négyzetével egyenesen arányos, az arányossági tényező
 a gyorsulás fele.</strong></p>
 </blockquote>
-<h3 id="példa">Példa</h3>
+<h2 id="példa">Példa</h2>
 <p>Mekkora utat tesz meg az álló helyzetből lejtőn lecsúszó test
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math>
 alatt, ha gyorsulása
@@ -92,7 +95,7 @@ grafikonról, hogy a sebesség egyenese alatti terület
 az pont
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> egységnégyzet</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ egységnégyzet}</annotation></semantics></math>
 (2 egész nagy négyzet és 2 kettévágott egész négyzet).</p>
-<h2 id="az-út-idő-grafikon">Az út-idő grafikon</h2>
+<h1 id="az-út-idő-grafikon">Az út-idő grafikon</h1>
 <p>Vizsgáljuk most meg az út-idő grafikont, amit megkaphatunk a
 szimuláció alapján is. Erről is nyilvánvalóan
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math>-t
@@ -113,8 +116,8 @@ grafikonja</figcaption>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math>,
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math>
 idő elteltével. A görbe neve parabola.</p>
-<h2 id="négyzetes-úttörvény-kezdősebességgel">Négyzetes úttörvény
-kezdősebességgel</h2>
+<h1 id="négyzetes-úttörvény-kezdősebességgel">Négyzetes úttörvény
+kezdősebességgel</h1>
 <p>Ha van kezdősebesség is, akkor a sebesség-idő grafikon a
 következő:</p>
 <figure>
@@ -174,7 +177,7 @@ kiszámítására szolgáló összefüggést!</p>
 s = \frac {v_0 + v} {2} \cdot t = \frac {v_0 + v_0 + a \cdot t} {2} \cdot t = \frac{1} {2} \cdot (2v_0 + a \cdot t) \cdot t = \frac {1} {2} \cdot (2v_0 \cdot t + a \cdot t^2) = v_0 \cdot t + \frac {a} {2} \cdot t^2
 </annotation></semantics></math></p>
 <p>Így megkaptuk az összefüggést ezen a másik úton is.</p>
-<h3 id="példa-1">Példa</h3>
+<h2 id="példa-1">Példa</h2>
 <p>A lejtőn lefelé csúszó test súrlódás nélkül mozog
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">0{,}5\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>
 gyorsulással és kezdősebessége

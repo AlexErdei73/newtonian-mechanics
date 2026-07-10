@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>-</title>
+  <title>Vízszintes hajítás</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,13 +25,16 @@
     }
   </style>
   <link rel="stylesheet" href="../github-markdown.css" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body class="markdown-body">
-<h1 id="vízszintes-hajítás">Vízszintes hajítás</h1>
-<h2 id="kísérlet">Kísérlet</h2>
+<header id="title-block-header">
+<h1 class="title">Vízszintes hajítás</h1>
+</header>
+<h1 id="kísérlet">Kísérlet</h1>
 <p><a href="https://www.youtube.com/watch?v=zMF4CD7i3hg">Vízszintes
 hajítás kísérleti bemutatása (Shoot-n-Drop)</a></p>
-<h2 id="szimuláció">Szimuláció</h2>
+<h1 id="szimuláció">Szimuláció</h1>
 <p><a
 href="https://alexerdei73.github.io/physics-engine/project/#047e40be-950c-44e1-a808-e07095d3539d">Vízszintes
 hajítás interaktív szimulátor</a></p>
@@ -42,8 +45,8 @@ vízszintesen elhajított test függőleges mozgásával. Amennyiben a két
 testet azonos magasságból, pontosan egy időben indítjuk el, a függőleges
 pozíciójuk (magasságuk) a mozgás teljes tartama alatt, minden egyes
 időpillanatban hajszálpontosan megegyezik.</p>
-<h2 id="a-vízszintes-hajítás-képletei">A vízszintes hajítás
-képletei</h2>
+<h1 id="a-vízszintes-hajítás-képletei">A vízszintes hajítás
+képletei</h1>
 <p>Hajítsunk el egy testet vízszintes irányú
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
 kezdősebességgel a koordináta-rendszer origójából
@@ -83,7 +86,7 @@ helyébe a megfelelő elmozdulás-koordináta, a
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
 helyére pedig a keresett tengelyirányú előjeles koordináták
 (komponensek) kerülnek.</p>
-<h3 id="a-vízszintes-mozgás">A vízszintes mozgás</h3>
+<h2 id="a-vízszintes-mozgás">A vízszintes mozgás</h2>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><msub><mi>v</mi><mrow><mn>0</mn><mi>x</mi></mrow></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><msub><mi>a</mi><mi>x</mi></msub><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 x - x_0 = v_{0x} \cdot t + \frac {a_x} {2} \cdot t^2
 </annotation></semantics></math></p>
@@ -97,7 +100,7 @@ x = v_0 \cdot t
 így az
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-tengely
 mentén egyenes vonalú, egyenletes mozgást végez.</p>
-<h3 id="a-függőleges-mozgás">A függőleges mozgás</h3>
+<h2 id="a-függőleges-mozgás">A függőleges mozgás</h2>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>−</mo><msub><mi>y</mi><mn>0</mn></msub><mo>=</mo><msub><mi>v</mi><mrow><mn>0</mn><mi>y</mi></mrow></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><msub><mi>a</mi><mi>y</mi></msub><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 y - y_0 = v_{0y} \cdot t + \frac {a_y} {2} \cdot t^2
 </annotation></semantics></math></p>
@@ -119,7 +122,7 @@ elmozdulása is azonos
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">y = s</annotation></semantics></math>).
 Ezt a függetlenséget és szinkronitást figyeltük meg a kísérletben és a
 szimulációban is.</p>
-<h3 id="példák">Példák</h3>
+<h2 id="példák">Példák</h2>
 <ol type="1">
 <li>Egy
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20{,}0\text{ m}</annotation></semantics></math>
@@ -219,7 +222,7 @@ y = \frac {g} {2} \cdot t^2 = \frac {9{,}81} {2} \cdot 0{,}250^2 = 4{,}905 \cdot
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mo>,</mo><mn>7</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">30{,}7\text{ cm}</annotation></semantics></math>-t
 esik lefelé, vagyis a biztos találathoz pontosan ennyivel a céltárgy
 középpontja fölé kell irányítani a fegyver csövét.</p>
-<h2 id="feladatok">Feladatok</h2>
+<h1 id="feladatok">Feladatok</h1>
 <ol type="1">
 <li>Egy teniszlabdát vízszintesen elhajítanak
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">15{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>

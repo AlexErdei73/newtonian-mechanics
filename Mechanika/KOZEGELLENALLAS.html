@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>-</title>
+  <title>A közegellenállás és az aerodinamikai emelőerő</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,10 +25,12 @@
     }
   </style>
   <link rel="stylesheet" href="../github-markdown.css" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body class="markdown-body">
-<h1 id="a-közegellenállás-és-az-aerodinamikai-emelőerő">A
-közegellenállás és az aerodinamikai emelőerő</h1>
+<header id="title-block-header">
+<h1 class="title">A közegellenállás és az aerodinamikai emelőerő</h1>
+</header>
 <p>Eddig láttuk a Stokes-törvényt a kis Reynolds-számú lamináris
 áramlási rezsim esetére. Ilyenkor a mozgó gömbre a relatív sebességével
 ellentétes irányú erő hat, mely egyenesen arányos a sebesség
@@ -44,7 +46,7 @@ megoldása ilyenkor matematikailag reménytelen, két fő eszközünk marad,
 hogy pontos információhoz jussunk: * Szélcsatornás kísérletek a
 közegellenállás fizikai mérésére. * Számítógépes áramlástani szimulációk
 (<strong>CFD</strong> - Computational Fluid Dynamics).</p>
-<h2 id="kísérletek-és-szimulációk">Kísérletek és szimulációk</h2>
+<h1 id="kísérletek-és-szimulációk">Kísérletek és szimulációk</h1>
 <p>A következő videók bemutatják a jelenség kísérleti és numerikus
 hátterét. Nézzük meg őket figyelmesen, mielőtt rátérnénk a matematikai
 levezetésre!</p>
@@ -67,8 +69,8 @@ szárnyprofilon, különböző állásszögek esetén. Foglalkozzunk először a
 közegellenállás kiszámításával, majd vizsgáljuk meg, hogyan jön létre a
 repülést biztosító emelőerő!</p>
 <hr />
-<h2 id="a-közegellenállási-erő-kiszámítása">A közegellenállási erő
-kiszámítása</h2>
+<h1 id="a-közegellenállási-erő-kiszámítása">A közegellenállási erő
+kiszámítása</h1>
 <p>Képzeljünk el egy hasábot, például egy kockát, amely
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
 sebességgel halad előre! Legyen a kocka elülső lapja a haladási irányra
@@ -131,8 +133,8 @@ Ennek oka, hogy ha kétszer olyan gyorsan megyünk, akkor másodpercenként
 <strong>kétszer annyi</strong> levegőmolekulát gázolunk el, és ezeket a
 molekulákat <strong>kétszer akkora</strong> sebességre is kell
 felgyorsítanunk.</p>
-<h3 id="különböző-alakú-testek-közegellenállási-tényezője">Különböző
-alakú testek közegellenállási tényezője</h3>
+<h2 id="különböző-alakú-testek-közegellenállási-tényezője">Különböző
+alakú testek közegellenállási tényezője</h2>
 <figure>
 <img src="Kepek/alaktenyezok.webp"
 alt="Különböző alakú testek alaktényezője" />
@@ -140,8 +142,8 @@ alt="Különböző alakú testek alaktényezője" />
 alaktényezője</figcaption>
 </figure>
 <hr />
-<h3 id="az-alaktényező-reynolds-szám-függése">Az alaktényező
-Reynolds-szám függése</h3>
+<h2 id="az-alaktényező-reynolds-szám-függése">Az alaktényező
+Reynolds-szám függése</h2>
 <p>A tompa és az áramvonalas testek áramlástani viselkedése drasztikusan
 eltér egymástól, amit a Reynolds-szám
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">Re</annotation></semantics></math>)
@@ -181,8 +183,8 @@ alt="A gömb alaktényezője a Reynolds-szám függvényében" />
 <figcaption aria-hidden="true">A gömb alaktényezője a Reynolds-szám
 függvényében</figcaption>
 </figure>
-<h4 id="a-közegellenállási-válság-drag-crisis">A közegellenállási válság
-(Drag crisis)</h4>
+<h3 id="a-közegellenállási-válság-drag-crisis">A közegellenállási válság
+(Drag crisis)</h3>
 <p>Sima felületű gömbnél
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>≈</mo><mn>300</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow><annotation encoding="application/x-tex">Re \approx 300\ 000</annotation></semantics></math>
 környékén egy egészen megdöbbentő fizikai tünemény játszódik le: a gömb
@@ -221,7 +223,7 @@ elképesztően alacsony
 ami a modern járműtervezés legfőbb célja.</li>
 </ul>
 <hr />
-<h2 id="a-végsebesség">A végsebesség</h2>
+<h1 id="a-végsebesség">A végsebesség</h1>
 <p>Amikor egy testet elengedünk egy közegben, a nehézségi erő hatására
 gyorsulni kezd. Ahogy nő a sebessége, a négyzetes erőtörvény értelmében
 a közegellenállási erő is rohamosan növekszik. Egy bizonyos ponton a
@@ -229,7 +231,7 @@ közegellenállás hajszálpontosan egyenlővé válik a nehézségi erővel
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>k</mi></msub><mo>=</mo><msub><mi>F</mi><mi>G</mi></msub></mrow><annotation encoding="application/x-tex">F_k = F_G</annotation></semantics></math>).
 Ekkor a testre ható eredő erő nulla lesz, a gyorsulás megszűnik, és a
 tárgy eléri a maximális, állandó <strong>végsebességét</strong>.</p>
-<h3 id="szimulációs-ellenőrzés">Szimulációs ellenőrzés</h3>
+<h2 id="szimulációs-ellenőrzés">Szimulációs ellenőrzés</h2>
 <p><a
 href="https://alexerdei73.github.io/physics-engine/project/#621f3903-6d19-4d8a-867b-45fdd4a016ad">Gömb
 alakú test esése légellenállás hatása alatt (Interaktív
@@ -238,7 +240,7 @@ szimuláció)</a></p>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>y</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">v_y(t)</annotation></semantics></math>
 grafikont érdemes megnézni!</p>
 <hr />
-<h3 id="kidolgozott-példák">Kidolgozott példák</h3>
+<h2 id="kidolgozott-példák">Kidolgozott példák</h2>
 <p><strong>1. feladat:</strong> Számítsuk ki a fenti interaktív
 szimulációban szereplő test elméleti végsebességét! A test tömege
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 0{,}1\text{ kg}</annotation></semantics></math>,
@@ -291,8 +293,8 @@ biztonságos, kb.
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>17</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">17\text{ km/h}</annotation></semantics></math>-s
 zökkenéssé szelídíti.</p>
 <hr />
-<h2 id="az-aerodinamikai-emelőerő-megszületése">Az aerodinamikai
-emelőerő megszületése</h2>
+<h1 id="az-aerodinamikai-emelőerő-megszületése">Az aerodinamikai
+emelőerő megszületése</h1>
 <p>A repülőgép-szárnyprofil körüli áramlás szimulációjakor kis szögeknél
 szép lamináris áramlás alakul ki, melynél a szárny stabil emeloerőt
 biztosít. Ha jól megnézzük a szimulációt a videón, láthatunk egy kis
@@ -310,7 +312,7 @@ lesz a szárny felett lényegesen nagyobb a levegő áramlási sebessége,
 mint a szárny alatt. Ez a Bernoulli-törvény értelmében
 nyomáskülönbséghez vezet (fent lecsökken, lent megnő a nyomás), amely
 végül biztosítja a repüléshez szükséges aerodinamikai emelőerőt.</p>
-<h3 id="az-átesés-stall-veszélye">Az átesés (Stall) veszélye</h3>
+<h2 id="az-átesés-stall-veszélye">Az átesés (Stall) veszélye</h2>
 <p>Ha a szárnyat túl nagy szögben (kb.
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>15</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>18</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">15^\circ - 18^\circ</annotation></semantics></math>
 felett) döntjük meg az áramláshoz kélpest, a levegőmolekuláknak a
@@ -328,7 +330,7 @@ is láttuk, ez a turbulens réteg jobban tapad a szárnyhoz, így a
 veszélyes áramlásleválás és az átesés csak sokkal nagyobb dőlésszögeknél
 következhet be, biztonságossá téve a repülést.</p>
 <hr />
-<h2 id="feladatok">Feladatok</h2>
+<h1 id="feladatok">Feladatok</h1>
 <ol type="1">
 <li><p><strong>Meteorológiai szonda süllyedése:</strong> Egy hengeres
 test alakú meteorológiai mérőszondát ejtünk el a légkör alsó rétegében,

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>-</title>
+  <title>A rezonancia</title>
   <style>
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,14 +25,17 @@
     }
   </style>
   <link rel="stylesheet" href="../github-markdown.css" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body class="markdown-body">
-<h1 id="a-rezonancia">A rezonancia</h1>
-<h2 id="kísérlet">Kísérlet</h2>
+<header id="title-block-header">
+<h1 class="title">A rezonancia</h1>
+</header>
+<h1 id="kísérlet">Kísérlet</h1>
 <p><a
 href="https://www.youtube.com/watch?v=NeCHP4AjgGg&amp;t=121s">Kényszerrezgés,
 rezonancia demonstráció Sas Elemér által</a></p>
-<h2 id="szimuláció">Szimuláció</h2>
+<h1 id="szimuláció">Szimuláció</h1>
 <p>Ebben a szimulációban a kísérletben látottakat tudjuk megismételni. A
 testre hat egy periodikus gerjesztőerő, amit egy piros nyíl szimbolizál
 a szimulációban. Ez éppen úgy energiát ad a rendszernek, mint a
@@ -55,7 +58,7 @@ van.</p>
 <p><a
 href="https://alexerdei73.github.io/physics-engine/project/#05652dfe-092a-4fe2-a4bc-f7a29109e103">Kényszerrezgés,
 rezonancia szimuláció</a></p>
-<h2 id="fogalmak">Fogalmak</h2>
+<h1 id="fogalmak">Fogalmak</h1>
 <blockquote>
 <p><strong>Szabad rezgés:</strong> A rezgő test nem kap energiát a
 környezetéből, de folyamatosan veszít a csillapítás által. A szabad
@@ -85,7 +88,7 @@ megegyezik. Ez a rezonancia. Az energiafelvétel a rezgő rendszer által
 maximális rezonancián. Az amplitúdó értéke kissé alacsonyabb frekvencián
 lesz maximális, amikor a csillapítási veszteségek kisebbek.</p>
 </blockquote>
-<h2 id="a-mozgásegyenlet">A mozgásegyenlet</h2>
+<h1 id="a-mozgásegyenlet">A mozgásegyenlet</h1>
 <p>Az erőkhöz a rugalmas erőn és a csillapításon kívül hozzájön a
 periodikus gerjesztőerő, amennyiben a kényszerrezgést akarjuk
 vizsgálni.</p>
@@ -119,7 +122,7 @@ a_x + 2\delta v_x + \omega_0^2 x = f_0\cos(\omega t)
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mfrac><msub><mi>F</mi><mn>0</mn></msub><mi>m</mi></mfrac></mrow><annotation encoding="application/x-tex">
 f_0 = \frac {F_0} m
 </annotation></semantics></math></p>
-<h2 id="a-fázistolás">A fázistolás</h2>
+<h1 id="a-fázistolás">A fázistolás</h1>
 <p>Most meg fogjuk keresni a gerjesztett rezgés amplitúdójának és
 kezdőfázisának frekvenciafüggését leíró képleteket! Annyit tudunk, a
 gerjesztett rezgés frekvenciája megegyezik a gerjesztőerő
@@ -136,8 +139,8 @@ a_x = -A\omega^2 \cos(\omega t + \phi)
 </annotation></semantics></math></p>
 <p>Ezeket be fogjuk helyettesíteni a mozgásegyenletbe, majd
 felhasználunk két trigonometriából ismert azonosságot.</p>
-<h3 id="a-trigonometria-addíciós-tételei">A trigonometria addíciós
-tételei</h3>
+<h2 id="a-trigonometria-addíciós-tételei">A trigonometria addíciós
+tételei</h2>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>β</mi><mo>+</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">
 \sin (\alpha + \beta) = \sin \alpha \cos \beta + \cos \alpha \sin \beta
 </annotation></semantics></math></p>
@@ -172,7 +175,7 @@ A\omega^2\sin\phi + 2\delta(-A\omega\cos\phi) + \omega_0^2(-A\sin\phi) = 0
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>=</mo><mi>−</mi><mfrac><mrow><mn>2</mn><mi>δ</mi><mi>ω</mi></mrow><mrow><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>−</mo><msup><mi>ω</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 \tan \phi = - \frac {2\delta\omega} {\omega_0^2 - \omega^2}
 </annotation></semantics></math></p>
-<h2 id="az-amplitúdó">Az amplitúdó</h2>
+<h1 id="az-amplitúdó">Az amplitúdó</h1>
 <p>Most azt fogjuk vizsgálni, hogyan függ az amplitúdó a
 gerjesztőfrekvenciától. Ehhez a
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\cos(\omega t)</annotation></semantics></math>-t
@@ -209,8 +212,8 @@ kifejezhető.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac><msub><mi>f</mi><mn>0</mn></msub><msqrt><mrow><mo stretchy="false" form="prefix">(</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>−</mo><msup><mi>ω</mi><mn>2</mn></msup><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mn>4</mn><msup><mi>δ</mi><mn>2</mn></msup><msup><mi>ω</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">
 A = \frac {f_0} {\sqrt {(\omega_0^2 - \omega^2)^2 + 4\delta^2\omega^2}}
 </annotation></semantics></math></p>
-<h3 id="a-forgó-vektorok-fázorok-módszere">A forgó vektorok (fázorok)
-módszere</h3>
+<h2 id="a-forgó-vektorok-fázorok-módszere">A forgó vektorok (fázorok)
+módszere</h2>
 <p>Emlékezzünk vissza, hogyan vezettük be a harmonikus rezgőmozgást a
 tanulmányaink elején! A rezgést egy egyenletes körmozgást végző test (az
 ún. referenciakörön mozgó pont) árnyékaként, vetületeként képzeltük el.
@@ -258,7 +261,7 @@ alt="A mozgásegyenlet forgóvektoros ábrázolása" />
 <figcaption aria-hidden="true">A mozgásegyenlet forgóvektoros
 ábrázolása</figcaption>
 </figure>
-<h3 id="példák">Példák</h3>
+<h2 id="példák">Példák</h2>
 <ol type="1">
 <li>Először vizsgáljuk a csillapítás nélküli, ideális esetet. A
 kényszererő amplitúdóját válasszuk meg úgy, hogy
@@ -293,7 +296,7 @@ esetén lenne így, a mi esetünkben azonban
 <p><a
 href="https://www.geogebra.org/calculator/hqz8kewk">Amplitúdó-körfrekvencia
 grafikon</a></p>
-<h2 id="az-amplitúdómaximum">Az amplitúdómaximum</h2>
+<h1 id="az-amplitúdómaximum">Az amplitúdómaximum</h1>
 <p>Most azt fogjuk megmutatni, hogy az amplitúdó maximális a következő
 körfrekvenciánál.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mi>r</mi></msub><mo>=</mo><msqrt><mrow><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>−</mo><mn>2</mn><msup><mi>δ</mi><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">
@@ -322,7 +325,7 @@ a másik két tag állandó!</p>
 <p>Ezzel beláttuk, hogy az amplitúdó maximális az
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ω</mi><mi>r</mi></msub><annotation encoding="application/x-tex">\omega_r</annotation></semantics></math>
 körfrekvenciánál.</p>
-<h3 id="példa">Példa</h3>
+<h2 id="példa">Példa</h2>
 <p>Számítsuk ki a szimulációs példánk esetében az amplitúdómaximumnak
 megfelelő körfrekvenciát és a pontos amplitúdómaximumot is!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>100</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> 1/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
@@ -344,7 +347,7 @@ Az amplitúdómaximum:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mfrac><msub><mi>f</mi><mn>0</mn></msub><msqrt><mrow><mo stretchy="false" form="prefix">(</mo><msubsup><mi>ω</mi><mn>0</mn><mn>2</mn></msubsup><mo>−</mo><msubsup><mi>ω</mi><mi>r</mi><mn>2</mn></msubsup><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mn>4</mn><msup><mi>δ</mi><mn>2</mn></msup><msubsup><mi>ω</mi><mi>r</mi><mn>2</mn></msubsup></mrow></msqrt></mfrac><mo>=</mo><mfrac><mn>2</mn><msqrt><mrow><mo stretchy="false" form="prefix">(</mo><mn>100</mn><mo>−</mo><mn>9</mn><mo>,</mo><msup><mn>99975</mn><mn>2</mn></msup><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mn>4</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><msup><mn>05</mn><mn>2</mn></msup><mo>⋅</mo><mn>9</mn><mo>,</mo><msup><mn>99975</mn><mn>2</mn></msup></mrow></msqrt></mfrac><mo>=</mo><mn>2</mn><mo>,</mo><mn>0000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
 A_{max} = \frac {f_0} {\sqrt{(\omega_0^2 - \omega_r^2)^2 + 4\delta^2\omega_r^2}} = \frac 2 {\sqrt{(100 - 9,99975^2)^2 + 4\cdot0,05^2\cdot9,99975^2}} = 2,0000\text{ m}
 </annotation></semantics></math></p>
-<h2 id="feladatok">Feladatok</h2>
+<h1 id="feladatok">Feladatok</h1>
 <ol type="1">
 <li><p>Egy
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 0,5 \text{ kg}</annotation></semantics></math>
