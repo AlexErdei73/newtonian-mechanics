@@ -1260,3 +1260,31 @@
         padding: 15px !important;
     }
 }
+
+/* 1. Alapállapot: a videó egy mély, sötét, elegáns feketeségbe burkolózik */
+lite-youtube {
+    background-color: #000 !important; /* Biztosítjuk a tiszta fekete hátteret */
+    position: relative;
+    display: block;
+    contain: content;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    max-width: 100%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    margin: 25px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    
+    /* BEÁLLÍTÁS: Brutálisan levesszük a fényerőt (15%-ra), így mély, tiszta sötét lesz a kép */
+    filter: brightness(0.50);
+    
+    /* Sima, 0.25 másodperces finom úszó átmenet a kivilágosodáshoz */
+    transition: filter 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 2. HOVER ÁLLAPOT: Egérmozgásra a videó gyönyörűen kivilágosodik a tiszta, eredeti színeibe! */
+lite-youtube:hover {
+    filter: brightness(1) !important;
+}
