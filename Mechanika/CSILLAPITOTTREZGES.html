@@ -29,7 +29,8 @@
   </head>
 <body><header class="global-header"><nav class="global-navbar"><div class="nav-group"><a href="../index.html" class="navbar-brand">Newton Mechanikája</a><a href="../index.html" class="nav-link">Névjegy</a><a href="../VEGEREDMENYEK.html" class="nav-link">Megoldások</a></div><div class="nav-group-center"><a href="REZGESIENERGIA.html" class="nav-btn">◀ Előző</a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn">☰ Tartalom</a><a href="REZONANCIA.html" class="nav-btn">Következő ▶</a></div><div class="nav-group"><a href="../index.html" class="nav-link">Témakörök</a></div></nav></header>
 <main class="markdown-body">
-<h1 id="szimulációk">Szimulációk</h1>
+<h1 id="csillapított-rezgések">Csillapított rezgések</h1>
+<h2 id="szimulációk">Szimulációk</h2>
 <p>A szimulációban és elméletben is láttuk, hogy a rezgési energia és
 így az amplitúdó is állandó, amennyiben a rezgő testre csak a
 konzervatív rugalmas erő és esetleg a szintén konzervatív nehézségi erő
@@ -37,7 +38,7 @@ hat. A valóságban azonban ilyesmit nem tapasztalunk, hiszen mindig
 vannak disszipatív erők. Nézzük meg, hogy egy harmonikus rezgést végző
 test esetében milyen erők okozzák a rezgés csillapodását, és ez hogyan
 csökkenti az amplitúdót, ahogy az idő múlik!</p>
-<h2 id="súrlódásos-csillapítás">Súrlódásos csillapítás</h2>
+<h3 id="súrlódásos-csillapítás">Súrlódásos csillapítás</h3>
 <p>Először vizsgáljuk a súrlódási erő hatását, hisz ezt már jól
 ismerjük! A szimuláció annyiban lesz más, mint a példában láttuk a
 rezgési energia tárgyalásakor, hogy a rezgés a nehézségi erő hatása
@@ -76,7 +77,7 @@ m/s, tehát ez a test maradék sebessége.</li>
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x = 2</annotation></semantics></math>
 m-nél lenne.</li>
 </ul>
-<h2 id="légellenállás">Légellenállás</h2>
+<h3 id="légellenállás">Légellenállás</h3>
 <p>Most nézzük meg azt az esetet, mikor súrlódás ugyan nincs, de van
 légellenállás. Itt a
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math>
@@ -100,8 +101,8 @@ s telik el a szimulációban!</p>
 <p><a
 href="https://alexerdei73.github.io/physics-engine/project/#2d7bf5da-1455-4c4a-896d-a40baf1347a4">Harmonikus
 rezgés csillapodása a légellenállás miatt</a></p>
-<h2 id="a-sebességgel-arányos-csillapítás">A sebességgel arányos
-csillapítás</h2>
+<h3 id="a-sebességgel-arányos-csillapítás">A sebességgel arányos
+csillapítás</h3>
 <p>A valódi rugók igen kismértékben ugyan, de csillapítják a rezgést,
 akkor is, ha nincs légellenállás. Ennek mértéke acél esetén igen
 kicsiny, az acél szinte tökéletesen rugalmas. Ez a fajta csillapítás
@@ -118,9 +119,9 @@ fogunk részletesebben foglalkozni.</p>
 <p><a
 href="https://alexerdei73.github.io/physics-engine/project/#8b2676f8-91a6-4f77-b2cd-e8f0c9b87a51">Harmonikus
 rezgés sebességgel arányos csillapítással</a></p>
-<h1
+<h2
 id="mozgásegyenlet-sebességgel-arányos-csillapítás-esetén">Mozgásegyenlet
-sebességgel arányos csillapítás esetén</h1>
+sebességgel arányos csillapítás esetén</h2>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mi>e</mi></mrow></msub><mo>=</mo><mi>−</mi><mi>D</mi><mi>x</mi><mo>−</mo><mi>β</mi><msub><mi>v</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">
 F_{x,e} = -Dx - \beta v_x
 </annotation></semantics></math></p>
@@ -145,7 +146,7 @@ a test álló helyzetből indul az
 helyzetből. Erre csak felsőbb matematikai ismeretek birtokában lehet
 válaszolni, tehát az egyenletet nem fogjuk megoldani, csak a megoldást
 magyarázzuk el.</p>
-<h1 id="az-amplitúdó-csökkenése">Az amplitúdó csökkenése</h1>
+<h2 id="az-amplitúdó-csökkenése">Az amplitúdó csökkenése</h2>
 <p>Először is vizsgáljuk meg, hogyan csökken az amplitúdó. Ha a
 szimulációnkban feljegyeznénk a kitérés értékét
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">nT</annotation></semantics></math>
@@ -194,7 +195,7 @@ csillapítatlan esetben.</p>
 <p>Ezen összefüggések segítségével a
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
 tényező már kiszámítható.</p>
-<h2 id="példa">Példa</h2>
+<h3 id="példa">Példa</h3>
 <p>Számítsuk ki az eddigi példánkban a
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
 tényező értékét! Mennyi idő alatt csökken a rezgés energiája 4 tizedes
@@ -279,7 +280,7 @@ s alatt éri el a
 J-t! Figyeljük meg, hogy itt a pontos érték megkapásához
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-re
 a tört értéket kell használnunk, amit a zsebszámológéppel kaphatunk.</p>
-<h1 id="a-kitérés-idő-függvény">A kitérés-idő függvény</h1>
+<h2 id="a-kitérés-idő-függvény">A kitérés-idő függvény</h2>
 <p>Matematikából tanultuk, hogy a hatványozás elvégezhető tetszőleges
 valós kitevővel is. Ha az alap az
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
@@ -304,7 +305,7 @@ behelyettesítéssel kapjuk meg.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>0</mn></msub><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
 A_0 = A\cos \phi
 </annotation></semantics></math></p>
-<h2 id="példa-1">Példa</h2>
+<h3 id="példa-1">Példa</h3>
 <p>Számítsuk ki a kitérést az idő függvényében a szimulációs
 példánkban!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>=</mo><mi>−</mi><mfrac><mi>δ</mi><mi>ω</mi></mfrac><mo>=</mo><mi>−</mi><mfrac><mn>3</mn><mrow><mn>141</mn><mo>,</mo><mn>39</mn></mrow></mfrac><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>021218</mn></mrow><annotation encoding="application/x-tex">
@@ -320,7 +321,7 @@ A = A_0 / \cos \phi = 0,2 / \cos(-0,021215) = 0,200045
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>200045</mn><msup><mi>e</mi><mrow><mi>−</mi><mn>3</mn><mi>t</mi></mrow></msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>141</mn><mo>,</mo><mn>39</mn><mi>t</mi><mo>−</mo><mn>0</mn><mo>,</mo><mn>021215</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
 x = 0,200045e^{-3t}\cos(141,39t - 0,021215)
 </annotation></semantics></math></p>
-<h1 id="kritikus-csillapítás">Kritikus csillapítás</h1>
+<h2 id="kritikus-csillapítás">Kritikus csillapítás</h2>
 <p>Amikor a csillapítás akkora, hogy a körfrekvencia nullává válik,
 akkor a koszinusz függvény már állandóan 1, tehát a test egyszerűen
 exponenciálisan tart az egyensúlyi helyzethez. Ezt nevezzük kritikus
@@ -342,18 +343,18 @@ rugó összenyomódása alatt kis csillapítást fejtenek ki, míg a
 visszatérés alatt a csillapítás nagyobb. Ez az aszimmetrikus csillapítás
 fontos, hogy ha a kereket nagy ütés érné felfelé, akkor ezt ne vigye át
 a felfüggesztés a karosszériára.</p>
-<h2 id="a-lengéscsillapító-működése">A lengéscsillapító működése</h2>
+<h3 id="a-lengéscsillapító-működése">A lengéscsillapító működése</h3>
 <p><lite-youtube videoid="O-n7IvzPtME"></lite-youtube></p>
-<h2 id="példa-2">Példa</h2>
+<h3 id="példa-2">Példa</h3>
 <p>Írjuk fel a képletet a szimulációs példánk esetére!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mn>141</mn><mo>,</mo><mn>42</mn><mi>t</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mrow><mi>−</mi><mn>141</mn><mo>,</mo><mn>42</mn><mi>t</mi></mrow></msup></mrow><annotation encoding="application/x-tex">
 x = 0,2(1 + 141,42t)e^{-141,42t}
 </annotation></semantics></math></p>
-<h2 id="szimuláció">Szimuláció</h2>
+<h3 id="szimuláció">Szimuláció</h3>
 <p><a
 href="https://alexerdei73.github.io/physics-engine/project/#1de4ac61-0df7-4a4c-b912-fbec97a261c1">Kritikus
 csillapítás</a></p>
-<h1 id="a-túlcsillapított-eset">A túlcsillapított eset</h1>
+<h2 id="a-túlcsillapított-eset">A túlcsillapított eset</h2>
 <p>Ha a csillapítási együttható nagyobb, mint a csillapítatlan
 körfrekvencia, ami a kritikus csillapításra jellemző, a test nem végez
 rezgéseket, de annál lassabban jut vissza exponenciálisan az egyensúlyi
@@ -368,7 +369,7 @@ x = \frac A {2\gamma} \left( (\delta + \gamma)e^{(-\delta+\gamma)t} - (\delta - 
 </annotation></semantics></math></p>
 <p>Ilyen eset áll fenn ajtók csillapításánál, hogy ne csapódjanak be,
 hanem szép lassan csukódjanak be.</p>
-<h1 id="feladatok">Feladatok</h1>
+<h2 id="feladatok">Feladatok</h2>
 <ol type="1">
 <li><p><strong>Alapvető paraméterek kiszámítása:</strong> Egy rugóra
 függesztett

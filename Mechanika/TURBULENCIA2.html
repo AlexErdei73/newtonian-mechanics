@@ -4,7 +4,8 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Kolmogorov K41 modellje az energiakaszkádra</title>
+  <title>Kolmogorov K41
+modellje az energiakaszkádra</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <style>
         .global-header { position: fixed; top: 0; left: 0; width: 100%; z-index: 99999; }
@@ -29,7 +30,9 @@
   </head>
 <body><header class="global-header"><nav class="global-navbar"><div class="nav-group"><a href="../index.html" class="navbar-brand">Newton Mechanikája</a><a href="../index.html" class="nav-link">Névjegy</a><a href="../VEGEREDMENYEK.html" class="nav-link">Megoldások</a></div><div class="nav-group-center"><a href="TURBULENCIA1.html" class="nav-btn">◀ Előző</a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn">☰ Tartalom</a><a href="KOZEGELLENALLAS.html" class="nav-btn">Következő ▶</a></div><div class="nav-group"><a href="../index.html" class="nav-link">Témakörök</a></div></nav></header>
 <main class="markdown-body">
-<h1 id="a-modell-története">A modell története</h1>
+<h1 id="kolmogorov-k41-modellje-az-energiakaszkádra">Kolmogorov K41
+modellje az energiakaszkádra</h1>
+<h2 id="a-modell-története">A modell története</h2>
 <p>A turbulencia a klasszikus fizika szinte egyetlen, máig is
 megoldatlan problémája. A Navier–Stokes-egyenletekről még azt sem
 sikerült bebizonyítani, hogy minden fizikailag megvalósítható helyzetben
@@ -49,7 +52,7 @@ mindennapi áramlástani problémák megoldásához.</p>
 1941-ben született turbulenciamodellje (a K41 modell). Ez a megközelítés
 nem az alapegyenletek közvetlen megoldásán, hanem néhány egyszerű,
 statisztikus feltételezésen és a mértékegységek egyeztetésén alapul.</p>
-<h1 id="a-modell-bemutatása">A modell bemutatása</h1>
+<h2 id="a-modell-bemutatása">A modell bemutatása</h2>
 <p>Képzeljük el megint a csőben az áramlást, de most víz áramlik ott,
 nem glicerin, és az áramlás jó gyors, a cső is vastag, tehát a
 Reynolds-szám magas. A folyadék a nagy nyomású helyről áramlik a kis
@@ -215,9 +218,9 @@ melyek egyedi örvényszintű Reynolds-száma
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
 nagyságrendű, azaz elég kicsi ahhoz, hogy a belső súrlódás legyen a
 domináns tényező a mozgásukra nézve.</p>
-<h1 id="kolmogorov-eredménye-az-ek-függvényre">Kolmogorov eredménye az
+<h2 id="kolmogorov-eredménye-az-ek-függvényre">Kolmogorov eredménye az
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E(k)</annotation></semantics></math>
-függvényre</h1>
+függvényre</h2>
 <p>Kolmogorov feltételezte, hogy a súrlódás az energiakaszkád középső
 részén (az inerciális tartományban) már nem számít, tehát az
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E(k)</annotation></semantics></math>
@@ -251,7 +254,7 @@ spektrumtörvény</strong>:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>∼</mo><msup><mi>ε</mi><mrow><mn>2</mn><mi>/</mi><mn>3</mn></mrow></msup><mo>⋅</mo><msup><mi>k</mi><mrow><mi>−</mi><mn>5</mn><mi>/</mi><mn>3</mn></mrow></msup></mrow><annotation encoding="application/x-tex">
 E(k) \sim \varepsilon^{2/3} \cdot k^{-5/3}
 </annotation></semantics></math></p>
-<h1 id="kísérleti-ellenőrzés">Kísérleti ellenőrzés</h1>
+<h2 id="kísérleti-ellenőrzés">Kísérleti ellenőrzés</h2>
 <p>Az
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E(k)</annotation></semantics></math>
 függvény az
@@ -273,9 +276,9 @@ egy klasszikus lineáris egyenes egyenletét kapjuk:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mi>−</mi><mfrac><mn>5</mn><mn>3</mn></mfrac><mi>X</mi><mo>+</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">
 Y = -\frac{5}{3} X + B
 </annotation></semantics></math></p>
-<h1
+<h2
 id="gyakorlati-felhasználás-a-számítógépes-szimulációkban-cfd">Gyakorlati
-felhasználás a számítógépes szimulációkban (CFD)</h1>
+felhasználás a számítógépes szimulációkban (CFD)</h2>
 <p>Mivel az
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ε</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
 könnyen meghatározható a folyadékon végzett globális munka (például a
@@ -312,9 +315,9 @@ statisztikus elvei alapján számítja ki, és így a kísérletekkel jól
 egyező, gyors közelítő eredmények kaphatók, melyeket a mérnökök kiválóan
 tudnak használni a mindennapi tervezés során.</p>
 <hr />
-<h1 id="kidolgozott-példák">Kidolgozott példák</h1>
-<h2 id="példa-csőáramlás-mikroszkopikus-örvényei">1. Példa: Csőáramlás
-mikroszkopikus örvényei</h2>
+<h2 id="kidolgozott-példák">Kidolgozott példák</h2>
+<h3 id="példa-csőáramlás-mikroszkopikus-örvényei">1. Példa: Csőáramlás
+mikroszkopikus örvényei</h3>
 <p>Egy egyenes csőben
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-os
 tiszta víz áramlik durva turbulenciával. Az áramlás globális
@@ -385,8 +388,8 @@ mindössze
 <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>47</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm/s</mtext></mrow></mrow><annotation encoding="application/x-tex">4{,}47\text{ cm/s}</annotation></semantics></math>-os
 sebességgel örvénylik a legkisebb viszkózus zónában.</p>
 <hr />
-<h2 id="példa-egy-online-ismeretterjesztő-videó-cáfolata">2. Példa: Egy
-online ismeretterjesztő videó cáfolata</h2>
+<h3 id="példa-egy-online-ismeretterjesztő-videó-cáfolata">2. Példa: Egy
+online ismeretterjesztő videó cáfolata</h3>
 <p>Egy népszerű online ismeretterjesztő videóban a következő állítás
 hangzik el: <em>„A különböző méretű örvényekben tárolt kinetikus energia
 – egységnyi tömegű folyadékra vonatkoztatva – arányos az örvények</em>
@@ -512,7 +515,7 @@ hanem a <strong>negatív
 hatvány szerint változik</strong>
 (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>D</mi><mrow><mi>−</mi><mn>1</mn><mi>/</mi><mn>3</mn></mrow></msup><annotation encoding="application/x-tex">D^{-1/3}</annotation></semantics></math>).</p>
 <hr />
-<h1 id="feladatok">Feladatok</h1>
+<h2 id="feladatok">Feladatok</h2>
 <ol type="1">
 <li><p><strong>Szélcsatorna mikroskálái:</strong> Egy szélcsatorna
 turbulens magáramában a mért fajlagos energia-disszipáció értéke

@@ -122,6 +122,20 @@ function generateNavbar(filename, isSubfolder) {
     "</header>";
 }
 
+function getTitle(content) {
+    const h1Start = content.indexOf("<h1");
+    let h1End = content.indexOf("</h1>");
+    let title = "";
+    if (h1End !== -1 && h1Start !== -1) {
+        const titleStart = content.indexOf(">", h1Start) + 1;
+        const titleEnd = h1End;
+        if (titleStart !== 0 && titleStart < titleEnd) {
+            title = content.substring(titleStart, titleEnd);
+        }
+    }
+    return title;
+}
+
 function processFile(filePath, isSubfolder = false) {
     if (!fs.existsSync(filePath)) return;
     let filename = path.basename(filePath);
@@ -133,6 +147,12 @@ function processFile(filePath, isSubfolder = false) {
         content = content.split("<body>").join("<body>" + navbarMarkup);
         modified = true;
     }
+
+    let title = getTitle(content);
+    if (title && content.includes("<title></title>")) {
+        content = content.split("<title>").join(`<title>${title}`);
+        modified = true;
+    } 
 
     if (content.includes(".md\"")) { content = content.split(".md\"").join(".html\""); modified = true; }
     if (content.includes(".MD\"")) { content = content.split(".MD\"").join(".html\""); modified = true; }

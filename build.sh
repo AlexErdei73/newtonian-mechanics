@@ -76,7 +76,6 @@ if [ -d "Mechanika" ]; then
         
         pandoc "$lecke_clean" -f markdown -t html5 --standalone --mathml --no-highlight \
                --template=pandoc_clean_template.html \
-               --shift-heading-level-by=-1 \
                -c ../github-markdown.css \
                -H <(echo "$SUB_HEADER") \
                -o "$output_html"
