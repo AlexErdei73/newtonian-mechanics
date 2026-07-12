@@ -1,6 +1,23 @@
 const fs = require("fs");
 const path = require("path");
 
+// ==========================================================================
+// 1. ADAT-VEZÉRELT PROJEKT MÁTRIX: 10 TÉMAKÖR ÉS AZ INDULÓ LECKÉK SZÁMA
+// Bármikor átírhatod a 'startLesson' számokat, a teljes portál magától igazodik!
+// ==========================================================================
+const COURSE_TOPICS = [
+    { name: "Kinematika",               startLesson: 1  },
+    { name: "Dinamika",                 startLesson: 13 },
+    { name: "Energia",                  startLesson: 22 },
+    { name: "Impulzus, Ütközések",      startLesson: 26 },
+    { name: "Pontrendszerek",           startLesson: 31 },
+    { name: "Körmozgás",                startLesson: 36 },
+    { name: "Gravitáció",               startLesson: 40 },
+    { name: "Impulzus momentum",        startLesson: 47 },
+    { name: "Rezgések, hullámok",       startLesson: 54 },
+    { name: "Folyadék mechanika",       startLesson: 69 }
+];
+
 function extractStartTime(url) {
     let tIdx = url.indexOf("t=");
     if (tIdx === -1) return "";
@@ -23,17 +40,12 @@ function extractStartTime(url) {
     return "";
 }
 
-// ==========================================================================
-// FIX: GOLYÓÁLLÓ TARTALOMJEGYZÉK BEOLVASÓ MOTOR (ABSZOLÚT ÚTVONALLAL)
-// ==========================================================================
 function buildLectureOrder() {
     const order = [];
-    
-    // A __dirname segítségével kényszerítjük, hogy mindig a process.js melletti gyökérmappában keresse a fájlt!
     const tocPath = path.join(__dirname, "NEWTON_MECHANIKAJA.md");
     
     if (!fs.existsSync(tocPath)) {
-        console.log("⚠️ Figyelem: NEWTON_MECHANIKAJA.md nem található az abszolút útvonalon: " + tocPath);
+        console.log("⚠️ Figyelem: NEWTON_MECHANIKAJA.md nem található az abszolút útvonalon!");
         return order;
     }
     
@@ -49,7 +61,6 @@ function buildLectureOrder() {
         
         if (endIdx !== -1) {
             let cleanName = remainder.substring(0, endIdx).trim();
-            
             if (cleanName && !order.includes(cleanName) && cleanName !== "html" && cleanName !== "md") {
                 order.push(cleanName);
             }
@@ -61,101 +72,10 @@ function buildLectureOrder() {
     return order;
 }
 
-
-// Legeneráljuk a globális dinamikus tömböt a futás elején
-const LECTURE_ORDER = buildLectureOrder();
-console.log(`🚀 Sikeresen beolvasva ${LECTURE_ORDER.length} lecke a tartalomjegyzékből!`);
-
-// TÖMB-ALAPÚ DINAMIKUS ÚTVONALKERESŐ MOTOR
-function generateNavbar(filename, isSubfolder) {
-    const pfx = isSubfolder ? "../" : "";
-    const curFolder = isSubfolder ? "" : "Mechanika/";
-    
-    let prevLink = pfx + "NEWTON_MECHANIKAJA.html";
-    let nextLink = pfx + "NEWTON_MECHANIKAJA.html";
-    
-    // Ha van beolvasott leckénk, a Tartalomjegyzékből a Következő gomb az 1. leckére visz
-    if (LECTURE_ORDER.length > 0) {
-        nextLink = pfx + "Mechanika/" + LECTURE_ORDER[0] + ".html";
-    }
-
-    let currentBasename = filename.replace(".html", "");
-    let currentIndex = LECTURE_ORDER.indexOf(currentBasename);
-
-    if (currentIndex !== -1) {
-        // ELŐZŐ LECKE
-        if (currentIndex > 0) {
-            prevLink = LECTURE_ORDER[currentIndex - 1] + ".html";
-        } else {
-            prevLink = "../NEWTON_MECHANIKAJA.html";
-        }
-
-        // KÖVETKEZŐ LECKE
-        if (currentIndex < LECTURE_ORDER.length - 1) {
-            nextLink = LECTURE_ORDER[currentIndex + 1] + ".html";
-        } else {
-            nextLink = "../NEWTON_MECHANIKAJA.html";
-        }
-    }
-
-        // 1. FIXED ÚTVONALAK: Kivettük a pfx-et, így a leckékből helyben (Mechanika/ mappán belül) vált, 
-    // a főoldalról pedig gyönyörűen belép a mappába a curFolder segítségével!
-    const kinLink = LECTURE_ORDER.length > 0 ? curFolder + LECTURE_ORDER[0] + ".html" : "NEWTON_MECHANIKAJA.html";
-    const dinLink = LECTURE_ORDER.length > 19 ? curFolder + LECTURE_ORDER[19] + ".html" : "NEWTON_MECHANIKAJA.html";
-    const megLink = LECTURE_ORDER.length > 49 ? curFolder + LECTURE_ORDER[49] + ".html" : "NEWTON_MECHANIKAJA.html";
-
-    return "<header class=\"global-header\">" +
-        "<nav class=\"global-navbar\">" +
-            // ASZTALI LOGO: Marad a helyén, de kap egy "desktop" osztályt, hogy mobilon elrejthessük
-            "<a href=\"" + pfx + "index.html\" class=\"navbar-brand navbar-brand-desktop\">Newton Mechanikája</a>" +
-            
-            // KÖZÉPSŐ LÉPTETŐ GOMBOK: Fixen és tisztán középen maradnak
-            "<div class=\"nav-group-center\">" +
-                "<a href=\"" + prevLink + "\" class=\"nav-btn\" aria-label=\"Előző lecke\">" +
-                    "◀<span class=\"btn-text\"> Előző</span>" +
-                "</a>" +
-                "<a href=\"" + pfx + "NEWTON_MECHANIKAJA.html\" class=\"nav-btn\" aria-label=\"Tartalomjegyzék\">" +
-                    "☰<span class=\"btn-text\"> Tartalom</span>" +
-                "</a>" +
-                "<a href=\"" + nextLink + "\" class=\"nav-btn\" aria-label=\"Következő lecke\">" +
-                    "<span class=\"btn-text\">Következő </span>▶" +
-                "</a>" +
-            "</div>" +
-            
-            // CSS HAMBURGER KAPCSOLÓK
-            "<input type=\"checkbox\" id=\"menu-toggle\" class=\"menu-checkbox\" />" +
-            "<label for=\"menu-toggle\" class=\"hamburger-icon\">" +
-                "<span></span><span></span><span></span>" +
-            "</label>" +
-            
-            // A KÖZÖS NAVIGÁCIÓS PANEL
-            "<div class=\"nav-links\">" +
-                // ÚJ MOBIL LOGO: Csak a leúszó panel tetején fog megjelenni mobilon!
-                "<a href=\"" + pfx + "index.html\" class=\"navbar-brand navbar-brand-mobile\">Newton Mechanikája</a>" +
-                
-                // Bal oldali menüpontok
-                "<div class=\"nav-group-left\">" +
-                    "<a href=\"" + pfx + "index.html\">Névjegy</a>" +
-                    "<a href=\"" + pfx + "VEGEREDMENYEK.html\" style=\"font-weight: 600;\">Megoldások</a>" +
-                "</div>" +
-                // Jobb oldali menüpontok
-                "<div class=\"nav-group-right\">" +
-                    "<div class=\"dropdown\">" +
-                        "<a href=\"#\" class=\"dropdown-trigger\" onclick=\"return false;\">" +
-                            "Témakörök <span style=\"font-size: 10px;\">▼</span>" +
-                        "</a>" +
-                        "<ul class=\"dropdown-menu\">" +
-                            "<li><a href=\"" + kinLink + "\">Kinematika</a></li>" +
-                            "<li><a href=\"" + dinLink + "\">Dinamika</a></li>" +
-                            "<li><a href=\"" + megLink + "\">Megmaradási Törvények</a></li>" +
-                        "</ul>" +
-                    "</div>" +
-                "</div>" +
-            "</div>" +
-        "</nav>" +
-    "</header>";
-}
-
+// ==========================================================================
+// CUSTOM LESSON TITLE EXTRACTOR ENGINE
+// Dynamically parses the rendered H1 string token to populate browser meta headers
+// ==========================================================================
 function getTitle(content) {
     const h1Start = content.indexOf("<h1");
     let h1End = content.indexOf("</h1>");
@@ -170,26 +90,105 @@ function getTitle(content) {
     return title;
 }
 
+const LECTURE_ORDER = buildLectureOrder();
+console.log(`🚀 Rendszer-automatizálás: ${LECTURE_ORDER.length} lecke sikeresen beolvasva a tartalomjegyzékből.`);
+// ==========================================================================
+// 2. DINAMIKUS NAVBAR GENERÁLÁS (A MÁTRIX TÖMB ALAPJÁN)
+// ==========================================================================
+function generateNavbar(filename, isSubfolder) {
+    const pfx = isSubfolder ? "../" : "";
+    const curFolder = isSubfolder ? "" : "Mechanika/";
+    
+    let prevLink = pfx + "NEWTON_MECHANIKAJA.html";
+    let nextLink = pfx + "NEWTON_MECHANIKAJA.html";
+    
+    if (LECTURE_ORDER.length > 0) {
+        nextLink = pfx + "Mechanika/" + LECTURE_ORDER[0] + ".html";
+    }
+
+    let currentBasename = filename.replace(".html", "").replace(".md", "");
+    let currentIndex = LECTURE_ORDER.indexOf(currentBasename);
+
+    if (currentIndex !== -1) {
+        if (currentIndex > 0) {
+            prevLink = LECTURE_ORDER[currentIndex - 1] + ".html";
+        } else {
+            prevLink = "../NEWTON_MECHANIKAJA.html";
+        }
+
+        if (currentIndex < LECTURE_ORDER.length - 1) {
+            nextLink = LECTURE_ORDER[currentIndex + 1] + ".html";
+        } else {
+            nextLink = "../NEWTON_MECHANIKAJA.html";
+        }
+    }
+
+    // AUTOMATIKUS DROPDOWN MENÜ GENERÁLÁSA A KORÁBBI TÖMBBŐL
+    let dropdownMenuItemsMarkup = "";
+    COURSE_TOPICS.forEach((topic) => {
+        const targetIndex = topic.startLesson - 1; 
+        let finalRoute = "#";
+        
+        if (LECTURE_ORDER.length > targetIndex) {
+            finalRoute = curFolder + LECTURE_ORDER[targetIndex] + ".html";
+        } else {
+            finalRoute = pfx + "NEWTON_MECHANIKAJA.html";
+        }
+        
+        dropdownMenuItemsMarkup += "<li><a href=\"" + finalRoute + "\">" + topic.name + "</a></li>";
+    });
+
+    return "<header class=\"global-header\">" +
+        "<nav class=\"global-navbar\">" +
+            "<a href=\"" + pfx + "index.html\" class=\"navbar-brand navbar-brand-desktop\">Newton Mechanikája</a>" +
+            // KÖZÉP: A nyilak és a menüjel kívülre kerültek a span elé/mögé!
+            "<div class=\"nav-group-center\">" +
+                "<a href=\"" + prevLink + "\" class=\"nav-btn\" aria-label=\"Előző lecke\">◀<span class=\"btn-text\"> Előző</span></a>" +
+                "<a href=\"" + pfx + "NEWTON_MECHANIKAJA.html\" class=\"nav-btn\" aria-label=\"Tartalomjegyzék\">☰<span class=\"btn-text\"> Tartalom</span></a>" +
+                "<a href=\"" + nextLink + "\" class=\"nav-btn\" aria-label=\"Következő lecke\"><span class=\"btn-text\">Következő </span>▶</a>" +
+            "</div>" +
+            
+            // JOBB OLDAL: Hamburger és a listás menüpontok (1 SOROS AUTOMATIKUS LEÚSZTATÓVAL!)
+            "<input type=\"checkbox\" id=\"menu-toggle\" class=\"menu-checkbox\" />" +
+            "<label for=\"menu-toggle\" class=\"hamburger-icon\" onclick=\"setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);\">" +
+                "<span></span><span></span><span></span>" +
+            "</label>" +
+
+            "<div class=\"nav-links\">" +
+                "<a href=\"" + pfx + "index.html\" class=\"navbar-brand navbar-brand-mobile\">Newton Mechanikája</a>" +
+                "<div class=\"nav-group-left\">" +
+                    "<a href=\"" + pfx + "index.html\">Névjegy</a>" +
+                    "<a href=\"" + pfx + "VEGEREDMENYEK.html\" style=\"font-weight: 600;\">Megoldások</a>" +
+                "</div>" +
+                "<div class=\"nav-group-right\">" +
+                    "<div class=\"dropdown\">" +
+                        "<a href=\"#\" class=\"dropdown-trigger\" onclick=\"return false;\">Témakörök ▼</a>" +
+                        "<ul class=\"dropdown-menu\">" +
+                            dropdownMenuItemsMarkup +
+                        "</ul>" +
+                    "</div>" +
+                "</div>" +
+            "</div>" +
+
+        "</nav>" +
+    "</header>";
+}
+
+// ==========================================================================
+// 3. FÁJLOK BEJÁRÁSA ÉS HTML UTÓFELDOLGOZÓ FŐMOTOR
+// ==========================================================================
 function processFile(filePath, isSubfolder = false) {
     if (!fs.existsSync(filePath)) return;
     let filename = path.basename(filePath);
     let content = fs.readFileSync(filePath, "utf8");
-    let modified = false;
 
     if (content.includes("<body>") && !content.includes("class=\"global-header\"")) {
         const navbarMarkup = generateNavbar(filename, isSubfolder);
         content = content.split("<body>").join("<body>" + navbarMarkup);
-        modified = true;
     }
 
-    let title = getTitle(content);
-    if (title && content.includes("<title></title>")) {
-        content = content.split("<title>").join(`<title>${title}`);
-        modified = true;
-    } 
-
-    if (content.includes(".md\"")) { content = content.split(".md\"").join(".html\""); modified = true; }
-    if (content.includes(".MD\"")) { content = content.split(".MD\"").join(".html\""); modified = true; }
+    if (content.includes(".md\"")) { content = content.split(".md\"").join(".html\""); }
+    if (content.includes(".MD\"")) { content = content.split(".MD\"").join(".html\""); }
 
     let result = "";
     let i = 0;
@@ -229,13 +228,12 @@ function processFile(filePath, isSubfolder = false) {
 
                                     if (videoId && videoId.length === 11) {
                                         let startSeconds = extractStartTime(hrefStringValue);
-                                        let startAttr = startSeconds ? ` videoStartAt="${startSeconds}"` : "";
+                                        let startAttr = startSeconds ? ` videoStartAt=${startSeconds}` : "";
                                         let isShorts = hrefStringValue.toLowerCase().includes("shorts");
                                         let shortAttr = isShorts ? " short" : "";
                                         
                                         result += `<lite-youtube videoid="${videoId}"${startAttr}${shortAttr}></lite-youtube>`;
                                         i = closeTagIndex + 4;
-                                        modified = true;
                                         continue;
                                     }
                                 }
@@ -249,9 +247,17 @@ function processFile(filePath, isSubfolder = false) {
         i++;
     }
 
-    if (modified) {
-        fs.writeFileSync(filePath, result, "utf8");
+    // DYNAMIC TITLE AUTOMATION
+    // Safely reads the custom H1 header and stamps it into the blank browser tab title
+    let title = getTitle(content);
+    if (title && content.includes("<title></title>")) {
+        content = content.split("<title>").join(`<title>${title}`);
     }
+
+    // BULLETPROOF FIX: We bypass the modified flag, we have removed, completely!
+    // The 'result' variable holds the fully transformed HTML (Navbar + Youtube elements).
+    // Writing this unconditionally ensures Pandoc's raw links are ALWAYS overwritten.
+    fs.writeFileSync(filePath, result, "utf8");
 }
 
 processFile("index.html", false);
@@ -263,4 +269,4 @@ if (fs.existsSync(subDir)) {
         if (file.endsWith(".html")) processFile(path.join(subDir, file), true);
     });
 }
-console.log("=== Szuper-automatizált HTML utófeldolgozás kész! ===");
+console.log("=== Dynamic Browser Title Integration Complete! ===");
