@@ -98,25 +98,59 @@ function generateNavbar(filename, isSubfolder) {
         }
     }
 
-    // Dinamikusan kiosztjuk a nagy témakörök ugrólinkjeit a beolvasott tömbből (biztonsági fallbackel)
-    const kinLink = LECTURE_ORDER.length > 0 ? pfx + curFolder + LECTURE_ORDER[0] + ".html" : pfx + "NEWTON_MECHANIKAJA.html";
-    const dinLink = LECTURE_ORDER.length > 19 ? pfx + curFolder + LECTURE_ORDER[19] + ".html" : pfx + "NEWTON_MECHANIKAJA.html";
-    const megLink = LECTURE_ORDER.length > 49 ? pfx + curFolder + LECTURE_ORDER[49] + ".html" : pfx + "NEWTON_MECHANIKAJA.html";
+        // 1. FIXED ÚTVONALAK: Kivettük a pfx-et, így a leckékből helyben (Mechanika/ mappán belül) vált, 
+    // a főoldalról pedig gyönyörűen belép a mappába a curFolder segítségével!
+    const kinLink = LECTURE_ORDER.length > 0 ? curFolder + LECTURE_ORDER[0] + ".html" : "NEWTON_MECHANIKAJA.html";
+    const dinLink = LECTURE_ORDER.length > 19 ? curFolder + LECTURE_ORDER[19] + ".html" : "NEWTON_MECHANIKAJA.html";
+    const megLink = LECTURE_ORDER.length > 49 ? curFolder + LECTURE_ORDER[49] + ".html" : "NEWTON_MECHANIKAJA.html";
 
     return "<header class=\"global-header\">" +
         "<nav class=\"global-navbar\">" +
-            "<div class=\"nav-group\">" +
-                "<a href=\"" + pfx + "index.html\" class=\"navbar-brand\">Newton Mechanikája</a>" +
-                "<a href=\"" + pfx + "index.html\" class=\"nav-link\">Névjegy</a>" +
-                "<a href=\"" + pfx + "VEGEREDMENYEK.html\" class=\"nav-link\">Megoldások</a>" +
-            "</div>" +
+            // ASZTALI LOGO: Marad a helyén, de kap egy "desktop" osztályt, hogy mobilon elrejthessük
+            "<a href=\"" + pfx + "index.html\" class=\"navbar-brand navbar-brand-desktop\">Newton Mechanikája</a>" +
+            
+            // KÖZÉPSŐ LÉPTETŐ GOMBOK: Fixen és tisztán középen maradnak
             "<div class=\"nav-group-center\">" +
-                "<a href=\"" + prevLink + "\" class=\"nav-btn\">◀ Előző</a>" +
-                "<a href=\"" + pfx + "NEWTON_MECHANIKAJA.html\" class=\"nav-btn\">☰ Tartalom</a>" +
-                "<a href=\"" + nextLink + "\" class=\"nav-btn\">Következő ▶</a>" +
+                "<a href=\"" + prevLink + "\" class=\"nav-btn\" aria-label=\"Előző lecke\">" +
+                    "◀<span class=\"btn-text\"> Előző</span>" +
+                "</a>" +
+                "<a href=\"" + pfx + "NEWTON_MECHANIKAJA.html\" class=\"nav-btn\" aria-label=\"Tartalomjegyzék\">" +
+                    "☰<span class=\"btn-text\"> Tartalom</span>" +
+                "</a>" +
+                "<a href=\"" + nextLink + "\" class=\"nav-btn\" aria-label=\"Következő lecke\">" +
+                    "<span class=\"btn-text\">Következő </span>▶" +
+                "</a>" +
             "</div>" +
-            "<div class=\"nav-group\">" +
-                "<a href=\"" + pfx + "index.html\" class=\"nav-link\">Témakörök</a>" +
+            
+            // CSS HAMBURGER KAPCSOLÓK
+            "<input type=\"checkbox\" id=\"menu-toggle\" class=\"menu-checkbox\" />" +
+            "<label for=\"menu-toggle\" class=\"hamburger-icon\">" +
+                "<span></span><span></span><span></span>" +
+            "</label>" +
+            
+            // A KÖZÖS NAVIGÁCIÓS PANEL
+            "<div class=\"nav-links\">" +
+                // ÚJ MOBIL LOGO: Csak a leúszó panel tetején fog megjelenni mobilon!
+                "<a href=\"" + pfx + "index.html\" class=\"navbar-brand navbar-brand-mobile\">Newton Mechanikája</a>" +
+                
+                // Bal oldali menüpontok
+                "<div class=\"nav-group-left\">" +
+                    "<a href=\"" + pfx + "index.html\">Névjegy</a>" +
+                    "<a href=\"" + pfx + "VEGEREDMENYEK.html\" style=\"font-weight: 600;\">Megoldások</a>" +
+                "</div>" +
+                // Jobb oldali menüpontok
+                "<div class=\"nav-group-right\">" +
+                    "<div class=\"dropdown\">" +
+                        "<a href=\"#\" class=\"dropdown-trigger\" onclick=\"return false;\">" +
+                            "Témakörök <span style=\"font-size: 10px;\">▼</span>" +
+                        "</a>" +
+                        "<ul class=\"dropdown-menu\">" +
+                            "<li><a href=\"" + kinLink + "\">Kinematika</a></li>" +
+                            "<li><a href=\"" + dinLink + "\">Dinamika</a></li>" +
+                            "<li><a href=\"" + megLink + "\">Megmaradási Törvények</a></li>" +
+                        "</ul>" +
+                    "</div>" +
+                "</div>" +
             "</div>" +
         "</nav>" +
     "</header>";
