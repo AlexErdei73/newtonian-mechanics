@@ -60,7 +60,7 @@ Számításunk tehát világosan mutatja, hogy a tömegközéppont sebessége ne
 
 ### Feladat a példához
 
-Ferde, tökéletesen rugalmas ütközés során $0,1\text{ kg}$ tömegű testek ütköznek úgy, hogy az $5\text{ m/s}$ sebességű test az álló testnek ütközik, és $4\text{ m/s}$ sebességgel pattan le róla. Mekkora lesz a kezdetben nyugvó test sebessége az ütközés után? Mekkora szöget zárnak be az ütközés utáni sebességek az $5\text{ m/s}$ nagyságú sebességvektorral? Válasszuk ez utóbbi sebességet az $x$ tengely irányának. Mutassuk meg, hogy $v_{\text{TKP},x}$ és $v_{\text{TKP},y}$ sem változik meg az ütközés során!
+1. Ferde, tökéletesen rugalmas ütközés során $0,1\text{ kg}$ tömegű testek ütköznek úgy, hogy az $5\text{ m/s}$ sebességű test az álló testnek ütközik, és $4\text{ m/s}$ sebességgel pattan le róla. Mekkora lesz a kezdetben nyugvó test sebessége az ütközés után? Mekkora szöget zárnak be az ütközés utáni sebességek az $5\text{ m/s}$ nagyságú sebességvektorral? Válasszuk ez utóbbi sebességet az $x$ tengely irányának. Mutassuk meg, hogy $v_{\text{TKP},x}$ és $v_{\text{TKP},y}$ sem változik meg az ütközés során!
 
 ## 2. Példa
 
@@ -217,18 +217,18 @@ A csónak tehát $2,857\text{ m}$-t mozdul balra, míg a sétáló fiú $7,143\t
 
 ## Feladatok
 
-1. Három pontszerű testet helyezünk el egy koordináta-rendszerben.
+2. Három pontszerű testet helyezünk el egy koordináta-rendszerben.
     * $m_1 = 1\text{ kg}$, helye: $(0; 0)$
     * $m_2 = 2\text{ kg}$, helye: $(3; 0)$
     * $m_3 = 3\text{ kg}$, helye: $(0; 4)$
     Számítsa ki a rendszer tömegközéppontjának koordinátáit! Milyen távol van a tömegközéppont az origótól?
 
-2. Két jégkorong csúszik a jégen.
+3. Két jégkorong csúszik a jégen.
     * Az „A” korong ($2\text{ kg}$) sebessége $v_{\text{A}} = (4; 2)\text{ m/s}$.
     * A „B” korong ($3\text{ kg}$) sebessége $v_{\text{B}} = (-1; 4)\text{ m/s}$.
     Határozza meg a rendszer tömegközéppontjának sebességvektorát! Mekkora a tömegközéppont sebességének nagysága?
 
-3. Egy $200\text{ kg}$ tömegű, $6\text{ m}$ hosszú tutaj nyugszik a vízen. A tutaj két végén áll két ember: a bal végén Ali ($80\text{ kg}$), a jobb végén Béla ($60\text{ kg}$). Egyszerre indulnak el egymás felé, és a tutaj közepén találkoznak (a tutajhoz képest középen). Mennyit mozdult el a tutaj a vízhez képest, és milyen irányba, amíg a két ember találkozott? (A víz ellenállását hanyagoljuk el.)
+4. Egy $200\text{ kg}$ tömegű, $6\text{ m}$ hosszú tutaj nyugszik a vízen. A tutaj két végén áll két ember: a bal végén Ali ($80\text{ kg}$), a jobb végén Béla ($60\text{ kg}$). Egyszerre indulnak el egymás felé, és a tutaj közepén találkoznak (a tutajhoz képest középen). Mennyit mozdult el a tutaj a vízhez képest, és milyen irányba, amíg a két ember találkozott? (A víz ellenállását hanyagoljuk el.)
 
-4. Egy $0,5\text{ kg}$ tömegű fadarab úszik a vízen. Rajta ül egy $0,1\text{ kg}$ tömegű béka. A béka hirtelen vízszintesen elugrik a fadarabról, a parthoz képest $2\text{ m/s}$ sebességgel jobbra. Mekkora sebességgel és milyen irányba indul el a fadarab közvetlenül az ugrás után? (A rendszer kezdeti összlendülete nulla.)
+5. Egy $0,5\text{ kg}$ tömegű fadarab úszik a vízen. Rajta ül egy $0,1\text{ kg}$ tömegű béka. A béka hirtelen vízszintesen elugrik a fadarabról, a parthoz képest $2\text{ m/s}$ sebességgel jobbra. Mekkora sebességgel és milyen irányba indul el a fadarab közvetlenül az ugrás után? (A rendszer kezdeti összlendülete nulla.)
 

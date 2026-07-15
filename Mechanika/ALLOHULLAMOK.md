@@ -1,4 +1,4 @@
-# Állóhullámok
+# Állóhullámok *
 
 ## Egydimenziós hullámok visszaverődése
 

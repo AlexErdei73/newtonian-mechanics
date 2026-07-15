@@ -1,4 +1,4 @@
-# A szuperpozíció elve
+# A szuperpozíció elve *
 
 ## Hullámok szuperpozíciója
 

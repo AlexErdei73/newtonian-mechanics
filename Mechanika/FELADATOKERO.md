@@ -199,11 +199,11 @@ Mivel a test súlya megegyezik a kényszererővel ($F_s = K$), a lefelé gyorsul
 
 ### Gyakorló feladatok
 
-**1. Ember a liftben**
+**4. Ember a liftben**
 Egy $75\text{ kg}$ tömegű ember egy liftben áll, amely éppen elindul függőlegesen felfelé. A gyorsítási szakaszban a lift gyorsulása $1{,}5\text{ }\frac{\text{m}}{\text{s}^2}$. Mekkora $K$ kényszererővel nyomja a lift padlója az embert (azaz mekkora az ember súlya) ebben a szakaszban? Hogyan változik ez a súlyerő, ha a lift később állandó sebességgel halad tovább függőlegesen? ($g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$)
 
-**2. Betonelem emelése daruval**
+**5. Betonelem emelése daruval**
 Egy építkezésen a daru egy $400\text{ kg}$ tömegű betonelemet emel fel függőlegesen. A drótkötélben ébredő feszítő kényszererő nagysága $4500\text{ N}$. Mekkora gyorsulással indul el a betonelem felfelé a Földhöz képest? Mekkora magasságba emelkedik fel az első $3\text{ másodperc}$ alatt, ha álló helyzetből indult? ($g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$)
 
-**3. Rakétamodell indítása**
+**6. Rakétamodell indítása**
 Egy $0{,}5\text{ kg}$ tömegű kis rakétamodell szilárd hajtóanyagú motorja $10\text{ N}$ tolóerőt fejt ki függőlegesen felfelé az indítóállványon. Mekkora a rakéta gyorsulása az indítás pillanatában? Mekkora a rakétára ható erők eredője? (A mozgást gátló légellenállást ebben a kezdeti fázisban hanyagoljuk el, $g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}$).

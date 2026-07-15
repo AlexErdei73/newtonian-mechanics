@@ -1,4 +1,4 @@
-# Csatolt rezgések
+# Csatolt rezgések *
 
 ## Kísérlet
 

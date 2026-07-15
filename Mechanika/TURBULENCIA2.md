@@ -1,4 +1,4 @@
-# Kolmogorov K41 modellje az energiakaszkádra
+# Kolmogorov K41 modellje az energiakaszkádra *
 
 ## A modell története
 

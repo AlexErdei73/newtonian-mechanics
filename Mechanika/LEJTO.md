@@ -1,4 +1,4 @@
-# A lejtő
+# A lejtő *
 
 ## Az egyensúly feltétele
 

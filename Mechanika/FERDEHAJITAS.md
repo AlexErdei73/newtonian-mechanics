@@ -1,4 +1,4 @@
-# Ferde hajítás
+# Ferde hajítás *
 
 ## A derékszögű háromszög trigonometriája
 

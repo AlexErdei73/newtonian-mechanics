@@ -1,4 +1,4 @@
-# Forgási rezgések, torziós inga
+# Forgási rezgések
 
 ## Kísérletek
 

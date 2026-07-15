@@ -1,4 +1,4 @@
-# Lejtő súrlódással
+# Lejtő súrlódással *
 
 ## Tapadási erő a lejtőn
 

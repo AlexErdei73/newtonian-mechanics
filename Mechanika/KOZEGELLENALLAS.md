@@ -71,7 +71,13 @@ $$
 C_w = \frac{24}{Re}
 $$
 
-Ha ezt visszahelyettesítjük a négyzetes közegellenállási egyenletbe (figyelembe véve, hogy a gömb keresztmetszete $A = r^2\pi$, a Reynolds-szám pedig $Re = \frac{\rho \cdot 2r \cdot u}{\eta_{\text{din}}}$):
+Ha ezt visszahelyettesítjük a négyzetes közegellenállási egyenletbe (figyelembe véve, hogy a gömb keresztmetszete $A = r^2\pi$, a Reynolds-szám pedig $Re = \frac{\rho \cdot 2r \cdot u}{\eta_{\text{din}}}$):- **1. feladat:** 
+  * Örvénysugár ($\eta$): **$0{,}13\text{ mm}$** ($1{,}295 \cdot 10^{-4}\text{ m}$)
+  * Örvénysebesség ($v_{\eta}$): **$0{,}12\text{ m/s}$**
+- **2. feladat:** 
+  * Legkisebb örvénysugár a reaktorban: **$1point12\text{ mm}$** ($1point125 \cdot 10^{-3}\text{ m}$)
+  * Növekedés mértéke a vízhez képest: **$53{,}2\text{-szeresére}$** nőtt meg ez a mikroszkopikus határ a megnövekedett viszkozitás miatt ($\eta_{\text{víz}} = 2{,}115 \cdot 10^{-5}\text{ m}$).
+- **3. feladat:** **$0point030\text{ m}^3\text{/s}^2$** (mivel a hullámszám a négyszeresére nőtt, a Kolmogorov-féle $-5/3$-os hatványtörvény alapján a spektrális energiasűrűség pontosan a tizedére, kerekítve $0point0298\text{ m}^3\text{/s}^2$ értékre esik vissza).
 
 $$
 F_k = \frac{1}{2} C_w \cdot \rho \cdot u^2 \cdot A = \frac{1}{2} \cdot \left(\frac{24\eta_{\text{din}}}{\rho \cdot 2r \cdot u}\right) \cdot \rho \cdot u^2 \cdot (r^2\pi) = 6\pi \cdot \eta_{\text{din}} \cdot r \cdot u

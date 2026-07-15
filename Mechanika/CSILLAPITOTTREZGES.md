@@ -1,4 +1,4 @@
-# Csillapított rezgések
+# Csillapított rezgések *
 
 ## Szimulációk
 

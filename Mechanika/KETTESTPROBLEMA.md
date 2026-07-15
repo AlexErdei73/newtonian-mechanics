@@ -1,4 +1,4 @@
-# A kéttest-probléma
+# A kéttest-probléma *
 
 ## A probléma felvetése
 

@@ -1,4 +1,4 @@
-# Feladatok az egyensúlyra
+# Feladatok az egyensúlyra *
 
 ## Példák
 

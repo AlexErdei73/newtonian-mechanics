@@ -1,4 +1,4 @@
-# Egy nehéz feladat a forgómozgásra
+# Egy nehéz feladat a forgómozgásra *
 
 ## Példa
 

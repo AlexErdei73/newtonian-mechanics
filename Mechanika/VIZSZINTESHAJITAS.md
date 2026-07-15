@@ -1,4 +1,4 @@
-# Vízszintes hajítás
+# Vízszintes hajítás *
 
 ## Kísérlet
 

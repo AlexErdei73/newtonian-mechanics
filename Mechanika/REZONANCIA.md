@@ -1,4 +1,4 @@
-# A rezonancia
+# A rezonancia *
 
 ## Kísérlet
 
