@@ -4,61 +4,26 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>A viszkozitás</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="BERNOULLI.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="LAMINARISARAMLAS1.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="BERNOULLI.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="LAMINARISARAMLAS1.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#a-viszkozitás" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
 <h1 id="a-viszkozitás">A viszkozitás</h1>
 <h2 id="newtoni-folyadékok">Newtoni folyadékok</h2>
-<p>A belső súrlódást a viszkozitással jellemezzük. Mérése lamináris
-áramlási körülmények között történik, amikor a folyadékrétegek egymáson
-mintegy párhuzamosan „elcsúsznak”, a folyadék keveredése nélkül.</p>
-<p>Vegyünk egy olyan áramlást, amely az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mtext mathvariant="normal">-</mtext><mi>y</mi></mrow><annotation encoding="application/x-tex">x\text{-}y</annotation></semantics></math>
-síkkal párhuzamosan történik. A folyadékrétegek, amelyek egymáson
-elcsúsznak, a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>-tengelyre
-merőlegesek. Az áramlás iránya legyen az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-tengely,
-tehát csak az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
-sebességkomponens különbözzön nullától. A rétegeket a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>-koordináta
-jellemzi, és az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
-sebesség is a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>-koordináta
-függvénye.</p>
-<p>Ha két igen közeli réteg távolsága
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>z</mi></mrow><annotation encoding="application/x-tex">\Delta z</annotation></semantics></math>,
-és a sebességkülönbség a két réteg között
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">\Delta u</annotation></semantics></math>,
-akkor a rétegek az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
-felületükkel arányos,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
-irányú erőt fejtenek ki egymásra úgy, hogy ez a sebességkülönbséget
-igyekszik megszüntetni. Ekkor a felületegységre eső erő arányos az
-egységnyi hosszra eső sebességváltozással. Az arányossági tényező a
-viszkozitás:</p>
+<p>A belső súrlódást a viszkozitással jellemezzük. Mérése lamináris áramlási körülmények között történik, amikor a folyadékrétegek egymáson mintegy párhuzamosan „elcsúsznak”, a folyadék keveredése nélkül.</p>
+<p>Vegyünk egy olyan áramlást, amely az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mtext mathvariant="normal">-</mtext><mi>y</mi></mrow><annotation encoding="application/x-tex">x\text{-}y</annotation></semantics></math> síkkal párhuzamosan történik. A folyadékrétegek, amelyek egymáson elcsúsznak, a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>-tengelyre merőlegesek. Az áramlás iránya legyen az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-tengely, tehát csak az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math> sebességkomponens különbözzön nullától. A rétegeket a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>-koordináta jellemzi, és az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math> sebesség is a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>-koordináta függvénye.</p>
+<p>Ha két igen közeli réteg távolsága <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>z</mi></mrow><annotation encoding="application/x-tex">\Delta z</annotation></semantics></math>, és a sebességkülönbség a két réteg között <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">\Delta u</annotation></semantics></math>, akkor a rétegek az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> felületükkel arányos, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> irányú erőt fejtenek ki egymásra úgy, hogy ez a sebességkülönbséget igyekszik megszüntetni. Ekkor a felületegységre eső erő arányos az egységnyi hosszra eső sebességváltozással. Az arányossági tényező a viszkozitás:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>F</mi><mi>x</mi></msub><mi>A</mi></mfrac><mo>=</mo><mi>η</mi><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>u</mi></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>z</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 \frac{F_x}{A} = \eta \frac{\Delta u}{\Delta z}
 </annotation></semantics></math></p>
-<p>A viszkozitás jele
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
-(éta), egysége az egyenlet alapján
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">Pa</mtext><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\text{Pa}\cdot\text{s}</annotation></semantics></math>
-(Pascal-másodperc).</p>
+<p>A viszkozitás jele <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math> (éta), egysége az egyenlet alapján <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">Pa</mtext><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\text{Pa}\cdot\text{s}</annotation></semantics></math> (Pascal-másodperc).</p>
 <blockquote>
-<p><strong>Newtoni folyadékokra a viszkozitás a sebességtől függetlennek
-tekinthető, csak a hőmérséklet függvénye. A legtöbb folyadék és gáz az
-áramlások során Newtoni folyadéknak tekinthető.</strong></p>
+<p><strong>Newtoni folyadékokra a viszkozitás a sebességtől függetlennek tekinthető, csak a hőmérséklet függvénye. A legtöbb folyadék és gáz az áramlások során Newtoni folyadéknak tekinthető.</strong></p>
 </blockquote>
 <p><lite-youtube videoid="t3neqUhoDRA"></lite-youtube></p>
-<p>Mi a továbbiakban kizárólag Newtoni folyadékokkal fogunk
-foglalkozni.</p>
+<p>Mi a továbbiakban kizárólag Newtoni folyadékokkal fogunk foglalkozni.</p>
 <h2 id="viszkozitási-értékek">Viszkozitási értékek</h2>
 <table>
 <colgroup>
@@ -78,189 +43,67 @@ foglalkozni.</p>
 <tbody>
 <tr>
 <td style="text-align: left;"><strong>Víz</strong></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>00100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}00100\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>00055</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}00055\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>00028</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}00028\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>00100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}00100\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>00055</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}00055\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>00028</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}00028\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>5W-30 Motorolaj</strong></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>17500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}17500\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>04200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}04200\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>01100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}01100\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>17500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}17500\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>04200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}04200\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>01100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}01100\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Akácméz</strong></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>00000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">9{,}00000\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>40000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}40000\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>02000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}02000\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>00000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">9{,}00000\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>40000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}40000\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>02000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">0{,}02000\text{ Pa}\cdot\text{s}</annotation></semantics></math></td>
 </tr>
 </tbody>
 </table>
-<p>A táblázatból világosan látható, hogy a különböző Newtoni folyadékok
-viszkozitása rendkívül széles sávban mozoghat. A hőmérséklet
-emelkedésével az anyagok viszkozitása általában gyorsan csökken.</p>
-<h2 id="a-hidrodinamikai-hasonlóság-elve">A hidrodinamikai hasonlóság
-elve</h2>
-<p>Amikor egy áramlási jelenséget vizsgálunk – például egy új repülőgép
-szárnyát vagy egy autó aerodinamikáját –, a mérnökök ritkán építik meg
-azonnal a teljes méretű prototípust. Ehelyett kicsinyített modelleken,
-például szélcsatornában vagy kísérleti medencékben végeznek
-méréseket.</p>
-<p>Ahhoz azonban, hogy a kicsinyített modellen kapott eredmények
-(áramlási képek, erők) hajszálpontosan megegyezzenek a valóságos, teljes
-méretű rendszerben tapasztalható jelenségekkel, nem elég a geometriai
-hasonlóság (azonos alak). <strong>Hidrodinamikai hasonlóságra</strong>
-is szükség van.</p>
+<p>A táblázatból világosan látható, hogy a különböző Newtoni folyadékok viszkozitása rendkívül széles sávban mozoghat. A hőmérséklet emelkedésével az anyagok viszkozitása általában gyorsan csökken.</p>
+<h2 id="a-hidrodinamikai-hasonlóság-elve">A hidrodinamikai hasonlóság elve</h2>
+<p>Amikor egy áramlási jelenséget vizsgálunk – például egy új repülőgép szárnyát vagy egy autó aerodinamikáját –, a mérnökök ritkán építik meg azonnal a teljes méretű prototípust. Ehelyett kicsinyített modelleken, például szélcsatornában vagy kísérleti medencékben végeznek méréseket.</p>
+<p>Ahhoz azonban, hogy a kicsinyített modellen kapott eredmények (áramlási képek, erők) hajszálpontosan megegyezzenek a valóságos, teljes méretű rendszerben tapasztalható jelenségekkel, nem elég a geometriai hasonlóság (azonos alak). <strong>Hidrodinamikai hasonlóságra</strong> is szükség van.</p>
 <h3 id="reynolds-kísérlete">Reynolds kísérlete</h3>
 <p><lite-youtube videoid="6A8B05V4OzA"></lite-youtube><br />
-<em>(Kattintásra megnyíló videó: Reynolds történelmi tintaszálas
-kísérletének demonstrációja)</em></p>
-<p>A hidrodinamikai hasonlóság törvényét Osborne Reynolds fedezte fel
-1883-ban egy híres kísérlet segítségével. Egy víztartályból kiáramló,
-tiszta üvegcső bejáratánál egy vékony tölcséren keresztül színes
-festéket (tintát) fecskendezett az áramlás közepébe. A következőt
-tapasztalta:</p>
+<em>(Kattintásra megnyíló videó: Reynolds történelmi tintaszálas kísérletének demonstrációja)</em></p>
+<p>A hidrodinamikai hasonlóság törvényét Osborne Reynolds fedezte fel 1883-ban egy híres kísérlet segítségével. Egy víztartályból kiáramló, tiszta üvegcső bejáratánál egy vékony tölcséren keresztül színes festéket (tintát) fecskendezett az áramlás közepébe. A következőt tapasztalta:</p>
 <ol type="1">
-<li><strong>Alacsony sebességnél</strong> a tinta egy hajszálvékony,
-tökéletesen egyenes vonalban haladt végig az üvegcsövön. A
-folyadékrétegek egyáltalán nem keveredtek egymással. Ezt a rendezett
-áramlást <strong>lamináris áramlásnak</strong> nevezzük.</li>
-<li>Ahogy a csapot fokozatosan megnyitva <strong>növelte a
-sebességet</strong>, elért egy kritikus pontot, ahol a tintaszál
-hirtelen hullámozni kezdett, majd egy pillanat alatt teljesen
-szétrobbant, és kaotikusan megfestette a csőben lévő összes vizet. Ez a
-<strong>turbulens áramlás</strong>.</li>
+<li><strong>Alacsony sebességnél</strong> a tinta egy hajszálvékony, tökéletesen egyenes vonalban haladt végig az üvegcsövön. A folyadékrétegek egyáltalán nem keveredtek egymással. Ezt a rendezett áramlást <strong>lamináris áramlásnak</strong> nevezzük.</li>
+<li>Ahogy a csapot fokozatosan megnyitva <strong>növelte a sebességet</strong>, elért egy kritikus pontot, ahol a tintaszál hirtelen hullámozni kezdett, majd egy pillanat alatt teljesen szétrobbant, és kaotikusan megfestette a csőben lévő összes vizet. Ez a <strong>turbulens áramlás</strong>.</li>
 </ol>
 <h3 id="a-reynolds-szám">A Reynolds-szám</h3>
-<p>Reynolds dimenzióanalízissel (méretarány-elemzéssel) kereste meg azt
-az összefüggést, amely megjósolja ezt az átmenetet. Összegyűjtötte az
-áramlást befolyásoló fizikai jellemzőket: *
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>:
-az áramlási sebesség
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m/s</mtext><annotation encoding="application/x-tex">\text{m/s}</annotation></semantics></math>)
-*
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>:
-a cső átmérője
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m</mtext><annotation encoding="application/x-tex">\text{m}</annotation></semantics></math>)
-*
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>:
-a fluidum sűrűsége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msup><mtext mathvariant="normal">kg/m</mtext><mn>3</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\text{kg/m}^3\right)</annotation></semantics></math>
-*
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>:
-a dinamikus viszkozitás
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">Pa</mtext><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\text{Pa}\cdot\text{s}</annotation></semantics></math>)</p>
-<p>Azt vette észre, hogy ha ezeket a változókat az alábbi formában
-kombinálja, a mértékegységek teljesen kiejtik egymást. Az így kapott
-tiszta, dimenzió nélküli mennyiséget ma <strong>Reynolds-számnak
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">Re</annotation></semantics></math>)</strong>
-nevezzük:</p>
+<p>Reynolds dimenzióanalízissel (méretarány-elemzéssel) kereste meg azt az összefüggést, amely megjósolja ezt az átmenetet. Összegyűjtötte az áramlást befolyásoló fizikai jellemzőket: * <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>: az áramlási sebesség (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m/s</mtext><annotation encoding="application/x-tex">\text{m/s}</annotation></semantics></math>) * <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>: a cső átmérője (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m</mtext><annotation encoding="application/x-tex">\text{m}</annotation></semantics></math>) * <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>: a fluidum sűrűsége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msup><mtext mathvariant="normal">kg/m</mtext><mn>3</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\text{kg/m}^3\right)</annotation></semantics></math> * <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>: a dinamikus viszkozitás (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="normal">Pa</mtext><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\text{Pa}\cdot\text{s}</annotation></semantics></math>)</p>
+<p>Azt vette észre, hogy ha ezeket a változókat az alábbi formában kombinálja, a mértékegységek teljesen kiejtik egymást. Az így kapott tiszta, dimenzió nélküli mennyiséget ma <strong>Reynolds-számnak (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">Re</annotation></semantics></math>)</strong> nevezzük:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>=</mo><mfrac><mrow><mi>ρ</mi><mo>⋅</mo><mi>u</mi><mo>⋅</mo><mi>d</mi></mrow><mi>η</mi></mfrac></mrow><annotation encoding="application/x-tex">
 Re = \frac{\rho \cdot u \cdot d}{\eta}
 </annotation></semantics></math></p>
-<p>A kísérletek során kiderült, hogy a cső átmérőjétől vagy a víz
-hőmérsékletétől (viszkozitásától) függetlenül a tintaszál
-<em>mindig</em> pontosan ugyanannál a kritikus Reynolds-számnál szakadt
-el. Ez alapján megfogalmazhatjuk a hidrodinamikai hasonlóság elvét:</p>
+<p>A kísérletek során kiderült, hogy a cső átmérőjétől vagy a víz hőmérsékletétől (viszkozitásától) függetlenül a tintaszál <em>mindig</em> pontosan ugyanannál a kritikus Reynolds-számnál szakadt el. Ez alapján megfogalmazhatjuk a hidrodinamikai hasonlóság elvét:</p>
 <blockquote>
-<p><strong>Tetszőleges geometria esetén az áramlási képek hasonlóságának
-szükséges és elégséges feltétele – a geometriai hasonlóságon túlmenően
-–, hogy az áramlások Reynolds-száma megegyezzen.</strong></p>
+<p><strong>Tetszőleges geometria esetén az áramlási képek hasonlóságának szükséges és elégséges feltétele – a geometriai hasonlóságon túlmenően –, hogy az áramlások Reynolds-száma megegyezzen.</strong></p>
 </blockquote>
 <h3 id="magyarázat">Magyarázat</h3>
-<p>Bár Reynolds ezt kísérletileg mutatta ki, később a hidrodinamika
-alapegyenletei alapján összenyomhatatlan folyadékokra matematikailag is
-belátták az általános esetet. Ha a Reynolds-szám azonos, az áramlás
-jellege is hajszálpontosan ugyanaz lesz, legyen szó egy parányi csőről
-vagy egy óriási csatornáról.</p>
-<p>Az áramlások alapegyenlete (a Navier–Stokes-egyenlet) valójában nem
-más, mint <strong>Newton második törvényének
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">F = m \cdot a</annotation></semantics></math>)
-a folyadékokra felírt alakja</strong>, amely a nyomásból adódó erő és a
-mozgásból adódó gyorsulás mellett a belső súrlódási (viszkózus) erőket
-is figyelembe veszi.</p>
-<p>A súrlódó folyadék áramlásakor két hatás vetélkedik egymással.
-Egyrészt a folyadék tehetetlensége próbálja az áramlást destabilizálni
-és kialakítani a turbulenciát. Másrészt a folyadék belső súrlódása
-próbálja az áramlást lelassítani és stabilizálni. E két hatás aránya a
-Reynolds-szám. Amennyiben a Reynolds-szám kicsiny, a súrlódás
-megakadályozza a zavarok felerősödését, elnyomja az örvényképződést. Az
-áramlás lamináris lesz.</p>
-<p>Abban az esetben, amikor a Reynolds-szám magas, a súrlódás hatása
-elenyésző a tehetetlenséghez képest, így nem képes stabilizálni a
-felerősödő zavarokat. Örvények képződnek, amelyek le is válnak az
-akadályokról. Maga az örvényképződés csak súrlódó folyadékban
-lehetséges, de akkor fordul elő tömegesen, ha a súrlódás a
-tehetetlenséghez képest gyenge, és a tehetetlenség határozza meg főképp
-a folyadék mozgását.</p>
+<p>Bár Reynolds ezt kísérletileg mutatta ki, később a hidrodinamika alapegyenletei alapján összenyomhatatlan folyadékokra matematikailag is belátták az általános esetet. Ha a Reynolds-szám azonos, az áramlás jellege is hajszálpontosan ugyanaz lesz, legyen szó egy parányi csőről vagy egy óriási csatornáról.</p>
+<p>Az áramlások alapegyenlete (a Navier–Stokes-egyenlet) valójában nem más, mint <strong>Newton második törvényének (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>m</mi><mo>⋅</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">F = m \cdot a</annotation></semantics></math>) a folyadékokra felírt alakja</strong>, amely a nyomásból adódó erő és a mozgásból adódó gyorsulás mellett a belső súrlódási (viszkózus) erőket is figyelembe veszi.</p>
+<p>A súrlódó folyadék áramlásakor két hatás vetélkedik egymással. Egyrészt a folyadék tehetetlensége próbálja az áramlást destabilizálni és kialakítani a turbulenciát. Másrészt a folyadék belső súrlódása próbálja az áramlást lelassítani és stabilizálni. E két hatás aránya a Reynolds-szám. Amennyiben a Reynolds-szám kicsiny, a súrlódás megakadályozza a zavarok felerősödését, elnyomja az örvényképződést. Az áramlás lamináris lesz.</p>
+<p>Abban az esetben, amikor a Reynolds-szám magas, a súrlódás hatása elenyésző a tehetetlenséghez képest, így nem képes stabilizálni a felerősödő zavarokat. Örvények képződnek, amelyek le is válnak az akadályokról. Maga az örvényképződés csak súrlódó folyadékban lehetséges, de akkor fordul elő tömegesen, ha a súrlódás a tehetetlenséghez képest gyenge, és a tehetetlenség határozza meg főképp a folyadék mozgását.</p>
 <h3 id="gyakorlati-alkalmazások">Gyakorlati alkalmazások</h3>
 <ul>
-<li><strong>A szélcsatorna működése:</strong> Ha egy autó
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>:</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">1:10</annotation></semantics></math>
-arányú kicsinyített makettjét vizsgáljuk, a méret
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>)
-a tizedére csökkent. Ahhoz, hogy a Reynolds-szám – és így az áramlási
-kép is – megegyezzen a valódi autóéval, a szélcsatornában a levegő
-sebességét
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>)
-a tízszeresére kell növelnünk.</li>
+<li><strong>A szélcsatorna működése:</strong> Ha egy autó <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>:</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">1:10</annotation></semantics></math> arányú kicsinyített makettjét vizsgáljuk, a méret (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>) a tizedére csökkent. Ahhoz, hogy a Reynolds-szám – és így az áramlási kép is – megegyezzen a valódi autóéval, a szélcsatornában a levegő sebességét (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>) a tízszeresére kell növelnünk.</li>
 <li><strong>Az áramlás jellege csövekben:</strong>
 <ul>
-<li>Ha
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>&lt;</mo><mn>2300</mn></mrow><annotation encoding="application/x-tex">Re &lt; 2300</annotation></semantics></math>,
-a belső súrlódás minden apró áramlási zavart azonnal elfojt
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math>
-az áramlás <strong>lamináris</strong> marad.</li>
-<li>Ha
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>&gt;</mo><mn>4000</mn></mrow><annotation encoding="application/x-tex">Re &gt; 4000</annotation></semantics></math>,
-a súrlódás már képtelen elnyelni a zavarokat, az áramvonalak
-összeomlanak
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math>
-az áramlás <strong>turbulenssé</strong> válik.</li>
+<li>Ha <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>&lt;</mo><mn>2300</mn></mrow><annotation encoding="application/x-tex">Re &lt; 2300</annotation></semantics></math>, a belső súrlódás minden apró áramlási zavart azonnal elfojt <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math> az áramlás <strong>lamináris</strong> marad.</li>
+<li>Ha <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>&gt;</mo><mn>4000</mn></mrow><annotation encoding="application/x-tex">Re &gt; 4000</annotation></semantics></math>, a súrlódás már képtelen elnyelni a zavarokat, az áramvonalak összeomlanak <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>→</mo><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math> az áramlás <strong>turbulenssé</strong> válik.</li>
 </ul></li>
 </ul>
 <h3 id="példa">Példa</h3>
-<p>Egy autógyár egy új modell légellenállását szeretné tesztelni
-szélcsatornában. A valóságos autó hossza
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math>,
-és a városi utakon
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mtext mathvariant="normal">valódi</mtext></msub><mo>=</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_{\text{valódi}} = 20\text{ m/s}</annotation></semantics></math>
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>72</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">72\text{ km/h}</annotation></semantics></math>)
-sebességgel halad. A laboratóriumban a szélcsatorna méretei miatt egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>:</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">1:4</annotation></semantics></math>
-arányú, kicsinyített makettet helyeznek el (így a makett hossza
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mtext mathvariant="normal">modell</mtext></msub><mo>=</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">d_{\text{modell}} = 1\text{ m}</annotation></semantics></math>).
-A méréseket ugyanúgy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-os
-levegőben végzik, mint amilyenben a valódi autó is futni fog, így a
-sűrűség
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>)
-and a viszkozitás
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>)
-megegyezik a két esetben. Mekkora szélsebességet
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mtext mathvariant="normal">modell</mtext></msub><annotation encoding="application/x-tex">u_{\text{modell}}</annotation></semantics></math>)
-kell beállítani a szélcsatornában, hogy a makett körüli áramlási kép
-hidrodinamikailag teljesen hasonló legyen a valódi autóéhoz?</p>
-<p>A hidrodinamikai hasonlóság elve szerint a két rendszerben a
-Reynolds-számoknak meg kell egyezniük
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><msub><mi>e</mi><mtext mathvariant="normal">valódi</mtext></msub><mo>=</mo><mi>R</mi><msub><mi>e</mi><mtext mathvariant="normal">modell</mtext></msub></mrow><annotation encoding="application/x-tex">Re_{\text{valódi}} = Re_{\text{modell}}</annotation></semantics></math>):</p>
+<p>Egy autógyár egy új modell légellenállását szeretné tesztelni szélcsatornában. A valóságos autó hossza <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math>, és a városi utakon <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mtext mathvariant="normal">valódi</mtext></msub><mo>=</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_{\text{valódi}} = 20\text{ m/s}</annotation></semantics></math> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>72</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">72\text{ km/h}</annotation></semantics></math>) sebességgel halad. A laboratóriumban a szélcsatorna méretei miatt egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>:</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">1:4</annotation></semantics></math> arányú, kicsinyített makettet helyeznek el (így a makett hossza <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mtext mathvariant="normal">modell</mtext></msub><mo>=</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">d_{\text{modell}} = 1\text{ m}</annotation></semantics></math>). A méréseket ugyanúgy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-os levegőben végzik, mint amilyenben a valódi autó is futni fog, így a sűrűség (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>) and a viszkozitás (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>) megegyezik a két esetben. Mekkora szélsebességet (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mtext mathvariant="normal">modell</mtext></msub><annotation encoding="application/x-tex">u_{\text{modell}}</annotation></semantics></math>) kell beállítani a szélcsatornában, hogy a makett körüli áramlási kép hidrodinamikailag teljesen hasonló legyen a valódi autóéhoz?</p>
+<p>A hidrodinamikai hasonlóság elve szerint a két rendszerben a Reynolds-számoknak meg kell egyezniük (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><msub><mi>e</mi><mtext mathvariant="normal">valódi</mtext></msub><mo>=</mo><mi>R</mi><msub><mi>e</mi><mtext mathvariant="normal">modell</mtext></msub></mrow><annotation encoding="application/x-tex">Re_{\text{valódi}} = Re_{\text{modell}}</annotation></semantics></math>):</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>ρ</mi><mo>⋅</mo><msub><mi>u</mi><mtext mathvariant="normal">valódi</mtext></msub><mo>⋅</mo><msub><mi>d</mi><mtext mathvariant="normal">valódi</mtext></msub></mrow><mi>η</mi></mfrac><mo>=</mo><mfrac><mrow><mi>ρ</mi><mo>⋅</mo><msub><mi>u</mi><mtext mathvariant="normal">modell</mtext></msub><mo>⋅</mo><msub><mi>d</mi><mtext mathvariant="normal">modell</mtext></msub></mrow><mi>η</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \frac{\rho \cdot u_{\text{valódi}} \cdot d_{\text{valódi}}}{\eta} = \frac{\rho \cdot u_{\text{modell}} \cdot d_{\text{modell}}}{\eta}
 </annotation></semantics></math></p>
-<p>Mivel a fluidum (a levegő) mindkét esetben azonos, a sűrűséggel
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>)
-és a dinamikus viszkozitással
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>)
-egyszerűsíthetünk:</p>
+<p>Mivel a fluidum (a levegő) mindkét esetben azonos, a sűrűséggel (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ρ</mi><annotation encoding="application/x-tex">\rho</annotation></semantics></math>) és a dinamikus viszkozitással (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>) egyszerűsíthetünk:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mtext mathvariant="normal">valódi</mtext></msub><mo>⋅</mo><msub><mi>d</mi><mtext mathvariant="normal">valódi</mtext></msub><mo>=</mo><msub><mi>u</mi><mtext mathvariant="normal">modell</mtext></msub><mo>⋅</mo><msub><mi>d</mi><mtext mathvariant="normal">modell</mtext></msub></mrow><annotation encoding="application/x-tex">
 u_{\text{valódi}} \cdot d_{\text{valódi}} = u_{\text{modell}} \cdot d_{\text{modell}}
 </annotation></semantics></math></p>
@@ -268,63 +111,12 @@ u_{\text{valódi}} \cdot d_{\text{valódi}} = u_{\text{modell}} \cdot d_{\text{m
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mtext mathvariant="normal">modell</mtext></msub><mo>=</mo><msub><mi>u</mi><mtext mathvariant="normal">valódi</mtext></msub><mo>⋅</mo><mfrac><msub><mi>d</mi><mtext mathvariant="normal">valódi</mtext></msub><msub><mi>d</mi><mtext mathvariant="normal">modell</mtext></msub></mfrac><mo>=</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mo>⋅</mo><mfrac><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow></mfrac><mo>=</mo><mn>20</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>80</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 u_{\text{modell}} = u_{\text{valódi}} \cdot \frac{d_{\text{valódi}}}{d_{\text{modell}}} = 20\text{ m/s} \cdot \frac{4\text{ m}}{1\text{ m}} = 20 \cdot 4 = 80\text{ m/s}
 </annotation></semantics></math></p>
-<p>A szélcsatornában
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>80</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">80\text{ m/s}</annotation></semantics></math>
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>288</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">288\text{ km/h}</annotation></semantics></math>)
-sebességű áramlást kell biztosítani a hidrodinamikai hasonlóság
-eléréséhez. (Megjegyzés: Ez a sebesség a hangsebességnek mindössze a
-23%-a
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mtext mathvariant="normal">Mach </mtext><mspace width="0.333em"></mspace></mrow><mn>0</mn><mo>,</mo><mn>23</mn></mrow><annotation encoding="application/x-tex">\text{Mach } 0{,}23</annotation></semantics></math>),
-így a levegő áramlása a makett körül is teljes biztonsággal
-összenyomhatatlannak tekinthető, a Bernoulli-törvény és a
-Reynolds-modell hibátlanul érvényes).</p>
+<p>A szélcsatornában <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>80</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">80\text{ m/s}</annotation></semantics></math> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>288</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">288\text{ km/h}</annotation></semantics></math>) sebességű áramlást kell biztosítani a hidrodinamikai hasonlóság eléréséhez. (Megjegyzés: Ez a sebesség a hangsebességnek mindössze a 23%-a (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mtext mathvariant="normal">Mach </mtext><mspace width="0.333em"></mspace></mrow><mn>0</mn><mo>,</mo><mn>23</mn></mrow><annotation encoding="application/x-tex">\text{Mach } 0{,}23</annotation></semantics></math>), így a levegő áramlása a makett körül is teljes biztonsággal összenyomhatatlannak tekinthető, a Bernoulli-törvény és a Reynolds-modell hibátlanul érvényes).</p>
 <h2 id="feladatok">Feladatok</h2>
 <ol type="1">
-<li><p>Egy ipari csővezetékben
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-os
-víz áramlik
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u = 0{,}5\text{ m/s}</annotation></semantics></math>
-átlagsebességgel. A cső belső átmérője
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 10\text{ cm}</annotation></semantics></math>
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}1\text{ m}</annotation></semantics></math>).
-A táblázat alapján a víz viszkozitása ezen a hőmérsékleten
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>001</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 0{,}001\text{ Pa}\cdot\text{s}</annotation></semantics></math>,
-a sűrűsége pedig
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1000\text{ kg/m}^3</annotation></semantics></math>.
-Mekkora az áramlás Reynolds-száma? Lamináris vagy turbulens az áramlás a
-csőben?</p></li>
-<li><p>Egy laboratóriumi kísérletben egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 2\text{ cm}</annotation></semantics></math>
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>02</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}02\text{ m}</annotation></semantics></math>)
-átmérőjű vékony csőben akácmézet áramoltatnak
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-on,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u = 0{,}1\text{ m/s}</annotation></semantics></math>
-sebességgel. A méz sűrűsége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1400</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1400\text{ kg/m}^3</annotation></semantics></math>,
-a táblázat szerinti viszkozitása pedig
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>9</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 9\text{ Pa}\cdot\text{s}</annotation></semantics></math>.
-Mekkora a Reynolds-szám ebben az esetben? Hogyan változik a
-Reynolds-szám és az áramlás jellege, ha a mézet
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">100\text{ }^{\circ}\text{C}</annotation></semantics></math>-ra
-melegítjük fel (ahol a sűrűsége nem változik számottevően, de a
-viszkozitása lecsökken
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>02</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 0{,}02\text{ Pa}\cdot\text{s}</annotation></semantics></math>-ra),
-miközben a sebesség és az átmérő változatlan marad?</p></li>
-<li><p>Egy kisméretű tengeralattjáró prototípusát
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>:</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">1:10</annotation></semantics></math>
-arányú kicsinyített makettel tesztelik egy kísérleti vontatómedencében
-(így
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mtext mathvariant="normal">modell</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><mo>⋅</mo><msub><mi>d</mi><mtext mathvariant="normal">valódi</mtext></msub></mrow><annotation encoding="application/x-tex">d_{\text{modell}} = \frac{1}{10} \cdot d_{\text{valódi}}</annotation></semantics></math>).
-Mind a valódi jármű, mind a makett ugyanabban a sós vízben mozog (a
-sűrűség és a viszkozitás megegyezik). A valódi tengeralattjáró
-gazdaságos utazósebessége a tenger fenekén
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mtext mathvariant="normal">valódi</mtext></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_{\text{valódi}} = 1{,}5\text{ m/s}</annotation></semantics></math>
-(kb.
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">5{,}4\text{ km/h}</annotation></semantics></math>).
-Mekkora sebességgel
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mtext mathvariant="normal">modell</mtext></msub><annotation encoding="application/x-tex">u_{\text{modell}}</annotation></semantics></math>)
-kell vontatni a makettet a kísérleti medencében, hogy az áramvonalak és
-a leváló örvények szerkezete megegyezzen a valóságossal?</p></li>
+<li><p>Egy ipari csővezetékben <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-os víz áramlik <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u = 0{,}5\text{ m/s}</annotation></semantics></math> átlagsebességgel. A cső belső átmérője <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 10\text{ cm}</annotation></semantics></math> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}1\text{ m}</annotation></semantics></math>). A táblázat alapján a víz viszkozitása ezen a hőmérsékleten <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>001</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 0{,}001\text{ Pa}\cdot\text{s}</annotation></semantics></math>, a sűrűsége pedig <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1000\text{ kg/m}^3</annotation></semantics></math>. Mekkora az áramlás Reynolds-száma? Lamináris vagy turbulens az áramlás a csőben?</p></li>
+<li><p>Egy laboratóriumi kísérletben egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 2\text{ cm}</annotation></semantics></math> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>02</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}02\text{ m}</annotation></semantics></math>) átmérőjű vékony csőben akácmézet áramoltatnak <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-on, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u = 0{,}1\text{ m/s}</annotation></semantics></math> sebességgel. A méz sűrűsége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1400</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1400\text{ kg/m}^3</annotation></semantics></math>, a táblázat szerinti viszkozitása pedig <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>9</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 9\text{ Pa}\cdot\text{s}</annotation></semantics></math>. Mekkora a Reynolds-szám ebben az esetben? Hogyan változik a Reynolds-szám és az áramlás jellege, ha a mézet <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">100\text{ }^{\circ}\text{C}</annotation></semantics></math>-ra melegítjük fel (ahol a sűrűsége nem változik számottevően, de a viszkozitása lecsökken <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>02</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 0{,}02\text{ Pa}\cdot\text{s}</annotation></semantics></math>-ra), miközben a sebesség és az átmérő változatlan marad?</p></li>
+<li><p>Egy kisméretű tengeralattjáró prototípusát <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>:</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">1:10</annotation></semantics></math> arányú kicsinyített makettel tesztelik egy kísérleti vontatómedencében (így <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mtext mathvariant="normal">modell</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><mo>⋅</mo><msub><mi>d</mi><mtext mathvariant="normal">valódi</mtext></msub></mrow><annotation encoding="application/x-tex">d_{\text{modell}} = \frac{1}{10} \cdot d_{\text{valódi}}</annotation></semantics></math>). Mind a valódi jármű, mind a makett ugyanabban a sós vízben mozog (a sűrűség és a viszkozitás megegyezik). A valódi tengeralattjáró gazdaságos utazósebessége a tenger fenekén <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mtext mathvariant="normal">valódi</mtext></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_{\text{valódi}} = 1{,}5\text{ m/s}</annotation></semantics></math> (kb. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">5{,}4\text{ km/h}</annotation></semantics></math>). Mekkora sebességgel (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>u</mi><mtext mathvariant="normal">modell</mtext></msub><annotation encoding="application/x-tex">u_{\text{modell}}</annotation></semantics></math>) kell vontatni a makettet a kísérleti medencében, hogy az áramvonalak és a leváló örvények szerkezete megegyezzen a valóságossal?</p></li>
 </ol>
 </main>
 </body>

@@ -4,7 +4,7 @@
 
 ### Kísérlet
 
-[A hidraulikus gépek működése](https://youtube.com)
+[A hidraulikus gépek működése](https://www.youtube.com/watch?v=sgUMV7EtCkE)
 
 A kísérlet bemutatja, hogy mind a folyadékok, mind a gázok felveszik a tartóedény alakját, tehát önálló alakkal nem rendelkeznek, ellentétben a szilárd testekkel.
 
@@ -22,7 +22,7 @@ Lényeges különbség azonban, hogy míg a folyadékok térfogata hatalmas nyom
 
 ### Kísérlet
 
-[Pascal-buzogány](https://youtube.com)
+[Pascal-buzogány](https://www.youtube.com/watch?v=ZHL2OXGJm00)
 
 A kísérlet mutatja, hogy a dugattyúnál a folyadékra kifejtett nyomás a folyadékban minden irányban továbbterjed, és a kicsiny lyukakon a folyadék minden irányban egyformán áramlik ki.
 

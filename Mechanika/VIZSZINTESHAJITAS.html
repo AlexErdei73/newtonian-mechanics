@@ -4,67 +4,33 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>Vízszintes hajítás *</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="HAJITASOK.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="FERDEHAJITAS.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="HAJITASOK.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="FERDEHAJITAS.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#vízszintes-hajítás" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
-<h1 id="vízszintes-hajítás">Vízszintes hajítás</h1>
+<h1 id="vízszintes-hajítás">Vízszintes hajítás *</h1>
 <h2 id="kísérlet">Kísérlet</h2>
 <p><lite-youtube videoid="zMF4CD7i3hg"></lite-youtube></p>
 <h2 id="szimuláció">Szimuláció</h2>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#047e40be-950c-44e1-a808-e07095d3539d">Vízszintes
-hajítás interaktív szimulátor</a></p>
-<p>Mind az interaktív szimuláció, mind pedig a kísérleti videó szépen
-szemlélteti, hogy az álló helyzetből elejtett (szabadon eső) test
-függőleges irányú mozgása tökéletesen szinkronban történik a
-vízszintesen elhajított test függőleges mozgásával. Amennyiben a két
-testet azonos magasságból, pontosan egy időben indítjuk el, a függőleges
-pozíciójuk (magasságuk) a mozgás teljes tartama alatt, minden egyes
-időpillanatban hajszálpontosan megegyezik.</p>
-<h2 id="a-vízszintes-hajítás-képletei">A vízszintes hajítás
-képletei</h2>
-<p>Hajítsunk el egy testet vízszintes irányú
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
-kezdősebességgel a koordináta-rendszer origójából
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x_0 = 0</annotation></semantics></math>,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y_0 = 0</annotation></semantics></math>)!
-Tételezzük fel, hogy a légellenállás elhanyagolható, és a nehézségi
-gyorsulás értéke
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.
-A vízszintes
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-tengely
-mutasson a kezdősebesség irányába (balról jobbra), a függőleges
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-tengely
-pedig ezúttal mutasson egyenesen lefelé.</p>
-<p>A nehézségi gyorsulásvektor komponensei (mivel a gyorsulás
-függőlegesen lefelé mutat, és az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-tengelyünk
-is lefelé van irányítva):</p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#047e40be-950c-44e1-a808-e07095d3539d">Vízszintes hajítás interaktív szimulátor</a></p>
+<p>Mind az interaktív szimuláció, mind pedig a kísérleti videó szépen szemlélteti, hogy az álló helyzetből elejtett (szabadon eső) test függőleges irányú mozgása tökéletesen szinkronban történik a vízszintesen elhajított test függőleges mozgásával. Amennyiben a két testet azonos magasságból, pontosan egy időben indítjuk el, a függőleges pozíciójuk (magasságuk) a mozgás teljes tartama alatt, minden egyes időpillanatban hajszálpontosan megegyezik.</p>
+<h2 id="a-vízszintes-hajítás-képletei">A vízszintes hajítás képletei</h2>
+<p>Hajítsunk el egy testet vízszintes irányú <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math> kezdősebességgel a koordináta-rendszer origójából (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x_0 = 0</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y_0 = 0</annotation></semantics></math>)! Tételezzük fel, hogy a légellenállás elhanyagolható, és a nehézségi gyorsulás értéke <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>. A vízszintes <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-tengely mutasson a kezdősebesség irányába (balról jobbra), a függőleges <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-tengely pedig ezúttal mutasson egyenesen lefelé.</p>
+<p>A nehézségi gyorsulásvektor komponensei (mivel a gyorsulás függőlegesen lefelé mutat, és az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-tengelyünk is lefelé van irányítva):</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>a</mi><mo accent="true">→</mo></mover><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>a</mi><mi>x</mi></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>a</mi><mi>y</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mspace width="0.222em"></mspace><mi>g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
 \vec{a} = (a_x,\ a_y) = (0,\ g)
 </annotation></semantics></math></p>
-<p>A kezdősebesség-vektor komponensei (mivel a kezdősebesség tiszta
-vízszintes):</p>
+<p>A kezdősebesség-vektor komponensei (mivel a kezdősebesség tiszta vízszintes):</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mn>0</mn></msub><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>v</mi><mrow><mn>0</mn><mi>x</mi></mrow></msub><mo>,</mo><mspace width="0.222em"></mspace><msub><mi>v</mi><mrow><mn>0</mn><mi>y</mi></mrow></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>v</mi><mn>0</mn></msub><mo>,</mo><mspace width="0.222em"></mspace><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
 \vec{v}_0 = (v_{0x},\ v_{0y}) = (v_0,\ 0)
 </annotation></semantics></math></p>
-<p>Idézzük fel az egyenletesen változó mozgásra vonatkozó négyzetes
-úttörvényt általános alakban:</p>
+<p>Idézzük fel az egyenletesen változó mozgásra vonatkozó négyzetes úttörvényt általános alakban:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 s = v_0 \cdot t + \frac {a} {2} \cdot t^2
 </annotation></semantics></math></p>
-<p>Ahogy a korábbiakban megtanultuk, az összetett mozgások tárgyalásakor
-a megtett út
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>)
-helyébe a megfelelő elmozdulás-koordináta, a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
-helyére pedig a keresett tengelyirányú előjeles koordináták
-(komponensek) kerülnek.</p>
+<p>Ahogy a korábbiakban megtanultuk, az összetett mozgások tárgyalásakor a megtett út (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>) helyébe a megfelelő elmozdulás-koordináta, a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> helyére pedig a keresett tengelyirányú előjeles koordináták (komponensek) kerülnek.</p>
 <h3 id="a-vízszintes-mozgás">A vízszintes mozgás</h3>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><msub><mi>v</mi><mrow><mn>0</mn><mi>x</mi></mrow></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><msub><mi>a</mi><mi>x</mi></msub><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 x - x_0 = v_{0x} \cdot t + \frac {a_x} {2} \cdot t^2
@@ -75,10 +41,7 @@ x - 0 = v_0 \cdot t + \frac {0} {2} \cdot t^2
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
 x = v_0 \cdot t
 </annotation></semantics></math></p>
-<p>A test vízszintes irányban tehát semmilyen gyorsulást nem szenved,
-így az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-tengely
-mentén egyenes vonalú, egyenletes mozgást végez.</p>
+<p>A test vízszintes irányban tehát semmilyen gyorsulást nem szenved, így az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-tengely mentén egyenes vonalú, egyenletes mozgást végez.</p>
 <h3 id="a-függőleges-mozgás">A függőleges mozgás</h3>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>−</mo><msub><mi>y</mi><mn>0</mn></msub><mo>=</mo><msub><mi>v</mi><mrow><mn>0</mn><mi>y</mi></mrow></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><msub><mi>a</mi><mi>y</mi></msub><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 y - y_0 = v_{0y} \cdot t + \frac {a_y} {2} \cdot t^2
@@ -89,33 +52,12 @@ y - 0 = 0 \cdot t + \frac {g} {2} \cdot t^2
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mi>g</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 y = \frac {g} {2} \cdot t^2
 </annotation></semantics></math></p>
-<p>Láthatjuk, hogy az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-koordináta
-időbeli változása hajszálpontosan megegyezik a kezdősebesség nélkül
-elejtett, szabadon eső test által megtett úttal. Ha a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
-időtartam és a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
-nehézségi gyorsulás értéke megegyezik, akkor a két test függőleges
-elmozdulása is azonos
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">y = s</annotation></semantics></math>).
-Ezt a függetlenséget és szinkronitást figyeltük meg a kísérletben és a
-szimulációban is.</p>
+<p>Láthatjuk, hogy az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-koordináta időbeli változása hajszálpontosan megegyezik a kezdősebesség nélkül elejtett, szabadon eső test által megtett úttal. Ha a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> időtartam és a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> nehézségi gyorsulás értéke megegyezik, akkor a két test függőleges elmozdulása is azonos (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">y = s</annotation></semantics></math>). Ezt a függetlenséget és szinkronitást figyeltük meg a kísérletben és a szimulációban is.</p>
 <h3 id="példák">Példák</h3>
 <ol type="1">
-<li>Egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20{,}0\text{ m}</annotation></semantics></math>
-magas függőleges szakadék széléről vízszintesen elhajítunk egy követ
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">10{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
-kezdősebességgel. Mennyi idő múlva csapódik a kő a talajba? Milyen
-messzire jut vízszintesen a szakadék szélétől mérve? Számítsuk ki a kő
-pillanatnyi sebességének nagyságát a becsapódás pillanatában!</li>
+<li>Egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20{,}0\text{ m}</annotation></semantics></math> magas függőleges szakadék széléről vízszintesen elhajítunk egy követ <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">10{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math> kezdősebességgel. Mennyi idő múlva csapódik a kő a talajba? Milyen messzire jut vízszintesen a szakadék szélétől mérve? Számítsuk ki a kő pillanatnyi sebességének nagyságát a becsapódás pillanatában!</li>
 </ol>
-<p>A becsapódásig megtett függőleges út
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">y = 20{,}0\text{ m}</annotation></semantics></math>.
-Határozzuk meg az esés idejét, az ismeretlent
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-szel
-jelölve:</p>
+<p>A becsapódásig megtett függőleges út <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">y = 20{,}0\text{ m}</annotation></semantics></math>. Határozzuk meg az esés idejét, az ismeretlent <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-szel jelölve:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mi>g</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 y = \frac {g} {2} \cdot t^2
 </annotation></semantics></math></p>
@@ -128,29 +70,17 @@ y = \frac {g} {2} \cdot t^2
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>±</mi><mn>2</mn><mo>,</mo><mn>019</mn></mrow><annotation encoding="application/x-tex">
 x = \pm 2{,}019
 </annotation></semantics></math></p>
-<p>A negatív időértéket mint fizikailag értelmezhetetlent elvetjük, így
-a becsapódás a kidobást követően
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>02</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}02\text{ s}</annotation></semantics></math>
-múlva következik be.</p>
-<p>Számítsuk ki a kő által megtett vízszintes távolságot (a
-hajítástávolságot):</p>
+<p>A negatív időértéket mint fizikailag értelmezhetetlent elvetjük, így a becsapódás a kidobást követően <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>02</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}02\text{ s}</annotation></semantics></math> múlva következik be.</p>
+<p>Számítsuk ki a kő által megtett vízszintes távolságot (a hajítástávolságot):</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>=</mo><mn>10</mn><mo>,</mo><mn>0</mn><mo>⋅</mo><mn>2</mn><mo>,</mo><mn>019</mn><mo>≈</mo><mn>20</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
 x = v_0 \cdot t = 10{,}0 \cdot 2{,}019 \approx 20{,}2\text{ m}
 </annotation></semantics></math></p>
-<p>A kő vízszintesen
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20{,}2\text{ m}</annotation></semantics></math>
-messzire repül a szakadék falától.</p>
-<p>Mivel a vízszintes irányú gyorsuláskomponens nulla
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_x = 0</annotation></semantics></math>),
-a sebesség vízszintes komponense a mozgás során végig állandó marad:</p>
+<p>A kő vízszintesen <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20{,}2\text{ m}</annotation></semantics></math> messzire repül a szakadék falától.</p>
+<p>Mivel a vízszintes irányú gyorsuláskomponens nulla (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>x</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_x = 0</annotation></semantics></math>), a sebesség vízszintes komponense a mozgás során végig állandó marad:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>10</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">
 v_x = v_0 = 10{,}0\text{ }\frac {\text{m}} {\text{s}}
 </annotation></semantics></math></p>
-<p>Határozzuk meg a sebesség függőleges komponensét
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>y</mi></msub><annotation encoding="application/x-tex">v_y</annotation></semantics></math>)
-a becsapódás pillanatában, a gyorsulás definíciója alapján
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-szel
-jelölve az ismeretlent):</p>
+<p>Határozzuk meg a sebesség függőleges komponensét (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>y</mi></msub><annotation encoding="application/x-tex">v_y</annotation></semantics></math>) a becsapódás pillanatában, a gyorsulás definíciója alapján (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-szel jelölve az ismeretlent):</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>y</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mi>y</mi></msub><mo>−</mo><msub><mi>v</mi><mrow><mn>0</mn><mi>y</mi></mrow></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
 a_y = \frac {v_y - v_{0y}} {t}
 </annotation></semantics></math></p>
@@ -160,27 +90,15 @@ a_y = \frac {v_y - v_{0y}} {t}
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>⋅</mo><mn>2</mn><mo>,</mo><mn>019</mn><mo>≈</mo><mn>19</mn><mo>,</mo><mn>81</mn></mrow><annotation encoding="application/x-tex">
 x = 9{,}81 \cdot 2{,}019 \approx 19{,}81
 </annotation></semantics></math></p>
-<p>Tehát
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>y</mi></msub><mo>≈</mo><mn>19</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">v_y \approx 19{,}81\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>.</p>
-<p>A becsapódási sebességvektor tiszta nagyságát (hosszát) a derékszögű
-komponensekből a Pitagorasz-tétel segítségével kaphatjuk meg:</p>
+<p>Tehát <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>y</mi></msub><mo>≈</mo><mn>19</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">v_y \approx 19{,}81\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>.</p>
+<p>A becsapódási sebességvektor tiszta nagyságát (hosszát) a derékszögű komponensekből a Pitagorasz-tétel segítségével kaphatjuk meg:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><msubsup><mi>v</mi><mi>x</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>v</mi><mi>y</mi><mn>2</mn></msubsup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>10</mn><mo>,</mo><msup><mn>0</mn><mn>2</mn></msup><mo>+</mo><mn>19</mn><mo>,</mo><msup><mn>81</mn><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>100</mn><mo>+</mo><mn>392</mn><mo>,</mo><mn>44</mn></mrow></msqrt><mo>≈</mo><mn>22</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">
 v = \sqrt {v_x^2 + v_y^2} = \sqrt {10{,}0^2 + 19{,}81^2} = \sqrt{100 + 392{,}44} \approx 22{,}2\text{ }\frac {\text{m}} {\text{s}}
 </annotation></semantics></math></p>
 <ol start="2" type="1">
-<li>Egy puska csövét elhagyó lövedék kezdősebessége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">600\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>.
-Ha a fegyvert tökéletesen vízszintesen sütjük el, mennyit esik lefelé a
-golyó függőleges irányban, amíg eltalálja a tőle
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>150</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">150\text{ m}</annotation></semantics></math>
-távolságra elhelyezett céltárgyat? A légellenállás elhanyagolható, a
-nehézségi gyorsulás értéke
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.</li>
+<li>Egy puska csövét elhagyó lövedék kezdősebessége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">600\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>. Ha a fegyvert tökéletesen vízszintesen sütjük el, mennyit esik lefelé a golyó függőleges irányban, amíg eltalálja a tőle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>150</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">150\text{ m}</annotation></semantics></math> távolságra elhelyezett céltárgyat? A légellenállás elhanyagolható, a nehézségi gyorsulás értéke <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">9{,}81\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.</li>
 </ol>
-<p>Határozzuk meg először a lövedék repülési idejét a vízszintes,
-egyenletes mozgás szakaszából
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-szel
-jelölve az ismeretlent):</p>
+<p>Határozzuk meg először a lövedék repülési idejét a vízszintes, egyenletes mozgás szakaszából (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-szel jelölve az ismeretlent):</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
 x = v_0 \cdot t
 </annotation></semantics></math></p>
@@ -190,49 +108,19 @@ x = v_0 \cdot t
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac><mn>150</mn><mn>600</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>250</mn></mrow><annotation encoding="application/x-tex">
 x = \frac{150}{600} = 0{,}250
 </annotation></semantics></math></p>
-<p>A golyó repülési ideje pontosan
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>250</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 0{,}250\text{ s}</annotation></semantics></math>.</p>
-<p>Ezen idő alatt a függőleges szabadesésnek megfelelő esési
-magasság:</p>
+<p>A golyó repülési ideje pontosan <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>250</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 0{,}250\text{ s}</annotation></semantics></math>.</p>
+<p>Ezen idő alatt a függőleges szabadesésnek megfelelő esési magasság:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mi>g</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>9</mn><mo>,</mo><mn>81</mn></mrow><mn>2</mn></mfrac><mo>⋅</mo><mn>0</mn><mo>,</mo><msup><mn>250</mn><mn>2</mn></msup><mo>=</mo><mn>4</mn><mo>,</mo><mn>905</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>0625</mn><mo>≈</mo><mn>0</mn><mo>,</mo><mn>307</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
 y = \frac {g} {2} \cdot t^2 = \frac {9{,}81} {2} \cdot 0{,}250^2 = 4{,}905 \cdot 0{,}0625 \approx 0{,}307\text{ m}
 </annotation></semantics></math></p>
-<p>A lövedék a röppályája során kb.
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mo>,</mo><mn>7</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">30{,}7\text{ cm}</annotation></semantics></math>-t
-esik lefelé, vagyis a biztos találathoz pontosan ennyivel a céltárgy
-középpontja fölé kell irányítani a fegyver csövét.</p>
+<p>A lövedék a röppályája során kb. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mo>,</mo><mn>7</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">30{,}7\text{ cm}</annotation></semantics></math>-t esik lefelé, vagyis a biztos találathoz pontosan ennyivel a céltárgy középpontja fölé kell irányítani a fegyver csövét.</p>
 <h2 id="feladatok">Feladatok</h2>
 <ol type="1">
-<li>Egy teniszlabdát vízszintesen elhajítanak
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">15{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
-kezdősebességgel egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">10{,}0\text{ m}</annotation></semantics></math>
-magas torony tetejéről. Mennyi idő alatt éri el a labda a talajt, és
-milyen vízszintes távolságra jut a torony lábától mérve?</li>
-<li>Egy modern vadászpuska lövedéke vízszintesen hagyja el a csövet
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">500\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
-kezdősebességgel. Mennyi időre van szüksége a golyónak ahhoz, hogy
-függőleges irányban pontosan
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1{,}0\text{ m}</annotation></semantics></math>-t
-essen lefelé?</li>
-<li>Egy követ vízszintes irányban elhajítanak
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">20{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
-kezdősebességgel egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">15{,}0\text{ m}</annotation></semantics></math>
-mély, függőleges falú szakadék pereméről. Mennyi idő alatt csapódik be a
-kő a szakadék aljára, és mekkora lesz a becsapódási sebességének
-nagysága?</li>
-<li>Egy kislány vízszintesen eldob egy gumilabdát
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">12{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
-sebességgel egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">8{,}0\text{ m}</annotation></semantics></math>
-magas iskolaépület ablakából. Milyen messzire jut a labda vízszintes
-irányban a becsapódás pillanatáig az épület falától mérve?</li>
-<li>Egy tárgyat vízszintesen elhajítanak
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">25{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
-kezdősebességgel. Mennyi idő eltelte után éri el a test a pontosan
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">5{,}0\text{ m}</annotation></semantics></math>-es
-függőleges elmozdulást?</li>
+<li>Egy teniszlabdát vízszintesen elhajítanak <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">15{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math> kezdősebességgel egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">10{,}0\text{ m}</annotation></semantics></math> magas torony tetejéről. Mennyi idő alatt éri el a labda a talajt, és milyen vízszintes távolságra jut a torony lábától mérve?</li>
+<li>Egy modern vadászpuska lövedéke vízszintesen hagyja el a csövet <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">500\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math> kezdősebességgel. Mennyi időre van szüksége a golyónak ahhoz, hogy függőleges irányban pontosan <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1{,}0\text{ m}</annotation></semantics></math>-t essen lefelé?</li>
+<li>Egy követ vízszintes irányban elhajítanak <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">20{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math> kezdősebességgel egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">15{,}0\text{ m}</annotation></semantics></math> mély, függőleges falú szakadék pereméről. Mennyi idő alatt csapódik be a kő a szakadék aljára, és mekkora lesz a becsapódási sebességének nagysága?</li>
+<li>Egy kislány vízszintesen eldob egy gumilabdát <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">12{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math> sebességgel egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">8{,}0\text{ m}</annotation></semantics></math> magas iskolaépület ablakából. Milyen messzire jut a labda vízszintes irányban a becsapódás pillanatáig az épület falától mérve?</li>
+<li>Egy tárgyat vízszintesen elhajítanak <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">25{,}0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math> kezdősebességgel. Mennyi idő eltelte után éri el a test a pontosan <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">5{,}0\text{ m}</annotation></semantics></math>-es függőleges elmozdulást?</li>
 </ol>
 </main>
 </body>

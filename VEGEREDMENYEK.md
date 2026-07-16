@@ -26,7 +26,7 @@
 - **9. feladat:** $4{,}2\text{ cm}$ (vagy $0{,}042\text{ m}$)
 - **10. feladat:** $1\text{ kg}$ és $1000\text{ g}$
 
-### Skalár- és vektormennyiségek
+### Vektor- és skalármennyiségek
 - **1. feladat:** $40\text{ m}$ kelet felé
 - **2. feladat:** $30\text{ m}$ észak felé
 - **3. feladat:** $15\text{ m}$ (a derékszögű háromszög átfogója)
@@ -673,7 +673,7 @@
   * Strouhal-szám: **$0{,}3$** (mivel $St = \frac{f \cdot d}{u} = \frac{6 \cdot 0{,}1}{2}$).
   * Optimalizáció: **Igen, a leginkább energiatakarékos zónában van**. A hidrobionikai kutatások kimutatták, hogy a halak és tengeri emlősök úszása pontosan a $0{,}25 < St < 0point35$ közötti tartományban éri el a maximális propulziós hatásfokot.
 
-### # Kolmogorov K41 modellje az energiakaszkádra *
+### Kolmogorov K41 modellje az energiakaszkádra *
 - **1. feladat:** 
   * Örvénysugár ($\eta$): **$0{,}13\text{ mm}$** ($1{,}295 \cdot 10^{-4}\text{ m}$)
   * Örvénysebesség ($v_{\eta}$): **$0{,}12\text{ m/s}$**

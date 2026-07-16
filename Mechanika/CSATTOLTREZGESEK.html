@@ -4,93 +4,48 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>Csatolt rezgések *</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="FORGASIREZGESEK.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="HULLAMOK.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="FORGASIREZGESEK.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="HULLAMOK.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#csatolt-rezgések" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
-<h1 id="csatolt-rezgések">Csatolt rezgések</h1>
+<h1 id="csatolt-rezgések">Csatolt rezgések *</h1>
 <h2 id="kísérlet">Kísérlet</h2>
 <p><lite-youtube videoid="71qpMFz4QPU" short></lite-youtube></p>
 <h2 id="szimuláció">Szimuláció</h2>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#b1063662-b2d3-414e-92b8-83432592bea3">Csatolt
-rezgések</a></p>
-<p>A szimuláció esetében nagyon tisztán látható a kísérletben is
-bemutatott jelenség. A különbség az, hogy miközben a kísérletben három
-egyforma rugó szerepel, itt a középső rugó kifejezetten gyenge. Tehát
-két szimmetrikus, egyenként külső rugóra kötött, rezgésre képes test
-össze van kötve egy harmadik, igen gyenge rugóval, ami által egy laza
-csatolást létesítünk a két tömegpont között.</p>
-<p>A szimuláció párhuzamosan mutatja be a rezgő rendszer úgynevezett
-normálrezgéseit (sajátrezgési módusait). Ezekből most kettő van, mivel a
-rendszernek két szabadsági foka (koordinátája) van. Az első test
-kitérése és a második test kitérése a rendszer koordinátái, amelyek
-időben változhatnak. Az első normálrezgés esetén a testek azonos
-fázisban rezegnek, mindkettő ugyanazzal a frekvenciával. A második
-normálrezgés esetén a két test ellentétes fázisban rezeg, szintén
-megegyező frekvenciával. A második normálmódus frekvenciája nagyobb,
-mint az első normálrezgésé, ami a későbbiekben lényeges lesz. Ezek a
-frekvenciák a rendszer rezonanciafrekvenciái.</p>
-<p>Ha bármely pillanatban megállítjuk a szimulációt, megállapíthatjuk,
-hogy az első normálrezgés esetén az első test előjeles kitérését
-összeadva a második normálrezgésnél kapott első test-kitéréssel,
-pontosan megkapjuk az első test kitérését a harmadik, kombinált esetben
-(amely önmagában nem normálrezgés). Ezt ellenőrizzük is!</p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#b1063662-b2d3-414e-92b8-83432592bea3">Csatolt rezgések</a></p>
+<p>A szimuláció esetében nagyon tisztán látható a kísérletben is bemutatott jelenség. A különbség az, hogy miközben a kísérletben három egyforma rugó szerepel, itt a középső rugó kifejezetten gyenge. Tehát két szimmetrikus, egyenként külső rugóra kötött, rezgésre képes test össze van kötve egy harmadik, igen gyenge rugóval, ami által egy laza csatolást létesítünk a két tömegpont között.</p>
+<p>A szimuláció párhuzamosan mutatja be a rezgő rendszer úgynevezett normálrezgéseit (sajátrezgési módusait). Ezekből most kettő van, mivel a rendszernek két szabadsági foka (koordinátája) van. Az első test kitérése és a második test kitérése a rendszer koordinátái, amelyek időben változhatnak. Az első normálrezgés esetén a testek azonos fázisban rezegnek, mindkettő ugyanazzal a frekvenciával. A második normálrezgés esetén a két test ellentétes fázisban rezeg, szintén megegyező frekvenciával. A második normálmódus frekvenciája nagyobb, mint az első normálrezgésé, ami a későbbiekben lényeges lesz. Ezek a frekvenciák a rendszer rezonanciafrekvenciái.</p>
+<p>Ha bármely pillanatban megállítjuk a szimulációt, megállapíthatjuk, hogy az első normálrezgés esetén az első test előjeles kitérését összeadva a második normálrezgésnél kapott első test-kitéréssel, pontosan megkapjuk az első test kitérését a harmadik, kombinált esetben (amely önmagában nem normálrezgés). Ezt ellenőrizzük is!</p>
 <h3 id="példa">Példa</h3>
-<p>A szimulációt megállítottuk a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>10</mn><mo>,</mo><mn>7688</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">t = 10,7688\ \text{s}</annotation></semantics></math>
-időpillanatban. A szimulációban a 9-es test
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
-koordinátáját kell leolvasnunk, majd abból kivonva az egyensúlyi
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">2\ \text{m}</annotation></semantics></math>-t,
-megkapjuk az 1-es test kitérését az I. normálmódusban:</p>
+<p>A szimulációt megállítottuk a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>10</mn><mo>,</mo><mn>7688</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">t = 10,7688\ \text{s}</annotation></semantics></math> időpillanatban. A szimulációban a 9-es test <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> koordinátáját kell leolvasnunk, majd abból kivonva az egyensúlyi <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mspace width="0.222em"></mspace><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">2\ \text{m}</annotation></semantics></math>-t, megkapjuk az 1-es test kitérését az I. normálmódusban:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mtext mathvariant="normal">I</mtext><mo>,</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>8754</mn><mo>−</mo><mn>2</mn><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>1246</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
 x_{\text{I},1} = 1,8754 - 2 = -0,1246\text{ m}
 </annotation></semantics></math></p>
-<p>A második normálmódusban hasonlóan kapjuk meg az 1-es test kitérését,
-csak most a szimulációban az 5-ös test
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
-koordinátáját olvassuk le:</p>
+<p>A második normálmódusban hasonlóan kapjuk meg az 1-es test kitérését, csak most a szimulációban az 5-ös test <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> koordinátáját olvassuk le:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mtext mathvariant="normal">II</mtext><mo>,</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>2</mn><mo>,</mo><mn>4903</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>4903</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
 x_{\text{II},1} = 2,4903 - 2 = 0,4903\text{ m}
 </annotation></semantics></math></p>
-<p>Végül az 1-es test kitérése a kombinált rezgésben a szimulációban
-közvetlenül az 1-es test
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
-koordinátájából határozható meg:</p>
+<p>Végül az 1-es test kitérése a kombinált rezgésben a szimulációban közvetlenül az 1-es test <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> koordinátájából határozható meg:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mo>,</mo><mn>3657</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>3657</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
 x_1 = 2,3657 - 2 = 0,3657\text{ m}
 </annotation></semantics></math></p>
-<p>Now már valóban láthatjuk, hogy az alábbi szuperpozíciós összefüggés
-érvényes a kiválasztott pillanatban:</p>
+<p>Now már valóban láthatjuk, hogy az alábbi szuperpozíciós összefüggés érvényes a kiválasztott pillanatban:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><msub><mi>x</mi><mrow><mtext mathvariant="normal">I</mtext><mo>,</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>x</mi><mrow><mtext mathvariant="normal">II</mtext><mo>,</mo><mn>1</mn></mrow></msub><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>1246</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>4903</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>3657</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
 x_1 = x_{\text{I},1} + x_{\text{II},1} = -0,1246 + 0,4903 = 0,3657\text{ m}
 </annotation></semantics></math></p>
-<p>Ez az összefüggés az adott kezdeti feltételek esetén kialakuló
-rezgésre bármely pillanatban érvényes. Hasonló összefüggés igaz a 2-es
-testre is:</p>
+<p>Ez az összefüggés az adott kezdeti feltételek esetén kialakuló rezgésre bármely pillanatban érvényes. Hasonló összefüggés igaz a 2-es testre is:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><msub><mi>x</mi><mrow><mtext mathvariant="normal">I</mtext><mo>,</mo><mn>2</mn></mrow></msub><mo>+</mo><msub><mi>x</mi><mrow><mtext mathvariant="normal">II</mtext><mo>,</mo><mn>2</mn></mrow></msub></mrow><annotation encoding="application/x-tex">
 x_2 = x_{\text{I},2} + x_{\text{II},2}
 </annotation></semantics></math></p>
-<p>Ezeknek az összefüggéseknek a bizonyítását most nem végezzük el.
-Ennek oka, hogy ehhez a csatolt differenciálegyenlet-rendszert kellene
-megoldanunk, amely számítást meghagyjuk a felsőbb matematikai ismeretek
-elsajátítása utánra.</p>
+<p>Ezeknek az összefüggéseknek a bizonyítását most nem végezzük el. Ennek oka, hogy ehhez a csatolt differenciálegyenlet-rendszert kellene megoldanunk, amely számítást meghagyjuk a felsőbb matematikai ismeretek elsajátítása utánra.</p>
 <h2 id="a-lebegés">A lebegés</h2>
 <h3 id="kísérletek">Kísérletek</h3>
 <p><lite-youtube videoid="_bV_mEakQ7o" short></lite-youtube></p>
 <p><lite-youtube videoid="e2YRtEMvFiQ"></lite-youtube></p>
-<h3 id="azonos-irányú-rezgések-összetétele">Azonos irányú rezgések
-összetétele</h3>
-<p>Legyen az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
-kitérés két harmonikus rezgés,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mtext mathvariant="normal">I</mtext></msub><annotation encoding="application/x-tex">x_{\text{I}}</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mtext mathvariant="normal">II</mtext></msub><annotation encoding="application/x-tex">x_{\text{II}}</annotation></semantics></math>
-összege. Ezek frekvenciája kismértékben eltérhet egymástól.</p>
+<h3 id="azonos-irányú-rezgések-összetétele">Azonos irányú rezgések összetétele</h3>
+<p>Legyen az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> kitérés két harmonikus rezgés, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mtext mathvariant="normal">I</mtext></msub><annotation encoding="application/x-tex">x_{\text{I}}</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mtext mathvariant="normal">II</mtext></msub><annotation encoding="application/x-tex">x_{\text{II}}</annotation></semantics></math> összege. Ezek frekvenciája kismértékben eltérhet egymástól.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mtext mathvariant="normal">I</mtext></msub><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
 x_{\text{I}} = A \cos(\omega_{\text{I}} t)
 </annotation></semantics></math></p>
@@ -101,50 +56,32 @@ x_{\text{II}} = A \cos(\omega_{\text{II}} t)
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mtext mathvariant="normal">I</mtext></msub><mo>+</mo><msub><mi>x</mi><mtext mathvariant="normal">II</mtext></msub></mrow><annotation encoding="application/x-tex">
 x = x_{\text{I}} + x_{\text{II}}
 </annotation></semantics></math></p>
-<p>Ahhoz, hogy ezt szorzat alakká alakíthassuk, szükségünk lesz a jól
-ismert trigonometriai addíciós tételekre:</p>
+<p>Ahhoz, hogy ezt szorzat alakká alakíthassuk, szükségünk lesz a jól ismert trigonometriai addíciós tételekre:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>β</mi><mo>−</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">
 \cos(\alpha + \beta) = \cos \alpha \cos \beta - \sin \alpha \sin \beta
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo>−</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>β</mi><mo>+</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">
 \cos(\alpha - \beta) = \cos \alpha \cos \beta + \sin \alpha \sin \beta
 </annotation></semantics></math></p>
-<p>Ha most ezt a két azonosságot összeadjuk, megkapjuk a szükséges
-összefüggést:</p>
+<p>Ha most ezt a két azonosságot összeadjuk, megkapjuk a szükséges összefüggést:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo>−</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">
 \cos(\alpha + \beta) + \cos(\alpha - \beta) = 2 \cos \alpha \cos \beta
 </annotation></semantics></math></p>
-<p>Határozzuk meg a zárójelben szereplő
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
-<strong>fázisszögeket</strong> úgy, hogy segítségükkel felírhassuk a két
-rezgésünk időfüggő argumentumát:</p>
+<p>Határozzuk meg a zárójelben szereplő <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math> <strong>fázisszögeket</strong> úgy, hogy segítségükkel felírhassuk a két rezgésünk időfüggő argumentumát:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>+</mo><mi>β</mi><mo>=</mo><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mi>t</mi></mrow><annotation encoding="application/x-tex">
 \alpha + \beta = \omega_{\text{II}} t
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>−</mo><mi>β</mi><mo>=</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub><mi>t</mi></mrow><annotation encoding="application/x-tex">
 \alpha - \beta = \omega_{\text{I}} t
 </annotation></semantics></math></p>
-<p>Ezeket az egyenleteket összeadva, illetve egymásból kivonva megkapjuk
-az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
-fázisszögek tiszta időfüggő alakját:</p>
+<p>Ezeket az egyenleteket összeadva, illetve egymásból kivonva megkapjuk az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math> fázisszögek tiszta időfüggő alakját:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mfrac><mrow><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mo>+</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub></mrow><mn>2</mn></mfrac><mi>t</mi></mrow><annotation encoding="application/x-tex">
 \alpha = \frac{\omega_{\text{II}} + \omega_{\text{I}}}{2} t
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mfrac><mrow><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mo>−</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub></mrow><mn>2</mn></mfrac><mi>t</mi></mrow><annotation encoding="application/x-tex">
 \beta = \frac{\omega_{\text{II}} - \omega_{\text{I}}}{2} t
 </annotation></semantics></math></p>
-<p>Látható, hogy az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
-kifejezések szögek, amelyek egy-egy körfrekvencia-jellegű tag és az idő
-szorzataként állnak elő. Ezeket visszahelyettesítve a szuperpozíció
-egyenletébe:</p>
+<p>Látható, hogy az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math> kifejezések szögek, amelyek egy-egy körfrekvencia-jellegű tag és az idő szorzataként állnak elő. Ezeket visszahelyettesítve a szuperpozíció egyenletébe:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mtext mathvariant="normal">I</mtext></msub><mo>+</mo><msub><mi>x</mi><mtext mathvariant="normal">II</mtext></msub><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
 x = x_{\text{I}} + x_{\text{II}} = A \cos(\omega_{\text{I}} t) + A \cos(\omega_{\text{II}} t) = A(\cos(\omega_{\text{I}} t) + \cos(\omega_{\text{II}} t))
 </annotation></semantics></math></p>
@@ -155,40 +92,11 @@ x = 2A \cos \alpha \cos \beta
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mo>+</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub></mrow><mn>2</mn></mfrac><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mo>−</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub></mrow><mn>2</mn></mfrac><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
 x = 2A \cos\left(\frac{\omega_{\text{II}} + \omega_{\text{I}}}{2} t\right) \cos\left(\frac{\omega_{\text{II}} - \omega_{\text{I}}}{2} t\right)
 </annotation></semantics></math></p>
-<p>Ez az eredő rezgés egy gyors, a két körfrekvencia átlagával
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mo>+</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub></mrow><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{\omega_{\text{II}} + \omega_{\text{I}}}{2}</annotation></semantics></math>)
-jellemezhető oszcilláció, amelynek az amplitúdója egy jóval lassabb
-frekvenciával, a különbségi körfrekvencia felével
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mo>−</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub></mrow><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{\omega_{\text{II}} - \omega_{\text{I}}}{2}</annotation></semantics></math>)
-lüktet (modulálódik), pontosan úgy, ahogy a kísérletekben észleltük.</p>
-<h3 id="lebegés-a-rezonanciakísérletnél">Lebegés a
-rezonanciakísérletnél</h3>
-<p>Ezt a jelenséget már megfigyelhettük, amikor a kényszerrezgéseket és
-a rezonanciát vizsgáltuk. Ott is fellépett a lebegés, amikor a
-kényszererő frekvenciája közel megegyezett a rendszer
-sajátfrekvenciájával, de nem volt teljesen egyenlő vele. Ennek oka, hogy
-a kezdeti feltételektől függően mindig gerjesztődik a rendszer saját,
-csillapodó szabadrezgése is, és ez adódik össze a külső
-kényszerrezgessel. A lebegés a valóságban ott idővel elhal, mivel a
-szabadrezgés a súrlódás miatt időben csillapodó, így elegendően hosszú
-idő után már csak a tiszta kényszerrezgés marad meg. Az ilyen átmeneti,
-elhaló jelenségeket a fizikában <em>tranziensnek</em> nevezzük. Tehát a
-rezonanciakísérletnél tapasztalható lebegés egy tranziens folyamat.</p>
+<p>Ez az eredő rezgés egy gyors, a két körfrekvencia átlagával (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mo>+</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub></mrow><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{\omega_{\text{II}} + \omega_{\text{I}}}{2}</annotation></semantics></math>) jellemezhető oszcilláció, amelynek az amplitúdója egy jóval lassabb frekvenciával, a különbségi körfrekvencia felével (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mo>−</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub></mrow><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{\omega_{\text{II}} - \omega_{\text{I}}}{2}</annotation></semantics></math>) lüktet (modulálódik), pontosan úgy, ahogy a kísérletekben észleltük.</p>
+<h3 id="lebegés-a-rezonanciakísérletnél">Lebegés a rezonanciakísérletnél</h3>
+<p>Ezt a jelenséget már megfigyelhettük, amikor a kényszerrezgéseket és a rezonanciát vizsgáltuk. Ott is fellépett a lebegés, amikor a kényszererő frekvenciája közel megegyezett a rendszer sajátfrekvenciájával, de nem volt teljesen egyenlő vele. Ennek oka, hogy a kezdeti feltételektől függően mindig gerjesztődik a rendszer saját, csillapodó szabadrezgése is, és ez adódik össze a külső kényszerrezgessel. A lebegés a valóságban ott idővel elhal, mivel a szabadrezgés a súrlódás miatt időben csillapodó, így elegendően hosszú idő után már csak a tiszta kényszerrezgés marad meg. Az ilyen átmeneti, elhaló jelenségeket a fizikában <em>tranziensnek</em> nevezzük. Tehát a rezonanciakísérletnél tapasztalható lebegés egy tranziens folyamat.</p>
 <h2 id="a-szimuláció-magyarázata">A szimuláció magyarázata</h2>
-<p>A szimulációban az amplitúdó
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">A = 0,5\text{ m}</annotation></semantics></math>.
-Az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><annotation encoding="application/x-tex">\omega_{\text{II}}</annotation></semantics></math>
-and
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub><annotation encoding="application/x-tex">\omega_{\text{I}}</annotation></semantics></math>
-körfrekvenciák szintén meghatározhatók a mechanikai adatokból. A két
-szélső rugó direkciós ereje
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D_1 = 0,5\text{ N/m}</annotation></semantics></math>,
-a középső csatoló rugóé
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>05</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D_2 = 0,05\text{ N/m}</annotation></semantics></math>.
-A rezgő testek tömege egyenként
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 0,2\text{ kg}</annotation></semantics></math>.
-Nézzük az 1-es test mozgását!</p>
+<p>A szimulációban az amplitúdó <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">A = 0,5\text{ m}</annotation></semantics></math>. Az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><annotation encoding="application/x-tex">\omega_{\text{II}}</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub><annotation encoding="application/x-tex">\omega_{\text{I}}</annotation></semantics></math> körfrekvenciák szintén meghatározhatók a mechanikai adatokból. A két szélső rugó direkciós ereje <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D_1 = 0,5\text{ N/m}</annotation></semantics></math>, a középső csatoló rugóé <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>05</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D_2 = 0,05\text{ N/m}</annotation></semantics></math>. A rezgő testek tömege egyenként <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 0,2\text{ kg}</annotation></semantics></math>. Nézzük az 1-es test mozgását!</p>
 <p>A tiszta normálmódusok egyenletei:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mrow><mtext mathvariant="normal">I</mtext><mo>,</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>x</mi><mrow><mtext mathvariant="normal">I</mtext><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
 x_{\text{I},1} = x_{\text{I},2} = A \cos(\omega_{\text{I}} t)
@@ -200,34 +108,18 @@ x_{\text{II},1} = -x_{\text{II},2} = A \cos(\omega_{\text{II}} t)
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mi>x</mi><mrow><mtext mathvariant="normal">I</mtext><mo>,</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>x</mi><mrow><mtext mathvariant="normal">II</mtext><mo>,</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">
 x = x_{\text{I},1} + x_{\text{II},1}
 </annotation></semantics></math></p>
-<p>szuperpozíciós összefüggés pontosan azt jelenti, hogy a
-trigonometrikusan levezetett lebegési képlet lesz érvényes az 1-es test
-pillanatnyi kitérésére.</p>
+<p>szuperpozíciós összefüggés pontosan azt jelenti, hogy a trigonometrikusan levezetett lebegési képlet lesz érvényes az 1-es test pillanatnyi kitérésére.</p>
 <h3 id="példa-1">Példa</h3>
 <p>Mikor válik az 1-es test amplitúdója először nullává?</p>
-<p>Ennek a kérdésnek a megválaszolásához meg kell határoznunk a rendszer
-saját körfrekvenciáit!</p>
-<p>Az első (szimmetrikus, azonos fázisú) módusban a két test együtt,
-azonos kitéréssel mozog, így a középső csatoló rugó hossza egyáltalán
-nem változik (nem fejt ki erőt). Ekkor csak a két külső rugó hat a
-testekre:</p>
+<p>Ennek a kérdésnek a megválaszolásához meg kell határoznunk a rendszer saját körfrekvenciáit!</p>
+<p>Az első (szimmetrikus, azonos fázisú) módusban a két test együtt, azonos kitéréssel mozog, így a középső csatoló rugó hossza egyáltalán nem változik (nem fejt ki erőt). Ekkor csak a két külső rugó hat a testekre:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>ω</mi><mtext mathvariant="normal">I</mtext><mn>2</mn></msubsup><mo>=</mo><mfrac><msub><mi>D</mi><mn>1</mn></msub><mi>m</mi></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mn>2</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">
 \omega_{\text{I}}^2 = \frac{D_1}{m} = \frac{0,5}{0,2} = 2,5
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub><mo>=</mo><msqrt><mrow><mn>2</mn><mo>,</mo><mn>5</mn></mrow></msqrt><mo>≈</mo><mn>1</mn><mo>,</mo><mn>5811</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 \omega_{\text{I}} = \sqrt{2,5} \approx 1,5811\text{ rad/s}
 </annotation></semantics></math></p>
-<p>A másik (antiszimmetrikus, ellentétes fázisú) körfrekvencia
-meghatározása kissé összetettebb. Vegyük észre, hogy a középső rugó
-felezőpontja a II-es normálmódusban a szimmetria miatt teljesen
-mozdulatlan! Ha az 1-es test kitérése
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
-akkor a középső rugó megnyúlása (vagy összenyomódása) az ellentétes
-mozgás miatt pontosan
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>x</mi></mrow><annotation encoding="application/x-tex">2x</annotation></semantics></math>
-lesz. Ennek a belső rugónak az ereje a nyugalmi helyzet felé mutat,
-vagyis <strong>hozzáadódik</strong> a külső rugó visszatérítő erejéhez.
-A mozgásegyenlet az 1-es testre felírva:</p>
+<p>A másik (antiszimmetrikus, ellentétes fázisú) körfrekvencia meghatározása kissé összetettebb. Vegyük észre, hogy a középső rugó felezőpontja a II-es normálmódusban a szimmetria miatt teljesen mozdulatlan! Ha az 1-es test kitérése <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, akkor a középső rugó megnyúlása (vagy összenyomódása) az ellentétes mozgás miatt pontosan <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>x</mi></mrow><annotation encoding="application/x-tex">2x</annotation></semantics></math> lesz. Ennek a belső rugónak az ereje a nyugalmi helyzet felé mutat, vagyis <strong>hozzáadódik</strong> a külső rugó visszatérítő erejéhez. A mozgásegyenlet az 1-es testre felírva:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>a</mi><mo>=</mo><msub><mi>F</mi><mrow><mtext mathvariant="normal">e</mtext><mo>,</mo><mi>x</mi></mrow></msub><mo>=</mo><mi>−</mi><msub><mi>D</mi><mn>1</mn></msub><mi>x</mi><mo>−</mo><mn>2</mn><msub><mi>D</mi><mn>2</mn></msub><mi>x</mi><mo>=</mo><mi>−</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>D</mi><mn>1</mn></msub><mo>+</mo><mn>2</mn><msub><mi>D</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">
 ma = F_{\text{e},x} = -D_1 x - 2D_2 x = -(D_1 + 2D_2)x
 </annotation></semantics></math></p>
@@ -241,9 +133,7 @@ a = - \frac{D_1 + 2D_2}{m} x
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>≈</mo><mn>1</mn><mo>,</mo><mn>7321</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 \omega_{\text{II}} = \sqrt{3} \approx 1,7321\text{ rad/s}
 </annotation></semantics></math></p>
-<p>Definiáljuk az amplitúdó modulációját végző <strong>lebegési
-körfrekvenciát</strong>
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ω</mi><mtext mathvariant="normal">leb</mtext></msub><annotation encoding="application/x-tex">\omega_{\text{leb}}</annotation></semantics></math>):</p>
+<p>Definiáljuk az amplitúdó modulációját végző <strong>lebegési körfrekvenciát</strong> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ω</mi><mtext mathvariant="normal">leb</mtext></msub><annotation encoding="application/x-tex">\omega_{\text{leb}}</annotation></semantics></math>):</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mtext mathvariant="normal">leb</mtext></msub><mo>=</mo><mfrac><mrow><msub><mi>ω</mi><mtext mathvariant="normal">II</mtext></msub><mo>−</mo><msub><mi>ω</mi><mtext mathvariant="normal">I</mtext></msub></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>,</mo><mn>7321</mn><mo>−</mo><mn>1</mn><mo>,</mo><mn>5811</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>0755</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 \omega_{\text{leb}} = \frac{\omega_{\text{II}} - \omega_{\text{I}}}{2} = \frac{1,7321 - 1,5811}{2} = 0,0755\text{ rad/s}
 </annotation></semantics></math></p>
@@ -251,86 +141,25 @@ körfrekvenciát</strong>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><msub><mi>ω</mi><mtext mathvariant="normal">leb</mtext></msub></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>1416</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>0755</mn></mrow></mfrac><mo>≈</mo><mn>83</mn><mo>,</mo><mn>22</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 T = \frac{2\pi}{\omega_{\text{leb}}} = \frac{2 \cdot 3,1416}{0,0755} \approx 83,22\text{ s}
 </annotation></semantics></math></p>
-<p>An első teljes amplitúdó-minimum (amikor az 1-es test teljesen
-megáll, mert az összes energiáját átadta a 2-es testnek) a modulációs
-periódus negyedénél következik be, azaz:</p>
+<p>An első teljes amplitúdó-minimum (amikor az 1-es test teljesen megáll, mert az összes energiáját átadta a 2-es testnek) a modulációs periódus negyedénél következik be, azaz:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><mfrac><mi>T</mi><mn>4</mn></mfrac><mo>=</mo><mfrac><mrow><mn>83</mn><mo>,</mo><mn>22</mn></mrow><mn>4</mn></mfrac><mo>≈</mo><mn>20</mn><mo>,</mo><mn>81</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 t_{\text{min}} = \frac{T}{4} = \frac{83,22}{4} \approx 20,81\text{ s}
 </annotation></semantics></math></p>
-<h2 id="érdekesség-energiaáramlás-más-formákban-kitekintés">Érdekesség:
-Energiaáramlás más formákban (Kitekintés)</h2>
-<p>A csatolt rezgéseknél megfigyelt jelenség – miszerint az energia
-periodikusan vándorol a rendszer különböző részei vagy mozgásformái
-között – nemcsak a lineáris rugóknál érhető tetten.</p>
+<h2 id="érdekesség-energiaáramlás-más-formákban-kitekintés">Érdekesség: Energiaáramlás más formákban (Kitekintés)</h2>
+<p>A csatolt rezgéseknél megfigyelt jelenség – miszerint az energia periodikusan vándorol a rendszer különböző részei vagy mozgásformái között – nemcsak a lineáris rugóknál érhető tetten.</p>
 <p><lite-youtube videoid="MUJmKl7QfDU"></lite-youtube></p>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#a3802550-a697-495b-a39e-de8a9bf5bab8">Rugós
-inga módusváltása (Szimuláció)</a></p>
-<p>A videóban és a szimulációban egy rugóra kötött ingát láthatunk,
-amely egy rendkívül látványos fizikai jelenséget, az úgynevezett
-<strong>autoparaméteres rezonanciát</strong> szemlélteti [0:00:27]. Ha a
-rendszert kezdetben tisztán csak függőlegesen megrezegtetjük (fel-le
-irányú harmonikus oszcilláció), egy idő után ez a függőleges mozgás
-teljesen leáll, és a test magától átvált oldalirányú lengő mozgásba
-(mint egy klasszikus inga) [0:01:21]. Ezután a folyamat megfordul: az
-ingalengés amplitúdója csökkenni kezd, és az energia visszatér a
-függőleges rugóoszcillációba [0:01:22]. A mechanikai energia így
-periodikusan oda-vissza vándorol a két teljesen eltérő mozgásforma
-között [0:09:02].</p>
-<p>Steve Mould bemutat egy másik klasszikus példát is, a
-<strong>Wilberforce-féle ingát</strong> [0:10:02]. Ez a rendszer egy
-helikális rugóra függesztett nehéz fémtárcsából áll, amelynek szintén
-két fő mozgásmódusa van: egy függőleges haladó (transzlációs) és egy
-tengely körüli csavarodó (rotációs) módus [0:10:01]. Amikor a rugót
-függőlegesen megnyújtjuk, a spirális geometria miatt a rugó megnyúlás
-közben enyhén kiteeredik, ami forgatónyomatékot fejt ki a tárcsára
-[0:10:14]. Ha a csavarodási frekvenciát a csavarok állításával pontosan
-hozzáhangoljuk a függőleges rezgés frekvenciájához, az energia teljes
-egészében átáramlik a függőleges oszcillációból a tiszta csavaró
-mozgásba, majd vissza [0:10:32].</p>
-<p>Bár ezen rendszerek matematikai leírása jóval összetettebb – a
-mozgásegyenleteik az úgynevezett Mathieu-típusú
-differenciálegyenletekhez vezetnek [0:12:25] –, a fizikai lényeg
-ugyanaz, mint amit a kiskocsiknál kiszámoltunk. A rendszernek két,
-egymáshoz rendkívül közeli frekvenciájú normálmódusa van, amelyek között
-az apró geometriai vagy csatoló rugalmassági kapcsolat miatt a
-mechanikai energia lassan, lebegésszerűen áramlik oda-vissza
-[0:09:02].</p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#a3802550-a697-495b-a39e-de8a9bf5bab8">Rugós inga módusváltása (Szimuláció)</a></p>
+<p>A videóban és a szimulációban egy rugóra kötött ingát láthatunk, amely egy rendkívül látványos fizikai jelenséget, az úgynevezett <strong>autoparaméteres rezonanciát</strong> szemlélteti [0:00:27]. Ha a rendszert kezdetben tisztán csak függőlegesen megrezegtetjük (fel-le irányú harmonikus oszcilláció), egy idő után ez a függőleges mozgás teljesen leáll, és a test magától átvált oldalirányú lengő mozgásba (mint egy klasszikus inga) [0:01:21]. Ezután a folyamat megfordul: az ingalengés amplitúdója csökkenni kezd, és az energia visszatér a függőleges rugóoszcillációba [0:01:22]. A mechanikai energia így periodikusan oda-vissza vándorol a két teljesen eltérő mozgásforma között [0:09:02].</p>
+<p>Steve Mould bemutat egy másik klasszikus példát is, a <strong>Wilberforce-féle ingát</strong> [0:10:02]. Ez a rendszer egy helikális rugóra függesztett nehéz fémtárcsából áll, amelynek szintén két fő mozgásmódusa van: egy függőleges haladó (transzlációs) és egy tengely körüli csavarodó (rotációs) módus [0:10:01]. Amikor a rugót függőlegesen megnyújtjuk, a spirális geometria miatt a rugó megnyúlás közben enyhén kiteeredik, ami forgatónyomatékot fejt ki a tárcsára [0:10:14]. Ha a csavarodási frekvenciát a csavarok állításával pontosan hozzáhangoljuk a függőleges rezgés frekvenciájához, az energia teljes egészében átáramlik a függőleges oszcillációból a tiszta csavaró mozgásba, majd vissza [0:10:32].</p>
+<p>Bár ezen rendszerek matematikai leírása jóval összetettebb – a mozgásegyenleteik az úgynevezett Mathieu-típusú differenciálegyenletekhez vezetnek [0:12:25] –, a fizikai lényeg ugyanaz, mint amit a kiskocsiknál kiszámoltunk. A rendszernek két, egymáshoz rendkívül közeli frekvenciájú normálmódusa van, amelyek között az apró geometriai vagy csatoló rugalmassági kapcsolat miatt a mechanikai energia lassan, lebegésszerűen áramlik oda-vissza [0:09:02].</p>
 <hr />
 <h2 id="feladatok">Feladatok</h2>
 <p><strong>1. Feladat: Csatolás erősségének hatása</strong></p>
-<p>Tegyük fel, hogy a középső csatoló rugót egy lényegesen erősebbre
-cseréljük, amelynek rugóállandója megegyezik a szélső rugókéval
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D_2 = 0,5\text{ N/m}</annotation></semantics></math>),
-miközben a többi adat változatlan marad
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 0,2\text{ kg}</annotation></semantics></math>,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D_1 = 0,5\text{ N/m}</annotation></semantics></math>).
-- Határozd meg az I. és II. normálmódus körfrekvenciáját! - Számítsd ki,
-hogy mennyi lesz a lebegési burkológörbe periódusideje ebben az esetben!
-- Fogalmazd meg a kapott eredmények alapján, hogyan hat a csatolás
-erősségének növelése a lebegés periódusidejére!</p>
+<p>Tegyük fel, hogy a középső csatoló rugót egy lényegesen erősebbre cseréljük, amelynek rugóállandója megegyezik a szélső rugókéval (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D_2 = 0,5\text{ N/m}</annotation></semantics></math>), miközben a többi adat változatlan marad (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 0,2\text{ kg}</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D_1 = 0,5\text{ N/m}</annotation></semantics></math>). - Határozd meg az I. és II. normálmódus körfrekvenciáját! - Számítsd ki, hogy mennyi lesz a lebegési burkológörbe periódusideje ebben az esetben! - Fogalmazd meg a kapott eredmények alapján, hogyan hat a csatolás erősségének növelése a lebegés periódusidejére!</p>
 <p><strong>2. Feladat: Kezdeti feltételek és energia</strong></p>
-<p>A leírt csatolt rezgő rendszerben az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t = 0</annotation></semantics></math>
-időpillanatban az 1-es testet
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">x_0 = 10\text{ cm}</annotation></semantics></math>
-kitérésből, kezdősebesség nélkül elengedjük, miközben a 2-es test
-pontosan a nyugalmi helyzetében van
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">x_2 = 0\text{ cm}</annotation></semantics></math>),
-szintén kezdősebesség nélkül. - Fejezd ki a két test kitérését az idő
-függvényében a normálmódusok szuperpozíciójaként! - Magyarázd el
-röviden, a levezetett egyenletek alapján hogyan áramlik a mechanikai
-energia a két test között a mozgás során!</p>
+<p>A leírt csatolt rezgő rendszerben az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t = 0</annotation></semantics></math> időpillanatban az 1-es testet <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">x_0 = 10\text{ cm}</annotation></semantics></math> kitérésből, kezdősebesség nélkül elengedjük, miközben a 2-es test pontosan a nyugalmi helyzetében van (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">x_2 = 0\text{ cm}</annotation></semantics></math>), szintén kezdősebesség nélkül. - Fejezd ki a két test kitérését az idő függvényében a normálmódusok szuperpozíciójaként! - Magyarázd el röviden, a levezetett egyenletek alapján hogyan áramlik a mechanikai energia a két test között a mozgás során!</p>
 <p><strong>3. Feladat: Tranziens lebegés kényszerrezgésnél</strong></p>
-<p>Egy csillapított rugó-tömeg rendszer sajátfrekvenciája
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">f_0 = 5\text{ Hz}</annotation></semantics></math>.
-A rendszert egy harmonikusan változó külső kényszererővel gerjesztjük,
-amelynek frekvenciája
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><mn>5</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">f_{\text{g}} = 5,2\text{ Hz}</annotation></semantics></math>.
-A rendszerben gyenge csillapítás van jelen. - Számítsd ki, hogy
-másodpercenként hány lebegést (amplitúdó-maximumot) figyelhetünk meg a
-gerjesztés bekapcsolását követő első néhány másodpercben, mielőtt a
-tranziens jelenség teljesen elhalna!</p>
+<p>Egy csillapított rugó-tömeg rendszer sajátfrekvenciája <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">f_0 = 5\text{ Hz}</annotation></semantics></math>. A rendszert egy harmonikusan változó külső kényszererővel gerjesztjük, amelynek frekvenciája <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><mn>5</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">f_{\text{g}} = 5,2\text{ Hz}</annotation></semantics></math>. A rendszerben gyenge csillapítás van jelen. - Számítsd ki, hogy másodpercenként hány lebegést (amplitúdó-maximumot) figyelhetünk meg a gerjesztés bekapcsolását követő első néhány másodpercben, mielőtt a tranziens jelenség teljesen elhalna!</p>
 </main>
 </body>
 </html>

@@ -4,21 +4,15 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>A tömegközéppont tétele</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="TOMEGKOZEPPONTFELADATOK.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="ATWOODGEP.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="TOMEGKOZEPPONTFELADATOK.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="ATWOODGEP.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#a-tömegközéppont-tétele" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
 <h1 id="a-tömegközéppont-tétele">A tömegközéppont tétele</h1>
-<h2 id="az-impulzustétel-általános-levezetése">Az impulzustétel
-általános levezetése</h2>
-<p>Most megvizsgáljuk az impulzustétel általános levezetését, hiszen ezt
-a tételt eddig csak 2 test esetére láttuk be. Legyen most
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
-testünk a pontrendszerben! Az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>-edik
-testre Newton második törvénye a következő:</p>
+<h2 id="az-impulzustétel-általános-levezetése">Az impulzustétel általános levezetése</h2>
+<p>Most megvizsgáljuk az impulzustétel általános levezetését, hiszen ezt a tételt eddig csak 2 test esetére láttuk be. Legyen most <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math> testünk a pontrendszerben! Az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>-edik testre Newton második törvénye a következő:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mtext mathvariant="normal">e</mtext><mo>,</mo><mi>i</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mover><mi>I</mi><mo accent="true">→</mo></mover><mi>i</mi></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \vec{F}_{\text{e},i} = \frac{\Delta \vec{I}_i}{t}
 </annotation></semantics></math></p>
@@ -34,38 +28,7 @@ testre Newton második törvénye a következő:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>j</mi><mo>≠</mo><mi>i</mi></mrow><mi>N</mi></munderover><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></munderover><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>+</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
 \sum_{i = 1}^{N} \sum_{j = 1, j \neq i}^{N} \vec{F}_{i,j} = \sum_{i = 1}^{N} \sum_{j = 1}^{i - 1} \vec{F}_{i,j} + \sum_{i = 1}^{N} \sum_{j = i + 1}^{N} \vec{F}_{i,j}
 </annotation></semantics></math></p>
-<p>Az eredeti összeget két összegre bontjuk. Az első összegben
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&lt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j &lt; i</annotation></semantics></math>,
-míg a második összegben
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&gt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j &gt; i</annotation></semantics></math>.
-Mindkét összeg az összes lehetséges párosítást tartalmazza ezekkel a
-kitételekkel. Ha most a második összegben felcseréljük
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msub><mi>F</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{F_{i,j}}</annotation></semantics></math>-ben
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>-t
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>-t,
-ugyanakkor áttérünk az első összeg határaira, tehát most
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&lt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j &lt; i</annotation></semantics></math>
-lesz
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&gt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j &gt; i</annotation></semantics></math>
-helyett, akkor az összeg értéke nem változik. Például ha eredetileg
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">i = 2</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">j = 3</annotation></semantics></math>,
-akkor a párosítás szerepel a második összegben, mert
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&gt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j &gt; i</annotation></semantics></math>.
-Ez ugye
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msub><mi>F</mi><mrow><mn>2</mn><mo>,</mo><mn>3</mn></mrow></msub><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{F_{2,3}}</annotation></semantics></math>.
-Ha inkább most
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">i = 3</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">j = 2</annotation></semantics></math>
-értékek írják le ugyanezt a tagot, tehát
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&lt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j &lt; i</annotation></semantics></math>,
-akkor ez
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msub><mi>F</mi><mrow><mi>j</mi><mo>,</mo><mi>i</mi></mrow></msub><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{F_{j,i}}</annotation></semantics></math>.
-A második összegben az összes tagra megcsináljuk ezt a cserét, de ettől
-az összeg nem változik meg.</p>
+<p>Az eredeti összeget két összegre bontjuk. Az első összegben <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&lt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j &lt; i</annotation></semantics></math>, míg a második összegben <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&gt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j &gt; i</annotation></semantics></math>. Mindkét összeg az összes lehetséges párosítást tartalmazza ezekkel a kitételekkel. Ha most a második összegben felcseréljük <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msub><mi>F</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{F_{i,j}}</annotation></semantics></math>-ben <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>-t és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>-t, ugyanakkor áttérünk az első összeg határaira, tehát most <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&lt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j &lt; i</annotation></semantics></math> lesz <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&gt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j &gt; i</annotation></semantics></math> helyett, akkor az összeg értéke nem változik. Például ha eredetileg <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">i = 2</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">j = 3</annotation></semantics></math>, akkor a párosítás szerepel a második összegben, mert <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&gt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j &gt; i</annotation></semantics></math>. Ez ugye <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msub><mi>F</mi><mrow><mn>2</mn><mo>,</mo><mn>3</mn></mrow></msub><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{F_{2,3}}</annotation></semantics></math>. Ha inkább most <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">i = 3</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">j = 2</annotation></semantics></math> értékek írják le ugyanezt a tagot, tehát <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&lt;</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">j &lt; i</annotation></semantics></math>, akkor ez <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msub><mi>F</mi><mrow><mi>j</mi><mo>,</mo><mi>i</mi></mrow></msub><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{F_{j,i}}</annotation></semantics></math>. A második összegben az összes tagra megcsináljuk ezt a cserét, de ettől az összeg nem változik meg.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mi>i</mi><mo>+</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>=</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><munderover><mo>∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>i</mi><mo>−</mo><mn>1</mn></mrow></munderover><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>j</mi><mo>,</mo><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
 \sum_{i = 1}^{N} \sum_{j = i + 1}^{N} \vec{F}_{i,j} = \sum_{i = 1}^{N} \sum_{j = 1}^{i - 1} \vec{F}_{j,i}
 </annotation></semantics></math></p>
@@ -77,8 +40,7 @@ az összeg nem változik meg.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>=</mo><mi>−</mi><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>j</mi><mo>,</mo><mi>i</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
 \vec{F}_{i,j} = -\vec{F}_{j,i}
 </annotation></semantics></math></p>
-<p>Eszerint az összeg tagjai mind nullák. Most alakítsunk kicsit a másik
-oldalon is!</p>
+<p>Eszerint az összeg tagjai mind nullák. Most alakítsunk kicsit a másik oldalon is!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mfrac><mrow><msub><mi>m</mi><mi>i</mi></msub><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mi>i</mi></msub><mo>−</mo><msub><mi>m</mi><mi>i</mi></msub><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mi>i</mi></msub><mo>−</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mover><mi>I</mi><mo accent="true">→</mo></mover><mo>−</mo><msub><mover><mi>I</mi><mo accent="true">→</mo></mover><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \sum_{i = 1}^{N} \frac{m_i \vec{v}_i - m_i \vec{v}_{i,0}}{t} = \frac{\sum_{i = 1}^{N} m_i \vec{v}_i - \sum_{i = 1}^{N} m_i \vec{v}_{i,0}}{t} = \frac{\vec{I} - \vec{I}_0}{t}
 </annotation></semantics></math></p>
@@ -87,13 +49,10 @@ oldalon is!</p>
 \sum_{i = 1}^{N} \vec{F}_{\text{e},i}^{\text{k}} = \frac{\vec{I} - \vec{I}_0}{t}
 </annotation></semantics></math></p>
 <blockquote>
-<p><strong>A pontrendszerre ható külső erők vektori összege egyenlő a
-pontrendszer összimpulzusának időegységre eső
-megváltozásával.</strong></p>
+<p><strong>A pontrendszerre ható külső erők vektori összege egyenlő a pontrendszer összimpulzusának időegységre eső megváltozásával.</strong></p>
 </blockquote>
 <h2 id="a-tömegközéppont-tétele-1">A tömegközéppont tétele</h2>
-<p>Most felhasználjuk, amit a pontrendszer impulzusáról tudunk. Ez
-kifejezhető a tömegközéppont sebességével, hiszen:</p>
+<p>Most felhasználjuk, amit a pontrendszer impulzusáról tudunk. Ez kifejezhető a tömegközéppont sebességével, hiszen:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mfrac><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msub><mi>m</mi><mi>i</mi></msub><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mi>i</mi></msub></mrow><mi>M</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \vec{v}_{\text{TKP}} = \frac{\sum_{i = 1}^{N} m_i \vec{v}_i}{M}
 </annotation></semantics></math></p>
@@ -103,9 +62,7 @@ M \vec{v}_{\text{TKP}} = \sum_{i = 1}^{N} m_i \vec{v}_i = \sum_{i = 1}^{N} \vec{
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msubsup><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mtext mathvariant="normal">e</mtext><mo>,</mo><mi>i</mi></mrow><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mfrac><mrow><mi>M</mi><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">TKP</mtext></msub><mo>−</mo><mi>M</mi><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mrow><mtext mathvariant="normal">TKP</mtext><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \sum_{i = 1}^{N} \vec{F}_{\text{e},i}^{\text{k}} = \frac{M \vec{v}_{\text{TKP}} - M \vec{v}_{\text{TKP},0}}{t}
 </annotation></semantics></math></p>
-<p>A jobb oldalból az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
-össztömeget kiemeljük:</p>
+<p>A jobb oldalból az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> össztömeget kiemeljük:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>M</mi><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">TKP</mtext></msub><mo>−</mo><mi>M</mi><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mrow><mtext mathvariant="normal">TKP</mtext><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mi>M</mi><mfrac><mrow><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">TKP</mtext></msub><mo>−</mo><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mrow><mtext mathvariant="normal">TKP</mtext><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mi>M</mi><msub><mover><mi>a</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">TKP</mtext></msub></mrow><annotation encoding="application/x-tex">
 \frac{M \vec{v}_{\text{TKP}} - M \vec{v}_{\text{TKP},0}}{t} = M \frac{\vec{v}_{\text{TKP}} - \vec{v}_{\text{TKP},0}}{t} = M \vec{a}_{\text{TKP}}
 </annotation></semantics></math></p>
@@ -113,58 +70,20 @@ M \vec{v}_{\text{TKP}} = \sum_{i = 1}^{N} m_i \vec{v}_i = \sum_{i = 1}^{N} \vec{
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>a</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">TKP</mtext></msub><mo>=</mo><mfrac><mrow><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">TKP</mtext></msub><mo>−</mo><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mrow><mtext mathvariant="normal">TKP</mtext><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \vec{a}_{\text{TKP}} = \frac{\vec{v}_{\text{TKP}} - \vec{v}_{\text{TKP},0}}{t}
 </annotation></semantics></math></p>
-<p>Ez egyezik a gyorsulás eddigi definíciójával, egy fontos
-különbséggel. Mi eddig leginkább csak egyenes vonalú mozgásokra
-alkalmaztuk ezt az összefüggést, ahol a gyorsulásvektor a sebességgel
-párhuzamos vektor. Ha a sebesség iránya is változik, akkor az
-összefüggést csak a vektorokra vagy azok komponenseire
-alkalmazhatjuk.</p>
+<p>Ez egyezik a gyorsulás eddigi definíciójával, egy fontos különbséggel. Mi eddig leginkább csak egyenes vonalú mozgásokra alkalmaztuk ezt az összefüggést, ahol a gyorsulásvektor a sebességgel párhuzamos vektor. Ha a sebesség iránya is változik, akkor az összefüggést csak a vektorokra vagy azok komponenseire alkalmazhatjuk.</p>
 <p>Eredményünk a tömegközéppont tétele:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><msubsup><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mtext mathvariant="normal">e</mtext><mo>,</mo><mi>i</mi></mrow><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mi>M</mi><msub><mover><mi>a</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">TKP</mtext></msub></mrow><annotation encoding="application/x-tex">
 \sum_{i = 1}^{N} \vec{F}_{\text{e},i}^{\text{k}} = M \vec{a}_{\text{TKP}}
 </annotation></semantics></math></p>
-<p>Ez a tétel nagyon hasonlít a második törvényre, de van két fontos
-különbség: 1. Csak a külső erők számítanak, melyeket a rendszerhez nem
-tartozó testek fejtenek ki. 2. A pontrendszer össztömege számít, és a
-tömegközéppont gyorsulásáról van szó benne, melynek helyén sok esetben
-nincs is tömegpont egyáltalán, tehát csak egy matematikai pont.</p>
+<p>Ez a tétel nagyon hasonlít a második törvényre, de van két fontos különbség: 1. Csak a külső erők számítanak, melyeket a rendszerhez nem tartozó testek fejtenek ki. 2. A pontrendszer össztömege számít, és a tömegközéppont gyorsulásáról van szó benne, melynek helyén sok esetben nincs is tömegpont egyáltalán, tehát csak egy matematikai pont.</p>
 <blockquote>
-<p><strong>A pontrendszer tömegközéppontja úgy mozog, mint egy
-tömegpont, melybe a pontrendszer teljes tömege van egyesítve, miközben a
-rá ható eredő erő a pontrendszerre ható külső erők vektori összege. Ez a
-tömegközéppont tétele.</strong></p>
+<p><strong>A pontrendszer tömegközéppontja úgy mozog, mint egy tömegpont, melybe a pontrendszer teljes tömege van egyesítve, miközben a rá ható eredő erő a pontrendszerre ható külső erők vektori összege. Ez a tömegközéppont tétele.</strong></p>
 </blockquote>
-<p>Ez a tétel teszi lehetővé, hogy amennyiben a newtoni mechanika
-törvényei érvényesek kicsiny, pontszerűnek tekinthető részecskékre,
-akkor az ezekből felépülő nagy méretű testekre is alkalmazható a
-mechanika.</p>
-<p>Az viszont nem következik ebből, hogy amennyiben a newtoni mechanika
-alkalmazható nagy méretű testekre, akkor éppígy alkalmazható a testek
-kicsiny, pontszerűnek tekinthető részecskéire is. Valóban, a XX.
-században kiderült, hogy a newtoni mechanika törvényei nem alkalmazhatók
-atomi vagy szubatomi részecskékre. Ilyen kis méretekben az úgynevezett
-kvantummechanikát kell alkalmazni, amely nagy méretű testek esetére
-visszaadja Newton törvényeit, de a kicsiny részecskékre a
-kvantummechanika törvényei különböznek Newton törvényeitől.</p>
-<p>A tételt eddig is számtalanszor használtuk már. A tömegpontok ugyanis
-a valóságban a legtöbb esetben rengeteg kicsiny részecskét tartalmaznak,
-csupán a mozgás leírása szempontjából a belső szerkezetük nem fontos. A
-mozgás ilyenkor a tömegközéppont tétele miatt írható le Newton második
-törvénye alapján.</p>
+<p>Ez a tétel teszi lehetővé, hogy amennyiben a newtoni mechanika törvényei érvényesek kicsiny, pontszerűnek tekinthető részecskékre, akkor az ezekből felépülő nagy méretű testekre is alkalmazható a mechanika.</p>
+<p>Az viszont nem következik ebből, hogy amennyiben a newtoni mechanika alkalmazható nagy méretű testekre, akkor éppígy alkalmazható a testek kicsiny, pontszerűnek tekinthető részecskéire is. Valóban, a XX. században kiderült, hogy a newtoni mechanika törvényei nem alkalmazhatók atomi vagy szubatomi részecskékre. Ilyen kis méretekben az úgynevezett kvantummechanikát kell alkalmazni, amely nagy méretű testek esetére visszaadja Newton törvényeit, de a kicsiny részecskékre a kvantummechanika törvényei különböznek Newton törvényeitől.</p>
+<p>A tételt eddig is számtalanszor használtuk már. A tömegpontok ugyanis a valóságban a legtöbb esetben rengeteg kicsiny részecskét tartalmaznak, csupán a mozgás leírása szempontjából a belső szerkezetük nem fontos. A mozgás ilyenkor a tömegközéppont tétele miatt írható le Newton második törvénye alapján.</p>
 <h3 id="példa">Példa</h3>
-<p>Egy fa blokk és egy tégla együtt mozog egy vízszintes asztallapon. Mi
-a fából készült blokkot toljuk
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">20,0\text{ N}</annotation></semantics></math>
-vízszintes irányú erővel. Ennek tömege
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">500\text{ g}</annotation></semantics></math>.
-Ez a blokk tolja maga előtt a téglát, melynek tömege
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1,50\text{ kg}</annotation></semantics></math>.
-A súrlódási együttható a fa blokk és az asztal között 0,3. A tégla és az
-asztal közötti súrlódási együttható 0,7. Mekkora a rendszerre ható külső
-erők eredője? Mekkora a gyorsulás? Mekkora a fa blokk és a tégla közötti
-belső erő most? Ha elengedjük a fa blokkot, a rendszer lassulni kezd.
-Mekkora most a külső erők eredője? Mekkora a lassulás? Mekkora most a
-belső erő?</p>
+<p>Egy fa blokk és egy tégla együtt mozog egy vízszintes asztallapon. Mi a fából készült blokkot toljuk <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">20,0\text{ N}</annotation></semantics></math> vízszintes irányú erővel. Ennek tömege <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">500\text{ g}</annotation></semantics></math>. Ez a blokk tolja maga előtt a téglát, melynek tömege <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1,50\text{ kg}</annotation></semantics></math>. A súrlódási együttható a fa blokk és az asztal között 0,3. A tégla és az asztal közötti súrlódási együttható 0,7. Mekkora a rendszerre ható külső erők eredője? Mekkora a gyorsulás? Mekkora a fa blokk és a tégla közötti belső erő most? Ha elengedjük a fa blokkot, a rendszer lassulni kezd. Mekkora most a külső erők eredője? Mekkora a lassulás? Mekkora most a belső erő?</p>
 <figure>
 <img src="Kepek/tkptetel-pelda-2.svg" alt="A fahasáb-tégla rendszer" />
 <figcaption aria-hidden="true">A fahasáb-tégla rendszer</figcaption>
@@ -176,18 +95,15 @@ F_{\text{s},1} = \mu_1 K_1 = \mu_1 m_1 g = 0,3 \cdot 0,5 \cdot 9,81 \approx 1,47
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mtext mathvariant="normal">s</mtext><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>μ</mi><mn>2</mn></msub><msub><mi>K</mi><mn>2</mn></msub><mo>=</mo><msub><mi>μ</mi><mn>2</mn></msub><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>7</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>50</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><mo>≈</mo><mn>10</mn><mo>,</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
 F_{\text{s},2} = \mu_2 K_2 = \mu_2 m_2 g = 0,7 \cdot 1,50 \cdot 9,81 \approx 10,30\text{ N}
 </annotation></semantics></math></p>
-<p>Mi ugye toljuk a blokkokat, a súrlódás meg fékezi ezeket, tehát az
-eredő erő nagysága:</p>
+<p>Mi ugye toljuk a blokkokat, a súrlódás meg fékezi ezeket, tehát az eredő erő nagysága:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mi>F</mi><mo>−</mo><msub><mi>F</mi><mrow><mtext mathvariant="normal">s</mtext><mo>,</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>F</mi><mrow><mtext mathvariant="normal">s</mtext><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mn>20</mn><mo>,</mo><mn>0</mn><mo>−</mo><mn>1</mn><mo>,</mo><mn>472</mn><mo>−</mo><mn>10</mn><mo>,</mo><mn>30</mn><mo>=</mo><mn>8</mn><mo>,</mo><mn>228</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
 F_{\text{e}} = F - F_{\text{s},1} - F_{\text{s},2} = 20,0 - 1,472 - 10,30 = 8,228\text{ N}
 </annotation></semantics></math></p>
-<p>A gyorsulás, mely ugyanaz mindkét testre és nem más, mint a
-tömegközéppont gyorsulása:</p>
+<p>A gyorsulás, mely ugyanaz mindkét testre és nem más, mint a tömegközéppont gyorsulása:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mn>8</mn><mo>,</mo><mn>228</mn></mrow><mrow><mn>2</mn><mo>,</mo><mn>00</mn></mrow></mfrac><mo>=</mo><mn>4</mn><mo>,</mo><mn>114</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 a = \frac{8,228}{2,00} = 4,114\text{ m/s}^2
 </annotation></semantics></math></p>
-<p>A téglát a fa blokk és a tégla közötti kényszererő gyorsítja, mely
-vízszintes irányú. A súrlódás fékezi a téglát.</p>
+<p>A téglát a fa blokk és a tégla közötti kényszererő gyorsítja, mely vízszintes irányú. A súrlódás fékezi a téglát.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mtext mathvariant="normal">e</mtext><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mi>K</mi><mo>−</mo><msub><mi>F</mi><mrow><mtext mathvariant="normal">s</mtext><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><mi>a</mi></mrow><annotation encoding="application/x-tex">
 F_{\text{e},2} = K - F_{\text{s},2} = m_2 a
 </annotation></semantics></math></p>
@@ -209,34 +125,12 @@ K^{\text{új}} - F_{\text{s},2} = m_2 a^{\text{új}}
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>K</mi><mtext mathvariant="normal">új</mtext></msup><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><msup><mi>a</mi><mtext mathvariant="normal">új</mtext></msup><mo>+</mo><msub><mi>F</mi><mrow><mtext mathvariant="normal">s</mtext><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>50</mn><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>5</mn><mo>,</mo><mn>886</mn><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mn>10</mn><mo>,</mo><mn>30</mn><mo>=</mo><mn>1</mn><mo>,</mo><mn>471</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
 K^{\text{új}} = m_2 a^{\text{új}} + F_{\text{s},2} = 1,50 \cdot (-5,886) + 10,30 = 1,471\text{ N}
 </annotation></semantics></math></p>
-<p>A kényszererő csak pozitív lehet, hiszen nincsen a tégla a fablokkhoz
-ragasztva. Ha a számítás negatív eredményt adna, akkor a tégla és a
-fablokk különböző lassulással mozogna az elengedés után, tehát már nem
-mondhatnánk, hogy együtt mozognak. A példánkban nem ez a helyzet.</p>
+<p>A kényszererő csak pozitív lehet, hiszen nincsen a tégla a fablokkhoz ragasztva. Ha a számítás negatív eredményt adna, akkor a tégla és a fablokk különböző lassulással mozogna az elengedés után, tehát már nem mondhatnánk, hogy együtt mozognak. A példánkban nem ez a helyzet.</p>
 <h2 id="feladatok">Feladatok</h2>
 <ol type="1">
-<li><p>Egy tűzijáték-rakétát ferdén fellövünk. A pálya legmagasabb
-pontján a rakéta felrobban, és több darabra esik szét. Mi mondható el a
-darabok közös tömegközéppontjának mozgásáról a robbanás után, amíg egyik
-darab sem ér földet, ha a légellenállást elhanyagoljuk?</p></li>
-<li><p>Egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">60\text{ kg}</annotation></semantics></math>
-tömegű ember és egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">40\text{ kg}</annotation></semantics></math>
-tömegű gyerek áll egymással szemben a jégen (súrlódásmentes felület).
-Összekapaszkodnak és ellökik egymást. Mekkora lesz a rendszer
-tömegközéppontjának gyorsulása az ellökés közben és után?</p></li>
-<li><p>Két testet
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m_1 = 2\text{ kg}</annotation></semantics></math>,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m_2 = 3\text{ kg}</annotation></semantics></math>)
-egy elhanyagolható tömegű, nyújthatatlan kötél köt össze. A testeket
-vízszintes, súrlódásmentes asztallapon húzzuk
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">F = 10\text{ N}</annotation></semantics></math>
-erővel, amely az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mn>1</mn></msub><annotation encoding="application/x-tex">m_1</annotation></semantics></math>
-tömegű testre hat. Számítsd ki a rendszer tömegközéppontjának
-gyorsulását! Számít-e a kötélerő mint belső erő a tömegközéppont
-gyorsulásának meghatározásakor?</p></li>
+<li><p>Egy tűzijáték-rakétát ferdén fellövünk. A pálya legmagasabb pontján a rakéta felrobban, és több darabra esik szét. Mi mondható el a darabok közös tömegközéppontjának mozgásáról a robbanás után, amíg egyik darab sem ér földet, ha a légellenállást elhanyagoljuk?</p></li>
+<li><p>Egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">60\text{ kg}</annotation></semantics></math> tömegű ember és egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">40\text{ kg}</annotation></semantics></math> tömegű gyerek áll egymással szemben a jégen (súrlódásmentes felület). Összekapaszkodnak és ellökik egymást. Mekkora lesz a rendszer tömegközéppontjának gyorsulása az ellökés közben és után?</p></li>
+<li><p>Két testet (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m_1 = 2\text{ kg}</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m_2 = 3\text{ kg}</annotation></semantics></math>) egy elhanyagolható tömegű, nyújthatatlan kötél köt össze. A testeket vízszintes, súrlódásmentes asztallapon húzzuk <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">F = 10\text{ N}</annotation></semantics></math> erővel, amely az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mn>1</mn></msub><annotation encoding="application/x-tex">m_1</annotation></semantics></math> tömegű testre hat. Számítsd ki a rendszer tömegközéppontjának gyorsulását! Számít-e a kötélerő mint belső erő a tömegközéppont gyorsulásának meghatározásakor?</p></li>
 </ol>
 </main>
 </body>

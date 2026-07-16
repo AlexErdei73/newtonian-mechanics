@@ -4,50 +4,27 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>Egy nehéz feladat a forgómozgásra *</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="FORGOMOZGASENERGIAJA.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="HARMONIKUSREZGOMOZGAS.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="FORGOMOZGASENERGIAJA.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="HARMONIKUSREZGOMOZGAS.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#egy-nehéz-feladat-a-forgómozgásra" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
-<h1 id="egy-nehéz-feladat-a-forgómozgásra">Egy nehéz feladat a
-forgómozgásra</h1>
+<h1 id="egy-nehéz-feladat-a-forgómozgásra">Egy nehéz feladat a forgómozgásra *</h1>
 <h2 id="példa">Példa</h2>
-<p>Egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
-tömegű,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
-hosszúságú rúd a tetején csapágyazva van, és függőleges síkban
-lengéseket képes végezni. A rúd a csapágyazással együtt képes forogni a
-csapágyon átmenő függőleges tengely körül. Egy motor megforgatja a
-csapágyazást, és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>
-szögsebességű forgásban tartja. Mekkora
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
-szöget zár be a rúd a függőlegessel a forgása közben, ha ez a szög
-állandó?</p>
+<p>Egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> tömegű, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math> hosszúságú rúd a tetején csapágyazva van, és függőleges síkban lengéseket képes végezni. A rúd a csapágyazással együtt képes forogni a csapágyon átmenő függőleges tengely körül. Egy motor megforgatja a csapágyazást, és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> szögsebességű forgásban tartja. Mekkora <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> szöget zár be a rúd a függőlegessel a forgása közben, ha ez a szög állandó?</p>
 <figure>
 <img src="Kepek/forgorud.svg" alt="A forgó rúd példája" />
 <figcaption aria-hidden="true">A forgó rúd példája</figcaption>
 </figure>
-<p>A rúd pontjai körmozgást végeznek vízszintes síkban, tehát
-gyorsulásuk a centripetális gyorsulás. Az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
-szög nem változik, vagyis a rúdnak nincs szöggyorsulása a vele együtt
-forgó koordináta-rendszerben. Van-e szöggyorsulás az inerciarendszerben?
-Ha felbontjuk a pontok gyorsulását rúdirányú és rúdra merőleges
-komponensre, akkor nem nulla
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
-szög esetén lesz a rúdra merőleges gyorsulás, amely szöggyorsulást
-jelent a vízszintes forgástengelyre vonatkozóan.</p>
+<p>A rúd pontjai körmozgást végeznek vízszintes síkban, tehát gyorsulásuk a centripetális gyorsulás. Az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> szög nem változik, vagyis a rúdnak nincs szöggyorsulása a vele együtt forgó koordináta-rendszerben. Van-e szöggyorsulás az inerciarendszerben? Ha felbontjuk a pontok gyorsulását rúdirányú és rúdra merőleges komponensre, akkor nem nulla <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> szög esetén lesz a rúdra merőleges gyorsulás, amely szöggyorsulást jelent a vízszintes forgástengelyre vonatkozóan.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>,</mo><mtext mathvariant="normal">t</mtext></mrow></msub><mo>=</mo><msub><mi>r</mi><mi>i</mi></msub><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mspace width="0.222em"></mspace><msup><mi>ω</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
 a_{i,\text{t}} = r_i \sin \alpha\ \omega^2 \cos \alpha
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mfrac><msub><mi>a</mi><mrow><mi>i</mi><mo>,</mo><mtext mathvariant="normal">t</mtext></mrow></msub><msub><mi>r</mi><mi>i</mi></msub></mfrac><mo>=</mo><msup><mi>ω</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
 \beta = \frac{a_{i,\text{t}}}{r_i} = \omega^2 \sin \alpha \cos \alpha
 </annotation></semantics></math></p>
-<p>Írjuk fel a forgómozgás alapegyenletét a vízszintes tengelyre, amely
-körül a rúd elfordulhat!</p>
+<p>Írjuk fel a forgómozgás alapegyenletét a vízszintes tengelyre, amely körül a rúd elfordulhat!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">rúd</mtext></msub><mi>β</mi></mrow><annotation encoding="application/x-tex">
 M_{z,\text{e}}^{\text{k}} = \Theta_{\text{rúd}} \beta
 </annotation></semantics></math></p>
@@ -55,9 +32,7 @@ M_{z,\text{e}}^{\text{k}} = \Theta_{\text{rúd}} \beta
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">e</mtext></mrow><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mi>m</mi><mi>g</mi><mfrac><mi>L</mi><mn>2</mn></mfrac><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
 M_{z,\text{e}}^{\text{k}} = mg \frac{L}{2} \sin \alpha
 </annotation></semantics></math></p>
-<p>Beírva ezeket és a rúd végpontra vonatkozó
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">rúd</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>L</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta_{\text{rúd}} = \frac{1}{3}mL^2</annotation></semantics></math>
-tehetetlenségi nyomatékát, a következő egyenletet kapjuk:</p>
+<p>Beírva ezeket és a rúd végpontra vonatkozó <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">Θ</mi><mtext mathvariant="normal">rúd</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>L</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\Theta_{\text{rúd}} = \frac{1}{3}mL^2</annotation></semantics></math> tehetetlenségi nyomatékát, a következő egyenletet kapjuk:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mfrac><mi>L</mi><mn>2</mn></mfrac><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>L</mi><mn>2</mn></msup><msup><mi>ω</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
 mg \frac{L}{2} \sin \alpha = \frac{1}{3} mL^2 \omega^2 \sin \alpha \cos \alpha
 </annotation></semantics></math></p>
@@ -71,19 +46,14 @@ mg \frac{L}{2} \sin \alpha = \frac{1}{3} mL^2 \omega^2 \sin \alpha \cos \alpha
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mn>0</mn><mspace width="1.0em"></mspace><mo>→</mo><mspace width="1.0em"></mspace><mi>α</mi><mo>=</mo><msup><mn>0</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">
 \sin \alpha = 0 \quad \rightarrow \quad \alpha = 0^\circ
 </annotation></semantics></math></p>
-<p>Ez stabil megoldás kis
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>
-szögsebesség esetén. Egészen pontosan addig, amíg nem létezik a második
-megoldás.</p>
+<p>Ez stabil megoldás kis <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> szögsebesség esetén. Egészen pontosan addig, amíg nem létezik a második megoldás.</p>
 <ol start="2" type="1">
 <li>megoldás:</li>
 </ol>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>g</mi><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>L</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><mn>3</mn></mfrac><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">
 \frac{g}{2} = \frac{L\omega^2}{3} \cos \alpha
 </annotation></semantics></math></p>
-<p>Innen kifejezhetjük
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\cos \alpha</annotation></semantics></math>
-értékét:</p>
+<p>Innen kifejezhetjük <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\cos \alpha</annotation></semantics></math> értékét:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><mrow><mn>3</mn><mi>g</mi></mrow><mrow><mn>2</mn><mi>L</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 \cos \alpha = \frac{3g}{2L\omega^2}
 </annotation></semantics></math></p>
@@ -91,20 +61,13 @@ megoldás.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
 \cos \alpha \leqslant 1
 </annotation></semantics></math></p>
-<p>Így a motor szögsebességének nagyobbnak kell lennie egy minimális
-kritikus értéknél, hogy ez a stabil elhajlási megoldás egyáltalán
-létezhessen:</p>
+<p>Így a motor szögsebességének nagyobbnak kell lennie egy minimális kritikus értéknél, hogy ez a stabil elhajlási megoldás egyáltalán létezhessen:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>3</mn><mi>g</mi></mrow><mrow><mn>2</mn><mi>L</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow></mfrac><mo>≤</mo><mn>1</mn><mspace width="1.0em"></mspace><mo>→</mo><mspace width="1.0em"></mspace><mi>ω</mi><mo>≥</mo><msqrt><mfrac><mrow><mn>3</mn><mi>g</mi></mrow><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
 \frac{3g}{2L\omega^2} \leqslant 1 \quad \rightarrow \quad \omega \geqslant \sqrt{\frac{3g}{2L}}
 </annotation></semantics></math></p>
-<p>Megmutatható, hogy amint a motor fordulatszáma átlépi ezt a kritikus
-határt, a függőleges helyzet instabillá válik, és a rúd magától kitér a
-stabil
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\alpha &gt; 0</annotation></semantics></math>
-egyensúlyi szögbe.</p>
+<p>Megmutatható, hogy amint a motor fordulatszáma átlépi ezt a kritikus határt, a függőleges helyzet instabillá válik, és a rúd magától kitér a stabil <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\alpha &gt; 0</annotation></semantics></math> egyensúlyi szögbe.</p>
 <hr />
-<h2 id="analógia-a-haladó-és-forgó-mozgás-között">Analógia a haladó és
-forgó mozgás között</h2>
+<h2 id="analógia-a-haladó-és-forgó-mozgás-között">Analógia a haladó és forgó mozgás között</h2>
 <table>
 <colgroup>
 <col style="width: 50%" />
@@ -118,86 +81,49 @@ forgó mozgás között</h2>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Út
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>r</mi><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">s = r\phi</annotation></semantics></math>)</td>
-<td style="text-align: left;">Szög
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>)</td>
+<td style="text-align: left;">Út (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>r</mi><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">s = r\phi</annotation></semantics></math>)</td>
+<td style="text-align: left;">Szög (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>)</td>
 </tr>
 <tr>
-<td style="text-align: left;">Sebesség
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>r</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">v = r\omega</annotation></semantics></math>)</td>
-<td style="text-align: left;">Szögsebesség
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>)</td>
+<td style="text-align: left;">Sebesség (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>r</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">v = r\omega</annotation></semantics></math>)</td>
+<td style="text-align: left;">Szögsebesség (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>)</td>
 </tr>
 <tr>
-<td style="text-align: left;">Gyorsulás
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>r</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">a = r\beta</annotation></semantics></math>)</td>
-<td style="text-align: left;">Szöggyorsulás
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>)</td>
+<td style="text-align: left;">Gyorsulás (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>r</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">a = r\beta</annotation></semantics></math>)</td>
+<td style="text-align: left;">Szöggyorsulás (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>)</td>
 </tr>
 <tr>
-<td style="text-align: left;">Erő
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>)</td>
-<td style="text-align: left;">Forgatónyomaték
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi>F</mi><mi>r</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">M = Fr \sin \alpha</annotation></semantics></math>)</td>
+<td style="text-align: left;">Erő (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>)</td>
+<td style="text-align: left;">Forgatónyomaték (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi>F</mi><mi>r</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">M = Fr \sin \alpha</annotation></semantics></math>)</td>
 </tr>
 <tr>
-<td style="text-align: left;">Tömeg
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>)</td>
-<td style="text-align: left;">Tehetetlenségi nyomaték
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><msub><mi>m</mi><mi>i</mi></msub><msubsup><mi>r</mi><mi>i</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\Theta = \sum_{i = 1}^{N} m_i r_i^2</annotation></semantics></math>)</td>
+<td style="text-align: left;">Tömeg (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>)</td>
+<td style="text-align: left;">Tehetetlenségi nyomaték (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><msub><mi>m</mi><mi>i</mi></msub><msubsup><mi>r</mi><mi>i</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\Theta = \sum_{i = 1}^{N} m_i r_i^2</annotation></semantics></math>)</td>
 </tr>
 <tr>
-<td style="text-align: left;">Lendület / Impulzus
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi>m</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">I = mv</annotation></semantics></math>)</td>
-<td style="text-align: left;">Perdület / Impulzusmomentum
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mi mathvariant="normal">Θ</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">N = \Theta \omega</annotation></semantics></math>)</td>
+<td style="text-align: left;">Lendület / Impulzus (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi>m</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">I = mv</annotation></semantics></math>)</td>
+<td style="text-align: left;">Perdület / Impulzusmomentum (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mi mathvariant="normal">Θ</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">N = \Theta \omega</annotation></semantics></math>)</td>
 </tr>
 <tr>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">F_{\text{e}} = ma</annotation></semantics></math></td>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mtext mathvariant="normal">e</mtext><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mi mathvariant="normal">Θ</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">M_{\text{e}}^{\text{k}} = \Theta \beta</annotation></semantics></math></td>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">F_{\text{e}} = ma</annotation></semantics></math></td>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mtext mathvariant="normal">e</mtext><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mi mathvariant="normal">Θ</mi><mi>β</mi></mrow><annotation encoding="application/x-tex">M_{\text{e}}^{\text{k}} = \Theta \beta</annotation></semantics></math></td>
 </tr>
 <tr>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mover><mi>I</mi><mo accent="true">→</mo></mover></mrow><mi>t</mi></mfrac><mspace width="1.0em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>→</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\vec{F}_{\text{e}} = \frac{\Delta \vec{I}}{t} \quad (t \rightarrow 0)</annotation></semantics></math></td>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mover><mi>M</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">e</mtext><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mover><mi>N</mi><mo accent="true">→</mo></mover></mrow><mi>t</mi></mfrac><mspace width="1.0em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>→</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\vec{M}_{\text{e}}^{\text{k}} = \frac{\Delta \vec{N}}{t} \quad (t \rightarrow 0)</annotation></semantics></math></td>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mover><mi>I</mi><mo accent="true">→</mo></mover></mrow><mi>t</mi></mfrac><mspace width="1.0em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>→</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\vec{F}_{\text{e}} = \frac{\Delta \vec{I}}{t} \quad (t \rightarrow 0)</annotation></semantics></math></td>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mover><mi>M</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">e</mtext><mtext mathvariant="normal">k</mtext></msubsup><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mover><mi>N</mi><mo accent="true">→</mo></mover></mrow><mi>t</mi></mfrac><mspace width="1.0em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>→</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\vec{M}_{\text{e}}^{\text{k}} = \frac{\Delta \vec{N}}{t} \quad (t \rightarrow 0)</annotation></semantics></math></td>
 </tr>
 <tr>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">kin</mtext></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">E_{\text{kin}} = \frac{mv^2}{2}</annotation></semantics></math></td>
-<td
-style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">forg</mtext></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Θ</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">E_{\text{forg}} = \frac{\Theta \omega^2}{2}</annotation></semantics></math></td>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">kin</mtext></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">E_{\text{kin}} = \frac{mv^2}{2}</annotation></semantics></math></td>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">forg</mtext></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Θ</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">E_{\text{forg}} = \frac{\Theta \omega^2}{2}</annotation></semantics></math></td>
 </tr>
 </tbody>
 </table>
 <hr />
 <h2 id="feladatok">Feladatok</h2>
 <p><strong>1. Feladat (Támaszerők)</strong></p>
-<p>Határozd meg a csapágyra ható támaszerő vízszintes és függőleges
-komponensét a fenti példában abban az esetben, amikor a motor
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>&gt;</mo><msqrt><mfrac><mrow><mn>3</mn><mi>g</mi></mrow><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></msqrt></mrow><annotation encoding="application/x-tex">\omega &gt; \sqrt{\frac{3g}{2L}}</annotation></semantics></math>
-szögsebességgel forog, és a rúd beállt a stabil
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\alpha &gt; 0</annotation></semantics></math>
-egyensúlyi helyzetébe! <em>(Tipp: Írd fel a rúd tömegközéppontjának
-vízszintes körpályájára a haladó mozgás alapegyenletét!)</em></p>
+<p>Határozd meg a csapágyra ható támaszerő vízszintes és függőleges komponensét a fenti példában abban az esetben, amikor a motor <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>&gt;</mo><msqrt><mfrac><mrow><mn>3</mn><mi>g</mi></mrow><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></msqrt></mrow><annotation encoding="application/x-tex">\omega &gt; \sqrt{\frac{3g}{2L}}</annotation></semantics></math> szögsebességgel forog, és a rúd beállt a stabil <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\alpha &gt; 0</annotation></semantics></math> egyensúlyi helyzetébe! <em>(Tipp: Írd fel a rúd tömegközéppontjának vízszintes körpályájára a haladó mozgás alapegyenletét!)</em></p>
 <p><strong>2. Feladat (Forgó gyűrű)</strong></p>
-<p>Egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
-sugarú, vékony drótból készült körgyűrű a függőleges átmérője körül
-állandó
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>
-szögsebességgel forog. Egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
-tömegű kis gyöngyszem súrlódásmentesen csúszhat a gyűrűn. * a) Milyen
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>
-szögsebesség esetén lesz a gyöngyszem stabil egyensúlyi helyzete a gyűrű
-legalsó pontján kívül? * b) Határozd meg ezt az egyensúlyi helyzetet (a
-függőlegessel bezárt
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math>
-szöget) a szögsebesség függvényében!</p>
+<p>Egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> sugarú, vékony drótból készült körgyűrű a függőleges átmérője körül állandó <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> szögsebességgel forog. Egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> tömegű kis gyöngyszem súrlódásmentesen csúszhat a gyűrűn. * a) Milyen <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> szögsebesség esetén lesz a gyöngyszem stabil egyensúlyi helyzete a gyűrű legalsó pontján kívül? * b) Határozd meg ezt az egyensúlyi helyzetet (a függőlegessel bezárt <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math> szöget) a szögsebesség függvényében!</p>
 </main>
 </body>
 </html>

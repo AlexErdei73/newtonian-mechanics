@@ -4,256 +4,78 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>Út a turbulenciához a Kármán-féle örvénysoron át</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="LAMINARISARAMLAS2.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="TURBULENCIA1.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="LAMINARISARAMLAS2.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="TURBULENCIA1.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#út-a-turbulenciához-a-kármán-féle-örvénysoron-át" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
-<h1 id="út-a-turbulenciához-a-kármán-féle-örvénysoron-át">Út a
-turbulenciához a Kármán-féle örvénysoron át</h1>
-<h2 id="végtelen-henger-körüli-áramlás-síkban">Végtelen henger körüli
-áramlás síkban</h2>
+<h1 id="út-a-turbulenciához-a-kármán-féle-örvénysoron-át">Út a turbulenciához a Kármán-féle örvénysoron át</h1>
+<h2 id="végtelen-henger-körüli-áramlás-síkban">Végtelen henger körüli áramlás síkban</h2>
 <h3 id="kísérletek">Kísérletek</h3>
 <p><lite-youtube videoid="6xVF6qJmOnI"></lite-youtube></p>
-<p>Az előző fejezetben láttuk a lamináris áramlást, amely kis
-Reynolds-számoknál időben állandó, örvénymentes áramlást jelentett. Az
-áramlási kép ezekben az egyszerű esetekben – például egy gömb körüli
-folyadékáramlás vagy egy végtelen hosszú, egyenes csőben történő áramlás
-esetén – elméletileg is kiszámítható a Navier–Stokes-egyenletek
-megoldásával, ha valaki már ismeri az ehhez szükséges matematikai
-apparatust.</p>
-<p>Azt is tudjuk viszont, hogy az így kapott törvények, mint például a
-Stokes-törvény vagy a Hagen–Poiseuille-törvény, csak kis Reynolds-számok
-esetén érvényes közelítések. Amint az áramlás elegendően gyors, vagyis a
-Reynolds-szám elég naggyá válik, a belső súrlódás már nem képes
-stabilizálni az áramlást, és az áramlásban örvények jelennek meg,
-amelyek leválnak az akadályokról – például a cső faláról vagy a
-gömbről.</p>
-<p>Tovább növelve a Reynolds-számot, az áramlás teljesen turbulenssé
-válik. Ez egy kaotikus állapot, amelyről a későbbiekben fogunk
-részletesen beszélni. Most az átmeneti tartományt vizsgáljuk meg
-részletesebben egy egyszerűbb, síkbeli áramlási példán keresztül, amely
-a végtelen hosszú henger körüli áramlás.</p>
+<p>Az előző fejezetben láttuk a lamináris áramlást, amely kis Reynolds-számoknál időben állandó, örvénymentes áramlást jelentett. Az áramlási kép ezekben az egyszerű esetekben – például egy gömb körüli folyadékáramlás vagy egy végtelen hosszú, egyenes csőben történő áramlás esetén – elméletileg is kiszámítható a Navier–Stokes-egyenletek megoldásával, ha valaki már ismeri az ehhez szükséges matematikai apparatust.</p>
+<p>Azt is tudjuk viszont, hogy az így kapott törvények, mint például a Stokes-törvény vagy a Hagen–Poiseuille-törvény, csak kis Reynolds-számok esetén érvényes közelítések. Amint az áramlás elegendően gyors, vagyis a Reynolds-szám elég naggyá válik, a belső súrlódás már nem képes stabilizálni az áramlást, és az áramlásban örvények jelennek meg, amelyek leválnak az akadályokról – például a cső faláról vagy a gömbről.</p>
+<p>Tovább növelve a Reynolds-számot, az áramlás teljesen turbulenssé válik. Ez egy kaotikus állapot, amelyről a későbbiekben fogunk részletesen beszélni. Most az átmeneti tartományt vizsgáljuk meg részletesebben egy egyszerűbb, síkbeli áramlási példán keresztül, amely a végtelen hosszú henger körüli áramlás.</p>
 <h3 id="örvények-megjelenése">Örvények megjelenése</h3>
-<p>Amint a videóban is láthattuk, a jelenség gyakran előfordul a
-mindennapi életben is, de az egyenletek nem oldhatók meg számítógépek
-használata nélkül. Ezért a legjobb a jelenséget úgy vizsgálni, ahogyan a
-videóban is teszi a matematikus: elemzi a szimuláció eredményeit
-különböző Reynolds-számok esetén. Ezt aztán összehasonlíthatjuk a
-természetben is megfigyelt jelenségekkel, és megállapíthatjuk, hogy a
-szimulációk hűen visszaadják a valóságot.</p>
-<p>Kis Reynolds-szám esetén az áramlási kép stacionárius (időben
-állandó), örvények egyáltalan nem figyelhetők meg. Ez a gyakorlatban azt
-jelenti, hogy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>&lt;</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">Re &lt; 5</annotation></semantics></math>.</p>
-<p>Ha a Reynolds-szám, vagyis az áramlási sebesség növekszik, azt
-tapasztaljuk, hogy az áramlás még mindig stacionárius, de a henger
-mögött szimmetrikusan két mozdulatlan örvény jelenik meg. Ez a helyzet
-nagyjából
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>=</mo><mn>46</mn></mrow><annotation encoding="application/x-tex">Re = 46</annotation></semantics></math>
-értékig áll fenn. A Reynolds-szám növekedésével a két szimmetrikusan
-elhelyezkedő örvény növekszik, de továbbra is szimmetrikusan
-helyezkednek el és mozdulatlanok maradnak.</p>
-<h3 id="örvények-leválása-a-kármán-féle-örvénysor">Örvények leválása: a
-Kármán-féle örvénysor</h3>
-<p>Kármán Tódor 1911-ben elméleti úton bebizonyította, hogy egy olyan
-örvénysor, amelynél az örvények periodikusan, egymástól egyenlő
-távolságra következnek, és felváltva helyezkednek el a szimmetriasík
-alatt és felett úgy, hogy a szimmetriasík feletti és alatti örvények
-forgásának értelme ellentétes, stabil képződmény az áramló folyadékban.
-Ez a <em>Kármán-féle örvénysor</em>.</p>
-<p>A henger esetében a stacionárius áramlás
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>&gt;</mo><mn>46</mn></mrow><annotation encoding="application/x-tex">Re &gt; 46</annotation></semantics></math>
-esetén instabillá válik. Egy periodikus oszcilláció (lengés) jelenik
-meg, amelyet a belső súrlódás többé már nem képes lecsillapítani. A
-szimmetria megszűnik, és a henger anyaga mögül az örvények kezdenek
-leválni periodikusan, felváltva, így jön létre az az új, dinamikusan
-stabil áramlás, amely a Kármán-féle örvénysor.</p>
-<p>A Reynolds-szám további növelésével a leváló örvények kölcsönhatásba
-kerülnek az alacsonyabb Reynolds-szám esetén a henger mögött megjelenő,
-szimmetrikusan elhelyezkedő örvényekkel is. Így ezek a belső zónák már
-szintén pulzálni fognak, és az elhelyezkedésük a továbbiakban egyáltalán
-nem lesz szimmetrikus.</p>
-<p>A Reynolds-szám drasztikus növelésével a henger mögötti áramlás
-teljesen turbulenssé válik. Ez azonban a valóságban egy háromdimenziós
-instabilitás, így a kétdimenziós számítógépes szimulációk önmagukban ezt
-már nem képesek tökéletesen visszaadni.</p>
+<p>Amint a videóban is láthattuk, a jelenség gyakran előfordul a mindennapi életben is, de az egyenletek nem oldhatók meg számítógépek használata nélkül. Ezért a legjobb a jelenséget úgy vizsgálni, ahogyan a videóban is teszi a matematikus: elemzi a szimuláció eredményeit különböző Reynolds-számok esetén. Ezt aztán összehasonlíthatjuk a természetben is megfigyelt jelenségekkel, és megállapíthatjuk, hogy a szimulációk hűen visszaadják a valóságot.</p>
+<p>Kis Reynolds-szám esetén az áramlási kép stacionárius (időben állandó), örvények egyáltalan nem figyelhetők meg. Ez a gyakorlatban azt jelenti, hogy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>&lt;</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">Re &lt; 5</annotation></semantics></math>.</p>
+<p>Ha a Reynolds-szám, vagyis az áramlási sebesség növekszik, azt tapasztaljuk, hogy az áramlás még mindig stacionárius, de a henger mögött szimmetrikusan két mozdulatlan örvény jelenik meg. Ez a helyzet nagyjából <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>=</mo><mn>46</mn></mrow><annotation encoding="application/x-tex">Re = 46</annotation></semantics></math> értékig áll fenn. A Reynolds-szám növekedésével a két szimmetrikusan elhelyezkedő örvény növekszik, de továbbra is szimmetrikusan helyezkednek el és mozdulatlanok maradnak.</p>
+<h3 id="örvények-leválása-a-kármán-féle-örvénysor">Örvények leválása: a Kármán-féle örvénysor</h3>
+<p>Kármán Tódor 1911-ben elméleti úton bebizonyította, hogy egy olyan örvénysor, amelynél az örvények periodikusan, egymástól egyenlő távolságra következnek, és felváltva helyezkednek el a szimmetriasík alatt és felett úgy, hogy a szimmetriasík feletti és alatti örvények forgásának értelme ellentétes, stabil képződmény az áramló folyadékban. Ez a <em>Kármán-féle örvénysor</em>.</p>
+<p>A henger esetében a stacionárius áramlás <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>&gt;</mo><mn>46</mn></mrow><annotation encoding="application/x-tex">Re &gt; 46</annotation></semantics></math> esetén instabillá válik. Egy periodikus oszcilláció (lengés) jelenik meg, amelyet a belső súrlódás többé már nem képes lecsillapítani. A szimmetria megszűnik, és a henger anyaga mögül az örvények kezdenek leválni periodikusan, felváltva, így jön létre az az új, dinamikusan stabil áramlás, amely a Kármán-féle örvénysor.</p>
+<p>A Reynolds-szám további növelésével a leváló örvények kölcsönhatásba kerülnek az alacsonyabb Reynolds-szám esetén a henger mögött megjelenő, szimmetrikusan elhelyezkedő örvényekkel is. Így ezek a belső zónák már szintén pulzálni fognak, és az elhelyezkedésük a továbbiakban egyáltalán nem lesz szimmetrikus.</p>
+<p>A Reynolds-szám drasztikus növelésével a henger mögötti áramlás teljesen turbulenssé válik. Ez azonban a valóságban egy háromdimenziós instabilitás, így a kétdimenziós számítógépes szimulációk önmagukban ezt már nem képesek tökéletesen visszaadni.</p>
 <hr />
-<h2 id="valódi-henger-körüli-áramlások-a-strouhal-szám">Valódi henger
-körüli áramlások: a Strouhal-szám</h2>
-<p>Hogyan tudjuk megjósolni, hogy a szél sebességétől vagy az oszlop
-vastagságától függően másodpercenként hányszor fognak leválni ezek az
-örvények? Erre a kérdésre Vincenz Strouhal (1850–1922) cseh fizikus adta
-meg a választ, aki bevezette az áramlástan harmadik legfontosabb
-dimenzió nélküli számát, a <em>Strouhal-számot</em>
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">St</annotation></semantics></math>):</p>
+<h2 id="valódi-henger-körüli-áramlások-a-strouhal-szám">Valódi henger körüli áramlások: a Strouhal-szám</h2>
+<p>Hogyan tudjuk megjósolni, hogy a szél sebességétől vagy az oszlop vastagságától függően másodpercenként hányszor fognak leválni ezek az örvények? Erre a kérdésre Vincenz Strouhal (1850–1922) cseh fizikus adta meg a választ, aki bevezette az áramlástan harmadik legfontosabb dimenzió nélküli számát, a <em>Strouhal-számot</em> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">St</annotation></semantics></math>):</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mo>=</mo><mfrac><mrow><mi>f</mi><mo>⋅</mo><mi>d</mi></mrow><mi>u</mi></mfrac></mrow><annotation encoding="application/x-tex">
 St = \frac{f \cdot d}{u}
 </annotation></semantics></math></p>
 <ul>
-<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>:
-az örvényleválás frekvenciája
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">1/s</mtext><annotation encoding="application/x-tex">\text{1/s}</annotation></semantics></math>
-vagy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">Hz</mtext><annotation encoding="application/x-tex">\text{Hz}</annotation></semantics></math>)</li>
-<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>:
-az akadály (henger) átmérője
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m</mtext><annotation encoding="application/x-tex">\text{m}</annotation></semantics></math>)</li>
-<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>:
-a zavartalan áramlási sebesség
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m/s</mtext><annotation encoding="application/x-tex">\text{m/s}</annotation></semantics></math>)</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>: az örvényleválás frekvenciája (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">1/s</mtext><annotation encoding="application/x-tex">\text{1/s}</annotation></semantics></math> vagy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">Hz</mtext><annotation encoding="application/x-tex">\text{Hz}</annotation></semantics></math>)</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>: az akadály (henger) átmérője (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m</mtext><annotation encoding="application/x-tex">\text{m}</annotation></semantics></math>)</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>: a zavartalan áramlási sebesség (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">m/s</mtext><annotation encoding="application/x-tex">\text{m/s}</annotation></semantics></math>)</li>
 </ul>
-<h3 id="a-strouhal-szám-a-reynolds-szám-függvényében">A Strouhal-szám a
-Reynolds-szám függvényében</h3>
-<p>Ha laboratóriumban megmérjük, hogyan változik a Strouhal-szám a
-Reynolds-számnak (mely itt az áramlás sebességét jellemzi) a
-függvényében egy kör keresztmetszetű henger mögött, az áramlástan egyik
-leghíresebb grafikonját kapjuk:</p>
+<h3 id="a-strouhal-szám-a-reynolds-szám-függvényében">A Strouhal-szám a Reynolds-szám függvényében</h3>
+<p>Ha laboratóriumban megmérjük, hogyan változik a Strouhal-szám a Reynolds-számnak (mely itt az áramlás sebességét jellemzi) a függvényében egy kör keresztmetszetű henger mögött, az áramlástan egyik leghíresebb grafikonját kapjuk:</p>
 <figure>
-<img src="Kepek/strouhal.gif"
-alt="A Strouhal-szám a Reynolds-szám függvényében henger esetén" />
-<figcaption aria-hidden="true">A Strouhal-szám a Reynolds-szám
-függvényében henger esetén</figcaption>
+<img src="Kepek/strouhal.gif" alt="A Strouhal-szám a Reynolds-szám függvényében henger esetén" />
+<figcaption aria-hidden="true">A Strouhal-szám a Reynolds-szám függvényében henger esetén</figcaption>
 </figure>
-<p>A grafikonból számunkra az a legfontosabb elméleti tanulság, hogy egy
-igen széles Reynolds-szám tartományban – nagyjából
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>250</mn><mo>&lt;</mo><mi>R</mi><mi>e</mi><mo>&lt;</mo><mn>250</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow><annotation encoding="application/x-tex">250 &lt; Re &lt; 250\ 000</annotation></semantics></math>
-között – a Strouhal-szám szinte teljesen állandónak tekinthető, méghozzá
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mo>≈</mo><mn>0</mn><mo>,</mo><mn>21</mn></mrow><annotation encoding="application/x-tex">St \approx 0{,}21</annotation></semantics></math>.
-Ez azt jelenti, hogy az áramlás sebességével egyenesen arányos lesz a
-kialakuló frekvencia ebben a hatalmas gépészeti tartományban.
-Nyilvánvalóan kisebb Reynolds-számokra ez a linearitás már nem igaz,
-nagyon kis Reynolds-számok esetén pedig az örvények le sem válnak a
-testről.</p>
-<p>Kifejezetten érdekes, hogy mi történik hatalmas Reynolds-számok
-esetén. Itt a hengerre tapadó folyadék-határréteg, amely sokáig az
-elülső falon megőrzi a lamináris jellegét, szinten turbulenssé válik. Ez
-azt jelenti, hogy az örvényleválás pontos geometriai helye is fluktuálni
-kezd, így a szigorúan szabályos periodikus jelleg és az állandó, tiszta
-frekvencia felbomlik. Ez még magasabb Reynolds-számoknál újra visszaáll
-egy stabilabb állapotba, de ott a Strouhal-szám értéke már magasabb,
-nagyjából
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>25</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">0{,}25 - 0{,}30</annotation></semantics></math>
-között mozog.</p>
-<h3 id="a-strouhal-szám-a-gyakorlatban">A Strouhal-szám a
-gyakorlatban</h3>
-<p>A periodikusan leváló örvények a rugalmas szerkezeteket erős rezgésbe
-hozhatják, és a mechanikai rezonancia kialakulása esetén ez akár
-életveszélyes vagy pusztító is lehet. A Strouhal-szám és az áramlási
-sebesség ismeretében a leválási frekvencia kiszámítható, így a
-szerkezetek úgy tervezhetők meg, hogy ez a rezonancia ne alakulhasson
-ki.</p>
-<p>A hírhedt <strong>Tacoma Narrows híd</strong> az erős szélben az
-átadása után mindössze 4 hónappal látványosan összeomlott. A katasztrófa
-utáni vizsgálatok során sokáig gyanakodtak arra, hogy a hidat a fentebb
-vázolt tiszta Kármán-örvény rezonancia pusztította el. A vizsgálatokban,
-illetve az új híd aerodinamikai tervezésében maga Kármán Tódor is
-aktívan részt vett. A modern áramlástani kutatások alapján ma már
-tudjuk, hogy az örvényleválások frekvenciája aznapi szélsebesség
-függvényében kb.
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ Hz}</annotation></semantics></math>
-volt, míg a hídon kialakult végzetes torziós (csavaró) rezgések
-frekvenciája kb.
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}2\text{ Hz}</annotation></semantics></math>
-volt, vagyis nem a tiszta Kármán-örvénysor rezonanciája okozta a híd
-leomlását (hanem az úgynevezett aerelasztikus flatter jelenség).</p>
-<p>A villanyoszlopok és vékony vezetékek heves lengéseit a szélben
-viszont hajszálpontosan ez a jelenség okozza. Szintén rendkívül
-veszélyes ez a ritmusos erőlökés a magas, henger alakú gyárkémények
-esetén, ezért ezekre spirális légterelő bordákat szerelnek, hogy
-megtörjék az örvények ütemét.</p>
-<p>A Strouhal-szám ezenkívül kulcsfontosságú tényező a madarak
-repülésekor és a halak úszásakor is. A leváló örvények energiájának egy
-része ugyanis visszanyerhető, ha az állat mozgása (a szárny- vagy
-farokcsapás) megfelelő frekvenciával történik. A mérések szerint a
-biológiailag optimális, leginkább energiatakarékos érték hajszálpontosan
-a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">0{,}2</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">0{,}4</annotation></semantics></math>
-közötti Strouhal-tartományban van.</p>
+<p>A grafikonból számunkra az a legfontosabb elméleti tanulság, hogy egy igen széles Reynolds-szám tartományban – nagyjából <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>250</mn><mo>&lt;</mo><mi>R</mi><mi>e</mi><mo>&lt;</mo><mn>250</mn><mspace width="0.222em"></mspace><mn>000</mn></mrow><annotation encoding="application/x-tex">250 &lt; Re &lt; 250\ 000</annotation></semantics></math> között – a Strouhal-szám szinte teljesen állandónak tekinthető, méghozzá <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mo>≈</mo><mn>0</mn><mo>,</mo><mn>21</mn></mrow><annotation encoding="application/x-tex">St \approx 0{,}21</annotation></semantics></math>. Ez azt jelenti, hogy az áramlás sebességével egyenesen arányos lesz a kialakuló frekvencia ebben a hatalmas gépészeti tartományban. Nyilvánvalóan kisebb Reynolds-számokra ez a linearitás már nem igaz, nagyon kis Reynolds-számok esetén pedig az örvények le sem válnak a testről.</p>
+<p>Kifejezetten érdekes, hogy mi történik hatalmas Reynolds-számok esetén. Itt a hengerre tapadó folyadék-határréteg, amely sokáig az elülső falon megőrzi a lamináris jellegét, szinten turbulenssé válik. Ez azt jelenti, hogy az örvényleválás pontos geometriai helye is fluktuálni kezd, így a szigorúan szabályos periodikus jelleg és az állandó, tiszta frekvencia felbomlik. Ez még magasabb Reynolds-számoknál újra visszaáll egy stabilabb állapotba, de ott a Strouhal-szám értéke már magasabb, nagyjából <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>25</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">0{,}25 - 0{,}30</annotation></semantics></math> között mozog.</p>
+<h3 id="a-strouhal-szám-a-gyakorlatban">A Strouhal-szám a gyakorlatban</h3>
+<p>A periodikusan leváló örvények a rugalmas szerkezeteket erős rezgésbe hozhatják, és a mechanikai rezonancia kialakulása esetén ez akár életveszélyes vagy pusztító is lehet. A Strouhal-szám és az áramlási sebesség ismeretében a leválási frekvencia kiszámítható, így a szerkezetek úgy tervezhetők meg, hogy ez a rezonancia ne alakulhasson ki.</p>
+<p>A hírhedt <strong>Tacoma Narrows híd</strong> az erős szélben az átadása után mindössze 4 hónappal látványosan összeomlott. A katasztrófa utáni vizsgálatok során sokáig gyanakodtak arra, hogy a hidat a fentebb vázolt tiszta Kármán-örvény rezonancia pusztította el. A vizsgálatokban, illetve az új híd aerodinamikai tervezésében maga Kármán Tódor is aktívan részt vett. A modern áramlástani kutatások alapján ma már tudjuk, hogy az örvényleválások frekvenciája aznapi szélsebesség függvényében kb. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ Hz}</annotation></semantics></math> volt, míg a hídon kialakult végzetes torziós (csavaró) rezgések frekvenciája kb. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}2\text{ Hz}</annotation></semantics></math> volt, vagyis nem a tiszta Kármán-örvénysor rezonanciája okozta a híd leomlását (hanem az úgynevezett aerelasztikus flatter jelenség).</p>
+<p>A villanyoszlopok és vékony vezetékek heves lengéseit a szélben viszont hajszálpontosan ez a jelenség okozza. Szintén rendkívül veszélyes ez a ritmusos erőlökés a magas, henger alakú gyárkémények esetén, ezért ezekre spirális légterelő bordákat szerelnek, hogy megtörjék az örvények ütemét.</p>
+<p>A Strouhal-szám ezenkívül kulcsfontosságú tényező a madarak repülésekor és a halak úszásakor is. A leváló örvények energiájának egy része ugyanis visszanyerhető, ha az állat mozgása (a szárny- vagy farokcsapás) megfelelő frekvenciával történik. A mérések szerint a biológiailag optimális, leginkább energiatakarékos érték hajszálpontosan a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">0{,}2</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">0{,}4</annotation></semantics></math> közötti Strouhal-tartományban van.</p>
 <h3 id="példa">Példa</h3>
-<p>Mekkora egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ cm}</annotation></semantics></math>
-átmérőjű, hengeres villanyoszlop körül fújó,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>36</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">36\text{ km/h}</annotation></semantics></math>
-sebességű szélben a Reynolds-szám, a Strouhal-szám, és mekkora lesz az
-örvények által az oszlopra kifejtett periodikus erő frekvenciája?<br />
-A levegő sűrűsége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-on
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>204</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1{,}204\text{ kg/m}^3</annotation></semantics></math>,
-dinamikus viszkozitása
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>82</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>5</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 1{,}82 \cdot 10^{-5}\text{ Pa}\cdot\text{s}</annotation></semantics></math></p>
+<p>Mekkora egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ cm}</annotation></semantics></math> átmérőjű, hengeres villanyoszlop körül fújó, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>36</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">36\text{ km/h}</annotation></semantics></math> sebességű szélben a Reynolds-szám, a Strouhal-szám, és mekkora lesz az örvények által az oszlopra kifejtett periodikus erő frekvenciája?<br />
+A levegő sűrűsége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-on <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>204</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1{,}204\text{ kg/m}^3</annotation></semantics></math>, dinamikus viszkozitása <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>82</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>5</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 1{,}82 \cdot 10^{-5}\text{ Pa}\cdot\text{s}</annotation></semantics></math></p>
 <p>Váltsuk át a szélsebességet SI alapmértékegységre:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>36</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow><mo>=</mo><mfrac><mrow><mn>36</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><mrow><mn>3600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow></mfrac><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 u = 36\text{ km/h} = \frac{36\ 000\text{ m}}{3600\text{ s}} = 10\text{ m/s}
 </annotation></semantics></math></p>
-<p>A cső vagy az oszlop karakterisztikus mérete az átmérő:
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 30\text{ cm} = 0{,}3\text{ m}</annotation></semantics></math>.
-Számítsuk ki az áramlásra jellemző globális Reynolds-számot:</p>
+<p>A cső vagy az oszlop karakterisztikus mérete az átmérő: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 30\text{ cm} = 0{,}3\text{ m}</annotation></semantics></math>. Számítsuk ki az áramlásra jellemző globális Reynolds-számot:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>=</mo><mfrac><mrow><mi>ρ</mi><mi>d</mi><mi>u</mi></mrow><mi>η</mi></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>,</mo><mn>204</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>3</mn><mo>⋅</mo><mn>10</mn></mrow><mrow><mn>1</mn><mo>,</mo><mn>82</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>5</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>198</mn><mspace width="0.222em"></mspace><mn>461</mn></mrow><annotation encoding="application/x-tex">
 Re = \frac{\rho d u}{\eta} = \frac{1{,}204 \cdot 0{,}3 \cdot 10}{1{,}82 \cdot 10^{-5}} = 198\ 461
 </annotation></semantics></math></p>
-<p>Ez egy kifejezetten magas Reynolds-szám, de ha ránézünk a St(Re)
-diagramra, látható, hogy ez az érték még szigorúan a stabil fennsíkon
-belül helyezkedik el. Így a Strouhal-szám állandónak vehető:</p>
+<p>Ez egy kifejezetten magas Reynolds-szám, de ha ránézünk a St(Re) diagramra, látható, hogy ez az érték még szigorúan a stabil fennsíkon belül helyezkedik el. Így a Strouhal-szám állandónak vehető:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mo>≈</mo><mn>0</mn><mo>,</mo><mn>21</mn></mrow><annotation encoding="application/x-tex">
 St \approx 0{,}21
 </annotation></semantics></math></p>
-<p>A Strouhal-szám definíciós egyenletéből fejezzük ki tiszta algebrával
-a keresett
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
-frekvenciát:</p>
+<p>A Strouhal-szám definíciós egyenletéből fejezzük ki tiszta algebrával a keresett <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> frekvenciát:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mfrac><mrow><mi>S</mi><mi>t</mi><mo>⋅</mo><mi>u</mi></mrow><mi>d</mi></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>21</mn><mo>⋅</mo><mn>10</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>3</mn></mrow></mfrac><mo>=</mo><mn>7</mn><mo>,</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">
 f = \frac{St \cdot u}{d} = \frac{0{,}21 \cdot 10}{0{,}3} = 7{,}0\text{ Hz}
 </annotation></semantics></math></p>
-<p>Az oszlop mögött leváló örvények másodpercenként hétszer
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">7\text{ Hz}</annotation></semantics></math>-es
-ütemben) fognak felváltva rángatást kifejteni a szerkezetre
-keresztirányban.</p>
+<p>Az oszlop mögött leváló örvények másodpercenként hétszer (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">7\text{ Hz}</annotation></semantics></math>-es ütemben) fognak felváltva rángatást kifejteni a szerkezetre keresztirányban.</p>
 <hr />
 <h2 id="feladatok">Feladatok</h2>
 <ol type="1">
-<li><p>Egy téli viharban a szélsebesség
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u = 15\text{ m/s}</annotation></semantics></math>.
-A széllel szemben egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 5\text{ mm}</annotation></semantics></math>
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>005</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}005\text{ m}</annotation></semantics></math>)
-átmérőjű, vékony réz távvezeték feszül. Feltételezzük, hogy az áramlás a
-grafikon szerinti stabil fennsíkon van, így a Strouhal-szám értéke
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>21</mn></mrow><annotation encoding="application/x-tex">St = 0{,}21</annotation></semantics></math>.
-Milyen
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
-frekvenciájú (magasságú) hangon fog fütyülni a vezeték a szélben?
-Hallható ez a hang az emberi fül számára?</p></li>
-<li><p>Egy gyártelepen egy kör keresztmetszetű,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 2\text{ m}</annotation></semantics></math>
-átmérőjű fém kéményt építettek fel. A statikai mérések szerint a kémény
-szerkezetének saját rezgési frekvenciája (ami a legkönnyebben kilendíti)
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mtext mathvariant="normal">saját</mtext></msub><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">f_{\text{saját}} = 3\text{ Hz}</annotation></semantics></math>
-(másodpercenként három lengés). Az áramlás a stabil fennsíkon mozog
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>21</mn></mrow><annotation encoding="application/x-tex">St = 0{,}21</annotation></semantics></math>).
-Mekkora szélsebesség
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>)
-esetén lép fel a rezonancia katasztrófa veszélye, vagyis mikor lesz az
-örvényleválás üteme pontosan egyenlő a kémény saját frekvenciájával?
-Számítsd ki ezt a kritikus szélsebességet
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">km/h</mtext><annotation encoding="application/x-tex">\text{km/h}</annotation></semantics></math>-ban
-is!</p></li>
-<li><p>Egy bionikai kutatócsoport egy kisméretű cápa úszását vizsgálja
-egy áramlási csatornában. A cápa haladási sebessége a vízben
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u = 2\text{ m/s}</annotation></semantics></math>.
-A mérések szerint a cápa farokúszójának magassága (ami az áramlást
-megzavaró akadály karakterisztikus mérete)
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 10\text{ cm}</annotation></semantics></math>
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}1\text{ m}</annotation></semantics></math>).
-A videófelvételek elemzéséből megállapítják, hogy a cápa másodpercenként
-pontosan hatszor csap a farkával
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">f = 6\text{ Hz}</annotation></semantics></math>).
-Határozd meg a cápa mozgására jellemző Strouhal-számot! A kapott érték
-alapján az állat mozgása a bionikailag leginkább energiatakarékos és
-optimális zónában van?</p></li>
+<li><p>Egy téli viharban a szélsebesség <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u = 15\text{ m/s}</annotation></semantics></math>. A széllel szemben egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 5\text{ mm}</annotation></semantics></math> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>005</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}005\text{ m}</annotation></semantics></math>) átmérőjű, vékony réz távvezeték feszül. Feltételezzük, hogy az áramlás a grafikon szerinti stabil fennsíkon van, így a Strouhal-szám értéke <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>21</mn></mrow><annotation encoding="application/x-tex">St = 0{,}21</annotation></semantics></math>. Milyen <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> frekvenciájú (magasságú) hangon fog fütyülni a vezeték a szélben? Hallható ez a hang az emberi fül számára?</p></li>
+<li><p>Egy gyártelepen egy kör keresztmetszetű, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 2\text{ m}</annotation></semantics></math> átmérőjű fém kéményt építettek fel. A statikai mérések szerint a kémény szerkezetének saját rezgési frekvenciája (ami a legkönnyebben kilendíti) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mtext mathvariant="normal">saját</mtext></msub><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">f_{\text{saját}} = 3\text{ Hz}</annotation></semantics></math> (másodpercenként három lengés). Az áramlás a stabil fennsíkon mozog (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>21</mn></mrow><annotation encoding="application/x-tex">St = 0{,}21</annotation></semantics></math>). Mekkora szélsebesség (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>) esetén lép fel a rezonancia katasztrófa veszélye, vagyis mikor lesz az örvényleválás üteme pontosan egyenlő a kémény saját frekvenciájával? Számítsd ki ezt a kritikus szélsebességet <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtext mathvariant="normal">km/h</mtext><annotation encoding="application/x-tex">\text{km/h}</annotation></semantics></math>-ban is!</p></li>
+<li><p>Egy bionikai kutatócsoport egy kisméretű cápa úszását vizsgálja egy áramlási csatornában. A cápa haladási sebessége a vízben <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u = 2\text{ m/s}</annotation></semantics></math>. A mérések szerint a cápa farokúszójának magassága (ami az áramlást megzavaró akadály karakterisztikus mérete) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 10\text{ cm}</annotation></semantics></math> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}1\text{ m}</annotation></semantics></math>). A videófelvételek elemzéséből megállapítják, hogy a cápa másodpercenként pontosan hatszor csap a farkával (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">f = 6\text{ Hz}</annotation></semantics></math>). Határozd meg a cápa mozgására jellemző Strouhal-számot! A kapott érték alapján az állat mozgása a bionikailag leginkább energiatakarékos és optimális zónában van?</p></li>
 </ol>
 </main>
 </body>

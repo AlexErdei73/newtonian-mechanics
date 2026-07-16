@@ -4,71 +4,28 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>Gravitációs energia</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="FELADATOKBOLYGOMOZGAS.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="FELADATOKGRAVENERGIA.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="FELADATOKBOLYGOMOZGAS.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="FELADATOKGRAVENERGIA.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#gravitációs-energia" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
 <h1 id="gravitációs-energia">Gravitációs energia</h1>
-<h2 id="a-gravitációs-energia-fogalma">A gravitációs energia
-fogalma</h2>
-<p>Láttuk, hogy a nehézségi erő konzervatív, és tartozik hozzá
-potenciális energia. A nehézségi erő által végzett munkát a test
-potenciális energiájának csökkenése fedezi.</p>
-<p>Azt is láttuk, hogy a nehézségi erő a Föld gravitációs vonzásából
-fakad, melyet a Föld a felszín közeli testekre fejt ki. Láttuk, hogy ez
-a vonzóerő a távolság négyzetével csökken, tehát a Hold távolságára lévő
-testre például
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3600</mn><annotation encoding="application/x-tex">3600</annotation></semantics></math>-szor
-kisebb vonzóerővel hat a Föld, mint egy ugyanilyen testre a földfelszín
-közelében, hiszen a Hold
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>60</mn><annotation encoding="application/x-tex">60</annotation></semantics></math>-szor
-olyan messze van a Föld középpontjától, mint a Föld felszíne.</p>
-<p>Hogyan változik vajon a test gravitációs helyzeti energiája, ha a
-Föld sugarához képest nem elhanyagolható magasságok is szóba jöhetnek?
-Erre a kérdésre keressük a választ!</p>
-<h2 id="a-gravitációs-potenciális-energia-kiszámítása">A gravitációs
-potenciális energia kiszámítása</h2>
-<p>Nézzük meg, hogyan változik az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>r</mi></mfrac><annotation encoding="application/x-tex">\frac{1}{r}</annotation></semantics></math>
-függvény, ha az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
-kis mértékben megváltozik! Legyen tehát
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>r</mi><mo>≪</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">\Delta r \ll r</annotation></semantics></math>!</p>
+<h2 id="a-gravitációs-energia-fogalma">A gravitációs energia fogalma</h2>
+<p>Láttuk, hogy a nehézségi erő konzervatív, és tartozik hozzá potenciális energia. A nehézségi erő által végzett munkát a test potenciális energiájának csökkenése fedezi.</p>
+<p>Azt is láttuk, hogy a nehézségi erő a Föld gravitációs vonzásából fakad, melyet a Föld a felszín közeli testekre fejt ki. Láttuk, hogy ez a vonzóerő a távolság négyzetével csökken, tehát a Hold távolságára lévő testre például <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3600</mn><annotation encoding="application/x-tex">3600</annotation></semantics></math>-szor kisebb vonzóerővel hat a Föld, mint egy ugyanilyen testre a földfelszín közelében, hiszen a Hold <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>60</mn><annotation encoding="application/x-tex">60</annotation></semantics></math>-szor olyan messze van a Föld középpontjától, mint a Föld felszíne.</p>
+<p>Hogyan változik vajon a test gravitációs helyzeti energiája, ha a Föld sugarához képest nem elhanyagolható magasságok is szóba jöhetnek? Erre a kérdésre keressük a választ!</p>
+<h2 id="a-gravitációs-potenciális-energia-kiszámítása">A gravitációs potenciális energia kiszámítása</h2>
+<p>Nézzük meg, hogyan változik az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>r</mi></mfrac><annotation encoding="application/x-tex">\frac{1}{r}</annotation></semantics></math> függvény, ha az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> kis mértékben megváltozik! Legyen tehát <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>r</mi><mo>≪</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">\Delta r \ll r</annotation></semantics></math>!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><msub><mi>r</mi><mn>0</mn></msub></mfrac><mo>=</mo><mfrac><mrow><msub><mi>r</mi><mn>0</mn></msub><mo>−</mo><mi>r</mi></mrow><mrow><mi>r</mi><msub><mi>r</mi><mn>0</mn></msub></mrow></mfrac><mo>=</mo><mi>−</mi><mfrac><mrow><mi>r</mi><mo>−</mo><msub><mi>r</mi><mn>0</mn></msub></mrow><mrow><mi>r</mi><mo stretchy="false" form="prefix">(</mo><mi>r</mi><mo>−</mo><mi mathvariant="normal">Δ</mi><mi>r</mi><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><mo>=</mo><mi>−</mi><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>r</mi></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
 \Delta \frac{1}{r} = \frac{1}{r} - \frac{1}{r_0} = \frac{r_0 - r}{r r_0} = - \frac{r - r_0}{r(r - \Delta r)} = - \frac{\Delta r}{r^2}
 </annotation></semantics></math></p>
-<p>Itt az utolsó lépésben két fontos dolog történt: 1. Egyrészt
-felismertük, hogy a számlálóban
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>−</mo><msub><mi>r</mi><mn>0</mn></msub><mo>=</mo><mi mathvariant="normal">Δ</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">r - r_0 = \Delta r</annotation></semantics></math>.
-2. A nevezőben
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">\Delta r</annotation></semantics></math>
-elhanyagolható
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
-mellett, hiszen sokkal kisebb nála.</p>
-<p>Most vizsgáljuk meg, hogyan változik a gravitációs energia, ha a Nap
-körül keringő bolygó pályáján kis mértékben elmozdul! Az elmozdulás két
-részből tevődik össze: 1. A Naptól a bolygóhoz húzott sugárra merőleges
-elmozdulás-komponens munkavégzéssel nem jár, hiszen ez az erő irányára
-merőleges elmozdulás-komponens! 2. A bolygó távolsága
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>)
-a Naptól megváltozik. Legyen
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
-a bolygó tömege és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
-a Nap tömege. Ekkor:</p>
+<p>Itt az utolsó lépésben két fontos dolog történt: 1. Egyrészt felismertük, hogy a számlálóban <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>−</mo><msub><mi>r</mi><mn>0</mn></msub><mo>=</mo><mi mathvariant="normal">Δ</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">r - r_0 = \Delta r</annotation></semantics></math>. 2. A nevezőben <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">\Delta r</annotation></semantics></math> elhanyagolható <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> mellett, hiszen sokkal kisebb nála.</p>
+<p>Most vizsgáljuk meg, hogyan változik a gravitációs energia, ha a Nap körül keringő bolygó pályáján kis mértékben elmozdul! Az elmozdulás két részből tevődik össze: 1. A Naptól a bolygóhoz húzott sugárra merőleges elmozdulás-komponens munkavégzéssel nem jár, hiszen ez az erő irányára merőleges elmozdulás-komponens! 2. A bolygó távolsága (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>) a Naptól megváltozik. Legyen <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> a bolygó tömege és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> a Nap tömege. Ekkor:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><mi>−</mi><msub><mi>F</mi><mtext mathvariant="normal">g</mtext></msub><mi mathvariant="normal">Δ</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">
 W_{\text{g}} = -F_{\text{g}} \Delta r
 </annotation></semantics></math></p>
-<p>A munka negatív, ha
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta r &gt; 0</annotation></semantics></math>,
-mivel ellentétes irányú a gravitációs erő és az elmozdulás. A munka
-pozitív, ha
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>r</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta r &lt; 0</annotation></semantics></math>,
-mert a bolygó az erő irányába mozdul el. Van-e olyan
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub><annotation encoding="application/x-tex">E_{\text{g}}</annotation></semantics></math>
-gravitációs energia, mely úgy változik, hogy</p>
+<p>A munka negatív, ha <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta r &gt; 0</annotation></semantics></math>, mivel ellentétes irányú a gravitációs erő és az elmozdulás. A munka pozitív, ha <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>r</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta r &lt; 0</annotation></semantics></math>, mert a bolygó az erő irányába mozdul el. Van-e olyan <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub><annotation encoding="application/x-tex">E_{\text{g}}</annotation></semantics></math> gravitációs energia, mely úgy változik, hogy</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><mi>−</mi><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub></mrow><annotation encoding="application/x-tex">
 W_{\text{g}} = - \Delta E_{\text{g}}
 </annotation></semantics></math></p>
@@ -77,53 +34,30 @@ W_{\text{g}} = - \Delta E_{\text{g}}
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><mi>−</mi><mi>G</mi><mfrac><mrow><mi>M</mi><mi>m</mi></mrow><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">
 E_{\text{g}} = -G \frac{Mm}{r}
 </annotation></semantics></math></p>
-<p>gravitációs energia van a rendszerben, melynek változása megegyezik a
-gravitációs erő által végzett munkával.</p>
+<p>gravitációs energia van a rendszerben, melynek változása megegyezik a gravitációs erő által végzett munkával.</p>
 <p>Bizonyítás:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><mi>−</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mi>G</mi><mfrac><mrow><mi>m</mi><mi>M</mi></mrow><mi>r</mi></mfrac><mo>+</mo><mi>G</mi><mfrac><mrow><mi>m</mi><mi>M</mi></mrow><msub><mi>r</mi><mn>0</mn></msub></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>G</mi><mi>m</mi><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><mi>r</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><msub><mi>r</mi><mn>0</mn></msub></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>G</mi><mi>m</mi><mi>M</mi><mi mathvariant="normal">Δ</mi><mfrac><mn>1</mn><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">
 -\Delta E_{\text{g}} = -\left(-G \frac{mM}{r} + G \frac{mM}{r_0}\right) = GmM \left(\frac{1}{r} - \frac{1}{r_0}\right) = GmM \Delta \frac{1}{r}
 </annotation></semantics></math></p>
-<p>Most beírjuk ide, amit kaptunk a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mfrac><mn>1</mn><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">\Delta \frac{1}{r}</annotation></semantics></math>-re!</p>
+<p>Most beírjuk ide, amit kaptunk a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mfrac><mn>1</mn><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">\Delta \frac{1}{r}</annotation></semantics></math>-re!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><mi>G</mi><mi>m</mi><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>r</mi></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>−</mi><mi>G</mi><mfrac><mrow><mi>m</mi><mi>M</mi></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac><mi mathvariant="normal">Δ</mi><mi>r</mi><mo>=</mo><mi>−</mi><msub><mi>F</mi><mtext mathvariant="normal">g</mtext></msub><mi mathvariant="normal">Δ</mi><mi>r</mi><mo>=</mo><msub><mi>W</mi><mtext mathvariant="normal">g</mtext></msub></mrow><annotation encoding="application/x-tex">
 -\Delta E_{\text{g}} = GmM\left(- \frac{\Delta r}{r^2}\right) = - G\frac{mM}{r^2} \Delta r = - F_{\text{g}} \Delta r = W_{\text{g}}
 </annotation></semantics></math></p>
-<p>Látjuk tehát, hogy a gravitációs energia valóban kiszámítható a fenti
-formulával.</p>
-<p>Hol van a vonatkoztatási szint? Milyen messze kell legyen a bolygó a
-Naptól, hogy gravitációs energiája 0 legyen? Látható, hogy minél nagyobb
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>,
-annál kisebb a gravitációs energia, hiszen
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
-a nevezőben szerepel, és tudjuk, hogy minél nagyobb számmal osztunk,
-annál kisebb az eredmény. Tehát a bolygónak végtelen nagy távolságban
-kell lennie a Naptól, hogy a gravitációs energia nulla legyen. A
-vonatkoztatási szint
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">r = \infty</annotation></semantics></math>.</p>
-<h2 id="a-magassági-helyzeti-energia-határesete">A magassági helyzeti
-energia határesete</h2>
-<p>Visszakapjuk-e a korábbi magassági helyzeti energia kiszámítást a
-mostani képletből, ha
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>≪</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">h \ll R</annotation></semantics></math>?
-Tehát a magasság sokkal kisebb a Föld sugarához képest, akkor
-számolhatjuk-e a gravitációs energiát a korábbi módon?</p>
+<p>Látjuk tehát, hogy a gravitációs energia valóban kiszámítható a fenti formulával.</p>
+<p>Hol van a vonatkoztatási szint? Milyen messze kell legyen a bolygó a Naptól, hogy gravitációs energiája 0 legyen? Látható, hogy minél nagyobb <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>, annál kisebb a gravitációs energia, hiszen <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> a nevezőben szerepel, és tudjuk, hogy minél nagyobb számmal osztunk, annál kisebb az eredmény. Tehát a bolygónak végtelen nagy távolságban kell lennie a Naptól, hogy a gravitációs energia nulla legyen. A vonatkoztatási szint <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">r = \infty</annotation></semantics></math>.</p>
+<h2 id="a-magassági-helyzeti-energia-határesete">A magassági helyzeti energia határesete</h2>
+<p>Visszakapjuk-e a korábbi magassági helyzeti energia kiszámítást a mostani képletből, ha <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>≪</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">h \ll R</annotation></semantics></math>? Tehát a magasság sokkal kisebb a Föld sugarához képest, akkor számolhatjuk-e a gravitációs energiát a korábbi módon?</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><mi>−</mi><mi>G</mi><mfrac><mrow><mi>m</mi><mi>M</mi></mrow><mi>r</mi></mfrac><mo>=</mo><mi>−</mi><mi>m</mi><mi>G</mi><mi>M</mi><mfrac><mn>1</mn><mrow><mi>R</mi><mo>+</mo><mi>h</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 E_{\text{g}} = -G\frac{mM}{r} = -m GM\frac{1}{R + h}
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mi>R</mi><mo>+</mo><mi>h</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>−</mo><mfrac><mi>h</mi><msup><mi>R</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
 \frac{1}{R + h} = \frac{1}{R} - \frac{h}{R^2}
 </annotation></semantics></math></p>
-<p>Ez az utolsó sor nem más, mint az első kifejezésünk alkalmazva
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">r = R</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>r</mi><mo>=</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">\Delta r = h</annotation></semantics></math>
-esetekre.</p>
+<p>Ez az utolsó sor nem más, mint az első kifejezésünk alkalmazva <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">r = R</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>r</mi><mo>=</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">\Delta r = h</annotation></semantics></math> esetekre.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><mi>−</mi><mi>m</mi><mi>G</mi><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><mi>R</mi></mfrac><mo>−</mo><mfrac><mi>h</mi><msup><mi>R</mi><mn>2</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>−</mi><mi>m</mi><mi>G</mi><mi>M</mi><mfrac><mrow><mi>R</mi><mo>−</mo><mi>h</mi></mrow><msup><mi>R</mi><mn>2</mn></msup></mfrac><mo>=</mo><mi>m</mi><mfrac><mrow><mi>G</mi><mi>M</mi></mrow><msup><mi>R</mi><mn>2</mn></msup></mfrac><mo stretchy="false" form="prefix">(</mo><mi>h</mi><mo>−</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
 E_{\text{g}} = -m GM \left(\frac{1}{R} - \frac{h}{R^2}\right) = -m GM \frac{R - h}{R^2} = m \frac{GM}{R^2} (h - R)
 </annotation></semantics></math></p>
-<p>Ha bevezetjük
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>-t,
-a nehézségi gyorsulást:</p>
+<p>Ha bevezetjük <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>-t, a nehézségi gyorsulást:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mfrac><mrow><mi>G</mi><mi>M</mi></mrow><msup><mi>R</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
 g = \frac{GM}{R^2}
 </annotation></semantics></math></p>
@@ -131,59 +65,32 @@ g = \frac{GM}{R^2}
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><mi>m</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>h</mi><mo>−</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>m</mi><mi>g</mi><mi>h</mi><mo>−</mo><mi>m</mi><mi>g</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">
 E_{\text{g}} = mg(h - R) = mgh - mgR
 </annotation></semantics></math></p>
-<p>Látjuk, hogy ez mindig negatív, hiszen
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>≪</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">h \ll R</annotation></semantics></math>,
-de egy adott testre csak egy állandóban
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>m</mi><mi>g</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">-mgR</annotation></semantics></math>)
-különbözik a magassági helyzeti energiától
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">mgh</annotation></semantics></math>).
-Ez annyit jelent, hogy a helyzeti energia nullaszintje
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
-magasságban, tehát
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mspace width="0.222em"></mspace><mn>370</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">6\ 370\text{ km}</annotation></semantics></math>-nél
-van nullának választva. A szokásos esetben, amikor a talajszinten van
-nullának választva a gravitációs energia:</p>
+<p>Látjuk, hogy ez mindig negatív, hiszen <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>≪</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">h \ll R</annotation></semantics></math>, de egy adott testre csak egy állandóban (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>m</mi><mi>g</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">-mgR</annotation></semantics></math>) különbözik a magassági helyzeti energiától (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">mgh</annotation></semantics></math>). Ez annyit jelent, hogy a helyzeti energia nullaszintje <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> magasságban, tehát <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mspace width="0.222em"></mspace><mn>370</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">6\ 370\text{ km}</annotation></semantics></math>-nél van nullának választva. A szokásos esetben, amikor a talajszinten van nullának választva a gravitációs energia:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">h</mtext></msub><mo>=</mo><mi>m</mi><mi>g</mi><mi>h</mi><mo>=</mo><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub><mo>+</mo><mi>m</mi><mi>g</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">
 E_{\text{h}} = mgh = E_{\text{g}} + mgR
 </annotation></semantics></math></p>
-<h2 id="a-mechanikai-energia-megmaradása">A mechanikai energia
-megmaradása</h2>
-<p>A bolygómozgás esetén megmarad a mechanikai energia, hiszen csak a
-gravitációs erő éri a bolygót, és ez konzervatív, amint épp
-megállapítottuk.</p>
+<h2 id="a-mechanikai-energia-megmaradása">A mechanikai energia megmaradása</h2>
+<p>A bolygómozgás esetén megmarad a mechanikai energia, hiszen csak a gravitációs erő éri a bolygót, és ez konzervatív, amint épp megállapítottuk.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>+</mo><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><msub><mi>E</mi><mrow><mtext mathvariant="normal">m</mtext><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>E</mi><mrow><mtext mathvariant="normal">g</mtext><mo>,</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">
 E_{\text{m}} + E_{\text{g}} = E_{\text{m},0} + E_{\text{g},0}
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>−</mo><mi>G</mi><mfrac><mrow><mi>m</mi><mi>M</mi></mrow><mi>r</mi></mfrac><mo>=</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">
 \frac{mv^2}{2} - G\frac{mM}{r} = E
 </annotation></semantics></math></p>
-<p>Itt az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
-állandó a pályához tartozó energia, mely állandó az adott pályán.</p>
+<p>Itt az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> állandó a pályához tartozó energia, mely állandó az adott pályán.</p>
 <h2 id="sebesség-kiszámítása">Sebesség kiszámítása</h2>
-<p>Ha a mechanikai energia egyenletéből kifejezzük a sebességet, akkor a
-következő képlet adódik:</p>
+<p>Ha a mechanikai energia egyenletéből kifejezzük a sebességet, akkor a következő képlet adódik:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mfrac><mrow><mn>2</mn><mi>E</mi></mrow><mi>m</mi></mfrac><mo>+</mo><mi>G</mi><mi>M</mi><mfrac><mn>2</mn><mi>r</mi></mfrac></mrow></msqrt></mrow><annotation encoding="application/x-tex">
 v = \sqrt{\frac{2E}{m} + GM\frac{2}{r}}
 </annotation></semantics></math></p>
-<p>Itt az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
-összenergia ismeretlen, de jegyezzük meg, hogy ez csak a bolygó és a Nap
-átlagos távolságától függ, nem függ a pálya alakjától sem. Az
-összefüggés az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
-energia és az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
-átlagos távolság között körpályából is megkapható:</p>
+<p>Itt az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> összenergia ismeretlen, de jegyezzük meg, hogy ez csak a bolygó és a Nap átlagos távolságától függ, nem függ a pálya alakjától sem. Az összefüggés az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> energia és az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> átlagos távolság között körpályából is megkapható:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub><mo>=</mo><msub><mi>F</mi><mtext mathvariant="normal">g</mtext></msub></mrow><annotation encoding="application/x-tex">
 ma_{\text{cp}} = F_{\text{g}}
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>a</mi></mfrac><mo>=</mo><mi>G</mi><mfrac><mrow><mi>M</mi><mi>m</mi></mrow><msup><mi>a</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
 m\frac{v^2}{a} = G \frac{Mm}{a^2}
 </annotation></semantics></math></p>
-<p>Innen
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>v</mi><mn>2</mn></msup><annotation encoding="application/x-tex">v^2</annotation></semantics></math>
-kifejezhető:</p>
+<p>Innen <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>v</mi><mn>2</mn></msup><annotation encoding="application/x-tex">v^2</annotation></semantics></math> kifejezhető:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>v</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mi>G</mi><mi>M</mi></mrow><mi>a</mi></mfrac></mrow><annotation encoding="application/x-tex">
 v^2 = \frac{GM}{a}
 </annotation></semantics></math></p>
@@ -195,64 +102,32 @@ E = \frac{mv^2}{2} - G\frac{mM}{r} = \frac{GmM}{2a} - \frac{GmM}{a} = -G \frac{M
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>2</mn><mi>E</mi></mrow><mi>m</mi></mfrac><mo>=</mo><mi>−</mi><mi>G</mi><mi>M</mi><mfrac><mn>1</mn><mi>a</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \frac{2E}{m} = -GM \frac{1}{a}
 </annotation></semantics></math></p>
-<p>Ezt visszaírva a sebesség kiszámításába, megkapjuk a sebesség
-kiszámítására vonatkozó egyenletet:</p>
+<p>Ezt visszaírva a sebesség kiszámításába, megkapjuk a sebesség kiszámítására vonatkozó egyenletet:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mi>G</mi><mi>M</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>2</mn><mi>r</mi></mfrac><mo>−</mo><mfrac><mn>1</mn><mi>a</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msqrt></mrow><annotation encoding="application/x-tex">
 v = \sqrt{GM\left(\frac{2}{r} - \frac{1}{a}\right)}
 </annotation></semantics></math></p>
 <h2 id="a-második-kozmikus-sebesség">A második kozmikus sebesség</h2>
-<p>Mekkora sebességgel kell egy testet elhajítanunk a Föld felszínén,
-hogy sose térjen vissza? (A légellenállást elhanyagoljuk.) A válasz
-egyszerű, ha meggondoljuk, hogy el kell jusson végtelen távolságra,
-tehát
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">a = \infty</annotation></semantics></math>.</p>
+<p>Mekkora sebességgel kell egy testet elhajítanunk a Föld felszínén, hogy sose térjen vissza? (A légellenállást elhanyagoljuk.) A válasz egyszerű, ha meggondoljuk, hogy el kell jusson végtelen távolságra, tehát <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">a = \infty</annotation></semantics></math>.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mi>G</mi><mi>M</mi><mfrac><mn>2</mn><mi>R</mi></mfrac></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>2</mn><mi>g</mi><mi>R</mi></mrow></msqrt><mo>=</mo><msqrt><mn>2</mn></msqrt><msqrt><mrow><mi>g</mi><mi>R</mi></mrow></msqrt><mo>≈</mo><mn>1</mn><mo>,</mo><mn>4142</mn><mo>⋅</mo><mn>7</mn><mo>,</mo><mn>902</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow><mo>≈</mo><mn>11</mn><mo>,</mo><mn>18</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 v = \sqrt{GM\frac{2}{R}} = \sqrt{2gR} = \sqrt{2} \sqrt{gR} \approx 1,4142 \cdot 7,902\text{ km/s} \approx 11,18\text{ km/s}
 </annotation></semantics></math></p>
 <p>Ezt a sebességet nevezzük második kozmikus sebességnek.</p>
 <h3 id="szimuláció">Szimuláció</h3>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#5ec467c5-9353-42ca-8f2a-5c9e2afecfb9">A
-második kozmikus sebesség szimulációja</a></p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#5ec467c5-9353-42ca-8f2a-5c9e2afecfb9">A második kozmikus sebesség szimulációja</a></p>
 <h2 id="a-harmadik-kozmikus-sebesség">A harmadik kozmikus sebesség</h2>
-<p>Mekkora sebességgel kell egy testet elhajítani a Földről, hogy a
-Naprendszert is elhagyja? Ugyanígy számolhatunk, de itt
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
-a Nap tömegét jelenti, és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
-pedig a Nap–Föld távolság, tehát a csillagászati egység.
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
-ekkor
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">4\pi^2</annotation></semantics></math>,
-tehát:</p>
+<p>Mekkora sebességgel kell egy testet elhajítani a Földről, hogy a Naprendszert is elhagyja? Ugyanígy számolhatunk, de itt <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> a Nap tömegét jelenti, és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> pedig a Nap–Föld távolság, tehát a csillagászati egység. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math> ekkor <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">4\pi^2</annotation></semantics></math>, tehát:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">Nap</mtext></msub><mo>=</mo><msqrt><mrow><mi>G</mi><msub><mi>M</mi><mtext mathvariant="normal">Nap</mtext></msub><mfrac><mn>2</mn><mi>r</mi></mfrac></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>8</mn><msup><mi>π</mi><mn>2</mn></msup></mrow></msqrt><mo>≈</mo><mn>8</mn><mo>,</mo><mn>886</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> CSE/év</mtext></mrow><mo>≈</mo><mn>42</mn><mo>,</mo><mn>12</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 v_{\text{Nap}} = \sqrt{GM_{\text{Nap}} \frac{2}{r}} = \sqrt{8\pi^2} \approx 8,886\text{ CSE/év} \approx 42,12\text{ km/s}
 </annotation></semantics></math></p>
-<p>A testnek ezzel a sebességgel kell rendelkeznie a Föld elhagyása után
-a Naphoz képest, hogy elhagyja a Naprendszert. Tudjuk, hogy a Föld
-elhagyásához is kell
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mo>,</mo><mn>18</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">11,18\text{ km/s}</annotation></semantics></math>
-sebesség, mely eltűnik, mikor a test már nagy távolságra kerül a Föld
-sugarához képest a Földtől. A Föld maga is rendelkezik Nap körüli
-sebességgel, ez könnyen ki is számítható:</p>
+<p>A testnek ezzel a sebességgel kell rendelkeznie a Föld elhagyása után a Naphoz képest, hogy elhagyja a Naprendszert. Tudjuk, hogy a Föld elhagyásához is kell <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mo>,</mo><mn>18</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">11,18\text{ km/s}</annotation></semantics></math> sebesség, mely eltűnik, mikor a test már nagy távolságra kerül a Föld sugarához képest a Földtől. A Föld maga is rendelkezik Nap körüli sebességgel, ez könnyen ki is számítható:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">Föld</mtext></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>r</mi></mrow><mi>T</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>1415</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>496</mn><mo>⋅</mo><msup><mn>10</mn><mn>8</mn></msup></mrow><mrow><mn>365</mn><mo>,</mo><mn>26</mn><mo>⋅</mo><mn>86</mn><mspace width="0.222em"></mspace><mn>400</mn></mrow></mfrac><mo>≈</mo><mn>29</mn><mo>,</mo><mn>78</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 v_{\text{Föld}} = \frac{2\pi r}{T} = \frac{2 \cdot 3,1415 \cdot 1,496 \cdot 10^8}{365,26 \cdot 86\ 400} \approx 29,78\text{ km/s}
 </annotation></semantics></math></p>
-<p>Ez annyit tesz, hogy a Földhöz képest a Föld elhagyása után
-elegendő</p>
+<p>Ez annyit tesz, hogy a Földhöz képest a Föld elhagyása után elegendő</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">Nap</mtext></msub><mo>−</mo><msub><mi>v</mi><mtext mathvariant="normal">Föld</mtext></msub><mo>=</mo><mn>42</mn><mo>,</mo><mn>12</mn><mo>−</mo><mn>29</mn><mo>,</mo><mn>78</mn><mo>=</mo><mn>12</mn><mo>,</mo><mn>34</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 v_{\text{Nap}} - v_{\text{Föld}} = 42,12 - 29,78 = 12,34\text{ km/s}
 </annotation></semantics></math></p>
-<p>sebességgel rendelkezzen a test a földpálya sebességének irányában.
-Ugyanis ekkor a test a Naphoz képest pont a szükséges
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mtext mathvariant="normal">Nap</mtext></msub><annotation encoding="application/x-tex">v_{\text{Nap}}</annotation></semantics></math>
-sebességgel rendelkezik. Indítsuk a testet a Föld keringésének irányában
-a Föld felszínéről függőlegesen felfelé! Ez azt jelenti, hogy a Föld
-pályamenti sebessége függőlegesen felfelé mutat! Számítsuk ki a
-szükséges
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
-sebességet úgy, hogy a Föld elhagyása után a testnek éppen a szükséges
-sebessége legyen a pályasebesség irányába!</p>
+<p>sebességgel rendelkezzen a test a földpálya sebességének irányában. Ugyanis ekkor a test a Naphoz képest pont a szükséges <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mtext mathvariant="normal">Nap</mtext></msub><annotation encoding="application/x-tex">v_{\text{Nap}}</annotation></semantics></math> sebességgel rendelkezik. Indítsuk a testet a Föld keringésének irányában a Föld felszínéről függőlegesen felfelé! Ez azt jelenti, hogy a Föld pályamenti sebessége függőlegesen felfelé mutat! Számítsuk ki a szükséges <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math> sebességet úgy, hogy a Föld elhagyása után a testnek éppen a szükséges sebessége legyen a pályasebesség irányába!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>−</mo><mi>G</mi><mfrac><mrow><mi>m</mi><mi>M</mi></mrow><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>v</mi><mtext mathvariant="normal">Nap</mtext></msub><mo>−</mo><msub><mi>v</mi><mtext mathvariant="normal">Föld</mtext></msub><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
 \frac{mv^2}{2} - G \frac{mM}{R} = \frac{m(v_{\text{Nap}} - v_{\text{Föld}})^2}{2}
 </annotation></semantics></math></p>
@@ -262,56 +137,20 @@ v^2 = 2 \frac{GM}{R^2} R + (v_{\text{Nap}} - v_{\text{Föld}})^2 = 2gR + (v_{\te
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msqrt><mrow><mn>11</mn><mo>,</mo><msup><mn>18</mn><mn>2</mn></msup><mo>+</mo><mn>12</mn><mo>,</mo><msup><mn>34</mn><mn>2</mn></msup></mrow></msqrt><mo>≈</mo><mn>16</mn><mo>,</mo><mn>65</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 v = \sqrt{11,18^2 + 12,34^2} \approx 16,65\text{ km/s}
 </annotation></semantics></math></p>
-<p>Ez tehát a lehető legkisebb sebesség, amellyel a megfelelő irányban,
-a megfelelő helyen kilőve a testet a Föld felszínén, ballisztikus
-pályán, a test képes elhagyni a Naprendszert is.</p>
+<p>Ez tehát a lehető legkisebb sebesség, amellyel a megfelelő irányban, a megfelelő helyen kilőve a testet a Föld felszínén, ballisztikus pályán, a test képes elhagyni a Naprendszert is.</p>
 <h3 id="szimuláció-1">Szimuláció</h3>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#4bb597b1-beff-4abc-8d96-d3f126822b01">A
-harmadik kozmikus sebesség szimulációja</a></p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#4bb597b1-beff-4abc-8d96-d3f126822b01">A harmadik kozmikus sebesség szimulációja</a></p>
 <h2 id="kötött-és-szabad-pályák">Kötött és szabad pályák</h2>
-<p>Látjuk, hogy az égitestek pályája nem szükségszerűen a zárt
-ellipszispálya, ahogy azt Kepler bolygómozgásról szóló törvényei
-leírják. Van, hogy a test vissza sem tér sosem. Ezt a pálya energiája
-szabja meg. Ha az energia negatív, akkor a pálya ellipszis, és egy
-pozitív
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
-érték, tehát pozitív félnagytengely tartozik hozzá. Az energia
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E &lt; 0</annotation></semantics></math>.
-Ez a kötött pálya. A körpálya speciális esetében a mozgási energia
-állandó, és fele a negatív helyzeti energia abszolút értékének.</p>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#fefc0e35-7beb-4f00-81e4-05e25bfbf064">Ellipszispálya</a></p>
+<p>Látjuk, hogy az égitestek pályája nem szükségszerűen a zárt ellipszispálya, ahogy azt Kepler bolygómozgásról szóló törvényei leírják. Van, hogy a test vissza sem tér sosem. Ezt a pálya energiája szabja meg. Ha az energia negatív, akkor a pálya ellipszis, és egy pozitív <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> érték, tehát pozitív félnagytengely tartozik hozzá. Az energia <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E &lt; 0</annotation></semantics></math>. Ez a kötött pálya. A körpálya speciális esetében a mozgási energia állandó, és fele a negatív helyzeti energia abszolút értékének.</p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#fefc0e35-7beb-4f00-81e4-05e25bfbf064">Ellipszispálya</a></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m,kör</mtext></msub><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">|</mo><msub><mi>E</mi><mtext mathvariant="normal">g,kör</mtext></msub><mo stretchy="false" form="prefix">|</mo></mrow><mn>2</mn></mfrac><mo>=</mo><mo stretchy="false" form="prefix">|</mo><msub><mi>E</mi><mtext mathvariant="normal">kör</mtext></msub><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">
 E_{\text{m,kör}} = \frac{|E_{\text{g,kör}}|}{2} = |E_{\text{kör}}|
 </annotation></semantics></math></p>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#5f0cba8e-b08a-4f3b-94b6-627d297e388f">Körpálya</a></p>
-<p>Ha a test képes a végtelenbe eljutni, de ott mozgási energiája nem
-marad, akkor a pályához tartozó teljes energia nulla. Ekkor
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">a = \infty</annotation></semantics></math>,
-a pálya alakja parabola. A parabolát el lehet úgy képzelni, mint egy
-végtelenül elnyújtott ellipszist, mely sosem tér vissza önmagába. Ez
-esetben
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E = 0</annotation></semantics></math>.</p>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#6139370b-ddc9-44b5-a7ab-603c9bdbb806">Parabolapálya</a></p>
-<p>A harmadik eset, hogy a pályához tartozó teljes energia pozitív,
-tehát a test a vonzócentrumtól végtelen távolságra jut, és még marad is
-mozgási energiája. Ez az az eset, amikor a test egy hiperbolaágon mozog.
-A hiperbola olyan görbe, melynek az ellipszishez hasonlóan van két
-fókuszpontja. Bármely pont fókuszpontoktól mért távolságainak különbsége
-egy állandó,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>±</mi><mn>2</mn><mi>a</mi></mrow><annotation encoding="application/x-tex">\pm 2a</annotation></semantics></math>.
-Vonzóerő esetén a test a görbének azon az ágán mozog, melyre
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a &lt; 0</annotation></semantics></math>.
-Az energiát meghatározó képlet továbbra is érvényes marad, sőt a
-sebesség kiszámítására vonatkozó képlet is érvényes a negatív
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>-val.
-Ekkor
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E &gt; 0</annotation></semantics></math>.</p>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#fb3346ec-45d8-4e2f-b03a-07bf897767af">Hiperbolapálya</a></p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#5f0cba8e-b08a-4f3b-94b6-627d297e388f">Körpálya</a></p>
+<p>Ha a test képes a végtelenbe eljutni, de ott mozgási energiája nem marad, akkor a pályához tartozó teljes energia nulla. Ekkor <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">a = \infty</annotation></semantics></math>, a pálya alakja parabola. A parabolát el lehet úgy képzelni, mint egy végtelenül elnyújtott ellipszist, mely sosem tér vissza önmagába. Ez esetben <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E = 0</annotation></semantics></math>.</p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#6139370b-ddc9-44b5-a7ab-603c9bdbb806">Parabolapálya</a></p>
+<p>A harmadik eset, hogy a pályához tartozó teljes energia pozitív, tehát a test a vonzócentrumtól végtelen távolságra jut, és még marad is mozgási energiája. Ez az az eset, amikor a test egy hiperbolaágon mozog. A hiperbola olyan görbe, melynek az ellipszishez hasonlóan van két fókuszpontja. Bármely pont fókuszpontoktól mért távolságainak különbsége egy állandó, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>±</mi><mn>2</mn><mi>a</mi></mrow><annotation encoding="application/x-tex">\pm 2a</annotation></semantics></math>. Vonzóerő esetén a test a görbének azon az ágán mozog, melyre <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a &lt; 0</annotation></semantics></math>. Az energiát meghatározó képlet továbbra is érvényes marad, sőt a sebesség kiszámítására vonatkozó képlet is érvényes a negatív <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>-val. Ekkor <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E &gt; 0</annotation></semantics></math>.</p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#fb3346ec-45d8-4e2f-b03a-07bf897767af">Hiperbolapálya</a></p>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -323,47 +162,34 @@ href="https://alexerdei73.github.io/physics-engine/project/#fb3346ec-45d8-4e2f-b
 <tr>
 <th style="text-align: center;">Alak</th>
 <th style="text-align: center;">Energia</th>
-<th
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math></th>
+<th style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math></th>
 <th style="text-align: center;">Szimuláció</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align: center;">Ellipszis</td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E &lt; 0</annotation></semantics></math></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a &gt; 0</annotation></semantics></math></td>
-<td style="text-align: center;"><a
-href="https://alexerdei73.github.io/physics-engine/project/#fefc0e35-7beb-4f00-81e4-05e25bfbf064">Ellipszispálya</a></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E &lt; 0</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a &gt; 0</annotation></semantics></math></td>
+<td style="text-align: center;"><a href="https://alexerdei73.github.io/physics-engine/project/#fefc0e35-7beb-4f00-81e4-05e25bfbf064">Ellipszispálya</a></td>
 </tr>
 <tr>
 <td style="text-align: center;">Kör</td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>−</mi><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><mfrac><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">E = -E_{\text{m}} = \frac{E_{\text{g}}}{2}</annotation></semantics></math></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">a = R</annotation></semantics></math></td>
-<td style="text-align: center;"><a
-href="https://alexerdei73.github.io/physics-engine/project/#5f0cba8e-b08a-4f3b-94b6-627d297e388f">Körpálya</a></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>−</mi><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><mfrac><msub><mi>E</mi><mtext mathvariant="normal">g</mtext></msub><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">E = -E_{\text{m}} = \frac{E_{\text{g}}}{2}</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">a = R</annotation></semantics></math></td>
+<td style="text-align: center;"><a href="https://alexerdei73.github.io/physics-engine/project/#5f0cba8e-b08a-4f3b-94b6-627d297e388f">Körpálya</a></td>
 </tr>
 <tr>
 <td style="text-align: center;">Parabola</td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E = 0</annotation></semantics></math></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">a = \infty</annotation></semantics></math></td>
-<td style="text-align: center;"><a
-href="https://alexerdei73.github.io/physics-engine/project/#6139370b-ddc9-44b5-a7ab-603c9bdbb806">Parabolapálya</a></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E = 0</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>∞</mi></mrow><annotation encoding="application/x-tex">a = \infty</annotation></semantics></math></td>
+<td style="text-align: center;"><a href="https://alexerdei73.github.io/physics-engine/project/#6139370b-ddc9-44b5-a7ab-603c9bdbb806">Parabolapálya</a></td>
 </tr>
 <tr>
 <td style="text-align: center;">Hiperbola</td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E &gt; 0</annotation></semantics></math></td>
-<td
-style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a &lt; 0</annotation></semantics></math></td>
-<td style="text-align: center;"><a
-href="https://alexerdei73.github.io/physics-engine/project/#fb3346ec-45d8-4e2f-b03a-07bf897767af">Hiperbolapálya</a></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">E &gt; 0</annotation></semantics></math></td>
+<td style="text-align: center;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a &lt; 0</annotation></semantics></math></td>
+<td style="text-align: center;"><a href="https://alexerdei73.github.io/physics-engine/project/#fb3346ec-45d8-4e2f-b03a-07bf897767af">Hiperbolapálya</a></td>
 </tr>
 </tbody>
 </table>

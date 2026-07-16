@@ -4,68 +4,37 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>A kéttest-probléma *</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="CAVENDISH.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="MEREVTEST.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="CAVENDISH.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="MEREVTEST.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#a-kéttest-probléma" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
-<h1 id="a-kéttest-probléma">A kéttest-probléma</h1>
+<h1 id="a-kéttest-probléma">A kéttest-probléma *</h1>
 <h2 id="a-probléma-felvetése">A probléma felvetése</h2>
-<p>Newton számára a gravitációs erő elméletének publikációja problémás
-volt, mivel az adatai pontatlanok voltak. Leginkább a Föld sugarának
-ismert adata volt pontatlan, ezért várt is a publikációval, mígnem
-pontosabb mérési adatok kerültek napvilágra.</p>
-<p>A Hold–Föld-távolság kb. 60 Föld-sugár. Ez két tizedesjegy
-pontossággal igaz csak. Mi a helyzet, ha mai adatokat használunk, és
-mondjuk 4 értékes jegy pontossággal számolunk? Mai adataink szerint a
-Föld sugara
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mspace width="0.222em"></mspace><mn>371</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">6\ 371\text{ km}</annotation></semantics></math>,
-a Hold–Föld-távolság pedig
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>384</mn><mspace width="0.222em"></mspace><mn>400</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">384\ 400\text{ km}</annotation></semantics></math>.
-Ezek aránya tehát:</p>
+<p>Newton számára a gravitációs erő elméletének publikációja problémás volt, mivel az adatai pontatlanok voltak. Leginkább a Föld sugarának ismert adata volt pontatlan, ezért várt is a publikációval, mígnem pontosabb mérési adatok kerültek napvilágra.</p>
+<p>A Hold–Föld-távolság kb. 60 Föld-sugár. Ez két tizedesjegy pontossággal igaz csak. Mi a helyzet, ha mai adatokat használunk, és mondjuk 4 értékes jegy pontossággal számolunk? Mai adataink szerint a Föld sugara <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mspace width="0.222em"></mspace><mn>371</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">6\ 371\text{ km}</annotation></semantics></math>, a Hold–Föld-távolság pedig <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>384</mn><mspace width="0.222em"></mspace><mn>400</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">384\ 400\text{ km}</annotation></semantics></math>. Ezek aránya tehát:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>r</mi><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mn>384</mn><mspace width="0.222em"></mspace><mn>400</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><mrow><mn>6</mn><mspace width="0.222em"></mspace><mn>371</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow></mfrac><mo>≈</mo><mn>60</mn><mo>,</mo><mn>34</mn></mrow><annotation encoding="application/x-tex">
 \frac{r}{R} = \frac{384\ 400\text{ km}}{6\ 371\text{ km}} \approx 60,34
 </annotation></semantics></math></p>
-<p>Tehát az arány 60-nál kissé nagyobb, ami eltérést fog okozni Newton
-jóslatához képest a harmadik tizedesjegyben. Valóban:</p>
+<p>Tehát az arány 60-nál kissé nagyobb, ami eltérést fog okozni Newton jóslatához képest a harmadik tizedesjegyben. Valóban:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mo>,</mo><msup><mn>34</mn><mn>2</mn></msup><mo>≈</mo><mn>3</mn><mspace width="0.222em"></mspace><mn>640</mn></mrow><annotation encoding="application/x-tex">
 60,34^2 \approx 3\ 640
 </annotation></semantics></math></p>
-<p>Hogy lehet, hogy Newton gravitációs elmélete mégis helyes, és mai
-adatokkal is tökéletesen megállja a helyét? Hogy lehet, hogy az arány
-négyzete a dinamika alapján ma is szinte pontosan 3600? Ezzel a
-problémával foglalkozunk röviden.</p>
+<p>Hogy lehet, hogy Newton gravitációs elmélete mégis helyes, és mai adatokkal is tökéletesen megállja a helyét? Hogy lehet, hogy az arány négyzete a dinamika alapján ma is szinte pontosan 3600? Ezzel a problémával foglalkozunk röviden.</p>
 <h2 id="a-kéttest-probléma-1">A kéttest-probléma</h2>
-<p>Hogyan mozog egy két testből álló rendszer, ha közöttük fellép egy
-erő, de más hatások nincsenek? Ez a probléma az úgynevezett
-kéttest-probléma. Jelöljük
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>-mel
-a kisebb tömegű testet,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>-mel
-pedig a nagyobb tömegű testet! A Hold tömege ugyan lényegesen kisebb a
-Föld tömegénél, de nem teljesen elhanyagolható a Földhöz képest.</p>
+<p>Hogyan mozog egy két testből álló rendszer, ha közöttük fellép egy erő, de más hatások nincsenek? Ez a probléma az úgynevezett kéttest-probléma. Jelöljük <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>-mel a kisebb tömegű testet, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>-mel pedig a nagyobb tömegű testet! A Hold tömege ugyan lényegesen kisebb a Föld tömegénél, de nem teljesen elhanyagolható a Földhöz képest.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><msub><mover><mi>a</mi><mo accent="true">→</mo></mover><mi>m</mi></msub><mo>=</mo><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>m</mi><mo>,</mo><mi>M</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
 m \vec{a}_m = \vec{F}_{m,M}
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><msub><mover><mi>a</mi><mo accent="true">→</mo></mover><mi>M</mi></msub><mo>=</mo><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>M</mi><mo>,</mo><mi>m</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
 M \vec{a}_M = \vec{F}_{M,m}
 </annotation></semantics></math></p>
-<p>Vezessük most be a két test tömegközéppontját mint a
-koordináta-rendszer origóját! A testek helyét ehhez a ponthoz képest
-fogjuk mérni. Ez, mint kimutattuk, nem gyorsul, tehát a hozzá rögzített
-rendszer inerciarendszer, feltéve, hogy a térben nem is forog.</p>
+<p>Vezessük most be a két test tömegközéppontját mint a koordináta-rendszer origóját! A testek helyét ehhez a ponthoz képest fogjuk mérni. Ez, mint kimutattuk, nem gyorsul, tehát a hozzá rögzített rendszer inerciarendszer, feltéve, hogy a térben nem is forog.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>r</mi><mo accent="true">→</mo></mover><mo>=</mo><msub><mover><mi>r</mi><mo accent="true">→</mo></mover><mi>m</mi></msub><mo>−</mo><msub><mover><mi>r</mi><mo accent="true">→</mo></mover><mi>M</mi></msub></mrow><annotation encoding="application/x-tex">
 \vec{r} = \vec{r}_m - \vec{r}_M
 </annotation></semantics></math></p>
-<p>Itt az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>r</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{r}</annotation></semantics></math>
-a kisebbik test helye a nagyobb tömegűhöz képest. Ha a testek mozgását
-igen rövid
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
-ideig vizsgáljuk csak, tehát
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≪</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">t \ll T</annotation></semantics></math>,
-akkor fennállnak a következő összefüggések:</p>
+<p>Itt az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>r</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{r}</annotation></semantics></math> a kisebbik test helye a nagyobb tömegűhöz képest. Ha a testek mozgását igen rövid <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> ideig vizsgáljuk csak, tehát <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≪</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">t \ll T</annotation></semantics></math>, akkor fennállnak a következő összefüggések:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mover><mi>r</mi><mo accent="true">→</mo></mover><mo>−</mo><msub><mover><mi>r</mi><mo accent="true">→</mo></mover><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><msub><mover><mi>r</mi><mo accent="true">→</mo></mover><mi>m</mi></msub><mo>−</mo><msub><mover><mi>r</mi><mo accent="true">→</mo></mover><mi>M</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mo stretchy="false" form="prefix">(</mo><msub><mover><mi>r</mi><mo accent="true">→</mo></mover><mrow><mi>m</mi><mo>,</mo><mn>0</mn></mrow></msub><mo>−</mo><msub><mover><mi>r</mi><mo accent="true">→</mo></mover><mrow><mi>M</mi><mo>,</mo><mn>0</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><msub><mover><mi>r</mi><mo accent="true">→</mo></mover><mi>m</mi></msub><mo>−</mo><msub><mover><mi>r</mi><mo accent="true">→</mo></mover><mrow><mi>m</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac><mo>−</mo><mfrac><mrow><msub><mover><mi>r</mi><mo accent="true">→</mo></mover><mi>M</mi></msub><mo>−</mo><msub><mover><mi>r</mi><mo accent="true">→</mo></mover><mrow><mi>M</mi><mo>,</mo><mn>0</mn></mrow></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \frac{\vec{r} - \vec{r}_0}{t} = \frac{(\vec{r}_m - \vec{r}_M) - (\vec{r}_{m,0} - \vec{r}_{M,0})}{t} = \frac{\vec{r}_m - \vec{r}_{m,0}}{t} - \frac{\vec{r}_M - \vec{r}_{M,0}}{t}
 </annotation></semantics></math></p>
@@ -73,14 +42,11 @@ akkor fennállnak a következő összefüggések:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>v</mi><mo accent="true">→</mo></mover><mo>=</mo><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mi>m</mi></msub><mo>−</mo><msub><mover><mi>v</mi><mo accent="true">→</mo></mover><mi>M</mi></msub></mrow><annotation encoding="application/x-tex">
 \vec{v} = \vec{v}_m - \vec{v}_M
 </annotation></semantics></math></p>
-<p>Tehát a kisebbik test sebessége a nagyobbikhoz képest a megfelelő
-tömegközépponti rendszerben mért sebességek különbsége. Teljesen
-hasonlóan mutathatjuk meg, hogy:</p>
+<p>Tehát a kisebbik test sebessége a nagyobbikhoz képest a megfelelő tömegközépponti rendszerben mért sebességek különbsége. Teljesen hasonlóan mutathatjuk meg, hogy:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>a</mi><mo accent="true">→</mo></mover><mo>=</mo><msub><mover><mi>a</mi><mo accent="true">→</mo></mover><mi>m</mi></msub><mo>−</mo><msub><mover><mi>a</mi><mo accent="true">→</mo></mover><mi>M</mi></msub></mrow><annotation encoding="application/x-tex">
 \vec{a} = \vec{a}_m - \vec{a}_M
 </annotation></semantics></math></p>
-<p>Tehát a gyorsulásokra is igaz, amit a sebességekre mondtunk. Ezek
-szerint:</p>
+<p>Tehát a gyorsulásokra is igaz, amit a sebességekre mondtunk. Ezek szerint:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>a</mi><mo accent="true">→</mo></mover><mo>=</mo><mfrac><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>m</mi><mo>,</mo><mi>M</mi></mrow></msub><mi>m</mi></mfrac><mo>−</mo><mfrac><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>M</mi><mo>,</mo><mi>m</mi></mrow></msub><mi>M</mi></mfrac><mo>=</mo><mfrac><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>m</mi><mo>,</mo><mi>M</mi></mrow></msub><mi>m</mi></mfrac><mo>+</mo><mfrac><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>m</mi><mo>,</mo><mi>M</mi></mrow></msub><mi>M</mi></mfrac><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><mi>m</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>M</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mrow><mi>m</mi><mo>,</mo><mi>M</mi></mrow></msub></mrow><annotation encoding="application/x-tex">
 \vec{a} = \frac{\vec{F}_{m,M}}{m} - \frac{\vec{F}_{M,m}}{M} = \frac{\vec{F}_{m,M}}{m} + \frac{\vec{F}_{m,M}}{M} = \left(\frac{1}{m} + \frac{1}{M}\right)\vec{F}_{m,M}
 </annotation></semantics></math></p>
@@ -92,37 +58,18 @@ szerint:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mfrac><mn>1</mn><mi>m</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><mi>M</mi></mfrac></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><mi>M</mi></mrow><mrow><mi>M</mi><mo>+</mo><mi>m</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 \mu = \frac{1}{\frac{1}{m} + \frac{1}{M}} = \frac{mM}{M + m}
 </annotation></semantics></math></p>
-<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
-tömegdimenziójú mennyiség, általában kissé kisebb, mint a kisebbik tömeg
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>).
-Ezért nevezik <em>redukált tömegnek</em>. A kis test mozgása tehát
-annyiban módosul, ha a nagyobbik testhez képest nézzük, hogy olyan,
-mintha a tömege kisebb lenne. A kis test mozgása ettől eltekintve
-ugyanúgy tárgyalható, mintha a nagyobbik test egyáltalán nem
-mozogna.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> tömegdimenziójú mennyiség, általában kissé kisebb, mint a kisebbik tömeg (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>). Ezért nevezik <em>redukált tömegnek</em>. A kis test mozgása tehát annyiban módosul, ha a nagyobbik testhez képest nézzük, hogy olyan, mintha a tömege kisebb lenne. A kis test mozgása ettől eltekintve ugyanúgy tárgyalható, mintha a nagyobbik test egyáltalán nem mozogna.</p>
 <p>Ha megnézzük a gravitáció törvényét:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">g</mtext></msub><mo>=</mo><mi>G</mi><mfrac><mrow><mi>m</mi><mi>M</mi></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>=</mo><mi>G</mi><mfrac><mrow><mfrac><mrow><mi>m</mi><mi>M</mi></mrow><mrow><mi>M</mi><mo>+</mo><mi>m</mi></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo>+</mo><mi>m</mi><mo stretchy="false" form="postfix">)</mo></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac><mo>=</mo><mi>G</mi><mfrac><mrow><mi>μ</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo>+</mo><mi>m</mi><mo stretchy="false" form="postfix">)</mo></mrow><msup><mi>r</mi><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">
 F_{\text{g}} = G \frac{mM}{r^2} = G \frac{\frac{mM}{M + m}(M + m)}{r^2} = G \frac{\mu(M + m)}{r^2}
 </annotation></semantics></math></p>
-<p>A test pontosan úgy mozog, mintha tömege
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
-lenne, és a vonzócentrum tömege pedig a rendszer össztömege volna. Így
-érvényesek lesznek Kepler törvényei is, de a harmadik törvényben, mely
-tartalmazza a vonzócentrum tömegét is,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
-helyett az össztömeg
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>+</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">M + m</annotation></semantics></math>)
-fog fellépni.</p>
+<p>A test pontosan úgy mozog, mintha tömege <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> lenne, és a vonzócentrum tömege pedig a rendszer össztömege volna. Így érvényesek lesznek Kepler törvényei is, de a harmadik törvényben, mely tartalmazza a vonzócentrum tömegét is, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math> helyett az össztömeg (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>+</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">M + m</annotation></semantics></math>) fog fellépni.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>T</mi><mn>2</mn></msup><msup><mi>a</mi><mn>3</mn></msup></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo>+</mo><mi>m</mi><mo stretchy="false" form="postfix">)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 \frac{T^2}{a^3} = \frac{4\pi^2}{G(M + m)}
 </annotation></semantics></math></p>
-<p>Ez azt jelenti, hogy a keringési idő kismértékben csökken az
-elhanyagolható tömeg esetéhez képest, a sebesség pedig nő. Ez
-megmagyarázza az eltérés nagyrészét.</p>
+<p>Ez azt jelenti, hogy a keringési idő kismértékben csökken az elhanyagolható tömeg esetéhez képest, a sebesség pedig nő. Ez megmagyarázza az eltérés nagyrészét.</p>
 <h2 id="példa">Példa</h2>
-<p>Vizsgáljuk meg, mekkora eltérést okoz a Hold tömege a Hold
-gyorsulásának és a Föld felszínén mérhető nehézségi gyorsulásnak az
-arányában! A Föld tömege kb. 81-szerese a Hold tömegének!</p>
+<p>Vizsgáljuk meg, mekkora eltérést okoz a Hold tömege a Hold gyorsulásának és a Föld felszínén mérhető nehézségi gyorsulásnak az arányában! A Föld tömege kb. 81-szerese a Hold tömegének!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>g</mi><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub></mfrac><mo>=</mo><mfrac><mrow><mi>g</mi><mi>r</mi></mrow><msup><mi>v</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mrow><mi>g</mi><mi>r</mi><msup><mi>T</mi><mn>2</mn></msup></mrow><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 \frac{g}{a_{\text{cp}}} = \frac{gr}{v^2} = \frac{gr T^2}{4\pi^2 r^2}
 </annotation></semantics></math></p>
@@ -132,76 +79,20 @@ arányában! A Föld tömege kb. 81-szerese a Hold tömegének!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>g</mi><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub></mfrac><mo>=</mo><mfrac><msup><mi>r</mi><mn>2</mn></msup><mrow><msup><mi>R</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>m</mi><mi>/</mi><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 \frac{g}{a_{\text{cp}}} = \frac{r^2}{R^2(1 + m/M)}
 </annotation></semantics></math></p>
-<p>Eredményünk azt jelzi, hogy a távolságok négyzeteinek arányát
-osztanunk kell még
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>m</mi><mi>/</mi><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1 + m/M)</annotation></semantics></math>-mel
-is, hogy helyes értéket kapjunk. Számításaink még mindig körpályával
-dolgoznak.</p>
+<p>Eredményünk azt jelzi, hogy a távolságok négyzeteinek arányát osztanunk kell még <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>m</mi><mi>/</mi><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1 + m/M)</annotation></semantics></math>-mel is, hogy helyes értéket kapjunk. Számításaink még mindig körpályával dolgoznak.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>r</mi><mn>2</mn></msup><mrow><msup><mi>R</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>m</mi><mi>/</mi><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>3</mn><mspace width="0.222em"></mspace><mn>640</mn></mrow><mrow><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mrow><mn>81</mn><mo>,</mo><mn>0</mn></mrow></mfrac></mrow></mfrac><mo>≈</mo><mn>3</mn><mspace width="0.222em"></mspace><mn>596</mn></mrow><annotation encoding="application/x-tex">
 \frac{r^2}{R^2(1 + m/M)} = \frac{3\ 640}{1 + \frac{1}{81,0}} \approx 3\ 596
 </annotation></semantics></math></p>
-<p>A gyorsulásokból kapott mai érték az egy kicsit több, egész pontosan
-3602 (négy értékes jegy pontossággal). A két érték legalább három
-értékes jegyre kerekítve megegyezik most már, tehát a legnagyobb
-korrekciót valóban a Hold tömegének figyelembevétele jelenti.</p>
+<p>A gyorsulásokból kapott mai érték az egy kicsit több, egész pontosan 3602 (négy értékes jegy pontossággal). A két érték legalább három értékes jegyre kerekítve megegyezik most már, tehát a legnagyobb korrekciót valóban a Hold tömegének figyelembevétele jelenti.</p>
 <h2 id="egyéb-finomabb-korrekciók">Egyéb, finomabb korrekciók</h2>
-<p>Létezik még 3 másik, jóval kisebb korrekció is, melyek szükségesek,
-hogy pontos értéket kapjunk. Ezek a következők fontossági sorrendben: 1.
-A Nap hatása – A Nap–Föld rendszer nem a Naptól függetlenül létezik,
-hanem a Nap gravitációs hatását is figyelembe kellene venni. Ez
-lehetséges, de Newtonnak is „fejfájást” okozott saját bevallása szerint.
-Ezt jóval később oldották csak meg közelítő módszerekkel
-(perturbációszámítás). Pontosan ez a probléma (az úgynevezett
-háromtest-probléma) analitikusan nem oldható meg. 2. A Hold pályája nem
-kör, hanem a körtől kissé eltérő ellipszis. Ez is okoz némi korrekciót.
-3. A Föld lapultsága (gömbtől kissé eltérő alakja) szintén befolyásolja
-a rendszert.</p>
-<p>Ezen korrekciók hatása csak a 4. és 5. jegyben mutatkozik meg,
-különösen azért, mert nem ugyanolyan értelműek. Ilyen pontosságnál az is
-lényeges, milyen földrajzi helyen vett
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>-vel
-számolunk. Newtonnak ez is komoly fejtörést okozott. Ma az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
-(Föld sugara) elég pontosan ismert, és a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">GM</annotation></semantics></math>-szorzat
-is ismert 9 értékes jegy pontossággal! Így
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
-nagy pontossággal számított értékét kell használni, mely a Föld
-forgásából származó hatásokat nem, csak a gravitáció miatti nehézségi
-gyorsulást veszi figyelembe.</p>
+<p>Létezik még 3 másik, jóval kisebb korrekció is, melyek szükségesek, hogy pontos értéket kapjunk. Ezek a következők fontossági sorrendben: 1. A Nap hatása – A Nap–Föld rendszer nem a Naptól függetlenül létezik, hanem a Nap gravitációs hatását is figyelembe kellene venni. Ez lehetséges, de Newtonnak is „fejfájást” okozott saját bevallása szerint. Ezt jóval később oldották csak meg közelítő módszerekkel (perturbációszámítás). Pontosan ez a probléma (az úgynevezett háromtest-probléma) analitikusan nem oldható meg. 2. A Hold pályája nem kör, hanem a körtől kissé eltérő ellipszis. Ez is okoz némi korrekciót. 3. A Föld lapultsága (gömbtől kissé eltérő alakja) szintén befolyásolja a rendszert.</p>
+<p>Ezen korrekciók hatása csak a 4. és 5. jegyben mutatkozik meg, különösen azért, mert nem ugyanolyan értelműek. Ilyen pontosságnál az is lényeges, milyen földrajzi helyen vett <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>-vel számolunk. Newtonnak ez is komoly fejtörést okozott. Ma az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> (Föld sugara) elég pontosan ismert, és a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">GM</annotation></semantics></math>-szorzat is ismert 9 értékes jegy pontossággal! Így <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> nagy pontossággal számított értékét kell használni, mely a Föld forgásából származó hatásokat nem, csak a gravitáció miatti nehézségi gyorsulást veszi figyelembe.</p>
 <hr />
 <h2 id="feladatok">Feladatok</h2>
 <ol type="1">
-<li><p><strong>Plútó és Charon rendszere:</strong> A Plútó tömege
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>⋅</mo><msup><mn>10</mn><mn>22</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1,3 \cdot 10^{22}\text{ kg}</annotation></semantics></math>,
-legnagyobb holdjáé, a Charoné pedig
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>6</mn><mo>⋅</mo><msup><mn>10</mn><mn>21</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1,6 \cdot 10^{21}\text{ kg}</annotation></semantics></math>.
-A két égitest távolsága
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>19</mn><mspace width="0.222em"></mspace><mn>600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">19\ 600\text{ km}</annotation></semantics></math>.
-Milyen távol van a rendszer közös tömegközéppontja a Plútó
-középpontjától? A Plútó sugara kb.
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mspace width="0.222em"></mspace><mn>190</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">1\ 190\text{ km}</annotation></semantics></math>.
-A tömegközéppont a Plútó felszínén belülre vagy kívülre esik? (Ez
-magyarázza, miért szokás a rendszert inkább ikerbolygónak
-nevezni.)</p></li>
-<li><p><strong>Kettőscsillag keringési ideje:</strong> Két azonos,
-egyenként a Nap tömegével megegyező
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><msup><mn>10</mn><mn>30</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">M = 2 \cdot 10^{30}\text{ kg}</annotation></semantics></math>)
-csillag kering egymás körül a közös tömegközéppontjuk körül, körpályán.
-A csillagok közötti távolság megegyezik a Föld–Nap-távolsággal
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><msup><mn>10</mn><mn>11</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1,5 \cdot 10^{11}\text{ m}</annotation></semantics></math>).
-Mennyi a rendszer keringési ideje? Hasonlítsuk ezt össze a Föld
-keringési idejével (1 év)!</p></li>
-<li><p><strong>Redukált tömeg hidrogénatomban:</strong> A hidrogénatom
-egy protonból és egy elektronból áll. A proton tömege
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mtext mathvariant="normal">p</mtext></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>67</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>27</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m_{\text{p}} = 1,67 \cdot 10^{-27}\text{ kg}</annotation></semantics></math>,
-az elektron tömege
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mn>9</mn><mo>,</mo><mn>11</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>31</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m_{\text{e}} = 9,11 \cdot 10^{-31}\text{ kg}</annotation></semantics></math>.
-Számítsuk ki a rendszer redukált tömegét
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>)!
-Hány százalékkal tér el ez az érték az elektron tömegétől? (Ez a kis
-eltérés a kvantummechanikai számításokban is megjelenik az
-energiaszintek korrekciójaként.)</p></li>
+<li><p><strong>Plútó és Charon rendszere:</strong> A Plútó tömege <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>3</mn><mo>⋅</mo><msup><mn>10</mn><mn>22</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1,3 \cdot 10^{22}\text{ kg}</annotation></semantics></math>, legnagyobb holdjáé, a Charoné pedig <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>6</mn><mo>⋅</mo><msup><mn>10</mn><mn>21</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1,6 \cdot 10^{21}\text{ kg}</annotation></semantics></math>. A két égitest távolsága <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>19</mn><mspace width="0.222em"></mspace><mn>600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">19\ 600\text{ km}</annotation></semantics></math>. Milyen távol van a rendszer közös tömegközéppontja a Plútó középpontjától? A Plútó sugara kb. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mspace width="0.222em"></mspace><mn>190</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">1\ 190\text{ km}</annotation></semantics></math>. A tömegközéppont a Plútó felszínén belülre vagy kívülre esik? (Ez magyarázza, miért szokás a rendszert inkább ikerbolygónak nevezni.)</p></li>
+<li><p><strong>Kettőscsillag keringési ideje:</strong> Két azonos, egyenként a Nap tömegével megegyező (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><msup><mn>10</mn><mn>30</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">M = 2 \cdot 10^{30}\text{ kg}</annotation></semantics></math>) csillag kering egymás körül a közös tömegközéppontjuk körül, körpályán. A csillagok közötti távolság megegyezik a Föld–Nap-távolsággal (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><msup><mn>10</mn><mn>11</mn></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1,5 \cdot 10^{11}\text{ m}</annotation></semantics></math>). Mennyi a rendszer keringési ideje? Hasonlítsuk ezt össze a Föld keringési idejével (1 év)!</p></li>
+<li><p><strong>Redukált tömeg hidrogénatomban:</strong> A hidrogénatom egy protonból és egy elektronból áll. A proton tömege <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mtext mathvariant="normal">p</mtext></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>67</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>27</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m_{\text{p}} = 1,67 \cdot 10^{-27}\text{ kg}</annotation></semantics></math>, az elektron tömege <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mn>9</mn><mo>,</mo><mn>11</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>31</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m_{\text{e}} = 9,11 \cdot 10^{-31}\text{ kg}</annotation></semantics></math>. Számítsuk ki a rendszer redukált tömegét (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>)! Hány százalékkal tér el ez az érték az elektron tömegétől? (Ez a kis eltérés a kvantummechanikai számításokban is megjelenik az energiaszintek korrekciójaként.)</p></li>
 </ol>
 </main>
 </body>

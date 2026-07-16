@@ -4,31 +4,18 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>Körmozgás és energiamegmaradás</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="CENTRIPETALISGYORSULAS.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="KUPINGA.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="CENTRIPETALISGYORSULAS.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="KUPINGA.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#körmozgás-és-energiamegmaradás" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
-<h1 id="körmozgás-és-energiamegmaradás">Körmozgás és
-energiamegmaradás</h1>
+<h1 id="körmozgás-és-energiamegmaradás">Körmozgás és energiamegmaradás</h1>
 <h2 id="kísérlet">Kísérlet</h2>
 <p><lite-youtube videoid="L7xp97uoe6E" short></lite-youtube></p>
 <h3 id="példa">Példa</h3>
-<p>Milyen magasról kell indítani a testet egy hullámvasút esetében,
-melynek pályája
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
-sugarú kör alakú hurokban folytatódik, ha a hurok sugara
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
-és azt akarjuk, hogy a test ne essen le a hurok tetején se? A súrlódás
-és közegellenállás elhanyagolható.</p>
-<p>Legyen
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math>
-a kérdéses magasság, a vonatkoztatási szint a talaj szintje. Itt nincs a
-testnek mozgási energiája. Amikor a test
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>R</mi></mrow><annotation encoding="application/x-tex">2R</annotation></semantics></math>
-magasságban van, akkor a mozgási energia legalább annyi kell legyen,
-hogy a hurok felső pontján is nyomja a körpályát.</p>
+<p>Milyen magasról kell indítani a testet egy hullámvasút esetében, melynek pályája <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> sugarú kör alakú hurokban folytatódik, ha a hurok sugara <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> és azt akarjuk, hogy a test ne essen le a hurok tetején se? A súrlódás és közegellenállás elhanyagolható.</p>
+<p>Legyen <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> a kérdéses magasság, a vonatkoztatási szint a talaj szintje. Itt nincs a testnek mozgási energiája. Amikor a test <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>R</mi></mrow><annotation encoding="application/x-tex">2R</annotation></semantics></math> magasságban van, akkor a mozgási energia legalább annyi kell legyen, hogy a hurok felső pontján is nyomja a körpályát.</p>
 <p>Az energia megmaradása:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mtext mathvariant="normal">h</mtext><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>E</mi><mrow><mtext mathvariant="normal">m</mtext><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>E</mi><mtext mathvariant="normal">h</mtext></msub><mo>+</mo><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub></mrow><annotation encoding="application/x-tex">
 E_{\text{h},0} + E_{\text{m},0} = E_{\text{h}} + E_{\text{m}}
@@ -43,9 +30,7 @@ K + mg = ma
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">
 a = \frac{v^2}{R}
 </annotation></semantics></math></p>
-<p>Fejezzük ki az energiatételből
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>v</mi><mn>2</mn></msup><annotation encoding="application/x-tex">v^2</annotation></semantics></math>-et
-és helyettesítsük be a második törvénybe!</p>
+<p>Fejezzük ki az energiatételből <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>v</mi><mn>2</mn></msup><annotation encoding="application/x-tex">v^2</annotation></semantics></math>-et és helyettesítsük be a második törvénybe!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>g</mi><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mi>g</mi><mn>4</mn><mi>R</mi><mo>+</mo><msup><mi>v</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 2gh_0 = g4R + v^2
 </annotation></semantics></math></p>
@@ -55,8 +40,7 @@ v^2 = 2g(h_0 - 2R)
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>+</mo><mi>m</mi><mi>g</mi><mo>=</mo><mi>m</mi><mfrac><mrow><mn>2</mn><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><mn>2</mn><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">
 K + mg = m\frac{2g(h_0 - 2R)}{R}
 </annotation></semantics></math></p>
-<p>Kifejezzük
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-t:</p>
+<p>Kifejezzük <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-t:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>m</mi><mfrac><mrow><mn>2</mn><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><mn>2</mn><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><mi>R</mi></mfrac><mo>−</mo><mi>m</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">
 K = m\frac{2g(h_0 - 2R)}{R} - mg
 </annotation></semantics></math></p>
@@ -66,9 +50,7 @@ K = m\frac{2gh_0 - 4gR - gR}{R}
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>m</mi><mfrac><mrow><mn>2</mn><mi>g</mi><mo stretchy="false" form="prefix">(</mo><msub><mi>h</mi><mn>0</mn></msub><mo>−</mo><mfrac><mn>5</mn><mn>2</mn></mfrac><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">
 K = m\frac{2g(h_0 - \frac{5}{2}R)}{R}
 </annotation></semantics></math></p>
-<p>Felhasználjuk, hogy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
-nem lehet negatív (a test nyomja a sínt).</p>
+<p>Felhasználjuk, hogy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> nem lehet negatív (a test nyomja a sínt).</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
 K \geqslant 0
 </annotation></semantics></math></p>
@@ -81,28 +63,12 @@ h_0 - \frac{5}{2}R \geqslant 0
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>≥</mo><mfrac><mn>5</mn><mn>2</mn></mfrac><mi>R</mi></mrow><annotation encoding="application/x-tex">
 h_0 \geqslant \frac{5}{2}R
 </annotation></semantics></math></p>
-<p>Azt kapjuk, hogy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math>
-legalább
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\frac{5}{2} = 2,5</annotation></semantics></math>-szerese
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-nek,
-hogy a test körbe tudjon menni a hurokban. Ekt demonstrálta a videón
-Walter Lewin is.</p>
+<p>Azt kapjuk, hogy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> legalább <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">\frac{5}{2} = 2,5</annotation></semantics></math>-szerese <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-nek, hogy a test körbe tudjon menni a hurokban. Ekt demonstrálta a videón Walter Lewin is.</p>
 <h2 id="szimuláció">Szimuláció</h2>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#bf65a2c0-d5cf-43c1-81a4-e9affbf63df1">Félgömbön
-lecsúszó test</a></p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#bf65a2c0-d5cf-43c1-81a4-e9affbf63df1">Félgömbön lecsúszó test</a></p>
 <h3 id="példa-1">Példa</h3>
-<p>Egy félgömb felületén a felső csúcspontból egy test kezdősebesség
-nélkül lecsúszik. Mekkora szöget zár be a gömb középpontját a testtel
-összekötő egyenes abban a pillanatban, amikor a test elválik a gömb
-felületétől? A súrlódás és közegellenállás elhanyagolható.</p>
-<p>Legyen a kérdéses szög
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>,
-mely az időben változik, miközben a test lecsúszik a gömbfelületen.
-Ekkor a testre ható nehézségi erő felbontható egy sugárirányú és
-érintőirányú komponensre. Írjuk fel Newton második törvényét a
-sugárirányú komponensekre!</p>
+<p>Egy félgömb felületén a felső csúcspontból egy test kezdősebesség nélkül lecsúszik. Mekkora szöget zár be a gömb középpontját a testtel összekötő egyenes abban a pillanatban, amikor a test elválik a gömb felületétől? A súrlódás és közegellenállás elhanyagolható.</p>
+<p>Legyen a kérdéses szög <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>, mely az időben változik, miközben a test lecsúszik a gömbfelületen. Ekkor a testre ható nehézségi erő felbontható egy sugárirányú és érintőirányú komponensre. Írjuk fel Newton második törvényét a sugárirányú komponensekre!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>−</mo><mi>K</mi><mo>=</mo><mi>m</mi><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub></mrow><annotation encoding="application/x-tex">
 mg\cos \phi - K = ma_{\text{cp}}
 </annotation></semantics></math></p>
@@ -110,17 +76,11 @@ mg\cos \phi - K = ma_{\text{cp}}
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">
 a_{\text{cp}} = \frac{v^2}{R}
 </annotation></semantics></math></p>
-<p>Írjuk még fel a mechanikai energia megmaradását is! A vonatkoztatási
-szint legyen a gömb középpontjának magassága!</p>
+<p>Írjuk még fel a mechanikai energia megmaradását is! A vonatkoztatási szint legyen a gömb középpontjának magassága!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mtext mathvariant="normal">h</mtext><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>E</mi><mrow><mtext mathvariant="normal">m</mtext><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>E</mi><mtext mathvariant="normal">h</mtext></msub><mo>+</mo><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub></mrow><annotation encoding="application/x-tex">
 E_{\text{h},0} + E_{\text{m},0} = E_{\text{h}} + E_{\text{m}}
 </annotation></semantics></math></p>
-<p>A legfelső pontban a helyzeti energia
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">mgR</annotation></semantics></math>,
-a mozgási energia 0. Egy tetszőleges
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
-szögnél a magasság
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">R\cos \phi</annotation></semantics></math>.</p>
+<p>A legfelső pontban a helyzeti energia <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">mgR</annotation></semantics></math>, a mozgási energia 0. Egy tetszőleges <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> szögnél a magasság <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">R\cos \phi</annotation></semantics></math>.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mi>R</mi><mo>+</mo><mn>0</mn><mo>=</mo><mi>m</mi><mi>g</mi><mi>R</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>+</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
 mgR + 0 = mgR\cos \phi + \frac{mv^2}{2}
 </annotation></semantics></math></p>
@@ -136,8 +96,7 @@ mg\cos \phi = \frac{mv^2}{R} \Rightarrow v^2 = Rg\cos \phi
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mi>R</mi><mo>=</mo><mi>m</mi><mi>g</mi><mi>R</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>+</mo><mfrac><mrow><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>g</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo stretchy="false" form="postfix">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
 mgR = mgR\cos \phi + \frac{m(Rg\cos \phi)}{2}
 </annotation></semantics></math></p>
-<p>Osszuk el az egyenletet
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">mgR</annotation></semantics></math>-rel:</p>
+<p>Osszuk el az egyenletet <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">mgR</annotation></semantics></math>-rel:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>+</mo><mfrac><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
 1 = \cos \phi + \frac{\cos \phi}{2}
 </annotation></semantics></math></p>
@@ -153,63 +112,30 @@ mgR = mgR\cos \phi + \frac{m(Rg\cos \phi)}{2}
 <hr />
 <h2 id="feladatok">Feladatok</h2>
 <ol type="1">
-<li>Egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">L = 1,5\text{ m}</annotation></semantics></math>
-hosszú fonálon függő
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 2\text{ kg}</annotation></semantics></math>
-tömegű golyót vízszintes helyzetig kitérítünk, majd elengedünk.
+<li>Egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">L = 1,5\text{ m}</annotation></semantics></math> hosszú fonálon függő <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 2\text{ kg}</annotation></semantics></math> tömegű golyót vízszintes helyzetig kitérítünk, majd elengedünk.
 <ul>
-<li>Mekkora a golyó sebessége a pálya legalsó pontján?
-(Energiamegmaradás)</li>
-<li>Mekkora erő feszíti a fonalat a legalsó pontban? (Dinamika: ne
-feledd, a nehézségi erő és a kötélerő eredője hozza létre a
-centripetális gyorsulást!)</li>
+<li>Mekkora a golyó sebessége a pálya legalsó pontján? (Energiamegmaradás)</li>
+<li>Mekkora erő feszíti a fonalat a legalsó pontban? (Dinamika: ne feledd, a nehézségi erő és a kötélerő eredője hozza létre a centripetális gyorsulást!)</li>
 </ul></li>
-<li>Egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">60\text{ kg}</annotation></semantics></math>-os
-síelő egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">H = 20\text{ m}</annotation></semantics></math>
-magas dombról indul kezdősebesség nélkül. A lejtő alján egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">R = 15\text{ m}</annotation></semantics></math>
-sugarú körív alakú „völgy” következik.
+<li>Egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">60\text{ kg}</annotation></semantics></math>-os síelő egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">H = 20\text{ m}</annotation></semantics></math> magas dombról indul kezdősebesség nélkül. A lejtő alján egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">R = 15\text{ m}</annotation></semantics></math> sugarú körív alakú „völgy” következik.
 <ul>
 <li>Mekkora sebességgel érkezik a völgy aljára?</li>
 <li>Mekkora nyomóerővel hat a sílécre a talaj a völgy legalján?</li>
 </ul></li>
-<li>A példában szereplő hullámvasút kocsija
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 500\text{ kg}</annotation></semantics></math>)
-a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mn>2</mn><mo>,</mo><mn>5</mn><mi>R</mi></mrow><annotation encoding="application/x-tex">h_0 = 2,5R</annotation></semantics></math>
-magasságból indul. A hurok sugara
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">R = 10\text{ m}</annotation></semantics></math>.
+<li>A példában szereplő hullámvasút kocsija (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 500\text{ kg}</annotation></semantics></math>) a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mn>2</mn><mo>,</mo><mn>5</mn><mi>R</mi></mrow><annotation encoding="application/x-tex">h_0 = 2,5R</annotation></semantics></math> magasságból indul. A hurok sugara <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">R = 10\text{ m}</annotation></semantics></math>.
 <ul>
-<li>Mekkora a sebessége a hurok legalsó pontján (mielőtt még felmenne a
-hurokba, de már a köríven halad)?</li>
-<li>Mekkora „G” terhelés éri az utasokat ebben a pontban? (Hányszorosa a
-nyomóerő a gravitációs erőnek?)</li>
+<li>Mekkora a sebessége a hurok legalsó pontján (mielőtt még felmenne a hurokba, de már a köríven halad)?</li>
+<li>Mekkora „G” terhelés éri az utasokat ebben a pontban? (Hányszorosa a nyomóerő a gravitációs erőnek?)</li>
 </ul></li>
-<li>Ugyanez a hullámvasút kocsi
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 500\text{ kg}</annotation></semantics></math>,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mn>2</mn><mo>,</mo><mn>5</mn><mi>R</mi></mrow><annotation encoding="application/x-tex">h_0 = 2,5R</annotation></semantics></math>,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">R = 10\text{ m}</annotation></semantics></math>)
-felér a hurok tetejére.
+<li>Ugyanez a hullámvasút kocsi (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 500\text{ kg}</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mn>2</mn><mo>,</mo><mn>5</mn><mi>R</mi></mrow><annotation encoding="application/x-tex">h_0 = 2,5R</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">R = 10\text{ m}</annotation></semantics></math>) felér a hurok tetejére.
 <ul>
-<li>Számítsd ki a sebességét a tetőponton az energiamegmaradás
-segítségével!</li>
-<li>Igazold számítással, hogy a sín által kifejtett nyomóerő ezen a
-ponton éppen nulla!</li>
+<li>Számítsd ki a sebességét a tetőponton az energiamegmaradás segítségével!</li>
+<li>Igazold számítással, hogy a sín által kifejtett nyomóerő ezen a ponton éppen nulla!</li>
 </ul></li>
-<li>Tarzan
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>80</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 80\text{ kg}</annotation></semantics></math>)
-egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">12\text{ m}</annotation></semantics></math>
-hosszú indán leng. A lengés legfelső pontjában az inda
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>60</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">60^\circ</annotation></semantics></math>-os
-szöget zár be a függőlegessel.
+<li>Tarzan (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>80</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 80\text{ kg}</annotation></semantics></math>) egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">12\text{ m}</annotation></semantics></math> hosszú indán leng. A lengés legfelső pontjában az inda <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>60</mn><mo>∘</mo></msup><annotation encoding="application/x-tex">60^\circ</annotation></semantics></math>-os szöget zár be a függőlegessel.
 <ul>
 <li>Mekkora a sebessége, amikor az inda függőleges?</li>
-<li>Kibírja-e az inda a terhelést, ha a szakítószilárdsága
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">1500\text{ N}</annotation></semantics></math>?</li>
+<li>Kibírja-e az inda a terhelést, ha a szakítószilárdsága <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">1500\text{ N}</annotation></semantics></math>?</li>
 </ul></li>
 </ol>
 </main>

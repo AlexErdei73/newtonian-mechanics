@@ -4,41 +4,23 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>A harmonikus rezgőmozgás energiája</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="RUGALMASENERGIA.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="CSILLAPITOTTREZGES.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="RUGALMASENERGIA.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="CSILLAPITOTTREZGES.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#a-harmonikus-rezgőmozgás-energiája" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
-<h1 id="a-harmonikus-rezgőmozgás-energiája">A harmonikus rezgőmozgás
-energiája</h1>
+<h1 id="a-harmonikus-rezgőmozgás-energiája">A harmonikus rezgőmozgás energiája</h1>
 <h2 id="példa">Példa</h2>
-<p>Egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">200 \text{ N/m}</annotation></semantics></math>
-rugóállandójú rugó egyik vége rögzített egy vízszintes, súrlódásmentes
-asztalon. A rugó másik végén egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">10 \text{ g}</annotation></semantics></math>
-tömegű test rezgőmozgást végez
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0,2 \text{ m}</annotation></semantics></math>
-amplitúdóval. * Mekkora a körfrekvencia? * Mekkora a rugó rugalmas
-energiája a maximális kitérés esetében? * Mekkora a test maximális
-sebességének nagysága? * Mekkora a test legnagyobb mozgási energiája? *
-Számítsuk ki a kitérést és a sebesség előjeles értékét
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>01</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 0,01 \text{ s}</annotation></semantics></math>-kor!
-A test a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">+A</annotation></semantics></math>
-helyzetből indul. * Számítsuk ki a mozgási és a helyzeti energia
-összegét ugyanebben az időpillanatban!</p>
+<p>Egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">200 \text{ N/m}</annotation></semantics></math> rugóállandójú rugó egyik vége rögzített egy vízszintes, súrlódásmentes asztalon. A rugó másik végén egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">10 \text{ g}</annotation></semantics></math> tömegű test rezgőmozgást végez <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0,2 \text{ m}</annotation></semantics></math> amplitúdóval. * Mekkora a körfrekvencia? * Mekkora a rugó rugalmas energiája a maximális kitérés esetében? * Mekkora a test maximális sebességének nagysága? * Mekkora a test legnagyobb mozgási energiája? * Számítsuk ki a kitérést és a sebesség előjeles értékét <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>01</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 0,01 \text{ s}</annotation></semantics></math>-kor! A test a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>+</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">+A</annotation></semantics></math> helyzetből indul. * Számítsuk ki a mozgási és a helyzeti energia összegét ugyanebben az időpillanatban!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><msqrt><mfrac><mi>D</mi><mi>m</mi></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mn>200</mn><mrow><mn>0</mn><mo>,</mo><mn>01</mn></mrow></mfrac></msqrt><mo>≈</mo><mn>141</mn><mo>,</mo><mn>42</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">
 \omega = \sqrt{\frac{D}{m}} = \sqrt{\frac{200}{0,01}} \approx 141,42 \text{ s}^{-1}
 </annotation></semantics></math></p>
-<p>A rugalmas energia a szélső helyzetben maximális, amikor a kitérés
-egyenlő az amplitúdóval, tehát a maximális kitéréssel.</p>
+<p>A rugalmas energia a szélső helyzetben maximális, amikor a kitérés egyenlő az amplitúdóval, tehát a maximális kitéréssel.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>r</mi><mo>,</mo><mtext mathvariant="normal">max</mtext></mrow></msub><mo>=</mo><mfrac><mrow><mi>D</mi><msup><mi>A</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>200</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><msup><mn>2</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
 E_{r,\text{max}} = \frac{D A^2}{2} = \frac{200 \cdot 0,2^2}{2} = 4 \text{ J}
 </annotation></semantics></math></p>
-<p>A sebesség maximális értéke a körmozgás analógiája alapján – ahol a
-sugár az amplitúdó – a következő:</p>
+<p>A sebesség maximális értéke a körmozgás analógiája alapján – ahol a sugár az amplitúdó – a következő:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mi>x</mi><mo>,</mo><mtext mathvariant="normal">max</mtext></mrow></msub><mo>=</mo><mi>A</mi><mi>ω</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>⋅</mo><mn>141</mn><mo>,</mo><mn>42</mn><mo>≈</mo><mn>28</mn><mo>,</mo><mn>284</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 v_{x,\text{max}} = A\omega = 0,2 \cdot 141,42 \approx 28,284 \text{ m/s}
 </annotation></semantics></math></p>
@@ -46,8 +28,7 @@ v_{x,\text{max}} = A\omega = 0,2 \cdot 141,42 \approx 28,284 \text{ m/s}
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mi>m</mi><mo>,</mo><mtext mathvariant="normal">max</mtext></mrow></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msubsup><mi>v</mi><mrow><mi>x</mi><mo>,</mo><mtext mathvariant="normal">max</mtext></mrow><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>01</mn><mo>⋅</mo><mn>28</mn><mo>,</mo><msup><mn>284</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>≈</mo><mn>4</mn><mo>,</mo><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
 E_{m,\text{max}} = \frac{m v_{x,\text{max}}^2}{2} = \frac{0,01 \cdot 28,284^2}{2} \approx 4,000 \text{ J}
 </annotation></semantics></math></p>
-<p>Számítsuk ki a kitérést és a sebességet
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>01</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 0,01 \text{ s}</annotation></semantics></math>-kor!</p>
+<p>Számítsuk ki a kitérést és a sebességet <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>01</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 0,01 \text{ s}</annotation></semantics></math>-kor!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mn>2</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>141</mn><mo>,</mo><mn>42</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>01</mn><mo stretchy="false" form="postfix">)</mo><mo>≈</mo><mn>0</mn><mo>,</mo><mn>031191</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
 x = A\cos(\omega t) = 0,2\cos(141,42 \cdot 0,01) \approx 0,031191 \text{ m}
 </annotation></semantics></math></p>
@@ -58,72 +39,49 @@ v_x = -A\omega\sin(\omega t) = -0,2 \cdot 141,42 \cdot \sin(141,42 \cdot 0,01) \
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>m</mi><msubsup><mi>v</mi><mi>x</mi><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mi>D</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>01</mn><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>27</mn><mo>,</mo><mn>938</mn><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mn>200</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><msup><mn>031191</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>≈</mo><mn>4</mn><mo>,</mo><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
 E = \frac{m v_x^2}{2} + \frac{D x^2}{2} = \frac{0,01 \cdot (-27,938)^2}{2} + \frac{200 \cdot 0,031191^2}{2} \approx 4,000 \text{ J}
 </annotation></semantics></math></p>
-<p>Láthatjuk, hogy a teljes energia mindig
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">4 \text{ J}</annotation></semantics></math>,
-függetlenül a test kitérésétől vagy az időtől.</p>
+<p>Láthatjuk, hogy a teljes energia mindig <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">4 \text{ J}</annotation></semantics></math>, függetlenül a test kitérésétől vagy az időtől.</p>
 <h3 id="szimulació">Szimulació</h3>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#7d6e9374-6fcf-4c85-97c1-69d72a3a796c">Rezgési
-energiát bemutató példa</a></p>
-<h2 id="pitagorasz-tétel-a-trigonometriában">Pitagorasz-tétel a
-trigonometriában</h2>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#7d6e9374-6fcf-4c85-97c1-69d72a3a796c">Rezgési energiát bemutató példa</a></p>
+<h2 id="pitagorasz-tétel-a-trigonometriában">Pitagorasz-tétel a trigonometriában</h2>
 <figure>
-<img src="Kepek/pitagorasz.svg"
-alt="Pitagorasz-tétel a trigonometriában" />
-<figcaption aria-hidden="true">Pitagorasz-tétel a
-trigonometriában</figcaption>
+<img src="Kepek/pitagorasz.svg" alt="Pitagorasz-tétel a trigonometriában" />
+<figcaption aria-hidden="true">Pitagorasz-tétel a trigonometriában</figcaption>
 </figure>
-<p>Legyen egy derékszögű háromszög két befogója
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>,
-az átfogója pedig
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>!
-Ekkor a Pitagorasz-tétel a következő:</p>
+<p>Legyen egy derékszögű háromszög két befogója <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>, az átfogója pedig <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>! Ekkor a Pitagorasz-tétel a következő:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 a^2 + b^2 = c^2
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>a</mi><mi>c</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>b</mi><mi>c</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
 \left(\frac{a}{c}\right)^2 + \left(\frac{b}{c}\right)^2 = 1
 </annotation></semantics></math></p>
-<p>Tudjuk, hogy a trigonometrikus függvények definíciója a derékszögű
-háromszögben a következő:</p>
+<p>Tudjuk, hogy a trigonometrikus függvények definíciója a derékszögű háromszögben a következő:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><mi>a</mi><mi>c</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \sin \alpha = \frac{a}{c}
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mo>=</mo><mfrac><mi>b</mi><mi>c</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \cos \alpha = \frac{b}{c}
 </annotation></semantics></math></p>
-<p>Ezeket behelyettesítve az előző összefüggésbe, megkapjuk a
-Pitagorasz-tétel szögfüggvényekkel kifejezett alakját:</p>
+<p>Ezeket behelyettesítve az előző összefüggésbe, megkapjuk a Pitagorasz-tétel szögfüggvényekkel kifejezett alakját:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mi>α</mi><mo>+</mo><msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mi>α</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
 \sin^2\alpha + \cos^2 \alpha = 1
 </annotation></semantics></math></p>
-<h2 id="a-harmonikus-rezgőmozgás-mechanikai-energiája">A harmonikus
-rezgőmozgás mechanikai energiája</h2>
-<p>Határozzuk meg most az eddig vizsgált veszteségmentes esetben a
-harmonikus rezgőmozgást végző test mechanikai energiáját, tehát a
-mozgási energia és a rugalmas helyzeti energia összegét! Ehhez már
-minden összefüggést ismerünk.</p>
+<h2 id="a-harmonikus-rezgőmozgás-mechanikai-energiája">A harmonikus rezgőmozgás mechanikai energiája</h2>
+<p>Határozzuk meg most az eddig vizsgált veszteségmentes esetben a harmonikus rezgőmozgást végző test mechanikai energiáját, tehát a mozgási energia és a rugalmas helyzeti energia összegét! Ehhez már minden összefüggést ismerünk.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><msub><mi>E</mi><mi>m</mi></msub><mo>+</mo><msub><mi>E</mi><mi>r</mi></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msubsup><mi>v</mi><mi>x</mi><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mi>D</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
 E = E_m + E_r = \frac{m v_x^2}{2} + \frac{D x^2}{2}
 </annotation></semantics></math></p>
-<p>Ismerjük a harmonikus rezgőmozgás kitérésének és sebességének
-kiszámítását is:</p>
+<p>Ismerjük a harmonikus rezgőmozgás kitérésének és sebességének kiszámítását is:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
 x = A\cos(\omega t)
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><mi>−</mi><mi>A</mi><mi>ω</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
 v_x = -A\omega\sin(\omega t)
 </annotation></semantics></math></p>
-<p>Ezeket az összefüggéseket behelyettesítjük, és elvégezzük az algebrai
-műveleteket:</p>
+<p>Ezeket az összefüggéseket behelyettesítjük, és elvégezzük az algebrai műveleteket:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>A</mi><mn>2</mn></msup><msup><mi>ω</mi><mn>2</mn></msup><msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mi>D</mi><msup><mi>A</mi><mn>2</mn></msup><msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
 E = \frac{m A^2 \omega^2 \sin^2(\omega t)}{2} + \frac{D A^2 \cos^2(\omega t)}{2}
 </annotation></semantics></math></p>
-<p>Most tekintetbe vesszük az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>
-kiszámítására szolgáló összefüggést:</p>
+<p>Most tekintetbe vesszük az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> kiszámítására szolgáló összefüggést:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>=</mo><mfrac><mi>D</mi><mi>m</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \omega^2 = \frac{D}{m}
 </annotation></semantics></math></p>
@@ -131,70 +89,28 @@ kiszámítására szolgáló összefüggést:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>D</mi><msup><mi>A</mi><mn>2</mn></msup><msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mi>D</mi><msup><mi>A</mi><mn>2</mn></msup><msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>D</mi><msup><mi>A</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
 E = \frac{D A^2 \sin^2(\omega t)}{2} + \frac{D A^2 \cos^2(\omega t)}{2} = \frac{D A^2}{2} \left( \sin^2(\omega t) + \cos^2(\omega t) \right)
 </annotation></semantics></math></p>
-<p>A Pitagorasz-tétel trigonometrikus alakját felhasználva láthatjuk,
-hogy az energia állandó a harmonikus rezgőmozgás során!</p>
+<p>A Pitagorasz-tétel trigonometrikus alakját felhasználva láthatjuk, hogy az energia állandó a harmonikus rezgőmozgás során!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mfrac><mrow><mi>D</mi><msup><mi>A</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>ω</mi><mn>2</mn></msup><msup><mi>A</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><msubsup><mi>v</mi><mrow><mi>x</mi><mo>,</mo><mtext mathvariant="normal">max</mtext></mrow><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
 E = \frac{D A^2}{2} = \frac{m \omega^2 A^2}{2} = \frac{m v_{x,\text{max}}^2}{2}
 </annotation></semantics></math></p>
-<p>Itt felhasználtuk újra a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mi>m</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">D = m\omega^2</annotation></semantics></math>
-és a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mi>x</mi><mo>,</mo><mtext mathvariant="normal">max</mtext></mrow></msub><mo>=</mo><mi>A</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">v_{x,\text{max}} = A\omega</annotation></semantics></math>
-összefüggéseket.</p>
+<p>Itt felhasználtuk újra a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mi>m</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">D = m\omega^2</annotation></semantics></math> és a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mi>x</mi><mo>,</mo><mtext mathvariant="normal">max</mtext></mrow></msub><mo>=</mo><mi>A</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">v_{x,\text{max}} = A\omega</annotation></semantics></math> összefüggéseket.</p>
 <blockquote>
-<p><strong>A harmonikus rezgőmozgás energiája időben állandó, feltéve,
-hogy nincsenek veszteségek, mint például súrlódás vagy közegellenállás.
-Az összenergia az amplitúdó négyzetével arányos.</strong></p>
+<p><strong>A harmonikus rezgőmozgás energiája időben állandó, feltéve, hogy nincsenek veszteségek, mint például súrlódás vagy közegellenállás. Az összenergia az amplitúdó négyzetével arányos.</strong></p>
 </blockquote>
-<h2 id="a-harmonikus-rezgőmozgás-potenciálisenergia-függvénye">A
-harmonikus rezgőmozgás potenciálisenergia-függvénye</h2>
-<p>Ábrázoljuk grafikonon a rugóra kötött test potenciális energiáját a
-kitérés függvényében! Egy parabola alakú görbét kapunk. Ha behúzzuk az
-állandó energiának megfelelő vízszintes egyenest, ez metszi a parabolát,
-méghozzá az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>±</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">x = \pm A</annotation></semantics></math>
-pontokban. Mivel a mozgási energia nem válhat negatívvá, ezért a test
-csak e két pont között helyezkedhet el. A nem negatív mozgási energia és
-a potenciális energia összege minden pontban az összenergiát adja.</p>
+<h2 id="a-harmonikus-rezgőmozgás-potenciálisenergia-függvénye">A harmonikus rezgőmozgás potenciálisenergia-függvénye</h2>
+<p>Ábrázoljuk grafikonon a rugóra kötött test potenciális energiáját a kitérés függvényében! Egy parabola alakú görbét kapunk. Ha behúzzuk az állandó energiának megfelelő vízszintes egyenest, ez metszi a parabolát, méghozzá az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>±</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">x = \pm A</annotation></semantics></math> pontokban. Mivel a mozgási energia nem válhat negatívvá, ezért a test csak e két pont között helyezkedhet el. A nem negatív mozgási energia és a potenciális energia összege minden pontban az összenergiát adja.</p>
 <figure>
-<img src="Kepek/parabolikuspotencial.svg"
-alt="Harmonikus rezgőmozgás potenciális energia függvénye" />
-<figcaption aria-hidden="true">Harmonikus rezgőmozgás potenciális
-energia függvénye</figcaption>
+<img src="Kepek/parabolikuspotencial.svg" alt="Harmonikus rezgőmozgás potenciális energia függvénye" />
+<figcaption aria-hidden="true">Harmonikus rezgőmozgás potenciális energia függvénye</figcaption>
 </figure>
 <h3 id="példa-1">Példa</h3>
-<p>Határozzuk meg az előző példában rezgő test potenciális energiáját és
-mozgási energiáját az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>±</mi><mfrac><mi>A</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">x = \pm \frac{A}{2}</annotation></semantics></math>
-pontokban, tehát
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>±</mi><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">x = \pm 0,1 \text{ m}</annotation></semantics></math>
-esetén!</p>
-<p>Láttuk, hogy a teljes energia
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">4 \text{ J}</annotation></semantics></math>.
-Ha a kitérés nagysága a fél amplitúdó, akkor a potenciális energia a
-teljes energia negyede, tehát
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">1 \text{ J}</annotation></semantics></math>,
-a mozgási energia pedig
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">3 \text{ J}</annotation></semantics></math>.</p>
+<p>Határozzuk meg az előző példában rezgő test potenciális energiáját és mozgási energiáját az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>±</mi><mfrac><mi>A</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">x = \pm \frac{A}{2}</annotation></semantics></math> pontokban, tehát <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>±</mi><mn>0</mn><mo>,</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">x = \pm 0,1 \text{ m}</annotation></semantics></math> esetén!</p>
+<p>Láttuk, hogy a teljes energia <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">4 \text{ J}</annotation></semantics></math>. Ha a kitérés nagysága a fél amplitúdó, akkor a potenciális energia a teljes energia negyede, tehát <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">1 \text{ J}</annotation></semantics></math>, a mozgási energia pedig <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">3 \text{ J}</annotation></semantics></math>.</p>
 <h2 id="feladatok">Feladatok</h2>
 <ol type="1">
-<li>Egy harmonikus rezgőmozgást végző test teljes mechanikai energiája
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">12 \text{ J}</annotation></semantics></math>.
-A rugóállandó
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">600 \text{ N/m}</annotation></semantics></math>.
-Határozd meg a rezgés amplitúdóját!</li>
-<li>Egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0,5 \text{ kg}</annotation></semantics></math>
-tömegű test harmonikus rezgőmozgást végez. Amikor a test kitérése
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>05</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0,05 \text{ m}</annotation></semantics></math>,
-a sebessége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">2 \text{ m/s}</annotation></semantics></math>.
-A rezgés körfrekvenciája
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">10 \text{ rad/s}</annotation></semantics></math>.
-Határozd meg a test teljes mechanikai energiáját és az amplitúdót!</li>
-<li>Melyik kitérési pontban (az amplitúdó függvényében kifejezve) lesz a
-harmonikus rezgőmozgást végző test mozgási energiája pontosan egyenlő a
-rugalmas potenciális energiájával?</li>
+<li>Egy harmonikus rezgőmozgást végző test teljes mechanikai energiája <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">12 \text{ J}</annotation></semantics></math>. A rugóállandó <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">600 \text{ N/m}</annotation></semantics></math>. Határozd meg a rezgés amplitúdóját!</li>
+<li>Egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0,5 \text{ kg}</annotation></semantics></math> tömegű test harmonikus rezgőmozgást végez. Amikor a test kitérése <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>05</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0,05 \text{ m}</annotation></semantics></math>, a sebessége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">2 \text{ m/s}</annotation></semantics></math>. A rezgés körfrekvenciája <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">10 \text{ rad/s}</annotation></semantics></math>. Határozd meg a test teljes mechanikai energiáját és az amplitúdót!</li>
+<li>Melyik kitérési pontban (az amplitúdó függvényében kifejezve) lesz a harmonikus rezgőmozgást végző test mozgási energiája pontosan egyenlő a rugalmas potenciális energiájával?</li>
 </ol>
 </main>
 </body>

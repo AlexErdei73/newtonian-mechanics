@@ -46,6 +46,13 @@ if [ -f "NEWTON_MECHANIKAJA.md" ]; then
            -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE - Tartalomjegyzék" NEWTON_MECHANIKAJA.md -o NEWTON_MECHANIKAJA.html
 fi
 
+if [ -f "VEGEREDMENYEK.md" ]; then
+    pandoc -f markdown -t html5 --standalone --mathml --syntax-highlighting=none \
+           --mathml \
+           --template=pandoc_clean_template.html \
+           -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE - Végeredmények" VEGEREDMENYEK.md -o VEGEREDMENYEK.html
+fi
+
 if [ -d "Mechanika" ]; then
     cp pandoc_clean_template.html Mechanika/
     cd Mechanika
@@ -59,7 +66,7 @@ if [ -d "Mechanika" ]; then
                --template=pandoc_clean_template.html \
                -c ../github-markdown.css \
                -H <(echo "$SUB_HEADER") \
-               -o "$output_html"
+               -o "$output_html" --wrap=none
     done
     rm pandoc_clean_template.html
     cd ..

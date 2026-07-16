@@ -4,91 +4,40 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>A tökéletesen rugalmas ütközés</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="IMPULZUSMEGMARADAS.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="FERDERUGALMASUTKOZESEK.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="IMPULZUSMEGMARADAS.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="FERDERUGALMASUTKOZESEK.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#a-tökéletesen-rugalmas-ütközés" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
-<h1 id="a-tökéletesen-rugalmas-ütközés">A tökéletesen rugalmas
-ütközés</h1>
+<h1 id="a-tökéletesen-rugalmas-ütközés">A tökéletesen rugalmas ütközés</h1>
 <h2 id="ütközések-fogalma">Ütközések fogalma</h2>
-<p>Amikor két test hétköznapi értelemben összeütközik, akkor a fizikában
-is ütközésről beszélünk. Hétköznapi értelemben általában az a fontos,
-milyen változás következik be a test belső szerkezetében az ütközés
-következtében. Például autók összeütközésekor: mennyire sérül meg az
-autó, milyen drága a javítás, történik-e sérülés az autóban ülőkkel,
-stb.</p>
-<p>Mi most csak <strong>pontszerű testek ütközésével</strong> fogunk
-foglalkozni, tehát a testek belső szerkezete nem fontos számunkra
-egyáltalán. Számunkra az lesz a fontos, hogy a testek sebessége hogyan
-változik meg. Láttunk már ilyen jellegű ütközésre példát a ballisztikus
-inga esetében. Ott az ingatest és a golyó összimpulzusa állandó volt az
-ütközés rövid ideje alatt. Ez két okból is így van:</p>
+<p>Amikor két test hétköznapi értelemben összeütközik, akkor a fizikában is ütközésről beszélünk. Hétköznapi értelemben általában az a fontos, milyen változás következik be a test belső szerkezetében az ütközés következtében. Például autók összeütközésekor: mennyire sérül meg az autó, milyen drága a javítás, történik-e sérülés az autóban ülőkkel, stb.</p>
+<p>Mi most csak <strong>pontszerű testek ütközésével</strong> fogunk foglalkozni, tehát a testek belső szerkezete nem fontos számunkra egyáltalán. Számunkra az lesz a fontos, hogy a testek sebessége hogyan változik meg. Láttunk már ilyen jellegű ütközésre példát a ballisztikus inga esetében. Ott az ingatest és a golyó összimpulzusa állandó volt az ütközés rövid ideje alatt. Ez két okból is így van:</p>
 <ol type="1">
-<li>Egyrészt a külső erők eredője ez esetben majdnem nulla (eltekintve a
-golyóra ható nehézségi erőtől, melyet ütközés előtt nem egyensúlyoz ki
-semmi). Ha a külső erők eredője nulla, akkor az összimpulzus
-állandó.</li>
-<li>Akkor is állandónak tekinthető azonban az impulzus, ha a külső erők
-eredője nem nulla, de az ütközés idejétől nem függ ez az erő. Az ütközés
-ideje általában nagyon rövid összehasonlítva a mozgások jellemző
-idejével, tehát a lendület változása a második törvény miatt
-elhanyagolható.</li>
+<li>Egyrészt a külső erők eredője ez esetben majdnem nulla (eltekintve a golyóra ható nehézségi erőtől, melyet ütközés előtt nem egyensúlyoz ki semmi). Ha a külső erők eredője nulla, akkor az összimpulzus állandó.</li>
+<li>Akkor is állandónak tekinthető azonban az impulzus, ha a külső erők eredője nem nulla, de az ütközés idejétől nem függ ez az erő. Az ütközés ideje általában nagyon rövid összehasonlítva a mozgások jellemző idejével, tehát a lendület változása a második törvény miatt elhanyagolható.</li>
 </ol>
-<p>Ez a múltkori levezetésünkben onnan látszik, hogy amikor az idővel
-szorzunk mindkét oldalon, akkor a bal oldalon nullát kapunk, de csak
-közelítőleg, hiszen a külső erők eredője nem nulla, de az idő, amivel
-szorzunk, az elhanyagolhatóan kicsiny. Így az egyenlet bal oldalát most
-is nullának tekinthetjük, vagyis az impulzus megmaradó mennyiségnek
-tekinthető ebben az esetben is.</p>
+<p>Ez a múltkori levezetésünkben onnan látszik, hogy amikor az idővel szorzunk mindkét oldalon, akkor a bal oldalon nullát kapunk, de csak közelítőleg, hiszen a külső erők eredője nem nulla, de az idő, amivel szorzunk, az elhanyagolhatóan kicsiny. Így az egyenlet bal oldalát most is nullának tekinthetjük, vagyis az impulzus megmaradó mennyiségnek tekinthető ebben az esetben is.</p>
 <blockquote>
-<p><strong>Tömegpontok ütközése esetében a lendület általánosan
-megmaradó mennyiség. Ennek oka, hogy az ütközés idejét
-elhanyagolhatjuk.</strong></p>
+<p><strong>Tömegpontok ütközése esetében a lendület általánosan megmaradó mennyiség. Ennek oka, hogy az ütközés idejét elhanyagolhatjuk.</strong></p>
 </blockquote>
-<p>Tehát a lendület megmaradása minden esetben alkalmazható a
-tömegpontok ütközése esetén.</p>
+<p>Tehát a lendület megmaradása minden esetben alkalmazható a tömegpontok ütközése esetén.</p>
 <h2 id="centrális-és-ferde-ütközések">Centrális és ferde ütközések</h2>
-<p>Amikor az ütközés egy egyenes vonalon zajlik le, akkor
-<strong>centrális ütközésről</strong> beszélünk. Ez tömegpontok ütközése
-esetén azt jelenti, hogy a pontokat összekötő egyenes a sebességek és
-ezáltal az impulzusok iránya is egyben. Tehát a pontszerű testek
-centrális ütközés esetén egy egyenes mentén mozognak az ütközés alatt. A
-ballisztikus inga példája is ilyen ütközés volt. Mi főleg centrális
-ütközésekkel fogunk foglalkozni. A nem centrális ütközések elnevezése:
-<strong>ferde ütközés</strong>.</p>
-<h2 id="tökéletesen-rugalmas-ütközések">Tökéletesen rugalmas
-ütközések</h2>
+<p>Amikor az ütközés egy egyenes vonalon zajlik le, akkor <strong>centrális ütközésről</strong> beszélünk. Ez tömegpontok ütközése esetén azt jelenti, hogy a pontokat összekötő egyenes a sebességek és ezáltal az impulzusok iránya is egyben. Tehát a pontszerű testek centrális ütközés esetén egy egyenes mentén mozognak az ütközés alatt. A ballisztikus inga példája is ilyen ütközés volt. Mi főleg centrális ütközésekkel fogunk foglalkozni. A nem centrális ütközések elnevezése: <strong>ferde ütközés</strong>.</p>
+<h2 id="tökéletesen-rugalmas-ütközések">Tökéletesen rugalmas ütközések</h2>
 <blockquote>
-<p><strong>Ha az impulzus mellett a mechanikai energia is megmarad az
-ütközés során, akkor tökéletesen rugalmas ütközésről
-beszélünk.</strong></p>
+<p><strong>Ha az impulzus mellett a mechanikai energia is megmarad az ütközés során, akkor tökéletesen rugalmas ütközésről beszélünk.</strong></p>
 </blockquote>
-<p>Az ilyen ütközések a valóságban csak megközelíthetők, de sosem
-valósulnak meg teljesen. Mindig van némi mechanikai energiaveszteség,
-akárhogy is próbáljuk ezt csökkenteni. Kicsiny, atomi vagy szubatomi
-részecskék ütközése esetén gyakoriak a tökéletesen rugalmas ütközések,
-hiszen ott nincs súrlódás vagy közegellenállás.</p>
+<p>Az ilyen ütközések a valóságban csak megközelíthetők, de sosem valósulnak meg teljesen. Mindig van némi mechanikai energiaveszteség, akárhogy is próbáljuk ezt csökkenteni. Kicsiny, atomi vagy szubatomi részecskék ütközése esetén gyakoriak a tökéletesen rugalmas ütközések, hiszen ott nincs súrlódás vagy közegellenállás.</p>
 <h3 id="kísérlet">Kísérlet</h3>
 <p><lite-youtube videoid="FFinP5xL6Wk"></lite-youtube></p>
 <h3 id="szimuláció">Szimuláció</h3>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#2fd33c53-2acf-46ec-8661-98e8116ead0e">Rugalmas
-centrális ütközés egyenlő tömegekkel</a></p>
-<p>Ebben a szimulációban kipróbálhatjuk a kísérletben látható eseteket
-és más ütközéseket is.</p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#2fd33c53-2acf-46ec-8661-98e8116ead0e">Rugalmas centrális ütközés egyenlő tömegekkel</a></p>
+<p>Ebben a szimulációban kipróbálhatjuk a kísérletben látható eseteket és más ütközéseket is.</p>
 <h3 id="példa">Példa</h3>
-<p>Egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>100</mn><mspace width="0.167em"></mspace><mi>k</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">0,100\,kg</annotation></semantics></math>
-tömegű test
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>00</mn><mspace width="0.167em"></mspace><mfrac><mi>m</mi><mi>s</mi></mfrac></mrow><annotation encoding="application/x-tex">1,00\,\frac{m}{s}</annotation></semantics></math>
-sebességgel csapódik a nyugalomban lévő
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>200</mn><mspace width="0.167em"></mspace><mi>k</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">0,200\,kg</annotation></semantics></math>
-tömegű testbe, mellyel tökéletesen rugalmasan, centrálisan ütköznek.
-Mekkora a testek sebessége az ütközés utáni pillanatban?</p>
-<p>Felírjuk a megmaradási tételeket az ütközési folyamatra. A mechanikai
-energia az ütközés előtt és után is csak mozgási energia:</p>
+<p>Egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>100</mn><mspace width="0.167em"></mspace><mi>k</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">0,100\,kg</annotation></semantics></math> tömegű test <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>00</mn><mspace width="0.167em"></mspace><mfrac><mi>m</mi><mi>s</mi></mfrac></mrow><annotation encoding="application/x-tex">1,00\,\frac{m}{s}</annotation></semantics></math> sebességgel csapódik a nyugalomban lévő <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>200</mn><mspace width="0.167em"></mspace><mi>k</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">0,200\,kg</annotation></semantics></math> tömegű testbe, mellyel tökéletesen rugalmasan, centrálisan ütköznek. Mekkora a testek sebessége az ütközés utáni pillanatban?</p>
+<p>Felírjuk a megmaradási tételeket az ütközési folyamatra. A mechanikai energia az ütközés előtt és után is csak mozgási energia:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msubsup><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><msub><mi>m</mi><mn>2</mn></msub><msubsup><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mn>0</mn></mrow><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><msub><mi>m</mi><mn>2</mn></msub><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
 \frac {m_1v_{1,0}^2} {2} + \frac {m_2v_{2,0}^2} {2} = \frac {m_1v_1^2} {2} + \frac {m_2v_2^2} {2}
 </annotation></semantics></math></p>
@@ -103,8 +52,7 @@ m_1v_{1,0} + m_2v_{2,0} = m_1v_1 + m_2v_2
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><mn>0</mn><mo>,</mo><mn>2</mn><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">
 0,1 \cdot 1 + 0 = 0,1 v_1 + 0,2 v_2
 </annotation></semantics></math></p>
-<p>Szorozzuk meg az első egyenletet 20-szal és másodikat pedig
-10-zel!</p>
+<p>Szorozzuk meg az első egyenletet 20-szal és másodikat pedig 10-zel!</p>
 <ol type="1">
 <li><p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>=</mo><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mn>2</mn><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
 1 = v_1^2 + 2v_2^2
@@ -113,9 +61,7 @@ m_1v_{1,0} + m_2v_{2,0} = m_1v_1 + m_2v_2
 1 = v_1 + 2v_2
 </annotation></semantics></math></p></li>
 </ol>
-<p>Fejezzük ki
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math>-et
-a másodikból:</p>
+<p>Fejezzük ki <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math>-et a másodikból:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">
 v_1 = 1 - 2v_2
 </annotation></semantics></math></p>
@@ -136,22 +82,10 @@ v_1 = 1 - 2v_2
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mspace width="1.0em"></mspace><mtext mathvariant="normal">vagy</mtext><mspace width="1.0em"></mspace><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>6667</mn><mfrac><mi>m</mi><mi>s</mi></mfrac></mrow><annotation encoding="application/x-tex">
 v_2 = 0 \quad \text{vagy} \quad v_2 = \frac {2} {3} = 0,6667 \frac {m} {s}
 </annotation></semantics></math></p>
-<p>A két megoldás közül az első a kezdeti, ütközés előtti állapot. A
-számunkra ismeretlen megoldás tehát:
-<strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>3334</mn><mspace width="0.167em"></mspace><mfrac><mi>m</mi><mi>s</mi></mfrac></mrow><annotation encoding="application/x-tex">v_1 = -0,3334\,\frac{m}{s}</annotation></semantics></math></strong>
-és
-<strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>6667</mn><mspace width="0.167em"></mspace><mfrac><mi>m</mi><mi>s</mi></mfrac></mrow><annotation encoding="application/x-tex">v_2 = 0,6667\,\frac{m}{s}</annotation></semantics></math></strong>.</p>
+<p>A két megoldás közül az első a kezdeti, ütközés előtti állapot. A számunkra ismeretlen megoldás tehát: <strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>3334</mn><mspace width="0.167em"></mspace><mfrac><mi>m</mi><mi>s</mi></mfrac></mrow><annotation encoding="application/x-tex">v_1 = -0,3334\,\frac{m}{s}</annotation></semantics></math></strong> és <strong><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>6667</mn><mspace width="0.167em"></mspace><mfrac><mi>m</mi><mi>s</mi></mfrac></mrow><annotation encoding="application/x-tex">v_2 = 0,6667\,\frac{m}{s}</annotation></semantics></math></strong>.</p>
 <p>Ellenőrizhető a szimulációval is.</p>
-<h3 id="az-általános-formulák-levezetése">Az általános formulák
-levezetése</h3>
-<p>Az általános képletek is levezethetők egy kis algebrával
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math>-re
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>-re.
-Itt a sebességek tulajdonképpen sebességkomponensek az ütközés
-egyenesének irányában, tehát előjelesek. Általában a pozitív tengely
-iránya balról jobbra mutat. A teljesség kedvéért levezetjük a
-formulákat!</p>
+<h3 id="az-általános-formulák-levezetése">Az általános formulák levezetése</h3>
+<p>Az általános képletek is levezethetők egy kis algebrával <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math>-re és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>-re. Itt a sebességek tulajdonképpen sebességkomponensek az ütközés egyenesének irányában, tehát előjelesek. Általában a pozitív tengely iránya balról jobbra mutat. A teljesség kedvéért levezetjük a formulákat!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msubsup><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><msub><mi>m</mi><mn>2</mn></msub><msubsup><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mn>0</mn></mrow><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><msub><mi>m</mi><mn>2</mn></msub><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
 \frac {m_1v_{1,0}^2} {2} + \frac {m_2v_{2,0}^2} {2} = \frac {m_1v_1^2} {2} + \frac {m_2v_2^2} {2}
 </annotation></semantics></math></p>
@@ -177,13 +111,7 @@ m_1(v_{1,0} - v_1) = m_2(v_2 - v_{2,0})
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><msub><mi>v</mi><mn>2</mn></msub><mo>+</mo><msub><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">
 v_{1,0} + v_1 = v_2 + v_{2,0}
 </annotation></semantics></math></p>
-<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math>-et
-megkapjuk, ha kifejezzük
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>-t
-az impulzusegyenletből, majd
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>
-helyére beírjuk az impulzusegyenletbe. Ezután kifejezzük
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math>-et.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math>-et megkapjuk, ha kifejezzük <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>-t az impulzusegyenletből, majd <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math> helyére beírjuk az impulzusegyenletbe. Ezután kifejezzük <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math>-et.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><msub><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>v</mi><mn>1</mn></msub><mo>−</mo><msub><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">
 v_2 = v_{1,0} + v_1 - v_{2,0}
 </annotation></semantics></math></p>
@@ -204,9 +132,7 @@ v_1 = \frac {(m_1 - m_2)v_{1,0} + 2m_2v_{2,0}} {m_1 + m_2}
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>⋅</mo><mn>0</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>−</mi><mn>0</mn><mo>,</mo><mn>1</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>3</mn></mrow></mfrac><mo>=</mo><mi>−</mi><mn>0</mn><mo>,</mo><mn>3334</mn><mfrac><mi>m</mi><mi>s</mi></mfrac></mrow><annotation encoding="application/x-tex">
 v_1 = \frac {(0,1 - 0,2)1 + 2 \cdot 0,2 \cdot 0} {0,1 + 0,2} = \frac {-0,1} {0,3} = -0,3334 \frac {m} {s}
 </annotation></semantics></math></p>
-<p>Látszik, hogy helyes eredményt kapunk.
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>-t
-teljesen hasonlóan kapjuk meg. Itt csak az eredményt közöljük:</p>
+<p>Látszik, hogy helyes eredményt kapunk. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>-t teljesen hasonlóan kapjuk meg. Itt csak az eredményt közöljük:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>m</mi><mn>2</mn></msub><mo>−</mo><msub><mi>m</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo><msub><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><mn>2</mn><msub><mi>m</mi><mn>1</mn></msub><msub><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></msub></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 v_2 = \frac {(m_2 - m_1)v_{2,0} + 2m_1v_{1,0}} {m_1 + m_2}
 </annotation></semantics></math></p>
@@ -215,81 +141,35 @@ v_2 = \frac {(m_2 - m_1)v_{2,0} + 2m_1v_{1,0}} {m_1 + m_2}
 v_2 = \frac {(0,2 - 0,1) \cdot 0 + 2 \cdot 0,1 \cdot 1} {0,1 + 0,2} = \frac {0,2} {0,3} = 0,6667 \frac {m} {s}
 </annotation></semantics></math></p>
 <blockquote>
-<p><strong>Megjegyzés:</strong> A képleteket nem érdemes bemagolni,
-inkább számoljunk úgy, ahogy a példamegoldásnál tettük!</p>
+<p><strong>Megjegyzés:</strong> A képleteket nem érdemes bemagolni, inkább számoljunk úgy, ahogy a példamegoldásnál tettük!</p>
 </blockquote>
 <h3 id="speciális-esetek">Speciális esetek</h3>
 <ol type="1">
-<li><strong>Egyenlő tömegek, egyik áll:</strong>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><mo>=</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">m_1 = m_2 = m</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_{1,0} = v_0</annotation></semantics></math>,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_{2,0} = 0</annotation></semantics></math>
+<li><strong>Egyenlő tömegek, egyik áll:</strong> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><mo>=</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">m_1 = m_2 = m</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_{1,0} = v_0</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_{2,0} = 0</annotation></semantics></math>
 <ul>
 <li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_1 = 0</annotation></semantics></math></li>
-<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_2 = v_0</annotation></semantics></math>
-<em>(A testek sebességet cserélnek)</em></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_2 = v_0</annotation></semantics></math> <em>(A testek sebességet cserélnek)</em></li>
 </ul></li>
-<li><strong>Egyenlő tömegek, szembe jönnek:</strong>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><mo>=</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">m_1 = m_2 = m</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mi>−</mi><msub><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_{1,0} = -v_{2,0} = v_0</annotation></semantics></math>
+<li><strong>Egyenlő tömegek, szembe jönnek:</strong> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><mo>=</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">m_1 = m_2 = m</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mi>−</mi><msub><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_{1,0} = -v_{2,0} = v_0</annotation></semantics></math>
 <ul>
 <li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mi>−</mi><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_1 = -v_0</annotation></semantics></math></li>
-<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_2 = v_0</annotation></semantics></math>
-<em>(Visszapattannak ugyanolyan sebességgel)</em></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_2 = v_0</annotation></semantics></math> <em>(Visszapattannak ugyanolyan sebességgel)</em></li>
 </ul></li>
-<li><strong>A célpont sokkal nehezebb:</strong>
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mo>≫</mo><msub><mi>m</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">m_2 \gg m_1</annotation></semantics></math>
-és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_{1,0} = v_0</annotation></semantics></math>,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_{2,0} = 0</annotation></semantics></math>
-(Pl. pingponglabda a falnak)
+<li><strong>A célpont sokkal nehezebb:</strong> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mo>≫</mo><msub><mi>m</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">m_2 \gg m_1</annotation></semantics></math> és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_{1,0} = v_0</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_{2,0} = 0</annotation></semantics></math> (Pl. pingponglabda a falnak)
 <ul>
 <li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>≈</mo><mi>−</mi><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_1 \approx -v_0</annotation></semantics></math></li>
-<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>≈</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_2 \approx 0</annotation></semantics></math>
-<em>(A kicsi visszapattan, a nagy meg sem mozdul)</em></li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>≈</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_2 \approx 0</annotation></semantics></math> <em>(A kicsi visszapattan, a nagy meg sem mozdul)</em></li>
 </ul></li>
 </ol>
 <hr />
 <h3 id="feladatok">Feladatok</h3>
 <ol type="1">
-<li><p>Egy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}50\text{ kg}</annotation></semantics></math>
-tömegű kiskocsi
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>p</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">4point0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
-sebességgel halad egy légpárnás sínen, amikor centrálisan és tökéletesen
-rugalmasan ütközik egy előtte, azonos irányban, de lassabban,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>p</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">1point0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
-sebességgel haladó
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}30\text{ kg}</annotation></semantics></math>
-tömegű kiskocsival. Számítsa ki mindkét kiskocsi sebességét az ütközés
-után!</p></li>
-<li><p>Két jégkorong súrlódásmentesen csúszik egymással szemben egy
-vízszintes jégpályán. Az „A” korong tömege
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}20\text{ kg}</annotation></semantics></math>,
-sebessége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>p</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">3point0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>.
-A „B” korong tömege
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>40</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}40\text{ kg}</annotation></semantics></math>,
-sebessége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>p</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">2point0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>
-(az „A” koronggal ellentétes irányban). Mekkora lesz a korongok
-sebessége és haladási iránya a tökéletesen rugalmas, centrális ütközés
-után?</p></li>
-<li><p>Egy proton
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>)
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
-sebességgel frontálisan, rugalmasan ütközik egy nyugalomban lévő
-héliumatommaggal (alfa-részecske, tömege
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>⋅</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">4 \cdot m</annotation></semantics></math>).</p>
+<li><p>Egy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}50\text{ kg}</annotation></semantics></math> tömegű kiskocsi <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>p</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">4point0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math> sebességgel halad egy légpárnás sínen, amikor centrálisan és tökéletesen rugalmasan ütközik egy előtte, azonos irányban, de lassabban, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>p</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">1point0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math> sebességgel haladó <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}30\text{ kg}</annotation></semantics></math> tömegű kiskocsival. Számítsa ki mindkét kiskocsi sebességét az ütközés után!</p></li>
+<li><p>Két jégkorong súrlódásmentesen csúszik egymással szemben egy vízszintes jégpályán. Az „A” korong tömege <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}20\text{ kg}</annotation></semantics></math>, sebessége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mi>p</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">3point0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>. A „B” korong tömege <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>40</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0{,}40\text{ kg}</annotation></semantics></math>, sebessége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>p</mi><mi>o</mi><mi>i</mi><mi>n</mi><mi>t</mi><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">2point0\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math> (az „A” koronggal ellentétes irányban). Mekkora lesz a korongok sebessége és haladási iránya a tökéletesen rugalmas, centrális ütközés után?</p></li>
+<li><p>Egy proton (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>) <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math> sebességgel frontálisan, rugalmasan ütközik egy nyugalomban lévő héliumatommaggal (alfa-részecske, tömege <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>⋅</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">4 \cdot m</annotation></semantics></math>).</p>
 <ul>
-<li><strong>a)</strong> Mekkora sebességgel halad tovább a proton és a
-héliummag az ütközés után a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
-függvényében?</li>
-<li><strong>b)</strong> A proton eredeti mozgási energiájának hányad
-részét adta át a héliummagnak?</li>
+<li><strong>a)</strong> Mekkora sebességgel halad tovább a proton és a héliummag az ütközés után a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math> függvényében?</li>
+<li><strong>b)</strong> A proton eredeti mozgási energiájának hányad részét adta át a héliummagnak?</li>
 </ul></li>
 </ol>
 </main>

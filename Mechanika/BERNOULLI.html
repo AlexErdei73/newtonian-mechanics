@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>A Bernoulli-törvény</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="ARAMLASOK.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="VISZKOZITAS.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="ARAMLASOK.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="VISZKOZITAS.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#a-bernoulli-törvény" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
 <h1 id="a-bernoulli-törvény">A Bernoulli-törvény</h1>
 <h2 id="kísérletek">Kísérletek</h2>
@@ -19,28 +19,14 @@
 <li><lite-youtube videoid="KFE98nje_L0"></lite-youtube></li>
 <li><lite-youtube videoid="hLZkPFrQCDk"></lite-youtube></li>
 </ul>
-<p>Láttuk, hogy a szűkületben a folyadék gyorsabban áramlik a
-kontinuitási egyenlet következtében, mint a tágabb csőszakaszokon.
-Nézzük most meg, hogyan változik a nyomás a csőszakaszokban! A
-kísérletek szerint a nyomás lecsökken azokon a helyeken, ahol a sebesség
-az áramlásban nagyobb, azokhoz a helyekhez képest, ahol a sebesség
-kisebb.</p>
-<h2
-id="az-energia-megmaradása-ideális-folyadék-stacionárius-örvénymentes-áramlásakor">Az
-energia megmaradása ideális folyadék stacionárius, örvénymentes
-áramlásakor</h2>
-<p>Képzeljünk el egy változó keresztmetszetű csövet, melynek végei
-különböző magasságban vannak. A folyadék áramlása a csőben időben
-állandó (stacionárius), örvények nem alakulnak ki. A folyadék ideális,
-tehát összenyomhatatlan és súrlódásmentes.</p>
+<p>Láttuk, hogy a szűkületben a folyadék gyorsabban áramlik a kontinuitási egyenlet következtében, mint a tágabb csőszakaszokon. Nézzük most meg, hogyan változik a nyomás a csőszakaszokban! A kísérletek szerint a nyomás lecsökken azokon a helyeken, ahol a sebesség az áramlásban nagyobb, azokhoz a helyekhez képest, ahol a sebesség kisebb.</p>
+<h2 id="az-energia-megmaradása-ideális-folyadék-stacionárius-örvénymentes-áramlásakor">Az energia megmaradása ideális folyadék stacionárius, örvénymentes áramlásakor</h2>
+<p>Képzeljünk el egy változó keresztmetszetű csövet, melynek végei különböző magasságban vannak. A folyadék áramlása a csőben időben állandó (stacionárius), örvények nem alakulnak ki. A folyadék ideális, tehát összenyomhatatlan és súrlódásmentes.</p>
 <figure>
 <img src="Kepek/bernoulli.svg" alt="Folyadék áramlása csőben" />
 <figcaption aria-hidden="true">Folyadék áramlása csőben</figcaption>
 </figure>
-<p>Ekkor egy kis
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\Delta t</annotation></semantics></math>
-időközi tömegáramlásra a munkatétel alapján a következő összefüggések
-érvényesek a csőszakaszra:</p>
+<p>Ekkor egy kis <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\Delta t</annotation></semantics></math> időközi tömegáramlásra a munkatétel alapján a következő összefüggések érvényesek a csőszakaszra:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mi>m</mi></msub><mo>+</mo><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mi>h</mi></msub></mrow><annotation encoding="application/x-tex">
 W = \Delta E_m + \Delta E_h
 </annotation></semantics></math></p>
@@ -50,10 +36,7 @@ p_1A_1u_1\Delta t - p_2A_2u_2\Delta t = \left(\frac{1}{2}\rho A_2u_2\Delta t \cd
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><msub><mi>u</mi><mn>1</mn></msub><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><msub><mi>A</mi><mn>2</mn></msub><msub><mi>u</mi><mn>2</mn></msub><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">
 A_1u_1\Delta t = A_2u_2\Delta t
 </annotation></semantics></math></p>
-<p>A közös tényezőkkel
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>V</mi><mo>=</mo><msub><mi>A</mi><mn>1</mn></msub><msub><mi>u</mi><mn>1</mn></msub><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><msub><mi>A</mi><mn>2</mn></msub><msub><mi>u</mi><mn>2</mn></msub><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\Delta V = A_1u_1\Delta t = A_2u_2\Delta t</annotation></semantics></math>)
-egyszerűsítve, majd az egyenletet átrendezve megkapjuk a
-Bernoulli-törvényt a csőre:</p>
+<p>A közös tényezőkkel (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>V</mi><mo>=</mo><msub><mi>A</mi><mn>1</mn></msub><msub><mi>u</mi><mn>1</mn></msub><mi mathvariant="normal">Δ</mi><mi>t</mi><mo>=</mo><msub><mi>A</mi><mn>2</mn></msub><msub><mi>u</mi><mn>2</mn></msub><mi mathvariant="normal">Δ</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\Delta V = A_1u_1\Delta t = A_2u_2\Delta t</annotation></semantics></math>) egyszerűsítve, majd az egyenletet átrendezve megkapjuk a Bernoulli-törvényt a csőre:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>−</mo><msub><mi>p</mi><mn>2</mn></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><msubsup><mi>u</mi><mn>2</mn><mn>2</mn></msubsup><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><msubsup><mi>u</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mi>ρ</mi><mi>g</mi><msub><mi>h</mi><mn>2</mn></msub><mo>−</mo><mi>ρ</mi><mi>g</mi><msub><mi>h</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">
 p_1 - p_2 = \frac{1}{2}\rho u_2^2 - \frac{1}{2}\rho u_1^2 + \rho gh_2 - \rho gh_1
 </annotation></semantics></math></p>
@@ -64,98 +47,32 @@ p_1 + \frac{1}{2}\rho u_1^2 + \rho gh_1 = p_2 + \frac{1}{2}\rho u_2^2 + \rho gh_
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mi>ρ</mi><mi>g</mi><mi>h</mi><mo>=</mo><mtext mathvariant="normal">állandó</mtext></mrow><annotation encoding="application/x-tex">
 p + \frac{1}{2}\rho u^2 + \rho gh = \text{állandó}
 </annotation></semantics></math></p>
-<p>Ez az összefüggés érvényes egy áramvonal (végtelenül vékony áramcső)
-esetén is. Mi garantálja, hogy az állandó ugyanaz az érték az összes
-áramvonalra? Ezt úgy lehet belátni, ha elképzeljük, hogy a csőbeli
-áramlást két, csővel összekötött edény közötti folyadékszint-különbség
-okozza. Ilyen esetben az áramvonalak a folyadék felszínéről indulnak.
-Vegyünk két igen közeli áramvonalat, és válasszunk két pontot azonos
-magasságban az egyik edényben. Ekkor a folyadék örvénymentessége miatt a
-két pontban a sebesség (mely itt függőlegesen lefelé mutat) egyenlő
-nagyságú. Ha ugyanis lenne örvény az áramlásban, akkor a két függőleges
-sebesség kissé eltérő távolságra lenne az örvény középpontjától, tehát a
-sebességeknek is különbözniük kellene. A nyomások is megegyeznek, hiszen
-a sebesség itt igen kicsi (mivel az edények nagyok a csőhöz képest), így
-a nyomás a külső és a hidrosztatikai nyomás összege. Így a két különböző
-áramvonalra az állandó ugyanaz. Távolabbi áramvonalak esetében egy sor
-pontot veszünk azonos magasságban egy sor különböző áramvonalon, így
-igen kis lépésekkel eljuthatunk az egyik áramvonaltól a másikig minden
-esetben.</p>
+<p>Ez az összefüggés érvényes egy áramvonal (végtelenül vékony áramcső) esetén is. Mi garantálja, hogy az állandó ugyanaz az érték az összes áramvonalra? Ezt úgy lehet belátni, ha elképzeljük, hogy a csőbeli áramlást két, csővel összekötött edény közötti folyadékszint-különbség okozza. Ilyen esetben az áramvonalak a folyadék felszínéről indulnak. Vegyünk két igen közeli áramvonalat, és válasszunk két pontot azonos magasságban az egyik edényben. Ekkor a folyadék örvénymentessége miatt a két pontban a sebesség (mely itt függőlegesen lefelé mutat) egyenlő nagyságú. Ha ugyanis lenne örvény az áramlásban, akkor a két függőleges sebesség kissé eltérő távolságra lenne az örvény középpontjától, tehát a sebességeknek is különbözniük kellene. A nyomások is megegyeznek, hiszen a sebesség itt igen kicsi (mivel az edények nagyok a csőhöz képest), így a nyomás a külső és a hidrosztatikai nyomás összege. Így a két különböző áramvonalra az állandó ugyanaz. Távolabbi áramvonalak esetében egy sor pontot veszünk azonos magasságban egy sor különböző áramvonalon, így igen kis lépésekkel eljuthatunk az egyik áramvonaltól a másikig minden esetben.</p>
 <h2 id="az-érvényesség-határai">Az érvényesség határai</h2>
 <ul>
-<li>A levezetés csak ideális, súrlódásmentes és összenyomhatatlan
-folyadékra (vagy gázra) vonatkozik.</li>
+<li>A levezetés csak ideális, súrlódásmentes és összenyomhatatlan folyadékra (vagy gázra) vonatkozik.</li>
 <li>Az áramlás stacionárius, vagyis az áramlási kép időben állandó.</li>
-<li>Az áramlás mindenütt örvénymentes, különben a tétel csak egy adott
-áramvonal mentén érvényes, de a különböző áramvonalakon az állandók
-értéke eltérhet.</li>
+<li>Az áramlás mindenütt örvénymentes, különben a tétel csak egy adott áramvonal mentén érvényes, de a különböző áramvonalakon az állandók értéke eltérhet.</li>
 </ul>
 <h2 id="szuperfolyékonyság">Szuperfolyékonyság</h2>
-<p>A természetben a folyadékok belsejében szinte mindig fellép a belső
-súrlódás (viszkozitás), amely ellenállást fejt ki az áramlással szemben.
-A mechanikai energia csökkenése ilyenkor – ahogyan korábban is láttuk –
-hő formájában a belső energiát növeli meg. Van azonban egy igen
-különleges eset, amelyet a hélium cseppfolyósítása után fedeztek fel. A
-hélium rendkívül nehezen cseppfolyósítható, és normál nyomáson még az
-abszolút nulla fok közelében sem válik szilárd halmazállapotúvá.
-Forráspontja
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>268</mn><mo>,</mo><mn>93</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">-268{,}93\text{ }^{\circ}\text{C}</annotation></semantics></math>
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>22</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> K</mtext></mrow></mrow><annotation encoding="application/x-tex">4{,}22\text{ K}</annotation></semantics></math>).
-Ha a cseppfolyós héliumot tovább hűtjük, akkor
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>270</mn><mo>,</mo><mn>97</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">-270{,}97\text{ }^{\circ}\text{C}</annotation></semantics></math>-on
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>17</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> K</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}17\text{ K}</annotation></semantics></math>,
-az úgynevezett lambda-ponton) átalakul szuperfolyékony héliummá
-(hélium-II).</p>
-<p>Ennek az anyagfázisnak rendkívül magas a hővezető képessége, és a
-belső súrlódása gyakorlatilag teljesen zérus, amikor kis sebességgel
-áramlik át akár a legvékonyabb hajszálcsöveken is. Tisza László és Lev
-Landau kétfolyadék-elmélete alapján a hélium-II egy normál (viszkózus)
-és egy szuperfolyékony komponens keverékeként viselkedik. Ha
-megforgatjuk, a folyadékban belső súrlódás nélkül forgó, parányi,
-úgynevezett <em>kvantált örvények</em> alakulnak ki, amelyek a
-végtelenségig képesek pörögni.</p>
-<p>Azt mondhatjuk, hogy ez az igen ritka és különleges kvantumfolyadék
-az, amely a makroszkopikus világban a leginkább képes megvalósítani a
-Bernoulli-törvény esetében tárgyalt ideális, súrlódásmentes állapotot.
-Akit ez az igen érdekes jelenség mélyebben is érdekel, annak az alábbi
-archív dokumentumfilmet ajánljuk:</p>
+<p>A természetben a folyadékok belsejében szinte mindig fellép a belső súrlódás (viszkozitás), amely ellenállást fejt ki az áramlással szemben. A mechanikai energia csökkenése ilyenkor – ahogyan korábban is láttuk – hő formájában a belső energiát növeli meg. Van azonban egy igen különleges eset, amelyet a hélium cseppfolyósítása után fedeztek fel. A hélium rendkívül nehezen cseppfolyósítható, és normál nyomáson még az abszolút nulla fok közelében sem válik szilárd halmazállapotúvá. Forráspontja <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>268</mn><mo>,</mo><mn>93</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">-268{,}93\text{ }^{\circ}\text{C}</annotation></semantics></math> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mn>22</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> K</mtext></mrow></mrow><annotation encoding="application/x-tex">4{,}22\text{ K}</annotation></semantics></math>). Ha a cseppfolyós héliumot tovább hűtjük, akkor <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>270</mn><mo>,</mo><mn>97</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">-270{,}97\text{ }^{\circ}\text{C}</annotation></semantics></math>-on (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mn>17</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> K</mtext></mrow></mrow><annotation encoding="application/x-tex">2{,}17\text{ K}</annotation></semantics></math>, az úgynevezett lambda-ponton) átalakul szuperfolyékony héliummá (hélium-II).</p>
+<p>Ennek az anyagfázisnak rendkívül magas a hővezető képessége, és a belső súrlódása gyakorlatilag teljesen zérus, amikor kis sebességgel áramlik át akár a legvékonyabb hajszálcsöveken is. Tisza László és Lev Landau kétfolyadék-elmélete alapján a hélium-II egy normál (viszkózus) és egy szuperfolyékony komponens keverékeként viselkedik. Ha megforgatjuk, a folyadékban belső súrlódás nélkül forgó, parányi, úgynevezett <em>kvantált örvények</em> alakulnak ki, amelyek a végtelenségig képesek pörögni.</p>
+<p>Azt mondhatjuk, hogy ez az igen ritka és különleges kvantumfolyadék az, amely a makroszkopikus világban a leginkább képes megvalósítani a Bernoulli-törvény esetében tárgyalt ideális, súrlódásmentes állapotot. Akit ez az igen érdekes jelenség mélyebben is érdekel, annak az alábbi archív dokumentumfilmet ajánljuk:</p>
 <ul>
 <li><lite-youtube videoid="ixsYmygNfs4" videoStartAt=2247></lite-youtube></li>
 </ul>
-<p>Bár a valódi fluidumok áramlásakor a szuperfolyékony hélium
-kivételével mindig fellép mechanikai energiaveszteség, az áramlás sok
-esetben közelítőleg stacionáriusnak tekinthető. Így a Bernoulli-törvény
-a gyakorlatban kiválóan alkalmazható, a nagyobb pontosságot igénylő
-mérnöki számítások során pedig a súrlódásból adódó nyomásveszteséget
-korrekciós tényezőkkel veszik figyelembe.</p>
+<p>Bár a valódi fluidumok áramlásakor a szuperfolyékony hélium kivételével mindig fellép mechanikai energiaveszteség, az áramlás sok esetben közelítőleg stacionáriusnak tekinthető. Így a Bernoulli-törvény a gyakorlatban kiválóan alkalmazható, a nagyobb pontosságot igénylő mérnöki számítások során pedig a súrlódásból adódó nyomásveszteséget korrekciós tényezőkkel veszik figyelembe.</p>
 <h2 id="példa">Példa</h2>
-<p>Egy vízszintes Venturi-csőben a levegő sebessége a tágabb
-csőszakaszban
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_1 = 2\text{ m/s}</annotation></semantics></math>,
-átmérője itt
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d_1 = 1\text{ cm}</annotation></semantics></math>.
-A szűkület átmérője
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">d_2 = 4\text{ mm}</annotation></semantics></math>.
-Mekkora a szűkületben a sebesség és a statikus nyomás? Az áramlás
-stacionárius, örvénymentes, és a levegőt ideális gáznak tekintjük (a
-súrlódástól és az összenyomhatóságtól eltekintünk). A levegő sűrűsége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1{,}20\text{ kg/m}^3</annotation></semantics></math>,
-kezdeti nyomása
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>=</mo><mn>101</mn><mspace width="0.222em"></mspace><mn>300</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow></mrow><annotation encoding="application/x-tex">p_1 = 101\ 300\text{ Pa}</annotation></semantics></math>.</p>
-<p>A szűkületben a sebességet a kontinuitási egyenletből számíthatjuk
-ki:</p>
+<p>Egy vízszintes Venturi-csőben a levegő sebessége a tágabb csőszakaszban <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_1 = 2\text{ m/s}</annotation></semantics></math>, átmérője itt <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d_1 = 1\text{ cm}</annotation></semantics></math>. A szűkület átmérője <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">d_2 = 4\text{ mm}</annotation></semantics></math>. Mekkora a szűkületben a sebesség és a statikus nyomás? Az áramlás stacionárius, örvénymentes, és a levegőt ideális gáznak tekintjük (a súrlódástól és az összenyomhatóságtól eltekintünk). A levegő sűrűsége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1{,}20\text{ kg/m}^3</annotation></semantics></math>, kezdeti nyomása <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>=</mo><mn>101</mn><mspace width="0.222em"></mspace><mn>300</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow></mrow><annotation encoding="application/x-tex">p_1 = 101\ 300\text{ Pa}</annotation></semantics></math>.</p>
+<p>A szűkületben a sebességet a kontinuitási egyenletből számíthatjuk ki:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><msub><mi>A</mi><mn>1</mn></msub><msub><mi>u</mi><mn>1</mn></msub></mrow><msub><mi>A</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><mrow><msubsup><mi>d</mi><mn>1</mn><mn>2</mn></msubsup><msub><mi>u</mi><mn>1</mn></msub></mrow><msubsup><mi>d</mi><mn>2</mn><mn>2</mn></msubsup></mfrac><mo>=</mo><mfrac><mrow><msup><mn>10</mn><mn>2</mn></msup><mo>⋅</mo><mn>2</mn></mrow><msup><mn>4</mn><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mn>200</mn><mn>16</mn></mfrac><mo>=</mo><mn>12</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
 u_2 = \frac{A_1 u_1}{A_2} = \frac{d_1^2 u_1}{d_2^2} = \frac{10^2 \cdot 2}{4^2} = \frac{200}{16} = 12{,}5\text{ m/s}
 </annotation></semantics></math></p>
-<p>Mivel a cső vízszintes
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>1</mn></msub><mo>=</mo><msub><mi>h</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">h_1 = h_2</annotation></semantics></math>),
-a Bernoulli-törvény a következő alakra egyszerűsödik:</p>
+<p>Mivel a cső vízszintes (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mn>1</mn></msub><mo>=</mo><msub><mi>h</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">h_1 = h_2</annotation></semantics></math>), a Bernoulli-törvény a következő alakra egyszerűsödik:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><msubsup><mi>u</mi><mn>1</mn><mn>2</mn></msubsup><mo>=</mo><msub><mi>p</mi><mn>2</mn></msub><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><msubsup><mi>u</mi><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
 p_1 + \frac{1}{2}\rho u_1^2 = p_2 + \frac{1}{2}\rho u_2^2
 </annotation></semantics></math></p>
-<p>Ebből a szűkületben mérhető
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mn>2</mn></msub><annotation encoding="application/x-tex">p_2</annotation></semantics></math>
-nyomás:</p>
+<p>Ebből a szűkületben mérhető <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mn>2</mn></msub><annotation encoding="application/x-tex">p_2</annotation></semantics></math> nyomás:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>2</mn></msub><mo>=</mo><msub><mi>p</mi><mn>1</mn></msub><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>ρ</mi><mo stretchy="false" form="prefix">(</mo><msubsup><mi>u</mi><mn>2</mn><mn>2</mn></msubsup><mo>−</mo><msubsup><mi>u</mi><mn>1</mn><mn>2</mn></msubsup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
 p_2 = p_1 - \frac{1}{2}\rho(u_2^2 - u_1^2)
 </annotation></semantics></math></p>
@@ -164,42 +81,9 @@ p_2 = 101\ 300 - \frac{1}{2} \cdot 1{,}20 \cdot (12{,}5^2 - 2^2) = 101\ 208{,}65
 </annotation></semantics></math></p>
 <h2 id="feladatok">Feladatok</h2>
 <ol type="1">
-<li><p>Egy vízszintes kerti locsolócső belső átmérője a vastagabb
-szakaszon
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d_1 = 2\text{ cm}</annotation></semantics></math>,
-itt a víz sebessége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_1 = 1{,}5\text{ m/s}</annotation></semantics></math>.
-A cső végére egy szűkítő fejet szerelünk, amelynek kimeneti átmérője
-mindössze
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>=</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">d_2 = 5\text{ mm}</annotation></semantics></math>.
-Mekkora a víz kiáramlási sebessége a szűkítésnél? (A vizet tekintsük
-ideális, összenyomhatatlan folyadéknak).</p></li>
-<li><p>Egy repülőgép szárnya felett a levegő sebessége egy adott ponton
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_2 = 60\text{ m/s}</annotation></semantics></math>,
-míg a szárny alatt a zavartalan áramlásban
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_1 = 50\text{ m/s}</annotation></semantics></math>.
-A szárny alatti áramlásban a statikus légnyomás
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>=</mo><mn>100</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow></mrow><annotation encoding="application/x-tex">p_1 = 100\ 000\text{ Pa}</annotation></semantics></math>.
-A levegő sűrűsége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1{,}2\text{ kg/m}^3</annotation></semantics></math>.
-Mekkora a nyomás a szárny feletti pontban? (A szárny vastagságából adódó
-magasságkülönbséget hanyagoljuk el).</p></li>
-<li><p>Egy függőlegesen felfelé szűkülő csőben víz áramlik. A cső alsó,
-tágasabb keresztmetszeténél az átmérő
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d_1 = 10\text{ cm}</annotation></semantics></math>,
-a víz sebessége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_1 = 2\text{ m/s}</annotation></semantics></math>,
-a nyomás pedig
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>=</mo><mn>200</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow></mrow><annotation encoding="application/x-tex">p_1 = 200\ 000\text{ Pa}</annotation></semantics></math>.
-A cső
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> méterrel</mtext></mrow></mrow><annotation encoding="application/x-tex">h = 3\text{ méterrel}</annotation></semantics></math>
-magasabban lévő felső végénél az átmérő
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>=</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d_2 = 5\text{ cm}</annotation></semantics></math>-re
-szűkül.
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mtext mathvariant="normal">víz</mtext></msub><mo>=</mo><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho_{\text{víz}} = 1000\text{ kg/m}^3</annotation></semantics></math>,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>10</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 10\text{ m/s}^2</annotation></semantics></math>
-Mekkora a sebesség és a statikus nyomás a cső felső, szűkebb
-keresztmetszetében?</p></li>
+<li><p>Egy vízszintes kerti locsolócső belső átmérője a vastagabb szakaszon <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d_1 = 2\text{ cm}</annotation></semantics></math>, itt a víz sebessége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_1 = 1{,}5\text{ m/s}</annotation></semantics></math>. A cső végére egy szűkítő fejet szerelünk, amelynek kimeneti átmérője mindössze <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>=</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">d_2 = 5\text{ mm}</annotation></semantics></math>. Mekkora a víz kiáramlási sebessége a szűkítésnél? (A vizet tekintsük ideális, összenyomhatatlan folyadéknak).</p></li>
+<li><p>Egy repülőgép szárnya felett a levegő sebessége egy adott ponton <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_2 = 60\text{ m/s}</annotation></semantics></math>, míg a szárny alatt a zavartalan áramlásban <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_1 = 50\text{ m/s}</annotation></semantics></math>. A szárny alatti áramlásban a statikus légnyomás <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>=</mo><mn>100</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow></mrow><annotation encoding="application/x-tex">p_1 = 100\ 000\text{ Pa}</annotation></semantics></math>. A levegő sűrűsége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ρ</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho = 1{,}2\text{ kg/m}^3</annotation></semantics></math>. Mekkora a nyomás a szárny feletti pontban? (A szárny vastagságából adódó magasságkülönbséget hanyagoljuk el).</p></li>
+<li><p>Egy függőlegesen felfelé szűkülő csőben víz áramlik. A cső alsó, tágasabb keresztmetszeténél az átmérő <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d_1 = 10\text{ cm}</annotation></semantics></math>, a víz sebessége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">u_1 = 2\text{ m/s}</annotation></semantics></math>, a nyomás pedig <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>=</mo><mn>200</mn><mspace width="0.222em"></mspace><mn>000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow></mrow><annotation encoding="application/x-tex">p_1 = 200\ 000\text{ Pa}</annotation></semantics></math>. A cső <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> méterrel</mtext></mrow></mrow><annotation encoding="application/x-tex">h = 3\text{ méterrel}</annotation></semantics></math> magasabban lévő felső végénél az átmérő <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>=</mo><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">d_2 = 5\text{ cm}</annotation></semantics></math>-re szűkül. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mtext mathvariant="normal">víz</mtext></msub><mo>=</mo><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho_{\text{víz}} = 1000\text{ kg/m}^3</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>10</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 10\text{ m/s}^2</annotation></semantics></math> Mekkora a sebesség és a statikus nyomás a cső felső, szűkebb keresztmetszetében?</p></li>
 </ol>
 </main>
 </body>

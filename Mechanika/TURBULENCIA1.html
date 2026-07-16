@@ -4,135 +4,53 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>A kifejlett turbulencia és az energiakaszkád</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="KARMANORVENYSOR.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="TURBULENCIA2.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="KARMANORVENYSOR.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="TURBULENCIA2.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#a-kifejlett-turbulencia-és-az-energiakaszkád" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
-<h1 id="a-kifejlett-turbulencia-és-az-energiakaszkád">A kifejlett
-turbulencia és az energiakaszkád</h1>
+<h1 id="a-kifejlett-turbulencia-és-az-energiakaszkád">A kifejlett turbulencia és az energiakaszkád</h1>
 <h2 id="a-turbulencia-tulajdonságai">A turbulencia tulajdonságai</h2>
-<p>Láttuk a korábbiakból, hogy a csőbeli áramlás csak kis Reynolds-szám
-esetén lesz lamináris, stacionárius, örvénymentes áramlás. Ez ugyanúgy
-érvényes a gömb körüli áramlásra is, amelyből Stokes kapta a törvényét a
-közegellenállási erőre igen kis Reynolds-szám esetére. Láttuk már azt
-is, hogy egy végtelen hosszú henger körüli síkbeli áramlás hogyan válik
-örvényessé, majd hogyan alakul ki a Kármán-féle örvénysor magasabb
-Reynolds-számok esetén.</p>
-<p>Ez a folyamat elvezet magas Reynolds-számok esetén egy erősen
-kaotikus áramláshoz, amelyet turbulens áramlásként emlegetünk. Ez persze
-tiszta síkbeli áramlásoknál már nem alakulhat ki, mert a turbulencia
-kialakulása csak három dimenzióban lehetséges. Most meg fogjuk
-vizsgálni, hogy miért is van ez így. A mindennapi életben – mint látni
-fogjuk – szinte minden esetben a turbulens áramlásokkal találkozhatunk,
-amennyiben kilépünk a laboratóriumból, vagy eltekintünk az eddig
-vizsgált egyszerűbb esetektől.</p>
+<p>Láttuk a korábbiakból, hogy a csőbeli áramlás csak kis Reynolds-szám esetén lesz lamináris, stacionárius, örvénymentes áramlás. Ez ugyanúgy érvényes a gömb körüli áramlásra is, amelyből Stokes kapta a törvényét a közegellenállási erőre igen kis Reynolds-szám esetére. Láttuk már azt is, hogy egy végtelen hosszú henger körüli síkbeli áramlás hogyan válik örvényessé, majd hogyan alakul ki a Kármán-féle örvénysor magasabb Reynolds-számok esetén.</p>
+<p>Ez a folyamat elvezet magas Reynolds-számok esetén egy erősen kaotikus áramláshoz, amelyet turbulens áramlásként emlegetünk. Ez persze tiszta síkbeli áramlásoknál már nem alakulhat ki, mert a turbulencia kialakulása csak három dimenzióban lehetséges. Most meg fogjuk vizsgálni, hogy miért is van ez így. A mindennapi életben – mint látni fogjuk – szinte minden esetben a turbulens áramlásokkal találkozhatunk, amennyiben kilépünk a laboratóriumból, vagy eltekintünk az eddig vizsgált egyszerűbb esetektől.</p>
 <h3 id="kísérletek">Kísérletek</h3>
 <p><lite-youtube videoid="5zI9sG3pjVU"></lite-youtube></p>
-<p>Ez a videó sok minden érdekességet mutat a turbulens áramlásokkal
-kapcsolatban: beszél a határrétegről, a tapadási feltételről, olyan
-példákról, ahol a turbulencia a gyakorlatban is hasznos, és persze
-magáról a jelenségről és a kialakulásáról is. Nézzük meg a turbulencia
-fő jellemzőit:</p>
+<p>Ez a videó sok minden érdekességet mutat a turbulens áramlásokkal kapcsolatban: beszél a határrétegről, a tapadási feltételről, olyan példákról, ahol a turbulencia a gyakorlatban is hasznos, és persze magáról a jelenségről és a kialakulásáról is. Nézzük meg a turbulencia fő jellemzőit:</p>
 <ul>
 <li><strong>Térbeli jelenség:</strong> Csak 3D-ben képes működni.</li>
-<li><strong>Magas Reynolds-számoknál lép fel:</strong> Amikor a
-tehetetlenségi erők dominálnak a viszkózus erők felett.</li>
-<li><strong>Örvényes áramlásról van szó:</strong> Az áramlási tér tele
-van forgó struktúrákkal.</li>
-<li><strong>Kiszámíthatatlan, kaotikus:</strong> A sebesség egy pontban
-egy adott érték körül vadul ingadozik, fluktuál.</li>
-<li><strong>Keveredéssel jár:</strong> Az áramvonalak összekuszálódnak,
-összekeverednek, nyilvánvalóan nem megfordítható módon.</li>
-<li><strong>Fenntartásához energia szükséges:</strong> Az energia a
-folyadék belső energiájává (hővé) alakul, általában erőteljesebben, mint
-a lamináris áramlás esetén.</li>
+<li><strong>Magas Reynolds-számoknál lép fel:</strong> Amikor a tehetetlenségi erők dominálnak a viszkózus erők felett.</li>
+<li><strong>Örvényes áramlásról van szó:</strong> Az áramlási tér tele van forgó struktúrákkal.</li>
+<li><strong>Kiszámíthatatlan, kaotikus:</strong> A sebesség egy pontban egy adott érték körül vadul ingadozik, fluktuál.</li>
+<li><strong>Keveredéssel jár:</strong> Az áramvonalak összekuszálódnak, összekeverednek, nyilvánvalóan nem megfordítható módon.</li>
+<li><strong>Fenntartásához energia szükséges:</strong> Az energia a folyadék belső energiájává (hővé) alakul, általában erőteljesebben, mint a lamináris áramlás esetén.</li>
 </ul>
-<p>Láttuk továbbá, hogy bár a turbulencia általában növeli a
-közegellenállást és a csövekben a hidrodinamikai ellenállást, néhány
-esetben kifejezetten kedvező is lehet.</p>
+<p>Láttuk továbbá, hogy bár a turbulencia általában növeli a közegellenállást és a csövekben a hidrodinamikai ellenállást, néhány esetben kifejezetten kedvező is lehet.</p>
 <h4 id="miért-rücskös-a-golflabda">Miért rücskös a golflabda?</h4>
-<p>A golflabda rücskös felülete szándékosan alakít ki egy vékony,
-turbulens határréteget a labda körül. Ez két ellentétes fizikai hatással
-jár: 1. <strong>Negatív hatás:</strong> Kissé megnöveli a közvetlen
-felületi súrlódást. 2. <strong>Pozitív hatás:</strong> A turbulens
-áramlás jobban rátapad a felületre, így a levegő messzebb tudja
-körüláramolni a gömböt.</p>
-<p>Ennek következménye, hogy a labda mögött kialakuló vákuum (nyomási
-ellenállás) drasztikusan lecsökken, a teljes közegellenállás pedig
-jelentősen kisebb lesz ugyanolyan körülmények között a sima labdához
-képest.</p>
+<p>A golflabda rücskös felülete szándékosan alakít ki egy vékony, turbulens határréteget a labda körül. Ez két ellentétes fizikai hatással jár: 1. <strong>Negatív hatás:</strong> Kissé megnöveli a közvetlen felületi súrlódást. 2. <strong>Pozitív hatás:</strong> A turbulens áramlás jobban rátapad a felületre, így a levegő messzebb tudja körüláramolni a gömböt.</p>
+<p>Ennek következménye, hogy a labda mögött kialakuló vákuum (nyomási ellenállás) drasztikusan lecsökken, a teljes közegellenállás pedig jelentősen kisebb lesz ugyanolyan körülmények között a sima labdához képest.</p>
 <hr />
 <h2 id="az-energiakaszkád">Az energiakaszkád</h2>
-<p>Már a videó arról is beszélt, hogy először nagy örvények alakulnak ki
-a magas Reynolds-szám esetén, majd ezek az örvények kisebb örvényekre
-esnek szét, ahogy összehúzódnak és gyorsabban kezdenek pörögni. Majd
-ezek a kisebb örvények még inkább összehúzódnak és még kisebb örvényekre
-esnek szét, majd ez a folyamat egészen addig tart, amíg el nem érünk egy
-olyan magas sebességhez és kis mérethez, hogy a súrlódás képes lesz
-felemészteni és a folyadék belső energiájává alakítani az örvények
-energiáját.</p>
-<p>Ez a folyamat az úgynevezett <strong>energiakaszkád</strong>
-(energia-vízesés). A nagy örvényekbe betápláljuk a mechanikai energiát,
-de aztán ez az energia átadódik a kisebb örvényeknek. Ezen a szinten az
-energia megmarad, mert a súrlódás nem jut szerephez.</p>
-<p>A folyamat csak három dimenzióban tud végbemenni, mivel lényeges az
-örvényszálak megnyúlása és felpörgése (<em>vortex stretching</em>).</p>
+<p>Már a videó arról is beszélt, hogy először nagy örvények alakulnak ki a magas Reynolds-szám esetén, majd ezek az örvények kisebb örvényekre esnek szét, ahogy összehúzódnak és gyorsabban kezdenek pörögni. Majd ezek a kisebb örvények még inkább összehúzódnak és még kisebb örvényekre esnek szét, majd ez a folyamat egészen addig tart, amíg el nem érünk egy olyan magas sebességhez és kis mérethez, hogy a súrlódás képes lesz felemészteni és a folyadék belső energiájává alakítani az örvények energiáját.</p>
+<p>Ez a folyamat az úgynevezett <strong>energiakaszkád</strong> (energia-vízesés). A nagy örvényekbe betápláljuk a mechanikai energiát, de aztán ez az energia átadódik a kisebb örvényeknek. Ezen a szinten az energia megmarad, mert a súrlódás nem jut szerephez.</p>
+<p>A folyamat csak három dimenzióban tud végbemenni, mivel lényeges az örvényszálak megnyúlása és felpörgése (<em>vortex stretching</em>).</p>
 <blockquote>
-<p><strong>A jégkorcsolyázó-analógia:</strong> Képzeljünk el egy pörgő
-műkorcsolyázót. Amikor a karjait behúzza a forgástengelye felé (vagyis a
-forgástengely mentén megnyúlik), a perdületmegmaradás miatt hirtelen
-felgyorsul a pörgése. A turbulens áramlásban a nagy örvények pontosan
-így, a harmadik dimenzió irányában nyújtják meg a kisebb örvényeket,
-amik ettől gyorsabban kezdenek forogni, miközben a méretük lecsökken. Ez
-a folyamat síkbeli (2D) áramlásoknál a tömegmegmaradás miatt fizikai
-képtelenség.</p>
+<p><strong>A jégkorcsolyázó-analógia:</strong> Képzeljünk el egy pörgő műkorcsolyázót. Amikor a karjait behúzza a forgástengelye felé (vagyis a forgástengely mentén megnyúlik), a perdületmegmaradás miatt hirtelen felgyorsul a pörgése. A turbulens áramlásban a nagy örvények pontosan így, a harmadik dimenzió irányában nyújtják meg a kisebb örvényeket, amik ettől gyorsabban kezdenek forogni, miközben a méretük lecsökken. Ez a folyamat síkbeli (2D) áramlásoknál a tömegmegmaradás miatt fizikai képtelenség.</p>
 </blockquote>
-<p>Ez a lépcsőzetes folyamat tehát a betáplált energiát egyre kisebb és
-kisebb örvényekbe viszi át, amíg a végén a súrlódás felemészti a
-betáplált mechanikai energiát. Nézzünk is meg erről egy videót.</p>
+<p>Ez a lépcsőzetes folyamat tehát a betáplált energiát egyre kisebb és kisebb örvényekbe viszi át, amíg a végén a súrlódás felemészti a betáplált mechanikai energiát. Nézzünk is meg erről egy videót.</p>
 <h3 id="kísérletek-1">Kísérletek</h3>
 <p><lite-youtube videoid="_UoTTq651dE"></lite-youtube></p>
-<p>Ez a videó is elmagyarázza a turbulencia tulajdonságait, de sokkal
-részletesebben beszél az energiakaszkádról is. Ezután megemlít egy
-fontos matematikai törvényt is.</p>
+<p>Ez a videó is elmagyarázza a turbulencia tulajdonságait, de sokkal részletesebben beszél az energiakaszkádról is. Ezután megemlít egy fontos matematikai törvényt is.</p>
 <blockquote>
-<p><strong>A különböző méretű örvényekben tárolt energia, egységnyi
-tömegű folyadékra vonatkoztatva arányos az örvények
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
-átmérőjének
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">5/3</annotation></semantics></math>-os
-hatványával a turbulens áramlás esetén.</strong></p>
+<p><strong>A különböző méretű örvényekben tárolt energia, egységnyi tömegű folyadékra vonatkoztatva arányos az örvények <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math> átmérőjének <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">5/3</annotation></semantics></math>-os hatványával a turbulens áramlás esetén.</strong></p>
 </blockquote>
-<p>Ez egy igen érdekes összefüggés, amelyet a kísérletek az
-energiakaszkád közepes mérettartományára nagy pontossággal igazoltak
-eredeti formájában. A videó azt is említi, hogy ez a megállapítás
-Kolmogorov orosz matematikustól származik, aki felismerte az
-energiakaszkád működését, és néhány egyszerű feltételezésből jutott el a
-törvényszerűség felismeréséig. Ő ugye a valószínűségszámításban és a
-statisztikában elért eredményeiről ismert a legjobban.</p>
-<p>Rájött, hogy az alapegyenletek megoldása egy ilyen összetett esetben
-reménytelen, hiszen matematikailag még az sem bizonyított, hogy jól
-viselkedő megoldások – amelyek nem válnak végtelenné egyes pontokban –
-egyáltalán léteznek-e. Tehát statisztikus feltételezéseket és egyszerű
-dimenzióanalízist végzett, úgy jutott a megállapításokhoz.
-Gondolatmenete igen érdekes, ezért megpróbáljuk elmagyarázni a következő
-leckében az érdeklődőknek!</p>
+<p>Ez egy igen érdekes összefüggés, amelyet a kísérletek az energiakaszkád közepes mérettartományára nagy pontossággal igazoltak eredeti formájában. A videó azt is említi, hogy ez a megállapítás Kolmogorov orosz matematikustól származik, aki felismerte az energiakaszkád működését, és néhány egyszerű feltételezésből jutott el a törvényszerűség felismeréséig. Ő ugye a valószínűségszámításban és a statisztikában elért eredményeiről ismert a legjobban.</p>
+<p>Rájött, hogy az alapegyenletek megoldása egy ilyen összetett esetben reménytelen, hiszen matematikailag még az sem bizonyított, hogy jól viselkedő megoldások – amelyek nem válnak végtelenné egyes pontokban – egyáltalán léteznek-e. Tehát statisztikus feltételezéseket és egyszerű dimenzióanalízist végzett, úgy jutott a megállapításokhoz. Gondolatmenete igen érdekes, ezért megpróbáljuk elmagyarázni a következő leckében az érdeklődőknek!</p>
 <blockquote>
-<p><strong>Figyelmeztetés!</strong> A videó készítői nem teljesen
-követték Kolmogorov eredeti gondolatmenetét. Az egyszerűsítés során egy
-matematikai hiba folytán a videó kiemelt állítása pontatlan lett. A hiba
-a hatványkitevőt érinti: mind az előjele, mind a nagysága rossz a
-megadott geometriai méretre. A videóban szereplő
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E(D)</annotation></semantics></math>
-mennyiségre a valóságos térbeli méret szerint a helyes kitevő valójában
--1/3, tehát a videó állítása helyesen:</p>
+<p><strong>Figyelmeztetés!</strong> A videó készítői nem teljesen követték Kolmogorov eredeti gondolatmenetét. Az egyszerűsítés során egy matematikai hiba folytán a videó kiemelt állítása pontatlan lett. A hiba a hatványkitevőt érinti: mind az előjele, mind a nagysága rossz a megadott geometriai méretre. A videóban szereplő <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E(D)</annotation></semantics></math> mennyiségre a valóságos térbeli méret szerint a helyes kitevő valójában -1/3, tehát a videó állítása helyesen:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo>∝</mo><msup><mi>D</mi><mrow><mi>−</mi><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></msup></mrow><annotation encoding="application/x-tex">E(D) \propto D^{-\frac{1}{3}}</annotation></semantics></math></p>
 </blockquote>
-<p>Erről, a számítógépes áramlástani szimulációkról és a
-dimenzióanalízis varázslatos erejéről a következő, haladó szintű
-leckében beszélünk részletesen.</p>
+<p>Erről, a számítógépes áramlástani szimulációkról és a dimenzióanalízis varázslatos erejéről a következő, haladó szintű leckében beszélünk részletesen.</p>
 </main>
 </body>
 </html>

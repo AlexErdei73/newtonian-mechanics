@@ -4,97 +4,48 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>Vektor- és skalármennyiségek</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="SURUSEG.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="SEBESSEG.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="SURUSEG.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="SEBESSEG.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#vektor--és-skalármennyiségek" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
 <h1 id="vektor--és-skalármennyiségek">Vektor- és skalármennyiségek</h1>
 <h2 id="skalármennyiségek">Skalármennyiségek</h2>
-<p>Azokat a mennyiségeket, amelyeket teljes mértékben jellemez a
-nagyságuk (mértékszámuk és mértékegységük),
-<strong>skalármennyiségeknek</strong> nevezzük. Az eddig említett
-fizikai fogalmak mind ilyenek, mint például a tömeg, az idő vagy a
-sűrűség.</p>
+<p>Azokat a mennyiségeket, amelyeket teljes mértékben jellemez a nagyságuk (mértékszámuk és mértékegységük), <strong>skalármennyiségeknek</strong> nevezzük. Az eddig említett fizikai fogalmak mind ilyenek, mint például a tömeg, az idő vagy a sűrűség.</p>
 <h2 id="vektormennyiségek">Vektormennyiségek</h2>
-<p>A későbbiekben gyakran találkozunk olyan mennyiségekkel is, amelyeket
-a nagyságuk mellett az irányuk is meghatároz. Ezeket
-<strong>vektormennyiségeknek</strong> nevezzük. Jelölésük a nyomtatott
-szövegekben félkövér betűvel, kézírásban pedig általában a jel fölé
-helyezett kis nyíllal történik. Például:
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>a</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{a}</annotation></semantics></math>
-jelöli az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
-vektort, melynek hossza (abszolút értéke):</p>
+<p>A későbbiekben gyakran találkozunk olyan mennyiségekkel is, amelyeket a nagyságuk mellett az irányuk is meghatároz. Ezeket <strong>vektormennyiségeknek</strong> nevezzük. Jelölésük a nyomtatott szövegekben félkövér betűvel, kézírásban pedig általában a jel fölé helyezett kis nyíllal történik. Például: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>a</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{a}</annotation></semantics></math> jelöli az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> vektort, melynek hossza (abszolút értéke):</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mover><mi>a</mi><mo accent="true">→</mo></mover><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">
 |\vec{a}| = a
 </annotation></semantics></math></p>
-<p>A legegyszerűbb fizikai példa az <strong>elmozdulásvektor</strong>,
-amelynek jól meghatározott nagysága és iránya van. További ismert
-vektormennyiségek: a sebesség, a gyorsulás és az erő, amelyekkel a
-későbbi fejezetekben részletesen foglalkozunk.</p>
+<p>A legegyszerűbb fizikai példa az <strong>elmozdulásvektor</strong>, amelynek jól meghatározott nagysága és iránya van. További ismert vektormennyiségek: a sebesség, a gyorsulás és az erő, amelyekkel a későbbi fejezetekben részletesen foglalkozunk.</p>
 <h3 id="vektorok-összeadása">Vektorok összeadása</h3>
-<p>Vektorokat geometriai úton úgy adunk össze, ahogyan az egymást követő
-elmozdulásokkal tesszük (láncszabály vagy háromszögmódszer). A második
-vektort önmagával párhuzamosan úgy toljuk el, hogy a kezdőpontja az első
-vektor végpontjába kerüljön. Ekkor az <strong>eredő vektor</strong> az
-első vektor kezdőpontjából a második vektor végpontjába mutat.</p>
+<p>Vektorokat geometriai úton úgy adunk össze, ahogyan az egymást követő elmozdulásokkal tesszük (láncszabály vagy háromszögmódszer). A második vektort önmagával párhuzamosan úgy toljuk el, hogy a kezdőpontja az első vektor végpontjába kerüljön. Ekkor az <strong>eredő vektor</strong> az első vektor kezdőpontjából a második vektor végpontjába mutat.</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>w</mi><mo accent="true">→</mo></mover><mo>=</mo><mover><mi>u</mi><mo accent="true">→</mo></mover><mo>+</mo><mover><mi>v</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">
 \vec{w} = \vec{u} + \vec{v}
 </annotation></semantics></math></p>
-<p><a href="https://www.geogebra.org/m/tpa5qfuq">Vektor-összeadás
-interaktív szimuláció (GeoGebra)</a></p>
-<p>Az összegzés során a következő speciális esetekkel találkozhatunk: *
-<strong>Azonos irányú vektorok:</strong> Ha a két összetevő vektor egy
-egyenesbe esik és azonos irányba mutat, az eredő vektor hossza a két
-összetevő hosszának tiszta összege. * <strong>Ellentétes irányú
-vektorok:</strong> Ha a két vektor egy egyenesbe esik, de ellentétes
-irányúak, az eredő vektor hossza a két hossz különbsége (a nagyobb
-értékből kivonjuk a kisebbet), iránya pedig megegyezik a nagyobb
-összetevő irányával. * <strong>Merőleges vektorok:</strong> Ha a két
-vektor merőleges egymásra, az eredő vektor hosszát a derékszögű
-háromszögre érvényes <strong>Pitagorasz-tétel</strong> segítségével
-számíthatjuk ki.</p>
+<p><a href="https://www.geogebra.org/m/tpa5qfuq">Vektor-összeadás interaktív szimuláció (GeoGebra)</a></p>
+<p>Az összegzés során a következő speciális esetekkel találkozhatunk: * <strong>Azonos irányú vektorok:</strong> Ha a két összetevő vektor egy egyenesbe esik és azonos irányba mutat, az eredő vektor hossza a két összetevő hosszának tiszta összege. * <strong>Ellentétes irányú vektorok:</strong> Ha a két vektor egy egyenesbe esik, de ellentétes irányúak, az eredő vektor hossza a két hossz különbsége (a nagyobb értékből kivonjuk a kisebbet), iránya pedig megegyezik a nagyobb összetevő irányával. * <strong>Merőleges vektorok:</strong> Ha a két vektor merőleges egymásra, az eredő vektor hosszát a derékszögű háromszögre érvényes <strong>Pitagorasz-tétel</strong> segítségével számíthatjuk ki.</p>
 <h3 id="példák">Példák</h3>
 <ol type="1">
-<li>Egy gyalogos a járdán egyenesen haladva
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ m}</annotation></semantics></math>-t
-sétál, majd megáll beszélgetni. Ezután ugyanabban az irányban még
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ m}</annotation></semantics></math>-t
-sétál a kapuig. Mekkora az elmozdulása összesen?</li>
+<li>Egy gyalogos a járdán egyenesen haladva <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ m}</annotation></semantics></math>-t sétál, majd megáll beszélgetni. Ezután ugyanabban az irányban még <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ m}</annotation></semantics></math>-t sétál a kapuig. Mekkora az elmozdulása összesen?</li>
 </ol>
-<p>Mivel a gyalogos elmozdulásai azonos irányú vektorok, az eredő
-elmozdulás hossza a két szakasz összege:</p>
+<p>Mivel a gyalogos elmozdulásai azonos irányú vektorok, az eredő elmozdulás hossza a két szakasz összege:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>+</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
 s = 20\text{ m} + 30\text{ m} = 50\text{ m}
 </annotation></semantics></math></p>
 <ol start="2" type="1">
-<li>A gyalogos először
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ m}</annotation></semantics></math>-t
-sétál az egyik irányba, majd megfordul, és visszasétál az ellenkező
-irányba
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ m}</annotation></semantics></math>-t.
-Milyen messze mozdult el a kezdőponttól, ha az elmozdulások egyetlen
-egyenes vonal mentén történtek?</li>
+<li>A gyalogos először <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ m}</annotation></semantics></math>-t sétál az egyik irányba, majd megfordul, és visszasétál az ellenkező irányba <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ m}</annotation></semantics></math>-t. Milyen messze mozdult el a kezdőponttól, ha az elmozdulások egyetlen egyenes vonal mentén történtek?</li>
 </ol>
-<p>Az elmozdulások ellentétes irányú vektorok, ezért a nagyobb vektor
-hosszából kivonjuk a kisebbik hosszát:</p>
+<p>Az elmozdulások ellentétes irányú vektorok, ezért a nagyobb vektor hosszából kivonjuk a kisebbik hosszát:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>−</mo><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
 s = 30\text{ m} - 20\text{ m} = 10\text{ m}
 </annotation></semantics></math></p>
-<p><em>(Az eredő elmozdulás iránya a második, hosszabb szakasz irányába
-mutat.)</em></p>
+<p><em>(Az eredő elmozdulás iránya a második, hosszabb szakasz irányába mutat.)</em></p>
 <ol start="3" type="1">
-<li>Egy gyalogos
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ m}</annotation></semantics></math>-t
-sétál egyenesen a járdán, majd egy útkereszteződésnél merőlegesen
-elfordul, és még
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">40\text{ m}</annotation></semantics></math>-t
-gyalogol. Mekkora az elmozdulása a kezdőponthoz képest?</li>
+<li>Egy gyalogos <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ m}</annotation></semantics></math>-t sétál egyenesen a járdán, majd egy útkereszteződésnél merőlegesen elfordul, és még <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">40\text{ m}</annotation></semantics></math>-t gyalogol. Mekkora az elmozdulása a kezdőponthoz képest?</li>
 </ol>
-<p>Mivel az elmozdulásvektorok merőlegesek egymásra, az eredő elmozdulás
-egy derékszögű háromszög átfogója lesz:</p>
+<p>Mivel az elmozdulásvektorok merőlegesek egymásra, az eredő elmozdulás egy derékszögű háromszög átfogója lesz:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>40</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>=</mo><mn>900</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup><mo>+</mo><mn>1600</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup><mo>=</mo><mn>2500</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 c^2 = a^2 + b^2 = (30\text{ m})^2 + (40\text{ m})^2 = 900\text{ m}^2 + 1600\text{ m}^2 = 2500\text{ m}^2
 </annotation></semantics></math></p>
@@ -103,36 +54,14 @@ c = \sqrt{2500\text{ m}^2} = 50\text{ m}
 </annotation></semantics></math></p>
 <h2 id="feladatok">Feladatok</h2>
 <ol type="1">
-<li>Egy turista
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{ m}</annotation></semantics></math>-t
-sétál kelet felé, majd további
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">25\text{ m}</annotation></semantics></math>-t
-halad ugyanabba az irányba. Mekkora az elmozdulása összesen?</li>
-<li>Egy biciklista
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>80</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">80\text{ m}</annotation></semantics></math>-t
-halad észak felé, majd visszafordulva
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">50\text{ m}</annotation></semantics></math>-t
-tesz meg az ellenkező irányba. Mekkora az elmozdulása a kezdőponthoz
-képest?</li>
-<li>Egy személy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">9\text{ m}</annotation></semantics></math>-t
-sétál egyenesen, majd merőlegesen folytatja útját, és még
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">12\text{ m}</annotation></semantics></math>-t
-gyalogol. Mekkora az elmozdulása a kezdőponthoz képest?</li>
-<li>Egy személy
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">6\text{ m}</annotation></semantics></math>-t
-sétál észak felé, majd
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">8\text{ m}</annotation></semantics></math>-t
-kelet felé. Mekkora az elmozdulása a kezdőponthoz képest?</li>
-<li>Egy személy először
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ m}</annotation></semantics></math>-t
-sétál az egyik irányba, majd
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>35</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">35\text{ m}</annotation></semantics></math>-t
-az ellenkező irányba. Mekkora az elmozdulása a kezdőponthoz képest?</li>
+<li>Egy turista <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{ m}</annotation></semantics></math>-t sétál kelet felé, majd további <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">25\text{ m}</annotation></semantics></math>-t halad ugyanabba az irányba. Mekkora az elmozdulása összesen?</li>
+<li>Egy biciklista <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>80</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">80\text{ m}</annotation></semantics></math>-t halad észak felé, majd visszafordulva <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">50\text{ m}</annotation></semantics></math>-t tesz meg az ellenkező irányba. Mekkora az elmozdulása a kezdőponthoz képest?</li>
+<li>Egy személy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">9\text{ m}</annotation></semantics></math>-t sétál egyenesen, majd merőlegesen folytatja útját, és még <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">12\text{ m}</annotation></semantics></math>-t gyalogol. Mekkora az elmozdulása a kezdőponthoz képest?</li>
+<li>Egy személy <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">6\text{ m}</annotation></semantics></math>-t sétál észak felé, majd <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">8\text{ m}</annotation></semantics></math>-t kelet felé. Mekkora az elmozdulása a kezdőponthoz képest?</li>
+<li>Egy személy először <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ m}</annotation></semantics></math>-t sétál az egyik irányba, majd <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>35</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">35\text{ m}</annotation></semantics></math>-t az ellenkező irányba. Mekkora az elmozdulása a kezdőponthoz képest?</li>
 </ol>
 <h3 id="vektorok-kivonása">Vektorok kivonása</h3>
-<p>Két vektor különbségét úgy kaphatjuk meg legkönnyebben, ha az
-összeadás egyenletét rendezzük át. Ha tudjuk, hogy</p>
+<p>Két vektor különbségét úgy kaphatjuk meg legkönnyebben, ha az összeadás egyenletét rendezzük át. Ha tudjuk, hogy</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>u</mi><mo accent="true">→</mo></mover><mo>+</mo><mover><mi>v</mi><mo accent="true">→</mo></mover><mo>=</mo><mover><mi>w</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">
 \vec{u} + \vec{v} = \vec{w}
 </annotation></semantics></math></p>
@@ -140,31 +69,16 @@ az ellenkező irányba. Mekkora az elmozdulása a kezdőponthoz képest?</li>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>w</mi><mo accent="true">→</mo></mover><mo>−</mo><mover><mi>u</mi><mo accent="true">→</mo></mover><mo>=</mo><mover><mi>v</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">
 \vec{w} - \vec{u} = \vec{v}
 </annotation></semantics></math></p>
-<p>A gyakorlatban ez azt jelenti, hogy ha a kisebbítendő
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>w</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{w}</annotation></semantics></math>
-és a kivonandó
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>u</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{u}</annotation></semantics></math>
-vektorokat közös kezdőpontra toljuk, akkor a különbségként kapott
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>v</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{v}</annotation></semantics></math>
-vektor a két végpontot fogja összekötni, és a kivonandó
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>u</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{u}</annotation></semantics></math>)
-végpontjából a kisebbítendő
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>w</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{w}</annotation></semantics></math>)
-végpontja felé mutat.</p>
+<p>A gyakorlatban ez azt jelenti, hogy ha a kisebbítendő <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>w</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{w}</annotation></semantics></math> és a kivonandó <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>u</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{u}</annotation></semantics></math> vektorokat közös kezdőpontra toljuk, akkor a különbségként kapott <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>v</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{v}</annotation></semantics></math> vektor a két végpontot fogja összekötni, és a kivonandó (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>u</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{u}</annotation></semantics></math>) végpontjából a kisebbítendő (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>w</mi><mo accent="true">→</mo></mover><annotation encoding="application/x-tex">\vec{w}</annotation></semantics></math>) végpontja felé mutat.</p>
 <h3 id="nullvektor">Nullvektor</h3>
-<p>Ha egy vektorból önmagát vonjuk ki, eredményül
-<strong>nullvektort</strong> kapunk. A nullvektor olyan speciális
-vektor, amelynek a hossza pontosan
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math>,
-az iránya pedig tetszőleges (határozatlan).</p>
+<p>Ha egy vektorból önmagát vonjuk ki, eredményül <strong>nullvektort</strong> kapunk. A nullvektor olyan speciális vektor, amelynek a hossza pontosan <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math>, az iránya pedig tetszőleges (határozatlan).</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mn>0</mn><mo accent="true">→</mo></mover><mo>=</mo><mover><mi>a</mi><mo accent="true">→</mo></mover><mo>−</mo><mover><mi>a</mi><mo accent="true">→</mo></mover></mrow><annotation encoding="application/x-tex">
 \vec{0} = \vec{a} - \vec{a}
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mover><mn>0</mn><mo accent="true">→</mo></mover><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
 |\vec{0}| = 0
 </annotation></semantics></math></p>
-<p>A nullvektort bármely vektorhoz hozzáadhatjuk vagy abból kivonhatjuk,
-a kiindulási vektor nagysága és iránya nem változik.</p>
+<p>A nullvektort bármely vektorhoz hozzáadhatjuk vagy abból kivonhatjuk, a kiindulási vektor nagysága és iránya nem változik.</p>
 </main>
 </body>
 </html>

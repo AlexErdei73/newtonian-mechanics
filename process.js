@@ -90,6 +90,18 @@ function getTitle(content) {
     return title;
 }
 
+function getAnchor(title) {
+    if (!title) return "";
+    let anchor = title.toLowerCase();
+    anchor = anchor
+                .split("*").join("")
+                .split(",").join("")
+                .trim()
+                .split(" ").join("-");
+    anchor = `#${anchor}`;
+    return anchor;
+}
+
 const LECTURE_ORDER = buildLectureOrder();
 console.log(`🚀 Rendszer-automatizálás: ${LECTURE_ORDER.length} lecke sikeresen beolvasva a tartalomjegyzékből.`);
 // ==========================================================================
@@ -249,9 +261,15 @@ function processFile(filePath, isSubfolder = false) {
 
     // DYNAMIC TITLE AUTOMATION
     // Safely reads the custom H1 header and stamps it into the blank browser tab title
-    let title = getTitle(content);
-    if (title && content.includes("<title></title>")) {
-        content = content.split("<title>").join(`<title>${title}`);
+    let title = getTitle(result);
+    if (title && result.includes("<title></title>")) {
+        result = result.split("<title>").join(`<title>${title}`);
+    }
+
+    let anchor = getAnchor(title);
+    console.log(anchor);
+    if (anchor && result.includes(`<a href="../VEGEREDMENYEK.html`)) {
+        result = result.split(`<a href="../VEGEREDMENYEK.html`).join(`<a href="../VEGEREDMENYEK.html${anchor}`);
     }
 
     // BULLETPROOF FIX: We bypass the modified flag, we have removed, completely!
@@ -262,6 +280,7 @@ function processFile(filePath, isSubfolder = false) {
 
 processFile("index.html", false);
 processFile("NEWTON_MECHANIKAJA.html", false);
+processFile("VEGEREDMENYEK.html", false);
 
 const subDir = "Mechanika";
 if (fs.existsSync(subDir)) {

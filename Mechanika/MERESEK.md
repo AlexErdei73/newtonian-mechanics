@@ -1,4 +1,4 @@
-# Mérések, mértékegységek
+# Mérések és mértékegységek
 
 A mérés mindig annak a megállapítása, hogy a vizsgált mennyiség hányszorosa egy választott mértékegységnek.
 

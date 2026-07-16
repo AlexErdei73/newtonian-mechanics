@@ -4,38 +4,26 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>Példák rugalmas ütközésre</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="FERDERUGALMASUTKOZESEK.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="RUGALMATLANUTKOZES.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="FERDERUGALMASUTKOZESEK.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="RUGALMATLANUTKOZES.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#példák-rugalmas-ütközésre" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
 <h1 id="példák-rugalmas-ütközésre">Példák rugalmas ütközésre</h1>
-<h2 id="két-egymásra-helyezett-labda-visszapattanása">Két egymásra
-helyezett labda visszapattanása</h2>
+<h2 id="két-egymásra-helyezett-labda-visszapattanása">Két egymásra helyezett labda visszapattanása</h2>
 <h3 id="kísérlet">Kísérlet</h3>
 <p><lite-youtube videoid="2UHS883_P60"></lite-youtube></p>
 <h3 id="szimuláció">Szimuláció</h3>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#5f77abb4-1a91-425d-b756-096b5e3c4107">Két
-egymásra helyezett labda visszapattanása</a></p>
-<p>Legyen az alsó labda 10-szer nagyobb tömegű, mint a felső labda.
-Számítsuk ki, mekkora sebességgel pattan vissza a felső labda, és
-határozzuk meg a maximális magasságát is! Legyen a kezdeti magasság
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math>!</p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#5f77abb4-1a91-425d-b756-096b5e3c4107">Két egymásra helyezett labda visszapattanása</a></p>
+<p>Legyen az alsó labda 10-szer nagyobb tömegű, mint a felső labda. Számítsuk ki, mekkora sebességgel pattan vissza a felső labda, és határozzuk meg a maximális magasságát is! Legyen a kezdeti magasság <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math>!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mi>m</mi><mi>g</mi><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mfrac><mrow><mn>11</mn><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
 11mgh_0 = \frac{11mv_0^2}{2}
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>g</mi><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
 2gh_0 = v_0^2
 </annotation></semantics></math></p>
-<p>Mindkét labda ezzel a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
-sebességgel érkezik meg a talajhoz. Először az alsó labda pattan vissza
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>
-nagyságú sebességgel. Ekkor ütközik a második (felső) labdával, amely
-ugyanekkora, de ellentétes irányú sebességgel érkezik. Tegyük fel, hogy
-az ütközés centrális és tökéletesen rugalmas!</p>
+<p>Mindkét labda ezzel a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math> sebességgel érkezik meg a talajhoz. Először az alsó labda pattan vissza <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math> nagyságú sebességgel. Ekkor ütközik a második (felső) labdával, amely ugyanekkora, de ellentétes irányú sebességgel érkezik. Tegyük fel, hogy az ütközés centrális és tökéletesen rugalmas!</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mi>m</mi><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>10</mn><mi>m</mi><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><mi>m</mi><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">
 9mv_0 = 10mv_1 + mv_2
 </annotation></semantics></math></p>
@@ -50,17 +38,14 @@ v_2 = 9v_0 - 10v_1
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>10</mn><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
 11v_0^2 = 10v_1^2 + v_2^2
 </annotation></semantics></math></p>
-<p>Ide behelyettesítjük
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>
-kifejezését:</p>
+<p>Ide behelyettesítjük <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math> kifejezését:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>10</mn><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>9</mn><msub><mi>v</mi><mn>0</mn></msub><mo>−</mo><mn>10</mn><msub><mi>v</mi><mn>1</mn></msub><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 11v_0^2 = 10v_1^2 + (9v_0 - 10v_1)^2
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>10</mn><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mn>81</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>−</mo><mn>180</mn><msub><mi>v</mi><mn>0</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><mn>100</mn><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
 11v_0^2 = 10v_1^2 + 81v_0^2 - 180v_0 v_1 + 100v_1^2
 </annotation></semantics></math></p>
-<p>A következő paraméteres másodfokú egyenletet kapjuk
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math>-re:</p>
+<p>A következő paraméteres másodfokú egyenletet kapjuk <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math>-re:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mn>110</mn><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>−</mo><mn>180</mn><msub><mi>v</mi><mn>0</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><mn>70</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
 0 = 110v_1^2 - 180v_0 v_1 + 70v_0^2
 </annotation></semantics></math></p>
@@ -70,35 +55,24 @@ kifejezését:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mn>18</mn><msub><mi>v</mi><mn>0</mn></msub><mo>±</mo><msqrt><mrow><mn>324</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>−</mo><mn>4</mn><mo>⋅</mo><mn>11</mn><mo>⋅</mo><mn>7</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow></msqrt></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>11</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>18</mn><msub><mi>v</mi><mn>0</mn></msub><mo>±</mo><mn>4</mn><msub><mi>v</mi><mn>0</mn></msub></mrow><mn>22</mn></mfrac><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mspace width="1.0em"></mspace><mtext mathvariant="normal">vagy</mtext><mspace width="1.0em"></mspace><mfrac><mn>7</mn><mn>11</mn></mfrac><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
 v_1 = \frac{18v_0 \pm \sqrt{324v_0^2 - 4 \cdot 11 \cdot 7v_0^2}}{2 \cdot 11} = \frac{18v_0 \pm 4v_0}{22} = v_0 \quad \text{vagy} \quad \frac{7}{11}v_0
 </annotation></semantics></math></p>
-<p>Minket a második megoldás érdekel, amit behelyettesítünk a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>
-kiszámítására szolgáló egyenletbe:</p>
+<p>Minket a második megoldás érdekel, amit behelyettesítünk a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math> kiszámítására szolgáló egyenletbe:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mn>9</mn><msub><mi>v</mi><mn>0</mn></msub><mo>−</mo><mn>10</mn><mo>⋅</mo><mfrac><mrow><mn>7</mn><msub><mi>v</mi><mn>0</mn></msub></mrow><mn>11</mn></mfrac><mo>=</mo><mfrac><mn>29</mn><mn>11</mn></mfrac><msub><mi>v</mi><mn>0</mn></msub><mo>≈</mo><mn>2</mn><mo>,</mo><mn>636</mn><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
 v_2 = 9v_0 - 10 \cdot \frac{7v_0}{11} = \frac{29}{11}v_0 \approx 2,636 v_0
 </annotation></semantics></math></p>
-<p>Most, hogy megkaptuk
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>-t,
-azaz a felső labda visszapattanási sebességét, könnyen kiszámíthatjuk a
-labda végső magasságát:</p>
+<p>Most, hogy megkaptuk <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>-t, azaz a felső labda visszapattanási sebességét, könnyen kiszámíthatjuk a labda végső magasságát:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mi>h</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>636</mn><msub><mi>v</mi><mn>0</mn></msub><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
 mgh = \frac{m(2,636 v_0)^2}{2}
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mo>,</mo><mn>950</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><mi>g</mi></mrow></mfrac><mo>≈</mo><mn>6</mn><mo>,</mo><mn>950</mn><msub><mi>h</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
 h = \frac{6,950 v_0^2}{2g} \approx 6,950 h_0
 </annotation></semantics></math></p>
-<p>Tehát a felső labda az elengedési magasság csaknem 6,95-szörösére
-pattan fel!</p>
+<p>Tehát a felső labda az elengedési magasság csaknem 6,95-szörösére pattan fel!</p>
 <h2 id="newton-bölcső">Newton-bölcső</h2>
 <h3 id="kísérlet-1">Kísérlet</h3>
 <p><lite-youtube videoid="ofgeRSCLyXc"></lite-youtube></p>
 <h3 id="szimuláció-1">Szimuláció</h3>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project/#4d1b6707-6e5e-42fc-a4eb-bcdca0d2dad4">Newton-bölcső
-szimuláció</a></p>
-<p>A játék működése a legegyszerűbben tökéletesen rugalmas ütközések
-feltételezésével érthető meg. Ilyenkor a lendület (impulzus) és a
-mechanikai energia is megmarad. Tegyük fel, hogy két golyót emelünk fel,
-majd ejtünk le az egyik oldalon. Ekkor a kezdeti energia:</p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#4d1b6707-6e5e-42fc-a4eb-bcdca0d2dad4">Newton-bölcső szimuláció</a></p>
+<p>A játék működése a legegyszerűbben tökéletesen rugalmas ütközések feltételezésével érthető meg. Ilyenkor a lendület (impulzus) és a mechanikai energia is megmarad. Tegyük fel, hogy két golyót emelünk fel, majd ejtünk le az egyik oldalon. Ekkor a kezdeti energia:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mtext mathvariant="normal">m</mtext><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
 E_{\text{m},0} = \frac{2mv_0^2}{2} = mv_0^2
 </annotation></semantics></math></p>
@@ -106,9 +80,7 @@ E_{\text{m},0} = \frac{2mv_0^2}{2} = mv_0^2
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>0</mn></msub><mo>=</mo><mn>2</mn><mi>m</mi><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
 I_0 = 2mv_0
 </annotation></semantics></math></p>
-<p>A rendszer másik végén pontosan ugyanekkora energiának és lendületnek
-kell megjelennie, hogy mindkét megmaradási törvény teljesüljön.
-Lehetséges-e, hogy csak egy golyó emelkedik fel?</p>
+<p>A rendszer másik végén pontosan ugyanekkora energiának és lendületnek kell megjelennie, hogy mindkét megmaradási törvény teljesüljön. Lehetséges-e, hogy csak egy golyó emelkedik fel?</p>
 <p>A lendületmegmaradás miatt:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>0</mn></msub><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">
 I_0 = I
@@ -119,9 +91,7 @@ I_0 = I
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mn>2</mn><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
 v = 2v_0
 </annotation></semantics></math></p>
-<p>Az egyetlen felemelkedő golyó sebessége kétszer akkora lenne, mint
-amekkora sebességgel a két golyó becsapódott. Az energia ekkor így
-alakulna:</p>
+<p>Az egyetlen felemelkedő golyó sebessége kétszer akkora lenne, mint amekkora sebességgel a két golyó becsapódott. Az energia ekkor így alakulna:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
 E_{\text{m}} = \frac{mv^2}{2} = \frac{4mv_0^2}{2} = 2mv_0^2
 </annotation></semantics></math></p>
@@ -129,8 +99,7 @@ E_{\text{m}} = \frac{mv^2}{2} = \frac{4mv_0^2}{2} = 2mv_0^2
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><mn>2</mn><msub><mi>E</mi><mrow><mtext mathvariant="normal">m</mtext><mo>,</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">
 E_{\text{m}} = 2E_{\text{m},0}
 </annotation></semantics></math></p>
-<p>Lehetséges-e az, hogy három golyó emelkedjen fel? Ez esetben a
-sebesség:</p>
+<p>Lehetséges-e az, hogy három golyó emelkedjen fel? Ez esetben a sebesség:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>m</mi><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>3</mn><mi>m</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">
 2mv_0 = 3mv
 </annotation></semantics></math></p>
@@ -141,27 +110,11 @@ v = \frac{2}{3}v_0 \approx 0,6667 v_0
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><mfrac><mrow><mn>3</mn><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>6667</mn><msub><mi>v</mi><mn>0</mn></msub><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>6667</mn><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>0</mn><mo>,</mo><mn>6667</mn><msub><mi>E</mi><mrow><mtext mathvariant="normal">m</mtext><mo>,</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">
 E_{\text{m}} = \frac{3m(0,6667 v_0)^2}{2} \approx 0,6667 mv_0^2 = 0,6667 E_{\text{m},0}
 </annotation></semantics></math></p>
-<p>Ha három golyó pattanna fel, akkor az energia harmada elveszne, így
-ez sem lehetséges. Tehát pontosan ugyanannyi golyó pattan fel a
-túloldalon, ahányat eredetileg kilendítettünk.</p>
-<p>Van még egy nagyon fontos tényező, amit ritkán említenek a játék
-működésének magyarázatakor: a golyóknak teljesen azonosaknak, elsősorban
-egyenlő tömegűeknek kell lenniük. Láttuk, hogy ez a feltétele annak,
-hogy a centrális, tökéletesen rugalmas ütközés során az álló golyó
-teljes egészében átvehesse a mozgó golyó energiáját és lendületét.
-Szimulációval könnyen kipróbálható, hogy a játék mozgása felborul, ha
-valamelyik golyó tömege eltér a többitől. Ilyenkor a rendszer elveszíti
-azt a szép, szabályos ritmusát, amit megszoktunk.</p>
+<p>Ha három golyó pattanna fel, akkor az energia harmada elveszne, így ez sem lehetséges. Tehát pontosan ugyanannyi golyó pattan fel a túloldalon, ahányat eredetileg kilendítettünk.</p>
+<p>Van még egy nagyon fontos tényező, amit ritkán említenek a játék működésének magyarázatakor: a golyóknak teljesen azonosaknak, elsősorban egyenlő tömegűeknek kell lenniük. Láttuk, hogy ez a feltétele annak, hogy a centrális, tökéletesen rugalmas ütközés során az álló golyó teljes egészében átvehesse a mozgó golyó energiáját és lendületét. Szimulációval könnyen kipróbálható, hogy a játék mozgása felborul, ha valamelyik golyó tömege eltér a többitől. Ilyenkor a rendszer elveszíti azt a szép, szabályos ritmusát, amit megszoktunk.</p>
 <h2 id="feladatok">Feladatok</h2>
 <ol type="1">
-<li><p>Két egymásra helyezett labdát
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math>
-magasságból ejtünk le. Az alsó labda tömege
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
-a felső labdáé
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>.
-A talajjal és az egymással való ütközések tökéletesen rugalmasak és
-centrálisak.</p>
+<li><p>Két egymásra helyezett labdát <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> magasságból ejtünk le. Az alsó labda tömege <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>, a felső labdáé <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>. A talajjal és az egymással való ütközések tökéletesen rugalmasak és centrálisak.</p>
 <ul>
 <li>Mutasd meg, hogy a felső labda visszapattanási sebessége:</li>
 </ul>
@@ -170,20 +123,13 @@ centrálisak.</p>
 <p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><msqrt><mrow><mn>2</mn><mi>g</mi><msub><mi>h</mi><mn>0</mn></msub></mrow></msqrt></mrow><annotation encoding="application/x-tex">v_0 = \sqrt{2gh_0}</annotation></semantics></math></p>
 <ul>
 <li>Határozd meg, mekkora magasságra pattan vissza a felső labda!</li>
-<li>Vizsgáld meg a határesetet, amikor
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>≫</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">M \gg m</annotation></semantics></math>!
-Mit tapasztalsz?</li>
+<li>Vizsgáld meg a határesetet, amikor <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>≫</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">M \gg m</annotation></semantics></math>! Mit tapasztalsz?</li>
 </ul></li>
-<li><p>Egy Newton-bölcsőben 5 azonos tömegű golyó van. Kettőt az egyik
-oldalon
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math>
-magasságba emelünk és elengedünk.</p>
+<li><p>Egy Newton-bölcsőben 5 azonos tömegű golyó van. Kettőt az egyik oldalon <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> magasságba emelünk és elengedünk.</p>
 <ul>
-<li>Mutasd meg a lendület- és energiamegmaradás törvényével, hogy
-pontosan két golyó fog kilendülni a másik oldalon!</li>
+<li>Mutasd meg a lendület- és energiamegmaradás törvényével, hogy pontosan két golyó fog kilendülni a másik oldalon!</li>
 <li>Mekkora sebességgel indulnak el?</li>
-<li>Mi történne, ha a középső golyó tömege kétszer akkora lenne, mint a
-többié? Működne-e ugyanígy a rendszer? Indokold a válaszodat!</li>
+<li>Mi történne, ha a középső golyó tömege kétszer akkora lenne, mint a többié? Működne-e ugyanígy a rendszer? Indokold a válaszodat!</li>
 </ul></li>
 </ol>
 </main>

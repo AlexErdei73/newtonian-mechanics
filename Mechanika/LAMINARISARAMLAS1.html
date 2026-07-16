@@ -4,108 +4,52 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title></title>
+  <title>Lamináris áramlások I.</title>
     <link rel="stylesheet" href="../github-markdown.css" />
       <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
   </head>
-<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="VISZKOZITAS.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="LAMINARISARAMLAS2.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html" style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newton Mechanikája</a><div class="nav-group-center"><a href="VISZKOZITAS.html" class="nav-btn" aria-label="Előző lecke">◀<span class="btn-text"> Előző</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Tartalomjegyzék">☰<span class="btn-text"> Tartalom</span></a><a href="LAMINARISARAMLAS2.html" class="nav-btn" aria-label="Következő lecke"><span class="btn-text">Következő </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newton Mechanikája</a><div class="nav-group-left"><a href="../index.html">Névjegy</a><a href="../VEGEREDMENYEK.html#lamináris-áramlások-i." style="font-weight: 600;">Megoldások</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Témakörök ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematika</a></li><li><a href="NEWTONTORVENYEI.html">Dinamika</a></li><li><a href="MUNKA.html">Energia</a></li><li><a href="IMPULZUS.html">Impulzus, Ütközések</a></li><li><a href="RUGALMATLANUTKOZES.html">Pontrendszerek</a></li><li><a href="EGYENLETESKORMOZGAS.html">Körmozgás</a></li><li><a href="KEPLERTORVENYEI.html">Gravitáció</a></li><li><a href="MEREVTEST.html">Impulzus momentum</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Rezgések, hullámok</a></li><li><a href="NYOMAS.html">Folyadék mechanika</a></li></ul></div></div></div></nav></header>
 <main class="markdown-body">
 <h1 id="lamináris-áramlások-i.">Lamináris áramlások I.</h1>
 <h2 id="általános-jellemzők">Általános jellemzők</h2>
-<p>Ahogyan korábban is megbeszéltük, a lamináris áramlások esetében az
-áramvonalakkal az áramlás képe jól jellemezhető. Az áramlás gyakran
-stacionárius, vagyis az áramvonalkép időben állandó. Ezekre az
-áramlásokra a tiszta örvénymentesség jellemző. A belső súrlódás
-stabilizálja az áramlást a zavarokkal szemben, vagyis a folyadékban a
-viszkózus fékezőerők felülmúlják a tehetetlenségi hatásokat. Ez azt
-jelenti, hogy lamináris áramlások esetén a Reynolds-szám rendkívül
-kicsiny.</p>
-<p>A folyadék rétegesen áramlik, ezek a rétegek nem keverednek
-egymással. Az áramlás a makroszkopikus keveredés hiánya miatt időben
-tökéletesen megfordítható. Erről szól az alábbi látványos és meghökkentő
-kísérlet is:</p>
+<p>Ahogyan korábban is megbeszéltük, a lamináris áramlások esetében az áramvonalakkal az áramlás képe jól jellemezhető. Az áramlás gyakran stacionárius, vagyis az áramvonalkép időben állandó. Ezekre az áramlásokra a tiszta örvénymentesség jellemző. A belső súrlódás stabilizálja az áramlást a zavarokkal szemben, vagyis a folyadékban a viszkózus fékezőerők felülmúlják a tehetetlenségi hatásokat. Ez azt jelenti, hogy lamináris áramlások esetén a Reynolds-szám rendkívül kicsiny.</p>
+<p>A folyadék rétegesen áramlik, ezek a rétegek nem keverednek egymással. Az áramlás a makroszkopikus keveredés hiánya miatt időben tökéletesen megfordítható. Erről szól az alábbi látványos és meghökkentő kísérlet is:</p>
 <h3 id="kísérlet">Kísérlet</h3>
 <p><lite-youtube videoid="j2_dJY_mIys"></lite-youtube></p>
 <hr />
 <h2 id="stokes-törvénye">Stokes törvénye</h2>
-<h3 id="kísérlet-golyók-süllyedése-viszkózus-közegben">Kísérlet: Golyók
-süllyedése viszkózus közegben</h3>
+<h3 id="kísérlet-golyók-süllyedése-viszkózus-közegben">Kísérlet: Golyók süllyedése viszkózus közegben</h3>
 <p><lite-youtube videoid="iV7LN_uD-oA" videoStartAt=854></lite-youtube><br />
-<em>(Kattintásra megnyíló videó: Walter Lewin bemutatja, hogyan függ a
-gömb alakú csapágygolyók sebessége az átmérőtől sűrű
-kukoricaszirupban)</em></p>
-<p>A kísérlet azzal a feltételezéssel értelmezhető helyesen, hogy a
-golyóra lefelé ható erők egyensúlyba kerülnek a felfelé mutató
-közegellenállási erővel. Ez az az erő, amelyet a folyadék a belső
-súrlódása miatt fejt ki a mozgó testre, fékezve a golyó zuhanását. Ha az
-erők egyensúlyba kerültek, a test egyenletes mozgást végez.</p>
-<p>George Gabriel Stokes 1851-ben vezette le a közegellenállási erő
-törvényét a kísérletben vizsgalt esetre, elméleti úton, a szintén nevét
-viselő Navier–Stokes-egyenletekből. Eredménye a
-<strong>Stokes-törvény</strong>:</p>
+<em>(Kattintásra megnyíló videó: Walter Lewin bemutatja, hogyan függ a gömb alakú csapágygolyók sebessége az átmérőtől sűrű kukoricaszirupban)</em></p>
+<p>A kísérlet azzal a feltételezéssel értelmezhető helyesen, hogy a golyóra lefelé ható erők egyensúlyba kerülnek a felfelé mutató közegellenállási erővel. Ez az az erő, amelyet a folyadék a belső súrlódása miatt fejt ki a mozgó testre, fékezve a golyó zuhanását. Ha az erők egyensúlyba kerültek, a test egyenletes mozgást végez.</p>
+<p>George Gabriel Stokes 1851-ben vezette le a közegellenállási erő törvényét a kísérletben vizsgalt esetre, elméleti úton, a szintén nevét viselő Navier–Stokes-egyenletekből. Eredménye a <strong>Stokes-törvény</strong>:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>s</mi></msub><mo>=</mo><mn>6</mn><mi>π</mi><mi>η</mi><mi>r</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">
 F_s = 6\pi\eta r u
 </annotation></semantics></math></p>
-<p>Itt
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
-az áramlás (vagy a test) sebessége,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
-a gömb sugara, és
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
-a folyadék dinamikus viszkozitása.</p>
-<p>Fontos megjegyezni, hogy a törvény kizárólag lamináris áramlásra
-érvényes, amikor a Reynolds-szám jóval kisebb 1-nél. A képlet csak
-tökéletes gömb mozgására vonatkozik, és a gömbnek távol kell lennie a
-folyadékot tartó edény falaitól, hogy a visszaáramlás ne zavarja meg a
-tiszta profilt.</p>
+<p>Itt <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math> az áramlás (vagy a test) sebessége, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> a gömb sugara, és <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math> a folyadék dinamikus viszkozitása.</p>
+<p>Fontos megjegyezni, hogy a törvény kizárólag lamináris áramlásra érvényes, amikor a Reynolds-szám jóval kisebb 1-nél. A képlet csak tökéletes gömb mozgására vonatkozik, és a gömbnek távol kell lennie a folyadékot tartó edény falaitól, hogy a visszaáramlás ne zavarja meg a tiszta profilt.</p>
 <h3 id="szimuláció">Szimuláció</h3>
-<p><a
-href="https://alexerdei73.github.io/physics-engine/project#b38f050f-a404-4d02-82ad-959009d1ce05">Stokes-törvény
-interaktív fizikai szimuláció</a></p>
-<p>A szimuláció megmutatja, hogy a sebesség hogyan éri el a végsebesség
-értékét az indítás pillanatától kezdve. Látható, hogy a kisebb gömb
-mindössze egy egységnyi távolságot fut be, mialatt a kétszer akkora
-átmérőjű, nagyobb gömb pontosan négy egységet tesz meg. Ez bizonyítja,
-hogy a nagyobb gömb négyszeres végsebességet ér el.</p>
-<p>A folyadék közegellenállását a szimulációban egy tisztán viszkózus
-szállal jelenítjük meg, amely vizuálisan is láthatóvá teszi a
-fékezőhatást. A futás végén az alábbi sebesség-idő grafikont
-jeleníthetjük meg:</p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project#b38f050f-a404-4d02-82ad-959009d1ce05">Stokes-törvény interaktív fizikai szimuláció</a></p>
+<p>A szimuláció megmutatja, hogy a sebesség hogyan éri el a végsebesség értékét az indítás pillanatától kezdve. Látható, hogy a kisebb gömb mindössze egy egységnyi távolságot fut be, mialatt a kétszer akkora átmérőjű, nagyobb gömb pontosan négy egységet tesz meg. Ez bizonyítja, hogy a nagyobb gömb négyszeres végsebességet ér el.</p>
+<p>A folyadék közegellenállását a szimulációban egy tisztán viszkózus szállal jelenítjük meg, amely vizuálisan is láthatóvá teszi a fékezőhatást. A futás végén az alábbi sebesség-idő grafikont jeleníthetjük meg:</p>
 <figure>
-<img src="Kepek/stokestorvenysebessegido.png"
-alt="Sebesség-idő grafikon viszkózus folyadékba ejtett golyó esetén" />
-<figcaption aria-hidden="true">Sebesség-idő grafikon viszkózus
-folyadékba ejtett golyó esetén</figcaption>
+<img src="Kepek/stokestorvenysebessegido.png" alt="Sebesség-idő grafikon viszkózus folyadékba ejtett golyó esetén" />
+<figcaption aria-hidden="true">Sebesség-idő grafikon viszkózus folyadékba ejtett golyó esetén</figcaption>
 </figure>
-<p>A diagram pontosan igazolja, hogy a kétszer akkora átmérőjű golyó
-négyszeres végsebességre gyorsul fel ugyanolyan körülmények között.</p>
+<p>A diagram pontosan igazolja, hogy a kétszer akkora átmérőjű golyó négyszeres végsebességre gyorsul fel ugyanolyan körülmények között.</p>
 <h3 id="a-végsebesség-levezetése">A végsebesség levezetése</h3>
-<p>Számítsuk ki a végsebességet a Stokes-törvény alapján! Egyenletes
-mozgás közben a folyadékban fellépő
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>s</mi></msub><annotation encoding="application/x-tex">F_s</annotation></semantics></math>
-közegellenállási erő és az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>f</mi></msub><annotation encoding="application/x-tex">F_f</annotation></semantics></math>
-felhajtóerő összege tart hajszálpontosan egyensúlyt a test
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
-súlyával:</p>
+<p>Számítsuk ki a végsebességet a Stokes-törvény alapján! Egyenletes mozgás közben a folyadékban fellépő <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>s</mi></msub><annotation encoding="application/x-tex">F_s</annotation></semantics></math> közegellenállási erő és az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>f</mi></msub><annotation encoding="application/x-tex">F_f</annotation></semantics></math> felhajtóerő összege tart hajszálpontosan egyensúlyt a test <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math> súlyával:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mtext mathvariant="normal">test</mtext></msub><mi>g</mi><mo>=</mo><mn>6</mn><mi>π</mi><mi>η</mi><mi>r</mi><mi>u</mi><mo>+</mo><msub><mi>ρ</mi><mi>f</mi></msub><mi>V</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">
 m_{\text{test}}g = 6\pi\eta r u + \rho_f V g
 </annotation></semantics></math></p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mtext mathvariant="normal">test</mtext></msub><mi>g</mi><mo>−</mo><msub><mi>ρ</mi><mi>f</mi></msub><mi>V</mi><mi>g</mi><mo>=</mo><mn>6</mn><mi>π</mi><mi>η</mi><mi>r</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">
 m_{\text{test}}g - \rho_f V g = 6\pi\eta r u
 </annotation></semantics></math></p>
-<p>Fejezzük ki a test tömegét a sűrűséggel
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mtext mathvariant="normal">test</mtext></msub><mo>=</mo><msub><mi>ρ</mi><mi>t</mi></msub><mi>V</mi></mrow><annotation encoding="application/x-tex">m_{\text{test}} = \rho_t V</annotation></semantics></math>),
-majd osszuk el mindkét oldalt a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
-térfogattal:</p>
+<p>Fejezzük ki a test tömegét a sűrűséggel (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mtext mathvariant="normal">test</mtext></msub><mo>=</mo><msub><mi>ρ</mi><mi>t</mi></msub><mi>V</mi></mrow><annotation encoding="application/x-tex">m_{\text{test}} = \rho_t V</annotation></semantics></math>), majd osszuk el mindkét oldalt a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> térfogattal:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mi>t</mi></msub><mi>g</mi><mo>−</mo><msub><mi>ρ</mi><mi>f</mi></msub><mi>g</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mi>π</mi><mi>η</mi><mi>r</mi><mi>u</mi></mrow><mi>V</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \rho_t g - \rho_f g = \frac{6\pi\eta r u}{V}
 </annotation></semantics></math></p>
-<p>Írjuk be a
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
-helyére a gömb geometriai térfogatképletét
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">V = \frac{4}{3}\pi r^3</annotation></semantics></math>):</p>
+<p>Írjuk be a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> helyére a gömb geometriai térfogatképletét (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">V = \frac{4}{3}\pi r^3</annotation></semantics></math>):</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>ρ</mi><mi>t</mi></msub><mo>−</mo><msub><mi>ρ</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>g</mi><mo>=</mo><mfrac><mrow><mn>6</mn><mi>π</mi><mi>η</mi><mi>r</mi><mi>u</mi></mrow><mrow><mfrac><mn>4</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>18</mn><mi>π</mi><mi>η</mi><mi>r</mi><mi>u</mi></mrow><mrow><mn>4</mn><mi>π</mi><msup><mi>r</mi><mn>3</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 (\rho_t - \rho_f)g = \frac{6\pi\eta r u}{\frac{4}{3}\pi r^3} = \frac{18\pi\eta r u}{4\pi r^3}
 </annotation></semantics></math></p>
@@ -113,24 +57,14 @@ helyére a gömb geometriai térfogatképletét
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>A</mi><mi>t</mi></msub><mo>−</mo><msub><mi>ρ</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>g</mi><mo>=</mo><mfrac><mrow><mn>9</mn><mi>η</mi><mi>u</mi></mrow><mrow><mn>2</mn><msup><mi>r</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 (A_t - \rho_f)g = \frac{9\eta u}{2r^2}
 </annotation></semantics></math></p>
-<p>Ebből a mérések során az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
-végsebességet, vagy ismeretlen folyadékok esetén az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math>
-viszkozitást szoktuk kiszámítani:</p>
+<p>Ebből a mérések során az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math> végsebességet, vagy ismeretlen folyadékok esetén az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>η</mi><annotation encoding="application/x-tex">\eta</annotation></semantics></math> viszkozitást szoktuk kiszámítani:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mfrac><mrow><mn>2</mn><msup><mi>r</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>ρ</mi><mi>t</mi></msub><mo>−</mo><msub><mi>ρ</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>g</mi></mrow><mrow><mn>9</mn><mi>η</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">
 u = \frac{2r^2(\rho_t - \rho_f)g}{9\eta}
 </annotation></semantics></math></p>
-<p>Eredményünk elméletileg is világosan mutatja, hogy az
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
-végsebesség a sugár (vagy az átmérő) <strong>négyzetével</strong>
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>r</mi><mn>2</mn></msup><annotation encoding="application/x-tex">r^2</annotation></semantics></math>)
-arányos. Ez a magyarázata annak, hogy a kétszer akkora golyó miért
-pontosan négyszer akkora sebességgel süllyed a szirupban.</p>
+<p>Eredményünk elméletileg is világosan mutatja, hogy az <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math> végsebesség a sugár (vagy az átmérő) <strong>négyzetével</strong> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>r</mi><mn>2</mn></msup><annotation encoding="application/x-tex">r^2</annotation></semantics></math>) arányos. Ez a magyarázata annak, hogy a kétszer akkora golyó miért pontosan négyszer akkora sebességgel süllyed a szirupban.</p>
 <h3 id="példák">Példák</h3>
 <ol type="1">
-<li>Számítsuk ki Walter Lewin kísérleti adataiból a szirup viszkozitását
-és az áramlás Reynolds-számát!</li>
+<li>Számítsuk ki Walter Lewin kísérleti adataiból a szirup viszkozitását és az áramlás Reynolds-számát!</li>
 </ol>
 <p>Mérési adatok a legkisebb csapágygolyóra:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>d</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mn>1</mn><mi>/</mi><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> inch</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>3175</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>=</mo><mn>3175</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>3</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>r</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mi>d</mi><mn>2</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>15875</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>=</mo><mn>1</mn><mo>,</mo><mn>5875</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>3</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>ρ</mi><mi>f</mi></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mn>1380</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup><mspace width="1.0em"></mspace><mtext mathvariant="normal">(szirup sűrűsége)</mtext></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>ρ</mi><mi>t</mi></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mn>7800</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup><mspace width="1.0em"></mspace><mtext mathvariant="normal">(acélgolyó sűrűsége)</mtext></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>h</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>04</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow><mspace width="1.0em"></mspace><mtext mathvariant="normal">(a mért süllyedési útszakasz)</mtext></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>t</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mn>5</mn><mo>,</mo><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow><mspace width="1.0em"></mspace><mtext mathvariant="normal">(a süllyedési idő)</mtext></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>u</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mi>h</mi><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>04</mn></mrow><mrow><mn>5</mn><mo>,</mo><mn>8</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>006897</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">
@@ -144,8 +78,7 @@ t &amp;= 5{,}8\text{ s} \quad \text{(a süllyedési idő)} \\
 u &amp;= \frac{h}{t} = \frac{0{,}04}{5{,}8} = 0{,}006897\text{ m/s}
 \end{aligned}
 </annotation></semantics></math></p>
-<p>Helyettesítsük be az adatokat a végsebesség átrendezett
-egyenletébe:</p>
+<p>Helyettesítsük be az adatokat a végsebesség átrendezett egyenletébe:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mfrac><mrow><mn>2</mn><msup><mi>r</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><msub><mi>ρ</mi><mi>t</mi></msub><mo>−</mo><msub><mi>ρ</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo><mi>g</mi></mrow><mrow><mn>9</mn><mi>u</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>5875</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>3</mn></mrow></msup><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>7800</mn><mo>−</mo><mn>1380</mn><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn></mrow><mrow><mn>9</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>006897</mn></mrow></mfrac><mo>=</mo><mn>5</mn><mo>,</mo><mn>11</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">
 \eta = \frac{2r^2(\rho_t - \rho_f)g}{9u} = \frac{2 \cdot (1{,}5875 \cdot 10^{-3})^2 \cdot (7800 - 1380) \cdot 9{,}81}{9 \cdot 0{,}006897} = 5{,}11\text{ Pa}\cdot\text{s}
 </annotation></semantics></math></p>
@@ -153,97 +86,33 @@ egyenletébe:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>=</mo><mfrac><mrow><msub><mi>ρ</mi><mi>f</mi></msub><mi>d</mi><mi>u</mi></mrow><mi>η</mi></mfrac><mo>=</mo><mfrac><mrow><mn>1380</mn><mo>⋅</mo><mn>3</mn><mo>,</mo><mn>175</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>3</mn></mrow></msup><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>006897</mn></mrow><mrow><mn>5</mn><mo>,</mo><mn>11</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>00591</mn></mrow><annotation encoding="application/x-tex">
 Re = \frac{\rho_f d u}{\eta} = \frac{1380 \cdot 3{,}175 \cdot 10^{-3} \cdot 0{,}006897}{5{,}11} = 0{,}00591
 </annotation></semantics></math></p>
-<p>Mivel a kapott Reynolds-szám nagyságrendekkel kisebb 1-nél
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>≪</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">Re \ll 1</annotation></semantics></math>),
-a Stokes-féle elmélet alkalmazása erre a kísérletre teljesen jogos és
-hajszálpontos.</p>
+<p>Mivel a kapott Reynolds-szám nagyságrendekkel kisebb 1-nél (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>≪</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">Re \ll 1</annotation></semantics></math>), a Stokes-féle elmélet alkalmazása erre a kísérletre teljesen jogos és hajszálpontos.</p>
 <ol start="2" type="1">
-<li>Mutassuk meg, hogy a folyadékban mozgó gömb esetén a Reynolds-szám
-nem más, mint a gömb térfogatával egyező folyadéktömeg
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
-sebességre gyorsításához szükséges tehetetlenségi erő, és a viszkózus
-közegellenállási erő hányadosa (amennyiben a gyorsítás a gömb
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
-átmérőjének megfelelő hosszon történik, eltekintve egy tiszta geometriai
-állandótól)!</li>
+<li>Mutassuk meg, hogy a folyadékban mozgó gömb esetén a Reynolds-szám nem más, mint a gömb térfogatával egyező folyadéktömeg <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math> sebességre gyorsításához szükséges tehetetlenségi erő, és a viszkózus közegellenállási erő hányadosa (amennyiben a gyorsítás a gömb <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> átmérőjének megfelelő hosszon történik, eltekintve egy tiszta geometriai állandótól)!</li>
 </ol>
-<p>A gyorsításhoz szükséges tehetetlenségi erőt a munkatételből
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">W = \Delta E_m</annotation></semantics></math>)
-számíthatjuk ki:</p>
+<p>A gyorsításhoz szükséges tehetetlenségi erőt a munkatételből (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">W = \Delta E_m</annotation></semantics></math>) számíthatjuk ki:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mo>⋅</mo><mi>d</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><msub><mi>m</mi><mi>f</mi></msub><msup><mi>u</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>ρ</mi><mi>f</mi></msub><mo>⋅</mo><mfrac><mrow><mn>4</mn><msup><mi>r</mi><mn>3</mn></msup><mi>π</mi></mrow><mn>3</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>u</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
 F_t \cdot d = \frac{1}{2} m_f u^2 = \frac{1}{2} \left(\rho_f \cdot \frac{4r^3\pi}{3}\right) u^2
 </annotation></semantics></math></p>
-<p>Mivel
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mi>r</mi></mrow><annotation encoding="application/x-tex">d = 2r</annotation></semantics></math>,
-helyettesítsük be, és fejezzük ki a tehetetlenségi erőt:</p>
+<p>Mivel <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mi>r</mi></mrow><annotation encoding="application/x-tex">d = 2r</annotation></semantics></math>, helyettesítsük be, és fejezzük ki a tehetetlenségi erőt:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>r</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>π</mi><msub><mi>ρ</mi><mi>f</mi></msub><msup><mi>r</mi><mn>3</mn></msup><msup><mi>u</mi><mn>2</mn></msup><mo>⟹</mo><msub><mi>F</mi><mi>t</mi></msub><mo>=</mo><mfrac><mrow><mi>π</mi><msub><mi>ρ</mi><mi>f</mi></msub><msup><mi>r</mi><mn>2</mn></msup><msup><mi>u</mi><mn>2</mn></msup></mrow><mn>3</mn></mfrac></mrow><annotation encoding="application/x-tex">
 F_t \cdot (2r) = \frac{2}{3} \pi \rho_f r^3 u^2 \implies F_t = \frac{\pi \rho_f r^2 u^2}{3}
 </annotation></semantics></math></p>
-<p>A közegellenállási erőt a Stokes-törvény adja meg
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>s</mi></msub><mo>=</mo><mn>6</mn><mi>π</mi><mi>η</mi><mi>r</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">F_s = 6\pi\eta r u</annotation></semantics></math>).
-Nézzük meg a két erő számszerű hányadosát:</p>
+<p>A közegellenállási erőt a Stokes-törvény adja meg (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>s</mi></msub><mo>=</mo><mn>6</mn><mi>π</mi><mi>η</mi><mi>r</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">F_s = 6\pi\eta r u</annotation></semantics></math>). Nézzük meg a két erő számszerű hányadosát:</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>F</mi><mi>t</mi></msub><msub><mi>F</mi><mi>s</mi></msub></mfrac><mo>=</mo><mfrac><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>π</mi><msub><mi>ρ</mi><mi>f</mi></msub><msup><mi>r</mi><mn>2</mn></msup><msup><mi>u</mi><mn>2</mn></msup></mrow><mrow><mn>6</mn><mi>π</mi><mi>η</mi><mi>r</mi><mi>u</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>18</mn></mfrac><mfrac><mrow><msub><mi>ρ</mi><mi>f</mi></msub><mi>r</mi><mi>u</mi></mrow><mi>η</mi></mfrac></mrow><annotation encoding="application/x-tex">
 \frac{F_t}{F_s} = \frac{\frac{1}{3}\pi \rho_f r^2 u^2}{6\pi \eta r u} = \frac{1}{18} \frac{\rho_f r u}{\eta}
 </annotation></semantics></math></p>
-<p>Mivel a gyári Reynolds-számban a sugár helyett az átmérő szerepel
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mi>r</mi></mrow><annotation encoding="application/x-tex">d = 2r</annotation></semantics></math>,
-azaz
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>d</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">r = d/2</annotation></semantics></math>):</p>
+<p>Mivel a gyári Reynolds-számban a sugár helyett az átmérő szerepel (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mi>r</mi></mrow><annotation encoding="application/x-tex">d = 2r</annotation></semantics></math>, azaz <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mi>d</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">r = d/2</annotation></semantics></math>):</p>
 <p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>F</mi><mi>t</mi></msub><msub><mi>F</mi><mi>s</mi></msub></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>18</mn></mfrac><mfrac><mrow><msub><mi>ρ</mi><mi>f</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>d</mi><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>u</mi></mrow><mi>η</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>36</mn></mfrac><mfrac><mrow><msub><mi>ρ</mi><mi>f</mi></msub><mi>u</mi><mi>d</mi></mrow><mi>η</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>36</mn></mfrac><mi>R</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">
 \frac{F_t}{F_s} = \frac{1}{18} \frac{\rho_f \left(\frac{d}{2}\right) u}{\eta} = \frac{1}{36} \frac{\rho_f u d}{\eta} = \frac{1}{36} Re
 </annotation></semantics></math></p>
-<p>Ez az eredmény bizonyítja, hogy a Reynolds-szám (egy geometriai
-szorzótól eltekintve) valóban a tehetetlenségi hatások és a viszkózus
-erők fizikai arányát tükrözi.</p>
+<p>Ez az eredmény bizonyítja, hogy a Reynolds-szám (egy geometriai szorzótól eltekintve) valóban a tehetetlenségi hatások és a viszkózus erők fizikai arányát tükrözi.</p>
 <hr />
 <h2 id="feladatok">Feladatok</h2>
 <ol type="1">
-<li><p>A tiszta őszi levegőben egy parányi, gömb alakú ködcsepp süllyed
-egyenletes sebességgel. A csepp sugara
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mi>μ</mi><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">r = 15\text{ }\mu\text{m}</annotation></semantics></math>
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>6</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">15 \cdot 10^{-6}\text{ m}</annotation></semantics></math>),
-a víz sűrűsége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mtext mathvariant="normal">víz</mtext></msub><mo>=</mo><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho_{\text{víz}} = 1000\text{ kg/m}^3</annotation></semantics></math>.
-A levegő dinamikus viszkozitása a mérés napján
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>8</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>5</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 1{,}8 \cdot 10^{-5}\text{ Pa}\cdot\text{s}</annotation></semantics></math>,
-a nehézségi gyorsulás pedig
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ m/s}^2</annotation></semantics></math>.
-Számítsd ki a ködcsepp egyenletes süllyedési végsebességét! (A levegő
-felhajtóereje a parányi sűrűsége miatt elhanyagolható).</p></li>
-<li><p>Egy orvosi laboratóriumban vörösvértesteket ülepedését vizsgálják
-egy vizes alapú tesztfolyadékban
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mi>f</mi></msub><mo>=</mo><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho_f = 1000\text{ kg/m}^3</annotation></semantics></math>,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>001</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 0{,}001\text{ Pa}\cdot\text{s}</annotation></semantics></math>).
-A vörösvértesteket a számításhoz tekintsük tökéletes gömböknek, melyek
-sugara
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mi>μ</mi><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">r = 3\text{ }\mu\text{m}</annotation></semantics></math>,
-sűrűségük pedig
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mi>t</mi></msub><mo>=</mo><mn>1100</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho_t = 1100\text{ kg/m}^3</annotation></semantics></math>.
-A kémcsövet egy centrifugába helyezik, ahol a mesterséges nehézségi
-gyorsulás a földi
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
-értékének pontosan az ötszázszorosa
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mtext mathvariant="normal">centrifuga</mtext></msub><mo>=</mo><mn>500</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g_{\text{centrifuga}} = 500 \cdot 9{,}81\text{ m/s}^2</annotation></semantics></math>).
-Mekkora egyenletes kiülepedési sebességgel mozognak a sejtek a
-folyadékban a centrifuga működése közben, ha feltételezzük, hogy a
-mozgásra érvényes a Stokes-törvény?</p></li>
-<li><p>Egy zárt gépészeti berendezésben
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-os
-5W-30-as motorolaj található, melynek sűrűsége
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mtext mathvariant="normal">olaj</mtext></msub><mo>=</mo><mn>850</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho_{\text{olaj}} = 850\text{ kg/m}^3</annotation></semantics></math>,
-dinamikus viszkozitása a leckében szereplő táblázat alapján
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>175</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 0{,}175\text{ Pa}\cdot\text{s}</annotation></semantics></math>.
-Az olajban egy parányi,
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 2\text{ mm}</annotation></semantics></math>
-átmérőjű, gömb alakú légbuborék keletkezik, amely a felhajtóerő hatására
-elindul felfelé. A levegő sűrűsége a buborékban elhanyagolható
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">0\text{ kg/m}^3</annotation></semantics></math>),
-a nehézségi gyorsulás
-<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ m/s}^2</annotation></semantics></math>.
-Számítsd ki a buborék egyenletes emelkedési sebességét az olajban, majd
-a kapott eredmény alapján ellenőrizd a Reynolds-szám kiszámításával,
-hogy valóban teljesül-e a Stokes-törvény érvényességi feltétele
-(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">Re &lt; 1</annotation></semantics></math>)!</p></li>
+<li><p>A tiszta őszi levegőben egy parányi, gömb alakú ködcsepp süllyed egyenletes sebességgel. A csepp sugara <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mi>μ</mi><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">r = 15\text{ }\mu\text{m}</annotation></semantics></math> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>6</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">15 \cdot 10^{-6}\text{ m}</annotation></semantics></math>), a víz sűrűsége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mtext mathvariant="normal">víz</mtext></msub><mo>=</mo><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho_{\text{víz}} = 1000\text{ kg/m}^3</annotation></semantics></math>. A levegő dinamikus viszkozitása a mérés napján <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>8</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>−</mi><mn>5</mn></mrow></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 1{,}8 \cdot 10^{-5}\text{ Pa}\cdot\text{s}</annotation></semantics></math>, a nehézségi gyorsulás pedig <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ m/s}^2</annotation></semantics></math>. Számítsd ki a ködcsepp egyenletes süllyedési végsebességét! (A levegő felhajtóereje a parányi sűrűsége miatt elhanyagolható).</p></li>
+<li><p>Egy orvosi laboratóriumban vörösvértesteket ülepedését vizsgálják egy vizes alapú tesztfolyadékban (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mi>f</mi></msub><mo>=</mo><mn>1000</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho_f = 1000\text{ kg/m}^3</annotation></semantics></math>, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>001</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 0{,}001\text{ Pa}\cdot\text{s}</annotation></semantics></math>). A vörösvértesteket a számításhoz tekintsük tökéletes gömböknek, melyek sugara <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mi>μ</mi><mtext mathvariant="normal">m</mtext></mrow><annotation encoding="application/x-tex">r = 3\text{ }\mu\text{m}</annotation></semantics></math>, sűrűségük pedig <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mi>t</mi></msub><mo>=</mo><mn>1100</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho_t = 1100\text{ kg/m}^3</annotation></semantics></math>. A kémcsövet egy centrifugába helyezik, ahol a mesterséges nehézségi gyorsulás a földi <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> értékének pontosan az ötszázszorosa (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mtext mathvariant="normal">centrifuga</mtext></msub><mo>=</mo><mn>500</mn><mo>⋅</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g_{\text{centrifuga}} = 500 \cdot 9{,}81\text{ m/s}^2</annotation></semantics></math>). Mekkora egyenletes kiülepedési sebességgel mozognak a sejtek a folyadékban a centrifuga működése közben, ha feltételezzük, hogy a mozgásra érvényes a Stokes-törvény?</p></li>
+<li><p>Egy zárt gépészeti berendezésben <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mo>∘</mo></msup><mtext mathvariant="normal">C</mtext></mrow><annotation encoding="application/x-tex">20\text{ }^{\circ}\text{C}</annotation></semantics></math>-os 5W-30-as motorolaj található, melynek sűrűsége <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ρ</mi><mtext mathvariant="normal">olaj</mtext></msub><mo>=</mo><mn>850</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\rho_{\text{olaj}} = 850\text{ kg/m}^3</annotation></semantics></math>, dinamikus viszkozitása a leckében szereplő táblázat alapján <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>η</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>175</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Pa</mtext></mrow><mo>⋅</mo><mtext mathvariant="normal">s</mtext></mrow><annotation encoding="application/x-tex">\eta = 0{,}175\text{ Pa}\cdot\text{s}</annotation></semantics></math>. Az olajban egy parányi, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> mm</mtext></mrow></mrow><annotation encoding="application/x-tex">d = 2\text{ mm}</annotation></semantics></math> átmérőjű, gömb alakú légbuborék keletkezik, amely a felhajtóerő hatására elindul felfelé. A levegő sűrűsége a buborékban elhanyagolható (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg/m</mtext></mrow><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">0\text{ kg/m}^3</annotation></semantics></math>), a nehézségi gyorsulás <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9</mn><mo>,</mo><mn>81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9{,}81\text{ m/s}^2</annotation></semantics></math>. Számítsd ki a buborék egyenletes emelkedési sebességét az olajban, majd a kapott eredmény alapján ellenőrizd a Reynolds-szám kiszámításával, hogy valóban teljesül-e a Stokes-törvény érvényességi feltétele (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>e</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">Re &lt; 1</annotation></semantics></math>)!</p></li>
 </ol>
 </main>
 </body>
