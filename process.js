@@ -171,6 +171,7 @@ function generateNavbar(filename, isSubfolder) {
                 "<div class=\"nav-group-left\">" +
                     "<a href=\"" + pfx + "index.html\">Névjegy</a>" +
                     "<a href=\"" + pfx + "VEGEREDMENYEK.html\" style=\"font-weight: 600;\">Megoldások</a>" +
+                    "<a href=\"" + pfx + "IRODALOMJEGYZEK.html\">Irodalom</a>" + // 🆕 EZ AZ ÚJ SOR!
                 "</div>" +
                 "<div class=\"nav-group-right\">" +
                     "<div class=\"dropdown\">" +
@@ -281,6 +282,7 @@ function processFile(filePath, isSubfolder = false) {
 processFile("index.html", false);
 processFile("NEWTON_MECHANIKAJA.html", false);
 processFile("VEGEREDMENYEK.html", false);
+processFile("IRODALOMJEGYZEK.html", false);
 
 const subDir = "Mechanika";
 if (fs.existsSync(subDir)) {

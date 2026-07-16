@@ -53,6 +53,13 @@ if [ -f "VEGEREDMENYEK.md" ]; then
            -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE - Végeredmények" VEGEREDMENYEK.md -o VEGEREDMENYEK.html
 fi
 
+if [ -f "IRODALOMJEGYZEK.md" ]; then
+    echo "Processing: IRODALOMJEGYZEK.md -> IRODALOMJEGYZEK.html"
+    pandoc -f markdown -t html5 --standalone --mathml --syntax-highlighting=none \
+           --id-prefix="" --template=pandoc_clean_template.html \
+           -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_HU - Ajánlott Irodalom" -M lang="hu" IRODALOMJEGYZEK.md -o IRODALOMJEGYZEK.html
+fi
+
 if [ -d "Mechanika" ]; then
     cp pandoc_clean_template.html Mechanika/
     cd Mechanika
