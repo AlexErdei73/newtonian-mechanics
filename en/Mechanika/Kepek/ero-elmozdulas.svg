@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 500" width="100%" height="100%">
+  <!-- Fehér háttér -->
+  <rect width="100%" height="100%" fill="white" />
+  
+  <!-- Cím -->
+  <text x="410" y="30" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Erő - elmozdulás grafikon</text>
+
+  <!-- Nyílhegyek definíciója a tengelyekhez -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Rácsvonalak (szaggatott) -->
+  <g stroke="#e0e0e0" stroke-width="1" stroke-dasharray="5,5">
+    <!-- Vízszintes rácsvonalak -->
+    <line x1="100" y1="112" x2="750" y2="112" /> <!-- -0.1 N -->
+    <line x1="100" y1="240" x2="750" y2="240" /> <!-- -0.5 N -->
+    <line x1="100" y1="400" x2="750" y2="400" /> <!-- -1.0 N -->
+    
+    <!-- Függőleges rácsvonalak -->
+    <line x1="332.14" y1="80" x2="332.14" y2="450" /> <!-- 50 m -->
+    <line x1="564.28" y1="80" x2="564.28" y2="450" /> <!-- 100 m -->
+    <line x1="707.16" y1="80" x2="707.16" y2="450" /> <!-- 130.78 m -->
+  </g>
+
+  <!-- Területek (Munka) -->
+  <!-- Jég (W1) -->
+  <rect x="100" y="80" width="464.28" height="32" fill="#87CEEB" fill-opacity="0.5" />
+  <!-- Beton (W2) -->
+  <rect x="564.28" y="80" width="142.88" height="320" fill="#A9A9A9" fill-opacity="0.5" />
+
+  <!-- Tengelyek -->
+  <g stroke="#333" stroke-width="2">
+    <!-- X tengely (Megtett út) -->
+    <line x1="100" y1="80" x2="780" y2="80" marker-end="url(#arrow)" />
+    <!-- Y tengely (Erő - lefelé negatív, felfelé a pozitív irány nyila) -->
+    <line x1="100" y1="460" x2="100" y2="50" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Osztásközök (kis vonalak a tengelyeken) -->
+  <g stroke="#333" stroke-width="2">
+    <!-- X tengely osztások -->
+    <line x1="332.14" y1="75" x2="332.14" y2="85" />
+    <line x1="564.28" y1="75" x2="564.28" y2="85" />
+    <line x1="707.16" y1="75" x2="707.16" y2="85" />
+    
+    <!-- Y tengely osztások -->
+    <line x1="95" y1="112" x2="105" y2="112" />
+    <line x1="95" y1="240" x2="105" y2="240" />
+    <line x1="95" y1="400" x2="105" y2="400" />
+  </g>
+
+  <!-- Tengely feliratok -->
+  <g font-family="Arial, sans-serif" font-size="14" fill="#333">
+    <!-- X tengely (számok az x tengely felett, mert lefelé rajzolunk) -->
+    <text x="100" y="65" text-anchor="middle">0</text>
+    <text x="332.14" y="65" text-anchor="middle">50</text>
+    <text x="564.28" y="65" text-anchor="middle">100</text>
+    <text x="707.16" y="65" text-anchor="middle">130,78</text>
+    <text x="780" y="65" text-anchor="end" font-weight="bold">x (m)</text>
+
+    <!-- Y tengely -->
+    <text x="85" y="85" text-anchor="end">0</text>
+    <text x="85" y="117" text-anchor="end">-0,1</text>
+    <text x="85" y="245" text-anchor="end">-0,5</text>
+    <text x="85" y="405" text-anchor="end">-1,0</text>
+    <text x="90" y="45" text-anchor="end" font-weight="bold">F_x (N)</text>
+  </g>
+
+  <!-- Erővonal (F_x függvény) -->
+  <path d="M 100 112 L 564.28 112 L 564.28 400 L 707.16 400" fill="none" stroke="#D32F2F" stroke-width="3" stroke-linejoin="round" />
+  
+  <!-- Kezdő és végpontok pöttyel -->
+  <circle cx="100" cy="112" r="4" fill="#D32F2F" />
+  <circle cx="707.16" cy="400" r="4" fill="#D32F2F" />
+
+  <!-- Területek szöveges feliratai -->
+  <!-- Jég felirat -->
+  <text x="332" y="145" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#005b96" text-anchor="middle">JÉG</text>
+  <text x="332" y="165" font-family="Arial, sans-serif" font-size="14" fill="#005b96" text-anchor="middle">W₁ = -10,00 J</text>
+
+  <!-- Beton felirat -->
+  <text x="635" y="240" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4d4d4d" text-anchor="middle">BETON</text>
+  <text x="635" y="260" font-family="Arial, sans-serif" font-size="14" fill="#4d4d4d" text-anchor="middle">W₂ = -30,78 J</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definíciók a nyilakhoz -->
+  <defs>
+    <!-- Kék nyílhegy a fő erőknek -->
+    <marker id="arrow-body-color" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,8 L12,4 z" fill="#3498db" />
+    </marker>
+    <!-- Fekete nyílhegy a komponenseknek -->
+    <marker id="arrow-black" markerWidth="10" markerHeight="10" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,8 L12,4 z" fill="black" />
+    </marker>
+    <!-- Zöld nyílhegy a gyorsulásnak -->
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,8 L12,4 z" fill="#2ecc71" />
+    </marker>
+  </defs>
+
+  <!-- 1. Fehér háttér -->
+  <rect width="100%" height="100%" fill="white" />
+
+  <!-- Cím -->
+  <text x="300" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Kúpinga erők</text>
+
+  <!-- GEOMETRIA -->
+  
+  <!-- Mennyezet -->
+  <line x1="150" y1="50" x2="250" y2="50" stroke="black" stroke-width="4" />
+  
+  <!-- Függőleges forgástengely (szaggatott) -->
+  <line x1="200" y1="50" x2="200" y2="550" stroke="gray" stroke-width="1" stroke-dasharray="5,5" />
+
+  <!-- Körpálya (ellipszis) -->
+  <ellipse cx="200" cy="300" rx="130" ry="30" fill="none" stroke="gray" stroke-width="1" stroke-dasharray="4,2" />
+
+  <!-- Sugár (R) jelölése -->
+  <line x1="200" y1="300" x2="330" y2="300" stroke="black" stroke-width="1" />
+  <text x="260" y="295" font-family="Arial" font-size="16">R</text>
+
+  <!-- Fonál (Fekete vonal) -->
+  <line x1="200" y1="50" x2="330" y2="300" stroke="black" stroke-width="2" />
+  
+  <!-- "l" címke: Jól eltolva jobbra -->
+  <text x="290" y="150" font-family="Arial" font-size="18" font-style="italic">l</text>
+
+  <!-- Szög (Theta) -->
+  <path d="M200,100 A50,50 0 0,1 220,96" fill="none" stroke="black" stroke-width="1" />
+  <text x="210" y="125" font-family="Arial" font-size="16">Θ</text>
+
+  <!-- Test (KÉK) -->
+  <circle cx="330" cy="300" r="10" fill="#3498db" stroke="black" stroke-width="1" />
+
+  <!-- 1. Komponensek (FEKETE) -->
+  
+  <!-- K*cos(Theta) - Függőleges felfelé -->
+  <line x1="330" y1="300" x2="330" y2="140" stroke="black" stroke-width="2" marker-end="url(#arrow-black)" />
+  <text x="340" y="200" font-family="Arial" font-size="16" fill="black">K·cos(Θ)</text>
+
+  <!-- K*sin(Theta) - Vízszintes balra -->
+  <line x1="330" y1="300" x2="247" y2="300" stroke="black" stroke-width="2" marker-end="url(#arrow-black)" />
+  <text x="250" y="325" font-family="Arial" font-size="16" fill="black" text-anchor="end">K·sin(Θ)</text>
+
+  <!-- Segédvonalak (téglalap) -->
+  <polyline points="330,140 247,140 247,300" fill="none" stroke="gray" stroke-width="1" stroke-dasharray="3,3" />
+
+  <!-- 2. Fő erők (KÉK - Dupla méret) -->
+
+  <!-- mg (lefelé) -->
+  <line x1="330" y1="300" x2="330" y2="460" stroke="#3498db" stroke-width="5" marker-end="url(#arrow-body-color)" />
+  <text x="345" y="450" font-family="Arial" font-size="20" fill="#3498db" font-weight="bold">mg</text>
+
+  <!-- K (kötélerő) - A komponensek eredője -->
+  <line x1="330" y1="300" x2="247" y2="140" stroke="#3498db" stroke-width="5" marker-end="url(#arrow-body-color)" />
+  
+  <!-- "K" címke: Eltolva a vektor csúcsa fölé/mellé -->
+  <text x="240" y="130" font-family="Arial" font-size="20" fill="#3498db" font-weight="bold">K</text>
+
+  <!-- Jobbra tolva, balra mutat -->
+  <line x1="450" y1="300" x2="380" y2="300" stroke="#2ecc71" stroke-width="4" marker-end="url(#arrow-green)" />
+  <text x="400" y="290" font-family="Arial" font-size="18" fill="#2ecc71" font-weight="bold">a_cp</text>
+
+</svg>

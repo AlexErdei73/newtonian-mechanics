@@ -2,9 +2,11 @@
 
 ## Kísérletek
 
-* [Archimédészi hengerpár](https://www.youtube.com/watch?v=Fodof4gSIA0&t=884s)
-* [Higany alatt marad a parafakorong](https://www.youtube.com/watch?v=Fodof4gSIA0&t=1423s)
-* [Cartesius-búvár](https://www.youtube.com/watch?v=Fodof4gSIA0&t=1696s)
+[Archimédészi hengerpár](https://www.youtube.com/watch?v=Fodof4gSIA0&t=884s)
+
+[Higany alatt marad a parafakorong](https://www.youtube.com/watch?v=Fodof4gSIA0&t=1423s)
+
+[Cartesius-búvár](https://www.youtube.com/watch?v=Fodof4gSIA0&t=1696s)
 
 A kísérletekből láttuk, hogy a nyugvó folyadékba merülő testre a folyadék felhajtóerőt fejt ki. Erre a felhajtóerőre vonatkozik Archimédész törvénye.
 

@@ -2,11 +2,15 @@
 
 ## Kísérletek
 
-* [Sas Elemér kísérletei a Bernoulli-törvényre](https://www.youtube.com/watch?v=Fodof4gSIA0&t=36m18s)
-* [Hatalmas zsák felfújása egyetlen lélegzettel](https://www.youtube.com/shorts/rAAelB7nN14)
-* [Nagy gumilabda lebegtetése lombfúvóval](https://www.youtube.com/watch?v=Ye3QPgDdJNg)
-* [Pingponglabda lebegtetése hajszárítóval](https://www.youtube.com/watch?v=KFE98nje_L0)
-* [A Venturi-cső](https://www.youtube.com/watch?v=hLZkPFrQCDk)
+[Sas Elemér kísérletei a Bernoulli-törvényre](https://www.youtube.com/watch?v=Fodof4gSIA0&t=36m18s)
+
+[Hatalmas zsák felfújása egyetlen lélegzettel](https://www.youtube.com/shorts/rAAelB7nN14)
+
+[Nagy gumilabda lebegtetése lombfúvóval](https://www.youtube.com/watch?v=Ye3QPgDdJNg)
+
+[Pingponglabda lebegtetése hajszárítóval](https://www.youtube.com/watch?v=KFE98nje_L0)
+
+[A Venturi-cső](https://www.youtube.com/watch?v=hLZkPFrQCDk)
 
 Láttuk, hogy a szűkületben a folyadék gyorsabban áramlik a kontinuitási egyenlet következtében, mint a tágabb csőszakaszokon. Nézzük most meg, hogyan változik a nyomás a csőszakaszokban! A kísérletek szerint a nyomás lecsökken azokon a helyeken, ahol a sebesség az áramlásban nagyobb, azokhoz a helyekhez képest, ahol a sebesség kisebb.
 
@@ -62,7 +66,7 @@ Ennek az anyagfázisnak rendkívül magas a hővezető képessége, és a belső
 
 Azt mondhatjuk, hogy ez az igen ritka és különleges kvantumfolyadék az, amely a makroszkopikus világban a leginkább képes megvalósítani a Bernoulli-törvény esetében tárgyalt ideális, súrlódásmentes állapotot. Akit ez az igen érdekes jelenség mélyebben is érdekel, annak az alábbi archív dokumentumfilmet ajánljuk:
 
-* [Szuperfolyékony hélium kisérletek](https://www.youtube.com/watch?v=ixsYmygNfs4&t=2247s)
+[Szuperfolyékony hélium kisérletek](https://www.youtube.com/watch?v=ixsYmygNfs4&t=2247s)
 
 Bár a valódi fluidumok áramlásakor a szuperfolyékony hélium kivételével mindig fellép mechanikai energiaveszteség, az áramlás sok esetben közelítőleg stacionáriusnak tekinthető. Így a Bernoulli-törvény a gyakorlatban kiválóan alkalmazható, a nagyobb pontosságot igénylő mérnöki számítások során pedig a súrlódásból adódó nyomásveszteséget korrekciós tényezőkkel veszik figyelembe.
 

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <!-- Fehér háttér -->
+  <rect width="100%" height="100%" fill="white" />
+  
+  <!-- Cím -->
+  <text x="300" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Nyújtóerő a megnyúlás függvényében</text>
+
+  <!-- Nyílhegyek definíciója a tengelyekhez -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#333" />
+    </marker>
+  </defs>
+
+  <!-- Háromszög terület (A végzett munka / Rugalmas energia) -->
+  <polygon points="100,320 450,320 450,80" fill="#87CEEB" fill-opacity="0.5" />
+
+  <!-- Segédvonalak (szaggatott) a tengelyekig -->
+  <g stroke="#888" stroke-width="1.5" stroke-dasharray="6,4">
+    <!-- Vízszintes segédvonal a Dx-hez -->
+    <line x1="100" y1="80" x2="450" y2="80" />
+    <!-- Függőleges segédvonal az x-hez -->
+    <line x1="450" y1="320" x2="450" y2="80" />
+  </g>
+
+  <!-- Tengelyek -->
+  <g stroke="#333" stroke-width="2">
+    <!-- X tengely (Megnyúlás) -->
+    <line x1="80" y1="320" x2="550" y2="320" marker-end="url(#arrow)" />
+    <!-- Y tengely (Erő) -->
+    <line x1="100" y1="340" x2="100" y2="50" marker-end="url(#arrow)" />
+  </g>
+
+  <!-- Erővonal (F = D * x függvény) -->
+  <line x1="100" y1="320" x2="450" y2="80" stroke="#D32F2F" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Kezdő és végpontok pöttyel -->
+  <circle cx="100" cy="320" r="4" fill="#D32F2F" />
+  <circle cx="450" cy="80" r="4" fill="#D32F2F" />
+
+  <!-- Osztásközök (kis vonalak a tengelyeken) -->
+  <g stroke="#333" stroke-width="2">
+    <!-- X tengely osztás -->
+    <line x1="450" y1="315" x2="450" y2="325" />
+    <!-- Y tengely osztás -->
+    <line x1="95" y1="80" x2="105" y2="80" />
+  </g>
+
+  <!-- Tengely feliratok és jelzések -->
+  <g font-family="Arial, sans-serif" font-size="16" fill="#333">
+    <!-- Origó -->
+    <text x="85" y="340" text-anchor="end">0</text>
+    
+    <!-- X tengely (Megnyúlás) -->
+    <text x="450" y="345" text-anchor="middle" font-style="italic" font-weight="bold">x</text>
+    <text x="540" y="345" text-anchor="end" font-weight="bold">Elmozdulás</text>
+
+    <!-- Y tengely (Erő) -->
+    <text x="85" y="85" text-anchor="end" font-style="italic" font-weight="bold">Dx</text>
+    <text x="90" y="40" text-anchor="end" font-weight="bold">Erő (F)</text>
+  </g>
+
+  <!-- Terület (Munka) magyarázó szövegei a háromszögön belül -->
+  <text x="330" y="230" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#005b96" text-anchor="middle">Végzett munka (W)</text>
+  <text x="330" y="255" font-family="Arial, sans-serif" font-size="14" fill="#005b96" text-anchor="middle">Terület = háromszög területe</text>
+  
+  <!-- Képlet a háromszögben -->
+  <g font-family="Arial, sans-serif" font-size="16" font-style="italic" fill="#005b96" text-anchor="middle">
+    <text x="330" y="285">W = ½ · x · Dx = ½Dx²</text>
+  </g>
+</svg>

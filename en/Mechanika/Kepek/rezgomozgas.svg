@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="100%" height="100%">
+  <defs>
+    <!-- Színátmenet a testnek -->
+    <linearGradient id="blockGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3498db" />
+      <stop offset="100%" stop-color="#2980b9" />
+    </linearGradient>
+    
+    <!-- Árnyék effekt -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+
+    <!-- Nyílhegyek -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2c3e50" />
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e74c3c" />
+    </marker>
+  </defs>
+
+  <style>
+    .axis { stroke: #34495e; stroke-width: 1.5; }
+    .guideline { stroke: #bdc3c7; stroke-width: 1.5; stroke-dasharray: 6,4; }
+    .projection { stroke: #95a5a6; stroke-width: 2; stroke-dasharray: 4,4; }
+    .text-title { font-family: system-ui, sans-serif; font-size: 18px; font-weight: bold; fill: #2c3e50; text-anchor: middle; }
+    .text-label { font-family: system-ui, sans-serif; font-size: 14px; font-weight: 500; fill: #2c3e50; }
+    .text-math { font-family: 'Times New Roman', serif; font-size: 18px; font-style: italic; fill: #2c3e50; }
+  </style>
+
+  <!-- Háttér (opcionális, most átlátszó/fehér) -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- CÍM -->
+  <text x="350" y="30" class="text-title">A harmonikus rezgőmozgás és a körmozgás kapcsolata</text>
+
+  <!-- SEGÉDVONALAK (Amplitúdók és egyensúly) -->
+  <g id="guidelines">
+    <!-- x = -A -->
+    <line x1="230" y1="60" x2="230" y2="470" class="guideline" />
+    <text x="230" y="55" class="text-math" text-anchor="middle">x = -A</text>
+    
+    <!-- x = 0 -->
+    <line x1="350" y1="60" x2="350" y2="470" class="guideline" stroke="#7f8c8d" />
+    <text x="350" y="55" class="text-math" text-anchor="middle">x = 0</text>
+    
+    <!-- x = +A -->
+    <line x1="470" y1="60" x2="470" y2="470" class="guideline" />
+    <text x="470" y="55" class="text-math" text-anchor="middle">x = A</text>
+  </g>
+
+  <!-- FELSŐ RÉSZ: RUGÓS OSZCILLÁTOR -->
+  <g id="spring-mass">
+    <!-- Fal -->
+    <rect x="80" y="80" width="20" height="70" fill="#7f8c8d" />
+    <!-- Padló -->
+    <line x1="80" y1="150" x2="520" y2="150" stroke="#7f8c8d" stroke-width="3" />
+    
+    <!-- Rugó (Cikcakkos vonal) -->
+    <path d="M 100 120 L 120 120 L 135 100 L 165 140 L 195 100 L 225 140 L 255 100 L 285 140 L 315 100 L 345 140 L 360 120 L 380 120" 
+          stroke="#95a5a6" stroke-width="3" fill="none" stroke-linejoin="round" />
+    
+    <!-- Rezgő test (Középpontja x=410, y=120) -->
+    <rect x="380" y="90" width="60" height="60" rx="6" fill="url(#blockGrad)" filter="url(#shadow)" />
+    <text x="410" y="125" font-family="system-ui" font-size="18" font-weight="bold" fill="white" text-anchor="middle">m</text>
+    
+    <!-- Test középpontjának jelölése -->
+    <circle cx="410" cy="120" r="3" fill="#ffffff" />
+  </g>
+
+  <!-- SZINKRONIZÁCIÓS VETÍTŐVONAL -->
+  <line x1="410" y1="120" x2="410" y2="340" class="projection" />
+
+  <!-- ALSÓ RÉSZ: EGYENLETES KÖRMOZGÁS -->
+  <g id="circular-motion">
+    <!-- Tengelyek -->
+    <line x1="150" y1="340" x2="550" y2="340" class="axis" marker-end="url(#arrow)" />
+    <line x1="350" y1="480" x2="350" y2="180" class="axis" marker-end="url(#arrow)" />
+    <text x="540" y="330" class="text-math">x</text>
+    <text x="360" y="180" class="text-math">y</text>
+
+    <!-- Körpálya -->
+    <circle cx="350" cy="340" r="120" stroke="#7f8c8d" stroke-width="2" fill="none" stroke-dasharray="8,4" />
+
+    <!-- Forgásszög íve (60 fok) -->
+    <path d="M 380 340 A 30 30 0 0 0 365 314" fill="none" stroke="#e67e22" stroke-width="2" />
+    <text x="390" y="325" class="text-math" fill="#e67e22">ωt</text>
+
+    <!-- Rádiusz (Amplitúdó) vektor -->
+    <line x1="350" y1="340" x2="410" y2="236.1" stroke="#e74c3c" stroke-width="3" />
+    <text x="365" y="275" class="text-math" fill="#c0392b">r = A</text>
+
+    <!-- Pont a körön -->
+    <circle cx="410" cy="236.1" r="6" fill="#e74c3c" filter="url(#shadow)" />
+
+    <!-- Vetület a vízszintes tengelyre (Kitérés x) -->
+    <line x1="410" y1="236.1" x2="410" y2="340" stroke="#95a5a6" stroke-width="1.5" stroke-dasharray="3,3" />
+    
+    <!-- Kitérés vektor (Piros nyíl a tengelyen) -->
+    <line x1="350" y1="340" x2="406" y2="340" stroke="#e74c3c" stroke-width="4" marker-end="url(#arrowRed)" />
+    <text x="375" y="360" class="text-math" fill="#c0392b">x</text>
+  </g>
+
+</svg>

@@ -38,7 +38,7 @@ Ahhoz azonban, hogy a kicsinyített modellen kapott eredmények (áramlási kép
 
 ### Reynolds kísérlete
 
-[![Reynolds kísérlete](https://youtube.com)](https://www.youtube.com/watch?v=6A8B05V4OzA)  
+[Reynolds kísérlete](https://www.youtube.com/watch?v=6A8B05V4OzA)  
 *(Kattintásra megnyíló videó: Reynolds történelmi tintaszálas kísérletének demonstrációja)*
 
 A hidrodinamikai hasonlóság törvényét Osborne Reynolds fedezte fel 1883-ban egy híres kísérlet segítségével. Egy víztartályból kiáramló, tiszta üvegcső bejáratánál egy vékony tölcséren keresztül színes festéket (tintát) fecskendezett az áramlás közepébe. A következőt tapasztalta:

@@ -1,0 +1,114 @@
+<svg width="700" height="550" viewBox="0 0 700 550" xmlns="http://www.w3.org/2000/svg">
+  <!-- Definíciók -->
+  <defs>
+    <!-- Sötétkék nyílhegy a fő erőknek -->
+    <marker id="arrow-darkblue" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,8 L12,4 z" fill="#21618C" />
+    </marker>
+    <!-- Fekete nyílhegy a komponenseknek -->
+    <marker id="arrow-black" markerWidth="10" markerHeight="10" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,8 L12,4 z" fill="black" />
+    </marker>
+    <!-- Zöld nyílhegy a gyorsulásnak -->
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,8 L12,4 z" fill="#2ecc71" />
+    </marker>
+  </defs>
+
+  <!-- 1. Fehér háttér -->
+  <rect width="100%" height="100%" fill="white" />
+
+  <!-- Cím -->
+  <text x="350" y="40" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Versenyautó erőfelbontás</text>
+
+  <!-- ASZFALT (Lejtő) -->
+  <path d="M50,450 L650,450 L650,103 Z" fill="#ecf0f1" stroke="black" stroke-width="2" />
+  
+  <!-- Szög (Theta) -->
+  <path d="M150,450 A100,100 0 0,0 165,400" fill="none" stroke="black" stroke-width="1" />
+  <text x="180" y="430" font-family="Arial" font-size="18">Θ</text>
+
+  <!-- AUTÓ -->
+  <!-- Transzformáció: (350, 276) az aszfalt érintési pontja, -30 fokos forgatás -->
+  <g transform="translate(350, 276) rotate(-30)">
+    <!-- Kerekek (érintik a 0 szintet) -->
+    <circle cx="-40" cy="-15" r="15" fill="#333" />
+    <circle cx="40" cy="-15" r="15" fill="#333" />
+    
+    <!-- Karosszéria -->
+    <path d="M-60,-15 L60,-15 L50,-45 L-50,-45 Z" fill="#AED6F1" stroke="#21618C" stroke-width="2" />
+    <!-- Tető -->
+    <path d="M-30,-45 L30,-45 L20,-65 L-20,-65 Z" fill="#85C1E9" stroke="#21618C" stroke-width="2" />
+    
+    <!-- Tömegközéppont (CM) jelölése (lokálisan 0, -35) -->
+    <circle cx="0" cy="-35" r="5" fill="black" />
+  </g>
+
+  <!-- ERŐK és FELBONTÁS -->
+  <!-- A CM globális koordinátájának pontos kiszámítása:
+       A CM lokálisan (0, -35).
+       Forgatás után a CM elmozdul balra és fel.
+       X_cm = 350 + (-35 * sin(-30)) = 350 - 17.5 = 332.5 -> Kerekítve: 333
+       Y_cm = 276 + (-35 * cos(-30)) = 276 - 30.3 = 245.7 -> Kerekítve: 246
+       MINDEN vektor innen (333, 246) indul!
+  -->
+
+  <!-- 1. Kényszererő (K) -->
+  <!-- Irány: Balra fel. -->
+  <!-- K_y hossz: 140px. K_x hossz: 80px. -->
+  <!-- Végpont: (333-80, 246-140) = (253, 106) -->
+  
+  <!-- K vektor (SÖTÉTKÉK) -->
+  <line x1="333" y1="246" x2="253" y2="106" stroke="#21618C" stroke-width="4" marker-end="url(#arrow-darkblue)" />
+  <text x="230" y="100" font-family="Arial" font-size="20" fill="#21618C" font-weight="bold">K</text>
+  
+  <!-- K Komponensek (FEKETE) -->
+  <!-- K_y (Függőleges) -->
+  <line x1="333" y1="246" x2="333" y2="106" stroke="black" stroke-width="2" marker-end="url(#arrow-black)" />
+  <text x="340" y="150" font-family="Arial" font-size="16" fill="black">K cos(Θ)</text>
+  
+  <!-- K_x (Vízszintes balra) -->
+  <line x1="333" y1="246" x2="253" y2="246" stroke="black" stroke-width="2" marker-end="url(#arrow-black)" />
+  <text x="220" y="265" font-family="Arial" font-size="16" fill="black" text-anchor="end">K sin(Θ)</text>
+  
+  <!-- Segédvonalak K -->
+  <polyline points="253,106 253,246" fill="none" stroke="gray" stroke-width="1" stroke-dasharray="3,3" />
+  <polyline points="253,106 333,106" fill="none" stroke="gray" stroke-width="1" stroke-dasharray="3,3" />
+
+
+  <!-- 2. Tapadási erő (Ft) -->
+  <!-- Irány: Jobbra fel. -->
+  <!-- Ft_x hossz: 86px. Ft_y hossz: 50px. -->
+  <!-- Végpont: (333+86, 246-50) = (419, 196) -->
+  
+  <!-- Ft vektor (SÖTÉTKÉK) -->
+  <line x1="333" y1="246" x2="419" y2="196" stroke="#21618C" stroke-width="4" marker-end="url(#arrow-darkblue)" />
+  <text x="425" y="190" font-family="Arial" font-size="20" fill="#21618C" font-weight="bold">F<tspan baseline-shift="sub" font-size="14">t</tspan></text>
+
+  <!-- Ft Komponensek (FEKETE) -->
+  <!-- Ft_x (Vízszintes jobbra) -->
+  <line x1="333" y1="246" x2="419" y2="246" stroke="black" stroke-width="2" marker-end="url(#arrow-black)" />
+  <text x="380" y="270" font-family="Arial" font-size="14" fill="black">F<tspan baseline-shift="sub" font-size="10">t</tspan> cos(Θ)</text>
+
+  <!-- Ft_y (Függőleges felfelé) - Kicsit eltoljuk x-ben, hogy látszódjon a K mellett -->
+  <line x1="337" y1="246" x2="337" y2="196" stroke="black" stroke-width="2" marker-end="url(#arrow-black)" />
+  <text x="342" y="210" font-family="Arial" font-size="14" fill="black">F<tspan baseline-shift="sub" font-size="10">t</tspan> sin(Θ)</text>
+  
+  <!-- Segédvonalak Ft -->
+  <polyline points="419,196 419,246" fill="none" stroke="gray" stroke-width="1" stroke-dasharray="3,3" />
+  <polyline points="419,196 333,196" fill="none" stroke="gray" stroke-width="1" stroke-dasharray="3,3" />
+
+
+  <!-- 3. Nehézségi erő (mg) -->
+  <!-- Függőleges lefelé -->
+  <line x1="333" y1="246" x2="333" y2="400" stroke="#21618C" stroke-width="5" marker-end="url(#arrow-darkblue)" />
+  <text x="343" y="390" font-family="Arial" font-size="20" fill="#21618C" font-weight="bold">mg</text>
+
+
+  <!-- 4. Gyorsulás (a_cp) -->
+  <!-- Vízszintes, Balra. Felirat jobbra tolva, nyíl jobbra tolva, hogy ne fedjék egymást. -->
+  <text x="250" y="75" font-family="Arial" font-size="18" fill="#2ecc71" font-weight="bold">a<tspan baseline-shift="sub" font-size="12">cp</tspan></text>
+  <!-- Nyíl: A szövegtől jobbra kezdődik és balra mutat -->
+  <line x1="380" y1="80" x2="300" y2="80" stroke="#2ecc71" stroke-width="4" marker-end="url(#arrow-green)" />
+
+</svg>

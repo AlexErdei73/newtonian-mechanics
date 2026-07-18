@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" width="100%" height="100%">
+  <!-- Háttér és rácsvonalak -->
+  <rect width="100%" height="100%" fill="#fcfcfc" rx="10" ry="10" />
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="50" y1="280" x2="450" y2="280" />
+    <line x1="100" y1="50" x2="100" y2="300" />
+  </g>
+
+  <!-- Nyílhegyek definíciója -->
+  <defs>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb" />
+    </marker>
+    <marker id="arrowGreen" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#16a34a" />
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#dc2626" />
+    </marker>
+    <marker id="arrowOmega" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 2 L 10 5 L 0 8 z" fill="#d97706" />
+    </marker>
+  </defs>
+
+  <!-- Referenciakör íve és forgásiránya (omega) -->
+  <path d="M 100 130 A 150 150 0 0 0 250 280" fill="none" stroke="#fef3c7" stroke-width="20" stroke-linecap="round"/>
+  <path d="M 230 110 A 130 130 0 0 0 110 230" fill="none" stroke="#d97706" stroke-width="2" stroke-dasharray="4,4" marker-start="url(#arrowOmega)" />
+  <text x="135" y="160" font-family="Times New Roman, serif" font-style="italic" font-size="22" fill="#d97706" font-weight="bold">ω</text>
+  <text x="155" y="155" font-family="Arial, sans-serif" font-size="12" fill="#d97706">forgás</text>
+
+  <!-- Fázisszög ív -->
+  <path d="M 170 280 A 70 70 0 0 0 159 237" fill="none" stroke="#6b7280" stroke-width="2" />
+  <text x="185" y="265" font-family="Times New Roman, serif" font-style="italic" font-size="20" fill="#374151">-φ</text>
+
+  <!-- Derékszög jelölése -->
+  <path d="M 365 280 L 365 265 L 380 265" fill="none" stroke="#6b7280" stroke-width="2" />
+  <circle cx="372" cy="272" r="1.5" fill="#6b7280" />
+
+  <!-- Vektorok (A derékszögű háromszög oldalai) -->
+  <!-- Vízszintes befogó -->
+  <line x1="100" y1="280" x2="375" y2="280" stroke="#2563eb" stroke-width="4" marker-end="url(#arrowBlue)" />
+  
+  <!-- Függőleges befogó -->
+  <line x1="380" y1="280" x2="380" y2="85" stroke="#16a34a" stroke-width="4" marker-end="url(#arrowGreen)" />
+  
+  <!-- Átfogó (Gerjesztőerő amplitúdó) -->
+  <line x1="100" y1="280" x2="375" y2="85" stroke="#dc2626" stroke-width="4" marker-end="url(#arrowRed)" />
+
+  <!-- Szaggatott vetítővonalak -->
+  <line x1="100" y1="280" x2="100" y2="80" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5,5" />
+  <line x1="100" y1="80" x2="380" y2="80" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5,5" />
+
+  <!-- Címkék és képletek -->
+  <!-- Vízszintes tengely felirata -->
+  <text x="240" y="310" font-family="Times New Roman, serif" font-style="italic" font-size="22" fill="#1e3a8a" text-anchor="middle">A(ω₀² - ω²)</text>
+  <text x="240" y="330" font-family="Arial, sans-serif" font-size="12" fill="#6b7280" text-anchor="middle">(Kitérés és gyorsulás együtthatója)</text>
+
+  <!-- Függőleges tengely felirata -->
+  <text x="400" y="190" font-family="Times New Roman, serif" font-style="italic" font-size="22" fill="#14532d">2Aδω</text>
+  <text x="400" y="210" font-family="Arial, sans-serif" font-size="12" fill="#6b7280">(Csillapítás együtthatója)</text>
+
+  <!-- Átfogó felirata -->
+  <text x="210" y="150" font-family="Times New Roman, serif" font-style="italic" font-size="26" fill="#7f1d1d" font-weight="bold">f₀</text>
+  
+  <!-- Általános cím/magyarázat -->
+  <text x="250" y="35" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#111827" text-anchor="middle">A mozgásegyenlet trigonometrikus tagjainak fázorábrája</text>
+
+</svg>

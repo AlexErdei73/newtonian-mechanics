@@ -4,10 +4,13 @@
 
 ### Kísérletek
 
-* [Áramlás megfigyelése füsttel, Physics Girl videó](https://www.youtube.com/watch?v=N7d_RWyOv20)
-* [Sas Elemér kísérlete füstkarikákkal](https://www.youtube.com/watch?v=Yg0TPid2Yt4&t=11s)
-* [Folyadékáramlás megfigyelése tinta befecskendezéssel](https://www.youtube.com/watch?v=cAdud5Wdvyw)
-* [Szabályos réteges áramlás Hele-Shaw berendezésben](https://www.youtube.com/watch?v=iixOXO5hubw)
+[Áramlás megfigyelése füsttel, Physics Girl videó](https://www.youtube.com/watch?v=N7d_RWyOv20)
+
+[Sas Elemér kísérlete füstkarikákkal](https://www.youtube.com/watch?v=Yg0TPid2Yt4&t=11s)
+
+[Folyadékáramlás megfigyelése tinta befecskendezéssel](https://www.youtube.com/watch?v=cAdud5Wdvyw)
+
+[Szabályos réteges áramlás Hele-Shaw berendezésben](https://www.youtube.com/watch?v=iixOXO5hubw)
 
 A kísérletek mutatják, hogy az áramlások mind levegőben, mind vízben jól megfigyelhetők. Levegőbe általában füstöt fújunk, és ennek a kis részecskéi követik az áramlást. Víz esetében általában tintát fecskendezünk a vízbe, és a tinta fogja követni az áramlást. 
 

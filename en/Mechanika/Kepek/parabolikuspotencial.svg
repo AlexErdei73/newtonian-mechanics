@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 400" width="100%" max-width="550px">
+  <!-- Kifejezett fehér háttér -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <defs>
+    <!-- Nyílhegyek a tengelyekhez -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000" />
+    </marker>
+  </defs>
+
+  <!-- Koordináta tengelyek -->
+  <path d="M 50 320 L 500 320" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 275 350 L 275 40" fill="none" stroke="#000" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Tengelyek feliratai -->
+  <text x="510" y="340" font-family="Arial" font-size="16">x</text>
+  <text x="285" y="50" font-family="Arial" font-size="16">Energia (E)</text>
+
+  <!-- Teljes energia vonala (vízszintes) - SZIGORÚAN CSAK -A ÉS +A KÖZÖTT! -->
+  <line x1="125" y1="120" x2="425" y2="120" stroke="#e60000" stroke-width="3"/>
+
+  <!-- Parabola (Potenciális energia) -->
+  <!-- Kiterjesztve a +-A pontokon túlra (klasszikusan tiltott tartományba is) -->
+  <!-- A görbe pontosan áthalad az (125,120) és (425,120) pontokon -->
+  <path d="M 100 48 Q 275 592 450 48" fill="none" stroke="#0055cc" stroke-width="3"/>
+
+  <!-- Szaggatott vonalak a szélső helyzetekhez (+A, -A) -->
+  <line x1="125" y1="120" x2="125" y2="320" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+  <line x1="425" y1="120" x2="425" y2="320" stroke="#666" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- Tengely beosztások / feliratok -->
+  <text x="115" y="345" font-family="Arial" font-size="16">-A</text>
+  <text x="415" y="345" font-family="Arial" font-size="16">+A</text>
+  <text x="260" y="345" font-family="Arial" font-size="16">0</text>
+
+  <!-- *** Energiakomponensek szemléltetése pontosan az A/2 (x=350) helyen *** -->
+  <text x="338" y="345" font-family="Arial" font-size="14">A/2</text>
+  
+  <!-- Halvány szaggatott vonal az A/2-nél -->
+  <line x1="350" y1="120" x2="350" y2="320" stroke="#888" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- Függőleges energiacsíkok (pontosan az x=350 tengelyen, hogy a görbén találkozzanak) -->
+  <!-- Potenciális energia (Er) szakasza - 50px hossz -->
+  <line x1="350" y1="320" x2="350" y2="270" stroke="#00a000" stroke-width="4"/>
+  <!-- Mozgási energia (Em) szakasza - 150px hossz -->
+  <line x1="350" y1="270" x2="350" y2="120" stroke="#ff9900" stroke-width="4"/>
+
+  <!-- Kis határoló vonalkák az energiacsíkokhoz a jobb láthatóságért -->
+  <line x1="343" y1="320" x2="357" y2="320" stroke="#000" stroke-width="2"/>
+  <line x1="343" y1="270" x2="357" y2="270" stroke="#000" stroke-width="2"/>
+  <line x1="343" y1="120" x2="357" y2="120" stroke="#000" stroke-width="2"/>
+
+  <!-- Metszéspont kiemelése a kék görbén -->
+  <circle cx="350" cy="270" r="4.5" fill="#0055cc"/>
+
+  <!-- Feliratok a szakaszokhoz (kissé jobbra tolva, hogy ne takarják a csíkokat) -->
+  <text x="365" y="300" font-family="Arial" font-size="16" fill="#00a000">E<tspan dy="3" font-size="12">r</tspan></text>
+  <text x="365" y="200" font-family="Arial" font-size="16" fill="#ff9900">E<tspan dy="3" font-size="12">m</tspan></text>
+
+  <!-- Jelmagyarázat (Legend) -->
+  <text x="135" y="110" font-family="Arial" font-size="14" fill="#e60000">Teljes mechanikai energia (E)</text>
+  <text x="455" y="100" font-family="Arial" font-size="14" fill="#0055cc">Potenciális</text>
+  <text x="455" y="118" font-family="Arial" font-size="14" fill="#0055cc">energia (E<tspan dy="2" font-size="10">r</tspan>)</text>
+</svg>

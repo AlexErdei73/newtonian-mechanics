@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+    <defs>
+        <!-- Fekete nyílhegy a tengelyeknek -->
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#000" />
+        </marker>
+        <!-- Kék nyílhegy a sebességvektornak -->
+        <marker id="arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#0055ff" />
+        </marker>
+        <!-- Piros nyílhegy a vetületnek -->
+        <marker id="arrow-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#ff0000" />
+        </marker>
+        <!-- Zöld nyílhegy a helyvektornak -->
+        <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+            <path d="M 0 0 L 10 5 L 0 10 z" fill="#008800" />
+        </marker>
+    </defs>
+
+    <!-- Fehér háttér a jobb olvashatóságért -->
+    <rect width="100%" height="100%" fill="#ffffff" />
+
+    <!-- Cím -->
+    <text x="250" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#333">A harmonikus rezgőmozgás sebessége</text>
+    <text x="250" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">Referenciakör és a sebességvektor vetülete</text>
+
+    <!-- Koordináta-rendszer tengelyei -->
+    <!-- X tengely -->
+    <line x1="50" y1="250" x2="450" y2="250" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+    <text x="440" y="275" font-family="Arial, sans-serif" font-size="16" font-style="italic">x</text>
+    <!-- Y tengely -->
+    <line x1="250" y1="420" x2="250" y2="80" stroke="#000" stroke-width="2" marker-end="url(#arrow)" />
+    <text x="230" y="90" font-family="Arial, sans-serif" font-size="16" font-style="italic">y</text>
+    <!-- Origó -->
+    <text x="235" y="270" font-family="Arial, sans-serif" font-size="16">0</text>
+
+    <!-- Referenciakör (Sugár R = 150) -->
+    <circle cx="250" cy="250" r="150" fill="none" stroke="#888" stroke-dasharray="5,5" stroke-width="1.5" />
+    
+    <!-- Amplitúdó jelölések az X tengelyen -->
+    <line x1="400" y1="245" x2="400" y2="255" stroke="#000" stroke-width="2" />
+    <text x="390" y="275" font-family="Arial, sans-serif" font-size="16">+A</text>
+    <line x1="100" y1="245" x2="100" y2="255" stroke="#000" stroke-width="2" />
+    <text x="85" y="275" font-family="Arial, sans-serif" font-size="16">-A</text>
+
+    <!-- Halvány kék háromszög, ami a geometriai bizonyítást mutatja -->
+    <polygon points="379.9,175 329.9,88.4 379.9,88.4" fill="rgba(173, 216, 230, 0.3)" stroke="none" />
+
+    <!-- Rádiusz (Helyvektor) - Szög: 30 fok -->
+    <line x1="250" y1="250" x2="379.9" y2="175" stroke="#008800" stroke-width="2" marker-end="url(#arrow-green)" />
+    <text x="310" y="235" font-family="Arial, sans-serif" font-size="16" fill="#008800" font-style="italic">r = A</text>
+
+    <!-- Pont vetítve az X tengelyre (Kitérés) -->
+    <line x1="379.9" y1="175" x2="379.9" y2="250" stroke="#888" stroke-dasharray="4,4" stroke-width="1.5" />
+    <circle cx="379.9" cy="250" r="5" fill="#ff0000" />
+    <text x="375" y="275" font-family="Arial, sans-serif" font-size="16" fill="#ff0000">x(t)</text>
+    <!-- Derékszög jelölése a tengelynél -->
+    <polyline points="369.9,250 369.9,240 379.9,240" fill="none" stroke="#888" stroke-width="1.5" />
+
+    <!-- A test P pontja a referenciakörön -->
+    <circle cx="379.9" cy="175" r="4" fill="#000" />
+
+    <!-- Függőleges segédvonal P pontból felfelé (Y tengellyel párhuzamos) -->
+    <line x1="379.9" y1="175" x2="379.9" y2="70" stroke="#888" stroke-dasharray="4,4" stroke-width="1.5" />
+
+    <!-- Érintő irányú sebességvektor (v) -->
+    <!-- Hossza = 100, iránya = a sugárra merőleges -->
+    <line x1="379.9" y1="175" x2="329.9" y2="88.4" stroke="#0055ff" stroke-width="3" marker-end="url(#arrow-blue)" />
+    <text x="270" y="80" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0055ff">v = A·ω</text>
+
+    <!-- Derékszög jelölése a helyvektor és a sebességvektor között -->
+    <polyline points="369.5,181 363.5,170.6 373.9,164.6" fill="none" stroke="#000" stroke-width="1.5" />
+
+    <!-- Sebességvektor komponensei (Téglalap) -->
+    <!-- X irányú komponens (vx) a P pontnál -->
+    <line x1="379.9" y1="175" x2="329.9" y2="175" stroke="#ff0000" stroke-width="2.5" marker-end="url(#arrow-red)" />
+    <text x="330" y="195" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ff0000">v<tspan baseline-shift="sub" font-size="0.7em">x</tspan></text>
+    
+    <!-- Y irányú komponens (vy) vonala -->
+    <line x1="329.9" y1="175" x2="329.9" y2="88.4" stroke="#aaa" stroke-dasharray="3,3" stroke-width="1.5" />
+    <line x1="379.9" y1="88.4" x2="329.9" y2="88.4" stroke="#aaa" stroke-dasharray="3,3" stroke-width="1.5" />
+
+    <!-- X irányú sebességvektor megjelenítése lent az X tengelyen is a szemléletesség kedvéért -->
+    <line x1="379.9" y1="250" x2="329.9" y2="250" stroke="#ff0000" stroke-width="3" marker-end="url(#arrow-red)" />
+
+    <!-- KÖZÉPPONTI SZÖG (ωt) -->
+    <path d="M 290 250 A 40 40 0 0 0 284.6 230" fill="none" stroke="#000" stroke-width="1.5" />
+    <text x="295" y="242" font-family="Times New Roman, serif" font-size="18" font-style="italic">ωt</text>
+
+    <!-- FELSŐ SZÖG (ωt a függőleges és a sebességvektor között) -->
+    <path d="M 379.9 135 A 40 40 0 0 0 359.9 140.4" fill="none" stroke="#000" stroke-width="1.5" />
+    <text x="355" y="130" font-family="Times New Roman, serif" font-size="18" font-style="italic">ωt</text>
+
+    <!-- Kiegészítő magyarázat a kép sarkába -->
+    <rect x="20" y="380" width="260" height="90" rx="5" fill="#f9f9f9" stroke="#ccc" stroke-width="1" />
+    <text x="30" y="405" font-family="Arial, sans-serif" font-size="14" fill="#333">Az ábráról leolvasható:</text>
+    <text x="30" y="425" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ff0000">|v<tspan baseline-shift="sub" font-size="0.7em">x</tspan>| = v · sin(ωt)</text>
+    <text x="30" y="445" font-family="Arial, sans-serif" font-size="14" fill="#333">Mivel v<tspan baseline-shift="sub" font-size="0.7em">x</tspan> balra mutat (negatív):</text>
+    <text x="30" y="460" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#ff0000">v<tspan baseline-shift="sub" font-size="0.7em">x</tspan> = -A·ω·sin(ωt)</text>
+
+</svg>

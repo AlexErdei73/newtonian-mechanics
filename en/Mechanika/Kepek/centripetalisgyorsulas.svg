@@ -1,0 +1,103 @@
+<svg width="600" height="550" xmlns="http://www.w3.org/2000/svg">
+  <!-- Háttér -->
+  <rect width="100%" height="100%" fill="white" />
+  
+  <defs>
+    <!-- Zöld nyílhegy (vt) -->
+    <marker id="arrowhead-green" markerWidth="10" markerHeight="7" 
+    refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#388e3c" />
+    </marker>
+    <!-- Piros nyílhegy (s) - befelé mutató -->
+    <marker id="arrowhead-red" markerWidth="12" markerHeight="12" 
+    refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#d32f2f" />
+    </marker>
+  </defs>
+
+  <g transform="translate(50, 50)">
+    
+    <!-- Cím -->
+    <text x="250" y="20" font-family="Arial, sans-serif" font-size="20" text-anchor="middle" font-weight="bold">
+      A centripetális gyorsulás levezetése
+    </text>
+    <text x="250" y="45" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="#555">
+      (R + s)² = R² + (vt)²
+    </text>
+
+    <!-- Koordináták:
+         Középpont (O): 100, 400
+         Sugár (R): 300 px
+         Start pont (A): 100, 100
+         Érintő vége (B): 350, 100 (vt = 250px)
+    -->
+
+    <!-- 1. Körív -->
+    <path d="M 100 100 A 300 300 0 0 1 316 190" 
+          stroke="#ccc" stroke-width="2" fill="none" stroke-dasharray="5,5" />
+    <text x="325" y="210" font-family="Arial" font-size="14" fill="#999">Körpálya</text>
+
+    <!-- 2. A Háromszög befogói -->
+
+    <!-- Függőleges sugár (R) -->
+    <line x1="100" y1="400" x2="100" y2="100" 
+          stroke="#1976d2" stroke-width="3" />
+    <text x="80" y="250" font-family="Arial" font-size="18" fill="#1976d2" font-weight="bold">R</text>
+
+    <!-- Vízszintes érintő (v*t) -->
+    <line x1="100" y1="100" x2="340" y2="100" 
+          stroke="#388e3c" stroke-width="3" marker-end="url(#arrowhead-green)" />
+    <text x="225" y="90" font-family="Arial" font-size="18" fill="#388e3c" font-weight="bold">v · t</text>
+
+    <!-- 3. Az Átfogó (R + s) felbontva -->
+    
+    <!-- Számítás a metszéspontra (C):
+         Vektor O->B: (250, -300). Hossz: ~390.5
+         Metszéspont (C): x=292, y=169.6
+    -->
+
+    <!-- Átfogó alsó része (R) - KÉK -->
+    <!-- A középponttól a körívig tart -->
+    <line x1="100" y1="400" x2="290" y2="172" 
+          stroke="#1976d2" stroke-width="2" stroke-dasharray="5,2" />
+    
+    <!-- Átfogó felső része (s) - PIROS -->
+    <!-- A B ponttól (kint) a C pontig (körív) tart - BEFELÉ MUTAT -->
+    <line x1="350" y1="100" x2="298" y2="162" 
+          stroke="#d32f2f" stroke-width="4" marker-end="url(#arrowhead-red)" />
+
+    <!-- 4. Jelölések az átfogón -->
+    
+    <!-- Kapcsos zárójel-szerű jelölés R-hez az átfogón -->
+    <!-- Egy vékony segédvonal eltolva, hogy látszódjon a hossza -->
+    <line x1="105" y1="405" x2="295" y2="177" 
+          stroke="#1976d2" stroke-width="1" opacity="0.5" />
+    <text x="190" y="310" font-family="Arial" font-size="16" fill="#1976d2" font-weight="bold">R</text>
+
+    <!-- s felirat -->
+    <text x="340" y="150" font-family="Arial" font-size="18" fill="#d32f2f" font-weight="bold">s</text>
+    
+    <!-- Magyarázó szöveg az átfogó mellé -->
+    <text x="260" y="270" font-family="Arial" font-size="14" fill="#555" transform="rotate(-50 260,270)">
+      Teljes átfogó: R + s
+    </text>
+
+    <!-- Derékszög -->
+    <polyline points="100,120 120,120 120,100" stroke="black" fill="none" />
+
+    <!-- Pontok -->
+    <circle cx="100" cy="400" r="4" fill="black" />
+    <text x="90" y="425" font-family="Arial" font-size="12">O</text>
+
+    <circle cx="100" cy="100" r="4" fill="black" />
+    <text x="90" y="95" font-family="Arial" font-size="12">A</text>
+
+    <circle cx="350" cy="100" r="4" fill="black" />
+    <text x="360" y="105" font-family="Arial" font-size="12">B</text>
+
+    <!-- Metszéspont a körön -->
+    <circle cx="292" cy="169.6" r="4" fill="#1976d2" />
+    <text x="305" y="185" font-family="Arial" font-size="12" fill="#1976d2">C</text>
+
+  </g>
+</svg>

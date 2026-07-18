@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 380" width="100%" height="100%">
+  <defs>
+    <!-- Piros nyílhegy az erővektornak -->
+    <marker id="arrow-red" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#c0392b" />
+    </marker>
+    <!-- Lila nyílhegy a szögsebességnek -->
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#8e44ad" />
+    </marker>
+  </defs>
+
+  <!-- Háttér (hogy sötét módban is jól mutasson) -->
+  <rect width="100%" height="100%" fill="#ffffff" rx="8" />
+
+  <!-- Plafon és rögzítés (vonal és sraffozás) -->
+  <line x1="130" y1="30" x2="270" y2="30" stroke="#2c3e50" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 135 30 L 145 15 M 155 30 L 165 15 M 175 30 L 185 15 M 195 30 L 205 15 M 215 30 L 225 15 M 235 30 L 245 15 M 255 30 L 265 15" stroke="#2c3e50" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Csapágyazás / Motor -->
+  <rect x="185" y="30" width="30" height="40" fill="#bdc3c7" stroke="#34495e" stroke-width="2" rx="4"/>
+
+  <!-- Függőleges forgástengely -->
+  <line x1="200" y1="20" x2="200" y2="350" stroke="#7f8c8d" stroke-dasharray="6,6" stroke-width="2"/>
+
+  <!-- Tömegközéppont körpályája (vízszintes síkban) -->
+  <ellipse cx="200" cy="186.5" rx="74.6" ry="15" fill="none" stroke="#bdc3c7" stroke-dasharray="4,4" stroke-width="2"/>
+  
+  <!-- Rúd végpontjának körpályája -->
+  <ellipse cx="200" cy="293" rx="149.1" ry="30" fill="none" stroke="#bdc3c7" stroke-dasharray="4,4" stroke-width="2"/>
+
+  <!-- Rúd (L hosszúság) -->
+  <line x1="200" y1="80" x2="349.1" y2="293" stroke="#34495e" stroke-width="10" stroke-linecap="round"/>
+
+  <!-- Felfüggesztés csapja -->
+  <circle cx="200" cy="80" r="5" fill="#ecf0f1" stroke="#2c3e50" stroke-width="2"/>
+
+  <!-- Tömegközéppont (L/2) -->
+  <circle cx="274.6" cy="186.5" r="6" fill="#e74c3c"/>
+
+  <!-- Tömeg 'm' felirat -->
+  <text x="286" y="182" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#e74c3c">m</text>
+
+  <!-- L/2 hosszak jelölése (szöveggel) -->
+  <text x="250" y="120" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#34495e">L/2</text>
+  <text x="325" y="225" font-family="Georgia, serif" font-style="italic" font-size="16" fill="#34495e">L/2</text>
+
+  <!-- Tömegközéppont távolsága a tengelytől (r_i sugarú kör) -->
+  <line x1="200" y1="186.5" x2="268" y2="186.5" stroke="#7f8c8d" stroke-dasharray="2,2" stroke-width="2"/>
+
+  <!-- Alfa szög jelölése (függőleges és a rúd között) -->
+  <path d="M 200 150 Q 222.1 150 240.15 137.3" fill="none" stroke="#2980b9" stroke-width="2"/>
+  <text x="208" y="168" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#2980b9">α</text>
+
+  <!-- Omega (szögsebesség) jelölése a motor körül -->
+  <path d="M 165 50 C 165 15, 235 15, 235 50" fill="none" stroke="#8e44ad" stroke-width="2" marker-end="url(#arrow-purple)"/>
+  <text x="242" y="45" font-family="Georgia, serif" font-style="italic" font-size="22" fill="#8e44ad">ω</text>
+
+  <!-- Nehézségi erő vektor (mg) -->
+  <line x1="274.6" y1="186.5" x2="274.6" y2="260" stroke="#c0392b" stroke-width="3" marker-end="url(#arrow-red)"/>
+  <text x="284" y="240" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#c0392b">mg</text>
+</svg>

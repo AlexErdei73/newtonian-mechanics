@@ -57,8 +57,9 @@ Tehát megállapíthatjuk, hogy a közlekedőedény száraiban a folyadék helyz
 
 ### Kísérletek
 
-* [Víz viselkedése az űrállomáson](https://www.youtube.com/watch?v=H_qPWZbxFl8)
-* [Szappanhártya feszítőereje](https://www.youtube.com/shorts/iKmm7GZ7G_0)
+[Víz viselkedése az űrállomáson](https://www.youtube.com/watch?v=H_qPWZbxFl8)
+
+[Szappanhártya feszítőereje](https://www.youtube.com/shorts/iKmm7GZ7G_0)
 
 Az első kísérletben a víz az űrállomáson, egyensúlyi állapotban gömb alakot vesz fel. Amíg az egyensúly be nem áll, addig természetesen a víz felszíne vibrál, és így a gömb folyamatos rezgésben van. Azt is megfigyelhetjük, hogy a jelenség olyan, mintha a víz felszínén (a víz-levegő határfelületen) egy rugalmas hártya helyezkedne el. A kialakult rendszer stabil, mivel a gravitáció elhanyagolható, így a folyadék szabadon lebeg a súlytalanság állapotában.
 
@@ -95,9 +96,9 @@ Most már könnyen megválaszolhatjuk a kérdéseinket. A szabadon lebegő vízc
 
 A mechanikai rendszerek az egyensúlyra törekedve igyekeznek minimalizálni a potenciális energiájukat, ami jelen esetben a folyadékfelület minimalizálását jelenti. Mivel adott térfogat mellett a **gömb geometriai formájának a legkisebb a felülete**, a folyadékok egyensúlyi állapotban automatikusan ezt a formát veszik fel.
 
-### Kísérletek
+### Kísérlet
 
-* [Szappanhártyák minimálfelületei](https://www.youtube.com/watch?v=Yg0TPid2Yt4&t=28m35s)
+[Szappanhártyák minimálfelületei](https://www.youtube.com/watch?v=Yg0TPid2Yt4&t=28m35s)
 
 ## Példák
 

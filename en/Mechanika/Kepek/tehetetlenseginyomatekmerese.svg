@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 550">
+  <defs>
+    <!-- Nyílhegyek definíciói az új színkódoláshoz -->
+    <marker id="arrow-orange" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#E67E22" />
+    </marker>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#2980B9" />
+    </marker>
+    <marker id="arrow-green" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#27AE60" />
+    </marker>
+    <marker id="arrow-purple" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M 0 0 L 8 4 L 0 8 Z" fill="#8E44AD" />
+    </marker>
+  </defs>
+
+  <!-- Fehér háttér -->
+  <rect width="100%" height="100%" fill="#ffffff" />
+
+  <!-- Középső elválasztó vonal -->
+  <line x1="425" y1="20" x2="425" y2="530" stroke="#BDC3C7" stroke-width="2" stroke-dasharray="10,10" />
+
+  <!-- Címek -->
+  <text x="212" y="40" text-anchor="middle" font-size="20" font-family="sans-serif" font-weight="bold" fill="#2C3E50">Oldalnézet (Keresztmetszet)</text>
+  <text x="637" y="40" text-anchor="middle" font-size="20" font-family="sans-serif" font-weight="bold" fill="#2C3E50">Felülnézet</text>
+
+  <!-- ================= BAL OLDAL: OLDALNÉZET ================= -->
+  
+  <!-- Asztal és láb -->
+  <rect x="20" y="320" width="280" height="15" fill="#BDC3C7" />
+  <rect x="60" y="335" width="20" height="180" fill="#95A5A6" />
+
+  <!-- Terelőcsiga állványa és maga a csiga -->
+  <path d="M 290 320 L 290 205 L 270 205 L 270 320 Z" fill="#7F8C8D" />
+  <circle cx="280" cy="205" r="15" fill="#BDC3C7" stroke="#34495E" stroke-width="2" />
+  <circle cx="280" cy="205" r="3" fill="#2C3E50" />
+
+  <!-- Fő tengely állványa és tengelye -->
+  <path d="M 120 320 L 140 290 L 160 320 Z" fill="#7F8C8D" />
+  <rect x="135" y="100" width="10" height="190" fill="#95A5A6" />
+
+  <!-- Nagy körlap (Θ) -->
+  <rect x="50" y="230" width="180" height="20" rx="4" fill="#3498DB" opacity="0.8" />
+  <text x="60" y="245" fill="#ffffff" font-style="italic" font-family="sans-serif" font-weight="bold" font-size="14">Θ</text>
+
+  <!-- Kis csiga a körlapon -->
+  <rect x="120" y="175" width="40" height="55" rx="3" fill="#2980B9" />
+  
+  <!-- Fonál feltekeredése a csigán (hogy látszódjon a frontális leválás) -->
+  <line x1="120" y1="195" x2="160" y2="195" stroke="#1F618D" stroke-width="2" />
+  <line x1="120" y1="205" x2="160" y2="205" stroke="#1F618D" stroke-width="2" />
+  <line x1="120" y1="215" x2="160" y2="215" stroke="#1F618D" stroke-width="2" />
+  <line x1="120" y1="225" x2="160" y2="225" stroke="#1F618D" stroke-width="2" />
+
+  <!-- Fonál vízszintes és függőleges ága -->
+  <!-- A fonál a csiga közepéről (frontálisan) indul -->
+  <line x1="140" y1="190" x2="280" y2="190" stroke="#2C3E50" stroke-width="2" />
+  <line x1="295" y1="205" x2="295" y2="400" stroke="#2C3E50" stroke-width="2" />
+
+  <!-- Süllyedő test (narancssárga) -->
+  <rect x="280" y="400" width="30" height="40" rx="3" fill="#E67E22" />
+  <text x="295" y="425" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-style="italic">m</text>
+
+  <!-- ERŐK ÉS VEKTOROK AZ OLDALNÉZETBEN -->
+  
+  <!-- Gravitációs erő a testre (narancs) -->
+  <line x1="295" y1="440" x2="295" y2="510" stroke="#E67E22" stroke-width="3" marker-end="url(#arrow-orange)" />
+  <text x="305" y="495" fill="#E67E22" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="16">mg</text>
+  
+  <!-- Kötelet feszítő erő a testre (narancs, testből indul) -->
+  <line x1="295" y1="400" x2="295" y2="330" stroke="#E67E22" stroke-width="3" marker-end="url(#arrow-orange)" />
+  <text x="305" y="350" fill="#E67E22" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="16">K</text>
+  
+  <!-- Kötelet feszítő erő a kis csigára (kék, csiga szélétől indul) -->
+  <line x1="160" y1="190" x2="230" y2="190" stroke="#2980B9" stroke-width="3" marker-end="url(#arrow-blue)" />
+  <text x="190" y="180" fill="#2980B9" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="16">K</text>
+
+  <!-- Gyorsulás vektor (haladó mozgás, zöld) -->
+  <line x1="340" y1="400" x2="340" y2="460" stroke="#27AE60" stroke-width="3" marker-end="url(#arrow-green)" />
+  <text x="350" y="440" fill="#27AE60" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="16">a</text>
+
+  <!-- Szögsebesség / Szöggyorsulás (lila, CCW irányú = balra mutató a tetőn) -->
+  <path d="M 180 120 Q 140 100 100 120" fill="none" stroke="#8E44AD" stroke-width="3" marker-end="url(#arrow-purple)" />
+  <text x="90" y="115" fill="#8E44AD" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="16">β, ω</text>
+
+  <!-- ================= JOBB OLDAL: FELÜLNÉZET ================= -->
+  
+  <!-- Nagy Körlap (Θ) -->
+  <circle cx="637" cy="250" r="140" fill="#3498DB" opacity="0.6" stroke="#2980B9" stroke-width="3" />
+  <text x="520" y="360" fill="#2980B9" font-family="sans-serif" font-weight="bold" font-size="18">Körlap (Θ)</text>
+
+  <!-- Kis csiga a közepén -->
+  <circle cx="637" cy="250" r="45" fill="#2980B9" stroke="#1F618D" stroke-width="3" />
+  <!-- Forgástengely -->
+  <circle cx="637" cy="250" r="6" fill="#2C3E50" />
+
+  <!-- Fonál ága (pozitív forgás miatt a csiga ALÓL indul) -->
+  <line x1="637" y1="295" x2="800" y2="295" stroke="#2C3E50" stroke-width="3" />
+
+  <!-- Erőkar (r) sugár a fonál érintési pontjáig -->
+  <line x1="637" y1="250" x2="637" y2="295" stroke="#2C3E50" stroke-width="2" stroke-dasharray="4,3" />
+  <text x="620" y="278" fill="#2C3E50" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="16">r</text>
+
+  <!-- Húzóerő a csigára (kék, a csiga peremétől indul) -->
+  <line x1="637" y1="295" x2="717" y2="295" stroke="#2980B9" stroke-width="4" marker-end="url(#arrow-blue)" />
+  <text x="680" y="285" fill="#2980B9" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="18">K</text>
+
+  <!-- Forgásirányt mutató vektor (lila, CCW = balra fent ívelő) -->
+  <path d="M 720 170 A 110 110 0 0 0 540 190" fill="none" stroke="#8E44AD" stroke-width="4" marker-end="url(#arrow-purple)" />
+  <text x="520" y="160" fill="#8E44AD" font-family="sans-serif" font-weight="bold" font-style="italic" font-size="18">β, ω</text>
+
+  <!-- Összefoglaló képlet doboz (jobb alsó sarok) -->
+  <rect x="520" y="420" width="230" height="80" rx="5" fill="#F8F9F9" stroke="#BDC3C7" stroke-width="2" />
+  <text x="635" y="445" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#2C3E50">
+    Newton II.: <tspan font-style="italic" font-weight="bold" fill="#E67E22">mg</tspan><tspan font-style="italic" font-weight="bold"> - </tspan><tspan font-style="italic" font-weight="bold" fill="#E67E22">K</tspan><tspan font-style="italic" font-weight="bold"> = ma</tspan>
+  </text>
+  <text x="635" y="475" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#2C3E50">
+    Forgómozgás: <tspan font-style="italic" font-weight="bold">M<tspan font-size="12" baseline-shift="sub">z</tspan> = </tspan><tspan font-style="italic" font-weight="bold" fill="#2980B9">K</tspan><tspan font-style="italic" font-weight="bold"> · r = Θ · β</tspan>
+  </text>
+</svg>

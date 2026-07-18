@@ -2,21 +2,64 @@ const fs = require("fs");
 const path = require("path");
 
 // ==========================================================================
-// 1. ADAT-VEZÉRELT PROJEKT MÁTRIX: 10 TÉMAKÖR ÉS AZ INDULÓ LECKÉK SZÁMA
-// Bármikor átírhatod a 'startLesson' számokat, a teljes portál magától igazodik!
+// ENVIRONMENT DECODER & STATE MANAGEMENT
+// Resolves runtime execution arguments directly from the build pipeline flags
+// ==========================================================================
+const args = process.argv.slice(2);
+let currentLang = "hu"; // Fallback operational language track
+
+args.forEach(arg => {
+    if (arg.startsWith("--lang=")) {
+        currentLang = arg.split("=")[1];
+    }
+});
+
+// ==========================================================================
+// 1. DATA-DRIVEN INTERACTIVE COURSE TOPICS MATRIX
+// Language-mapped object keys handle automatic menu compilation on both tracks
 // ==========================================================================
 const COURSE_TOPICS = [
-    { name: "Kinematika",               startLesson: 1  },
-    { name: "Dinamika",                 startLesson: 13 },
-    { name: "Energia",                  startLesson: 22 },
-    { name: "Impulzus, Ütközések",      startLesson: 26 },
-    { name: "Pontrendszerek",           startLesson: 31 },
-    { name: "Körmozgás",                startLesson: 36 },
-    { name: "Gravitáció",               startLesson: 40 },
-    { name: "Impulzus momentum",        startLesson: 47 },
-    { name: "Rezgések, hullámok",       startLesson: 54 },
-    { name: "Folyadék mechanika",       startLesson: 69 }
+    { startLesson: 1,  hu: "Kinematika",               en: "Kinematics" },
+    { startLesson: 13, hu: "Dinamika",                 en: "Dynamics" },
+    { startLesson: 22, hu: "Energia",                  en: "Energy" },
+    { startLesson: 26, hu: "Impulzus, Ütközések",      en: "Momentum & Collisions" },
+    { startLesson: 31, hu: "Pontrendszerek",           en: "Systems of Particles" },
+    { startLesson: 36, hu: "Körmozgás",                en: "Circular Motion" },
+    { startLesson: 40, hu: "Gravitáció",               en: "Gravitation" },
+    { startLesson: 47, hu: "Impulzus momentum",        en: "Rotational Dynamics" },
+    { startLesson: 54, hu: "Rezgések, hullámok",       en: "Oscillations & Waves" },
+    { startLesson: 69, hu: "Folyadék mechanika",       en: "Fluid Mechanics" }
 ];
+
+// DUAL-LANGUAGE LOCALIZATION ATLASFOR NAVBAR GRAPHICS
+const UI_MAP = {
+    hu: {
+        brand: "Newton Mechanikája",
+        prev: " Előző",
+        content: " Tartalom",
+        next: "Következő ",
+        about: "Névjegy",
+        solutions: "Megoldások",
+        literature: "Irodalom",
+        topicsTrigger: "Témakörök ▼",
+        ariaPrev: "Előző lecke",
+        ariaToc: "Tartalomjegyzék",
+        ariaNext: "Következő lecke"
+    },
+    en: {
+        brand: "Newtonian Mechanics",
+        prev: " Prev",
+        content: " Contents",
+        next: "Next ",
+        about: "About",
+        solutions: "Solutions",
+        literature: "Bibliography",
+        topicsTrigger: "Topics ▼",
+        ariaPrev: "Previous lesson",
+        ariaToc: "Table of Contents",
+        ariaNext: "Next lesson"
+    }
+};
 
 function extractStartTime(url) {
     let tIdx = url.indexOf("t=");
@@ -32,8 +75,8 @@ function extractStartTime(url) {
     let cleanSec = rawTime.replace("amp;", "").replace("s", "").trim();
     if (cleanSec.includes("m")) {
         let parts = cleanSec.split("m");
-        let minutes = parseInt(parts, 10) || 0;
-        let seconds = parseInt(parts, 10) || 0;
+        let minutes = parseInt(parts[0], 10) || 0;
+        let seconds = parseInt(parts[1], 10) || 0;
         return (minutes * 60 + seconds).toString();
     }
     if (cleanSec && !isNaN(cleanSec)) return cleanSec;
@@ -42,10 +85,12 @@ function extractStartTime(url) {
 
 function buildLectureOrder() {
     const order = [];
-    const tocPath = path.join(__dirname, "NEWTON_MECHANIKAJA.md");
+    // Dynamic context detection tracks target localized filesystem trees flawlessly
+    const targetFile = currentLang === "en" ? path.join("en", "NEWTON_MECHANIKAJA.md") : "NEWTON_MECHANIKAJA.md";
+    const tocPath = path.join(__dirname, targetFile);
     
     if (!fs.existsSync(tocPath)) {
-        console.log("⚠️ Figyelem: NEWTON_MECHANIKAJA.md nem található az abszolút útvonalon!");
+        console.log(`⚠️ Figyelem: A(z) ${targetFile} nem található az abszolút útvonalon!`);
         return order;
     }
     
@@ -72,10 +117,6 @@ function buildLectureOrder() {
     return order;
 }
 
-// ==========================================================================
-// CUSTOM LESSON TITLE EXTRACTOR ENGINE
-// Dynamically parses the rendered H1 string token to populate browser meta headers
-// ==========================================================================
 function getTitle(content) {
     const h1Start = content.indexOf("<h1");
     let h1End = content.indexOf("</h1>");
@@ -103,11 +144,13 @@ function getAnchor(title) {
 }
 
 const LECTURE_ORDER = buildLectureOrder();
-console.log(`🚀 Rendszer-automatizálás: ${LECTURE_ORDER.length} lecke sikeresen beolvasva a tartalomjegyzékből.`);
+console.log(`🚀 Rendszer-automatizálás [${currentLang.toUpperCase()}]: ${LECTURE_ORDER.length} lecke sikeresen beolvasva.`);
+
 // ==========================================================================
 // 2. DINAMIKUS NAVBAR GENERÁLÁS (A MÁTRIX TÖMB ALAPJÁN)
 // ==========================================================================
-function generateNavbar(filename, isSubfolder) {
+function generateNavbar(filename, isSubfolder, fileTitle) {
+    const ui = UI_MAP[currentLang];
     const pfx = isSubfolder ? "../" : "";
     const curFolder = isSubfolder ? "" : "Mechanika/";
     
@@ -135,6 +178,12 @@ function generateNavbar(filename, isSubfolder) {
         }
     }
 
+    // Dynamic solution anchor locks directly onto your localized scroll execution paths
+    let solutionsAnchor = "";
+    if (isSubfolder && fileTitle) {
+        solutionsAnchor = getAnchor(fileTitle);
+    }
+
     // AUTOMATIKUS DROPDOWN MENÜ GENERÁLÁSA A KORÁBBI TÖMBBŐL
     let dropdownMenuItemsMarkup = "";
     COURSE_TOPICS.forEach((topic) => {
@@ -147,35 +196,34 @@ function generateNavbar(filename, isSubfolder) {
             finalRoute = pfx + "NEWTON_MECHANIKAJA.html";
         }
         
-        dropdownMenuItemsMarkup += "<li><a href=\"" + finalRoute + "\">" + topic.name + "</a></li>";
+        const topicLabel = currentLang === "en" ? topic.en : topic.hu;
+        dropdownMenuItemsMarkup += "<li><a href=\"" + finalRoute + "\">" + topicLabel + "</a></li>";
     });
 
     return "<header class=\"global-header\">" +
         "<nav class=\"global-navbar\">" +
-            "<a href=\"" + pfx + "index.html\" class=\"navbar-brand navbar-brand-desktop\">Newton Mechanikája</a>" +
-            // KÖZÉP: A nyilak és a menüjel kívülre kerültek a span elé/mögé!
+            "<a href=\"" + pfx + "index.html\" class=\"navbar-brand navbar-brand-desktop\">" + ui.brand + "</a>" +
             "<div class=\"nav-group-center\">" +
-                "<a href=\"" + prevLink + "\" class=\"nav-btn\" aria-label=\"Előző lecke\">◀<span class=\"btn-text\"> Előző</span></a>" +
-                "<a href=\"" + pfx + "NEWTON_MECHANIKAJA.html\" class=\"nav-btn\" aria-label=\"Tartalomjegyzék\">☰<span class=\"btn-text\"> Tartalom</span></a>" +
-                "<a href=\"" + nextLink + "\" class=\"nav-btn\" aria-label=\"Következő lecke\"><span class=\"btn-text\">Következő </span>▶</a>" +
+                "<a href=\"" + prevLink + "\" class=\"nav-btn\" aria-label=\"" + ui.ariaPrev + "\">◀<span class=\"btn-text\">" + ui.prev + "</span></a>" +
+                "<a href=\"" + pfx + "NEWTON_MECHANIKAJA.html\" class=\"nav-btn\" aria-label=\"" + ui.ariaToc + "\">☰<span class=\"btn-text\">" + ui.content + "</span></a>" +
+                "<a href=\"" + nextLink + "\" class=\"nav-btn\" aria-label=\"" + ui.ariaNext + "\"><span class=\"btn-text\">" + ui.next + "</span>▶</a>" +
             "</div>" +
             
-            // JOBB OLDAL: Hamburger és a listás menüpontok (1 SOROS AUTOMATIKUS LEÚSZTATÓVAL!)
             "<input type=\"checkbox\" id=\"menu-toggle\" class=\"menu-checkbox\" />" +
             "<label for=\"menu-toggle\" class=\"hamburger-icon\" onclick=\"setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);\">" +
                 "<span></span><span></span><span></span>" +
             "</label>" +
 
             "<div class=\"nav-links\">" +
-                "<a href=\"" + pfx + "index.html\" class=\"navbar-brand navbar-brand-mobile\">Newton Mechanikája</a>" +
+                "<a href=\"" + pfx + "index.html\" class=\"navbar-brand navbar-brand-mobile\">" + ui.brand + "</a>" +
                 "<div class=\"nav-group-left\">" +
-                    "<a href=\"" + pfx + "index.html\">Névjegy</a>" +
-                    "<a href=\"" + pfx + "VEGEREDMENYEK.html\" style=\"font-weight: 600;\">Megoldások</a>" +
-                    "<a href=\"" + pfx + "IRODALOMJEGYZEK.html\">Irodalom</a>" + // 🆕 EZ AZ ÚJ SOR!
+                    "<a href=\"" + pfx + "index.html\">" + ui.about + "</a>" +
+                    "<a href=\"" + pfx + "VEGEREDMENYEK.html" + solutionsAnchor + "\" style=\"font-weight: 600;\">" + ui.solutions + "</a>" +
+                    "<a href=\"" + pfx + "IRODALOMJEGYZEK.html\">" + ui.literature + "</a>" +
                 "</div>" +
                 "<div class=\"nav-group-right\">" +
                     "<div class=\"dropdown\">" +
-                        "<a href=\"#\" class=\"dropdown-trigger\" onclick=\"return false;\">Témakörök ▼</a>" +
+                        "<a href=\"#\" class=\"dropdown-trigger\" onclick=\"return false;\">" + ui.topicsTrigger + "</a>" +
                         "<ul class=\"dropdown-menu\">" +
                             dropdownMenuItemsMarkup +
                         "</ul>" +
@@ -195,8 +243,12 @@ function processFile(filePath, isSubfolder = false) {
     let filename = path.basename(filePath);
     let content = fs.readFileSync(filePath, "utf8");
 
+    // Dynamic lesson title parser safely extracts the pristine text for nav mappings
+    let fileTitle = getTitle(content);
+
     if (content.includes("<body>") && !content.includes("class=\"global-header\"")) {
-        const navbarMarkup = generateNavbar(filename, isSubfolder);
+        // We explicitly pass the extracted title token into the custom menu engine
+        const navbarMarkup = generateNavbar(filename, isSubfolder, fileTitle);
         content = content.split("<body>").join("<body>" + navbarMarkup);
     }
 
@@ -261,33 +313,49 @@ function processFile(filePath, isSubfolder = false) {
     }
 
     // DYNAMIC TITLE AUTOMATION
-    // Safely reads the custom H1 header and stamps it into the blank browser tab title
     let title = getTitle(result);
     if (title && result.includes("<title></title>")) {
         result = result.split("<title>").join(`<title>${title}`);
     }
 
-    let anchor = getAnchor(title);
-    console.log(anchor);
+    /*let anchor = getAnchor(title);
     if (anchor && result.includes(`<a href="../VEGEREDMENYEK.html`)) {
         result = result.split(`<a href="../VEGEREDMENYEK.html`).join(`<a href="../VEGEREDMENYEK.html${anchor}`);
-    }
+    }*/
 
-    // BULLETPROOF FIX: We bypass the modified flag, we have removed, completely!
-    // The 'result' variable holds the fully transformed HTML (Navbar + Youtube elements).
-    // Writing this unconditionally ensures Pandoc's raw links are ALWAYS overwritten.
     fs.writeFileSync(filePath, result, "utf8");
 }
 
-processFile("index.html", false);
-processFile("NEWTON_MECHANIKAJA.html", false);
-processFile("VEGEREDMENYEK.html", false);
-processFile("IRODALOMJEGYZEK.html", false);
+// ==========================================================================
+// 4. ENVIRONMENT-DRIVEN RUNTIME INITIALIZATION
+// Safely maps processing directory targets based on pipeline argument states
+// ==========================================================================
+if (currentLang === "en") {
+    console.log("Processing and embedding English navigation frameworks...");
+    processFile(path.join("en", "index.html"), false);
+    processFile(path.join("en", "NEWTON_MECHANIKAJA.html"), false);
+    processFile(path.join("en", "VEGEREDMENYEK.html"), false);
+    processFile(path.join("en", "IRODALOMJEGYZEK.html"), false);
 
-const subDir = "Mechanika";
-if (fs.existsSync(subDir)) {
-    fs.readdirSync(subDir).forEach(file => {
-        if (file.endsWith(".html")) processFile(path.join(subDir, file), true);
-    });
+    const subDirEn = path.join("en", "Mechanika");
+    if (fs.existsSync(subDirEn)) {
+        fs.readdirSync(subDirEn).forEach(file => {
+            if (file.endsWith(".html")) processFile(path.join(subDirEn, file), true);
+        });
+    }
+} else {
+    console.log("Processing and embedding Hungarian navigation frameworks...");
+    processFile("index.html", false);
+    processFile("NEWTON_MECHANIKAJA.html", false);
+    processFile("VEGEREDMENYEK.html", false);
+    processFile("IRODALOMJEGYZEK.html", false);
+
+    const subDirHu = "Mechanika";
+    if (fs.existsSync(subDirHu)) {
+        fs.readdirSync(subDirHu).forEach(file => {
+            if (file.endsWith(".html")) processFile(path.join(subDirHu, file), true);
+        });
+    }
 }
-console.log("=== Dynamic Browser Title Integration Complete! ===");
+
+console.log(`=== Dynamic Browser Title Integration Complete! [${currentLang.toUpperCase()}] ===`);

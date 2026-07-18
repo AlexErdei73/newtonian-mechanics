@@ -92,6 +92,7 @@ Látható, hogy az átlagsebesség ($1{,}4\text{ }\frac{\text{m}}{\text{s}}$) a 
 
 ### 1. feladat
 Egy test a $0\text{ s}$ és $3\text{ s}$ közötti időintervallumban egyenletesen halad $3\text{ }\frac{\text{m}}{\text{s}}$ sebességgel, majd hirtelen egy akadálynak ütközik. Az ütközés lefolyási ideje elhanyagolhatóan rövid; a test innentől kezdve $2\text{ }\frac{\text{m}}{\text{s}}$ sebességgel halad tovább egészen a $8\text{ s}$-os időpillanatig.
+
 * Mekkora a megtett út az első $3\text{ s}$ alatt?
 * Mekkora a megtett út $3\text{ s}$ és $8\text{ s}$ között?
 * Mekkora a teljes megtett út?
@@ -99,12 +100,14 @@ Egy test a $0\text{ s}$ és $3\text{ s}$ közötti időintervallumban egyenletes
 
 ### 2. feladat
 Egy autó a $0\text{ s}$ és $50\text{ s}$ közötti időtartamban egyenletesen halad $20\text{ }\frac{\text{m}}{\text{s}}$ sebességgel, majd hirtelen intenzíven fékezni kezd. A sebességcsökkenés ideje mindössze $0{,}5\text{ s}$, ami az egész folyamathoz képest elhanyagolható. Az autó innentől kezdve $10\text{ }\frac{\text{m}}{\text{s}}$ sebességgel halad tovább egészen a $150\text{ s}$-os időpillanatig.
+
 * Mekkora a megtett út az első $50\text{ s}$ alatt?
 * Mekkora a megtett út $50\text{ s}$ és $150\text{ s}$ között?
 * Mekkora az átlagsebesség a teljes $150\text{ s}$-os időtartam alatt?
 
 ### 3. feladat
 Egy kerékpáros a $0\text{ s}$ és $20\text{ s}$ közötti intervallumban egyenletesen halad $5\text{ }\frac{\text{m}}{\text{s}}$ sebességgel, majd hirtelen felgyorsít. A sebességnövekedés ideje mindössze $0{,}2\text{ s}$, ami a teljes mozgáshoz képest elhanyagolható. A kerékpáros innentől kezdve $8\text{ }\frac{\text{m}}{\text{s}}$ sebességgel halad tovább egészen a $60\text{ s}$-os időpillanatig.
+
 * Mekkora a megtett út az első $20\text{ s}$ alatt?
 * Mekkora a megtett út $20\text{ s}$ és $60\text{ s}$ között?
 * Mekkora a teljes megtett út?
@@ -112,6 +115,7 @@ Egy kerékpáros a $0\text{ s}$ és $20\text{ s}$ közötti intervallumban egyen
 
 ### 4. feladat
 Egy vonat a $0\text{ s}$ és $100\text{ s}$ közötti időtartamban egyenletesen halad $15\text{ }\frac{\text{m}}{\text{s}}$ sebességgel, majd egy állomás megközelítésekor hirtelen lassít. A lassítás időtartama mindössze $1\text{ s}$, ami a teljes folyamat mellett elhanyagolható. A vonat innentől kezdve $5\text{ }\frac{\text{m}}{\text{s}}$ sebességgel halad tovább egészen a $300\text{ s}$-os időpillanatig.
+
 * Mekkora a megtett út az első $100\text{ s}$ alatt?
 * Mekkora a megtett út $100\text{ s}$ és $300\text{ s}$ között?
 * Mekkora az átlagsebesség a teljes $300\text{ s}$-os időtartam alatt?

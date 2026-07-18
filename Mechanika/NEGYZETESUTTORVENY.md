@@ -45,7 +45,7 @@ Ez a példa pont a grafikonon ábrázolt mozgás. Látszik azonban a grafikonró
 ## Az út-idő grafikon
 Vizsgáljuk most meg az út-idő grafikont, amit megkaphatunk a szimuláció alapján is. Erről is nyilvánvalóan $4\text{ m}$-t kell leolvassunk $4\text{ s}$ idő elteltével.
 
-[Súrlódásmentes mozgás lejtőn simulátor](https://github.io)
+[Súrlódásmentes mozgás lejtőn szimulátor](https://alexerdei73.github.io/physics-engine/project/#94f47c36-ead0-4d85-a1ff-ac1827797ce9)
 
 Gyakorlásképp nézzük meg az út-idő grafikon képét a szimuláció alapján! A következő grafikont kell kapnunk:
 

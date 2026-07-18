@@ -70,10 +70,13 @@ Ez a viszonylag összetett és nehezen reprodukálható definíció szintén egy
 
 ## Érdekességek (Videók)
 
-- [A méter története](https://www.youtube.com/watch?v=e3eHHwcMVcA)
-- [A mechanikus óra működése](https://www.youtube.com/watch?v=9_QsCLYs2mY)
-- [A kvarcóra működési elve](https://www.youtube.com/watch?v=1pM6uD8nePo)
-- [Az atomóra működése és a GPS](https://www.youtube.com/watch?v=p2BxAu6WZI8)
+[A méter története](https://www.youtube.com/watch?v=e3eHHwcMVcA)
+
+[A mechanikus óra működése](https://www.youtube.com/watch?v=9_QsCLYs2mY)
+
+[A kvarcóra működési elve](https://www.youtube.com/watch?v=1pM6uD8nePo)
+
+[Az atomóra működése és a GPS](https://www.youtube.com/watch?v=p2BxAu6WZI8)
 
 ## Prefixumok
 
