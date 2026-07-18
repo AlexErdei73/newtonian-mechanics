@@ -38,10 +38,10 @@ $$
 
 ![The simple pendulum](Kepek/mathematicalpendulum.svg)
 
-Only the gravitational force and the string tension force $K$ act on the body. The string tension force points in the direction of the string, while the gravitational force points vertically downward. Let us resolve the gravitational force into its components parallel to the string and perpendicular to it, therefore in the tangential direction! The pendulum performs circular motion, but this is not uniform circular motion. For the components in the direction of the string, the following relationship is valid:
+Only the gravitational force and the string tension force $T$ act on the body. The string tension force points in the direction of the string, while the gravitational force points vertically downward. Let us resolve the gravitational force into its components parallel to the string and perpendicular to it, therefore in the tangential direction! The pendulum performs circular motion, but this is not uniform circular motion. For the components in the direction of the string, the following relationship is valid:
 
 $$
-K - mg\cos\phi = ma_{cp} = m\frac {v^2} {l} = ml\omega^2
+T - mg\cos\phi = ma_{cp} = m\frac {v^2} {l} = ml\omega^2
 $$
 
 This equation is suitable for determining the force developing in the string. Right now we are not interested in this. The equation interesting for us relates to the tangential components. Let the positive direction of the components be the direction determined by the increase of the displacement angle $\phi$! In this case, the tangential force is the following:
@@ -68,22 +68,22 @@ $$
 a_t = -g\sin\phi
 $$
 
-The signed value of the tangential acceleration can be obtained from the angular acceleration $\beta$ as follows:
+The signed value of the tangential acceleration can be obtained from the angular acceleration $\alpha$ as follows:
 
 $$
-a_t = l\beta
+a_t = l\alpha
 $$
 
 This is true because the radius of the circular motion in our case is $l$, the length of the string.
 
 $$
-l\beta = -g\sin\phi
+l\alpha = -g\sin\phi
 $$
 
 Therefore, the final form of the equation of motion is the following:
 
 $$
-\beta = - \frac g l \sin\phi
+\alpha = - \frac g l \sin\phi
 $$
 
 For the angle $\phi$, we obtained an equation similar to the equation of motion analogous to simple harmonic motion. Instead of acceleration, the angular acceleration appears here, but on the right side of the equation, instead of the angle $\phi$, its sine appears. We would expect the appearance of the angle $\phi$, because then the equation could be solved with a cosine function for the variation of the unknown angle $\phi$ over time, therefore the motion in that case would be simple harmonic motion for the angle $\phi$! Although this equation can be solved, its solution is possible only with advanced mathematics and is difficult even there, because it leads to the application of special functions. We choose another path.
@@ -111,7 +111,7 @@ $$
 Therefore, the equation of motion of the pendulum in the case of small displacements takes the following form:
 
 $$
-\beta = -\frac g l \phi
+\alpha = -\frac g l \phi
 $$
 
 Let us introduce the following notation!

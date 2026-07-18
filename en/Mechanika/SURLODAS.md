@@ -28,12 +28,12 @@ Let's watch the following videos, which present the various properties and laws 
 
 Based on experimental observations, we can conclude that surfaces sliding on each other exert a force parallel to the surface that decelerates the relative motion. This force is called the **sliding friction force** (or kinetic friction force).
 
-The magnitude of the sliding friction force depends solely on the material quality of the surfaces in contact and the normal constraint force $K$ pressing the surfaces together. It does not, however, depend on the apparent size of the contact surface area.
+The magnitude of the sliding friction force depends solely on the material quality of the surfaces in contact and the normal constraint force $N$ pressing the surfaces together. It does not, however, depend on the apparent size of the contact surface area.
 
 > **The magnitude of the sliding friction force is directly proportional to the force pressing the surfaces together perpendicularly. The proportionality factor is the coefficient of friction ($\mu$), which is a dimensionless number characteristic of the material quality of the surfaces (its value usually falls between $0$ and $1$). The friction force opposes the relative motion of the surfaces and always acts parallel to the surface.**
 
 $$
-F_s = \mu \cdot K
+F_s = \mu \cdot N
 $$
 
 ### Example
@@ -44,22 +44,22 @@ In the case presented in the simulation, an object with a mass of $0.05\text{ kg
 The magnitude of the gravitational force acting on the object:
 
 $$
-G = m \cdot g = 0.05 \cdot 9.81 = 0.4905\text{ N}
+F_g = m \cdot g = 0.05 \cdot 9.81 = 0.4905\text{ N}
 $$
 
 Since the ground is horizontal and the object does not move vertically, the perpendicular constraint force pressing the surfaces together is equal in magnitude to the gravitational force:
 
 $$
-K = G = 0.4905\text{ N}
+N = F_g = 0.4905\text{ N}
 $$
 
 The magnitude of the sliding friction force:
 
 $$
-F_s = \mu \cdot K = 0.5 \cdot 0.4905 = 0.24525\text{ N}
+F_s = \mu \cdot N = 0.5 \cdot 0.4905 = 0.24525\text{ N}
 $$
 
-According to Newton's second law ($F_e = m \cdot |a|$), since only the friction force acts on it on the horizontal plane:
+According to Newton's second law ($F_{\text{net}} = m \cdot |a|$), since only the friction force acts on it on the horizontal plane:
 
 $$
 0.24525 = 0.05 \cdot |a|
@@ -103,16 +103,16 @@ The static friction force cannot increase beyond a maximum threshold limit value
 A relationship similar to sliding friction applies to the maximum static friction force:
 
 $$
-F_{t,\text{max}} = \mu_t \cdot K
+F_{t,\text{max}} = \mu_t \cdot N
 $$
 
 That is, it is generally true for the static force that:
 
 $$
-F_t \leqslant \mu_t \cdot K
+F_t \leqslant \mu_t \cdot N
 $$
 
-We have seen from experiments that for a given set of surfaces and force $K$, a larger force is required to initiate slipping than to maintain motion. In other words, the coefficient of static friction is greater than (or equal to) the coefficient of sliding friction:
+We have seen from experiments that for a given set of surfaces and force $N$, a larger force is required to initiate slipping than to maintain motion. In other words, the coefficient of static friction is greater than (or equal to) the coefficient of sliding friction:
 
 $$
 \mu \leqslant \mu_t
@@ -124,17 +124,17 @@ An object with a mass of $0.500\text{ kg}$ is placed on horizontal ground, and w
 The gravitational force and the normal constraint force on the horizontal ground are:
 
 $$
-G = m \cdot g = 0.5 \cdot 9.81 = 4.905\text{ N}
+F_g = m \cdot g = 0.5 \cdot 9.81 = 4.905\text{ N}
 $$
 
 $$
-K = G = 4.905\text{ N}
+N = F_g = 4.905\text{ N}
 $$
 
 Let's calculate the maximum possible value of the static friction force:
 
 $$
-F_{t,\text{max}} = \mu_t \cdot K = 0.7 \cdot 4.905 \approx 3.434\text{ N}
+F_{t,\text{max}} = \mu_t \cdot N = 0.7 \cdot 4.905 \approx 3.434\text{ N}
 $$
 
 Since the maximum static force ($3.434\text{ N}$) is greater than the $3.00\text{ N}$ pushing force we applied, static friction can fully balance the external influence. Thus, the net force acting on the object is zero, the acceleration is $0\text{ }\frac{\text{m}}{\text{s}^2}$, and the object remains at rest. The magnitude of the occurring static friction force in this phase is exactly $3\text{ N}$, and its direction is opposite to the pushing force.
@@ -142,16 +142,16 @@ Since the maximum static force ($3.434\text{ N}$) is greater than the $3.00\text
 If we increase the pushing force to $4.00\text{ N}$, this value already exceeds the maximum limit of the static force ($3.434\text{ N}$). The object then slips and sets into motion, so from this point on, we must calculate using the sliding friction force:
 
 $$
-F_s = \mu \cdot K = 0.5 \cdot 4.905 \approx 2.453\text{ N}
+F_s = \mu \cdot N = 0.5 \cdot 4.905 \approx 2.453\text{ N}
 $$
 
 The magnitude of the horizontal net force ensuring motion is:
 
 $$
-F_e = F - F_s = 4 - 2.453 = 1.547\text{ N}
+F_{\text{net}} = F - F_s = 4 - 2.453 = 1.547\text{ N}
 $$
 
-From Newton's second law ($F_e = m \cdot a$), the acceleration of the moving object is:
+From Newton's second law ($F_{\text{net}} = m \cdot a$), the acceleration of the moving object is:
 
 $$
 1.547 = 0.5 \cdot a

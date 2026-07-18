@@ -7,26 +7,26 @@
 The gravitational force acting on the car is:
 
 $$
-G = m \cdot g = 1300 \cdot 9.81 = 12,753\text{ N}
+F_g = m \cdot g = 1300 \cdot 9.81 = 12,753\text{ N}
 $$
 
 Since the road is horizontal, the perpendicular constraint force pressing the surfaces together is equal to the gravitational force:
 
 $$
-K = G = 12,753\text{ N}
+N = F_g = 12,753\text{ N}
 $$
 
 Since the ABS prevents the wheels from slipping, the maximum achievable static friction force acts on the vehicle, providing the net braking force:
 
 $$
-F_e = F_{t,\text{max}} = \mu_t \cdot K = 0.8 \cdot 12,753 = 10,202.4\text{ N}
+F_{\text{net}} = F_{t,\text{max}} = \mu_t \cdot N = 0.8 \cdot 12,753 = 10,202.4\text{ N}
 $$
 
-From Newton's second law ($F_e = m \cdot |a|$), the magnitude of the acceleration is:
+From Newton's second law ($F_{\text{net}} = m \cdot |a|$), the magnitude of the acceleration is:
 
 $$
 
-|a| = \frac {F_e} {m} = \frac {10,202.4} {1300} \approx 7.848\text{ }\frac {m} {s^2}
+|a| = \frac {F_{\text{net}}} {m} = \frac {10,202.4} {1300} \approx 7.848\text{ }\frac {m} {s^2}
 $$
 
 Since the motion is decelerating, the sign of the acceleration is negative: $a = -7.848\text{ }\frac {\text{m}} {\text{s}^2}$.
@@ -57,7 +57,7 @@ It can be seen that the magnitude of the deceleration is actually completely ind
 
 $$
 
-|a| = \frac {F_e} {m} = \frac {\mu_t \cdot m \cdot g} {m} = \mu_t \cdot g = 0.8 \cdot 9.81 = 7.848\text{ }\frac {\text{m}} {\text{s}^2}
+|a| = \frac {F_{\text{net}}} {m} = \frac {\mu_t \cdot m \cdot g} {m} = \mu_t \cdot g = 0.8 \cdot 9.81 = 7.848\text{ }\frac {\text{m}} {\text{s}^2}
 $$
 
 **In the case of locked (sliding) wheels:**
@@ -84,10 +84,10 @@ The numerical results clearly show that by using the anti-lock braking system (A
 
 2. The coefficient of sliding friction between a car's tire and the asphalt is $0.6$, and the static coefficient is $0.8$. What is the car's maximum acceleration if the traction control system functions optimally? How much time does it take and over what distance does the vehicle reach a speed of $100\text{ }\frac{\text{km}}{\text{h}}$ from rest? Calculate the same quantities if the driven wheels spin (slide) throughout the entire duration of the acceleration!
 
-By using traction control, the wheels operate at the limit of static friction, so the maximum accelerating force is provided by the maximum static friction ($F_e = F_{t,\text{max}} = \mu_t \cdot m \cdot g$):
+By using traction control, the wheels operate at the limit of static friction, so the maximum accelerating force is provided by the maximum static friction ($F_{\text{net}} = F_{t,\text{max}} = \mu_t \cdot m \cdot g$):
 
 $$
-a = \frac {F_e} {m} = \frac {\mu_t \cdot m \cdot g} {m} = \mu_t \cdot g = 0.8 \cdot 9.81 = 7.848\text{ }\frac {\text{m}} {\text{s}^2}
+a = \frac {F_{\text{net}}} {m} = \frac {\mu_t \cdot m \cdot g} {m} = \mu_t \cdot g = 0.8 \cdot 9.81 = 7.848\text{ }\frac {\text{m}} {\text{s}^2}
 $$
 
 The time required to reach a speed of $v = 100\text{ }\frac{\text{km}}{\text{h}} \approx 27.78\text{ }\frac{\text{m}}{\text{s}}$:

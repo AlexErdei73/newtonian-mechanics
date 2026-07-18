@@ -13,10 +13,10 @@ For now, we will continue to focus on the motion of a single point mass, before 
 So far, we have used the second law in the following form:
 
 $$
-F_e = m \cdot a
+F_{\text{net}} = m \cdot a
 $$
 
-Here, the net force $F_e$ and the acceleration $a$ are directional vectors pointing along the same line.
+Here, the net force $F_{\text{net}}$ and the acceleration $a$ are directional vectors pointing along the same line.
 
 $$
 a = \frac {\Delta v} {t} = \frac {v - v_0} {t}
@@ -31,17 +31,17 @@ $$
 then:
 
 $$
-F_e = m \cdot \frac {v - v_0} {t} = \frac {m \cdot v - m_0 \cdot v_0} {t} = \frac {\Delta (m \cdot v)} {t}
+F_{\text{net}} = m \cdot \frac {v - v_0} {t} = \frac {m \cdot v - m_0 \cdot v_0} {t} = \frac {\Delta (m \cdot v)} {t}
 $$
 
-The quantity $m \cdot v$ is called linear momentum. Symbol: $I$. This is a vector quantity and points in the direction of the velocity vector. Thus, the general form of the second law is:
+The quantity $m \cdot v$ is called linear momentum. Symbol: $p$. This is a vector quantity and points in the direction of the velocity vector. Thus, the general form of the second law is:
 
 $$
-\vec{I} = m \cdot \vec{v}
+\vec{p} = m \cdot \vec{v}
 $$
 
 $$
-\vec{F}_e = \frac {\Delta \vec{I}} {t}
+\vec{F}_{\text{net}} = \frac {\Delta \vec{p}} {t}
 $$
 
 This is the formula as Newton originally formulated the second law. This original formulation is valid for a constant force, meaning it applies to uniformly accelerated motion, which we are focusing on for now.
@@ -52,17 +52,17 @@ $$
 t \to 0
 $$
 
-The form used so far ($F_e = m \cdot a$) is valid only if the mass can be considered constant. We have assumed this until now. In physics, there are two main cases where mass cannot be considered constant:
+The form used so far ($F_{\text{net}} = m \cdot a$) is valid only if the mass can be considered constant. We have assumed this until now. In physics, there are two main cases where mass cannot be considered constant:
 
 1. At velocities comparable to the speed of light in a vacuum, mass is not constant. The second law in its original form remains valid even then, but the expression for momentum changes. This is handled by the theory of relativity, which does not fall under Newtonian mechanics.
 2. Rockets eject fuel at high velocities, so their mass decreases during motion. The original form formulated with momentum is used to describe rocket motion.
 
 ## The Concept of Momentum
 
-> **The product of an object's mass and its velocity is called linear momentum. Symbol: $I$, unit: $\text{kg} \cdot \text{m/s}$. Momentum is a vector quantity that points in the direction of velocity.**
+> **The product of an object's mass and its velocity is called linear momentum. Symbol: $p$, unit: $\text{kg} \cdot \text{m/s}$. Momentum is a vector quantity that points in the direction of velocity.**
 
 $$
-\vec{I} = m \cdot \vec{v}
+\vec{p} = m \cdot \vec{v}
 $$
 
 The original formulation of the second law written with momentum is the formula shown above.
@@ -72,7 +72,7 @@ The original formulation of the second law written with momentum is the formula 
 If the net force is zero, then the change in momentum is also zero. This means that:
 
 $$
-\vec{I} = \vec{I}_0
+\vec{p} = \vec{p}_0
 $$
 
 If the mass of the body is also constant, then:
@@ -98,23 +98,23 @@ Thus, the body performs rectilinear uniform motion or remains at rest. We have t
 1. A car with a mass of $1300\text{ kg}$ accelerates on a straight road from a speed of $20.0\text{ }\frac{\text{m}}{\text{s}}$ to a speed of $30.0\text{ }\frac{\text{m}}{\text{s}}$ in a duration of $2.00\text{ s}$. What is the initial momentum? What is the momentum at the end of the acceleration? What is the accelerating force? Calculate the acceleration and the distance covered during the acceleration! Friction and air resistance are negligible.
 
 $$
-I_0 = m \cdot v_0 = 1300 \cdot 20.0 = 26,000\text{ }\frac{\text{kg} \cdot \text{m}}{\text{s}}
+p_0 = m \cdot v_0 = 1300 \cdot 20.0 = 26,000\text{ }\frac{\text{kg} \cdot \text{m}}{\text{s}}
 $$
 
 $$
-I = m \cdot v = 1300 \cdot 30.0 = 39,000\text{ }\frac{\text{kg} \cdot \text{m}}{\text{s}}
+p = m \cdot v = 1300 \cdot 30.0 = 39,000\text{ }\frac{\text{kg} \cdot \text{m}}{\text{s}}
 $$
 
 $$
-F_e = \frac {I - I_0} {t} = \frac {39,000 - 26,000} {2} = 6500\text{ N} = 6.50\text{ kN}
+F_{\text{net}} = \frac {p - p_0} {t} = \frac {39,000 - 26,000} {2} = 6500\text{ N} = 6.50\text{ kN}
 $$
 
 $$
-F_e = m \cdot a
+F_{\text{net}} = m \cdot a
 $$
 
 $$
-a = \frac {F_e} {m} = \frac {6500} {1300} = 5.00\text{ }\frac{\text{m}}{\text{s}^2}
+a = \frac {F_{\text{net}}} {m} = \frac {6500} {1300} = 5.00\text{ }\frac{\text{m}}{\text{s}^2}
 $$
 
 $$
@@ -124,15 +124,15 @@ $$
 2. The engines of a fighter jet exert a force of $76\text{ kN}$ at takeoff. The mass of the jet is $18,000\text{ kg}$. How much time does it take for the jet to take off if it must accelerate from rest to a speed of $80.0\text{ }\frac{\text{m}}{\text{s}}$? What is the jet's momentum at the moment of takeoff? What is the acceleration and the length of the runway required for takeoff?
 
 $$
-I = m \cdot v = 18,000 \cdot 80.0 = 1,440,000\text{ }\frac{\text{kg} \cdot \text{m}}{\text{s}}
+p = m \cdot v = 18,000 \cdot 80.0 = 1,440,000\text{ }\frac{\text{kg} \cdot \text{m}}{\text{s}}
 $$
 
 $$
-I_0 = 0
+p_0 = 0
 $$
 
 $$
-F_e = \frac {I - I_0} {t}
+F_{\text{net}} = \frac {p - p_0} {t}
 $$
 
 $$

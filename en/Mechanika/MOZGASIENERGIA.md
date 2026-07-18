@@ -7,7 +7,7 @@ Let us investigate the acceleration work required to accelerate a body with a ma
 The accelerating net force acting on the body is:
 
 $$
-F_e = m \cdot a = m \cdot \frac {v - v_0} {t}
+F_{\text{net}} = m \cdot a = m \cdot \frac {v - v_0} {t}
 $$
 
 The length of the acceleration phase expressed from the quadratic distance law (substituting the change in velocity for $a$):
@@ -23,7 +23,7 @@ $$
 The acceleration work performed, as the product of the force and the displacement:
 
 $$
-W = F_e \cdot s = m \cdot \frac {v - v_0} {t} \cdot \frac {v_0 + v} {2} \cdot t = \frac {m} {2} \cdot (v - v_0) \cdot (v + v_0) = \frac {m} {2} \cdot (v^2 - v_0^2)  
+W = F_{\text{net}} \cdot s = m \cdot \frac {v - v_0} {t} \cdot \frac {v_0 + v} {2} \cdot t = \frac {m} {2} \cdot (v - v_0) \cdot (v + v_0) = \frac {m} {2} \cdot (v^2 - v_0^2)  
 $$
 
 $$
@@ -79,7 +79,7 @@ a = \frac {v - v_0} {t} = \frac {20 - 10} {10} = 1\text{ }\frac {\text{m}} {\tex
 $$
 
 $$
-F_e = m \cdot a = 1300 \cdot 1 = 1300\text{ N}
+F_{\text{net}} = m \cdot a = 1300 \cdot 1 = 1300\text{ N}
 $$
 
 The length of the acceleration phase based on the quadratic distance law:
@@ -91,7 +91,7 @@ $$
 According to the definition of mechanical work:
 
 $$
-W = F_e \cdot s = 1300 \cdot 150 = 195,000\text{ J} = 195.0\text{ kJ}
+W = F_{\text{net}} \cdot s = 1300 \cdot 150 = 195,000\text{ J} = 195.0\text{ kJ}
 $$
 
 It can be seen that the two different approaches yield exactly the same final result, which proves that using the work-energy theorem can save a lot of unnecessary intermediate calculations.
@@ -117,7 +117,7 @@ $$
 The work of the gravitational force is negative because it opposes the motion (decelerates the stone). Let's verify this through dynamics! The magnitude of the gravitational force acting on the body ($g = 9.81\text{ }\frac{\text{m}}{\text{s}^2}$):
 
 $$
-F_e = G = m \cdot g = 0.1 \cdot 9.81 = 0.981\text{ N}
+F_{\text{net}} = F_g = m \cdot g = 0.1 \cdot 9.81 = 0.981\text{ N}
 $$
 
 The value of deceleration along the vertical axis is $a = -9.81\text{ }\frac{\text{m}}{\text{s}^2}$, and the change in velocity is $\Delta v = v - v_0 = 2 - 5 = -3\text{ }\frac{\text{m}}{\text{s}}$. The duration of the ascent:
@@ -135,7 +135,7 @@ $$
 Since the upward displacement and the downward gravitational force are in opposite directions ($\alpha = 180^\circ$):
 
 $$
-W = -F_e \cdot s = -0.981 \cdot 1.071 \approx -1.050\text{ J}
+W = -F_{\text{net}} \cdot s = -0.981 \cdot 1.071 \approx -1.050\text{ J}
 $$
 
 Within the limits of calculation accuracy, the results match perfectly.

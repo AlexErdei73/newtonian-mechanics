@@ -103,7 +103,7 @@ $$
 The initial momentum:
 
 $$
-I_0 = 2mv_0
+p_0 = 2mv_0
 $$
 
 Exactly the same energy and momentum must appear at the other end of the system for both conservation laws to be satisfied. Is it possible for only one ball to rise?
@@ -111,7 +111,7 @@ Exactly the same energy and momentum must appear at the other end of the system 
 Due to the conservation of momentum:
 
 $$
-I_0 = I
+p_0 = p
 $$
 
 $$

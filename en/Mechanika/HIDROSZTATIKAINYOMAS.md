@@ -39,7 +39,7 @@ m = \rho \cdot V = 1000 \cdot 100 = 100,000\text{ kg}
 $$
 
 $$
-G = mg = 100,000 \cdot 9.81 = 981,000\text{ N}
+F_g = mg = 100,000 \cdot 9.81 = 981,000\text{ N}
 $$
 
 $$

@@ -7,11 +7,11 @@ We have seen that near the surface of the Earth, freely falling objects accelera
 According to Newton's Second Law:
 
 $$
-F_e = m \cdot a
+F_{\text{net}} = m \cdot a
 $$
 
 $$
-F_e = G
+F_{\text{net}} = F_g
 $$
 
 $$
@@ -21,17 +21,17 @@ $$
 Therefore, a gravitational force of:
 
 $$
-G = m \cdot g
+F_g = m \cdot g
 $$
 
 acts on the objects. If an object is in equilibrium, meaning it is not in free fall but is suspended or supported instead, this is only possible if the support or suspension counterbalances the gravitational force. In other words, it exerts an equal but vertically upward-pointing constraint force on the object at the point of contact. In this case, however, the object also exerts a force on the support or suspension that is equal in magnitude to the gravitational force but opposite in direction—meaning it points vertically downward—according to Newton's Third Law. This force is called the weight of the object.
 
 $$
-K = G = m \cdot g
+N = F_g = m \cdot g
 $$
 
 $$
-F_s = K
+F_s = N
 $$
 
 $$
@@ -63,16 +63,16 @@ If an object is not stationary relative to the Earth but moves with acceleration
 First, let the acceleration of the object point vertically **upward** with a magnitude of $a$. For the object to accelerate upward, according to Newton's equation of motion, the upward-pointing constraint force must be greater than the downward-pointing gravitational force:
 
 $$
-F_e = K - G = m \cdot a
+F_{\text{net}} = N - F_g = m \cdot a
 $$
 
 Expressing the constraint force yields:
 
 $$
-K = m \cdot a + G = m \cdot a + m \cdot g = m \cdot (a + g)
+N = m \cdot a + F_g = m \cdot a + m \cdot g = m \cdot (a + g)
 $$
 
-Since the weight and the constraint force remain equal in magnitude according to Newton's Third Law ($F_s = K$), the weight of the object increases during upward acceleration:
+Since the weight and the constraint force remain equal in magnitude according to Newton's Third Law ($F_s = N$), the weight of the object increases during upward acceleration:
 
 $$
 F_s = m \cdot (a + g)
@@ -81,13 +81,13 @@ $$
 Now let us examine the case where the object accelerates vertically **downward** with an acceleration magnitude of $a$. If the object is merely lowered gently, the downward-pointing gravitational force is greater than the upward-holding constraint force:
 
 $$
-F_e = G - K = m \cdot a
+F_{\text{net}} = F_g - N = m \cdot a
 $$
 
 From this, the constraint force, and thus the reduced weight of the object, can be calculated:
 
 $$
-F_s = K = G - m \cdot a = m \cdot g - m \cdot a = m \cdot (g - a)
+F_s = N = F_g - m \cdot a = m \cdot g - m \cdot a = m \cdot (g - a)
 $$
 
 Let us carefully consider how we determine the magnitude of the net force. Since the constraint force and the gravitational force are vectors in opposite directions, the magnitude of the net force is their difference, subtracting the smaller one from the larger one. If the object accelerates upward, the constraint force is the larger one; if it accelerates downward (but its acceleration is less than $g$), the gravitational force is the larger one.

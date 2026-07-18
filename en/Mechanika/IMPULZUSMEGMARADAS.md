@@ -1,49 +1,49 @@
 # Conservation of Linear Momentum
 
-Let us consider two point masses interacting with each other and with their environment. Let an external force $\vec{F_1}$ from the environment act on body 1, and an external force $\vec{F_2}$ from the environment act on body 2. Let the internal force exerted on body 1 by body 2 be denoted by $\vec{F_{1,2}}$, and conversely, the force exerted on body 2 by body 1 be denoted by $\vec{F_{2,1}}$.
+Let us consider two point masses interacting with each other and with their environment. Let an external force $\vec{F}_1$ from the environment act on body 1, and an external force $\vec{F}_2$ from the environment act on body 2. Let the internal force exerted on body 1 by body 2 be denoted by $\vec{F}_{1,2}$, and conversely, the force exerted on body 2 by body 1 be denoted by $\vec{F}_{2,1}$.
 
 Let us write Newton's second law in its original formulation for both bodies:
 
 $$
-\vec{F_1} + \vec{F_{1,2}} = \frac {\Delta \vec{I_1}} {t}
+\vec{F}_1 + \vec{F}_{1,2} = \frac {\Delta \vec{p}_1} {t}
 $$
 
 $$
-\vec{F}_2 + \vec{F_{2,1}} = \frac {\Delta \vec{I_2}} {t}
+\vec{F}_2 + \vec{F}_{2,1} = \frac {\Delta \vec{p}_2} {t}
 $$
 
 We add the two equations together, because if the left side equals the right side in both equations, their sums must also remain equal:
 
 $$
-\vec{F_1} + \vec{F_2} + \vec{F_{1,2}} + \vec{F_{2,1}} = \frac {\Delta \vec{I_1}} {t} + \frac {\Delta \vec{I_2}} {t}
+\vec{F}_1 + \vec{F}_2 + \vec{F}_{1,2} + \vec{F}_{2,1} = \frac {\Delta \vec{p}_1} {t} + \frac {\Delta \vec{p}_2} {t}
 $$
 
 What happened to the internal forces on the left side? Their sum became a zero vector, which follows directly from Newton's third law (the principle of action-reaction):
 
 $$
-\vec{F_{1,2}} = -\vec{F_{2,1}}
+\vec{F}_{1,2} = -\vec{F}_{2,1}
 $$
 
 Thus, indeed:
 
 $$
-\vec{F_{1,2}} + \vec{F_{2,1}} = \vec{0}
+\vec{F}_{1,2} + \vec{F}_{2,1} = \vec{0}
 $$
 
 Let us assume that the resultant of the external forces is also $\vec{0}$. We can then multiply by the duration $t$ to obtain:
 
 $$
-\vec{0} = \Delta \vec{I_1} + \Delta \vec{I_2}
+\vec{0} = \Delta \vec{p}_1 + \Delta \vec{p}_2
 $$
 
 We can rearrange this slightly according to the definition of changes:
 
 $$
-\vec{0} = \vec{I_1} - \vec{I_{1,0}} + \vec{I_2} - \vec{I_{2,0}}
+\vec{0} = \vec{p}_1 - \vec{p_{1,0}} + \vec{p}_2 - \vec{p_{2,0}}
 $$
 
 $$
-\vec{I_{1,0}} + \vec{I_{2,0}} = \vec{I_1} + \vec{I_2}
+\vec{p_{1,0}} + \vec{p_{2,0}} = \vec{p}_1 + \vec{p}_2
 $$
 
 Our final equation expresses that the total momentum of the system is constant. Although we showed this derivation only for the case of two bodies, it can be generalized to a system consisting of an arbitrary number of bodies. If we write the second law for all bodies and then add the resulting equations together, the sum of the internal forces will always cancel out in pairs. If the net external force is zero, the sum of the momentum changes on the right side also yields zero, meaning the total momentum does not change. Therefore, we can state the law of conservation of momentum for systems of particles:
@@ -54,10 +54,10 @@ Our final equation expresses that the total momentum of the system is constant. 
 
 1. Two ice skaters stand facing each other on the ice. The mass of the one on the left is $40.0\text{ kg}$, and the one on the right is $60.0\text{ kg}$. The first skater ($40.0\text{ kg}$) pushes the second one, thereby acquiring a velocity of magnitude $3.00\text{ }\frac{\text{m}}{\text{s}}$. What will be the velocity in the opposite direction of the other skater ($60\text{ kg}$)? Friction is negligible, and the skaters are just standing on the ice apart from the push, meaning they do not propel themselves!
 
-At the starting point, the total momentum of the system is zero. Due to the conservation of momentum, the total momentum after the push must also be zero. The vectors $\vec{I_1}$ and $\vec{I_2}$ are horizontal but point in opposite directions, since the velocity vectors point oppositely as well. Thus, the equation written with coordinates along the straight line of motion is:
+At the starting point, the total momentum of the system is zero. Due to the conservation of momentum, the total momentum after the push must also be zero. The vectors $\vec{p}_1$ and $\vec{p}_2$ are horizontal but point in opposite directions, since the velocity vectors point oppositely as well. Thus, the equation written with coordinates along the straight line of motion is:
 
 $$
-I_2 - I_1 = 0
+p_2 - p_1 = 0
 $$
 
 $$
@@ -95,16 +95,16 @@ In this first, collision phase, mechanical energy is not conserved (it converts 
 The magnitude of the momentum before the collision:
 
 $$
-I_0 = m \cdot v_0 = 0.020 \cdot 600 = 12\text{ }\frac {\text{kg} \cdot \text{m}} {\text{s}}
+p_0 = m \cdot v_0 = 0.020 \cdot 600 = 12\text{ }\frac {\text{kg} \cdot \text{m}} {\text{s}}
 $$
 
 The magnitude of the momentum after the collision:
 
 $$
-I = M \cdot v = 2.020 \cdot v
+p = M \cdot v = 2.020 \cdot v
 $$
 
-According to the conservation of momentum ($I_0 = I$):
+According to the conservation of momentum ($p_0 = p$):
 
 $$
 12 = 2.020 \cdot v
@@ -152,13 +152,13 @@ The magnitude of the average braking force acting on the bullet:
 
 $$
 
-|F_e| = m \cdot |a_1| = m \cdot \frac {|v - v_0|} {t} = 0.02 \cdot \frac {600 - v} {t} = \frac {12 - 0.02 \cdot v} {t}
+|F_{\text{net}}| = m \cdot |a_1| = m \cdot \frac {|v - v_0|} {t} = 0.02 \cdot \frac {600 - v} {t} = \frac {12 - 0.02 \cdot v} {t}
 $$
 
 Due to the law of action-reaction, an identical but forward-pointing accelerating force acts on the block:
 
 $$
-F_e = (M - m) \cdot a_2 = 2.00 \cdot \frac {v} {t} = \frac {2 \cdot v} {t}
+F_{\text{net}} = (M - m) \cdot a_2 = 2.00 \cdot \frac {v} {t} = \frac {2 \cdot v} {t}
 $$
 
 The magnitudes of the two internal forces are equal:

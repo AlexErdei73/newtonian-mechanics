@@ -32,13 +32,13 @@ For a long time, it was believed that a coordinate system fixed to the "fixed st
 > **The acceleration of an object is directly proportional to the vector sum of the forces acting on the object, and inversely proportional to the mass of the object.**
 
 $$
-\vec{F}_e = m \cdot \vec{a}
+\vec{F}_{\text{net}} = m \cdot \vec{a}
 $$
 
-In this relationship, the net resultant force $\vec{F}_e$ is the vector sum of the individual forces acting on the object:
+In this relationship, the net resultant force $\vec{F}_{\text{net}}$ is the vector sum of the individual forces acting on the object:
 
 $$
-\vec{F}_e = \vec{F}_1 + \vec{F}_2 + \dots + \vec{F}_n
+\vec{F}_{\text{net}} = \vec{F}_1 + \vec{F}_2 + \dots + \vec{F}_n
 $$
 
 Force, like velocity and acceleration, is therefore a **vector quantity**. The SI unit of force is the **Newton** (symbol: $\text{N}$). A force has a magnitude of $1\text{ N}$ if it causes an object with a mass of $1\text{ kg}$ to move with an acceleration of exactly $1\text{ }\frac{\text{m}}{\text{s}^2}$:

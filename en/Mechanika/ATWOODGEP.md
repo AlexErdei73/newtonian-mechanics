@@ -11,17 +11,17 @@ F_{\text{net}} = ma
 $$
 
 $$
-K_1 - K_2 = ma
+T_1 - T_2 = ma
 $$
 
-Here, $K_1$ and $K_2$ are the forces exerted at the two ends, acting in opposite directions. If $m = 0$, then:
+Here, $T_1$ and $T_2$ are the forces exerted at the two ends, acting in opposite directions. If $m = 0$, then:
 
 $$
-K_1 - K_2 = 0
+T_1 - T_2 = 0
 $$
 
 $$
-K_1 = K_2
+T_1 = T_2
 $$
 
 > **A straight, taut string of negligible mass exerts equal forces at its two ends. The force exerted by the string points along the direction of the string; it has no component perpendicular to the string.**
@@ -81,17 +81,17 @@ The figure below shows an ideal Atwood machine:
 We write Newton's second law for both bodies:
 
 $$
-K - m_1 g = m_1 a
+T - m_1 g = m_1 a
 $$
 
 $$
-m_2 g - K = m_2 a
+m_2 g - T = m_2 a
 $$
 
 We express the tension from the first equation and substitute it into the second equation, then solve the equation for $a$:
 
 $$
-K = m_1 g + m_1 a
+T = m_1 g + m_1 a
 $$
 
 $$
@@ -114,14 +114,14 @@ $$
 a = \frac{m_2 - m_1}{m_1 + m_2}g
 $$
 
-Now we calculate the value of $K$:
+Now we calculate the value of $T$:
 
 $$
-K = m_1 g + m_1 a = m_1 g + m_1 \frac{m_2 - m_1}{m_1 + m_2}g
+T = m_1 g + m_1 a = m_1 g + m_1 \frac{m_2 - m_1}{m_1 + m_2}g
 $$
 
 $$
-K = \frac{m_1(m_1 + m_2) + m_1(m_2 - m_1)}{m_1 + m_2}g = \frac{2m_1 m_2}{m_1 + m_2}g
+T = \frac{m_1(m_1 + m_2) + m_1(m_2 - m_1)}{m_1 + m_2}g = \frac{2m_1 m_2}{m_1 + m_2}g
 $$
 
 The weight of the system (the force pulling on the suspension):

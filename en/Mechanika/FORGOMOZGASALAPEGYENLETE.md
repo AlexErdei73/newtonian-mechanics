@@ -5,33 +5,33 @@
 We will describe the rotation of a rigid body around a fixed axis, which will again be the $z$-axis. As discussed, this type of motion is a planar motion. If the net torque of the external forces acting on the rigid body is not zero, the rotation of the body speeds up or slows down. We characterize this with the angular acceleration, which is the rate of change of angular velocity per unit time. This is also a signed quantity, just like angular velocity.
 
 $$
-\beta = \frac{\omega - \omega_0}{t}
+\alpha = \frac{\omega - \omega_0}{t}
 $$
 
-> **The change in angular velocity per unit time is called angular acceleration. Angular acceleration is a signed quantity, denoted by $\beta$, and its unit is $\frac{1}{\mathrm{s}^2}$.**
+> **The change in angular velocity per unit time is called angular acceleration. Angular acceleration is a signed quantity, denoted by $\alpha$, and its unit is $\frac{1}{\mathrm{s}^2}$.**
 
 ## The Fundamental Equation of Rotational Motion
 
 According to the law of angular momentum (or angular impulse), we can write the following relationship:
 
 $$
-M_{z,\text{e}}^{\text{k}} = \frac{N_z - N_{z,0}}{t}
+M_{z,\text{e}}^{\text{k}} = \frac{L_z - L_{z,0}}{t}
 $$
 
 $$
-N_z = \Theta \omega
+L_z = I \omega
 $$
 
 Substituting this into the previous equation, we obtain:
 
 $$
-M_{z,\text{e}}^{\text{k}} = \frac{\Theta \omega - \Theta \omega_0}{t} = \Theta \frac{\omega - \omega_0}{t}
+M_{z,\text{e}}^{\text{k}} = \frac{I \omega - I \omega_0}{t} = I \frac{\omega - \omega_0}{t}
 $$
 
-Here, we have factored out the moment of inertia $\Theta$, which relates to the axis of rotation and remains constant since the body is rigid. This yields our final relationship:
+Here, we have factored out the moment of inertia $I$, which relates to the axis of rotation and remains constant since the body is rigid. This yields our final relationship:
 
 $$
-M_{z,\text{e}}^{\text{k}} = \Theta \beta
+M_{z,\text{e}}^{\text{k}} = I \alpha
 $$
 
 > **According to the fundamental equation of rotational motion, the net torque of external forces is nothing other than the product of the moment of inertia and the angular acceleration. This is the rotational equivalent of Newton's second law.**
@@ -42,7 +42,7 @@ Here, the torques and the moment of inertia must be determined relative to the a
 
 [Measuring the Moment of Inertia of a Circular Object](https://www.youtube.com/watch?v=O4PSeSuyKZU)
 
-In the experiment shown in the video, the moment of inertia of a rigid disk is determined using an air bearing table. The air bearing constantly blows compressed air between the surfaces, which almost completely eliminates friction around the axis. Consequently, the external braking torque can be considered negligible. The driving torque is provided by a freely falling mass suspended on a string, which runs over a fixed auxiliary pulley. Based on the measurement data obtained from the experiment, the moment of inertia of the disk can be precisely determined using the fundamental equation of rotational motion ($M = \Theta \beta$).
+In the experiment shown in the video, the moment of inertia of a rigid disk is determined using an air bearing table. The air bearing constantly blows compressed air between the surfaces, which almost completely eliminates friction around the axis. Consequently, the external braking torque can be considered negligible. The driving torque is provided by a freely falling mass suspended on a string, which runs over a fixed auxiliary pulley. Based on the measurement data obtained from the experiment, the moment of inertia of the disk can be precisely determined using the fundamental equation of rotational motion ($M = I \alpha$).
 
 ### Example
 
@@ -66,13 +66,13 @@ $$
 Writing Newton's second law for the falling mass:
 
 $$
-mg - K = ma
+mg - T = ma
 $$
 
-When the vertically suspended mass accelerates downward, the tension force $K$ (constraint force) in the rope becomes slightly smaller than the static weight (\(mg\)) due to the acceleration:
+When the vertically suspended mass accelerates downward, the tension force $T$ (constraint force) in the rope becomes slightly smaller than the static weight (\(mg\)) due to the acceleration:
 
 $$
-K = mg - ma = m(g - a) = 0.1 \cdot (9.81 - 0.0677) \approx 0.9742\text{ N}
+T = mg - ma = m(g - a) = 0.1 \cdot (9.81 - 0.0677) \approx 0.9742\text{ N}
 $$
 
 The external torque exerted by the rope force acting at the rim of the pulley is:
@@ -84,22 +84,22 @@ $$
 To determine the angular acceleration, we utilize the fact that the tangential velocity of the pulley matches the linear velocity of the rope (\(v = r\omega\)):
 
 $$
-a = \frac{v - v_0}{t} = \frac{r\omega - r\omega_0}{t} = r\frac{\omega - \omega_0}{t} = r\beta
+a = \frac{v - v_0}{t} = \frac{r\omega - r\omega_0}{t} = r\frac{\omega - \omega_0}{t} = r\alpha
 $$
 
 Thus, the angular acceleration of the system is:
 
 $$
-\beta = \frac{a}{r} = \frac{0.0677}{0.0275} \approx 2.462\text{ 1/s}^2
+\alpha = \frac{a}{r} = \frac{0.0677}{0.0275} \approx 2.462\text{ 1/s}^2
 $$
 
-Expressing the moment of inertia from the fundamental equation of rotational motion (\(M_z = \Theta \beta\)):
+Expressing the moment of inertia from the fundamental equation of rotational motion (\(M_z = I \alpha\)):
 
 $$
-\Theta = \frac{M_z}{ \beta} = \frac{0.0268}{2.462} \approx 0.0109\text{ kg}\cdot\text{m}^2 \approx 0.011\text{ kg}\cdot\text{m}^2
+I = \frac{M_z}{ \alpha} = \frac{0.0268}{2.462} \approx 0.0109\text{ kg}\cdot\text{m}^2 \approx 0.011\text{ kg}\cdot\text{m}^2
 $$
 
-The obtained measurement result matches perfectly with the nominal value of $\Theta = 0.011\text{ kg}\cdot\text{m}^2$ printed on the manufacturer's sticker underneath the disk.
+The obtained measurement result matches perfectly with the nominal value of $I = 0.011\text{ kg}\cdot\text{m}^2$ printed on the manufacturer's sticker underneath the disk.
 
 ## Pure Rolling
 
@@ -120,7 +120,7 @@ $$
 Here, $r_{\text{COM}}$ does not change during the rotation, so it can be factored out. This gives our final result:
 
 $$
-a_{\text{COM}} = r_{\text{COM}}\beta
+a_{\text{COM}} = r_{\text{COM}}\alpha
 $$
 
 ### Examples
@@ -134,7 +134,7 @@ $$
 Let us write the fundamental equation of rotational motion relative to the instantaneous axis of rotation!
 
 $$
-M_{z,\text{e}}^{\text{k}} = \Theta \beta
+M_{z,\text{e}}^{\text{k}} = I \alpha
 $$
 
 We know that the only force that has a torque relative to the instantaneous axis of rotation is the pulling force, because the lines of action of all other forces pass through the instantaneous axis of rotation.
@@ -146,28 +146,28 @@ $$
 Here, $r$ is the distance from the center to the instantaneous axis of rotation, which is the radius of the wheel.
 
 $$
-a = r\beta \implies \beta = \frac{a}{r}
+a = r\alpha \implies \alpha = \frac{a}{r}
 $$
 
 We apply the parallel axis theorem (Steiner's theorem) to the moment of inertia!
 
 $$
-\Theta = \Theta_{\text{COM}} + mr^2
+I = I_{\text{COM}} + mr^2
 $$
 
 Substituting all of these, we get the following relationship:
 
 $$
-Fr = (\Theta_{\text{COM}} + mr^2) \frac{a}{r}
+Fr = (I_{\text{COM}} + mr^2) \frac{a}{r}
 $$
 
 From here, we express $a$:
 
 $$
-a = \frac{Fr^2}{\Theta_{\text{COM}} + mr^2} = \frac{\frac{F}{m}}{1 + \frac{\Theta_{\text{COM}}}{mr^2}}
+a = \frac{Fr^2}{I_{\text{COM}} + mr^2} = \frac{\frac{F}{m}}{1 + \frac{I_{\text{COM}}}{mr^2}}
 $$
 
-We see that if $\Theta_{\text{COM}} \ll mr^2$, we get back the acceleration of translational motion, as if there were no rotation. This is to be expected.
+We see that if $I_{\text{COM}} \ll mr^2$, we get back the acceleration of translational motion, as if there were no rotation. This is to be expected.
 
 $$
 a = \frac{\frac{5}{1}}{1 + \frac{0.2}{1 \cdot 0.5^2}} \approx 2.778\ \text{m/s}^2
@@ -180,11 +180,11 @@ F - F_{\text{f}} = ma
 $$
 
 $$
-F_{\text{f}} = F - ma = F - \frac{F}{1 + \frac{\Theta_{\text{COM}}}{mr^2}} = F \frac{\frac{\Theta_{\text{COM}}}{mr^2}}{1 + \frac{\Theta_{\text{COM}}}{mr^2}}
+F_{\text{f}} = F - ma = F - \frac{F}{1 + \frac{I_{\text{COM}}}{mr^2}} = F \frac{\frac{I_{\text{COM}}}{mr^2}}{1 + \frac{I_{\text{COM}}}{mr^2}}
 $$
 
 $$
-\frac{\Theta_{\text{COM}}}{mr^2} = \frac{0.2}{0.25} = 0.8
+\frac{I_{\text{COM}}}{mr^2} = \frac{0.2}{0.25} = 0.8
 $$
 
 $$
@@ -204,11 +204,11 @@ $$
 Substituting this into our formulas in place of $F$ gives the answers!
 
 $$
-a = \frac{g \sin \alpha}{1 + \frac{\Theta_{\text{COM}}}{mr^2}}
+a = \frac{g \sin \alpha}{1 + \frac{I_{\text{COM}}}{mr^2}}
 $$
 
 $$
-F_{\text{f}} = mg \sin \alpha \frac{\frac{\Theta_{\text{COM}}}{mr^2}}{1 + \frac{\Theta_{\text{COM}}}{mr^2}}
+F_{\text{f}} = mg \sin \alpha \frac{\frac{I_{\text{COM}}}{mr^2}}{1 + \frac{I_{\text{COM}}}{mr^2}}
 $$
 
 ### Experiment
@@ -240,14 +240,14 @@ The spin cycle of a washing machine starts from rest and accelerates uniformly t
 A homogeneous solid cylinder of mass $M = 5\text{ kg}$ and radius $R = 0.2\text{ m}$ can rotate without friction around its geometric axis. A thin, massless string is wrapped around the cylinder's surface, and its end is pulled with a constant force of $F = 20\text{ N}$. 
 - What is the angular acceleration of the cylinder? 
 - What will the angular velocity of the cylinder be $4\text{ seconds}$ after the pulling begins?
-**Hint:** The moment of inertia of a homogeneous solid cylinder is: $\Theta = \frac{1}{2}MR^2$.
+**Hint:** The moment of inertia of a homogeneous solid cylinder is: $I = \frac{1}{2}MR^2$.
 
 **Problem 3: Pure Rolling on Horizontal Ground**
 
 A solid sphere of mass $m = 3\text{ kg}$ is pulled in a straight line on horizontal ground by a horizontal force $F = 15\text{ N}$ acting at its center of mass. The sphere rolls purely without slipping. 
 - What is the acceleration of the sphere's center of mass? 
 - What is the magnitude of the static friction force acting between the ground and the sphere? 
-**Hint:** The moment of inertia of a solid sphere is: $\Theta_{\text{COM}} = \frac{2}{5}mR^2$.
+**Hint:** The moment of inertia of a solid sphere is: $I_{\text{COM}} = \frac{2}{5}mR^2$.
 
 **Problem 4: Race of Objects Rolling Down an Incline**
 

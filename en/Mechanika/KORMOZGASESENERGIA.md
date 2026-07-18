@@ -23,7 +23,7 @@ $$
 At the highest point, Newton's second law states:
 
 $$
-K + mg = ma
+N + mg = ma
 $$
 
 $$
@@ -41,27 +41,27 @@ v^2 = 2g(h_0 - 2R)
 $$
 
 $$
-K + mg = m\frac{2g(h_0 - 2R)}{R}
+N + mg = m\frac{2g(h_0 - 2R)}{R}
 $$
 
-Solving for $K$:
+Solving for $N$:
 
 $$
-K = m\frac{2g(h_0 - 2R)}{R} - mg
-$$
-
-$$
-K = m\frac{2gh_0 - 4gR - gR}{R}
+N = m\frac{2g(h_0 - 2R)}{R} - mg
 $$
 
 $$
-K = m\frac{2g(h_0 - \frac{5}{2}R)}{R}
+N = m\frac{2gh_0 - 4gR - gR}{R}
 $$
 
-We utilize the fact that $K$ cannot be negative (the object must press against the rail).
+$$
+N = m\frac{2g(h_0 - \frac{5}{2}R)}{R}
+$$
+
+We utilize the fact that $N$ cannot be negative (the object must press against the rail).
 
 $$
-K \geqslant 0
+N \geqslant 0
 $$
 
 $$
@@ -89,7 +89,7 @@ An object slides down from the topmost peak of a hemispherical surface with no i
 Let the angle in question be $\phi$, which changes over time as the object slides down the surface of the sphere. At any point, the gravitational force acting on the object can be decomposed into a radial component and a tangential component. Let us write down Newton's second law for the radial components!
 
 $$
-mg\cos \phi - K = ma_{\text{cp}}
+mg\cos \phi - N = ma_{\text{cp}}
 $$
 
 The radial (centripetal) acceleration is:
@@ -113,7 +113,7 @@ $$
 At the moment of detachment, the constraint force vanishes:
 
 $$
-K = 0
+N = 0
 $$
 
 Substituting this into the equation of motion:

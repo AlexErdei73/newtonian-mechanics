@@ -81,7 +81,7 @@ $$
 We write Newton's second law at the highest point of the path:
 
 $$
-mg + K = ma_{\text{cp}}
+mg + T = ma_{\text{cp}}
 $$
 
 $$
@@ -89,13 +89,13 @@ a_{\text{cp}} = \frac{v^2}{R} = \frac{5^2}{0.77} \approx 32.47\text{ m/s}^2
 $$
 
 $$
-K = ma_{\text{cp}} - mg = 1.50 \cdot 32.47 - 1.50 \cdot 9.81 = 33.99\text{ N}
+T = ma_{\text{cp}} - mg = 1.50 \cdot 32.47 - 1.50 \cdot 9.81 = 33.99\text{ N}
 $$
 
 Therefore, the water does not spill out; instead, it presses against the bottom of the bucket with a substantial force. Now let us look at the case where the water just barely stays in the bucket but no longer presses against the bottom!
 
 $$
-K = 0
+T = 0
 $$
 
 $$

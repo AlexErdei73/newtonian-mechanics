@@ -13,14 +13,14 @@ Let the mass of the trolley moving along the horizontal tabletop be $m_1$, while
 ![Measuring Newton's second law](Kepek/newtonsecondlawmeasurement.svg)
 
 $$
-K = m_1 a
+T = m_1 a
 $$
 
 $$
-m_2 g - K = m_2 a
+m_2 g - T = m_2 a
 $$
 
-These equations express Newton's second law for the first and second bodies. By substituting the value of $K$ from the first equation into the second equation, we can express the acceleration $a$.
+These equations express Newton's second law for the first and second bodies. By substituting the value of $T$ from the first equation into the second equation, we can express the acceleration $a$.
 
 $$
 m_2 g - m_1 a = m_2 a
@@ -37,7 +37,7 @@ $$
 The acceleration is the quotient of the weight $m_2 g$ and the total mass $m_1 + m_2$; therefore, the small downwards-moving weight indeed accelerates the entire total mass of the system.
 
 $$
-K = \frac{m_1 m_2}{m_1 + m_2}g
+T = \frac{m_1 m_2}{m_1 + m_2}g
 $$
 
 ### Example
@@ -57,7 +57,7 @@ m_1 = 781\text{ g}
 $$
 
 $$
-K = m_1 a = 0.781 \cdot 2 = 1.562\text{ N}
+T = m_1 a = 0.781 \cdot 2 = 1.562\text{ N}
 $$
 
 ---

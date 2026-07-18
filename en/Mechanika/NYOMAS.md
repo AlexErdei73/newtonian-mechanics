@@ -29,7 +29,7 @@ The role of the surface area is excellently illustrated by the bed of nails expe
 1. A rectangular block with a mass of $200\text{ g}$ has edges of $8\text{ cm}$, $5\text{ cm}$, and $2\text{ cm}$. What pressure does the object exert at rest on a horizontal tabletop if the acceleration due to gravity is $9.81\text{ m/s}^2$?
 
 $$
-F = G = mg = 0.2 \cdot 9.81 = 1.962\text{ N}
+F = F_g = mg = 0.2 \cdot 9.81 = 1.962\text{ N}
 $$
 
 The three different contact surface areas (faces):

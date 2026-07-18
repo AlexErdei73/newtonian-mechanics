@@ -19,7 +19,7 @@ s = \frac {a} {2} \cdot t^2 = \frac {3.473} {2} \cdot 8.00^2 \approx 111.1\text{
 $$
 
 $$
-F_e = m \cdot a = 1300 \cdot 3.473 \approx 4515\text{ N} \approx 4.52\text{ kN}
+F_{\text{net}} = m \cdot a = 1300 \cdot 3.473 \approx 4515\text{ N} \approx 4.52\text{ kN}
 $$
 
 2. A car with a mass of $1500\text{ kg}$ travels uniformly at a speed of $50\text{ }\frac{\text{km}}{\text{h}}$. A pedestrian suddenly steps out in front of the driver, who slams on the brakes. The driver's reaction time is $0.300\text{ s}$. The decelerating force acting on the car is $8.83\text{ kN}$. Calculate the deceleration in $\frac{\text{m}}{\text{s}^2}$! What is the braking time, and how much time elapses from spotting the pedestrian to coming to a complete stop? How much distance does the car travel during the reaction time and during braking? What is the total stopping distance?
@@ -57,11 +57,11 @@ a = 0
 $$
 
 $$
-F_e = m \cdot a = 0
+F_{\text{net}} = m \cdot a = 0
 $$
 
 $$
-\vec{F}_e = \vec{F}_1 + \vec{F}_2 + \dots + \vec{F}_n = \vec{0}
+\vec{F}_{\text{net}} = \vec{F}_1 + \vec{F}_2 + \dots + \vec{F}_n = \vec{0}
 $$
 
 Vector addition in a fixed coordinate system means the signed addition of the respective axis coordinates. Therefore, the condition for equilibrium can be written component-wise as follows:
@@ -105,98 +105,98 @@ The red curve shows the current length of the spring, while the green curve show
 
 ## Derivation of the Formula
 
-Let us denote the gravitational force acting on the object by $\vec{G}$, the perpendicular constraint force exerted by the surface of the incline by $\vec{K}$, and the holding force parallel to the incline (which prevents sliding) by $\vec{F}$. Let us choose a coordinate system whose $x$-axis points downward parallel to the plane of the incline, and whose $y$-axis points perpendicularly to the incline in the direction of the constraint force $\vec{K}$.
+Let us denote the gravitational force acting on the object by $\vec{F}_g$, the perpendicular constraint force exerted by the surface of the incline by $\vec{N}$, and the holding force parallel to the incline (which prevents sliding) by $\vec{F}$. Let us choose a coordinate system whose $x$-axis points downward parallel to the plane of the incline, and whose $y$-axis points perpendicularly to the incline in the direction of the constraint force $\vec{N}$.
 
 Since the object is in equilibrium, the vector sum of the three forces is a zero vector:
 
 $$
-\vec{F} + \vec{K} + \vec{G} = \vec{0}
+\vec{F} + \vec{N} + \vec{F}_g = \vec{0}
 $$
 
 Let's write the vector equation broken down into axial components:
 
 $$
-F_x + K_x + G_x = 0
+F_x + N_x + F_{g,x} = 0
 $$
 
 $$
-F_y + K_y + G_y = 0
+F_y + N_y + F_{g,y} = 0
 $$
 
-Based on the chosen axial directions, the coordinates of the forces $\vec{F}$ and $\vec{K}$ are as follows:
+Based on the chosen axial directions, the coordinates of the forces $\vec{F}$ and $\vec{N}$ are as follows:
 
 $$
 F_x = -F,\ \ F_y = 0
 $$
 
 $$
-K_x = 0,\ \ K_y = K
+N_x = 0,\ \ N_y = N
 $$
 
-The vertically downward gravitational force $\vec{G}$ must be resolved into an $x$ component parallel to the plane of the incline, as well as a perpendicular $y$ component. If we draw the right-angled triangle needed for the resolution, it can be geometrically seen that the angle of inclination $\alpha$ of the plane appears exactly as the angle opposite to the component $G_x$ parallel to the incline. The reason for this is that the sides of the angle are perpendicular to the sides of the base angle of the incline, and acute angles with perpendicular sides are equal to each other.
+The vertically downward gravitational force $\vec{F}_g$ must be resolved into an $x$ component parallel to the plane of the incline, as well as a perpendicular $y$ component. If we draw the right-angled triangle needed for the resolution, it can be geometrically seen that the angle of inclination $\alpha$ of the plane appears exactly as the angle opposite to the component $F_{g,x}$ parallel to the incline. The reason for this is that the sides of the angle are perpendicular to the sides of the base angle of the incline, and acute angles with perpendicular sides are equal to each other.
 
 Based on the definition of trigonometric functions, we can write:
 
 $$
-\frac {G_x} {G} = \sin \alpha \implies G_x = G \cdot \sin \alpha
+\frac {F_{g,x}} {F_g} = \sin \alpha \implies F_{g,x} = F_g \cdot \sin \alpha
 $$
 
 Similarly for the perpendicular component:
 
 $$
-\frac {|G_y|} {G} = \cos \alpha \implies G_y = -G \cdot \cos \alpha
+\frac {|F_{g,y}|} {F_g} = \cos \alpha \implies F_{g,y} = -F_g \cdot \cos \alpha
 $$
 
-The coordinate $G_y$ received a negative sign because its direction is opposite to the chosen $y$-axis (and thus opposite to the constraint force $\vec{K}$). Substitute these components into the initial equilibrium equations:
+The coordinate $F_{g,y}$ received a negative sign because its direction is opposite to the chosen $y$-axis (and thus opposite to the constraint force $\vec{N}$). Substitute these components into the initial equilibrium equations:
 
 $$
--F + 0 + G \cdot \sin \alpha = 0
+-F + 0 + F_g \cdot \sin \alpha = 0
 $$
 
 $$
-0 + K + (-G \cdot \cos \alpha) = 0
+0 + N + (-F_g \cdot \cos \alpha) = 0
 $$
 
 By rearranging the equations, we obtain the fundamental formulas for the forces acting on an inclined plane:
 
 $$
-F = G \cdot \sin \alpha = m \cdot g \cdot \sin \alpha
+F = F_g \cdot \sin \alpha = m \cdot g \cdot \sin \alpha
 $$
 
 $$
-K = G \cdot \cos \alpha = m \cdot g \cdot \cos \alpha
+N = F_g \cdot \cos \alpha = m \cdot g \cdot \cos \alpha
 $$
 
 ### Example
 If the weight of the object is $1\text{ N}$ and the angle of inclination is $30^\circ$, then based on the formulas:
 
 $$
-F = G \cdot \sin \alpha = 1\text{ N} \cdot \sin(30^\circ) = 1\text{ N} \cdot 0.5 = 0.5\text{ N}
+F = F_g \cdot \sin \alpha = 1\text{ N} \cdot \sin(30^\circ) = 1\text{ N} \cdot 0.5 = 0.5\text{ N}
 $$
 
 $$
-K = G \cdot \cos \alpha = 1\text{ N} \cdot \cos(30^\circ) = 1\text{ N} \cdot 0.8660 = 0.8660\text{ N}
+N = F_g \cdot \cos \alpha = 1\text{ N} \cdot \cos(30^\circ) = 1\text{ N} \cdot 0.8660 = 0.8660\text{ N}
 $$
 
-Since the constraint force $\vec{K}$ and the parallel holding force $\vec{F}$ are perpendicular to each other, let us determine the magnitude of their vector sum as a check using the Pythagorean theorem:
+Since the constraint force $\vec{N}$ and the parallel holding force $\vec{F}$ are perpendicular to each other, let us determine the magnitude of their vector sum as a check using the Pythagorean theorem:
 
 $$
-\sqrt{F^2 + K^2} = \sqrt {0.5^2 + 0.8660^2} = \sqrt{0.25 + 0.75} = \sqrt{1} = 1.0000\text{ N} = G
+\sqrt{F^2 + N^2} = \sqrt {0.5^2 + 0.8660^2} = \sqrt{0.25 + 0.75} = \sqrt{1} = 1.0000\text{ N} = F_g
 $$
 
-The vector resultant of the derived forces $\vec{F}$ and $\vec{K}$ is numerically exactly equal to the gravitational force $\vec{G}$ acting on the object, and its direction points vertically upward. Thus, these external forces together can perfectly balance gravity, just as we experience in physical reality.
+The vector resultant of the derived forces $\vec{F}$ and $\vec{N}$ is numerically exactly equal to the gravitational force $\vec{F}_g$ acting on the object, and its direction points vertically upward. Thus, these external forces together can perfectly balance gravity, just as we experience in physical reality.
 
 ## Problems
 
 1. A small cart with a mass of $5.00\text{ kg}$ stands at rest on a frictionless inclined plane with an angle of inclination of $20.0^\circ$. What is the holding force $F$ parallel to the incline that prevents the cart from rolling down?
-2. An object with a weight of $12.0\text{ N}$ is placed on an inclined plane with an angle of inclination of $40.0^\circ$. What perpendicular constraint force $K$ does the object exert on the surface of the incline?
+2. An object with a weight of $12.0\text{ N}$ is placed on an inclined plane with an angle of inclination of $40.0^\circ$. What perpendicular constraint force $N$ does the object exert on the surface of the incline?
 3. An object is kept in equilibrium by a spring balance fixed parallel to a $35.0^\circ$ inclined plane. The display of the spring balance shows exactly $15.0\text{ N}$ of force. What is the mass of the studied object?
 4. The same object with a mass of $8.00\text{ kg}$ is placed first on a $15.0^\circ$ incline, and then on a $45.0^\circ$ incline. How many times does the holding force $F$ parallel to the incline increase on the steeper slope compared to the first state?
 5. On a $30.0^\circ$ inclined plane, an object with a mass of $2.50\text{ kg}$ is held by a spring. The spring exerts a force of exactly $12.3\text{ N}$ on the object parallel to the plane of the incline, pointing upward. Is the object in static equilibrium, or does it start moving in one of the directions? (Justify your answer by numerically calculating the gravitational force component along the incline!)
 
 *Throughout the problems, friction between the surfaces is everywhere negligible, and the acceleration due to gravity is* $g = 9.81\text{ }\frac{\text{m}}{\text{s}^2}$*.*
 
-F_e = m \cdot |a|
+F_{\text{net}} = m \cdot |a|
 $$
 
 $$
@@ -262,7 +262,7 @@ A crate with a mass of $50\text{ kg}$ is pushed along a horizontal floor with un
 1. A gymnast with a mass of $60.0\text{ kg}$ lands on a springboard with a vertically downward velocity of $2.00\text{ }\frac{\text{m}}{\text{s}}$, and then bounces off after $0.300\text{ s}$ with a vertically upward velocity of $4.00\text{ }\frac{\text{m}}{\text{s}}$. What is the vertical acceleration of the gymnast? What is the gravitational force acting on the gymnast, and what is their weight at rest? What is the weight of the gymnast during the contact with the springboard, as well as in the air? Calculate how high the gymnast's center of mass rises after takeoff! The acceleration due to gravity is $9.81\text{ }\frac{\text{m}}{\text{s}^2}$.
 
 $$
-G = m \cdot g = 60 \cdot 9.81 = 588.6\text{ N}
+F_g = m \cdot g = 60 \cdot 9.81 = 588.6\text{ N}
 $$
 
 The gravitational force acting on the gymnast and their weight at rest are both $588.6\text{ N}$.
@@ -273,27 +273,27 @@ $$
 a = \frac {v - v_0} {t} = \frac {4.00 - (-2.00)} {0.3} = \frac{6.00}{0.3} = 20.00\text{ }\frac{\text{m}}{\text{s}^2}
 $$
 
-The gymnast is accelerated upward by the elastic normal force $K$ of the springboard, while gravity pulls them downward. The magnitude of the net force from Newton's second law:
+The gymnast is accelerated upward by the elastic normal force $N$ of the springboard, while gravity pulls them downward. The magnitude of the net force from Newton's second law:
 
 $$
-F_e = m \cdot a = 60.0 \cdot 20.0 = 1200\text{ N}
+F_{\text{net}} = m \cdot a = 60.0 \cdot 20.0 = 1200\text{ N}
 $$
 
-Since the acceleration points upward, the normal force $K$ is larger:
+Since the acceleration points upward, the normal force $N$ is larger:
 
 $$
-F_e = K - G
-$$
-
-$$
-1200 = K - 588.6
+F_{\text{net}} = N - F_g
 $$
 
 $$
-K = 1200 + 588.6 = 1788.6\text{ N}
+1200 = N - 588.6
 $$
 
-Since the weight of the body equals the normal force ($F_s = K$), the weight of the gymnast during the bounce increases to approximately $1790\text{ N}$ due to the sudden upward acceleration. In the air, the body is in a state of weightlessness ($F_s = 0\text{ N}$), as only the gravitational force acts on it there. The rising height of the center of mass can be calculated using the equations of vertical motion:
+$$
+N = 1200 + 588.6 = 1788.6\text{ N}
+$$
+
+Since the weight of the body equals the normal force ($F_s = N$), the weight of the gymnast during the bounce increases to approximately $1790\text{ N}$ due to the sudden upward acceleration. In the air, the body is in a state of weightlessness ($F_s = 0\text{ N}$), as only the gravitational force acts on it there. The rising height of the center of mass can be calculated using the equations of vertical motion:
 
 $$
 a = \frac {v - v_0} {t}  
@@ -313,7 +313,7 @@ $$
 
 In the air, the acceleration due to gravity decelerates the gymnast, which is why we took the value of $a$ as negative. The body obviously rises until its velocity decreases to zero ($v = 0\text{ }\frac{\text{m}}{\text{s}}$). Thus, the rising height is approximately $0.816\text{ m}$.
 
-2. A body with a mass of $100\text{ g}$ accelerates vertically downward with an acceleration of $2\text{ }\frac{\text{m}}{\text{s}^2}$. The acceleration due to gravity is $9.81\text{ }\frac{\text{m}}{\text{s}^2}$. What is the gravitational force acting on the body, what is the net force, and with what normal force $K$ do we support the body vertically upward?
+2. A body with a mass of $100\text{ g}$ accelerates vertically downward with an acceleration of $2\text{ }\frac{\text{m}}{\text{s}^2}$. The acceleration due to gravity is $9.81\text{ }\frac{\text{m}}{\text{s}^2}$. What is the gravitational force acting on the body, what is the net force, and with what normal force $N$ do we support the body vertically upward?
 
 You can verify the obtained answers by running the following simulation:
 
@@ -322,37 +322,37 @@ You can verify the obtained answers by running the following simulation:
 Calculating the gravitational force (converting mass to kilograms: $100\text{ g} = 0.1\text{ kg}$):
 
 $$
-G = m \cdot g = 0.1 \cdot 9.81 = 0.981\text{ N}
+F_g = m \cdot g = 0.1 \cdot 9.81 = 0.981\text{ N}
 $$
 
 In the inertial reference frame fixed to the Earth, the net force points downward, and its magnitude is:
 
 $$
-F_e = m \cdot a = 0.1 \cdot 2 = 0.2\text{ N}
+F_{\text{net}} = m \cdot a = 0.1 \cdot 2 = 0.2\text{ N}
 $$
 
-Since the motion and acceleration are directed downward, the gravitational force is greater than the upward normal force $K$ ($G > K$):
+Since the motion and acceleration are directed downward, the gravitational force is greater than the upward normal force $N$ ($F_g > N$):
 
 $$
-F_e = G - K
-$$
-
-$$
-0.2\text{ N} = 0.981\text{ N} - K
+F_{\text{net}} = F_g - N
 $$
 
 $$
-K = 0.981 - 0.2 = 0.781\text{ N}
+0.2\text{ N} = 0.981\text{ N} - N
 $$
 
-Since the weight of the body equals the normal force ($F_s = K$), the weight of the downward-accelerating body decreases to $0.781\text{ N}$.
+$$
+N = 0.981 - 0.2 = 0.781\text{ N}
+$$
+
+Since the weight of the body equals the normal force ($F_s = N$), the weight of the downward-accelerating body decreases to $0.781\text{ N}$.
 
 ---
 
 ### Practice Problems
 
 **4. Man in an Elevator**
-A person with a mass of $75\text{ kg}$ stands in an elevator that is just starting to move vertically upward. During the acceleration phase, the acceleration of the elevator is $1.5\text{ }\frac{\text{m}}{\text{s}^2}$. What normal force $K$ does the elevator floor exert on the person (i.e., what is the person's weight) during this phase? How does this weight force change if the elevator later continues to move vertically at a constant speed? ($g = 9.81\text{ }\frac{\text{m}}{\text{s}^2}$)
+A person with a mass of $75\text{ kg}$ stands in an elevator that is just starting to move vertically upward. During the acceleration phase, the acceleration of the elevator is $1.5\text{ }\frac{\text{m}}{\text{s}^2}$. What normal force $N$ does the elevator floor exert on the person (i.e., what is the person's weight) during this phase? How does this weight force change if the elevator later continues to move vertically at a constant speed? ($g = 9.81\text{ }\frac{\text{m}}{\text{s}^2}$)
 
 **5. Lifting a Concrete Element with a Crane**
 At a construction site, a crane lifts a concrete element with a mass of $400\text{ kg}$ vertically. The magnitude of the tensile normal force in the wire rope is $4500\text{ N}$. What is the acceleration with which the concrete element starts moving upward relative to the Earth? To what height does it rise during the first $3\text{ seconds}$ if it started from rest? ($g = 9.81\text{ }\frac{\text{m}}{\text{s}^2}$)

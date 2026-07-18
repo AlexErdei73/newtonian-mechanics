@@ -69,13 +69,13 @@ Work is a scalar quantity. When we multiply two vectors in mathematics such that
 The gravitational force acting on the body:
 
 $$
-G = m \cdot g = 200 \cdot 9.81 = 1962\text{ N}
+F_g = m \cdot g = 200 \cdot 9.81 = 1962\text{ N}
 $$
 
 Since the lifting occurs at a constant speed (without acceleration), the magnitude of the lifting force is equal to the constraint force and the gravitational force:
 
 $$
-F = K = G = 1962\text{ N}
+F = N = F_g = 1962\text{ N}
 $$
 
 The work done by the crane based on the displacement along the force direction:
@@ -91,7 +91,7 @@ Thus, the work done during the lifting is $29.43\text{ kJ}$.
 The magnitude of the gravitational force is identical to the previous example:
 
 $$
-G = m \cdot g = 200 \cdot 9.81 = 1962\text{ N}
+F_g = m \cdot g = 200 \cdot 9.81 = 1962\text{ N}
 $$
 
 The sine of the inclination angle resulting from the geometry of the incline:
@@ -100,10 +100,10 @@ $$
 \sin \alpha = \frac{15}{90} \approx 0.1667 \implies \alpha \approx 9.594^\circ
 $$
 
-The magnitude of the constraint force $K$ perpendicular to the incline (with which the body presses against the surface):
+The magnitude of the constraint force $N$ perpendicular to the incline (with which the body presses against the surface):
 
 $$
-K = m \cdot g \cdot \cos \alpha = 200 \cdot 9.81 \cdot \cos(9.594^\circ) \approx 1935\text{ N}
+N = m \cdot g \cdot \cos \alpha = 200 \cdot 9.81 \cdot \cos(9.594^\circ) \approx 1935\text{ N}
 $$
 
 The pushing force along the incline required to move the body uniformly:
@@ -121,19 +121,19 @@ $$
 The work done by the gravitational force (since the angle enclosed by gravity and the direction of motion is $90^\circ + \alpha = 99.594^\circ$):
 
 $$
-W_G = G \cdot s \cdot \cos(90^\circ + \alpha) = 1962 \cdot 90 \cdot \cos(99.594^\circ) \approx -29,430\text{ J} = -29.43\text{ kJ}
+W_G = F_g \cdot s \cdot \cos(90^\circ + \alpha) = 1962 \cdot 90 \cdot \cos(99.594^\circ) \approx -29,430\text{ J} = -29.43\text{ kJ}
 $$
 
 We can calculate this gravitational work more simply, since the vertical displacement opposite to the gravitational force is the height $h$:
 
 $$
-W_G = -G \cdot h = -1962 \cdot 15 = -29,430\text{ J} = -29.43\text{ kJ}
+W_G = -F_g \cdot h = -1962 \cdot 15 = -29,430\text{ J} = -29.43\text{ kJ}
 $$
 
-The work done by the constraint force $K$ perpendicular to the surface is zero because it is perpendicular to the direction of motion:
+The work done by the constraint force $N$ perpendicular to the surface is zero because it is perpendicular to the direction of motion:
 
 $$
-W_K = K \cdot s \cdot \cos(90^\circ) = 0\text{ J}
+W_N = N \cdot s \cdot \cos(90^\circ) = 0\text{ J}
 $$
 
 We can see that the lifting work done on the incline matches precisely what it would have been if we had lifted the body vertically to the same height without an incline. The incline saves us force (it requires less force to push than to lift), but it does not save work.
@@ -157,7 +157,7 @@ $$
 The magnitude of the net force required for acceleration:
 
 $$
-F = F_e = m \cdot a = 1300 \cdot 2.50 = 3250\text{ N}
+F = F_{\text{net}} = m \cdot a = 1300 \cdot 2.50 = 3250\text{ N}
 $$
 
 The acceleration work performed by the engine:

@@ -8,7 +8,7 @@ Now we will show that it can also be applied to an axis passing through the cent
 
 ### Example
 
-A homogeneous spherical ball rolls down an inclined plane with an inclination angle of $30^\circ$. The moment of inertia of the sphere is $\Theta_{\text{COM}} = \frac{2}{5}mr^2$. What is the acceleration of the sphere?
+A homogeneous spherical ball rolls down an inclined plane with an inclination angle of $30^\circ$. The moment of inertia of the sphere is $I_{\text{COM}} = \frac{2}{5}mr^2$. What is the acceleration of the sphere?
 
 ![Wheel rolling down an inclined plane](Kepek/kerekgorduleselejton.svg)
 
@@ -23,7 +23,7 @@ $$
 The fundamental equation is therefore as follows:
 
 $$
-F_{\text{f}}r = \Theta_{\text{COM}}\beta
+F_{\text{f}}r = I_{\text{COM}}\alpha
 $$
 
 Relative to the center of mass, the magnitude of the velocity of the point in contact with the incline is:
@@ -41,7 +41,7 @@ $$
 from which we get the acceleration along the incline:
 
 $$
-a = a_{\text{COM}} = r\beta
+a = a_{\text{COM}} = r\alpha
 $$
 
 This is, once again, a very important relationship. The form of Newton's second law remains the same:
@@ -57,27 +57,27 @@ F_{\text{f}} = mg \sin \alpha - ma
 $$
 
 $$
-r(mg \sin \alpha - ma) = \Theta_{\text{COM}}\frac{a}{r}
+r(mg \sin \alpha - ma) = I_{\text{COM}}\frac{a}{r}
 $$
 
 $$
-g \sin \alpha - a = a\frac{\Theta_{\text{COM}}}{mr^2}
+g \sin \alpha - a = a\frac{I_{\text{COM}}}{mr^2}
 $$
 
 From here, let us express $a$, and we get the relationship we are looking for:
 
 $$
-g \sin \alpha = a\left(1 + \frac{\Theta_{\text{COM}}}{mr^2}\right)
+g \sin \alpha = a\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)
 $$
 
 $$
-a = \frac{g \sin \alpha}{1 + \frac{\Theta_{\text{COM}}}{mr^2}}
+a = \frac{g \sin \alpha}{1 + \frac{I_{\text{COM}}}{mr^2}}
 $$
 
 This is exactly the same relationship we previously derived using the instantaneous axis of rotation. We can substitute the moment of inertia of the sphere here:
 
 $$
-\frac{\Theta_{\text{COM}}}{mr^2} = \frac{2}{5}
+\frac{I_{\text{COM}}}{mr^2} = \frac{2}{5}
 $$
 
 $$
@@ -99,19 +99,19 @@ In the case of rotational motion, it is also true that mechanical energy can be 
 Show that mechanical energy is constant for the sphere rolling down the incline!
 
 $$
-E = \frac{\Theta_{\text{COM}}\omega^2}{2} + \frac{mv_{\text{COM}}^2}{2} + mgh_{\text{COM}} = \text{constant}
+E = \frac{I_{\text{COM}}\omega^2}{2} + \frac{mv_{\text{COM}}^2}{2} + mgh_{\text{COM}} = \text{constant}
 $$
 
 For the sake of simplicity, let the body start from rest! In this case, the acceleration is:
 
 $$
-a_{\text{COM}} = \frac{g \sin \alpha}{1 + \frac{\Theta_{\text{COM}}}{mr^2}}
+a_{\text{COM}} = \frac{g \sin \alpha}{1 + \frac{I_{\text{COM}}}{mr^2}}
 $$
 
 The angular acceleration is:
 
 $$
-\beta = \frac{a_{\text{COM}}}{r}
+\alpha = \frac{a_{\text{COM}}}{r}
 $$
 
 $$
@@ -119,7 +119,7 @@ v_{\text{COM}} = a_{\text{COM}}t
 $$
 
 $$
-\omega = \beta t
+\omega = \alpha t
 $$
 
 Furthermore:
@@ -137,13 +137,13 @@ $$
 Let us substitute these expressions back into the energy equation!
 
 $$
-E = \frac{1}{2}mg^2 \sin^2 \alpha \cdot t^2 \frac{1}{\left(1 + \frac{\Theta_{\text{COM}}}{mr^2}\right)^2} + \frac{1}{2}\Theta_{\text{COM}}\frac{g^2 \sin^2 \alpha \cdot t^2}{r^2\left(1 + \frac{\Theta_{\text{COM}}}{mr^2}\right)^2} + mgh_{\text{COM},0} - mg\frac{g \sin \alpha}{2\left(1 + \frac{\Theta_{\text{COM}}}{mr^2}\right)}t^2 \sin \alpha
+E = \frac{1}{2}mg^2 \sin^2 \alpha \cdot t^2 \frac{1}{\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2} + \frac{1}{2}I_{\text{COM}}\frac{g^2 \sin^2 \alpha \cdot t^2}{r^2\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2} + mgh_{\text{COM},0} - mg\frac{g \sin \alpha}{2\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)}t^2 \sin \alpha
 $$
 
 The first two terms can be combined:
 
 $$
-\frac{1}{2}mg^2 \sin^2 \alpha \cdot t^2 \frac{1}{\left(1 + \frac{\Theta_{\text{COM}}}{mr^2}\right)^2} + \frac{1}{2}\Theta_{\text{COM}}\frac{g^2 \sin^2 \alpha \cdot t^2}{r^2\left(1 + \frac{\Theta_{\text{COM}}}{mr^2}\right)^2} = \frac{mg^2 \sin^2 \alpha \cdot t^2}{2}\frac{1 + \frac{\Theta_{\text{COM}}}{mr^2}}{\left(1 + \frac{\Theta_{\text{COM}}}{mr^2}\right)^2}
+\frac{1}{2}mg^2 \sin^2 \alpha \cdot t^2 \frac{1}{\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2} + \frac{1}{2}I_{\text{COM}}\frac{g^2 \sin^2 \alpha \cdot t^2}{r^2\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2} = \frac{mg^2 \sin^2 \alpha \cdot t^2}{2}\frac{1 + \frac{I_{\text{COM}}}{mr^2}}{\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2}
 $$
 
 After simplification, this combined term is exactly the opposite of the final term in our long equation, which means we get:
@@ -158,8 +158,8 @@ $$
 
 **Problem 1: The Unwinding Cylinder (The Yo-Yo Problem)**
 
-In the text, we examined an object rolling down an incline, where the torque was provided by the static friction force. Now, imagine a solid cylinder of mass $m$ and radius $r$ ($\Theta_{\text{COM}} = \frac{1}{2}mr^2$), with a string wrapped around its surface. The end of the string is fixed to the ceiling, and the cylinder is released from rest, so that it falls downward while unwinding from the string (like a yo-yo).
-Apply the dynamical approach shown in the text: replace the static friction force with the cable tension ($K$), write down the fundamental equations for both translational and rotational motion, and determine the downward acceleration of the cylinder! How does this value compare to the acceleration due to gravity ($g$)?
+In the text, we examined an object rolling down an incline, where the torque was provided by the static friction force. Now, imagine a solid cylinder of mass $m$ and radius $r$ ($I_{\text{COM}} = \frac{1}{2}mr^2$), with a string wrapped around its surface. The end of the string is fixed to the ceiling, and the cylinder is released from rest, so that it falls downward while unwinding from the string (like a yo-yo).
+Apply the dynamical approach shown in the text: replace the static friction force with the cable tension ($T$), write down the fundamental equations for both translational and rotational motion, and determine the downward acceleration of the cylinder! How does this value compare to the acceleration due to gravity ($g$)?
 
 [Maxwell's Wheel](https://www.youtube.com/watch?v=NNXmOm9L-S8)
 
@@ -167,7 +167,7 @@ Maxwell's wheel (or Maxwell's disk) is a classic demonstration apparatus that il
 
 **Problem 2: The Race of Different Objects**
 
-In the text, we calculated the acceleration of a solid sphere. Imagine that instead of the sphere, a homogeneous, solid cylinder rolls down the same $30^\circ$ incline! The moment of inertia of the cylinder is $\Theta_{\text{COM}} = \frac{1}{2}mr^2$. 
+In the text, we calculated the acceleration of a solid sphere. Imagine that instead of the sphere, a homogeneous, solid cylinder rolls down the same $30^\circ$ incline! The moment of inertia of the cylinder is $I_{\text{COM}} = \frac{1}{2}mr^2$. 
 * Use the general formula derived in the text and calculate the acceleration of the cylinder! 
 * Compare the obtained value with the acceleration of the sphere ($3.504\text{ m/s}^2$)! Which object reaches the bottom of the incline first if they are started simultaneously from the same height? Do the mass and radius of the objects matter regarding the final result?
 

@@ -13,13 +13,13 @@ a_{i,\text{t}} = r_i \sin \alpha\ \omega^2 \cos \alpha
 $$
 
 $$
-\beta = \frac{a_{i,\text{t}}}{r_i} = \omega^2 \sin \alpha \cos \alpha
+\alpha = \frac{a_{i,\text{t}}}{r_i} = \omega^2 \sin \alpha \cos \alpha
 $$
 
 Let us write the fundamental equation of rotational motion for the horizontal axis about which the rod can turn!
 
 $$
-M_{z,\text{e}}^{\text{k}} = \Theta_{\text{rod}} \beta
+M_{z,\text{e}}^{\text{k}} = I_{\text{rod}} \alpha
 $$
 
 Only the gravitational force exerts a torque:
@@ -28,7 +28,7 @@ $$
 M_{z,\text{e}}^{\text{k}} = mg \frac{L}{2} \sin \alpha
 $$
 
-Substituting these expressions along with the moment of inertia of the rod relative to its endpoint, $\Theta_{\text{rod}} = \frac{1}{3}mL^2$, we obtain the following equation:
+Substituting these expressions along with the moment of inertia of the rod relative to its endpoint, $I_{\text{rod}} = \frac{1}{3}mL^2$, we obtain the following equation:
 
 $$
 mg \frac{L}{2} \sin \alpha = \frac{1}{3} mL^2 \omega^2 \sin \alpha \cos \alpha
@@ -82,13 +82,13 @@ It can be shown that as soon as the motor's speed crosses this critical limit, t
 | :--- | :--- |
 | Displacement ($s = r\phi$) | Angle ($\phi$) |
 | Velocity ($v = r\omega$) | Angular velocity ($\omega$) |
-| Acceleration ($a = r\beta$) | Angular acceleration ($\beta$) |
+| Acceleration ($a = r\alpha$) | Angular acceleration ($\alpha$) |
 | Force ($F$) | Torque ($M = Fr \sin \alpha$) |
-| Mass ($m$) | Moment of inertia ($\Theta = \sum_{i = 1}^{N} m_i r_i^2$) |
-| Linear momentum ($I = mv$) | Angular momentum ($N = \Theta \omega$) |
-| $F_{\text{e}} = ma$ | $M_{\text{e}}^{\text{k}} = \Theta \beta$ |
-| $\vec{F}_{\text{e}} = \frac{\Delta \vec{I}}{t} \quad (t \rightarrow 0)$ | $\vec{M}_{\text{e}}^{\text{k}} = \frac{\Delta \vec{N}}{t} \quad (t \rightarrow 0)$ |
-| $E_{\text{kin}} = \frac{mv^2}{2}$ | $E_{\text{rot}} = \frac{\Theta \omega^2}{2}$ |
+| Mass ($m$) | Moment of inertia ($I = \sum_{i = 1}^{N} m_i r_i^2$) |
+| Linear momentum ($p = mv$) | Angular momentum ($L = I \omega$) |
+| $F_{\text{net}} = ma$ | $M_{\text{e}}^{\text{k}} = I \alpha$ |
+| $\vec{F}_{\text{net}} = \frac{\Delta \vec{p}}{t} \quad (t \rightarrow 0)$ | $\vec{M}_{\text{e}}^{\text{k}} = \frac{\Delta \vec{L}}{t} \quad (t \rightarrow 0)$ |
+| $E_{\text{kin}} = \frac{mv^2}{2}$ | $E_{\text{rot}} = \frac{I \omega^2}{2}$ |
 
 ---
 

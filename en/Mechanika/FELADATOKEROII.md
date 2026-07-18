@@ -53,7 +53,7 @@ $$
 Finally, based on Newton's second law, the accelerating force is:
 
 $$
-F_e = m \cdot a = 0.020 \cdot 257,143 \approx 5143\text{ N} \approx 5.14\text{ kN}
+F_{\text{net}} = m \cdot a = 0.020 \cdot 257,143 \approx 5143\text{ N} \approx 5.14\text{ kN}
 $$
 
 Thus, the bullet is accelerated in the gun barrel by an average force of $5.14\text{ kN}$ in just $2.33\text{ ms}$.
@@ -104,7 +104,7 @@ The negative sign indicates that the acceleration vector is in the opposite dire
 
 $$
 
-|F_e| = m \cdot |a| = 0.02 \cdot 600,000 = 12,000\text{ N} = 12.0\text{ kN}
+|F_{\text{net}}| = m \cdot |a| = 0.02 \cdot 600,000 = 12,000\text{ N} = 12.0\text{ kN}
 $$
 
 The magnitude of the average braking force exerted by the wooden block is $12.0\text{ kN}$.
@@ -144,7 +144,7 @@ $$
 According to Newton's second law, the accelerating net thrust is:
 
 $$
-F_e = m \cdot a = 17,000 \cdot 5.041 \approx 85,697\text{ N} \approx 85.70\text{ kN}
+F_{\text{net}} = m \cdot a = 17,000 \cdot 5.041 \approx 85,697\text{ N} \approx 85.70\text{ kN}
 $$
 
 Therefore, the magnitude of the useful thrust exerted by the engines is $85.70\text{ kN}$.

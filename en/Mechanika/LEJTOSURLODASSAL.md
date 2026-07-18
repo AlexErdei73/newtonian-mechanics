@@ -19,13 +19,13 @@ $$
 The magnitude of the constraint force perpendicular to the surface of the incline is:
 
 $$
-K = m \cdot g \cdot \cos \alpha
+N = m \cdot g \cdot \cos \alpha
 $$
 
 For the static friction force arising between the surfaces, it is generally true that:
 
 $$
-F_t \leqslant \mu_t \cdot K
+F_t \leqslant \mu_t \cdot N
 $$
 
 As long as the object is in static equilibrium (does not move), the static friction force is precisely equal to the gravitational force component along the incline:
@@ -72,13 +72,13 @@ $$
 The magnitude of the constraint force perpendicular to the incline:
 
 $$
-K = m \cdot g \cdot \cos \alpha = 0.1 \cdot 9.81 \cdot \cos(18.43^\circ) \approx 0.9307\text{ N}
+N = m \cdot g \cdot \cos \alpha = 0.1 \cdot 9.81 \cdot \cos(18.43^\circ) \approx 0.9307\text{ N}
 $$
 
 Let's calculate the maximum possible value of the static friction force:
 
 $$
-F_{t,\text{max}} = \mu_t \cdot K = 0.5 \cdot 0.9307\text{ N} \approx 0.4654\text{ N}
+F_{t,\text{max}} = \mu_t \cdot N = 0.5 \cdot 0.9307\text{ N} \approx 0.4654\text{ N}
 $$
 
 Since the maximum static friction force ($0.4654\text{ N}$) is greater than the force pulling the object downward ($0.3101\text{ N}$), friction can prevent motion, so the object remains at rest.
@@ -96,21 +96,21 @@ $$
 
 ### Calculating the Acceleration
 
-If the inclination angle of the plane exceeds the threshold limit of static friction, the object slips and moves downward with acceleration. The sliding friction force arising during motion depends on the coefficient of sliding friction ($F_s = \mu \cdot K$). Let's write the net force along the incline:
+If the inclination angle of the plane exceeds the threshold limit of static friction, the object slips and moves downward with acceleration. The sliding friction force arising during motion depends on the coefficient of sliding friction ($F_s = \mu \cdot N$). Let's write the net force along the incline:
 
 $$
 F = m \cdot g \cdot \sin \alpha
 $$
 
 $$
-K = m \cdot g \cdot \cos \alpha
+N = m \cdot g \cdot \cos \alpha
 $$
 
 $$
-F_e = F - F_s = m \cdot g \cdot \sin \alpha - \mu \cdot K = m \cdot g \cdot \sin \alpha - \mu \cdot m \cdot g \cdot \cos \alpha
+F_{\text{net}} = F - F_s = m \cdot g \cdot \sin \alpha - \mu \cdot N = m \cdot g \cdot \sin \alpha - \mu \cdot m \cdot g \cdot \cos \alpha
 $$
 
-Apply Newton's second law ($F_e = m \cdot a$):
+Apply Newton's second law ($F_{\text{net}} = m \cdot a$):
 
 $$
 m \cdot a = m \cdot g \cdot \sin \alpha - \mu \cdot m \cdot g \cdot \cos \alpha
@@ -142,22 +142,22 @@ $$
 The constraint force perpendicular to the surface:
 
 $$
-K = m \cdot g \cdot \cos \alpha = 0.1 \cdot 9.81 \cdot \cos(33.69^\circ) \approx 0.8162\text{ N}
+N = m \cdot g \cdot \cos \alpha = 0.1 \cdot 9.81 \cdot \cos(33.69^\circ) \approx 0.8162\text{ N}
 $$
 
 The sliding friction force generated during motion:
 
 $$
-F_s = \mu \cdot K = 0.5 \cdot 0.8162 \approx 0.4081\text{ N}
+F_s = \mu \cdot N = 0.5 \cdot 0.8162 \approx 0.4081\text{ N}
 $$
 
 The net force accelerating the object:
 
 $$
-F_e = F - F_s = 0.5442 - 0.4081 = 0.1361\text{ N}
+F_{\text{net}} = F - F_s = 0.5442 - 0.4081 = 0.1361\text{ N}
 $$
 
-From Newton's second law ($F_e = m \cdot a$), the value of the acceleration is:
+From Newton's second law ($F_{\text{net}} = m \cdot a$), the value of the acceleration is:
 
 $$
 0.1361 = 0.1 \cdot a \implies a = \frac{0.1361}{0.1} \approx 1.361\text{ }\frac{\text{m}}{\text{s}^2}
@@ -171,7 +171,7 @@ Rounded to three significant figures, the object slides downward with a constant
 
 1. The vertical height of an inclined plane is $3.00\text{ m}$, and the actual (slant) length of the incline is $5.00\text{ m}$. Calculate the inclination angle of the plane with the horizontal, as well as the downward force along the incline for an object with a mass of $0.200\text{ kg}$!
 2. During an experiment, we observe that an object starts to slip exactly when the inclination angle of the plane is raised to $20.0^\circ$. Determine the value of the coefficient of static friction ($\mu_t$) between the surfaces!
-3. An object with a mass of $0.500\text{ kg}$ slides down an inclined plane with an inclination angle of $30.0^\circ$. The coefficient of sliding friction between the surfaces is $0.3$. Determine the numerical magnitude of the following forces: force along the incline ($F$), constraint force ($K$), friction force ($F_s$), and net force ($F_e$)!
+3. An object with a mass of $0.500\text{ kg}$ slides down an inclined plane with an inclination angle of $30.0^\circ$. The coefficient of sliding friction between the surfaces is $0.3$. Determine the numerical magnitude of the following forces: force along the incline ($F$), constraint force ($N$), friction force ($F_s$), and net force ($F_{\text{net}}$)!
 4. With what constant acceleration does an arbitrary object slide down an inclined plane with an inclination angle of $25.0^\circ$ if the value of the coefficient of sliding friction is $0.2$? Does the obtained acceleration depend on the object's mass?
 5. In a warehouse, crates are slid down a smooth incline. What should be the minimum inclination angle of the plane so that the crates slip and start moving downward by themselves if the value of the coefficient of static friction is $\mu_t = 0.4$?
 

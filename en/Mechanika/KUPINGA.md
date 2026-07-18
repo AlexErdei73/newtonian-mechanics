@@ -13,21 +13,21 @@ A conical pendulum is a pendulum that undergoes uniform circular motion in a hor
 ![The conical pendulum](Kepek/kupinga.svg)
 
 $$
-K \cos \Theta = mg
+T \cos \Theta = mg
 $$
 
 $$
-K \sin \Theta = ma_{\text{cp}}
+T \sin \Theta = ma_{\text{cp}}
 $$
 
 $$
 a_{\text{cp}} = \frac{v^2}{R}
 $$
 
-We express $K$ from the first equation and substitute it into the second equation along with the centripetal acceleration:
+We express $T$ from the first equation and substitute it into the second equation along with the centripetal acceleration:
 
 $$
-K = \frac{mg}{\cos \Theta}
+T = \frac{mg}{\cos \Theta}
 $$
 
 $$
@@ -91,15 +91,15 @@ R = l \sin \Theta = 1\text{ m} \cdot \sin 30^\circ = 0.5\text{ m}
 $$
 
 $$
-K \cos \Theta = mg
+T \cos \Theta = mg
 $$
 
 $$
-K = \frac{mg}{\cos \Theta} = \frac{0.1 \cdot 9.81}{\cos 30^\circ} \approx 1.133\text{ N}
+T = \frac{mg}{\cos \Theta} = \frac{0.1 \cdot 9.81}{\cos 30^\circ} \approx 1.133\text{ N}
 $$
 
 $$
-F_{\text{net}} = K \sin \Theta = 1.133 \cdot \sin 30^\circ \approx 0.5663\text{ N}
+F_{\text{net}} = T \sin \Theta = 1.133 \cdot \sin 30^\circ \approx 0.5663\text{ N}
 $$
 
 $$
@@ -155,11 +155,11 @@ The speed of the car is low, so it would slide downwards along the banked track.
 We decompose the static friction force and the normal force into vertical components and horizontal components parallel to the acceleration. This yields:
 
 $$
-K \cos \Theta + F_{\text{s}} \sin \Theta - mg = 0
+T \cos \Theta + F_{\text{s}} \sin \Theta - mg = 0
 $$
 
 $$
-K \sin \Theta - F_{\text{s}} \cos \Theta = ma_{\text{cp}}
+T \sin \Theta - F_{\text{s}} \cos \Theta = ma_{\text{cp}}
 $$
 
 $$
@@ -203,7 +203,7 @@ $$
 $$
 
 $$
-K \approx 13794.6\text{ N}
+T \approx 13794.6\text{ N}
 $$
 
 $$

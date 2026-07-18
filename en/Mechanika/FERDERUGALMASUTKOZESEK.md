@@ -97,7 +97,7 @@ $$
 The force acting on the wall is the counterforce (reaction force) of this (Newton's third law):
 
 $$
-K = -F_{\text{net},x} = 519.6\ \text{N}
+N = -F_{\text{net},x} = 519.6\ \text{N}
 $$
 
 ## Perfectly Elastic Collision of Objects of Equal Mass when the Target is at Rest
@@ -159,7 +159,7 @@ $$
 Calculating the force (from the momentum change of the second ball):
 
 $$
-F_{\text{net}} = \frac{\Delta I_2}{t} = \frac{m \cdot v_2 - 0}{t}
+F_{\text{net}} = \frac{\Delta p_2}{t} = \frac{m \cdot v_2 - 0}{t}
 $$
 
 $$

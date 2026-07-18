@@ -5,7 +5,7 @@
 We will now examine the general derivation of the impulse (momentum) theorem, as we have previously proven this theorem only for a system of 2 bodies. Let us now consider a system of $N$ point masses. For the $i$-th body, Newton's second law is stated as:
 
 $$
-\vec{F}_{\text{net},i} = \frac{\Delta \vec{I}_i}{t}
+\vec{F}_{\text{net},i} = \frac{\Delta \vec{p}_i}{t}
 $$
 
 Let us rewrite this slightly to make our work easier:
@@ -47,13 +47,13 @@ $$
 According to this law, the individual paired terms in the sum are all zero. Now, let us manipulate the right side of the main equation as well:
 
 $$
-\sum_{i = 1}^{N} \frac{m_i \vec{v}_i - m_i \vec{v}_{i,0}}{t} = \frac{\sum_{i = 1}^{N} m_i \vec{v}_i - \sum_{i = 1}^{N} m_i \vec{v}_{i,0}}{t} = \frac{\vec{I} - \vec{I}_0}{t}
+\sum_{i = 1}^{N} \frac{m_i \vec{v}_i - m_i \vec{v}_{i,0}}{t} = \frac{\sum_{i = 1}^{N} m_i \vec{v}_i - \sum_{i = 1}^{N} m_i \vec{v}_{i,0}}{t} = \frac{\vec{p} - \vec{p}_0}{t}
 $$
 
 Our final result is the impulse theorem:
 
 $$
-\sum_{i = 1}^{N} \vec{F}_{\text{net},i}^{\text{ext}} = \frac{\vec{I} - \vec{I}_0}{t}
+\sum_{i = 1}^{N} \vec{F}_{\text{net},i}^{\text{ext}} = \frac{\vec{p} - \vec{p}_0}{t}
 $$
 
 > **The vector sum of external forces acting on a system of particles equals the rate of change of the system's total momentum per unit time.**
@@ -67,7 +67,7 @@ $$
 $$
 
 $$
-M \vec{v}_{\text{CM}} = \sum_{i = 1}^{N} m_i \vec{v}_i = \sum_{i = 1}^{N} \vec{I}_i = \vec{I}
+M \vec{v}_{\text{CM}} = \sum_{i = 1}^{N} m_i \vec{v}_i = \sum_{i = 1}^{N} \vec{p}_i = \vec{p}
 $$
 
 $$

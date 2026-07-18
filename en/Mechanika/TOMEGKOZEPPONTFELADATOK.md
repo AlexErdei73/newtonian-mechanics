@@ -180,7 +180,7 @@ $$
 $$
 
 $$
-M \vec{v}_{\text{CM}} = \vec{I}
+M \vec{v}_{\text{CM}} = \vec{p}
 $$
 
 Based on this, we can state that the velocity of the center of mass is zero since the total momentum is also zero. Therefore, the center of mass remains at rest throughout the process.

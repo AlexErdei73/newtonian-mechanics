@@ -14,7 +14,7 @@ The layout of the example and the simulation results are shown in the figures be
 ![Rope segment data in the first example](Kepek/elsostatikapeldakoteladatai.png)
 
 Let's perform the calculations!
-The rope segments are of equal length, and due to geometric symmetry, the tensile force generated in them is also equal in magnitude; let's denote this simply by $K$. Let the horizontal axis pointing to the right be the $x$-axis of the coordinate system, and let the vertical axis pointing upward be the $y$-axis.
+The rope segments are of equal length, and due to geometric symmetry, the tensile force generated in them is also equal in magnitude; let's denote this simply by $T$. Let the horizontal axis pointing to the right be the $x$-axis of the coordinate system, and let the vertical axis pointing upward be the $y$-axis.
 Based on the right-angled triangle, the length of one rope segment ($l$) is:
 
 $$
@@ -34,62 +34,62 @@ $$
 The condition for the static equilibrium of the object is that the net force acting on it must be a zero vector:
 
 $$
-\vec{K}_1 + \vec{K}_2 + \vec{G} = \vec{0}
+\vec{T}_1 + \vec{T}_2 + \vec{F}_g = \vec{0}
 $$
 
 Here, index $1$ refers to the left rope segment and index $2$ refers to the right rope segment. Due to symmetry, the magnitudes of the forces are identical:
 
 $$
 
-|\vec{K}_1| = |\vec{K}_2| = K
+|\vec{T}_1| = |\vec{T}_2| = T
 $$
 
 Let's write the vector equation according to the axial coordinates:
 
 $$
-K_{1x} + K_{2x} + G_x = 0 
+K_{1x} + K_{2x} + F_{g,x} = 0 
 $$
 
 $$
-K_{1y} + K_{2y} + G_y = 0
+K_{1y} + K_{2y} + F_{g,y} = 0
 $$
 
 Based on the geometric resolution, the values of the components are:
 
 $$
-K_{1x} = -K \cdot \sin \alpha
+K_{1x} = -T \cdot \sin \alpha
 $$
 
 $$
-K_{2x} = K \cdot \sin \alpha
+K_{2x} = T \cdot \sin \alpha
 $$
 
 $$
-K_{1y} = K_{2y} = K \cdot \cos \alpha
+K_{1y} = K_{2y} = T \cdot \cos \alpha
 $$
 
 $$
-G_x = 0,\ \ G_y = -G = -m \cdot g = -0.10 \cdot 9.80 = -0.98\text{ N}
+F_{g,x} = 0,\ \ F_{g,y} = -F_g = -m \cdot g = -0.10 \cdot 9.80 = -0.98\text{ N}
 $$
 
 Substituting these components into the equations:
 
 $$
--K \cdot \sin \alpha + K \cdot \sin \alpha + 0 = 0
+-T \cdot \sin \alpha + T \cdot \sin \alpha + 0 = 0
 $$
 
 $$
-K \cdot \cos \alpha + K \cdot \cos \alpha - G = 0
+T \cdot \cos \alpha + T \cdot \cos \alpha - F_g = 0
 $$
 
 The first (horizontal) equation is a trivial identity ($-0 + 0 = 0$), and from the second (vertical) equation:
 
 $$
-2K \cdot \cos \alpha = G
+2K \cdot \cos \alpha = F_g
 $$
 
 $$
-K = \frac {G} {2 \cdot \cos \alpha} = \frac {0.98\text{ N}} {2 \cdot 0.8} = \frac{0.98}{1.6} = 0.6125\text{ N}
+T = \frac {F_g} {2 \cdot \cos \alpha} = \frac {0.98\text{ N}} {2 \cdot 0.8} = \frac{0.98}{1.6} = 0.6125\text{ N}
 $$
 
 Rounded to three significant figures, the tensile force generated in the rope is exactly $0.613\text{ N}$, which perfectly matches the value measured in the simulator.
@@ -111,57 +111,57 @@ The length of the left (inclined) rope is equal to the length calculated in the 
 The vector equilibrium equation:
 
 $$
-\vec{K}_1 + \vec{K}_2 + \vec{G} = \vec{0}
+\vec{T}_1 + \vec{T}_2 + \vec{F}_g = \vec{0}
 $$
 
 The system of equations for the coordinate components:
 
 $$
-K_{1x} + K_{2x} + G_x = 0
+K_{1x} + K_{2x} + F_{g,x} = 0
 $$
 
 $$
-K_{1y} + K_{2y} + G_y = 0
+K_{1y} + K_{2y} + F_{g,y} = 0
 $$
 
 Based on the direction of the forces, the values of the coordinates are:
 
 $$
-K_{1x} = -K_1 \cdot \sin \alpha
+K_{1x} = -T_1 \cdot \sin \alpha
 $$
 
 $$
-K_{1y} = K_1 \cdot \cos \alpha
+K_{1y} = T_1 \cdot \cos \alpha
 $$
 
 $$
-K_{2x} = K_2,\ \ K_{2y} = 0
+K_{2x} = T_2,\ \ K_{2y} = 0
 $$
 
 $$
-G_x = 0,\ \ G_y = -G = -0.98\text{ N}
+F_{g,x} = 0,\ \ F_{g,y} = -F_g = -0.98\text{ N}
 $$
 
 Substituting these components into the system of equations:
 
 $$
--K_1 \cdot \sin \alpha + K_2 + 0 = 0
+-T_1 \cdot \sin \alpha + T_2 + 0 = 0
 $$
 
 $$
-K_1 \cdot \cos \alpha + 0 - G = 0
+T_1 \cdot \cos \alpha + 0 - F_g = 0
 $$
 
-From the second (vertical) equation, the force $K_1$ generated in the inclined rope can be directly expressed:
+From the second (vertical) equation, the force $T_1$ generated in the inclined rope can be directly expressed:
 
 $$
-K_1 = \frac {G} {\cos \alpha} = \frac {0.98\text{ N}} {0.8} = 1.225\text{ N}
+T_1 = \frac {F_g} {\cos \alpha} = \frac {0.98\text{ N}} {0.8} = 1.225\text{ N}
 $$
 
 Substituting this value back into the first (horizontal) equation, we get the magnitude of the horizontal pulling force:
 
 $$
-K_2 = K_1 \cdot \sin \alpha = 1.225\text{ N} \cdot 0.6 = 0.735\text{ N}
+T_2 = T_1 \cdot \sin \alpha = 1.225\text{ N} \cdot 0.6 = 0.735\text{ N}
 $$
 
 Thus, the left inclined rope is stretched with a force of $1.23\text{ N}$, while the tensile force generated in the right horizontal tension rope is $0.735\text{ N}$.
@@ -174,11 +174,11 @@ Thus, the left inclined rope is stretched with a force of $1.23\text{ N}$, while
 
     [Statics first problem interactive simulation](https://alexerdei73.github.io/physics-engine/project/#b7f8397b-e4ea-4f20-9a85-cddec0155428)
 
-2. On a frictionless inclined plane with an angle of inclination of $30^\circ$, an object with a mass of $2.00\text{ kg}$ is kept in equilibrium by a rope attached to the top of the incline and parallel to the plane of the incline. What is the tensile force $K_1$ generated in the rope, and what is the perpendicular constraint force $K_2$ exerted by the surface of the incline?
+2. On a frictionless inclined plane with an angle of inclination of $30^\circ$, an object with a mass of $2.00\text{ kg}$ is kept in equilibrium by a rope attached to the top of the incline and parallel to the plane of the incline. What is the tensile force $T_1$ generated in the rope, and what is the perpendicular constraint force $T_2$ exerted by the surface of the incline?
 
-3. A street lamp with a mass of $15\text{ kg}$ is supported by a steel wire stretched between two poles. The two halves of the wire enclose an angle of exactly $170^\circ$ with each other (meaning that on both sides it deviates by only $5^\circ$ from perfectly horizontal). What force $K$ stretches the segments of the steel wire?
+3. A street lamp with a mass of $15\text{ kg}$ is supported by a steel wire stretched between two poles. The two halves of the wire enclose an angle of exactly $170^\circ$ with each other (meaning that on both sides it deviates by only $5^\circ$ from perfectly horizontal). What force $T$ stretches the segments of the steel wire?
 
-4. An object with a mass of $5.00\text{ kg}$ is kept in equilibrium by two ropes attached to the ceiling, which enclose angles of $30^\circ$ and $45^\circ$ with the vertical. Determine the magnitudes of the tensile forces $K_1$ and $K_2$ generated in the two ropes!
+4. An object with a mass of $5.00\text{ kg}$ is kept in equilibrium by two ropes attached to the ceiling, which enclose angles of $30^\circ$ and $45^\circ$ with the vertical. Determine the magnitudes of the tensile forces $T_1$ and $T_2$ generated in the two ropes!
 
 5. A traffic light with a mass of $10\text{ kg}$ hangs at the end of a horizontal rigid rod with a length of $6.00\text{ m}$. The rod is supported at the wall by a hinge, and the end of the rod is secured above the rod by a bracing wire rope connecting to the vertical wall at a $45^\circ$ angle. What tensile force is generated in the wire if the weight of the rod itself is considered negligible?
 
