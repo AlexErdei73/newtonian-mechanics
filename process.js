@@ -218,10 +218,10 @@ function generateNavbar(filename, isSubfolder, fileTitle) {
                 "<a href=\"" + pfx + "index.html\" class=\"navbar-brand navbar-brand-mobile\">" + ui.brand + "</a>" +
                 "<div class=\"nav-group-left\">" +
                     "<a href=\"" + pfx + "index.html\">" + ui.about + "</a>" +
-                    "<a href=\"" + pfx + "VEGEREDMENYEK.html" + solutionsAnchor + "\" style=\"font-weight: 600;\">" + ui.solutions + "</a>" +
                     "<a href=\"" + pfx + "IRODALOMJEGYZEK.html\">" + ui.literature + "</a>" +
                 "</div>" +
                 "<div class=\"nav-group-right\">" +
+                    "<a href=\"" + pfx + "VEGEREDMENYEK.html" + solutionsAnchor + "\" style=\"font-weight: 600;\">" + ui.solutions + "</a>" +
                     "<div class=\"dropdown\">" +
                         "<a href=\"#\" class=\"dropdown-trigger\" onclick=\"return false;\">" + ui.topicsTrigger + "</a>" +
                         "<ul class=\"dropdown-menu\">" +
