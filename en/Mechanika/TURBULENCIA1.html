@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://w3.org" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Fully Developed Turbulence and the Energy Cascade</title>
+    <link rel="stylesheet" href="../github-markdown.css" />
+      <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
+  </head>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newtonian Mechanics</a><div class="nav-group-center"><a href="KARMANORVENYSOR.html" class="nav-btn" aria-label="Previous lesson">◀<span class="btn-text"> Prev</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Table of Contents">☰<span class="btn-text"> Contents</span></a><a href="TURBULENCIA2.html" class="nav-btn" aria-label="Next lesson"><span class="btn-text">Next </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newtonian Mechanics</a><div class="nav-group-left"><a href="../index.html">About</a><a href="../VEGEREDMENYEK.html#fully-developed-turbulence-and-the-energy-cascade" style="font-weight: 600;">Solutions</a><a href="../IRODALOMJEGYZEK.html">Bibliography</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Topics ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematics</a></li><li><a href="NEWTONTORVENYEI.html">Dynamics</a></li><li><a href="MUNKA.html">Energy</a></li><li><a href="IMPULZUS.html">Momentum & Collisions</a></li><li><a href="RUGALMATLANUTKOZES.html">Systems of Particles</a></li><li><a href="EGYENLETESKORMOZGAS.html">Circular Motion</a></li><li><a href="KEPLERTORVENYEI.html">Gravitation</a></li><li><a href="MEREVTEST.html">Rotational Dynamics</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Oscillations & Waves</a></li><li><a href="NYOMAS.html">Fluid Mechanics</a></li></ul></div></div></div></nav></header>
+<main class="markdown-body">
+<h1 id="fully-developed-turbulence-and-the-energy-cascade">Fully Developed Turbulence and the Energy Cascade</h1>
+<h2 id="properties-of-turbulence">Properties of Turbulence</h2>
+<p>We have seen from previous sections that pipe flow is only laminar, stationary, and vortex-free at low Reynolds numbers. This applies similarly to flow around a sphere, from which Stokes derived his law for drag force at very low Reynolds numbers. We have also seen how planar flow around an infinitely long cylinder becomes vortex-ridden and subsequently forms a von Kármán vortex street at higher Reynolds numbers.</p>
+<p>This process leads to a highly chaotic flow at high Reynolds numbers, which we refer to as turbulent flow. Of course, this cannot develop in purely planar flows, as the formation of turbulence is only possible in three dimensions. We will now examine why this is the case. In everyday life—as we shall see—we encounter turbulent flows in almost all instances once we step out of the laboratory or look beyond the simpler cases investigated so far.</p>
+<h3 id="experiments">Experiments</h3>
+<p><lite-youtube videoid="5zI9sG3pjVU"></lite-youtube></p>
+<p>This video shows many interesting details regarding turbulent flows: it discusses the boundary layer, the no-slip condition, examples where turbulence is practically useful, and naturally, the phenomenon itself along with its formation. Let us look at the main characteristics of turbulence:</p>
+<ul>
+<li><strong>Spatial phenomenon:</strong> It can only operate in 3D.</li>
+<li><strong>Occurs at high Reynolds numbers:</strong> When inertial forces dominate over viscous forces.</li>
+<li><strong>Vortical flow:</strong> The flow field is filled with rotating structures (eddies).</li>
+<li><strong>Unpredictable and chaotic:</strong> The velocity at any given point fluctuates wildly around a certain value.</li>
+<li><strong>Accompanied by mixing:</strong> Streamlines become tangled and mixed in an obviously irreversible manner.</li>
+<li><strong>Requires energy to be maintained:</strong> Energy is dissipated into the internal energy (heat) of the fluid, generally more intensely than in laminar flow.</li>
+</ul>
+<p>Furthermore, we saw that although turbulence generally increases drag and hydrodynamic resistance in pipes, it can be explicitly beneficial in certain cases.</p>
+<h4 id="why-does-a-golf-ball-have-dimples">Why Does a Golf Ball Have Dimples?</h4>
+<p>The dimpled surface of a golf ball intentionally creates a thin, turbulent boundary layer around the ball. This has two conflicting physical effects:</p>
+<ol type="1">
+<li><strong>Negative effect:</strong> It slightly increases direct skin friction.</li>
+<li><strong>Positive effect:</strong> The turbulent flow adheres better to the surface, allowing air to flow further around the sphere before separating.</li>
+</ol>
+<p>The consequence of this is that the low-pressure wake (pressure drag) forming behind the ball is drastically reduced, and the total drag becomes significantly smaller under identical conditions compared to a smooth ball.</p>
+<hr />
+<h2 id="the-energy-cascade">The Energy Cascade</h2>
+<p>The video also discussed how large eddies first form at high Reynolds numbers, and then these eddies break up into smaller eddies as they stretch out and begin to spin faster. Subsequently, these smaller eddies stretch even further and break apart into even smaller eddies, and this process continues until a sufficiently high velocity and small size are reached where friction is capable of consuming the energy of the eddies and converting it into the fluid’s internal energy.</p>
+<p>This process is known as the <strong>energy cascade</strong>. Mechanical energy is injected into the large eddies, but this energy is then transferred down to the smaller eddies. At this intermediate level, energy is conserved because friction does not yet play a primary role.</p>
+<p>The process can only take place in three dimensions due to the vital role played by the stretching and spinning up of vortex filaments (<em>vortex stretching</em>).</p>
+<blockquote>
+<p><strong>The Figure Skater Analogy:</strong> Imagine a spinning figure skater. When they pull their arms in toward their axis of rotation (thereby stretching along the rotational axis), their spin suddenly accelerates due to the conservation of angular momentum. In turbulent flow, large eddies stretch smaller eddies along the third dimension in exactly this manner, causing them to rotate faster while their size decreases. In planar (2D) flows, this process is a physical impossibility due to the conservation of mass.</p>
+</blockquote>
+<p>This step-by-step process therefore transfers the injected energy into smaller and smaller eddies until friction finally consumes the injected mechanical energy at the very end. Let us watch a video about this.</p>
+<h3 id="experiments-1">Experiments</h3>
+<p><lite-youtube videoid="_UoTTq651dE"></lite-youtube></p>
+<p>This video also explains the properties of turbulence, but it talks about the energy cascade in much greater detail. Following that, it mentions an important mathematical law.</p>
+<blockquote>
+<p><strong>The energy stored in eddies of various sizes, relative to a unit mass of fluid, is proportional to the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mi>/</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">5/3</annotation></semantics></math> power of the diameter <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math> of the eddies in turbulent flow.</strong></p>
+</blockquote>
+<p>This is a very interesting correlation that experiments have verified with high precision in its original form for the intermediate size range of the energy cascade. The video also mentions that this finding comes from Russian mathematician Andrey Kolmogorov, who recognized the mechanics of the energy cascade and arrived at this law from a few simple assumptions. He is, of course, best known for his achievements in probability theory and statistics.</p>
+<p>He realized that solving the fundamental governing equations in such a complex case is hopeless, since it has not even been mathematically proven whether well-behaved solutions—which do not blow up to infinity at certain points—even exist. Thus, he employed statistical assumptions and simple dimensional analysis to reach his conclusions. His line of reasoning is highly intriguing, so we will attempt to explain it to interested readers in the next lesson!</p>
+<blockquote>
+<p><strong>Warning!</strong> The creators of the video did not fully follow Kolmogorov’s original line of reasoning. Due to a mathematical error during simplification, the featured assertion in the video became inaccurate. The error affects the exponent: both its sign and its magnitude are incorrect for the specified geometric size. For the quantity <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E(D)</annotation></semantics></math> according to real spatial dimensions, the correct exponent is actually -1/3, meaning the statement from the video correctly reads:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mo stretchy="false" form="postfix">)</mo><mo>∝</mo><msup><mi>D</mi><mrow><mi>−</mi><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></msup></mrow><annotation encoding="application/x-tex">E(D) \propto D^{-\frac{1}{3}}</annotation></semantics></math></p>
+</blockquote>
+<p>We will discuss this, computational fluid dynamics simulations, and the magical power of dimensional analysis in detail in the next, advanced-level lesson.</p>
+</main>
+</body>
+</html>

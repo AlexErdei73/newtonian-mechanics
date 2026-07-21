@@ -36,6 +36,7 @@ $$
 [10 N súlyú test egyensúlya 30 fokos lejtőn (Kísérleti videó)](https://www.youtube.com/watch?v=6w6yRr7y9n8)
 
 A videóban bemutatott kísérlet két alapvető fizikai tényt demonstrál:
+
 1. A $30^\circ$-os lejtőre helyezett $10\text{ N}$ súlyú test megtartásához a lejtővel párhuzamos, pontosan $5\text{ N}$ nagyságú, felfelé mutató tartóerő szükséges.
 2. A lejtő felülete a testre egy arra merőleges, úgynevezett normális vagy kényszererőt fejt ki, amely megakadályozza, hogy a test behatoljon a lejtő anyagába. Ez a merőleges erő jelen esetben kisebb, mint a test teljes súlya.
 

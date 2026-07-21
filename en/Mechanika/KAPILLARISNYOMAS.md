@@ -49,23 +49,23 @@ In the final step, the small $\Delta R$ was neglected next to the significantly 
 Let us examine the increase in surface area energy, taking into account both surfaces (outer and inner):
 
 $$
-E_f = \alpha \cdot 2A = \alpha \cdot 2 \cdot (4\pi R^2) = \alpha \cdot 8\pi R^2
+E_{\text{surface}} = \alpha \cdot 2A = \alpha \cdot 2 \cdot (4\pi R^2) = \alpha \cdot 8\pi R^2
 $$
 
 $$
-\Delta E_f = \alpha \cdot 8\pi R^2 - \alpha \cdot 8\pi R_0^2 = \alpha \cdot 8\pi (R^2 - R_0^2) = \alpha \cdot 8\pi \Delta R^2
+\Delta E_{\text{surface}} = \alpha \cdot 8\pi R^2 - \alpha \cdot 8\pi R_0^2 = \alpha \cdot 8\pi (R^2 - R_0^2) = \alpha \cdot 8\pi \Delta R^2
 $$
 
 Substituting the earlier approximation ($\Delta R^2 \approx 2R \cdot \Delta R$):
 
 $$
-\Delta E_f = \alpha \cdot 8\pi \cdot (2R \cdot \Delta R) = \alpha \cdot 16\pi R \cdot \Delta R
+\Delta E_{\text{surface}} = \alpha \cdot 8\pi \cdot (2R \cdot \Delta R) = \alpha \cdot 16\pi R \cdot \Delta R
 $$
 
 The volumetric work performed is entirely spent on increasing the surface energy:
 
 $$
-W = \Delta E_f
+W = \Delta E_{\text{surface}}
 $$
 
 $$

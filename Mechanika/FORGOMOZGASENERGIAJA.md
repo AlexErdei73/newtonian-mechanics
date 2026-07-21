@@ -167,7 +167,8 @@ A Maxwell-kerék (vagy Maxwell-tárcsa) egy klasszikus demonstrációs eszköz, 
 
 **2. Különböző testek versenye:**
 
-A szövegben egy tömör gömb gyorsulását számoltuk ki. Képzeljük el, hogy a gömb helyett egy homogén, tömör henger gördül le ugyanezen a $30^\circ$-os lejtőn! A henger tehetetlenségi nyomatéka $\Theta_{\text{TKP}} = \frac{1}{2}mr^2$. 
+A szövegben egy tömör gömb gyorsulását számoltuk ki. Képzeljük el, hogy a gömb helyett egy homogén, tömör henger gördül le ugyanezen a $30^\circ$-os lejtőn! A henger tehetetlenségi nyomatéka $\Theta_{\text{TKP}} = \frac{1}{2}mr^2$.
+ 
 * Használd a szövegben levezetett általános képletet, és számítsd ki a henger gyorsulását! 
 * Hasonlítsd össze a kapott értéket a gömb gyorsulásával ($3,504\text{ m/s}^2$)! Melyik test ér le hamarabb a lejtő aljára, ha azonos magasságból, egyszerre indítjuk őket? A testek tömege és sugara számít-e a végeredmény szempontjából?
 

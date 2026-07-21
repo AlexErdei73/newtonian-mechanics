@@ -215,6 +215,7 @@ $$
 Emlékezzünk vissza, hogyan vezettük be a harmonikus rezgőmozgást a tanulmányaink elején! A rezgést egy egyenletes körmozgást végző test (az ún. referenciakörön mozgó pont) árnyékaként, vetületeként képzeltük el. Ennek a körmozgásnak a szögsebessége éppen az $\omega$ körfrekvencia.
 
 Pontosan ezt a logikát alkalmazzuk itt is! A kényszerrezgés során a kitérés, a sebesség és a gyorsulás is periodikusan változik. Ezeket a mennyiségeket elképzelhetjük egy-egy $\omega$ szögsebességgel forgó vektorként, amelyeknek a vízszintes tengelyre vett vetülete adja meg a pillanatnyi értékeket:
+
 * A **kitérés** egy bizonyos szögben áll.
 * A **sebesség** a kitéréshez képest pontosan $90^\circ$-kal siet (hiszen a koszinuszból szinusz lett).
 * A **gyorsulás** pedig $180^\circ$-kal van elfordulva a kitéréshez képest (mivel a koszinuszból mínusz koszinusz lett).

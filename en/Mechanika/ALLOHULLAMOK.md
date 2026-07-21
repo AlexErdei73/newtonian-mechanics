@@ -277,14 +277,17 @@ $$
 
 **Problem 1**
 One end of a homogeneous rope of length $10 \text{ m}$ is fixed, and the other end can move freely. The wave speed on the rope is $5 \text{ m/s}$.
+
 * Determine the frequency and wavelength of the fundamental harmonic (fundamental tone)!
 * With what frequency must the rope be vibrated so that a standing wave develops on which precisely 3 internal nodes can be found ($n=3$)?
 
 **Problem 2**
 Both ends of a guitar string are fixed, its length is $0.65 \text{ m}$. We know that the frequency of the string's fundamental tone is $330 \text{ Hz}$ (this corresponds to the note E).
+
 * At what speed do the mechanical waves propagate on this string?
 * Determine the frequency and the corresponding wavelength of the third overtone (at which three internal nodes can be found)!
 
 **Problem 3**
 We examine two strings made of the same material and under the same mechanical tension (therefore possessing identical wave speeds) under laboratory conditions. Both ends of the first string of length $L_1$ are fixed, while one end of the second string of length $L_2$ is fixed and the other is free.
+
 * Express the length $L_2$ as a function of $L_1$ if we want to achieve that the fundamental frequencies ($f_0$) of the two strings match each other precisely!

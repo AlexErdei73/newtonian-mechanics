@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://w3.org" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Atwood’s Machine</title>
+    <link rel="stylesheet" href="../github-markdown.css" />
+      <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
+  </head>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newtonian Mechanics</a><div class="nav-group-center"><a href="TKPTETEL.html" class="nav-btn" aria-label="Previous lesson">◀<span class="btn-text"> Prev</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Table of Contents">☰<span class="btn-text"> Contents</span></a><a href="FELADATOKATWOODGEP.html" class="nav-btn" aria-label="Next lesson"><span class="btn-text">Next </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newtonian Mechanics</a><div class="nav-group-left"><a href="../index.html">About</a><a href="../VEGEREDMENYEK.html#atwood’s-machine" style="font-weight: 600;">Solutions</a><a href="../IRODALOMJEGYZEK.html">Bibliography</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Topics ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematics</a></li><li><a href="NEWTONTORVENYEI.html">Dynamics</a></li><li><a href="MUNKA.html">Energy</a></li><li><a href="IMPULZUS.html">Momentum & Collisions</a></li><li><a href="RUGALMATLANUTKOZES.html">Systems of Particles</a></li><li><a href="EGYENLETESKORMOZGAS.html">Circular Motion</a></li><li><a href="KEPLERTORVENYEI.html">Gravitation</a></li><li><a href="MEREVTEST.html">Rotational Dynamics</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Oscillations & Waves</a></li><li><a href="NYOMAS.html">Fluid Mechanics</a></li></ul></div></div></div></nav></header>
+<main class="markdown-body">
+<h1 id="atwoods-machine">Atwood’s Machine</h1>
+<h2 id="inextensible-string-of-negligible-mass">Inextensible String of Negligible Mass</h2>
+<p>This is an idealisation frequently encountered in physics problems. In experiments, the mass of the string is usually negligible, as is its elongation. What exact simplifications does this introduce?</p>
+<ol type="1">
+<li>Negligible mass means that no force is required to accelerate the string itself; therefore, it exerts exactly the same force at both of its ends. If the string is straight and taut (or can be divided into such sections), its acceleration based on Newton’s second law is:</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">net</mtext></msub><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">
+F_{\text{net}} = ma
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>−</mo><msub><mi>T</mi><mn>2</mn></msub><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">
+T_1 - T_2 = ma
+</annotation></semantics></math></p>
+<p>Here, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mn>1</mn></msub><annotation encoding="application/x-tex">T_1</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mn>2</mn></msub><annotation encoding="application/x-tex">T_2</annotation></semantics></math> are the forces exerted at the two ends, acting in opposite directions. If <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">m = 0</annotation></semantics></math>, then:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>−</mo><msub><mi>T</mi><mn>2</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+T_1 - T_2 = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>=</mo><msub><mi>T</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">
+T_1 = T_2
+</annotation></semantics></math></p>
+<blockquote>
+<p><strong>A straight, taut string of negligible mass exerts equal forces at its two ends. The force exerted by the string points along the direction of the string; it has no component perpendicular to the string.</strong></p>
+</blockquote>
+<ol start="2" type="1">
+<li>When taut, the two ends of an inextensible string displace by equal amounts along the direction of the string. Consequently, the length of the string does not change during displacement. Let the distances travelled by the endpoints along the direction of the string be <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mn>1</mn></msub><annotation encoding="application/x-tex">s_1</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>s</mi><mn>2</mn></msub><annotation encoding="application/x-tex">s_2</annotation></semantics></math>. Then:</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>l</mi><mo>=</mo><mo stretchy="false" form="prefix">|</mo><msub><mi>s</mi><mn>2</mn></msub><mo>−</mo><msub><mi>s</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">
+\Delta l = |s_2 - s_1|
+</annotation></semantics></math></p>
+<p>Here, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>l</mi></mrow><annotation encoding="application/x-tex">\Delta l</annotation></semantics></math> is the elongation of the string. Since this is zero, we have:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mo stretchy="false" form="prefix">|</mo><msub><mi>s</mi><mn>2</mn></msub><mo>−</mo><msub><mi>s</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">
+0 = |s_2 - s_1|
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>=</mo><msub><mi>s</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">
+s_1 = s_2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msub><mi>s</mi><mn>1</mn></msub><mi>t</mi></mfrac><mo>=</mo><mfrac><msub><mi>s</mi><mn>2</mn></msub><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{s_1}{t} = \frac{s_2}{t}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mtext mathvariant="normal">s</mtext></mrow></msub><mo>=</mo><msub><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mtext mathvariant="normal">s</mtext></mrow></msub></mrow><annotation encoding="application/x-tex">
+v_{1,\text{s}} = v_{2,\text{s}}
+</annotation></semantics></math></p>
+<p>Here, the velocities represent the components of the endpoints’ velocities along the direction of the string. If the ends of the string move purely along the direction of the string—meaning there is no velocity component of the string’s endpoints perpendicular to the string itself—then the accelerations of the endpoints are also equal:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mi>v</mi><mrow><mn>1</mn><mo>,</mo><mtext mathvariant="normal">s</mtext></mrow></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mi>v</mi><mrow><mn>2</mn><mo>,</mo><mtext mathvariant="normal">s</mtext></mrow></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{\Delta v_{1,\text{s}}}{t} = \frac{\Delta v_{2,\text{s}}}{t}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>=</mo><msub><mi>a</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">
+a_1 = a_2
+</annotation></semantics></math></p>
+<p>Thus, the accelerations are identical here, but this is only true if the displacement of the endpoints is purely a consequence of translational motion along the direction of the string. This does not hold true, for instance, for a pendulum, where the velocity of the pendulum is perpendicular to the string. For a pendulum, the length of the string does not change if the string is inextensible, but the velocity has no component along the direction of the string at the swinging endpoint. The circular motion of an object tied to a string, such as a swinging pendulum, will be discussed in greater detail later.</p>
+<blockquote>
+<p><strong>The accelerations of the two endpoints of an inextensible string are equal in magnitude, provided that the velocities of the endpoints are purely directed along the string.</strong></p>
+</blockquote>
+<h2 id="pulley-of-negligible-mass">Pulley of Negligible Mass</h2>
+<p>Later, during the study of rotational motion, we will see that no rotational effect (torque) is required to rotate a pulley of negligible mass. Therefore, such a pulley merely alters the direction of the rope passed over it—and consequently, the direction of the force exerted by the rope—but it does not change the magnitude of the force exerted by the rope. The net force acting on the pulley is also always zero, since the mass of the pulley can be treated as zero.</p>
+<blockquote>
+<p><strong>The role of a pulley of negligible mass is simply to change the direction of the tension force, without altering the magnitude of the force. The net force acting on a pulley of negligible mass is also zero.</strong></p>
+</blockquote>
+<h2 id="atwoods-machine-1">Atwood’s Machine</h2>
+<p>Let us fix a pulley to the ceiling and pass a string over it. We hang a body at each end of the string, with the strands of the string hanging vertically at the bodies. The string is inextensible and has negligible mass. The pulley also has negligible mass. Friction and air resistance are neglected as well. What is the acceleration of the bodies tied to the string? What is the force generated in the string? With what force does the pulley pull the suspension mount on the ceiling?</p>
+<p>The figure below shows an ideal Atwood machine:</p>
+<figure>
+<img src="Kepek/atwood.svg" alt="Atwood machine" />
+<figcaption aria-hidden="true">Atwood machine</figcaption>
+</figure>
+<p>We write Newton’s second law for both bodies:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>−</mo><msub><mi>m</mi><mn>1</mn></msub><mi>g</mi><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><mi>a</mi></mrow><annotation encoding="application/x-tex">
+T - m_1 g = m_1 a
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi><mo>−</mo><mi>T</mi><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><mi>a</mi></mrow><annotation encoding="application/x-tex">
+m_2 g - T = m_2 a
+</annotation></semantics></math></p>
+<p>We express the tension from the first equation and substitute it into the second equation, then solve the equation for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><mi>g</mi><mo>+</mo><msub><mi>m</mi><mn>1</mn></msub><mi>a</mi></mrow><annotation encoding="application/x-tex">
+T = m_1 g + m_1 a
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi><mo>−</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>m</mi><mn>1</mn></msub><mi>g</mi><mo>+</mo><msub><mi>m</mi><mn>1</mn></msub><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><mi>a</mi></mrow><annotation encoding="application/x-tex">
+m_2 g - (m_1 g + m_1 a) = m_2 a
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi><mo>−</mo><msub><mi>m</mi><mn>1</mn></msub><mi>g</mi><mo>−</mo><msub><mi>m</mi><mn>1</mn></msub><mi>a</mi><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><mi>a</mi></mrow><annotation encoding="application/x-tex">
+m_2 g - m_1 g - m_1 a = m_2 a
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>2</mn></msub><mi>g</mi><mo>−</mo><msub><mi>m</mi><mn>1</mn></msub><mi>g</mi><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><mi>a</mi><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><mi>a</mi></mrow><annotation encoding="application/x-tex">
+m_2 g - m_1 g = m_1 a + m_2 a
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>m</mi><mn>2</mn></msub><mo>−</mo><msub><mi>m</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo><mi>g</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">
+(m_2 - m_1)g = (m_1 + m_2)a
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><msub><mi>m</mi><mn>2</mn></msub><mo>−</mo><msub><mi>m</mi><mn>1</mn></msub></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac><mi>g</mi></mrow><annotation encoding="application/x-tex">
+a = \frac{m_2 - m_1}{m_1 + m_2}g
+</annotation></semantics></math></p>
+<p>Now we calculate the value of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><mi>g</mi><mo>+</mo><msub><mi>m</mi><mn>1</mn></msub><mi>a</mi><mo>=</mo><msub><mi>m</mi><mn>1</mn></msub><mi>g</mi><mo>+</mo><msub><mi>m</mi><mn>1</mn></msub><mfrac><mrow><msub><mi>m</mi><mn>2</mn></msub><mo>−</mo><msub><mi>m</mi><mn>1</mn></msub></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac><mi>g</mi></mrow><annotation encoding="application/x-tex">
+T = m_1 g + m_1 a = m_1 g + m_1 \frac{m_2 - m_1}{m_1 + m_2}g
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mrow><msub><mi>m</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msub><mi>m</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>m</mi><mn>2</mn></msub><mo>−</mo><msub><mi>m</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac><mi>g</mi><mo>=</mo><mfrac><mrow><mn>2</mn><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac><mi>g</mi></mrow><annotation encoding="application/x-tex">
+T = \frac{m_1(m_1 + m_2) + m_1(m_2 - m_1)}{m_1 + m_2}g = \frac{2m_1 m_2}{m_1 + m_2}g
+</annotation></semantics></math></p>
+<p>The weight of the system (the force pulling on the suspension):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">w</mtext></msub><mo>=</mo><mn>2</mn><mi>T</mi><mo>=</mo><mfrac><mrow><mn>4</mn><msub><mi>m</mi><mn>1</mn></msub><msub><mi>m</mi><mn>2</mn></msub></mrow><mrow><msub><mi>m</mi><mn>1</mn></msub><mo>+</mo><msub><mi>m</mi><mn>2</mn></msub></mrow></mfrac><mi>g</mi></mrow><annotation encoding="application/x-tex">
+F_{\text{w}} = 2T = \frac{4m_1 m_2}{m_1 + m_2}g
+</annotation></semantics></math></p>
+<h3 id="experiment">Experiment</h3>
+<p><lite-youtube videoid="4ovhEkSIqV0"></lite-youtube></p>
+<h3 id="exercises">Exercises</h3>
+<ol type="1">
+<li>Calculate the acceleration of the Atwood machine shown in the video based on the masses! Calculate the same based on the displacement and time! Compare the results as well!</li>
+<li>For the Atwood machine shown in the video, demonstrate that mechanical energy is conserved, meaning that the sum of potential energy and kinetic energy at the moment of release is equal to the sum of potential energy and kinetic energy at arrival, at the instant immediately preceding the collision with the floor!</li>
+<li>By how much did the center of mass of the system sink? How much time did this change take? Use these values to calculate the acceleration of the center of mass! Show that this matches the acceleration calculated from the center of mass theorem!</li>
+</ol>
+</main>
+</body>
+</html>

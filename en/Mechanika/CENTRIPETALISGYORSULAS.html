@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns="http://w3.org" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Centripetal Acceleration</title>
+    <link rel="stylesheet" href="../github-markdown.css" />
+      <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
+  </head>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newtonian Mechanics</a><div class="nav-group-center"><a href="EGYENLETESKORMOZGAS.html" class="nav-btn" aria-label="Previous lesson">◀<span class="btn-text"> Prev</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Table of Contents">☰<span class="btn-text"> Contents</span></a><a href="KORMOZGASESENERGIA.html" class="nav-btn" aria-label="Next lesson"><span class="btn-text">Next </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newtonian Mechanics</a><div class="nav-group-left"><a href="../index.html">About</a><a href="../VEGEREDMENYEK.html#centripetal-acceleration" style="font-weight: 600;">Solutions</a><a href="../IRODALOMJEGYZEK.html">Bibliography</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Topics ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematics</a></li><li><a href="NEWTONTORVENYEI.html">Dynamics</a></li><li><a href="MUNKA.html">Energy</a></li><li><a href="IMPULZUS.html">Momentum & Collisions</a></li><li><a href="RUGALMATLANUTKOZES.html">Systems of Particles</a></li><li><a href="EGYENLETESKORMOZGAS.html">Circular Motion</a></li><li><a href="KEPLERTORVENYEI.html">Gravitation</a></li><li><a href="MEREVTEST.html">Rotational Dynamics</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Oscillations & Waves</a></li><li><a href="NYOMAS.html">Fluid Mechanics</a></li></ul></div></div></div></nav></header>
+<main class="markdown-body">
+<h1 id="centripetal-acceleration">Centripetal Acceleration</h1>
+<p>In the previous lesson, both the experiment and the simulation demonstrated that maintaining uniform circular motion requires a force directed toward the center of the circle. This force is the centripetal force.</p>
+<p>According to Newton’s second law, the centripetal force is accompanied by an acceleration directed toward the center of the circle. This is the centripetal acceleration. It arises because the direction of the object’s velocity is continuously changing. At any instant, the displacement of the object can be decomposed into a linear, uniform velocity displacement and a uniformly accelerating displacement directed toward the center of the circle.</p>
+<blockquote>
+<p><strong>To maintain the circular motion of an object undergoing uniform circular motion, a centripetal force directed toward the center of the circle is required. The centripetal force is accompanied by a centripetal acceleration.</strong></p>
+</blockquote>
+<h2 id="calculating-centripetal-acceleration">Calculating Centripetal Acceleration</h2>
+<p>Let us derive the formula for centripetal acceleration! Let the object be at the topmost point of its circular path, and let us analyze its motion over a time interval <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>. The time interval <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> is much smaller than the period <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>≪</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">t \ll T</annotation></semantics></math>) so that we can apply a few approximations.</p>
+<p>The displacement of the object can be decomposed into a horizontal, linear, uniform motion displacement and a uniformly accelerating motion displacement directed toward the center. The vertical radius, the displacements, and the radius pointing to the final point of the displacement form a right-angled triangle.</p>
+<figure>
+<img src="Kepek/centripetalisgyorsulas.svg" alt="Derivation of centripetal acceleration" />
+<figcaption aria-hidden="true">Derivation of centripetal acceleration</figcaption>
+</figure>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo>+</mo><mi>s</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mi>t</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+(R + s)^2 = R^2 + (vt)^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>R</mi><mi>s</mi><mo>+</mo><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><mi>v</mi><mn>2</mn></msup><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+R^2 + 2Rs + s^2 = R^2 + v^2 t^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>R</mi><mi>s</mi><mo>+</mo><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+2Rs + s^2 = v^2 t^2
+</annotation></semantics></math></p>
+<p>Since the time interval is extremely short, any term containing <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>t</mi><mn>4</mn></msup><annotation encoding="application/x-tex">t^4</annotation></semantics></math> is negligible compared to terms proportional to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>t</mi><mn>2</mn></msup><annotation encoding="application/x-tex">t^2</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = \frac{a}{2}t^2
+</annotation></semantics></math></p>
+<p>Here, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>s</mi><mn>2</mn></msup><annotation encoding="application/x-tex">s^2</annotation></semantics></math> is negligible because it is a term proportional to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>t</mi><mn>4</mn></msup><annotation encoding="application/x-tex">t^4</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>R</mi><mi>s</mi><mo>=</mo><msup><mi>v</mi><mn>2</mn></msup><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+2Rs = v^2 t^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>R</mi></mfrac><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = \frac{\frac{v^2}{R}}{2}t^2
+</annotation></semantics></math></p>
+<p>Comparing this formula to our standard equation for uniformly accelerating motion, we get:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac{v^2}{R}
+</annotation></semantics></math></p>
+<blockquote>
+<p><strong>Centripetal acceleration is the quotient of the square of the velocity and the radius.</strong></p>
+</blockquote>
+<p>This can easily be verified with the simulation.</p>
+<h3 id="examples">Examples</h3>
+<ol type="1">
+<li>A stone of mass <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">0.100\text{ kg}</annotation></semantics></math> is whirled in a sling with a period of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">0.4\text{ s}</annotation></semantics></math> along a circular path of radius <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0.200\text{ m}</annotation></semantics></math>. The stone undergoes uniform circular motion. What is the velocity of the stone? What is the kinetic energy of the stone? What is the centripetal acceleration of the stone? What force keeps the stone in its path?</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi><mi>R</mi></mrow><mi>T</mi></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>3.1415</mn><mo>⋅</mo><mn>0.2</mn></mrow><mn>0.4</mn></mfrac><mo>≈</mo><mn>3.142</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v = \frac{2\pi R}{T} = \frac{2 \cdot 3.1415 \cdot 0.2}{0.4} \approx 3.142\text{ m/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>0.1</mn><mo>⋅</mo><msup><mn>3.142</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>≈</mo><mn>0.4933</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+E_{\text{m}} = \frac{mv^2}{2} = \frac{0.1 \cdot 3.142^2}{2} \approx 0.4933\text{ J}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>R</mi></mfrac><mo>=</mo><mfrac><msup><mn>3.142</mn><mn>2</mn></msup><mn>0.2</mn></mfrac><mo>≈</mo><mn>49.36</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a = \frac{v^2}{R} = \frac{3.142^2}{0.2} \approx 49.36\text{ m/s}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">net</mtext></msub><mo>=</mo><mi>m</mi><mi>a</mi><mo>=</mo><mn>0.1</mn><mo>⋅</mo><mn>49.36</mn><mo>=</mo><mn>4.936</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F_{\text{net}} = ma = 0.1 \cdot 49.36 = 4.936\text{ N}
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>A bucket contains water and is whirled on a rope in a vertical plane so that it undergoes circular motion. At the highest point of the path, the velocity of the bucket is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ m/s}</annotation></semantics></math> and the radius of the circle is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.77</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0.77\text{ m}</annotation></semantics></math>. With what force does the water press against the bottom of the bucket if its mass is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1.50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">1.50\text{ kg}</annotation></semantics></math>? Does the water spill out of the bucket? What is the minimum angular velocity at which the water does not spill out of the bucket?</li>
+</ol>
+<h3 id="experiment">Experiment</h3>
+<p><lite-youtube videoid="TIBcntHCxjQ"></lite-youtube></p>
+<p>We write Newton’s second law at the highest point of the path:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mo>+</mo><mi>T</mi><mo>=</mo><mi>m</mi><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub></mrow><annotation encoding="application/x-tex">
+mg + T = ma_{\text{cp}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub><mo>=</mo><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>R</mi></mfrac><mo>=</mo><mfrac><msup><mn>5</mn><mn>2</mn></msup><mn>0.77</mn></mfrac><mo>≈</mo><mn>32.47</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a_{\text{cp}} = \frac{v^2}{R} = \frac{5^2}{0.77} \approx 32.47\text{ m/s}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mi>m</mi><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub><mo>−</mo><mi>m</mi><mi>g</mi><mo>=</mo><mn>1.50</mn><mo>⋅</mo><mn>32.47</mn><mo>−</mo><mn>1.50</mn><mo>⋅</mo><mn>9.81</mn><mo>=</mo><mn>33.99</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+T = ma_{\text{cp}} - mg = 1.50 \cdot 32.47 - 1.50 \cdot 9.81 = 33.99\text{ N}
+</annotation></semantics></math></p>
+<p>Therefore, the water does not spill out; instead, it presses against the bottom of the bucket with a substantial force. Now let us look at the case where the water just barely stays in the bucket but no longer presses against the bottom!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+T = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mo>=</mo><mi>m</mi><msub><mi>a</mi><mtext mathvariant="normal">cp,min</mtext></msub></mrow><annotation encoding="application/x-tex">
+mg = ma_{\text{cp,min}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><msub><mi>a</mi><mtext mathvariant="normal">cp,min</mtext></msub></mrow><annotation encoding="application/x-tex">
+g = a_{\text{cp,min}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mfrac><msubsup><mi>v</mi><mtext mathvariant="normal">min</mtext><mn>2</mn></msubsup><mi>R</mi></mfrac></mrow><annotation encoding="application/x-tex">
+g = \frac{v_{\text{min}}^2}{R}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mi>R</mi><mo>=</mo><msubsup><mi>v</mi><mtext mathvariant="normal">min</mtext><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+gR = v_{\text{min}}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><msqrt><mrow><mi>g</mi><mi>R</mi></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>9.81</mn><mo>⋅</mo><mn>0.77</mn></mrow></msqrt><mo>≈</mo><mn>2.748</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_{\text{min}} = \sqrt{gR} = \sqrt{9.81 \cdot 0.77} \approx 2.748\text{ m/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><mi>R</mi><msub><mi>ω</mi><mtext mathvariant="normal">min</mtext></msub></mrow><annotation encoding="application/x-tex">
+v_{\text{min}} = R\omega_{\text{min}}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ω</mi><mtext mathvariant="normal">min</mtext></msub><mo>=</mo><mfrac><msub><mi>v</mi><mtext mathvariant="normal">min</mtext></msub><mi>R</mi></mfrac><mo>=</mo><mfrac><mn>2.748</mn><mn>0.77</mn></mfrac><mo>≈</mo><mn>3.569</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\omega_{\text{min}} = \frac{v_{\text{min}}}{R} = \frac{2.748}{0.77} \approx 3.569\text{ rad/s}
+</annotation></semantics></math></p>
+<hr />
+<h2 id="exercises">Exercises</h2>
+<ol type="1">
+<li>A Formula 1 car travels at a speed of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>180</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km/h</mtext></mrow></mrow><annotation encoding="application/x-tex">180\text{ km/h}</annotation></semantics></math> (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">50\text{ m/s}</annotation></semantics></math>) through a curve with a radius of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">100\text{ m}</annotation></semantics></math>. What is the centripetal acceleration of the vehicle?</li>
+<li>A satellite orbits above the surface of the Earth. Its orbital velocity is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7800</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">7800\text{ m/s}</annotation></semantics></math>, and its orbital radius (measured from the center of the Earth) is approximately <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6600</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> km</mtext></mrow></mrow><annotation encoding="application/x-tex">6600\text{ km}</annotation></semantics></math>. Calculate the centripetal acceleration acting on the satellite! Compare this value with the gravitational acceleration on Earth (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>≈</mo><mn>9.81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g \approx 9.81\text{ m/s}^2</annotation></semantics></math>)!</li>
+<li>An athlete whirls a hammer of mass <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7.26</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> kg</mtext></mrow></mrow><annotation encoding="application/x-tex">7.26\text{ kg}</annotation></semantics></math> along a circular path of radius <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ m}</annotation></semantics></math>. The velocity of the hammer at the moment of release is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>28</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">28\text{ m/s}</annotation></semantics></math>. With what force does the hammer pull the athlete’s arm (what is the centripetal force)?</li>
+<li>The ring-shaped habitat of a space station rotates to create artificial gravity. The radius of the ring is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ m}</annotation></semantics></math>. At what linear velocity must the ring rotate so that the centripetal acceleration at its rim matches the gravitational acceleration on Earth (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9.81</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9.81\text{ m/s}^2</annotation></semantics></math>)?</li>
+<li>On a chair-o-plane carousel, children revolve at a distance of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ m}</annotation></semantics></math> from the center. The angular velocity of the carousel is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mn>0.8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> rad/s</mtext></mrow></mrow><annotation encoding="application/x-tex">\omega = 0.8\text{ rad/s}</annotation></semantics></math>. Use the relationship <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mtext mathvariant="normal">cp</mtext></msub><mo>=</mo><msup><mi>ω</mi><mn>2</mn></msup><mi>R</mi></mrow><annotation encoding="application/x-tex">a_{\text{cp}} = \omega^2 R</annotation></semantics></math> (or convert it to linear velocity) to determine the centripetal acceleration of the children!</li>
+</ol>
+</main>
+</body>
+</html>

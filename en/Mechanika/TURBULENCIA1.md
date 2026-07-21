@@ -23,6 +23,7 @@ Furthermore, we saw that although turbulence generally increases drag and hydrod
 
 #### Why Does a Golf Ball Have Dimples?
 The dimpled surface of a golf ball intentionally creates a thin, turbulent boundary layer around the ball. This has two conflicting physical effects:
+
 1. **Negative effect:** It slightly increases direct skin friction.
 2. **Positive effect:** The turbulent flow adheres better to the surface, allowing air to flow further around the sphere before separating.
 

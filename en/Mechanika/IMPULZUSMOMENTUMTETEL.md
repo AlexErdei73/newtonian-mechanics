@@ -5,23 +5,23 @@
 Let us now examine the net torque, as this is what we will need most of the time:
 
 $$
-M_{z,\text{e}} = \sum_{i = 1}^{N} r_i F_i \sin \alpha_i
+M_{z,\text{net}} = \sum_{i = 1}^{N} r_i F_i \sin \Theta_i
 $$
 
-The term $F_i \sin \alpha_i$ is nothing other than the tangential component of the force acting on the $i$-th point. Let us denote this by $F_{i,\text{t}}$.
+The term $F_i \sin \Theta_i$ is nothing other than the tangential component of the force acting on the $i$-th point. Let us denote this by $F_{i,\text{t}}$.
 
 $$
-M_{z,\text{e}} = \sum_{i = 1}^{N} r_i F_{i,\text{t}} = \sum_{i = 1}^{N} r_i m_i a_{i,\text{t}} = \sum_{i = 1}^{N} r_i m_i \frac{v_i - v_{i,0}}{t}
+M_{z,\text{net}} = \sum_{i = 1}^{N} r_i F_{i,\text{t}} = \sum_{i = 1}^{N} r_i m_i a_{i,\text{t}} = \sum_{i = 1}^{N} r_i m_i \frac{v_i - v_{i,0}}{t}
 $$
 
 $$
-M_{z,\text{e}} = \frac{\sum_{i = 1}^{N} r_i m_i v_i - \sum_{i = 1}^{N} r_i m_i v_{i,0}}{t}
+M_{z,\text{net}} = \frac{\sum_{i = 1}^{N} r_i m_i v_i - \sum_{i = 1}^{N} r_i m_i v_{i,0}}{t}
 $$
 
 According to this, the net torque is nothing other than the ratio of the change in angular momentum to the elapsed time. Here we have utilized the fact that in the case of circular motion, the magnitude of the tangential component of acceleration is the change in the magnitude of velocity divided by time, since the velocity is tangential.
 
 $$
-M_{z,\text{e}} = \frac{L_z - L_{z,0}}{t} = \frac{\Delta L_z}{t}
+M_{z,\text{net}} = \frac{L_z - L_{z,0}}{t} = \frac{\Delta L_z}{t}
 $$
 
 We will also show that the net torque is only the resultant of the torques of external forces, because the net torque of internal forces is always zero. To prove this, Newton assumed that the forces acting between the points of a system of particles are so-called *central forces*. This means that they are not only equal in magnitude and opposite in direction—as stated by the third law—but their line of action also lies along the straight line connecting the two points. This results in the net torque of the action-reaction force pair being zero for any two points. This assumption is not self-evident, but it holds true, for example, for gravitational or elastic forces, and it is generally true for the fundamental forces operating between particles.
@@ -31,7 +31,7 @@ M_{i,j} + M_{j,i} = 0, \quad i \neq j
 $$
 
 $$
-M_{z,\text{e}} = \sum_{i = 1}^{N} \left( M_i^{\text{k}} + \sum_{j = 1, i \neq j}^{N} M_{i,j} \right) = \sum_{i = 1}^{N} M_i^{\text{k}} + \sum_{i = 1}^{N} \sum_{j = 1, i \neq j}^{N} M_{i,j}
+M_{z,\text{net}} = \sum_{i = 1}^{N} \left( M_i^{\text{k}} + \sum_{j = 1, i \neq j}^{N} M_{i,j} \right) = \sum_{i = 1}^{N} M_i^{\text{k}} + \sum_{i = 1}^{N} \sum_{j = 1, i \neq j}^{N} M_{i,j}
 $$
 
 $$
@@ -45,13 +45,13 @@ $$
 Therefore:
 
 $$
-M_{z,\text{e}} = M_{z,\text{e}}^{\text{k}}
+M_{z,\text{net}} = M_{z,\text{net}}^{\text{ext}}
 $$
 
 Thus, we have arrived at the form of the law of angular momentum for systems of particles, which we have only proven for the special case of a rigid body rotating around a fixed axis, but it is generally true.
 
 $$
-M_{z,\text{e}}^{\text{k}} = \frac{\Delta L_z}{t}
+M_{z,\text{net}}^{\text{ext}} = \frac{\Delta L_z}{t}
 $$
 
 > **The rate of change of the angular momentum of a system of particles per unit time is equal to the sum of the torques of the external forces acting upon it.**
@@ -63,6 +63,7 @@ Therefore, this theorem is generally true, but we have only investigated rotatio
 [Demonstrations of the Conservation of Angular Momentum](https://www.youtube.com/watch?v=PwE3eiREYA4)
 
 In the presented experiment, we can see two fundamental demonstrations to illustrate the conservation of angular momentum:
+
 1. **Rotating stool with dumbbells**: A student sitting on a rotating chair holds heavy weights with extended arms far from the vertical axis of rotation, which initially results in a large moment of inertia ($I_{\text{initial}}$). When they pull their arms in close to their body, the mass distribution becomes closer to the axis of rotation, causing the system's moment of inertia to drop drastically. Since the ball bearings work excellently and the external torque acting along the vertical axis is negligibly small ($M^{\text{k}} \approx 0$), angular momentum is conserved. To compensate for the decreasing moment of inertia, the angular speed of the stool visibly increases, and the student suddenly speeds up.
 2. **Flipping a spinning wheel**: The student sits on a stool initially at rest, while holding a rapidly spinning bicycle wheel in their hands. According to the right-hand rule, the wheel's angular momentum vector points vertically upward. When the student flips the wheel $180^\circ$ around a horizontal axis (turning it upside down), the wheel's own angular momentum begins to point vertically downward. Since the net external torque acting on the entire system along the vertical axis is zero, the total angular momentum along the vertical axis must be conserved. In order to preserve the initial upward angular momentum, the stool and the student together start rotating rapidly in a direction that restores the missing angular momentum. By tilting the wheel back to its original position, the student stops immediately.
 
@@ -71,7 +72,7 @@ In the presented experiment, we can see two fundamental demonstrations to illust
 1. In planetary motion, Kepler's second law is also an example of the law of angular momentum. Although this is planar motion, the planet does not perform circular motion; its distance from the Sun varies. The axis of rotation passes through the Sun, perpendicular to the plane of planetary motion.
 
 $$
-L_z = \sum_{i = 1}^{1} m_i v_i \sin \alpha_i = m_1 v_1 \sin \alpha_1 = 2m_1 \frac{T_{\text{ellipszis}}}{T}
+L_z = \sum_{i = 1}^{1} m_i v_i \sin \Theta_i = m_1 v_1 \sin \Theta_1 = 2m_1 \frac{A_{\text{ellipszis}}}{T}
 $$
 
 Thus, the angular momentum is $2m$ times the areal velocity, where $m = m_1$ is the mass of the planet. We have proven that the areal velocity is constant, so the angular momentum must be constant as well, just as it should be, since the line of action of the gravitational force passes through the Sun—meaning through the axis of rotation.
@@ -91,7 +92,7 @@ I = I_{\text{rod}} + I_{\text{point}} = 0.384 + 0.72 = 1.104\text{ kg}\cdot\text
 $$
 
 $$
-    L_{z,0} = m_{\text{bullet}} r v = 0.02 \cdot 0.9 \cdot 250 = 4.50\text{ kg}\cdot\text{m}^2\text{/s}
+L_{z,0} = m_{\text{bullet}} r v = 0.02 \cdot 0.9 \cdot 250 = 4.50\text{ kg}\cdot\text{m}^2\text{/s}
 $$
 
 Since the lines of action of the external forces acting on the system (the gravitational force and the supporting force at the pivot) pass through the axis of rotation, they have no lever arm, and thus no torque. Therefore, angular momentum is a conserved quantity during the collision.

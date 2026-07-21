@@ -202,6 +202,7 @@ $$
 
 **1. Feladat: A felfüggesztett korong**
 Egy $R$ sugarú, homogén tömegeloszlású, $m$ tömegű vékony korongot a peremének egyik pontjánál fogva felfüggesztünk úgy, hogy a saját síkjában tudjon lengéseket végezni.
+
 *   Határozd meg az inga kis kitérésekre vonatkozó lengésidejét!
 *   Mekkora a korong redukált hossza?
 
@@ -209,11 +210,13 @@ Egy $R$ sugarú, homogén tömegeloszlású, $m$ tömegű vékony korongot a per
 
 **2. Feladat: A minimális lengésidő**
 Egy $L$ hosszúságú, homogén, vékony rudat egy rajta átmenő vízszintes tengely körül fizikai ingaként lengésbe hozunk. A felfüggesztési pont a rúd tömegközéppontjától $x$ távolságra található. 
+
 *   Írd fel a lengésidőt az $x$ távolság függvényében!
 *   Számítással igazold, hogy milyen $x$ távolság esetén lesz a rúd lengésideje minimális!
 
 **3. Feladat: Az ingaóra modellje**
 Egy ingaóra ingáját modellezzük a következőképpen: az inga szára egy $l$ hosszúságú, elhanyagolható tömegű merev rúd, melynek a végére egy $R$ sugarú, $m$ tömegű tömör gömböt rögzítettek.
+
 *   Határozd meg ennek a fizikai ingának a lengésidejét!
 *   Hogyan aránylik ennek az ingának a lengésideje egy olyan matematikai ingáéhoz, melynek hossza megegyezik a gömb középpontjának a felfüggesztéstől mért távolságával ($l+R$)?
 

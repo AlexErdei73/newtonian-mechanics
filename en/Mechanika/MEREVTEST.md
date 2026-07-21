@@ -41,10 +41,10 @@ With these concepts, we can easily state the definition of torque.
 > **The torque of a force is the product of the force and its lever arm.**
 
 $$
-M = Fk = Fr \sin \alpha
+M = Fd = Fr \sin \Theta
 $$
 
-Here, $\alpha$ is the angle (no greater than $180^\circ$) enclosed by the force vector and the position vector of the point of application, with the origin chosen at the axis of rotation. The angle is a signed rotational angle. If the force induces a positive rotation—counter-clockwise—the angle is taken as positive; otherwise, it is negative. Consequently, torque is also a signed quantity, as the sine function retains the same sign as its angle within these bounds.
+Here, $\Theta$ is the angle (no greater than $180^\circ$) enclosed by the force vector and the position vector of the point of application, with the origin chosen at the axis of rotation. The angle is a signed rotational angle. If the force induces a positive rotation—counter-clockwise—the angle is taken as positive; otherwise, it is negative. Consequently, torque is also a signed quantity, as the sine function retains the same sign as its angle within these bounds.
 
 ![Torque](Kepek/forgatonyomatek.svg)
 
@@ -61,11 +61,11 @@ The explanation for this phenomenon lies in the fact that the instantaneous axis
 1. A wrench has a length of $30.0\text{ cm}$. A force of $60\text{ N}$ is applied at the end of the wrench. In which case is the torque greater? In the first case, the force is perpendicular to the wrench. In the second case, the force encloses an angle of $60^\circ$ with the wrench.
 
 $$
-M_1 = Fr \sin \alpha = 60 \cdot 0.3 \cdot \sin 90^\circ = 18\text{ N}\cdot\text{m}
+M_1 = Fr \sin \Theta = 60 \cdot 0.3 \cdot \sin 90^\circ = 18\text{ N}\cdot\text{m}
 $$
 
 $$
-M_2 = Fr \sin \alpha = 60 \cdot 0.3 \cdot \sin 60^\circ \approx 15.58\text{ N}\cdot\text{m}
+M_2 = Fr \sin \Theta = 60 \cdot 0.3 \cdot \sin 60^\circ \approx 15.58\text{ N}\cdot\text{m}
 $$
 
 Thus, the torque, and consequently the rotational effect of the force, is smaller in the second case.
@@ -73,13 +73,11 @@ Thus, the torque, and consequently the rotational effect of the force, is smalle
 2. The lever of a hoist is positioned horizontally. A mass of $20\text{ kg}$ is placed at a distance of $2.00\text{ m}$ from the axis of rotation. On the opposite side of the axis, the lever is pushed vertically downward with a force of $130\text{ N}$ at a distance of $3.00\text{ m}$ from the axis. The acceleration due to gravity is $9.81\text{ m/s}^2$. What are the torques acting on the lever, and in which direction does it tilt?
 
 $$
-
-|M_1| = F_1 k_1 = m g r_1 = 20 \cdot 9.81 \cdot 2 = 392.4\text{ N}\cdot\text{m}
+|M_1| = F_1 d_1 = m g r_1 = 20 \cdot 9.81 \cdot 2 = 392.4\text{ N}\cdot\text{m}
 $$
 
 $$
-
-|M_2| = F_2 k_2 = F_2 r_2 = 130 \cdot 3 = 390.0\text{ N}\cdot\text{m}
+|M_2| = F_2 d_2 = F_2 r_2 = 130 \cdot 3 = 390.0\text{ N}\cdot\text{m}
 $$
 
 Since $|M_2|$ is smaller than $|M_1|$, the lever tilts toward the load.

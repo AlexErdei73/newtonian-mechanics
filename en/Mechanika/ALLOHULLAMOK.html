@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html xmlns="http://w3.org" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Standing Waves *</title>
+    <link rel="stylesheet" href="../github-markdown.css" />
+      <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
+  </head>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newtonian Mechanics</a><div class="nav-group-center"><a href="SZUPERPOZICIO.html" class="nav-btn" aria-label="Previous lesson">◀<span class="btn-text"> Prev</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Table of Contents">☰<span class="btn-text"> Contents</span></a><a href="KISERLETEKALLOHULLAM.html" class="nav-btn" aria-label="Next lesson"><span class="btn-text">Next </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newtonian Mechanics</a><div class="nav-group-left"><a href="../index.html">About</a><a href="../VEGEREDMENYEK.html#standing-waves" style="font-weight: 600;">Solutions</a><a href="../IRODALOMJEGYZEK.html">Bibliography</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Topics ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematics</a></li><li><a href="NEWTONTORVENYEI.html">Dynamics</a></li><li><a href="MUNKA.html">Energy</a></li><li><a href="IMPULZUS.html">Momentum & Collisions</a></li><li><a href="RUGALMATLANUTKOZES.html">Systems of Particles</a></li><li><a href="EGYENLETESKORMOZGAS.html">Circular Motion</a></li><li><a href="KEPLERTORVENYEI.html">Gravitation</a></li><li><a href="MEREVTEST.html">Rotational Dynamics</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Oscillations & Waves</a></li><li><a href="NYOMAS.html">Fluid Mechanics</a></li></ul></div></div></div></nav></header>
+<main class="markdown-body">
+<h1 id="standing-waves">Standing Waves *</h1>
+<h2 id="reflection-of-one-dimensional-waves">Reflection of One-Dimensional Waves</h2>
+<h3 id="experiment">Experiment</h3>
+<p><lite-youtube videoid="1PsGZq5sLrw"></lite-youtube></p>
+<h3 id="simulation">Simulation</h3>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#e22e5592-48ce-4e65-a3ea-5f37449761c4">Wave Propagation on Mass Points Coupled by Springs</a></p>
+<blockquote>
+<p>Adjust the simulation so that both ends are visible! The right end is a fixed end, and the left end is a free end, which is connected to a distant point by a rope of negligible mass.</p>
+</blockquote>
+<p>In both the experiment and the simulation, we can observe that when the wave is reflected from the fixed end, the reflected wave has an opposite phase compared to the incident wave. The situation is exactly the opposite when the wave is reflected from a free end. In this case, the reflected wave is in phase with the incident wave.</p>
+<blockquote>
+<p><strong>Reflection of a one-dimensional wave:</strong> From a fixed end, the wave is reflected in opposite phase compared to the incident wave, so a wave crest becomes a wave trough and vice versa. From a free end, the wave is reflected in phase, so a wave crest remains a wave crest, and this is also true for a wave trough.</p>
+</blockquote>
+<h2 id="explanation-for-wave-reflection">Explanation for Wave Reflection</h2>
+<p>We can explain this observation using the principle of superposition. At the fixed end, the displacement is zero at every instant. However, the displacement is the superposition of the incident and reflected waves.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mtext mathvariant="normal">incident</mtext></msub><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+y_{\text{incident}} = A\cos(\omega t - kx)
+</annotation></semantics></math></p>
+<p>We know that the direction of the wave speed, and thus the wavenumber, has the opposite sign for the reflected wave compared to the incident wave. The path traveled by the reflected wave after reflection is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>−</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">l - x</annotation></semantics></math>, so the variation of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>−</mo><mi>l</mi></mrow><annotation encoding="application/x-tex">x - l</annotation></semantics></math>. In an ideal case, in one dimension, there is no change in amplitude.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mtext mathvariant="normal">reflected</mtext></msub><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><mi>l</mi><mo>+</mo><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>l</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>ϕ</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>k</mi><mi>x</mi><mo>−</mo><mn>2</mn><mi>k</mi><mi>l</mi><mo>−</mo><mi>ϕ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+y_{\text{reflected}} = A\cos(\omega t - kl + k(x - l) - \phi) = A\cos(\omega t + kx - 2kl - \phi)
+</annotation></semantics></math></p>
+<p>Here <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> is the unknown phase shift, for which we expect <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>π</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math> based on the experiment. Let us see if we obtain this!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mi>y</mi><mtext mathvariant="normal">incident</mtext></msub><mo>+</mo><msub><mi>y</mi><mtext mathvariant="normal">reflected</mtext></msub><mo>=</mo><mi>A</mi><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>k</mi><mi>x</mi><mo>−</mo><mn>2</mn><mi>k</mi><mi>l</mi><mo>−</mo><mi>ϕ</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+y = y_{\text{incident}} +  y_{\text{reflected}} = A(\cos(\omega t - kx) + \cos(\omega t + kx - 2kl - \phi))
+</annotation></semantics></math></p>
+<p>Since the fixed endpoint cannot displace at all, the sum of the displacements of the incident and reflected waves at the position <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>l</mi></mrow><annotation encoding="application/x-tex">x=l</annotation></semantics></math> must yield zero at every instant of time. To bring this expression into a simpler form and examine the displacement, we can apply a well-known trigonometric identity to the sum of the cosine functions:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>α</mi><mo>−</mo><mi>β</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>α</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>β</mi></mrow><annotation encoding="application/x-tex">
+\cos(\alpha + \beta) + \cos(\alpha - \beta) = 2\cos\alpha\cos\beta
+</annotation></semantics></math></p>
+<p>Let</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>+</mo><mi>β</mi><mo>=</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">
+\alpha + \beta = \omega t - kx
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>−</mo><mi>β</mi><mo>=</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>k</mi><mi>x</mi><mo>−</mo><mn>2</mn><mi>k</mi><mi>l</mi><mo>−</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+\alpha - \beta = \omega t + kx - 2kl - \phi
+</annotation></semantics></math></p>
+<p>We determine the values of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>β</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><mi>l</mi><mo>−</mo><mfrac><mi>ϕ</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+\alpha = \omega t - kl - \frac{\phi}{2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>β</mi><mo>=</mo><mfrac><mi>ϕ</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mi>l</mi><mo>−</mo><mi>k</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">
+\beta = \frac{\phi}{2} + kl - kx
+</annotation></semantics></math></p>
+<p>Thus, the displacement is the following:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>ϕ</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>l</mi><mo>−</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><mi>l</mi><mo>−</mo><mfrac><mi>ϕ</mi><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+y = 2A\cos\left(\frac{\phi}{2} + k(l - x)\right)\cos\left(\omega t - kl - \frac{\phi}{2}\right)
+</annotation></semantics></math></p>
+<p>This is the general expression for the displacement of a one-dimensional wave when the displacement is the meeting of the traveling and reflected waves. If <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>l</mi></mrow><annotation encoding="application/x-tex">x = l</annotation></semantics></math>, meaning we are at the fixed end, then according to the above condition, the position-dependent part must become zero:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>ϕ</mi><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><mi>l</mi><mo>−</mo><mfrac><mi>ϕ</mi><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+y = 2A\cos\left(\frac{\phi}{2}\right)\cos\left(\omega t - kl - \frac{\phi}{2}\right)
+</annotation></semantics></math></p>
+<p>This is therefore a simple harmonic motion. The amplitude must be zero at the fixed end, so:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>ϕ</mi><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+\cos\left(\frac{\phi}{2}\right) = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>ϕ</mi><mn>2</mn></mfrac><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>π</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>n</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\frac{\phi}{2} = \left(n + \frac{1}{2}\right)\pi, \quad n = 0, 1, 2, ...
+</annotation></semantics></math></p>
+<p>Expressing <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> from here we get that:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mi>π</mi></mrow><annotation encoding="application/x-tex">
+\phi = (2n + 1)\pi
+</annotation></semantics></math></p>
+<p>These solutions are equivalent for the displacement of the reflected waves, so we can choose the case <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n = 0</annotation></semantics></math> and thus <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>=</mo><mi>π</mi></mrow><annotation encoding="application/x-tex">\phi = \pi</annotation></semantics></math>.</p>
+<h2 id="standing-waves-1">Standing Waves</h2>
+<h3 id="experiment-1">Experiment</h3>
+<p><lite-youtube videoid="MgTyN-KUrHM"></lite-youtube></p>
+<h3 id="simulation-1">Simulation</h3>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#1f7d72de-d5c2-4f07-83be-26d914a79c2b">Standing Wave with a Free End</a></p>
+<p>In the experiments, we can see standing waves. Unlike traveling waves, these appear to stand still, from which their name originates. Some frequently used concepts regarding standing waves are the following:</p>
+<blockquote>
+<p><strong>Antinode:</strong> A point at which the amplitude of vibration is the largest.</p>
+</blockquote>
+<blockquote>
+<p><strong>Node:</strong> A point at which the amplitude of vibration is zero.</p>
+</blockquote>
+<blockquote>
+<p>An antinode always forms at a free end, while a node forms in every case at a fixed end.</p>
+</blockquote>
+<blockquote>
+<p><strong>Natural oscillation:</strong> A standing wave forming on a string is also called the natural oscillation of the string.</p>
+</blockquote>
+<blockquote>
+<p><strong>Natural frequency:</strong> In a standing wave, every point of the string oscillates with the same frequency. This frequency is the natural frequency. The string has infinitely many natural oscillations and natural frequencies.</p>
+</blockquote>
+<blockquote>
+<p><strong>Fundamental harmonic or fundamental tone (1st harmonic):</strong> The standing wave forming on the string that has no internal node on the string (hereinafter this is denoted by the case <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n=0</annotation></semantics></math>).</p>
+</blockquote>
+<blockquote>
+<p><strong>Fundamental frequency:</strong> The frequency of the fundamental harmonic. This is the lowest natural frequency.</p>
+</blockquote>
+<blockquote>
+<p><strong>Overtone (and harmonics):</strong> A standing wave where there are internal nodes on the string. In physics, we also call the oscillations harmonics (where the fundamental tone is the 1st harmonic). If there are <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> internal nodes on the string, we call it the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-th overtone, which means the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(n+1)</annotation></semantics></math>-th harmonic. The frequency of the harmonics in the case of a string with fixed ends is always an integer multiple of the fundamental frequency.</p>
+</blockquote>
+<p>In the oscillating system, two waves propagating in opposite directions interfere, and the formula derived above for the displacement is valid for this situation. Let us assume that after the external driving force ceases, as we can see in the simulation, an oscillation with a constant amplitude develops at the free end. Let us denote this amplitude by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>A</mi></mrow><annotation encoding="application/x-tex">2A</annotation></semantics></math> now! Then at the free end <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x = 0</annotation></semantics></math>, it must hold true that:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>A</mi><mo>=</mo><mn>2</mn><mi>A</mi><mrow><mo stretchy="true" form="prefix">|</mo><mi mathvariant="normal">cos</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mi>l</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">
+2A = 2A\left|\cos\left(\frac{\pi}{2} + kl\right)\right|
+</annotation></semantics></math></p>
+<p>The value of the cosine is therefore <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>±</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">\pm 1</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mi>l</mi><mo>=</mo><mi>m</mi><mi>π</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>m</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+\frac{\pi}{2} + kl = m\pi, \quad m = 1, 2, 3, ...
+</annotation></semantics></math></p>
+<p>Then an interesting relationship must hold true between the length of the string and the wavelength:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mi>l</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>π</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>π</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>n</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>.</mi><mi>.</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">
+kl = \left(m - \frac{1}{2}\right)\pi = \left(n + \frac{1}{2}\right)\pi, \quad n = 0, 1, 2, ...
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>λ</mi></mfrac><mi>l</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">
+\frac{2\pi}{\lambda} l = \left(n + \frac{1}{2}\right)\pi
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mfrac><mi>λ</mi><mn>2</mn></mfrac><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mfrac><mi>λ</mi><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">
+l = \left(n + \frac{1}{2}\right)\frac{\lambda}{2} = (2n + 1)\frac{\lambda}{4}
+</annotation></semantics></math></p>
+<p>The length of the string must be an odd multiple of the quarter wavelength. The simulation presents the case <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n = 2</annotation></semantics></math>, when the length of the string is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math> times the quarter wavelength. Naturally, it is not prescribed how large the amplitude <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> is, so as long as the string moves within the elastic range, it can be of any size. The displacement function with a unit amplitude <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>A</mi></mrow><annotation encoding="application/x-tex">2A</annotation></semantics></math> given <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> internal nodes is called the <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-th eigenfunction, or natural oscillation, of the string. Naturally, the amplitude can be of any size, and according to the principle of superposition, the sum of several such solutions is also a solution. Therefore, in the most general case, the solution of the equation of motion must be the following:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">∞</mo></munderover><msub><mi>A</mi><mi>n</mi></msub><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+y = \sum_{n = 0}^{\infty} A_n f_n(x, t)
+</annotation></semantics></math></p>
+<p>Here the eigenfunction <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>n</mi></msub><annotation encoding="application/x-tex">f_n</annotation></semantics></math> is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>l</mi><mo>−</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo>−</mo><mi>k</mi><mi>l</mi><mo>−</mo><mfrac><mi>π</mi><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">
+f_n = \cos\left(\frac{\pi}{2} + k(l - x)\right)\cos\left(\omega t - kl - \frac{\pi}{2}\right)
+</annotation></semantics></math></p>
+<blockquote>
+<p>💡 <strong>Outlook for Advanced Students: The Most Elegant Form of a Standing Wave</strong><br />
+With the help of boundary conditions and trigonometric identities, we can bring the expression above, which seems complicated, into a much simpler form. If we perform the mathematical steps, the time-dependent and spatial parts separate beautifully:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>n</mi></msub><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>ω</mi><mi>n</mi></msub><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+f_n(x,t) = \cos(k_n x) \cos(\omega_n t)
+</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>Why is this form ingenious?</strong> The essence of a standing wave can be read from it immediately! The <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>ω</mi><mi>n</mi></msub><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\cos(\omega_n t)</annotation></semantics></math> part shows that every point of the string performs a <em>simple harmonic motion</em> in time. The <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>k</mi><mi>n</mi></msub><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\cos(k_n x)</annotation></semantics></math> part gives the <em>position-dependent amplitude</em> of the vibration: where this is zero, there is a node, and where it is maximal, there is an antinode.</p>
+</blockquote>
+<p>Mathematicians also prove that the solution of the equation of motion for any arbitrary free oscillation of the string can be written in the form above. Of course, the specific form of the functions <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>n</mi></msub><annotation encoding="application/x-tex">f_n</annotation></semantics></math> depends on the physical parameters of the string, for example, on the wave speed on the string, and on whether the ends of the string oscillate freely or are fixed. The displacements of the string must obviously be within the elastic limits.</p>
+<blockquote>
+<p>A free oscillation forming on a string is always the superposition of natural oscillations taken with different amplitudes. This statement is valid for any arbitrary oscillating system, not only for strings. The only condition is that the principle of superposition must be valid, therefore the displacements must be small and the system moves within its elastic limits where Hooke’s law is valid.</p>
+</blockquote>
+<h3 id="examples">Examples</h3>
+<ol type="1">
+<li>The driving frequency to which the string resonates can be read in the simulation. This is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.59</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">0.59\text{ Hz}</annotation></semantics></math>. At this time, two internal nodes develop, so our index is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n = 2</annotation></semantics></math>. The length of the string is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">l = 15\text{ m}</annotation></semantics></math>.</li>
+</ol>
+<ul>
+<li>How large is the wavelength of the developing standing wave?</li>
+<li>How large is the wave speed on the string?</li>
+<li>How large is the fundamental frequency? Let us try this frequency in the simulation!</li>
+</ul>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mfrac><mi>λ</mi><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">
+l = (2n + 1)\frac{\lambda}{4}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mo>=</mo><mn>5</mn><mfrac><mi>λ</mi><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">
+15 = 5 \frac{\lambda}{4}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><mn>12</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\lambda = 12\text{ m}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mfrac><mi>λ</mi><mi>T</mi></mfrac><mo>=</mo><mi>λ</mi><mi>f</mi><mo>=</mo><mn>12</mn><mo>⋅</mo><mn>0.59</mn><mo>=</mo><mn>7.08</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+c = \frac{\lambda}{T} = \lambda f = 12 \cdot 0.59 = 7.08\text{ m/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mfrac><msub><mi>λ</mi><mn>0</mn></msub><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">
+l = \frac{\lambda_0}{4}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mn>0</mn></msub><mo>=</mo><mn>4</mn><mi>l</mi><mo>=</mo><mn>4</mn><mo>⋅</mo><mn>15</mn><mo>=</mo><mn>60</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\lambda_0 = 4l = 4 \cdot 15 = 60\text{ m}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mfrac><mi>c</mi><msub><mi>λ</mi><mn>0</mn></msub></mfrac><mo>=</mo><mfrac><mn>7.08</mn><mn>60</mn></mfrac><mo>=</mo><mn>0.118</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">
+f_0 = \frac{c}{\lambda_0} = \frac{7.08}{60} = 0.118\text{ Hz}
+</annotation></semantics></math></p>
+<p>It is true here too that the frequency is an odd integer multiple of the fundamental frequency, in this case precisely <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math> times (since <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">2n+1 = 5</annotation></semantics></math>).</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>f</mi><msub><mi>f</mi><mn>0</mn></msub></mfrac><mo>=</mo><mfrac><mn>0.59</mn><mn>0.118</mn></mfrac><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">
+\frac{f}{f_0} = \frac{0.59}{0.118} = 5
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>Let us now examine the standing waves developing on the string featured in the simulation if both ends are fixed!</li>
+</ol>
+<ul>
+<li>How large is the wavelength of the fundamental tone (n=0 internal nodes) if the string is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">15\text{ m}</annotation></semantics></math> long?</li>
+<li>How large is the fundamental frequency if the wave speed continues to be <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>7.08</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">c = 7.08\text{ m/s}</annotation></semantics></math>?</li>
+<li>How large are the wavelengths and frequencies of the 1st and 2nd overtones (meaning the oscillations possessing 1 and 2 internal nodes, respectively)?</li>
+<li>How large are the wavelength and frequency of a general standing wave possessing <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> internal nodes?</li>
+<li>Let us set up a simulation for the 2nd harmonic (for the 1st overtone)!</li>
+</ul>
+<p>If both ends are fixed, then there is a node on them, but in the case of the fundamental tone there is no internal node (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n=0</annotation></semantics></math>), so the length of the string must be a half wavelength.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mfrac><msub><mi>λ</mi><mn>0</mn></msub><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+l = \frac{\lambda_0}{2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mn>0</mn></msub><mo>=</mo><mn>2</mn><mi>l</mi><mo>=</mo><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\lambda_0 = 2l = 30\text{ m}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mfrac><mi>c</mi><msub><mi>λ</mi><mn>0</mn></msub></mfrac><mo>=</mo><mfrac><mn>7.08</mn><mn>30</mn></mfrac><mo>=</mo><mn>0.236</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">
+f_0 = \frac{c}{\lambda_0} = \frac{7.08}{30} = 0.236\text{ Hz}
+</annotation></semantics></math></p>
+<p>The frequency of the 1st overtone (1 internal node) corresponds to the 2nd harmonic:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mn>0.472</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">
+f_1 = 2f_0 = 0.472\text{ Hz}
+</annotation></semantics></math></p>
+<p>The frequency of the 2nd overtone (2 internal nodes) is the 3rd harmonic:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn><msub><mi>f</mi><mn>0</mn></msub><mo>=</mo><mn>0.708</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">
+f_2 = 3f_0 = 0.708\text{ Hz}
+</annotation></semantics></math></p>
+<p>The corresponding wavelengths:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>=</mo><mfrac><mi>c</mi><msub><mi>f</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><mn>7.08</mn><mn>0.472</mn></mfrac><mo>=</mo><mn>15</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\lambda_1 = \frac{c}{f_1} = \frac{7.08}{0.472} = 15\text{ m}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>λ</mi><mn>2</mn></msub><mo>=</mo><mfrac><mi>c</mi><msub><mi>f</mi><mn>2</mn></msub></mfrac><mo>=</mo><mfrac><mn>7.08</mn><mn>0.708</mn></mfrac><mo>=</mo><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\lambda_2 = \frac{c}{f_2} = \frac{7.08}{0.708} = 10\text{ m}
+</annotation></semantics></math></p>
+<p>The general formula in the case of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> pieces of internal nodes:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mfrac><mi>λ</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+l = (n + 1)\frac{\lambda}{2}
+</annotation></semantics></math></p>
+<p>Expressing <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math> from here we get that:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>l</mi></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+\lambda = \frac{2l}{n + 1}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mfrac><mi>c</mi><mi>λ</mi></mfrac><mo>=</mo><mfrac><mi>c</mi><mfrac><mrow><mn>2</mn><mi>l</mi></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mfrac><mo>=</mo><mfrac><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mfrac><mi>c</mi><mi>l</mi></mfrac></mrow><annotation encoding="application/x-tex">
+f = \frac{c}{\lambda} = \frac{c}{\frac{2l}{n + 1}} = \frac{n + 1}{2} \frac{c}{l}
+</annotation></semantics></math></p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#80f91da0-5f31-4cad-8590-1ec4a3824fa1">Állóhullám húron két rögzített véggel</a></p>
+<h2 id="problems">Problems</h2>
+<p><strong>Problem 1</strong> One end of a homogeneous rope of length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">10 \text{ m}</annotation></semantics></math> is fixed, and the other end can move freely. The wave speed on the rope is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">5 \text{ m/s}</annotation></semantics></math>.</p>
+<ul>
+<li>Determine the frequency and wavelength of the fundamental harmonic (fundamental tone)!</li>
+<li>With what frequency must the rope be vibrated so that a standing wave develops on which precisely 3 internal nodes can be found (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n=3</annotation></semantics></math>)?</li>
+</ul>
+<p><strong>Problem 2</strong> Both ends of a guitar string are fixed, its length is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.65</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0.65 \text{ m}</annotation></semantics></math>. We know that the frequency of the string’s fundamental tone is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>330</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">330 \text{ Hz}</annotation></semantics></math> (this corresponds to the note E).</p>
+<ul>
+<li>At what speed do the mechanical waves propagate on this string?</li>
+<li>Determine the frequency and the corresponding wavelength of the third overtone (at which three internal nodes can be found)!</li>
+</ul>
+<p><strong>Problem 3</strong> We examine two strings made of the same material and under the same mechanical tension (therefore possessing identical wave speeds) under laboratory conditions. Both ends of the first string of length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mn>1</mn></msub><annotation encoding="application/x-tex">L_1</annotation></semantics></math> are fixed, while one end of the second string of length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mn>2</mn></msub><annotation encoding="application/x-tex">L_2</annotation></semantics></math> is fixed and the other is free.</p>
+<ul>
+<li>Express the length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mn>2</mn></msub><annotation encoding="application/x-tex">L_2</annotation></semantics></math> as a function of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mn>1</mn></msub><annotation encoding="application/x-tex">L_1</annotation></semantics></math> if we want to achieve that the fundamental frequencies (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mn>0</mn></msub><annotation encoding="application/x-tex">f_0</annotation></semantics></math>) of the two strings match each other precisely!</li>
+</ul>
+</main>
+</body>
+</html>

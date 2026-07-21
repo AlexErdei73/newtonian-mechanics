@@ -349,13 +349,16 @@ $$
 
 ## Feladatok
 
-1. Egy $10 \text{ m}$ hosszú, homogén kötél egyik vége rögzített, a másik vége szabadon mozoghat. A hullámok terjedési sebessége a kötélen $5 \text{ m/s}$. 
+1. Egy $10 \text{ m}$ hosszú, homogén kötél egyik vége rögzített, a másik vége szabadon mozoghat. A hullámok terjedési sebessége a kötélen $5 \text{ m/s}$.
+
 * Határozd meg az alapharmonikus (alaphang) frekvenciáját és hullámhosszát!
 * Mekkora frekvenciával kell rezegtetni a kötelet, hogy olyan állóhullám alakuljon ki, amelyen pontosan 3 belső csomópont található ($n=3$)?
 
 2. Egy gitárhúr mindkét vége rögzített, a hossza $0,65 \text{ m}$. Tudjuk, hogy a húr alaphangjának frekvenciája $330 \text{ Hz}$ (ez felel meg az E hangnak).
+
 * Milyen sebességgel terjednek a mechanikai hullámok ezen a húron?
 * Határozd meg a harmadik felharmonikus (amelynél három belső csomópont található) frekvenciáját és a hozzá tartozó hullámhosszat!
 
 3. Két azonos anyagból készült, és azonos mechanikai feszültségű (tehát azonos hullámterjedési sebességű) húrt vizsgálunk laboratóriumi körülmények között. Az első, $L_1$ hosszúságú húr mindkét vége rögzített, míg a második, $L_2$ hosszúságú húr egyik vége rögzített, a másik pedig szabad.
+
 * Fejezd ki az $L_2$ hosszúságot az $L_1$ függvényében, ha azt szeretnénk elérni, hogy a két húr alapfrekvenciája ($f_0$) pontosan megegyezzen egymással!

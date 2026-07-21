@@ -229,18 +229,21 @@ Bár ezen rendszerek matematikai leírása jóval összetettebb – a mozgásegy
 
 **1. Feladat: Csatolás erősségének hatása**
 
-Tegyük fel, hogy a középső csatoló rugót egy lényegesen erősebbre cseréljük, amelynek rugóállandója megegyezik a szélső rugókéval ($D_2 = 0,5\text{ N/m}$), miközben a többi adat változatlan marad ($m = 0,2\text{ kg}$, $D_1 = 0,5\text{ N/m}$). 
+Tegyük fel, hogy a középső csatoló rugót egy lényegesen erősebbre cseréljük, amelynek rugóállandója megegyezik a szélső rugókéval ($D_2 = 0,5\text{ N/m}$), miközben a többi adat változatlan marad ($m = 0,2\text{ kg}$, $D_1 = 0,5\text{ N/m}$).
+
 - Határozd meg az I. és II. normálmódus körfrekvenciáját!
 - Számítsd ki, hogy mennyi lesz a lebegési burkológörbe periódusideje ebben az esetben!
 - Fogalmazd meg a kapott eredmények alapján, hogyan hat a csatolás erősségének növelése a lebegés periódusidejére!
 
 **2. Feladat: Kezdeti feltételek és energia**
 
-A leírt csatolt rezgő rendszerben az $t = 0$ időpillanatban az 1-es testet $x_0 = 10\text{ cm}$ kitérésből, kezdősebesség nélkül elengedjük, miközben a 2-es test pontosan a nyugalmi helyzetében van ($x_2 = 0\text{ cm}$), szintén kezdősebesség nélkül. 
+A leírt csatolt rezgő rendszerben az $t = 0$ időpillanatban az 1-es testet $x_0 = 10\text{ cm}$ kitérésből, kezdősebesség nélkül elengedjük, miközben a 2-es test pontosan a nyugalmi helyzetében van ($x_2 = 0\text{ cm}$), szintén kezdősebesség nélkül.
+
 - Fejezd ki a két test kitérését az idő függvényében a normálmódusok szuperpozíciójaként! 
 - Magyarázd el röviden, a levezetett egyenletek alapján hogyan áramlik a mechanikai energia a két test között a mozgás során!
 
 **3. Feladat: Tranziens lebegés kényszerrezgésnél**
 
 Egy csillapított rugó-tömeg rendszer sajátfrekvenciája $f_0 = 5\text{ Hz}$. A rendszert egy harmonikusan változó külső kényszererővel gerjesztjük, amelynek frekvenciája $f_{\text{g}} = 5,2\text{ Hz}$. A rendszerben gyenge csillapítás van jelen.
+
 - Számítsd ki, hogy másodpercenként hány lebegést (amplitúdó-maximumot) figyelhetünk meg a gerjesztés bekapcsolását követő első néhány másodpercben, mielőtt a tranziens jelenség teljesen elhalna!

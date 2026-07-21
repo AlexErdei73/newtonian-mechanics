@@ -103,7 +103,6 @@ $$
 The negative sign indicates that the acceleration vector is in the opposite direction of the motion (deceleration). The magnitude of the braking force is:
 
 $$
-
 |F_{\text{net}}| = m \cdot |a| = 0.02 \cdot 600,000 = 12,000\text{ N} = 12.0\text{ kN}
 $$
 

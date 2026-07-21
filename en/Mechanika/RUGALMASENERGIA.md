@@ -4,6 +4,7 @@
 
 ### Example
 A hockey puck with a mass of $203.9\text{ g}$ slides on ice. The initial velocity of the puck is $20\text{ m/s}$. The coefficient of kinetic friction between the ice and the puck is $0.05$. After traveling its first $100\text{ m}$, the puck slides off the rink and continues onto concrete, where the coefficient of friction is $0.5$.
+
 * What force slows down the puck on the ice?
 * To what velocity does the puck slow down by the time it reaches the concrete?
 * What force slows down the puck on the concrete?
@@ -128,6 +129,7 @@ Elastic energy is a form of potential energy, just like gravitational potential 
 
 ### Example
 A spring with a spring constant of $200\text{ N/m}$ is stretched by $0.2\text{ m}$.
+
 * How much force is needed to keep the spring stretched?
 * How much work did we do, and what is the elastic energy? 
 * In a lossless catapult, to what velocity can this spring accelerate a ball with a mass of $10\text{ g}$, assuming losses can be neglected?

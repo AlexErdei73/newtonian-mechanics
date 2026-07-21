@@ -1,4 +1,4 @@
-# Conservation of Linear Momentum
+# Conservation of Momentum
 
 Let us consider two point masses interacting with each other and with their environment. Let an external force $\vec{F}_1$ from the environment act on body 1, and an external force $\vec{F}_2$ from the environment act on body 2. Let the internal force exerted on body 1 by body 2 be denoted by $\vec{F}_{1,2}$, and conversely, the force exerted on body 2 by body 1 be denoted by $\vec{F}_{2,1}$.
 
@@ -77,7 +77,7 @@ $$
 $$
 
 $$
-v_2 = 2.00\text{ }\frac {text{m}} {text{s}}
+v_2 = 2.00\text{ }\frac {\text{m}} {\text{s}}
 $$
 
 Therefore, the velocity of the $60\text{ kg}$ skater will be exactly $2.00\text{ }\frac{\text{m}}{\text{s}}$.
@@ -151,7 +151,6 @@ Let us estimate more closely the actual displacement of the pendulum bob, assumi
 The magnitude of the average braking force acting on the bullet:
 
 $$
-
 |F_{\text{net}}| = m \cdot |a_1| = m \cdot \frac {|v - v_0|} {t} = 0.02 \cdot \frac {600 - v} {t} = \frac {12 - 0.02 \cdot v} {t}
 $$
 

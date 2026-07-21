@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html xmlns="http://w3.org" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Elastic Energy</title>
+    <link rel="stylesheet" href="../github-markdown.css" />
+      <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
+  </head>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newtonian Mechanics</a><div class="nav-group-center"><a href="HOOKTORVENY.html" class="nav-btn" aria-label="Previous lesson">◀<span class="btn-text"> Prev</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Table of Contents">☰<span class="btn-text"> Contents</span></a><a href="REZGESIENERGIA.html" class="nav-btn" aria-label="Next lesson"><span class="btn-text">Next </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newtonian Mechanics</a><div class="nav-group-left"><a href="../index.html">About</a><a href="../VEGEREDMENYEK.html#elastic-energy" style="font-weight: 600;">Solutions</a><a href="../IRODALOMJEGYZEK.html">Bibliography</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Topics ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematics</a></li><li><a href="NEWTONTORVENYEI.html">Dynamics</a></li><li><a href="MUNKA.html">Energy</a></li><li><a href="IMPULZUS.html">Momentum & Collisions</a></li><li><a href="RUGALMATLANUTKOZES.html">Systems of Particles</a></li><li><a href="EGYENLETESKORMOZGAS.html">Circular Motion</a></li><li><a href="KEPLERTORVENYEI.html">Gravitation</a></li><li><a href="MEREVTEST.html">Rotational Dynamics</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Oscillations & Waves</a></li><li><a href="NYOMAS.html">Fluid Mechanics</a></li></ul></div></div></div></nav></header>
+<main class="markdown-body">
+<h1 id="elastic-energy">Elastic Energy</h1>
+<h2 id="work-done-by-a-variable-force">Work Done by a Variable Force</h2>
+<h3 id="example">Example</h3>
+<p>A hockey puck with a mass of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>203.9</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">203.9\text{ g}</annotation></semantics></math> slides on ice. The initial velocity of the puck is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">20\text{ m/s}</annotation></semantics></math>. The coefficient of kinetic friction between the ice and the puck is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.05</mn><annotation encoding="application/x-tex">0.05</annotation></semantics></math>. After traveling its first <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">100\text{ m}</annotation></semantics></math>, the puck slides off the rink and continues onto concrete, where the coefficient of friction is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.5</mn><annotation encoding="application/x-tex">0.5</annotation></semantics></math>.</p>
+<ul>
+<li>What force slows down the puck on the ice?</li>
+<li>To what velocity does the puck slow down by the time it reaches the concrete?</li>
+<li>What force slows down the puck on the concrete?</li>
+<li>What distance does the puck travel on the concrete before stopping?</li>
+<li>What is the work done by the friction force on the ice?</li>
+<li>What is the work done by the friction force on the concrete?</li>
+<li>Plot the friction force as a function of the distance traveled! What is the area under the curve of the graph?</li>
+</ul>
+<p>Let the puck move along the positive x-axis. This allows us to work directly with the x-components.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mn>1</mn></mrow></msub><mo>=</mo><mi>−</mi><msub><mi>μ</mi><mn>1</mn></msub><mi>m</mi><mi>g</mi><mo>=</mo><mi>−</mi><mn>0.05</mn><mo>⋅</mo><mn>0.2039</mn><mo>⋅</mo><mn>9.81</mn><mo>=</mo><mi>−</mi><mn>0.1000</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F_{x,1} = -\mu_1 mg = -0.05 \cdot 0.2039 \cdot 9.81 = -0.1000\text{ N}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>1</mn></mrow></msub><mo>=</mo><mfrac><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mn>1</mn></mrow></msub><mi>m</mi></mfrac><mo>=</mo><mfrac><mrow><mi>−</mi><mn>0.1000</mn></mrow><mn>0.2039</mn></mfrac><mo>=</mo><mi>−</mi><mn>0.4905</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a_{x,1} = \frac {F_{x,1}} {m} = \frac {-0.1000} {0.2039} = -0.4905\text{ m/s}^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>=</mo><msub><mi>v</mi><mrow><mi>x</mi><mo>,</mo><mn>0</mn></mrow></msub><mi>t</mi><mo>+</mo><mfrac><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>1</mn></mrow></msub><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s_1 = v_{x,0}t + \frac {a_{x,1}} {2}t^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mo>=</mo><mn>20</mn><mi>t</mi><mo>+</mo><mfrac><mrow><mi>−</mi><mn>0.4905</mn></mrow><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+100 = 20t + \frac {-0.4905} {2}t^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.4905</mn><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>40</mn><mi>t</mi><mo>+</mo><mn>200</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+0.4905t^2 - 40t + 200 = 0
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mfrac><mrow><mi>−</mi><mi>b</mi><mo>±</mo><msqrt><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>a</mi><mi>c</mi></mrow></msqrt></mrow><mrow><mn>2</mn><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>40</mn><mo>±</mo><msqrt><mrow><msup><mn>40</mn><mn>2</mn></msup><mo>−</mo><mn>4</mn><mo>⋅</mo><mn>0.4905</mn><mo>⋅</mo><mn>200</mn></mrow></msqrt></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>0.4905</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>40</mn><mo>±</mo><mn>34.75</mn></mrow><mn>0.981</mn></mfrac><mo>=</mo><mn>5.351</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow><mo>,</mo><mspace width="1.0em"></mspace><mn>76.19</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+t = \frac {-b \pm \sqrt{b^2 - 4ac}} {2a} = \frac {40 \pm \sqrt{40^2 - 4 \cdot 0.4905 \cdot 200}} {2 \cdot 0.4905} = \frac {40 \pm 34.75} {0.981} = 5.351\text{ s}, \quad 76.19\text{ s}
+</annotation></semantics></math></p>
+<p>Of the two solutions to the quadratic equation, the shorter time is physically correct (the longer time would mean the object turns around after stopping and starts moving backward, which does not happen due to friction). Therefore, the time is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5.351</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">5.351\text{ s}</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mi>x</mi></msub><mo>=</mo><msub><mi>v</mi><mrow><mi>x</mi><mo>,</mo><mn>0</mn></mrow></msub><mo>+</mo><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>1</mn></mrow></msub><mi>t</mi><mo>=</mo><mn>20</mn><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>0.4905</mn><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mn>5.351</mn><mo>=</mo><mn>17.38</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mspace width="1.0em"></mspace><mrow><mtext mathvariant="normal">(more precisely: </mtext><mspace width="0.333em"></mspace></mrow><mn>17.375</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s)</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v_x = v_{x,0} + a_{x,1}t = 20 + (-0.4905) \cdot 5.351 = 17.38\text{ m/s} \quad \text{(more precisely: } 17.375\text{ m/s)}
+</annotation></semantics></math></p>
+<p>To avoid accumulating rounding errors, we use the precise value of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>17.375</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">17.375\text{ m/s}</annotation></semantics></math> for further calculations.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mi>−</mi><msub><mi>μ</mi><mn>2</mn></msub><mi>m</mi><mi>g</mi><mo>=</mo><mi>−</mi><mn>0.5</mn><mo>⋅</mo><mn>0.2039</mn><mo>⋅</mo><mn>9.81</mn><mo>=</mo><mi>−</mi><mn>1.0001</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F_{x,2} = -\mu_2 mg = -0.5 \cdot 0.2039 \cdot 9.81 = -1.0001\text{ N}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub><mi>m</mi></mfrac><mo>=</mo><mfrac><mrow><mi>−</mi><mn>1.0001</mn></mrow><mn>0.2039</mn></mfrac><mo>=</mo><mi>−</mi><mn>4.905</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+a_{x,2} = \frac {F_{x,2}} {m} = \frac {-1.0001} {0.2039} = -4.905\text{ m/s}^2
+</annotation></semantics></math></p>
+<p>Calculating the acceleration component:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mi>v</mi><mi>x</mi></msub></mrow><msub><mi>t</mi><mn>2</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">
+a_{x,2} = \frac {\Delta v_x} {t_2}
+</annotation></semantics></math></p>
+<p>This can be rearranged to solve for the unknown time interval:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mn>2</mn></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><msub><mi>v</mi><mi>x</mi></msub></mrow><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>−</mo><mn>17.375</mn></mrow><mrow><mi>−</mi><mn>4.905</mn></mrow></mfrac><mo>=</mo><mn>3.542</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+t_2 = \frac {\Delta v_x} {a_{x,2}} = \frac {0 - 17.375} {-4.905} = 3.542\text{ s}
+</annotation></semantics></math></p>
+<p>Since <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mi>x</mi></msub><annotation encoding="application/x-tex">v_x</annotation></semantics></math> represents the initial velocity of the puck as it starts braking on the concrete, the distance is given by the following formula:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>s</mi><mn>2</mn></msub><mo>=</mo><msub><mi>v</mi><mi>x</mi></msub><msub><mi>t</mi><mn>2</mn></msub><mo>+</mo><mfrac><msub><mi>a</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub><mn>2</mn></mfrac><msubsup><mi>t</mi><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><mn>17.375</mn><mo>⋅</mo><mn>3.542</mn><mo>+</mo><mfrac><mrow><mi>−</mi><mn>4.905</mn></mrow><mn>2</mn></mfrac><mo>⋅</mo><msup><mn>3.542</mn><mn>2</mn></msup><mo>=</mo><mn>30.77</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+s_2 = v_x t_2 + \frac {a_{x,2}} {2}t_2^2 = 17.375 \cdot 3.542 + \frac{-4.905}{2} \cdot 3.542^2 = 30.77\text{ m}
+</annotation></semantics></math></p>
+<p>Now it is easy to calculate the work components!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mn>1</mn></msub><mo>=</mo><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mn>1</mn></mrow></msub><msub><mi>s</mi><mn>1</mn></msub><mo>=</mo><mi>−</mi><mn>0.1000</mn><mo>⋅</mo><mn>100</mn><mo>=</mo><mi>−</mi><mn>10.00</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+W_1 = F_{x,1} s_1 = -0.1000 \cdot 100 = -10.00\text{ J}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>W</mi><mn>2</mn></msub><mo>=</mo><msub><mi>F</mi><mrow><mi>x</mi><mo>,</mo><mn>2</mn></mrow></msub><msub><mi>s</mi><mn>2</mn></msub><mo>=</mo><mi>−</mi><mn>1.0001</mn><mo>⋅</mo><mn>30.77</mn><mo>=</mo><mi>−</mi><mn>30.78</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+W_2 = F_{x,2} s_2 = -1.0001 \cdot 30.77 = -30.78\text{ J}
+</annotation></semantics></math></p>
+<p>The total work, which must equal the change in kinetic energy, is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><msub><mi>W</mi><mn>1</mn></msub><mo>+</mo><msub><mi>W</mi><mn>2</mn></msub><mo>=</mo><mi>−</mi><mn>10.00</mn><mo>−</mo><mn>30.78</mn><mo>=</mo><mi>−</mi><mn>40.78</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+W = W_1 + W_2 = -10.00 - 30.78 = -40.78\text{ J}
+</annotation></semantics></math></p>
+<p>Indeed, the change in kinetic energy is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><msub><mi>E</mi><mtext mathvariant="normal">k</mtext></msub><mo>=</mo><msub><mi>E</mi><mtext mathvariant="normal">k,final</mtext></msub><mo>−</mo><msub><mi>E</mi><mtext mathvariant="normal">k,initial</mtext></msub><mo>=</mo><mn>0</mn><mo>−</mo><mfrac><mrow><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mi>−</mi><mfrac><mrow><mn>0.2039</mn><mo>⋅</mo><msup><mn>20</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mi>−</mi><mn>40.78</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+\Delta E_{\text{k}} = E_{\text{k,final}} - E_{\text{k,initial}} = 0 - \frac {m v_0^2} {2} = -\frac {0.2039 \cdot 20^2} {2} = -40.78\text{ J}
+</annotation></semantics></math></p>
+<p>The two results are in perfect agreement.</p>
+<figure>
+<img src="Kepek/ero-elmozdulas.svg" alt="Force-displacement graph" />
+<figcaption aria-hidden="true">Force-displacement graph</figcaption>
+</figure>
+<p>The figure shows that for a variable force that is piecewise constant, the work done corresponds to the area under the force-displacement graph. In our example, the friction force is negative because it acts against the motion, meaning it points in the opposite direction of the displacement. In this case, the area has a negative sign, and the force line runs below the displacement axis.</p>
+<p>This statement holds true generally for any variable force.</p>
+<blockquote>
+<p><strong>The work done is nothing other than the (signed) area under the force-displacement graph.</strong></p>
+</blockquote>
+<h2 id="work-done-when-stretching-a-spring">Work Done When Stretching a Spring</h2>
+<p>Let the spring initially be unstretched, and then let us stretch it slowly and without acceleration so that its final elongation becomes <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>. How much work must we perform to achieve this? At the beginning of the elongation, the force is nearly zero, since the spring does not exert a force yet. At the end of the process, a force of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">Dx</annotation></semantics></math> must be applied to keep the spring stretched. The force increases in direct proportion to the displacement. Let us plot the stretching force as a function of the displacement! We obtain the following graph:</p>
+<figure>
+<img src="Kepek/rugalmasero-megnyulas.svg" alt="Stretching force as a function of elongation" />
+<figcaption aria-hidden="true">Stretching force as a function of elongation</figcaption>
+</figure>
+<p>The graph shows that the work required to stretch the spring corresponds to the area of a right-angled triangle:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mfrac><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>x</mi></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mi>D</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>x</mi></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>D</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+W = \frac {F(x)x} {2} = \frac{(Dx)x} {2} = \frac {Dx^2} {2}
+</annotation></semantics></math></p>
+<h2 id="elastic-energy-1">Elastic Energy</h2>
+<p>The work required to stretch a spring increases its elastic potential energy. The elastic force is also a conservative force, meaning the work done by the spring decreases its elastic energy. The calculation for elastic energy is therefore:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mfrac><mrow><mi>D</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+E_{\text{e}} = \frac {Dx^2} {2}
+</annotation></semantics></math></p>
+<p>Elastic energy is a form of potential energy, just like gravitational potential energy.</p>
+<h3 id="example-1">Example</h3>
+<p>A spring with a spring constant of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>200</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">200\text{ N/m}</annotation></semantics></math> is stretched by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0.2\text{ m}</annotation></semantics></math>.</p>
+<ul>
+<li>How much force is needed to keep the spring stretched?</li>
+<li>How much work did we do, and what is the elastic energy?</li>
+<li>In a lossless catapult, to what velocity can this spring accelerate a ball with a mass of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ g}</annotation></semantics></math>, assuming losses can be neglected?</li>
+<li>The catapult shoots the ball vertically upward. How high will it rise? Air resistance is neglected.</li>
+</ul>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>−</mi><msub><mi>F</mi><mtext mathvariant="normal">s</mtext></msub><mo>=</mo><mi>D</mi><mi>x</mi><mo>=</mo><mn>200</mn><mo>⋅</mo><mn>0.2</mn><mo>=</mo><mn>40</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N</mtext></mrow></mrow><annotation encoding="application/x-tex">
+F = -F_{\text{s}} = Dx = 200 \cdot 0.2 = 40\text{ N}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><msub><mi>E</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><mfrac><mrow><mi>D</mi><msup><mi>x</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>200</mn><mo>⋅</mo><msup><mn>0.2</mn><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> J</mtext></mrow></mrow><annotation encoding="application/x-tex">
+W = E_{\text{e}} = \frac {Dx^2} {2} = \frac {200 \cdot 0.2^2} {2} = 4\text{ J}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">e</mtext></msub><mo>=</mo><msub><mi>E</mi><mtext mathvariant="normal">k</mtext></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+E_{\text{e}} = E_{\text{k}} = \frac {mv^2} {2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msqrt><mfrac><mrow><mn>2</mn><msub><mi>E</mi><mtext mathvariant="normal">e</mtext></msub></mrow><mi>m</mi></mfrac></msqrt><mo>=</mo><msqrt><mfrac><mn>8</mn><mn>0.01</mn></mfrac></msqrt><mo>=</mo><mn>28.28</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+v = \sqrt {\frac {2E_{\text{e}}} {m}} = \sqrt {\frac{8}{0.01}} = 28.28\text{ m/s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">p</mtext></msub><mo>=</mo><msub><mi>E</mi><mtext mathvariant="normal">k</mtext></msub><mo>=</mo><mi>m</mi><mi>g</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">
+E_{\text{p}} = E_{\text{k}} = mgh
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><msub><mi>E</mi><mtext mathvariant="normal">k</mtext></msub><mrow><mi>m</mi><mi>g</mi></mrow></mfrac><mo>=</mo><mfrac><mn>4</mn><mrow><mn>0.01</mn><mo>⋅</mo><mn>9.81</mn></mrow></mfrac><mo>=</mo><mn>40.77</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+h = \frac {E_{\text{k}}} {mg} = \frac {4} {0.01 \cdot 9.81} = 40.77\text{ m}
+</annotation></semantics></math></p>
+<h3 id="simulation">Simulation</h3>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#804a06d3-a20a-401b-94c2-b5989a56c61c">The Catapult Example</a></p>
+<p>Let us check the maximum height reached by the ball in the simulator!</p>
+<hr />
+<h2 id="problems">Problems</h2>
+<p><strong>Problem 1</strong> A box with a mass of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">500\text{ g}</annotation></semantics></math> is pushed across the floor with an initial velocity of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ m/s}</annotation></semantics></math>. The coefficient of kinetic friction between the box and the floor is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>μ</mi><mo>=</mo><mn>0.2</mn></mrow><annotation encoding="application/x-tex">\mu = 0.2</annotation></semantics></math>.<br />
+<em>What distance does the box travel before stopping, and what is the work done by the friction force? Verify your result using the work-energy theorem!</em></p>
+<p><strong>Problem 2</strong> A toy car (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>150</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">m = 150\text{ g}</annotation></semantics></math>) collides with a horizontal spring that has a spring constant of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mn>120</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D = 120\text{ N/m}</annotation></semantics></math>. The velocity of the car at the moment of impact is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m/s</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ m/s}</annotation></semantics></math>.<br />
+<em>What will the maximum compression of the spring be if friction is completely neglected?</em></p>
+<p><strong>Problem 3</strong> The spring of a spring-loaded launcher (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mn>500</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> N/m</mtext></mrow></mrow><annotation encoding="application/x-tex">D = 500\text{ N/m}</annotation></semantics></math>) is compressed by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">10\text{ cm}</annotation></semantics></math>, and a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> g</mtext></mrow></mrow><annotation encoding="application/x-tex">50\text{ g}</annotation></semantics></math> ball is launched across a horizontal table. The coefficient of friction on the table surface is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0.15</mn><annotation encoding="application/x-tex">0.15</annotation></semantics></math>.<br />
+<em>How far does the ball travel from the launch point (measured from the equilibrium position of the spring) before it comes to a complete stop due to friction?</em></p>
+</main>
+</body>
+</html>

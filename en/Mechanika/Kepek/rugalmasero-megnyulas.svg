@@ -1,71 +1,71 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
-  <!-- Fehér háttér -->
+  <!-- White background -->
   <rect width="100%" height="100%" fill="white" />
   
-  <!-- Cím -->
-  <text x="300" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Nyújtóerő a megnyúlás függvényében</text>
+  <!-- Title -->
+  <text x="300" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#333">Stretching Force vs. Elongation</text>
 
-  <!-- Nyílhegyek definíciója a tengelyekhez -->
+  <!-- Definition of arrowheads for axes -->
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
       <path d="M0,0 L0,6 L9,3 z" fill="#333" />
     </marker>
   </defs>
 
-  <!-- Háromszög terület (A végzett munka / Rugalmas energia) -->
+  <!-- Triangle area (Work done / Elastic potential energy) -->
   <polygon points="100,320 450,320 450,80" fill="#87CEEB" fill-opacity="0.5" />
 
-  <!-- Segédvonalak (szaggatott) a tengelyekig -->
+  <!-- Guidelines (dashed) to the axes -->
   <g stroke="#888" stroke-width="1.5" stroke-dasharray="6,4">
-    <!-- Vízszintes segédvonal a Dx-hez -->
+    <!-- Horizontal guideline to kx -->
     <line x1="100" y1="80" x2="450" y2="80" />
-    <!-- Függőleges segédvonal az x-hez -->
+    <!-- Vertical guideline to x -->
     <line x1="450" y1="320" x2="450" y2="80" />
   </g>
 
-  <!-- Tengelyek -->
+  <!-- Axes -->
   <g stroke="#333" stroke-width="2">
-    <!-- X tengely (Megnyúlás) -->
+    <!-- X-axis (Elongation) -->
     <line x1="80" y1="320" x2="550" y2="320" marker-end="url(#arrow)" />
-    <!-- Y tengely (Erő) -->
+    <!-- Y-axis (Force) -->
     <line x1="100" y1="340" x2="100" y2="50" marker-end="url(#arrow)" />
   </g>
 
-  <!-- Erővonal (F = D * x függvény) -->
+  <!-- Force line (F = k * x function) -->
   <line x1="100" y1="320" x2="450" y2="80" stroke="#D32F2F" stroke-width="3" stroke-linecap="round" />
   
-  <!-- Kezdő és végpontok pöttyel -->
+  <!-- Endpoints with dots -->
   <circle cx="100" cy="320" r="4" fill="#D32F2F" />
   <circle cx="450" cy="80" r="4" fill="#D32F2F" />
 
-  <!-- Osztásközök (kis vonalak a tengelyeken) -->
+  <!-- Ticks on axes -->
   <g stroke="#333" stroke-width="2">
-    <!-- X tengely osztás -->
+    <!-- X-axis tick -->
     <line x1="450" y1="315" x2="450" y2="325" />
-    <!-- Y tengely osztás -->
+    <!-- Y-axis tick -->
     <line x1="95" y1="80" x2="105" y2="80" />
   </g>
 
-  <!-- Tengely feliratok és jelzések -->
+  <!-- Axis labels and indicators -->
   <g font-family="Arial, sans-serif" font-size="16" fill="#333">
-    <!-- Origó -->
+    <!-- Origin -->
     <text x="85" y="340" text-anchor="end">0</text>
     
-    <!-- X tengely (Megnyúlás) -->
+    <!-- X-axis (Displacement) -->
     <text x="450" y="345" text-anchor="middle" font-style="italic" font-weight="bold">x</text>
-    <text x="540" y="345" text-anchor="end" font-weight="bold">Elmozdulás</text>
+    <text x="570" y="345" text-anchor="end" font-weight="bold">Displacement</text>
 
-    <!-- Y tengely (Erő) -->
-    <text x="85" y="85" text-anchor="end" font-style="italic" font-weight="bold">Dx</text>
-    <text x="90" y="40" text-anchor="end" font-weight="bold">Erő (F)</text>
+    <!-- Y-axis (Force) -->
+    <text x="85" y="85" text-anchor="end" font-style="italic" font-weight="bold">kx</text>
+    <text x="90" y="40" text-anchor="end" font-weight="bold">Force (F)</text>
   </g>
 
-  <!-- Terület (Munka) magyarázó szövegei a háromszögön belül -->
-  <text x="330" y="230" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#005b96" text-anchor="middle">Végzett munka (W)</text>
-  <text x="330" y="255" font-family="Arial, sans-serif" font-size="14" fill="#005b96" text-anchor="middle">Terület = háromszög területe</text>
+  <!-- Area explanation text inside the triangle -->
+  <text x="330" y="230" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#005b96" text-anchor="middle">Work Done (W)</text>
+  <text x="330" y="255" font-family="Arial, sans-serif" font-size="14" fill="#005b96" text-anchor="middle">Area = area of triangle</text>
   
-  <!-- Képlet a háromszögben -->
+  <!-- Formula inside the triangle -->
   <g font-family="Arial, sans-serif" font-size="16" font-style="italic" fill="#005b96" text-anchor="middle">
-    <text x="330" y="285">W = ½ · x · Dx = ½Dx²</text>
+    <text x="330" y="285">W = ½ · x · kx = ½kx²</text>
   </g>
 </svg>

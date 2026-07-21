@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://w3.org" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Harmonic Oscillation</title>
+    <link rel="stylesheet" href="../github-markdown.css" />
+      <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
+  </head>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newtonian Mechanics</a><div class="nav-group-center"><a href="NEHEZFELADATFORGOMOZGASRA.html" class="nav-btn" aria-label="Previous lesson">◀<span class="btn-text"> Prev</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Table of Contents">☰<span class="btn-text"> Contents</span></a><a href="REZGOMOZGASSEBESSEGE.html" class="nav-btn" aria-label="Next lesson"><span class="btn-text">Next </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newtonian Mechanics</a><div class="nav-group-left"><a href="../index.html">About</a><a href="../VEGEREDMENYEK.html#harmonic-oscillation" style="font-weight: 600;">Solutions</a><a href="../IRODALOMJEGYZEK.html">Bibliography</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Topics ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematics</a></li><li><a href="NEWTONTORVENYEI.html">Dynamics</a></li><li><a href="MUNKA.html">Energy</a></li><li><a href="IMPULZUS.html">Momentum & Collisions</a></li><li><a href="RUGALMATLANUTKOZES.html">Systems of Particles</a></li><li><a href="EGYENLETESKORMOZGAS.html">Circular Motion</a></li><li><a href="KEPLERTORVENYEI.html">Gravitation</a></li><li><a href="MEREVTEST.html">Rotational Dynamics</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Oscillations & Waves</a></li><li><a href="NYOMAS.html">Fluid Mechanics</a></li></ul></div></div></div></nav></header>
+<main class="markdown-body">
+<h1 id="harmonic-oscillation">Harmonic Oscillation</h1>
+<h2 id="experiment">Experiment</h2>
+<p><lite-youtube videoid="ZlleypTKfGY"></lite-youtube></p>
+<p>The video demonstrates the physical connection between uniform circular motion and simple harmonic motion through simultaneous shadow projection. A plastic ball with an 8 cm diameter is mounted near the edge of a rotating disk driven by a speed reducer motor. Next to the rotating disk, a 20 N mass hangs from a vertical spring. When illuminated by a slide projector, the shadows cast on the screen show that the vertical component of the ball’s circular motion matches the vertical oscillation of the mass on the spring exactly. This proves that simple harmonic motion can be mathematically modeled over time using sinusoidal functions.</p>
+<h2 id="simulation">Simulation</h2>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#7af99d9a-bc17-46b4-be37-20cbcb802374">Relationship Between Uniform Circular Motion and Simple Harmonic Motion</a></p>
+<h2 id="the-concept-of-simple-harmonic-motion">The Concept of Simple Harmonic Motion</h2>
+<p>An object attached to a spring undergoes simple harmonic motion, and as can be seen from both the experiment and the simulation, this is closely related to uniform circular motion. When the objects are started appropriately, their motion remains synchronized in such a way that one coordinate (e.g., the x-coordinate) of the object performing uniform circular motion is identical at every instant to the x-coordinate of the object performing simple harmonic motion in a straight line parallel to the x-axis.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+x = A\cos(\omega t)
+</annotation></semantics></math></p>
+<figure>
+<img src="Kepek/rezgomozgas.svg" alt="Relationship between simple harmonic motion and uniform circular motion" />
+<figcaption aria-hidden="true">Relationship between simple harmonic motion and uniform circular motion</figcaption>
+</figure>
+<p>From mathematics, we know that the coordinates of a point in a rectangular coordinate system are given by:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>r</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+x = r\cos \phi
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>r</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+y = r\sin \phi
+</annotation></semantics></math></p>
+<p>Here, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> is the distance from the origin, and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> is the angle of rotation measured from the positive x-axis. For circular motion, the angle of rotation is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\omega t</annotation></semantics></math>, and the radius <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> of the circle is denoted here by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> and is called the amplitude. The variable <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> is called the displacement, and the amplitude represents the maximum displacement, since the maximum value of the cosine function is 1. Instead of angular velocity, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> is now called the angular frequency (or radian frequency), and the previous relationship still holds true:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>T</mi></mfrac><mo>=</mo><mn>2</mn><mi>π</mi><mi>f</mi></mrow><annotation encoding="application/x-tex">
+\omega = \frac {2\pi} {T} = 2\pi f
+</annotation></semantics></math></p>
+<p>Here, the frequency <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> is the reciprocal of the period <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mfrac><mn>1</mn><mi>T</mi></mfrac></mrow><annotation encoding="application/x-tex">
+f = \frac {1} {T}
+</annotation></semantics></math></p>
+<p>The unit of frequency is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>s</mi></mfrac><annotation encoding="application/x-tex">\frac {1} {s}</annotation></semantics></math>, which is also called hertz, denoted by Hz. In circular motion, the reciprocal of the period is referred to as the rotational speed (or revolutions per unit time) and is denoted by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.</p>
+<h2 id="important-concepts">Important Concepts</h2>
+<blockquote>
+<p><strong>Displacement (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>):</strong> The signed distance of the oscillating body from its equilibrium position.</p>
+</blockquote>
+<blockquote>
+<p><strong>Amplitude (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>):</strong> The name given to the maximum displacement.</p>
+</blockquote>
+<blockquote>
+<p><strong>Frequency (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>):</strong> The number of oscillations completed per unit time (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ s}</annotation></semantics></math>). Its unit is the hertz (Hz). <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow><mo>=</mo><mfrac><mn>1</mn><mi>s</mi></mfrac></mrow><annotation encoding="application/x-tex">1\text{ Hz} = \frac {1} {s}</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>Period (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>):</strong> The time required to complete one full oscillation. It is the reciprocal of the frequency.</p>
+</blockquote>
+<blockquote>
+<p><strong>Angular Frequency (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>):</strong> <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>π</mi></mrow><annotation encoding="application/x-tex">2\pi</annotation></semantics></math> times the frequency.</p>
+</blockquote>
+<blockquote>
+<p><strong>Phase (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>):</strong> The angular displacement of an imaginary object performing uniform circular motion in synchronization with the harmonic oscillation. <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>=</mo><mi>ω</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\phi = \omega t</annotation></semantics></math></p>
+</blockquote>
+<blockquote>
+<p><strong>Simple Harmonic Motion:</strong> A motion where the displacement of an object moving along a straight line is equal at every moment to the x-coordinate of a real or imaginary object performing uniform circular motion in synchronization with it. The displacement can be described as a sine or cosine function of time.</p>
+</blockquote>
+<h2 id="example">Example</h2>
+<p>An object attached to a spring performs simple harmonic motion. The amplitude of the motion is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0.2\text{ m}</annotation></semantics></math>, and the frequency is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> Hz</mtext></mrow></mrow><annotation encoding="application/x-tex">2\text{ Hz}</annotation></semantics></math>. - What is the period? - What is the angular frequency? - Write down the equation that gives the displacement as a function of time, if the displacement is at its maximum at <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t=0</annotation></semantics></math>! - Calculate the displacement at <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0.150</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t=0.150\text{ s}</annotation></semantics></math>!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mn>1</mn><mi>f</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mn>0.5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+T = \frac {1} {f} = \frac {1} {2} = 0.5\text{ s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>f</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><mi>π</mi><mo>⋅</mo><mn>2</mn><mo>≈</mo><mn>12.566</mn><mfrac><mn>1</mn><mi>s</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\omega = 2\pi f = 2 \cdot \pi \cdot 2 \approx 12.566 \frac {1} {s}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0.2</mn><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>12.566</mn><mo>⋅</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+x = A \cos (\omega t) = 0.2 \cdot \cos (12.566 \cdot t)
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0.2</mn><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>12.566</mn><mo>⋅</mo><mn>0.15</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>0.0618</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+x = 0.2 \cdot \cos (12.566 \cdot 0.15) = -0.0618\text{ m}
+</annotation></semantics></math></p>
+<blockquote>
+<p><strong>Hint:</strong> When solving, you must make sure that the angle is measured in radians, so your calculator must be switched to radian (RAD) mode!</p>
+</blockquote>
+<h2 id="problems">Problems</h2>
+<ol type="1">
+<li>A point-like body performing simple harmonic motion has an amplitude of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">5\text{ cm}</annotation></semantics></math> and a period of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">0.4\text{ s}</annotation></semantics></math>.</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Determine the frequency and the angular frequency of the body’s oscillation!</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Write down the displacement-time function, assuming that the body is at its maximum positive displacement at the moment <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t=0</annotation></semantics></math>!</li>
+</ol></li>
+</ul>
+<ol start="2" type="1">
+<li>The displacement-time function of a body is given by: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0.15</mn><mo>⋅</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>10</mn><mi>π</mi><mo>⋅</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x(t) = 0.15 \cdot \cos(10\pi \cdot t)</annotation></semantics></math>, where the displacement is measured in metres and time in seconds.</li>
+</ol>
+<ul>
+<li><ol type="a">
+<li>Read and calculate the amplitude, angular frequency, frequency, and period of the motion!</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>How far is the body from its equilibrium position at the moment <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0.05</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">t = 0.05\text{ s}</annotation></semantics></math>?</li>
+</ol></li>
+</ul>
+<ol start="3" type="1">
+<li>A body hanging on a spring performs simple harmonic motion with an amplitude of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mn>8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> cm</mtext></mrow></mrow><annotation encoding="application/x-tex">A = 8\text{ cm}</annotation></semantics></math>. Its motion is described by the relationship <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x = A \cos(\omega t)</annotation></semantics></math>.</li>
+</ol>
+<ul>
+<li>What is the displacement of the body at the moment when the phase angle (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>=</mo><mi>ω</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\phi = \omega t</annotation></semantics></math>) describing the motion is exactly <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>π</mi><mn>3</mn></mfrac><annotation encoding="application/x-tex">\frac{\pi}{3}</annotation></semantics></math> radians? Give your answer in cm!</li>
+</ul>
+</main>
+</body>
+</html>

@@ -127,7 +127,7 @@ $$
 The weight of the system (the force pulling on the suspension):
 
 $$
-F_{\text{w}} = 2K = \frac{4m_1 m_2}{m_1 + m_2}g
+F_{\text{w}} = 2T = \frac{4m_1 m_2}{m_1 + m_2}g
 $$
 
 ### Experiment

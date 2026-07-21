@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%" style="background-color: #f8f9fa; border-radius: 8px;">
   <defs>
-    <!-- Cső belső folyadék stacionárius alapszíne -->
+    <!-- Base stationary fluid color inside the pipe -->
     <linearGradient id="pipeFluid" x1="0%" y1="100%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#b3e5fc" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#81d4fa" stop-opacity="0.5"/>
     </linearGradient>
     
-    <!-- Henger alakú folyadékelemek kiemelt színezése -->
+    <!-- Highlighted coloring for cylindrical fluid elements -->
     <linearGradient id="volume1" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#29b6f6" stop-opacity="0.75"/>
       <stop offset="100%" stop-color="#0288d1" stop-opacity="0.75"/>
@@ -16,7 +16,7 @@
       <stop offset="100%" stop-color="#00695c" stop-opacity="0.75"/>
     </linearGradient>
     
-    <!-- Nyílhegyek -->
+    <!-- Arrowheads -->
     <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
       <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#37474f"/>
     </marker>
@@ -36,75 +36,74 @@
     .dim-line { stroke: #78909c; stroke-width: 1; }
   </style>
 
-  <!-- Cím -->
-  <text x="30" y="35" class="title">Energia-megmaradás és nyomásviszonyok áramvonal mentén</text>
+  <!-- Title -->
+  <text x="30" y="35" class="title">Conservation of Energy and Pressure Conditions Along a Streamline</text>
 
-  <!-- Referenciaszint (Föld) -->
+  <!-- Reference level (Ground) -->
   <line x1="50" y1="400" x2="750" y2="400" stroke="#37474f" stroke-width="2"/>
   <text x="700" y="420" class="label" style="font-weight: bold;">h = 0</text>
 
-  <!-- Áramló folyadéktér a csőben -->
+  <!-- Flowing fluid domain inside the pipe -->
   <path d="M 80 240 L 220 240 C 350 240, 400 130, 520 130 L 720 130 L 720 180 L 520 180 C 400 180, 350 320, 220 320 L 80 320 Z" fill="url(#pipeFluid)"/>
 
-  <!-- Csőfalak -->
+  <!-- Pipe walls -->
   <path d="M 80 240 L 220 240 C 350 240, 400 130, 520 130 L 720 130" fill="none" stroke="#37474f" stroke-width="3"/>
   <path d="M 80 320 L 220 320 C 350 320, 400 180, 520 180 L 720 180" fill="none" stroke="#37474f" stroke-width="3"/>
 
-  <!-- 1-ES SZAKASZ (Henger alakú folyadékelem) -->
-  <!-- Palást -->
+  <!-- SECTION 1 (Cylindrical fluid element) -->
+  <!-- Shell -->
   <path d="M 130 240 L 180 240 A 12 40 0 0 1 180 320 L 130 320 A 12 40 0 0 0 130 240 Z" fill="url(#volume1)"/>
-  <!-- Lapos hengervégek (ellipszisek) -->
+  <!-- Flat cylinder ends (ellipses) -->
   <ellipse cx="130" cy="280" rx="12" ry="40" fill="#01579b" opacity="0.4" stroke="#01579b" stroke-width="1"/>
   <ellipse cx="180" cy="280" rx="12" ry="40" fill="#0288d1" opacity="0.6" stroke="#01579b" stroke-width="1"/>
 
-  <!-- Magasság 1 mérése a henger középpontjától -->
+  <!-- Height 1 measurement from the center of the cylinder -->
   <line x1="155" y1="280" x2="155" y2="400" class="dim-line" stroke-dasharray="3,3"/>
   <circle cx="155" cy="280" r="3" fill="#37474f"/>
   <text x="165" y="360" class="math">h<tspan class="sub">1</tspan></text>
 
-  <!-- Erő / Nyomás p1 -->
+  <!-- Force / Pressure p1 -->
   <line x1="60" y1="280" x2="115" y2="280" stroke="#d32f2f" stroke-width="2.5" marker-end="url(#forceArrow)"/>
   <text x="65" y="270" class="math" fill="#d32f2f">p<tspan class="sub">1</tspan></text>
   <text x="105" y="335" class="math">A<tspan class="sub">1</tspan></text>
 
-  <!-- Sebesség u1 -->
+  <!-- Velocity u1 -->
   <line x1="155" y1="260" x2="195" y2="260" stroke="#2e7d32" stroke-width="2.5" marker-end="url(#velocityArrow)"/>
   <text x="165" y="250" class="math" fill="#2e7d32">u<tspan class="sub">1</tspan></text>
 
-  <!-- dx1 elmozdulás (Henger hossza) -->
+  <!-- Displacement dx1 (Length of cylinder) -->
   <line x1="130" y1="215" x2="180" y2="215" class="dim-line" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
   <text x="135" y="205" class="math" style="font-size: 13px;">Δx<tspan class="sub">1</tspan> = u<tspan class="sub">1</tspan>Δt</text>
 
 
-  <!-- 2-ES SZAKASZ (Henger alakú folyadékelem) -->
-  <!-- Palást -->
+  <!-- SECTION 2 (Cylindrical fluid element) -->
+  <!-- Shell -->
   <path d="M 580 130 L 660 130 A 8 25 0 0 1 660 180 L 580 180 A 8 25 0 0 0 580 130 Z" fill="url(#volume2)"/>
-  <!-- Lapos hengervégek (ellipszisek) -->
+  <!-- Flat cylinder ends (ellipses) -->
   <ellipse cx="580" cy="155" rx="8" ry="25" fill="#004d40" opacity="0.4" stroke="#004d40" stroke-width="1"/>
   <ellipse cx="660" cy="155" rx="8" ry="25" fill="#00796b" opacity="0.6" stroke="#004d40" stroke-width="1"/>
 
-  <!-- Magasság 2 mérése a henger középpontjától -->
+  <!-- Height 2 measurement from the center of the cylinder -->
   <line x1="620" y1="155" x2="620" y2="400" class="dim-line" stroke-dasharray="3,3"/>
   <circle cx="620" cy="155" r="3" fill="#37474f"/>
   <text x="630" y="280" class="math">h<tspan class="sub">2</tspan></text>
 
-  <!-- Erő / Nyomás p2 (Szembe dolgozik) -->
+  <!-- Force / Pressure p2 (Opposing work) -->
   <line x1="710" y1="155" x2="675" y2="155" stroke="#d32f2f" stroke-width="2.5" marker-end="url(#forceArrow)"/>
   <text x="695" y="145" class="math" fill="#d32f2f">p<tspan class="sub">2</tspan></text>
   <text x="560" y="195" class="math">A<tspan class="sub">2</tspan></text>
 
-  <!-- Sebesség u2 (Hosszabb nyíl a nagyobb sebesség miatt) -->
+  <!-- Velocity u2 (Longer arrow due to higher velocity) -->
   <line x1="620" y1="142" x2="680" y2="142" stroke="#2e7d32" stroke-width="2.5" marker-end="url(#velocityArrow)"/>
   <text x="640" y="135" class="math" fill="#2e7d32">u<tspan class="sub">2</tspan></text>
 
-  <!-- dx2 elmozdulás (Henger hossza) -->
+  <!-- Displacement dx2 (Length of cylinder) -->
   <line x1="580" y1="95" x2="660" y2="95" class="dim-line" marker-end="url(#arrow)" marker-start="url(#arrow)"/>
   <text x="590" y="85" class="math" style="font-size: 13px;">Δx<tspan class="sub">2</tspan> = u<tspan class="sub">2</tspan>Δt</text>
 
 
-  <!-- KORRIGÁLT KÖZPONTI ÁRAMVONAL -->
-  <!-- Matematikailag pontos középvonal a falak között -->
+  <!-- CORRECTED CENTRAL STREAMLINE -->
+  <!-- Mathematically accurate centerline between walls -->
   <path d="M 80 280 L 220 280 C 350 280, 400 155, 520 155 L 720 155" fill="none" stroke="#263238" stroke-width="1.5" stroke-dasharray="6,4"/>
-  <text x="300" y="265" class="label" style="font-style: italic; fill: #37474f; font-size: 12px;">Központi áramvonal</text>
+  <text x="300" y="265" class="label" style="font-style: italic; fill: #37474f; font-size: 12px;">Central streamline</text>
 </svg>
-

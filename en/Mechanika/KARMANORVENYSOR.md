@@ -56,7 +56,7 @@ It is particularly interesting to see what happens at massive Reynolds numbers. 
 
 ### The Strouhal Number in Practice
 
-线Periodically shedding vortices can drive elastic structures into intense vibration, and if mechanical resonance occurs, this can even be life-threatening or destructive. Knowing the Strouhal number and the flow velocity allows the shedding frequency to be calculated, meaning structures can be designed to prevent this resonance from developing.
+Periodically shedding vortices can drive elastic structures into intense vibration, and if mechanical resonance occurs, this can even be life-threatening or destructive. Knowing the Strouhal number and the flow velocity allows the shedding frequency to be calculated, meaning structures can be designed to prevent this resonance from developing.
 
 The infamous **Tacoma Narrows Bridge** collapsed spectacularly in high winds just 4 months after its opening. During post-disaster investigations, it was long suspected that the bridge was destroyed by pure Kármán vortex resonance as outlined above. Theodore von Kármán himself actively participated in the investigations and the aerodynamic design of the new bridge. Based on modern fluid dynamics research, we now know that the frequency of vortex shedding as a function of that day's wind speed was approx. $1\text{ Hz}$, while the fatal torsional (twisting) vibrations that developed on the bridge had a frequency of approx. $0.2\text{ Hz}$. Thus, it was not pure von Kármán vortex street resonance that caused the bridge to collapse (but rather a phenomenon called aeroelastic flutter).
 

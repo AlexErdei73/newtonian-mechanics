@@ -12,10 +12,13 @@ Mivel az áramlási alapegyenletek (Navier–Stokes-egyenletek) közvetlen megol
 
 A következő videók bemutatják a jelenség kísérleti és numerikus hátterét. Nézzük meg őket figyelmesen, mielőtt rátérnénk a matematikai levezetésre!
 
-*   [A közegellenállás mérése sima gömbön és golflabdán (YouTube videó)](https://www.youtube.com/watch?v=2L8TjobaFac&t=24s)
-*   [Közegellenállás és aerodinamikai emelőerő mérése szárnyformán (YouTube videó)](https://www.youtube.com/watch?v=EbOpgUrwK7M)
-*   [Gömb körüli áramlás numerikus szimulációja Re=100 000 esetén (YouTube videó)](https://www.youtube.com/watch?v=skzddW_kEq0)
-*   [Áramlás repülőgép-szárnyprofil körül (YouTube Shorts)](https://www.youtube.com/shorts/UKHjTZwSH_w)
+[A közegellenállás mérése sima gömbön és golflabdán (YouTube videó)](https://www.youtube.com/watch?v=2L8TjobaFac&t=24s)
+
+[Közegellenállás és aerodinamikai emelőerő mérése szárnyformán (YouTube videó)](https://www.youtube.com/watch?v=EbOpgUrwK7M)
+
+[Gömb körüli áramlás numerikus szimulációja Re=100 000 esetén (YouTube videó)](https://www.youtube.com/watch?v=skzddW_kEq0)
+
+[Áramlás repülőgép-szárnyprofil körül (YouTube Shorts)](https://www.youtube.com/shorts/UKHjTZwSH_w)
 
 A kísérletek szemléltetik, hogyan mérhető a közegellenállási erő gömbön, illetve a közegellenállási erő és az aerodinamikai emelőerő szárnyprofilon, különböző állásszögek esetén. Foglalkozzunk először a közegellenállás kiszámításával, majd vizsgáljuk meg, hogyan jön létre a repülést biztosító emelőerő!
 
@@ -71,13 +74,7 @@ $$
 C_w = \frac{24}{Re}
 $$
 
-Ha ezt visszahelyettesítjük a négyzetes közegellenállási egyenletbe (figyelembe véve, hogy a gömb keresztmetszete $A = r^2\pi$, a Reynolds-szám pedig $Re = \frac{\rho \cdot 2r \cdot u}{\eta_{\text{din}}}$):- **1. feladat:** 
-  * Örvénysugár ($\eta$): **$0{,}13\text{ mm}$** ($1{,}295 \cdot 10^{-4}\text{ m}$)
-  * Örvénysebesség ($v_{\eta}$): **$0{,}12\text{ m/s}$**
-- **2. feladat:** 
-  * Legkisebb örvénysugár a reaktorban: **$1point12\text{ mm}$** ($1point125 \cdot 10^{-3}\text{ m}$)
-  * Növekedés mértéke a vízhez képest: **$53{,}2\text{-szeresére}$** nőtt meg ez a mikroszkopikus határ a megnövekedett viszkozitás miatt ($\eta_{\text{víz}} = 2{,}115 \cdot 10^{-5}\text{ m}$).
-- **3. feladat:** **$0point030\text{ m}^3\text{/s}^2$** (mivel a hullámszám a négyszeresére nőtt, a Kolmogorov-féle $-5/3$-os hatványtörvény alapján a spektrális energiasűrűség pontosan a tizedére, kerekítve $0point0298\text{ m}^3\text{/s}^2$ értékre esik vissza).
+Ha ezt visszahelyettesítjük a négyzetes közegellenállási egyenletbe (figyelembe véve, hogy a gömb keresztmetszete $A = r^2\pi$, a Reynolds-szám pedig $Re = \frac{\rho \cdot 2r \cdot u}{\eta_{\text{din}}}$):
 
 $$
 F_k = \frac{1}{2} C_w \cdot \rho \cdot u^2 \cdot A = \frac{1}{2} \cdot \left(\frac{24\eta_{\text{din}}}{\rho \cdot 2r \cdot u}\right) \cdot \rho \cdot u^2 \cdot (r^2\pi) = 6\pi \cdot \eta_{\text{din}} \cdot r \cdot u

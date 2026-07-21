@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns="http://w3.org" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>The Simple Mathematical Pendulum</title>
+    <link rel="stylesheet" href="../github-markdown.css" />
+      <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
+  </head>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newtonian Mechanics</a><div class="nav-group-center"><a href="REZONANCIA.html" class="nav-btn" aria-label="Previous lesson">◀<span class="btn-text"> Prev</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Table of Contents">☰<span class="btn-text"> Contents</span></a><a href="FIZIKAIINGA.html" class="nav-btn" aria-label="Next lesson"><span class="btn-text">Next </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newtonian Mechanics</a><div class="nav-group-left"><a href="../index.html">About</a><a href="../VEGEREDMENYEK.html#the-simple-mathematical-pendulum" style="font-weight: 600;">Solutions</a><a href="../IRODALOMJEGYZEK.html">Bibliography</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Topics ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematics</a></li><li><a href="NEWTONTORVENYEI.html">Dynamics</a></li><li><a href="MUNKA.html">Energy</a></li><li><a href="IMPULZUS.html">Momentum & Collisions</a></li><li><a href="RUGALMATLANUTKOZES.html">Systems of Particles</a></li><li><a href="EGYENLETESKORMOZGAS.html">Circular Motion</a></li><li><a href="KEPLERTORVENYEI.html">Gravitation</a></li><li><a href="MEREVTEST.html">Rotational Dynamics</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Oscillations & Waves</a></li><li><a href="NYOMAS.html">Fluid Mechanics</a></li></ul></div></div></div></nav></header>
+<main class="markdown-body">
+<h1 id="the-simple-mathematical-pendulum">The Simple Mathematical Pendulum</h1>
+<h2 id="the-concept-of-the-simple-pendulum">The Concept of the Simple Pendulum</h2>
+<blockquote>
+<p><strong>Simple pendulum:</strong> A point-like body that can perform oscillations under the influence of the gravitational force on an inextensible string of fixed length and negligible mass. The other end of the string is fixed in a reference frame attached to the Earth. During the oscillations, the string remains taut.</p>
+</blockquote>
+<h3 id="experiment">Experiment</h3>
+<p><lite-youtube videoid="1R5jpNTSxDg"></lite-youtube></p>
+<p>The experiment beautifully shows that for the case of small opening angles, the period of the conical pendulum matches approximately with the period of the simple pendulum. The uniform circular motion of the conical pendulum happens in synchronization with the oscillations of the pendulum, provided that the opening angle of the cone matches the angle of the pendulum’s oscillation and these are started at the same time. According to this, the pendulum performs a simple harmonic motion to a good approximation in the case of small displacements.</p>
+<p>For the period, we also obtained the formula that we are going to derive for the oscillations of the pendulum. However, the agreement is true only for the limiting case of small cone angles!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mrow><mi>l</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi></mrow><mi>g</mi></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt{ \frac {l \cos \Theta} {g} }
+</annotation></semantics></math></p>
+<p>If <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math> is the radius of revolution and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math> is the length of the string, then it is valid that:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><mfrac><msqrt><mrow><msup><mi>l</mi><mn>2</mn></msup><mo>−</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></msqrt><mi>l</mi></mfrac><mo>=</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>r</mi><mi>l</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">
+\cos \Theta = \frac {\sqrt {l^2 - r^2}} {l} = \sqrt {1 - \left(\frac r l\right)^2}
+</annotation></semantics></math></p>
+<p>In the event that <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>≪</mo><mi>l</mi></mrow><annotation encoding="application/x-tex">r \ll l</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi><mo>≈</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
+\cos \Theta \approx 1
+</annotation></semantics></math></p>
+<p>therefore we obtain the following formula for the period of the pendulum with small displacement:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>l</mi><mi>g</mi></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt{ \frac l g }
+</annotation></semantics></math></p>
+<h2 id="the-equation-of-motion">The Equation of Motion</h2>
+<figure>
+<img src="Kepek/mathematicalpendulum.svg" alt="The simple pendulum" />
+<figcaption aria-hidden="true">The simple pendulum</figcaption>
+</figure>
+<p>Only the gravitational force and the string tension force <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> act on the body. The string tension force points in the direction of the string, while the gravitational force points vertically downward. Let us resolve the gravitational force into its components parallel to the string and perpendicular to it, therefore in the tangential direction! The pendulum performs circular motion, but this is not uniform circular motion. For the components in the direction of the string, the following relationship is valid:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>−</mo><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>=</mo><mi>m</mi><msub><mi>a</mi><mrow><mi>c</mi><mi>p</mi></mrow></msub><mo>=</mo><mi>m</mi><mfrac><msup><mi>v</mi><mn>2</mn></msup><mi>l</mi></mfrac><mo>=</mo><mi>m</mi><mi>l</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+T - mg\cos\phi = ma_{cp} = m\frac {v^2} {l} = ml\omega^2
+</annotation></semantics></math></p>
+<p>This equation is suitable for determining the force developing in the string. Right now we are not interested in this. The equation interesting for us relates to the tangential components. Let the positive direction of the components be the direction determined by the increase of the displacement angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>! In this case, the tangential force is the following:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mo>=</mo><mi>−</mi><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+F_t = -mg\sin\phi
+</annotation></semantics></math></p>
+<p>The force is negative because it tries to decrease the displacement <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>, provided that <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> is positive. According to Newton’s second law:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>t</mi></msub><mo>=</mo><mi>m</mi><msub><mi>a</mi><mi>t</mi></msub></mrow><annotation encoding="application/x-tex">
+F_t = ma_t
+</annotation></semantics></math></p>
+<p>Therefore</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><mi>−</mi><mi>m</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+ma_t = -mg\sin\phi
+</annotation></semantics></math></p>
+<p>That is to say</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><mi>−</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+a_t = -g\sin\phi
+</annotation></semantics></math></p>
+<p>The signed value of the tangential acceleration can be obtained from the angular acceleration <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> as follows:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><mi>l</mi><mi>α</mi></mrow><annotation encoding="application/x-tex">
+a_t = l\alpha
+</annotation></semantics></math></p>
+<p>This is true because the radius of the circular motion in our case is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math>, the length of the string.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mi>α</mi><mo>=</mo><mi>−</mi><mi>g</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+l\alpha = -g\sin\phi
+</annotation></semantics></math></p>
+<p>Therefore, the final form of the equation of motion is the following:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mi>−</mi><mfrac><mi>g</mi><mi>l</mi></mfrac><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+\alpha = - \frac g l \sin\phi
+</annotation></semantics></math></p>
+<p>For the angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>, we obtained an equation similar to the equation of motion analogous to simple harmonic motion. Instead of acceleration, the angular acceleration appears here, but on the right side of the equation, instead of the angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>, its sine appears. We would expect the appearance of the angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>, because then the equation could be solved with a cosine function for the variation of the unknown angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> over time, therefore the motion in that case would be simple harmonic motion for the angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>! Although this equation can be solved, its solution is possible only with advanced mathematics and is difficult even there, because it leads to the application of special functions. We choose another path.</p>
+<h2 id="limiting-case-of-small-angles">Limiting Case of Small Angles</h2>
+<figure>
+<img src="Kepek/kisszogek.svg" alt="The limiting case of small angles" />
+<figcaption aria-hidden="true">The limiting case of small angles</figcaption>
+</figure>
+<p>Now let the angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> be very small during the entire duration of the oscillation! In this case, the sine function becomes the following:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>=</mo><mfrac><mi>x</mi><mi>l</mi></mfrac><mo>≈</mo><mfrac><mi>s</mi><mi>l</mi></mfrac><mo>=</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+\sin\phi = \frac {x} {l} \approx \frac {s} {l} = \phi
+</annotation></semantics></math></p>
+<p>Here, the essence of our approximation is that we replaced the arc length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>s</mi></mrow><annotation encoding="application/x-tex">2s</annotation></semantics></math> with the corresponding chord of length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>x</mi><mi>f</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">2xfx</annotation></semantics></math>, which is a straight line segment. This is obviously more accurate the smaller the displacement <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> is. This means that in this special case, the following approximations are justified:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>≈</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">
+x \approx s
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>≈</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+\sin \phi \approx \phi
+</annotation></semantics></math></p>
+<p>Therefore, the equation of motion of the pendulum in the case of small displacements takes the following form:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mi>−</mi><mfrac><mi>g</mi><mi>l</mi></mfrac><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+\alpha = -\frac g l \phi
+</annotation></semantics></math></p>
+<p>Let us introduce the following notation!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>=</mo><mfrac><mi>g</mi><mi>l</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\omega^2 = \frac g l
+</annotation></semantics></math></p>
+<p>In this case, the solution of the equation is a periodic oscillation for the angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>. If we release the pendulum from its extreme position without velocity, then this function is the following:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>=</mo><msub><mi>ϕ</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+\phi = \phi_{max} \cos(\omega t)
+</annotation></semantics></math></p>
+<p>Multiplying this equation by the length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math> of the string, we get that:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+s = A\cos(\omega t)
+</annotation></semantics></math></p>
+<p>Based on our approximation, the arc length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math> can be replaced by the distance <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> measured from the vertical axis of symmetry, so:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>A</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ω</mi><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">
+x = A\cos(\omega t)
+</annotation></semantics></math></p>
+<p>This is, of course, true only if the maximum displacement angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ϕ</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><annotation encoding="application/x-tex">\phi_{max}</annotation></semantics></math> of the pendulum is also very small in radians.</p>
+<h2 id="the-period">The Period</h2>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>=</mo><mfrac><mi>g</mi><mi>l</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\omega^2 = \frac g l
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>=</mo><mfrac><mrow><mn>2</mn><mi>π</mi></mrow><mi>T</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\omega = \frac {2\pi} {T}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow><msup><mi>T</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mi>g</mi><mi>l</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\frac {4\pi^2} {T^2} = \frac g l
+</annotation></semantics></math></p>
+<p>Let us take the reciprocal of both sides!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>T</mi><mn>2</mn></msup><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mi>l</mi><mi>g</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\frac {T^2} {4\pi^2} = \frac l g
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><mfrac><mi>l</mi><mi>g</mi></mfrac></mrow><annotation encoding="application/x-tex">
+T^2 = 4\pi^2 \frac l g
+</annotation></semantics></math></p>
+<p>Finally, taking the square root of both sides, we get the following formula:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>l</mi><mi>g</mi></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt {\frac l g}
+</annotation></semantics></math></p>
+<p>We see that the period does not depend either on the amplitude or on the mass of the oscillating body. However, the independence from the amplitude is true only for the limiting case of small displacements.</p>
+<h3 id="example">Example</h3>
+<p>Let us calculate the period of a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">1\text{ m}</annotation></semantics></math> long pendulum! This is also usually called a seconds pendulum. What is the reason for this?</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>l</mi><mi>g</mi></mfrac></msqrt><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>3.1415</mn><mo>⋅</mo><msqrt><mfrac><mn>1</mn><mn>9.81</mn></mfrac></msqrt><mo>=</mo><mn>2.0060</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt{\frac l g} = 2 \cdot 3.1415 \cdot \sqrt {\frac{1}{9.81}} = 2.0060\text{ s}
+</annotation></semantics></math></p>
+<p>The half period of this pendulum (therefore until it swings from one extreme position to the opposite extreme position) is approximately 1 second. The error is only about 3 per mille, but <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> and thus the error as well depends slightly on the geographical location.</p>
+<h3 id="simulation">Simulation</h3>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#be74d75b-d4ef-49e0-ac4e-98ff80ff6a54">The Simple Pendulum</a></p>
+<p>In the simulation, the body starts from the bottom, equilibrium position with a push. The length of the pendulum is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">3\text{ m}</annotation></semantics></math>, the gravitational acceleration is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9.80</mn><mspace width="0.222em"></mspace><msup><mtext mathvariant="normal">m/s</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">9.80\ \text{m/s}^2</annotation></semantics></math>.</p>
+<ul>
+<li>Let us measure the duration of the first 10 oscillations! Since the pendulum does not start from the extreme position, but it is practical for us to stop the simulator at the extreme position, to calculate the period, the time shown by the simulator must be divided by 10.25, since we measure 10 and a quarter oscillations.</li>
+<li>Let us also calculate the period from the data. How large an error can we expect? Which is the most important source of error and how large is the actual error?</li>
+</ul>
+<h2 id="problems">Problems</h2>
+<ol type="1">
+<li><p>A student wants to make a simple pendulum in the school laboratory that has a period of exactly <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2.5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">2.5\text{ s}</annotation></semantics></math>. How long a string must they use for this, if the acceleration due to gravity is considered to be <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>9.81</mn><mspace width="0.222em"></mspace><msup><mtext mathvariant="normal">m/s</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g = 9.81\ \text{m/s}^2</annotation></semantics></math>?</p></li>
+<li><p>An astronaut lands on a foreign planet and experiments with a <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.8</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0.8\text{ m}</annotation></semantics></math> long simple pendulum. They measure that the pendulum completes <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>15</mn><annotation encoding="application/x-tex">15</annotation></semantics></math> full oscillations in exactly <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">30\text{ s}</annotation></semantics></math>. How large is the acceleration due to gravity on this unknown planet?</p></li>
+<li><p>We compare the periods of two simple pendulums. The string of one pendulum is exactly nine times as long as that of the other pendulum. In what ratio do the periods of the two pendulums stand to each other? Justify your answer based on the formula learned!</p></li>
+</ol>
+</main>
+</body>
+</html>

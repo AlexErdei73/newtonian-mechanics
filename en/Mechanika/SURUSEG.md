@@ -13,11 +13,11 @@ A = 5.8\text{ m}^2 = 5.8 \cdot 100\text{ cm} \cdot 100\text{ cm} = 5.8 \cdot 10^
 $$
 
 $$
-A_{\text{lap}} = 15\text{ cm} \cdot 21\text{ cm} = 315\text{ cm}^2
+A_{\text{tile}} = 15\text{ cm} \cdot 21\text{ cm} = 315\text{ cm}^2
 $$
 
 $$
-N = \frac {A} {A_{\text{lap}}} = \frac {5.8 \cdot 10^4\text{ cm}^2} {315\text{ cm}^2} \approx 184.1
+N = \frac {A} {A_{\text{tile}}} = \frac {5.8 \cdot 10^4\text{ cm}^2} {315\text{ cm}^2} \approx 184.1
 $$
 
 This means that a minimum of $185\text{ tiles}$ is required to pave the corridor.
@@ -31,11 +31,11 @@ A = 15\text{ km}^2 = 15 \cdot 1000\text{ m} \cdot 1000\text{ m} = 15 \cdot 10^6\
 $$
 
 $$
-A_{\text{fa}} = 1.5\text{ m} \cdot 1.5\text{ m} = 2.25\text{ m}^2
+A_{\text{tree}} = 1.5\text{ m} \cdot 1.5\text{ m} = 2.25\text{ m}^2
 $$
 
 $$
-N = \frac {A} {A_{\text{fa}}} = \frac {15 \cdot 10^6\text{ m}^2} {2.25\text{ m}^2} \approx 6,670,000
+N = \frac {A} {A_{\text{tree}}} = \frac {15 \cdot 10^6\text{ m}^2} {2.25\text{ m}^2} \approx 6,670,000
 $$
 
 Therefore, $6,670,000\text{ tree saplings}$ are required for the reforestation. Here we rounded to three significant figures because our result cannot be more precise than the initial data, which was given to two significant figures (we can retain at most one additional significant figure during calculations).
@@ -51,11 +51,11 @@ $$
 From this it is clearly visible that $1\text{ cm}^3 = 1\text{ ml}$.
 
 $$
-V_{\text{fecskendő}} = 5\text{ ml} = 5\text{ cm}^3
+V_{\text{syringe}} = 5\text{ ml} = 5\text{ cm}^3
 $$
 
 $$
-N = \frac {V} {V_{\text{fecskendő}}} = \frac {1500\text{ ml}} {5\text{ ml}} = 300
+N = \frac {V} {V_{\text{syringe}}} = \frac {1500\text{ ml}} {5\text{ ml}} = 300
 $$
 
 $$

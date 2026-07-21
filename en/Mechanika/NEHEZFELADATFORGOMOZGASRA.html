@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://w3.org" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>An Advanced Problem on Rotational Motion *</title>
+    <link rel="stylesheet" href="../github-markdown.css" />
+      <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
+  </head>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newtonian Mechanics</a><div class="nav-group-center"><a href="FORGOMOZGASENERGIAJA.html" class="nav-btn" aria-label="Previous lesson">◀<span class="btn-text"> Prev</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Table of Contents">☰<span class="btn-text"> Contents</span></a><a href="HARMONIKUSREZGOMOZGAS.html" class="nav-btn" aria-label="Next lesson"><span class="btn-text">Next </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newtonian Mechanics</a><div class="nav-group-left"><a href="../index.html">About</a><a href="../VEGEREDMENYEK.html#an-advanced-problem-on-rotational-motion" style="font-weight: 600;">Solutions</a><a href="../IRODALOMJEGYZEK.html">Bibliography</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Topics ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematics</a></li><li><a href="NEWTONTORVENYEI.html">Dynamics</a></li><li><a href="MUNKA.html">Energy</a></li><li><a href="IMPULZUS.html">Momentum & Collisions</a></li><li><a href="RUGALMATLANUTKOZES.html">Systems of Particles</a></li><li><a href="EGYENLETESKORMOZGAS.html">Circular Motion</a></li><li><a href="KEPLERTORVENYEI.html">Gravitation</a></li><li><a href="MEREVTEST.html">Rotational Dynamics</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Oscillations & Waves</a></li><li><a href="NYOMAS.html">Fluid Mechanics</a></li></ul></div></div></div></nav></header>
+<main class="markdown-body">
+<h1 id="an-advanced-problem-on-rotational-motion">An Advanced Problem on Rotational Motion *</h1>
+<h2 id="example">Example</h2>
+<p>A rod of mass <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> and length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math> is pivoted at its top and is capable of oscillating in a vertical plane. The rod, together with its pivot assembly, is able to rotate around a vertical axis passing through the pivot. A motor rotates the pivot assembly and maintains it at a constant angular velocity <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>. What angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Θ</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math> does the rod make with the vertical during its rotation if this angle remains constant?</p>
+<figure>
+<img src="Kepek/forgorud.svg" alt="Example of the rotating rod" />
+<figcaption aria-hidden="true">Example of the rotating rod</figcaption>
+</figure>
+<p>The points of the rod perform circular motion in a horizontal plane, meaning their acceleration is the centripetal acceleration. The angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Θ</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math> does not change, meaning the rod has no angular acceleration in the coordinate system rotating along with it. Is there an angular acceleration in the inertial reference frame? If we resolve the acceleration of the points into components parallel and perpendicular to the rod, then for a non-zero angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Θ</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>, there will be a component of acceleration perpendicular to the rod, which represents an angular acceleration relative to the horizontal axis of rotation.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mo>,</mo><mtext mathvariant="normal">t</mtext></mrow></msub><mo>=</mo><msub><mi>r</mi><mi>i</mi></msub><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi><mspace width="0.222em"></mspace><msup><mi>ω</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi></mrow><annotation encoding="application/x-tex">
+a_{i,\text{t}} = r_i \sin \Theta\ \omega^2 \cos \Theta
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mfrac><msub><mi>a</mi><mrow><mi>i</mi><mo>,</mo><mtext mathvariant="normal">t</mtext></mrow></msub><msub><mi>r</mi><mi>i</mi></msub></mfrac><mo>=</mo><msup><mi>ω</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi></mrow><annotation encoding="application/x-tex">
+\alpha = \frac{a_{i,\text{t}}}{r_i} = \omega^2 \sin \Theta \cos \Theta
+</annotation></semantics></math></p>
+<p>Let us write the fundamental equation of rotational motion for the horizontal axis about which the rod can turn!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">net</mtext></mrow><mtext mathvariant="normal">ext</mtext></msubsup><mo>=</mo><msub><mi>I</mi><mtext mathvariant="normal">rod</mtext></msub><mi>α</mi></mrow><annotation encoding="application/x-tex">
+M_{z,\text{net}}^{\text{ext}} = I_{\text{rod}} \alpha
+</annotation></semantics></math></p>
+<p>Only the gravitational force exerts a torque:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">net</mtext></mrow><mtext mathvariant="normal">ext</mtext></msubsup><mo>=</mo><mi>m</mi><mi>g</mi><mfrac><mi>L</mi><mn>2</mn></mfrac><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi></mrow><annotation encoding="application/x-tex">
+M_{z,\text{net}}^{\text{ext}} = mg \frac{L}{2} \sin \Theta
+</annotation></semantics></math></p>
+<p>Substituting these expressions along with the moment of inertia of the rod relative to its endpoint, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mtext mathvariant="normal">rod</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>L</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">I_{\text{rod}} = \frac{1}{3}mL^2</annotation></semantics></math>, we obtain the following equation:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mfrac><mi>L</mi><mn>2</mn></mfrac><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>L</mi><mn>2</mn></msup><msup><mi>ω</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi></mrow><annotation encoding="application/x-tex">
+mg \frac{L}{2} \sin \Theta = \frac{1}{3} mL^2 \omega^2 \sin \Theta \cos \Theta
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>g</mi><mn>2</mn></mfrac><mo>−</mo><mfrac><mrow><mi>L</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><mn>3</mn></mfrac><mi mathvariant="normal">cos</mi><mi mathvariant="normal">Θ</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">
+\left( \frac{g}{2} - \frac{L\omega^2}{3}\cos \Theta \right)\sin \Theta = 0
+</annotation></semantics></math></p>
+<p>This equation generally has two solutions.</p>
+<p>Solution 1:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><mn>0</mn><mspace width="1.0em"></mspace><mo>→</mo><mspace width="1.0em"></mspace><mi mathvariant="normal">Θ</mi><mo>=</mo><msup><mn>0</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">
+\sin \Theta = 0 \quad \rightarrow \quad \Theta = 0^\circ
+</annotation></semantics></math></p>
+<p>This is a stable solution for low angular velocities <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>. More precisely, it remains stable as long as the second solution does not exist.</p>
+<p>Solution 2:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>g</mi><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mi>L</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><mn>3</mn></mfrac><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi></mrow><annotation encoding="application/x-tex">
+\frac{g}{2} = \frac{L\omega^2}{3} \cos \Theta
+</annotation></semantics></math></p>
+<p>From here, we can express the value of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi></mrow><annotation encoding="application/x-tex">\cos \Theta</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi><mo>=</mo><mfrac><mrow><mn>3</mn><mi>g</mi></mrow><mrow><mn>2</mn><mi>L</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+\cos \Theta = \frac{3g}{2L\omega^2}
+</annotation></semantics></math></p>
+<p>Since the value of the cosine function cannot be greater than one:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">
+\cos \Theta \leqslant 1
+</annotation></semantics></math></p>
+<p>Thus, the angular velocity of the motor must be greater than a minimum critical value for this stable deflected solution to exist at all:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>3</mn><mi>g</mi></mrow><mrow><mn>2</mn><mi>L</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow></mfrac><mo>≤</mo><mn>1</mn><mspace width="1.0em"></mspace><mo>→</mo><mspace width="1.0em"></mspace><mi>ω</mi><mo>≥</mo><msqrt><mfrac><mrow><mn>3</mn><mi>g</mi></mrow><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
+\frac{3g}{2L\omega^2} \leqslant 1 \quad \rightarrow \quad \omega \geqslant \sqrt{\frac{3g}{2L}}
+</annotation></semantics></math></p>
+<p>It can be shown that as soon as the motor’s speed crosses this critical limit, the vertical position becomes unstable, and the rod spontaneously deflects to the stable equilibrium angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Theta &gt; 0</annotation></semantics></math>.</p>
+<hr />
+<h2 id="analogy-between-translational-and-rotational-motion">Analogy Between Translational and Rotational Motion</h2>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: left;">Translational Motion</th>
+<th style="text-align: left;">Rotational Motion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Displacement (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>r</mi><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">s = r\phi</annotation></semantics></math>)</td>
+<td style="text-align: left;">Angle (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Velocity (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>r</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">v = r\omega</annotation></semantics></math>)</td>
+<td style="text-align: left;">Angular velocity (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Acceleration (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>r</mi><mi>α</mi></mrow><annotation encoding="application/x-tex">a = r\alpha</annotation></semantics></math>)</td>
+<td style="text-align: left;">Angular acceleration (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Force (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>)</td>
+<td style="text-align: left;">Torque (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi>F</mi><mi>r</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi mathvariant="normal">Θ</mi></mrow><annotation encoding="application/x-tex">M = Fr \sin \Theta</annotation></semantics></math>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Mass (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>)</td>
+<td style="text-align: left;">Moment of inertia (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><msub><mi>m</mi><mi>i</mi></msub><msubsup><mi>r</mi><mi>i</mi><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">I = \sum_{i = 1}^{N} m_i r_i^2</annotation></semantics></math>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">Linear momentum (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mi>m</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">p = mv</annotation></semantics></math>)</td>
+<td style="text-align: left;">Angular momentum (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mi>I</mi><mi>ω</mi></mrow><annotation encoding="application/x-tex">L = I \omega</annotation></semantics></math>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mtext mathvariant="normal">net</mtext></msub><mo>=</mo><mi>m</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">F_{\text{net}} = ma</annotation></semantics></math></td>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mtext mathvariant="normal">net</mtext><mtext mathvariant="normal">ext</mtext></msubsup><mo>=</mo><mi>I</mi><mi>α</mi></mrow><annotation encoding="application/x-tex">M_{\text{net}}^{\text{ext}} = I \alpha</annotation></semantics></math></td>
+</tr>
+<tr>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>F</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">net</mtext></msub><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mover><mi>p</mi><mo accent="true">→</mo></mover></mrow><mi>t</mi></mfrac><mspace width="1.0em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>→</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\vec{F}_{\text{net}} = \frac{\Delta \vec{p}}{t} \quad (t \rightarrow 0)</annotation></semantics></math></td>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mover><mi>M</mi><mo accent="true">→</mo></mover><mtext mathvariant="normal">net</mtext><mtext mathvariant="normal">ext</mtext></msubsup><mo>=</mo><mfrac><mrow><mi mathvariant="normal">Δ</mi><mover><mi>L</mi><mo accent="true">→</mo></mover></mrow><mi>t</mi></mfrac><mspace width="1.0em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>→</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\vec{M}_{\text{net}}^{\text{ext}} = \frac{\Delta \vec{L}}{t} \quad (t \rightarrow 0)</annotation></semantics></math></td>
+</tr>
+<tr>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">kin</mtext></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">E_{\text{kin}} = \frac{mv^2}{2}</annotation></semantics></math></td>
+<td style="text-align: left;"><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">rot</mtext></msub><mo>=</mo><mfrac><mrow><mi>I</mi><msup><mi>ω</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">E_{\text{rot}} = \frac{I \omega^2}{2}</annotation></semantics></math></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="problems">Problems</h2>
+<p><strong>Problem 1 (Supporting Forces)</strong></p>
+<p>Determine the horizontal and vertical components of the supporting force acting on the pivot in the example above when the motor rotates at an angular velocity of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ω</mi><mo>&gt;</mo><msqrt><mfrac><mrow><mn>3</mn><mi>g</mi></mrow><mrow><mn>2</mn><mi>L</mi></mrow></mfrac></msqrt></mrow><annotation encoding="application/x-tex">\omega &gt; \sqrt{\frac{3g}{2L}}</annotation></semantics></math> and the rod has settled into its stable equilibrium position <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Θ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Theta &gt; 0</annotation></semantics></math>! <em>(Hint: Write down the fundamental equation of translational motion for the horizontal circular path of the rod’s center of mass!)</em></p>
+<p><strong>Problem 2 (Rotating Ring)</strong></p>
+<p>A circular ring of radius <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> made of thin wire rotates around its vertical diameter at a constant angular velocity <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>. A small bead of mass <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> can slide without friction along the ring. * a) For what angular velocities <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ω</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math> will the stable equilibrium position of the bead be located somewhere other than the lowest point of the ring? * b) Determine this equilibrium position (the angle <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>φ</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math> enclosed with the vertical) as a function of the angular velocity!</p>
+</main>
+</body>
+</html>

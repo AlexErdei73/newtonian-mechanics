@@ -230,16 +230,19 @@ $$
 ## Feladatok
 
 **1. Feladat: A rúd és a mozgatható gömbök**
-Egy vízszintes, elhanyagolható tömegű $L$ hosszúságú rúd közepét egy torziós szálra függesztjük. A rúdra két darab pontszerűnek tekinthető, $m$ tömegű testet rögzítünk, a forgástengelytől mindkettőt $x$ távolságra. 
+Egy vízszintes, elhanyagolható tömegű $L$ hosszúságú rúd közepét egy torziós szálra függesztjük. A rúdra két darab pontszerűnek tekinthető, $m$ tömegű testet rögzítünk, a forgástengelytől mindkettőt $x$ távolságra.
+
 *   Írd fel a lengésidőt az $x$ távolság függvényében!
 *   Ha a testeket a rúd végéről ($x = L/2$) a rúd feléig ($x = L/4$) toljuk, hányszorosára változik a torziós inga lengésideje?
 
 **2. Feladat: Különböző fémhengerek azonos szálon**
 Két azonos anyagból készült, azonos magasságú, de különböző sugarú tömör fémhengert felváltva ugyanarra a torziós szálra függesztünk a geometriai tengelyüknél fogva. Az "A" henger sugara $R$, a "B" henger sugara $2R$.
+
 *   Határozd meg, hogy mekkora a "B" henger lengésideje, ha az "A" henger lengésideje $T_A = 2\text{ másodperc}$!
 *Segítség:* Ne feledd, hogy a nagyobb hengernek nem csak a sugara, de a tömege is nagyobb, hiszen azonos anyagból készültek! Fejezd ki a tömeget a sűrűség, a magasság és a sugár segítségével!
 
 **3. Feladat: A mechanikus karóra billegője**
 A klasszikus mechanikus órákban a pontos időmérést egy billegő (torziós inga) végzi, melyet egy spirálrugó tart mozgásban. A billegő egy $\Theta = 1,5 \cdot 10^{-7}\text{ kg m}^2$ tehetetlenségi nyomatékú kerék. Ahhoz, hogy az óra pontosan járjon, a billegőnek másodpercenként pontosan 4 teljes lengést (oda-vissza mozgást) kell végeznie.
+
 *   Mekkora a billegő lengésideje ($T$)?
 *   Mekkora direkciós nyomatékkal ($D^*$) kell rendelkeznie a beépített spirálrugónak, hogy az óra pontos legyen?

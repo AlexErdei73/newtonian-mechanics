@@ -15,7 +15,7 @@ $$
 According to the law of angular momentum (or angular impulse), we can write the following relationship:
 
 $$
-M_{z,\text{e}}^{\text{k}} = \frac{L_z - L_{z,0}}{t}
+M_{z,\text{net}}^{\text{ext}} = \frac{L_z - L_{z,0}}{t}
 $$
 
 $$
@@ -25,13 +25,13 @@ $$
 Substituting this into the previous equation, we obtain:
 
 $$
-M_{z,\text{e}}^{\text{k}} = \frac{I \omega - I \omega_0}{t} = I \frac{\omega - \omega_0}{t}
+M_{z,\text{net}}^{\text{ext}} = \frac{I \omega - I \omega_0}{t} = I \frac{\omega - \omega_0}{t}
 $$
 
 Here, we have factored out the moment of inertia $I$, which relates to the axis of rotation and remains constant since the body is rigid. This yields our final relationship:
 
 $$
-M_{z,\text{e}}^{\text{k}} = I \alpha
+M_{z,\text{net}}^{\text{ext}} = I \alpha
 $$
 
 > **According to the fundamental equation of rotational motion, the net torque of external forces is nothing other than the product of the moment of inertia and the angular acceleration. This is the rotational equivalent of Newton's second law.**
@@ -53,7 +53,7 @@ Based on the measurement data from the experiment above, let us calculate the mo
 - What is the angular acceleration of the system?
 - Calculate the experimental moment of inertia!
 
-The body starts from rest (\(v_0 = 0\)), so the distance traveled is:
+The body starts from rest ($v_0 = 0$), so the distance traveled is:
 
 $$
 s = \frac{a}{2}t^2
@@ -69,7 +69,7 @@ $$
 mg - T = ma
 $$
 
-When the vertically suspended mass accelerates downward, the tension force $T$ (constraint force) in the rope becomes slightly smaller than the static weight (\(mg\)) due to the acceleration:
+When the vertically suspended mass accelerates downward, the tension force $T$ (constraint force) in the rope becomes slightly smaller than the static weight ($mg$) due to the acceleration:
 
 $$
 T = mg - ma = m(g - a) = 0.1 \cdot (9.81 - 0.0677) \approx 0.9742\text{ N}
@@ -78,10 +78,10 @@ $$
 The external torque exerted by the rope force acting at the rim of the pulley is:
 
 $$
-M_z = Kr = 0.9742 \cdot 0.0275 \approx 0.0268\text{ N}\cdot\text{m}
+M_z = Tr = 0.9742 \cdot 0.0275 \approx 0.0268\text{ N}\cdot\text{m}
 $$
 
-To determine the angular acceleration, we utilize the fact that the tangential velocity of the pulley matches the linear velocity of the rope (\(v = r\omega\)):
+To determine the angular acceleration, we utilize the fact that the tangential velocity of the pulley matches the linear velocity of the rope ($v = r\omega$):
 
 $$
 a = \frac{v - v_0}{t} = \frac{r\omega - r\omega_0}{t} = r\frac{\omega - \omega_0}{t} = r\alpha
@@ -93,7 +93,7 @@ $$
 \alpha = \frac{a}{r} = \frac{0.0677}{0.0275} \approx 2.462\text{ 1/s}^2
 $$
 
-Expressing the moment of inertia from the fundamental equation of rotational motion (\(M_z = I \alpha\)):
+Expressing the moment of inertia from the fundamental equation of rotational motion ($M_z = I \alpha$):
 
 $$
 I = \frac{M_z}{ \alpha} = \frac{0.0268}{2.462} \approx 0.0109\text{ kg}\cdot\text{m}^2 \approx 0.011\text{ kg}\cdot\text{m}^2
@@ -134,13 +134,13 @@ $$
 Let us write the fundamental equation of rotational motion relative to the instantaneous axis of rotation!
 
 $$
-M_{z,\text{e}}^{\text{k}} = I \alpha
+M_{z,\text{net}}^{\text{ext}} = I \alpha
 $$
 
 We know that the only force that has a torque relative to the instantaneous axis of rotation is the pulling force, because the lines of action of all other forces pass through the instantaneous axis of rotation.
 
 $$
-M_{z,\text{e}}^{\text{k}} = Fr
+M_{z,\text{net}}^{\text{ext}} = Fr
 $$
 
 Here, $r$ is the distance from the center to the instantaneous axis of rotation, which is the radius of the wheel.
@@ -176,11 +176,11 @@ $$
 The fundamental equation of dynamics (Newton's second law) for translational motion is:
 
 $$
-F - F_{\text{f}} = ma
+F - F_{\text{s}} = ma
 $$
 
 $$
-F_{\text{f}} = F - ma = F - \frac{F}{1 + \frac{I_{\text{COM}}}{mr^2}} = F \frac{\frac{I_{\text{COM}}}{mr^2}}{1 + \frac{I_{\text{COM}}}{mr^2}}
+F_{\text{s}} = F - ma = F - \frac{F}{1 + \frac{I_{\text{COM}}}{mr^2}} = F \frac{\frac{I_{\text{COM}}}{mr^2}}{1 + \frac{I_{\text{COM}}}{mr^2}}
 $$
 
 $$
@@ -188,27 +188,27 @@ $$
 $$
 
 $$
-F_{\text{f}} = 5 \cdot \frac{0.8}{1 + 0.8} \approx 2.222\ \text{N}
+F_{\text{s}} = 5 \cdot \frac{0.8}{1 + 0.8} \approx 2.222\ \text{N}
 $$
 
-2. The previous wheel rolls down an inclined plane with an angle of inclination of $\alpha = 30^\circ$, starting from rest. What are its acceleration and the static friction force if losses can be neglected?
+2. The previous wheel rolls down an inclined plane with an angle of inclination of $\Theta = 30^\circ$, starting from rest. What are its acceleration and the static friction force if losses can be neglected?
 
 ![Wheel rolling down an inclined plane](Kepek/kerekgorduleselejton.svg)
 
 We have already seen how to calculate the force pulling down the incline:
 
 $$
-F = mg \sin \alpha
+F = mg \sin \Theta
 $$
 
 Substituting this into our formulas in place of $F$ gives the answers!
 
 $$
-a = \frac{g \sin \alpha}{1 + \frac{I_{\text{COM}}}{mr^2}}
+a = \frac{g \sin \Theta}{1 + \frac{I_{\text{COM}}}{mr^2}}
 $$
 
 $$
-F_{\text{f}} = mg \sin \alpha \frac{\frac{I_{\text{COM}}}{mr^2}}{1 + \frac{I_{\text{COM}}}{mr^2}}
+F_{\text{s}} = mg \sin \Theta \frac{\frac{I_{\text{COM}}}{mr^2}}{1 + \frac{I_{\text{COM}}}{mr^2}}
 $$
 
 ### Experiment
@@ -251,7 +251,7 @@ A solid sphere of mass $m = 3\text{ kg}$ is pulled in a straight line on horizon
 
 **Problem 4: Race of Objects Rolling Down an Incline**
 
-A solid cylinder and a thin-walled pipe (hollow cylinder) are released simultaneously from rest from the same height at the top of an incline with an inclination angle of $\alpha = 25^\circ$. Both objects roll down the incline purely. Air resistance is neglected.
+A solid cylinder and a thin-walled pipe (hollow cylinder) are released simultaneously from rest from the same height at the top of an incline with an inclination angle of $\Theta = 25^\circ$. Both objects roll down the incline purely. Air resistance is neglected.
 - Write down the acceleration of the center of mass for both objects! 
 - Which object reaches the bottom of the incline first? Justify your answer based on the calculated accelerations! Does the result depend on the mass or radius of the objects?
 **Hint:** The moment of inertia of a solid cylinder is $\frac{1}{2}mR^2$, and that of a hollow cylinder is $mR^2$.

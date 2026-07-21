@@ -17,81 +17,81 @@
     </marker>
   </defs>
 
-  <!-- 1. Fehér háttér biztosítása -->
+  <!-- 1. White background assurance -->
   <rect width="500" height="500" class="bg" />
 
-  <!-- Folyadékoszlop az edényben (alsó rész) -->
+  <!-- Liquid column in the vessel (bottom part) -->
   <rect x="150" y="250" width="200" height="200" fill="#EBF8FF" />
 
-  <!-- Meniszkusz (Homorú folyadékfelszín fentről nézve, a gömb középpontja C(250, 150)) -->
+  <!-- Meniscus (Concave liquid surface seen from above, center of sphere is C(250, 150)) -->
   <path d="M 150 250 A 141.42 141.42 0 0 0 350 250 L 350 450 L 150 450 Z" class="water" />
   
-  <!-- Üvegcső falai -->
+  <!-- Glass tube walls -->
   <rect x="120" y="50" width="30" height="400" class="glass" />
   <rect x="350" y="50" width="30" height="400" class="glass" />
   <line x1="150" y1="50" x2="150" y2="450" class="wall" />
   <line x1="350" y1="50" x2="350" y2="450" class="wall" />
 
-  <!-- Cső függőleges középtengelye -->
+  <!-- Vertical center axis of the tube -->
   <line x1="250" y1="50" x2="250" y2="450" class="dash" />
 
-  <!-- GEOMETRIAI SZERKESZTÉS (A homorú oldal, azaz a meniszkusz FÖLÖTT) -->
-  <!-- C pont: a gömb középpontja (250, 150) -->
-  <!-- B pont: a meniszkusz és a bal fal találkozása (150, 250) -->
-  <!-- A pont: a cső tengelyén lévő vetület ugyanabban a magasságban (250, 250) -->
+  <!-- GEOMETRIC CONSTRUCTION (Above the concave side, i.e., the meniscus) -->
+  <!-- Point C: center of the sphere (250, 150) -->
+  <!-- Point B: intersection of the meniscus and the left wall (150, 250) -->
+  <!-- Point A: projection on the tube axis at the same height (250, 250) -->
   <polygon points="250,150 150,250 250,250" stroke="#2B6CB0" stroke-width="2" fill="none" />
   
-  <!-- Derékszög jelzése (A pontnál, a tengely és a sugárvetület között) -->
+  <!-- Right angle mark (At point A, between the axis and the radius projection) -->
   <path d="M 250 240 L 240 240 L 240 250" stroke="#2B6CB0" stroke-width="1" fill="none" />
 
-  <!-- Felszín érintője a falnál (felfelé mutat, szöget bezárva a függőlegessel) -->
+  <!-- Surface tangent at the wall (points upward, making an angle with the vertical) -->
   <line x1="150" y1="250" x2="50" y2="150" stroke="#E53E3E" stroke-width="2" fill="none" />
-  <!-- Függőleges referenciavonal a fal mentén felfelé a szögméréshez -->
+  <!-- Vertical reference line upward along the wall for angle measurement -->
   <line x1="150" y1="250" x2="150" y2="100" class="dash" />
 
-  <!-- Ívek a szögek kiméréséhez -->
-  <!-- Külső illeszkedési szög (Theta) az érintő és a függőleges fal között fönn -->
+  <!-- Arcs for measuring angles -->
+  <!-- Outer contact angle (Theta) between the tangent and the vertical wall above -->
   <path d="M 150 210 A 40 40 0 0 0 121.7 221.7" stroke="#E53E3E" stroke-width="2" fill="none" />
   
-  <!-- JAVÍTOTT: Belső szög (Theta) a B(150, 250) pontnál, a háromszög belsejében (az r vízszintes és az R átfogó között) -->
+  <!-- CORRECTED: Inner angle (Theta) at point B(150, 250), inside the triangle (between horizontal r and hypotenuse R) -->
   <path d="M 190 250 A 40 40 0 0 0 178.3 221.7" stroke="#E53E3E" stroke-width="2" fill="none" />
 
-  <!-- Jelölések és feliratok -->
-  <!-- r sugár (a derékszögű háromszög alsó vízszintes befogója) -->
+  <!-- Labels and captions -->
+  <!-- radius r (the lower horizontal leg of the right triangle) -->
   <line x1="152" y1="265" x2="248" y2="265" stroke="#2D3748" stroke-width="1" marker-start="url(#arrow)" marker-end="url(#arrow)" />
   <text x="195" y="285" class="math">r</text>
 
-  <!-- R sugár (a gömb sugara, az átfogó C és B között) -->
+  <!-- radius R (radius of the sphere, the hypotenuse between C and B) -->
   <text x="200" y="195" class="math">R</text>
 
-  <!-- C pont (Gömb középpontja fönn, a homorú oldalon) -->
+  <!-- Point C (Center of the sphere above, on the concave side) -->
   <circle cx="250" cy="150" r="4" fill="#2D3748" />
-  <text x="265" y="155" class="text">C (Gömb középpontja)</text>
+  <text x="265" y="155" class="text">C (Center of sphere)</text>
 
-  <!-- A Θ (Theta) szögek szöveges feliratai -->
+  <!-- Text labels for the Θ (Theta) angles -->
   <text x="125" y="195" class="math" font-size="22px">Θ</text>
-  <!-- JAVÍTOTT: A belső szög felirata a bal alsó sarokba, a friss ív mellé került -->
+  <!-- CORRECTED: Inner angle label placed next to the new arc in the bottom-left corner -->
   <text x="185" y="240" class="math" font-size="22px">Θ</text>
 
-  <!-- Strukturális feliratok -->
-  <text x="95" y="40" class="text title">Üvegfal</text>
-  <text x="345" y="40" class="text title">Üvegfal</text>
-  <text x="260" y="80" class="text">Középtengely</text>
-  <text x="35" y="135" class="text" fill="#E53E3E">Felszín érintője</text>
+  <!-- Structural labels -->
+  <text x="95" y="40" class="text title">Glass wall</text>
+  <text x="345" y="40" class="text title">Glass wall</text>
+  <text x="260" y="80" class="text">Center axis</text>
+  <text x="35" y="135" class="text" fill="#E53E3E">Surface tangent</text>
 
-  <!-- JAVÍTOTT ÖSSZEFÜGGÉS DOBOZ FIX POZÍCIÓKKAL -->
+  <!-- CORRECTED RELATIONSHIP BOX WITH FIXED POSITIONS -->
   <rect x="310" y="340" width="160" height="70" rx="5" fill="white" stroke="#3182CE" stroke-width="2" />
   
-  <!-- Fő szöveg (cos Θ =) -->
+  <!-- Main text (cos Θ =) -->
   <text x="325" y="382" class="math" font-size="24px">cos Θ =</text>
   
-  <!-- Számláló (r) -->
+  <!-- Numerator (r) -->
   <text x="428" y="367" class="math" font-size="24px" text-anchor="middle">r</text>
   
-  <!-- Grafikus törtvonal -->
+  <!-- Graphical fraction bar -->
   <line x1="415" y1="373" x2="441" y2="373" stroke="#2D3748" stroke-width="2" />
   
-  <!-- Nevező (R) -->
+  <!-- Denominator (R) -->
   <text x="428" y="397" class="math" font-size="24px" text-anchor="middle">R</text>
 
 </svg>

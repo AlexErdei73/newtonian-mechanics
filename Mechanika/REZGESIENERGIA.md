@@ -2,6 +2,7 @@
 
 ## Példa 
 Egy $200 \text{ N/m}$ rugóállandójú rugó egyik vége rögzített egy vízszintes, súrlódásmentes asztalon. A rugó másik végén egy $10 \text{ g}$ tömegű test rezgőmozgást végez $0,2 \text{ m}$ amplitúdóval.
+
 * Mekkora a körfrekvencia?
 * Mekkora a rugó rugalmas energiája a maximális kitérés esetében?
 * Mekkora a test maximális sebességének nagysága?

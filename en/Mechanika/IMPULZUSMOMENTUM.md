@@ -5,25 +5,25 @@
 The angular momentum of a point mass is derived from its linear momentum in a manner similar to how torque is derived from a force. Let the axis of rotation be located at the origin, and let this be the $z$-axis of the coordinate system. Then, the angular momentum about this axis is calculated as follows:
 
 $$
-L_z = mvr \sin \alpha
+L_z = mvr \sin \Theta
 $$
 
-In this equation, everything refers to the projection of the motion onto the $x$-$y$ plane, so $v$ is the velocity of the point mass of mass $m$ in the $x$-$y$ plane, and $r$ is the distance of the point mass from the axis of rotation. The angle $\alpha$ is the angle (no greater than $180^\circ$) enclosed by $r$ and $v$ in the $x$-$y$ plane. The sign of the angle is chosen such that a counter-clockwise rotation yields a positive angular momentum, while a clockwise rotation yields a negative angular momentum.
+In this equation, everything refers to the projection of the motion onto the $x$-$y$ plane, so $v$ is the velocity of the point mass of mass $m$ in the $x$-$y$ plane, and $r$ is the distance of the point mass from the axis of rotation. The angle $\Theta$ is the angle (no greater than $180^\circ$) enclosed by $r$ and $v$ in the $x$-$y$ plane. The sign of the angle is chosen such that a counter-clockwise rotation yields a positive angular momentum, while a clockwise rotation yields a negative angular momentum.
 
 For a system of particles, the angular momentum is the sum of the angular momenta of the individual point masses belonging to the system; therefore, the addition must be performed on these signed quantities, taking their signs into account:
 
 $$
-L_z = \sum_{i = 1}^{N} m_i v_i r_i \sin \alpha_i
+L_z = \sum_{i = 1}^{N} m_i v_i r_i \sin \Theta_i
 $$
 
-Although angular momentum is a vector quantity, we are currently only concerned with its component along the axis of rotation (the $z$-direction), which is a signed quantity. In Hungarian scientific literature, you may frequently encounter the names *perdület* or *forgásmennyiség* for this concept.
+Although angular momentum is a vector quantity, we are currently only concerned with its component along the axis of rotation (the $z$-direction), which is a signed quantity.
 
 ## Angular Momentum of a Rigid Body
 
 Let us now consider a rigid body undergoing planar motion in the $x$-$y$ plane about the $z$-axis passing through the origin. Since the body is rigid, the distance $r_i$ for each individual point mass is constant, and the particles undergo circular motion about the axis. In circular motion, the velocity is tangential, which means it is perpendicular to the radius vector. Therefore:
 
 $$
-\sin \alpha_i = \sin 90^\circ = 1
+\sin \Theta_i = \sin 90^\circ = 1
 $$
 
 for every point mass. Thus, the angular momentum can be calculated as follows:

@@ -11,7 +11,7 @@
 In the case of a physical pendulum, the equation of motion is based on the fundamental equation of rotational motion, which is our starting point:
 
 $$
-I \alpha = M_{z,\text{e}}^{\text{k}}
+I \alpha = M_{z,\text{net}}^{\text{k}}
 $$
 
 *(Here, $I$ is the moment of inertia relative to the axis of rotation, and $\alpha$ is the angular acceleration.)*
@@ -19,7 +19,7 @@ $$
 Only the gravitational force—which can be imagined as concentrated at the center of mass or center of gravity—exerts a torque, because the line of action of the force arising at the suspension passes through the pivot, meaning its lever arm is zero. Let the center of gravity be at a distance $s$ from the suspension! In this case, the torque is:
 
 $$
-M_{z,\text{e}}^{\text{k}} = -mgs \sin \phi
+M_{z,\text{net}}^{\text{ext}} = -mgs \sin \phi
 $$
 
 Here, $\phi$ is the angle of rotation enclosed by the vertical line and the segment connecting the center of gravity to the axis of rotation. Provided that this angle is positive, the torque has a negative sign, meaning it acts to decrease the displacement angle. Substituting this gives the following equation:
@@ -158,6 +158,7 @@ $$
 
 **Problem 1: The Suspended Disk**
 A thin disk of mass $m$ and radius $R$ with a homogeneous mass distribution is suspended by one point of its rim so that it can perform oscillations in its own plane.
+
 *   Determine the period of the pendulum for small displacements!
 *   What is the reduced length of the disk?
 
@@ -165,11 +166,13 @@ A thin disk of mass $m$ and radius $R$ with a homogeneous mass distribution is s
 
 **Problem 2: The Minimal Period**
 A thin, homogeneous rod of length $L$ is set into oscillation as a physical pendulum around a horizontal axis passing through it. The suspension point is located at a distance $x$ from the center of mass of the rod. 
+
 *   Write down the period as a function of the distance $x$!
 *   Verify by calculation what distance $x$ will make the period of the rod minimal!
 
 **Problem 3: The Model of a Pendulum Clock**
 Let us model the pendulum of a pendulum clock as follows: the shaft of the pendulum is a rigid rod of length $l$ and negligible mass, at the end of which a solid sphere of mass $m$ and radius $R$ is fixed.
+
 *   Determine the period of this physical pendulum!
 *   In what ratio does the period of this pendulum stand to that of a simple pendulum whose length matches the distance measured from the suspension to the center of the sphere ($l+R$)?
 

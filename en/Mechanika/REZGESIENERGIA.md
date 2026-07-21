@@ -2,6 +2,7 @@
 
 ## Example 
 One end of a spring with a spring constant of $200 \text{ N/m}$ is fixed on a horizontal, frictionless table. At the other end of the spring, an object with a mass of $10 \text{ g}$ performs simple harmonic motion with an amplitude of $0.2 \text{ m}$.
+
 * What is the angular frequency?
 * What is the elastic energy of the spring at maximum displacement?
 * What is the magnitude of the maximum velocity of the body?

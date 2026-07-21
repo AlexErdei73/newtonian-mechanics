@@ -4,11 +4,11 @@
 
 ### Experiments
 
-[Demonstrating the surface area dependence of pressure with ice cream cones](https://youtube.com)
+[Demonstrating the surface area dependence of pressure with ice cream cones](https://www.youtube.com/shorts/b4BafFbfChI)
 
-[A person and a balloon on a bed of nails](https://youtube.com)
+[A person and a balloon on a bed of nails](https://www.youtube.com/watch?v=SEnguoncjKs)
 
-[The depth of an impression left in dough shows how pressure depends on surface area](https://youtube.com)
+[The depth of an impression left in dough shows how pressure depends on surface area](https://www.youtube.com/watch?v=JEgbfH2avJE)
 
 During the study of friction phenomena, we observed that the friction force also depended on the force compressing the contacting surfaces. However, the constraint force perpendicular to the surface, known as the normal force (or pressing force), can also cause deformation—for instance, leaving a footprint in flour or dough, or popping a balloon. In our experiments, we saw that the extent of deformation depends not only on the magnitude of the force but also on the size of the surface area over which this force acts. In physics, the deformation effect of a force can be characterized by introducing a new quantity: pressure.
 
@@ -90,11 +90,11 @@ $$
 
 ### Experiments
 
-[The Magdeburg hemispheres](https://youtube.com)
+[The Magdeburg hemispheres](https://www.youtube.com/watch?v=gb4eUu_ELSs)
 
-[Air pressure crushes a soda can](https://youtube.com)
+[Air pressure crushes a soda can](https://www.youtube.com/watch?v=xg5NiOwf_Zw)
 
-[Air pressure crushes a steel drum](https://youtube.com)
+[Air pressure crushes a steel drum](https://www.youtube.com/watch?v=JsoE4F2Pb20)
 
 These experiments demonstrate that the surrounding air continuously exerts an extremely high pressure on its environment. This pressure remains virtually unnoticed as long as the internal pressure of objects balances it out. However, as soon as this equilibrium is disrupted—either because we evacuate the air from inside the hemispheres, or because heated water vapor rapidly condenses upon cooling, leading to a dramatic drop in internal pressure—the immense external atmospheric pressure and the resulting net force can crush steel drums or aluminum cans with brutal force.
 

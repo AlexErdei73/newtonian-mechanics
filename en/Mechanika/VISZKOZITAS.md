@@ -49,6 +49,7 @@ The law of hydrodynamic similarity was discovered by Osborne Reynolds in 1883 th
 ### The Reynolds Number
 
 Using dimensional analysis (scale analysis), Reynolds searched for the relationship that predicts this transition. He gathered the physical properties that influence the flow:
+
 *   $u$: flow velocity ($\text{m/s}$)
 *   $d$: pipe diameter ($\text{m}$)
 *   $\rho$: fluid density $\left(\text{kg/m}^3\right)$

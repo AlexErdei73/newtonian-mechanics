@@ -249,6 +249,7 @@ Egy népszerű online ismeretterjesztő videóban a következő állítás hangz
 
 **Megoldás:**
 A videó szerint a valós térbeli örvényméret szerinti energiaeloszlás ($E_D$) a $D$ átmérőtől és az $\varepsilon$ fajlagos energia-disszipációtól függ ($E_D \sim \varepsilon^{2/3} \cdot D^{5/3}$). Ellenőrizzük le a jobb oldal mértékegységét a Kolmogorov-elmélet gyári SI egységeivel:
+
 *   Az $\varepsilon$ egysége: $\text{m}^2/\text{s}^3$, így az $\varepsilon^{2/3}$ egysége: $\text{m}^{4/3}/\text{s}^2$
 *   A $D$ átmérő egysége: $\text{m}$, így a $D^{5/3}$ egysége: $\text{m}^{5/3}$
 
@@ -281,6 +282,7 @@ $$
 $$
 
 A hatványok egyenlősége alapján az alábbi rendszert kapjuk:
+
 *   Az időre ($\text{s}$): $-3a = -2 \implies a = \frac{2}{3}$
 *   A hosszúságra ($\text{m}$): $2a + b = 1$
 

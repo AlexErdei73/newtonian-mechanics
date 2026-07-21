@@ -17,13 +17,13 @@ We have already solved this problem using the instantaneous axis of rotation. No
 The torque now arises from the static friction force, as it is the only force whose line of action does not pass through the center of mass axis.
 
 $$
-M_{z,\text{e}}^{\text{k}} = F_{\text{f}}r
+M_{z,\text{net}}^{\text{ext}} = F_{\text{s}}r
 $$
 
 The fundamental equation is therefore as follows:
 
 $$
-F_{\text{f}}r = I_{\text{COM}}\alpha
+F_{\text{s}}r = I_{\text{COM}}\alpha
 $$
 
 Relative to the center of mass, the magnitude of the velocity of the point in contact with the incline is:
@@ -47,31 +47,31 @@ $$
 This is, once again, a very important relationship. The form of Newton's second law remains the same:
 
 $$
-mg \sin \alpha - F_{\text{f}} = ma
+mg \sin \Theta - F_{\text{s}} = ma
 $$
 
 Expressing the static friction force from this and substituting it into the fundamental equation, and further expressing the angular acceleration from the previous relationship and substituting it, we get the equation for acceleration:
 
 $$
-F_{\text{f}} = mg \sin \alpha - ma
+F_{\text{s}} = mg \sin \Theta - ma
 $$
 
 $$
-r(mg \sin \alpha - ma) = I_{\text{COM}}\frac{a}{r}
+r(mg \sin \Theta - ma) = I_{\text{COM}}\frac{a}{r}
 $$
 
 $$
-g \sin \alpha - a = a\frac{I_{\text{COM}}}{mr^2}
+g \sin \Theta - a = a\frac{I_{\text{COM}}}{mr^2}
 $$
 
 From here, let us express $a$, and we get the relationship we are looking for:
 
 $$
-g \sin \alpha = a\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)
+g \sin \Theta = a\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)
 $$
 
 $$
-a = \frac{g \sin \alpha}{1 + \frac{I_{\text{COM}}}{mr^2}}
+a = \frac{g \sin \Theta}{1 + \frac{I_{\text{COM}}}{mr^2}}
 $$
 
 This is exactly the same relationship we previously derived using the instantaneous axis of rotation. We can substitute the moment of inertia of the sphere here:
@@ -81,7 +81,7 @@ $$
 $$
 
 $$
-a = \frac{g \sin \alpha}{1 + \frac{2}{5}} = \frac{5g \sin \alpha}{7}
+a = \frac{g \sin \Theta}{1 + \frac{2}{5}} = \frac{5g \sin \Theta}{7}
 $$
 
 Substituting the given values, we get the acceleration:
@@ -105,7 +105,7 @@ $$
 For the sake of simplicity, let the body start from rest! In this case, the acceleration is:
 
 $$
-a_{\text{COM}} = \frac{g \sin \alpha}{1 + \frac{I_{\text{COM}}}{mr^2}}
+a_{\text{COM}} = \frac{g \sin \Theta}{1 + \frac{I_{\text{COM}}}{mr^2}}
 $$
 
 The angular acceleration is:
@@ -125,7 +125,7 @@ $$
 Furthermore:
 
 $$
-h_{\text{COM}} = h_{\text{COM},0} - s \sin \alpha
+h_{\text{COM}} = h_{\text{COM},0} - s \sin \Theta
 $$
 
 where
@@ -137,13 +137,13 @@ $$
 Let us substitute these expressions back into the energy equation!
 
 $$
-E = \frac{1}{2}mg^2 \sin^2 \alpha \cdot t^2 \frac{1}{\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2} + \frac{1}{2}I_{\text{COM}}\frac{g^2 \sin^2 \alpha \cdot t^2}{r^2\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2} + mgh_{\text{COM},0} - mg\frac{g \sin \alpha}{2\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)}t^2 \sin \alpha
+E = \frac{1}{2}mg^2 \sin^2 \Theta \cdot t^2 \frac{1}{\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2} + \frac{1}{2}I_{\text{COM}}\frac{g^2 \sin^2 \Theta \cdot t^2}{r^2\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2} + mgh_{\text{COM},0} - mg\frac{g \sin \Theta}{2\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)}t^2 \sin \Theta
 $$
 
 The first two terms can be combined:
 
 $$
-\frac{1}{2}mg^2 \sin^2 \alpha \cdot t^2 \frac{1}{\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2} + \frac{1}{2}I_{\text{COM}}\frac{g^2 \sin^2 \alpha \cdot t^2}{r^2\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2} = \frac{mg^2 \sin^2 \alpha \cdot t^2}{2}\frac{1 + \frac{I_{\text{COM}}}{mr^2}}{\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2}
+\frac{1}{2}mg^2 \sin^2 \Theta \cdot t^2 \frac{1}{\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2} + \frac{1}{2}I_{\text{COM}}\frac{g^2 \sin^2 \Theta \cdot t^2}{r^2\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2} = \frac{mg^2 \sin^2 \Theta \cdot t^2}{2}\frac{1 + \frac{I_{\text{COM}}}{mr^2}}{\left(1 + \frac{I_{\text{COM}}}{mr^2}\right)^2}
 $$
 
 After simplification, this combined term is exactly the opposite of the final term in our long equation, which means we get:
@@ -167,17 +167,18 @@ Maxwell's wheel (or Maxwell's disk) is a classic demonstration apparatus that il
 
 **Problem 2: The Race of Different Objects**
 
-In the text, we calculated the acceleration of a solid sphere. Imagine that instead of the sphere, a homogeneous, solid cylinder rolls down the same $30^\circ$ incline! The moment of inertia of the cylinder is $I_{\text{COM}} = \frac{1}{2}mr^2$. 
+In the text, we calculated the acceleration of a solid sphere. Imagine that instead of the sphere, a homogeneous, solid cylinder rolls down the same $30^\circ$ incline! The moment of inertia of the cylinder is $I_{\text{COM}} = \frac{1}{2}mr^2$.
+ 
 * Use the general formula derived in the text and calculate the acceleration of the cylinder! 
 * Compare the obtained value with the acceleration of the sphere ($3.504\text{ m/s}^2$)! Which object reaches the bottom of the incline first if they are started simultaneously from the same height? Do the mass and radius of the objects matter regarding the final result?
 
 **Problem 3: Alternative Derivation from the Conservation of Energy**
 
-In the text, starting from dynamical equations, we proved that energy is constant. Perform the reverse operation! Write down the law of conservation of mechanical energy for two states: let the body start from rest at the top of an incline of length $s$ and inclination angle $\alpha$, and then reach the bottom of the incline with velocity $v$. From this equation, derive the velocity of the body's center of mass ($v$), and then, by using the kinematic formula $v^2 = 2as$, show mathematically that we obtain the exact same acceleration ($a$) as the one derived with the torque equation in the text!
+In the text, starting from dynamical equations, we proved that energy is constant. Perform the reverse operation! Write down the law of conservation of mechanical energy for two states: let the body start from rest at the top of an incline of length $s$ and inclination angle $\Theta$, and then reach the bottom of the incline with velocity $v$. From this equation, derive the velocity of the body's center of mass ($v$), and then, by using the kinematic formula $v^2 = 2as$, show mathematically that we obtain the exact same acceleration ($a$) as the one derived with the torque equation in the text!
 
 **Problem 4: The Condition for Pure Rolling (Maximum Inclination Angle)**
 
-The condition for pure rolling is that the object does not slip, meaning that the developing static friction force ($F_{\text{f}}$) must not exceed the maximum static friction force ($F_{\text{f,max}} = \mu_0 F_{\text{normal}}$). Using the acceleration formula and the static friction force expression ($F_{\text{f}} = mg \sin \alpha - ma$) from the text, derive **how large the maximum inclination angle of the slope ($\alpha_{\text{max}}$) can be** for a given coefficient of static friction $\mu_0$, so that the solid sphere still just rolls purely! *(Calculate this maximum angle explicitly if the coefficient of static friction between the incline and the sphere is* $\mu_0 = 0.2$ *!)*
+The condition for pure rolling is that the object does not slip, meaning that the developing static friction force ($F_{\text{s}}$) must not exceed the maximum static friction force ($F_{\text{s,max}} = \mu_0 F_{\text{normal}}$). Using the acceleration formula and the static friction force expression ($F_{\text{s}} = mg \sin \Theta - ma$) from the text, derive **how large the maximum inclination angle of the slope ($\Theta_{\text{max}}$) can be** for a given coefficient of static friction $\mu_0$, so that the solid sphere still just rolls purely! *(Calculate this maximum angle explicitly if the coefficient of static friction between the incline and the sphere is* $\mu_0 = 0.2$ *!)*
 
 **Problem 5: Rolling in the Loop-the-Loop**
 

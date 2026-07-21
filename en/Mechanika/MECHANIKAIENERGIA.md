@@ -159,7 +159,7 @@ Throughout the history of physics, inventors and amateur researchers tried for c
 
 Despite this, countless videos still circulate on the internet today presenting working "free energy machines." However, through rigorous physical and engineering analysis, these structures without exception always prove to be clever scams or illusions.
 
-### Experimental Exposés
+### Experimental Expositions
 [The real operation and internal electronics of the rolling ball "perpetual motion" machine (Steve Mould)](https://www.youtube.com/watch?v=r_LG8FDt51U)
 
 [Operation of the spring-flywheel "free energy" motor and the demonstration of the fraud](https://www.youtube.com/watch?v=nGBGPiqzeNk)

@@ -11,7 +11,7 @@
 The most typical example of torsional oscillations is the torsion pendulum. A body fixed to a vertical, elastic wire (or spiral spring) is turned in a horizontal plane from its equilibrium position and then released. To write down the equation of motion, we start again from the fundamental equation of rotational motion:
 
 $$
-I \alpha = M_{z,e}^k
+I \alpha = M_{z,net}^ext
 $$
 
 Here $I$ is the moment of inertia relating to the axis oscillations of the suspension, and $\alpha$ is the angular acceleration.
@@ -19,7 +19,7 @@ Here $I$ is the moment of inertia relating to the axis oscillations of the suspe
 When the wire is twisted, an elastic stress develops in it, which exerts a torque on the body in the opposite direction to the displacement. According to the form of Hooke's law relating to rotational motion, this restoring torque is directly proportional to the angle $\phi$ of the twisting:
 
 $$
-M_{z,e}^k = -D^* \phi
+M_{z,net}^ext = -D^* \phi
 $$
 
 Here $D^*$ is the directional torque or torsional constant characteristic of the wire, its unit of measurement is $\text{Nm/rad}$. It shows how much torque is required to twist the wire by 1 radian.
@@ -79,20 +79,20 @@ $$
 
 2. **Measurement of the moment of inertia of an unknown body (Laboratory method).** 
 A torsion pendulum is given, of which we know neither the directional torque ($D^*$) nor the moment of inertia of its original fixed body ($I_0$). We measure the period of the system, which is $T_1 = 1.50\text{ s}$.
-After this, we place a standard body (e.g., a ring) of known moment of inertia $I_{plusz} = 0.02\text{ kg m}^2$ onto the axis symmetrically. The new period will be $T_2 = 2.10\text{ s}$ will be. How large is the moment of inertia $I_0$ of the original system?
+After this, we place a standard body (e.g., a ring) of known moment of inertia $I_{plus} = 0.02\text{ kg m}^2$ onto the axis symmetrically. The new period will be $T_2 = 2.10\text{ s}$ will be. How large is the moment of inertia $I_0$ of the original system?
 
 Let us write down the square of the period for both cases:
 Case 1: $T_1^2 = 4\pi^2 \frac {I_0} {D^*}$
-Case 2: $T_2^2 = 4\pi^2 \frac {I_0 + I_{plusz}} {D^*}$
+Case 2: $T_2^2 = 4\pi^2 \frac {I_0 + I_{plus}} {D^*}$
 
 Let us divide the second equation by the first (thus the $4\pi^2$ and the unknown $D^*$ also drop out):
 
 $$
-\frac {T_2^2} {T_1^2} = \frac {I_0 + I_{plusz}} {I_0}
+\frac {T_2^2} {T_1^2} = \frac {I_0 + I_{plus}} {I_0}
 $$
 
 $$
-\frac {T_2^2} {T_1^2} = 1 + \frac {I_{plusz}} {I_0}
+\frac {T_2^2} {T_1^2} = 1 + \frac {I_{plus}} {I_0}
 $$
 
 Let us substitute the numerical data:
@@ -135,14 +135,12 @@ $$
 The developing torque is the following:
 
 $$
-
 |M_z| = 2F_g\frac L 2 = F_gL
 $$
 
 We know that an angular displacement proportional to the torque happens on the torsion wire. This is Hooke's law for the torsion wire:
 
 $$
-
 |M_z| = D^*\phi
 $$
 
@@ -183,16 +181,19 @@ $$
 ## Problems
 
 **Problem 1: The rod and the movable spheres**
-The middle of a horizontal rod of length $L$ and negligible mass is suspended from a torsion wire. We fix two pieces of bodies of mass $m$, which can be considered point-like, onto the rod, both at a distance $x$ from the axis of rotation. 
+The middle of a horizontal rod of length $L$ and negligible mass is suspended from a torsion wire. We fix two pieces of bodies of mass $m$, which can be considered point-like, onto the rod, both at a distance $x$ from the axis of rotation.
+
 *   Write down the period as a function of the distance $x$!
 *   If we slide the bodies from the end of the rod ($x = L/2$) to the half of the rod ($x = L/4$), by how many times does the period of the torsion pendulum change?
 
 **Problem 2: Different metal cylinders on the same wire**
 We suspend two solid metal cylinders made of the same material, of the same height, but of different radii alternately from the same torsion wire by their geometric axis. The radius of cylinder "A" is $R$, the radius of cylinder "B" is $2R$.
+
 *   Determine how large the period of cylinder "B" is, if the period of cylinder "A" is $T_A = 2\text{ seconds}$!
 *Hint:* Do not forget that the larger cylinder has not only a larger radius but its mass is also larger, since they are made of the same material! Express the mass with the help of the density, the height, and the radius!
 
 **Problem 3: The balance of a mechanical wristwatch**
 In classic mechanical clocks, the accurate time measurement is performed by a balance (torsion pendulum), which is kept in motion by a hairspring. The balance is a wheel of moment of inertia $I = 1.5 \cdot 10^{-7}\text{ kg m}^2$. In order for the clock to run accurately, the balance must perform exactly 4 full oscillations (back-and-forth motion) per second.
+
 *   How large is the period ($T$) of the balance?
 *   With how large a directional torque ($D^*$) must the built-in hairspring possess so that the clock is accurate?

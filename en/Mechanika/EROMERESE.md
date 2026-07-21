@@ -31,11 +31,11 @@ N = F_g = m \cdot g
 $$
 
 $$
-F_s = N
+F_w = N
 $$
 
 $$
-F_s = m \cdot g
+F_w = m \cdot g
 $$
 
 Our first equation expresses that the constraint force exerted by the support or suspension equals the gravitational force, so the object is in equilibrium and does not move. The second equation reflects Newton's Third Law, stating that the weight force and the constraint force are equal in magnitude.
@@ -72,10 +72,10 @@ $$
 N = m \cdot a + F_g = m \cdot a + m \cdot g = m \cdot (a + g)
 $$
 
-Since the weight and the constraint force remain equal in magnitude according to Newton's Third Law ($F_s = N$), the weight of the object increases during upward acceleration:
+Since the weight and the constraint force remain equal in magnitude according to Newton's Third Law ($F_w = N$), the weight of the object increases during upward acceleration:
 
 $$
-F_s = m \cdot (a + g)
+F_w = m \cdot (a + g)
 $$
 
 Now let us examine the case where the object accelerates vertically **downward** with an acceleration magnitude of $a$. If the object is merely lowered gently, the downward-pointing gravitational force is greater than the upward-holding constraint force:
@@ -87,14 +87,14 @@ $$
 From this, the constraint force, and thus the reduced weight of the object, can be calculated:
 
 $$
-F_s = N = F_g - m \cdot a = m \cdot g - m \cdot a = m \cdot (g - a)
+F_w = N = F_g - m \cdot a = m \cdot g - m \cdot a = m \cdot (g - a)
 $$
 
 Let us carefully consider how we determine the magnitude of the net force. Since the constraint force and the gravitational force are vectors in opposite directions, the magnitude of the net force is their difference, subtracting the smaller one from the larger one. If the object accelerates upward, the constraint force is the larger one; if it accelerates downward (but its acceleration is less than $g$), the gravitational force is the larger one.
 
 A highly interesting scenario arises if the object is **compelled to accelerate downward at a rate greater than the gravitational acceleration ($a > g$)**. If the object is fixed to a downward-barreling rod or heavily jerked downward by a machine, the gravitational force alone can no longer provide the required large acceleration. For the net force to be large enough downward, the constraint force must reverse its direction: at this point, the constraint force no longer holds the object up but pushes it **vertically downward**. Due to Newton's Third Law, the object then exerts an upward reaction force, meaning that during forced downward acceleration, the weight of the object reverses and will push upward against the support that restricts it.
 
-If the object is allowed to fall freely without external constraints, its acceleration will be precisely the gravitational acceleration ($a = g$). Substituting this into the weight formula for downward-accelerating motion reveals that the weight becomes exactly zero ($F_s = m \cdot (g - g) = 0$). This is the **state of weightlessness**. During free fall, the object exerts no force on any support or suspension, causing both the constraint force and the weight force to disappear completely.
+If the object is allowed to fall freely without external constraints, its acceleration will be precisely the gravitational acceleration ($a = g$). Substituting this into the weight formula for downward-accelerating motion reveals that the weight becomes exactly zero ($F_w = m \cdot (g - g) = 0$). This is the **state of weightlessness**. During free fall, the object exerts no force on any support or suspension, causing both the constraint force and the weight force to disappear completely.
 
 ## The State of Weightlessness
 

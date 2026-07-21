@@ -177,29 +177,29 @@ $$
 Substituting the given values:
 
 $$
-0.8660K + 0.5F_{\text{s}} = 11772
+0.8660T + 0.5F_{\text{s}} = 11772
 $$
 
 $$
-0.5K - 0.8660F_{\text{s}} = 7200
+0.5T - 0.8660F_{\text{s}} = 7200
 $$
 
 Expressing $F_{\text{s}}$ from the first equation and substituting it into the second equation:
 
 $$
-F_{\text{s}} = 23544 - 1.732K
+F_{\text{s}} = 23544 - 1.732T
 $$
 
 $$
-0.5K - 0.8660(23544 - 1.732K) = 7200
+0.5T - 0.8660(23544 - 1.732T) = 7200
 $$
 
 $$
-0.5K - 20389.1 + 1.500K = 7200
+0.5T - 20389.1 + 1.500T = 7200
 $$
 
 $$
-2K = 27589.1
+2T = 27589.1
 $$
 
 $$

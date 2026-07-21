@@ -4,6 +4,7 @@
 
 ### Példa
 Egy $203,9\text{ g}$ tömegű jégkorong csúszik a jégen. A korong kezdősebessége $20\text{ m/s}$. A csúszási súrlódási együttható a jég és a korong között $0,05$. A korong az első $100\text{ m}$ megtétele után lecsúszik a pályáról és a betonon csúszik, ahol a súrlódási együttható $0,5$.
+
 * Mekkora erő lassítja a korongot a jégen?
 * Mekkora sebességre lassul le a korong, mikor a betonra ér?
 * Mekkora erő lassítja a korongot a betonon?
@@ -160,6 +161,7 @@ A rugalmas energia is a helyzeti energia egy formája, akárcsak a gravitációs
 
 ### Példa
 Egy $200\text{ N/m}$ rugóállandójú rugót $0,2\text{ m}$-rel megnyújtunk.
+
 * Mekkora erő kell a rugó nyújtva tartásához?
 * Mekkora munkát végeztünk, és mennyi a rugalmas energia? 
 * Egy veszteségmentes katapultban ez a rugó mekkora sebességre tud gyorsítani egy $10\text{ g}$ tömegű golyót, ha a veszteségektől eltekinthetünk?

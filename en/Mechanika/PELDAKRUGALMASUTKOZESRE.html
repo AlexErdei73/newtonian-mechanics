@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html xmlns="http://w3.org" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Examples of Elastic Collisions</title>
+    <link rel="stylesheet" href="../github-markdown.css" />
+      <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
+  </head>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newtonian Mechanics</a><div class="nav-group-center"><a href="FERDERUGALMASUTKOZESEK.html" class="nav-btn" aria-label="Previous lesson">◀<span class="btn-text"> Prev</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Table of Contents">☰<span class="btn-text"> Contents</span></a><a href="RUGALMATLANUTKOZES.html" class="nav-btn" aria-label="Next lesson"><span class="btn-text">Next </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newtonian Mechanics</a><div class="nav-group-left"><a href="../index.html">About</a><a href="../VEGEREDMENYEK.html#examples-of-elastic-collisions" style="font-weight: 600;">Solutions</a><a href="../IRODALOMJEGYZEK.html">Bibliography</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Topics ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematics</a></li><li><a href="NEWTONTORVENYEI.html">Dynamics</a></li><li><a href="MUNKA.html">Energy</a></li><li><a href="IMPULZUS.html">Momentum & Collisions</a></li><li><a href="RUGALMATLANUTKOZES.html">Systems of Particles</a></li><li><a href="EGYENLETESKORMOZGAS.html">Circular Motion</a></li><li><a href="KEPLERTORVENYEI.html">Gravitation</a></li><li><a href="MEREVTEST.html">Rotational Dynamics</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Oscillations & Waves</a></li><li><a href="NYOMAS.html">Fluid Mechanics</a></li></ul></div></div></div></nav></header>
+<main class="markdown-body">
+<h1 id="examples-of-elastic-collisions">Examples of Elastic Collisions</h1>
+<h2 id="rebound-of-two-stacked-balls">Rebound of Two Stacked Balls</h2>
+<h3 id="experiment">Experiment</h3>
+<p><lite-youtube videoid="2UHS883_P60"></lite-youtube></p>
+<h3 id="simulation">Simulation</h3>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#5f77abb4-1a91-425d-b756-096b5e3c4107">Rebound of two stacked balls</a></p>
+<p>Let the lower ball be 10 times more massive than the upper ball. Calculate the rebound velocity of the upper ball and determine its maximum height as well! Let the initial height be <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math>!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mi>m</mi><mi>g</mi><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><mfrac><mrow><mn>11</mn><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+11mgh_0 = \frac{11mv_0^2}{2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>g</mi><msub><mi>h</mi><mn>0</mn></msub><mo>=</mo><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+2gh_0 = v_0^2
+</annotation></semantics></math></p>
+<p>Both balls reach the ground with this velocity <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>. First, the lower ball rebounds with a velocity of magnitude <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>. At this moment, it collides with the second (upper) ball, which arrives with the same speed but in the opposite direction. Suppose that the collision is central and perfectly elastic!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mi>m</mi><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>10</mn><mi>m</mi><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><mi>m</mi><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">
+9mv_0 = 10mv_1 + mv_2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>10</mn><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>10</mn><mi>m</mi><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac><mrow><mi>m</mi><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+\frac{10mv_0^2}{2} + \frac{mv_0^2}{2} = \frac{10mv_1^2}{2} + \frac{mv_2^2}{2}
+</annotation></semantics></math></p>
+<p>From the first equation:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mn>9</mn><msub><mi>v</mi><mn>0</mn></msub><mo>−</mo><mn>10</mn><msub><mi>v</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">
+v_2 = 9v_0 - 10v_1
+</annotation></semantics></math></p>
+<p>The simplified form of the second equation:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>10</mn><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>v</mi><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+11v_0^2 = 10v_1^2 + v_2^2
+</annotation></semantics></math></p>
+<p>Substituting the expression for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math> into this:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>10</mn><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>9</mn><msub><mi>v</mi><mn>0</mn></msub><mo>−</mo><mn>10</mn><msub><mi>v</mi><mn>1</mn></msub><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+11v_0^2 = 10v_1^2 + (9v_0 - 10v_1)^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>10</mn><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><mn>81</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>−</mo><mn>180</mn><msub><mi>v</mi><mn>0</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><mn>100</mn><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+11v_0^2 = 10v_1^2 + 81v_0^2 - 180v_0 v_1 + 100v_1^2
+</annotation></semantics></math></p>
+<p>We obtain the following parametric quadratic equation for <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>1</mn></msub><annotation encoding="application/x-tex">v_1</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mn>110</mn><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>−</mo><mn>180</mn><msub><mi>v</mi><mn>0</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><mn>70</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+0 = 110v_1^2 - 180v_0 v_1 + 70v_0^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>=</mo><mn>11</mn><msubsup><mi>v</mi><mn>1</mn><mn>2</mn></msubsup><mo>−</mo><mn>18</mn><msub><mi>v</mi><mn>0</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><mn>7</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+0 = 11v_1^2 - 18v_0 v_1 + 7v_0^2
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mn>18</mn><msub><mi>v</mi><mn>0</mn></msub><mo>±</mo><msqrt><mrow><mn>324</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>−</mo><mn>4</mn><mo>⋅</mo><mn>11</mn><mo>⋅</mo><mn>7</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow></msqrt></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>11</mn></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>18</mn><msub><mi>v</mi><mn>0</mn></msub><mo>±</mo><mn>4</mn><msub><mi>v</mi><mn>0</mn></msub></mrow><mn>22</mn></mfrac><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mspace width="1.0em"></mspace><mtext mathvariant="normal">or</mtext><mspace width="1.0em"></mspace><mfrac><mn>7</mn><mn>11</mn></mfrac><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+v_1 = \frac{18v_0 \pm \sqrt{324v_0^2 - 4 \cdot 11 \cdot 7v_0^2}}{2 \cdot 11} = \frac{18v_0 \pm 4v_0}{22} = v_0 \quad \text{or} \quad \frac{7}{11}v_0
+</annotation></semantics></math></p>
+<p>We are interested in the second solution, which we substitute into the equation used to calculate <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>2</mn></msub><mo>=</mo><mn>9</mn><msub><mi>v</mi><mn>0</mn></msub><mo>−</mo><mn>10</mn><mo>⋅</mo><mfrac><mrow><mn>7</mn><msub><mi>v</mi><mn>0</mn></msub></mrow><mn>11</mn></mfrac><mo>=</mo><mfrac><mn>29</mn><mn>11</mn></mfrac><msub><mi>v</mi><mn>0</mn></msub><mo>≈</mo><mn>2.636</mn><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+v_2 = 9v_0 - 10 \cdot \frac{7v_0}{11} = \frac{29}{11}v_0 \approx 2.636 v_0
+</annotation></semantics></math></p>
+<p>Now that we have obtained <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>2</mn></msub><annotation encoding="application/x-tex">v_2</annotation></semantics></math>, which is the rebound velocity of the upper ball, we can easily calculate the final height of the ball:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mi>g</mi><mi>h</mi><mo>=</mo><mfrac><mrow><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mn>2.636</mn><msub><mi>v</mi><mn>0</mn></msub><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+mgh = \frac{m(2.636 v_0)^2}{2}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac><mrow><mn>6.950</mn><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mrow><mn>2</mn><mi>g</mi></mrow></mfrac><mo>≈</mo><mn>6.950</mn><msub><mi>h</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+h = \frac{6.950 v_0^2}{2g} \approx 6.950 h_0
+</annotation></semantics></math></p>
+<p>Thus, the upper ball rebounds to nearly 6.95 times the release height!</p>
+<h2 id="newtons-cradle">Newton’s Cradle</h2>
+<h3 id="experiment-1">Experiment</h3>
+<p><lite-youtube videoid="ofgeRSCLyXc"></lite-youtube></p>
+<h3 id="simulation-1">Simulation</h3>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#4d1b6707-6e5e-42fc-a4eb-bcdca0d2dad4">Newton’s cradle simulation</a></p>
+<p>The operation of the toy can be understood most simply by assuming perfectly elastic collisions. In this case, both momentum and mechanical energy are conserved. Suppose we lift two balls and release them on one side. Then the initial energy is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mrow><mtext mathvariant="normal">m</mtext><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mfrac><mrow><mn>2</mn><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+E_{\text{m},0} = \frac{2mv_0^2}{2} = mv_0^2
+</annotation></semantics></math></p>
+<p>The initial momentum:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>2</mn><mi>m</mi><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+p_0 = 2mv_0
+</annotation></semantics></math></p>
+<p>Exactly the same energy and momentum must appear at the other end of the system for both conservation laws to be satisfied. Is it possible for only one ball to rise?</p>
+<p>Due to the conservation of momentum:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">
+p_0 = p
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>m</mi><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mi>m</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">
+2mv_0 = mv
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mn>2</mn><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+v = 2v_0
+</annotation></semantics></math></p>
+<p>The velocity of the single rising ball would be twice as large as the velocity with which the two balls collided. The energy would then be:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>v</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">
+E_{\text{m}} = \frac{mv^2}{2} = \frac{4mv_0^2}{2} = 2mv_0^2
+</annotation></semantics></math></p>
+<p>This is not possible because the energy would double:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><mn>2</mn><msub><mi>E</mi><mrow><mtext mathvariant="normal">m</mtext><mo>,</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">
+E_{\text{m}} = 2E_{\text{m},0}
+</annotation></semantics></math></p>
+<p>Is it possible for three balls to rise? In this case, the velocity would be:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>m</mi><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mn>3</mn><mi>m</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">
+2mv_0 = 3mv
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><msub><mi>v</mi><mn>0</mn></msub><mo>≈</mo><mn>0.6667</mn><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">
+v = \frac{2}{3}v_0 \approx 0.6667 v_0
+</annotation></semantics></math></p>
+<p>The mechanical energy would then be:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mtext mathvariant="normal">m</mtext></msub><mo>=</mo><mfrac><mrow><mn>3</mn><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mn>0.6667</mn><msub><mi>v</mi><mn>0</mn></msub><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>≈</mo><mn>0.6667</mn><mi>m</mi><msubsup><mi>v</mi><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mn>0.6667</mn><msub><mi>E</mi><mrow><mtext mathvariant="normal">m</mtext><mo>,</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">
+E_{\text{m}} = \frac{3m(0.6667 v_0)^2}{2} \approx 0.6667 mv_0^2 = 0.6667 E_{\text{m},0}
+</annotation></semantics></math></p>
+<p>If three balls were to swing out, one-third of the energy would be lost, so this is not possible either. Therefore, exactly the same number of balls will swing out on the far side as we originally swung out.</p>
+<p>There is another very important factor that is rarely mentioned when explaining the operation of the toy: the balls must be completely identical, primarily having equal masses. We have seen that this is the condition for a stationary ball to completely absorb the energy and momentum of the moving ball during a central, perfectly elastic collision. It can easily be tested using the simulation that the motion of the toy is disrupted if the mass of any ball differs from the others. In such cases, the system loses the beautiful, regular rhythm we are used to.</p>
+<h2 id="exercises">Exercises</h2>
+<ol type="1">
+<li><p>Two stacked balls are dropped from a height of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math>. The mass of the lower ball is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>, and the mass of the upper ball is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>. The collisions with the ground and with each other are perfectly elastic and central.</p>
+<ul>
+<li>Show that the rebound velocity of the upper ball is:</li>
+</ul>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mtext mathvariant="normal">upper</mtext></msub><mo>=</mo><mfrac><mrow><mn>3</mn><mi>M</mi><mo>−</mo><mi>m</mi></mrow><mrow><mi>M</mi><mo>+</mo><mi>m</mi></mrow></mfrac><msub><mi>v</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">v_{\text{upper}} = \frac{3M - m}{M + m} v_0</annotation></semantics></math></p>
+<p>where</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><msqrt><mrow><mn>2</mn><mi>g</mi><msub><mi>h</mi><mn>0</mn></msub></mrow></msqrt></mrow><annotation encoding="application/x-tex">v_0 = \sqrt{2gh_0}</annotation></semantics></math></p>
+<ul>
+<li>Determine the height to which the upper ball rebounds!</li>
+<li>Examine the limiting case where <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>≫</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">M \gg m</annotation></semantics></math>! What do you observe?</li>
+</ul></li>
+<li><p>In a Newton’s cradle, there are 5 identical balls. Two are raised to a height of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mn>0</mn></msub><annotation encoding="application/x-tex">h_0</annotation></semantics></math> on one side and released.</p>
+<ul>
+<li>Show, using the laws of conservation of momentum and energy, that exactly two balls will swing out on the other side!</li>
+<li>At what velocity do they start?</li>
+<li>What would happen if the mass of the middle ball were twice as large as the others? Would the system work the same way? Justify your answer!</li>
+</ul></li>
+</ol>
+</main>
+</body>
+</html>

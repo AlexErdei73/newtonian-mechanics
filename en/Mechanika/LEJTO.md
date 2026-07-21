@@ -21,13 +21,13 @@ $$
 Vector addition in a fixed coordinate system means the signed addition of the respective axis coordinates. Therefore, the condition for equilibrium can be written component-wise as follows:
 
 $$
-F_{ex} = F_{1x} + F_{2x} + \dots + F_{nx} = 0
+F_{\text{net}x} = F_{1x} + F_{2x} + \dots + F_{nx} = 0
 $$
 
 and
 
 $$
-F_{ey} = F_{1y} + F_{2y} + \dots + F_{ny} = 0
+F_{\text{net}y} = F_{1y} + F_{2y} + \dots + F_{ny} = 0
 $$
 
 ## Equilibrium on the Inclined Plane
@@ -36,6 +36,7 @@ $$
 [Equilibrium of an object with a weight of 10 N on a 30-degree inclined plane (Experimental video)](https://www.youtube.com/watch?v=6w6yRr7y9n8)
 
 The experiment presented in the video demonstrates two basic physical facts:
+
 1. To hold an object with a weight of $10\text{ N}$ placed on a $30^\circ$ inclined plane, a holding force of exactly $5\text{ N}$ directed upward and parallel to the inclined plane is required.
 2. The surface of the inclined plane exerts a perpendicular force on the object, known as the normal or constraint force, which prevents the object from penetrating the material of the incline. In this case, this perpendicular force is smaller than the total weight of the object.
 

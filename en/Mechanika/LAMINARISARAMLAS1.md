@@ -55,28 +55,28 @@ $$
 m_{\text{body}}g - \rho_f V g = 6\pi\eta r u
 $$
 
-Let us express the mass of the body using density ($m_{\text{body}} = \rho_t V$), and then divide both sides by the volume $V$:
+Let us express the mass of the body using density ($m_{\text{body}} = \rho_b V$), and then divide both sides by the volume $V$:
 
 $$
-\rho_t g - \rho_f g = \frac{6\pi\eta r u}{V}
+\rho_b g - \rho_f g = \frac{6\pi\eta r u}{V}
 $$
 
 Substitute the geometric volume formula of a sphere into $V$ ($V = \frac{4}{3}\pi r^3$):
 
 $$
-(\rho_t - \rho_f)g = \frac{6\pi\eta r u}{\frac{4}{3}\pi r^3} = \frac{18\pi\eta r u}{4\pi r^3}
+(\rho_b - \rho_f)g = \frac{6\pi\eta r u}{\frac{4}{3}\pi r^3} = \frac{18\pi\eta r u}{4\pi r^3}
 $$
 
 After simplification, we obtain the relationship:
 
 $$
-(\rho_t - \rho_f)g = \frac{9\eta u}{2r^2}
+(\rho_b - \rho_f)g = \frac{9\eta u}{2r^2}
 $$
 
 From this, the terminal velocity $u$, or in the case of an unknown fluid, the viscosity $\eta$, can be calculated during measurements:
 
 $$
-u = \frac{2r^2(\rho_t - \rho_f)g}{9\eta}
+u = \frac{2r^2(\rho_b - \rho_f)g}{9\eta}
 $$
 
 Our result theoretically demonstrates that the terminal velocity $u$ is proportional to the **square** of the radius ($r^2$). This explains why the ball with twice the radius sinks exactly four times as fast in the syrup.
@@ -92,7 +92,7 @@ $$
 d &= 1/8\text{ inch} = 0.3175\text{ cm} = 3.175 \cdot 10^{-3}\text{ m} \\
 r &= \frac{d}{2} = 0.15875\text{ cm} = 1.5875 \cdot 10^{-3}\text{ m} \\
 \rho_f &= 1380\text{ kg/m}^3 \quad \text{(density of the syrup)} \\
-\rho_t &= 7800\text{ kg/m}^3 \quad \text{(density of the steel ball)} \\
+\rho_b &= 7800\text{ kg/m}^3 \quad \text{(density of the steel ball)} \\
 h &= 4\text{ cm} = 0.04\text{ m} \quad \text{(the measured sinking distance)} \\
 t &= 5.8\text{ s} \quad \text{(the sinking time)} \\
 u &= \frac{h}{t} = \frac{0.04}{5.8} = 0.006897\text{ m/s}
@@ -118,25 +118,25 @@ Since the resulting Reynolds number is orders of magnitude smaller than 1 ($Re \
 The inertial force required for acceleration can be calculated from the work-energy theorem ($W = \Delta E_m$):
 
 $$
-F_t \cdot d = \frac{1}{2} m_f u^2 = \frac{1}{2} \left(\rho_f \cdot \frac{4r^3\pi}{3}\right) u^2
+F_i \cdot d = \frac{1}{2} m_f u^2 = \frac{1}{2} \left(\rho_f \cdot \frac{4r^3\pi}{3}\right) u^2
 $$
 
 Since $d = 2r$, substitute it and express the inertial force:
 
 $$
-F_t \cdot (2r) = \frac{2}{3} \pi \rho_f r^3 u^2 \implies F_t = \frac{\pi \rho_f r^2 u^2}{3}
+F_i \cdot (2r) = \frac{2}{3} \pi \rho_f r^3 u^2 \implies F_t = \frac{\pi \rho_f r^2 u^2}{3}
 $$
 
 The resistive force is given by Stokes' Law ($F_s = 6\pi\eta r u$). Let us look at the numerical ratio of the two forces:
 
 $$
-\frac{F_t}{F_s} = \frac{\frac{1}{3}\pi \rho_f r^2 u^2}{6\pi \eta r u} = \frac{1}{18} \frac{\rho_f r u}{\eta}
+\frac{F_i}{F_s} = \frac{\frac{1}{3}\pi \rho_f r^2 u^2}{6\pi \eta r u} = \frac{1}{18} \frac{\rho_f r u}{\eta}
 $$
 
 Since the standard Reynolds number uses the diameter instead of the radius ($d = 2r$, meaning $r = d/2$):
 
 $$
-\frac{F_t}{F_s} = \frac{1}{18} \frac{\rho_f \left(\frac{d}{2}\right) u}{\eta} = \frac{1}{36} \frac{\rho_f u d}{\eta} = \frac{1}{36} Re
+\frac{F_i}{F_s} = \frac{1}{18} \frac{\rho_f \left(\frac{d}{2}\right) u}{\eta} = \frac{1}{36} \frac{\rho_f u d}{\eta} = \frac{1}{36} Re
 $$
 
 This result proves that the Reynolds number (neglecting a geometric factor) indeed reflects the physical ratio of inertial effects to viscous forces.

@@ -49,6 +49,7 @@ A hidrodinamikai hasonlóság törvényét Osborne Reynolds fedezte fel 1883-ban
 ### A Reynolds-szám
 
 Reynolds dimenzióanalízissel (méretarány-elemzéssel) kereste meg azt az összefüggést, amely megjósolja ezt az átmenetet. Összegyűjtötte az áramlást befolyásoló fizikai jellemzőket:
+
 *   $u$: az áramlási sebesség ($\text{m/s}$)
 *   $d$: a cső átmérője ($\text{m}$)
 *   $\rho$: a fluidum sűrűsége $\left(\text{kg/m}^3\right)$

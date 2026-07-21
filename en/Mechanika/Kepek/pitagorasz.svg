@@ -1,31 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 300" width="100%" max-width="550px">
-  <!-- Kifejezett fehér háttér -->
+  <!-- Explicit white background -->
   <rect width="100%" height="100%" fill="#ffffff"/>
   
-  <!-- Háromszög kitöltése (fehér) és körvonala (kék) -->
+  <!-- Triangle filling (white) and outline (blue) -->
   <polygon points="50,240 250,240 250,90" fill="#ffffff" stroke="#0055cc" stroke-width="3"/>
   
-  <!-- Derékszög jelölése -->
+  <!-- Right angle marker -->
   <polyline points="230,240 230,220 250,220" fill="none" stroke="#0055cc" stroke-width="2"/>
   <circle cx="240" cy="230" r="2" fill="#0055cc"/>
   
-  <!-- Alfa szög jelölése (pontosan számított ív) -->
+  <!-- Alpha angle indicator arc -->
   <path d="M 90 240 A 40 40 0 0 0 82 216" fill="none" stroke="#e60000" stroke-width="2"/>
   <text x="100" y="232" font-family="Arial" font-size="22" font-style="italic" fill="#e60000">α</text>
   
-  <!-- Oldalak feliratai -->
+  <!-- Side labels -->
   <text x="145" y="265" font-family="Arial" font-size="22" font-style="italic">b</text>
   <text x="265" y="170" font-family="Arial" font-size="22" font-style="italic">a</text>
   <text x="130" y="155" font-family="Arial" font-size="22" font-style="italic">c</text>
   
-  <!-- *** Összefüggések (képletek) a jobb oldalon *** -->
+  <!-- *** Relationships (Formulas) on the right side *** -->
   
-  <!-- Pitagorasz-tétel -->
-  <text x="300" y="65" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Pitagorasz-tétel:</text>
+  <!-- Pythagorean Theorem -->
+  <text x="300" y="65" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Pythagorean Theorem:</text>
   <text x="300" y="95" font-family="Arial" font-size="20" font-style="italic">a² + b² = c²</text>
   
-  <!-- Szögfüggvények definíciója -->
-  <text x="300" y="140" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Szögfüggvények:</text>
+  <!-- Trigonometric Functions Definition -->
+  <text x="300" y="140" font-family="Arial" font-size="16" font-weight="bold" fill="#333333">Trigonometric Functions:</text>
   
   <!-- sin(alpha) = a/c -->
   <text x="300" y="185" font-family="Arial" font-size="20">
@@ -47,7 +47,7 @@
   <line x1="485" y1="179" x2="505" y2="179" stroke="#000000" stroke-width="1.5"/>
   <text x="495" y="199" font-family="Arial" font-size="20" font-style="italic" text-anchor="middle">c</text>
   
-  <!-- Kombinált (trigonometrikus Pitagorasz) egyenlet kiemelve -->
+  
   <rect x="290" y="225" width="240" height="40" rx="5" fill="#e6f2ff" stroke="#0055cc" stroke-width="1"/>
   <text x="410" y="252" font-family="Arial" font-size="20" font-weight="bold" fill="#0055cc" text-anchor="middle">
     <tspan font-style="normal">sin²</tspan><tspan font-style="italic" fill="#e60000">α</tspan>

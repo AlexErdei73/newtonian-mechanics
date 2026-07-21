@@ -115,17 +115,17 @@ A wooden block and a brick move together across a horizontal tabletop. We push t
 First, let us calculate the kinetic friction forces during the sliding motion:
 
 $$
-F_{\text{f},1} = \mu_1 F_{\text{N},1} = \mu_1 m_1 g = 0.3 \cdot 0.5 \cdot 9.81 \approx 1.472\text{ N}
+F_{\text{k},1} = \mu_1 N_1 = \mu_1 m_1 g = 0.3 \cdot 0.5 \cdot 9.81 \approx 1.472\text{ N}
 $$
 
 $$
-F_{\text{f},2} = \mu_2 F_{\text{N},2} = \mu_2 m_2 g = 0.7 \cdot 1.50 \cdot 9.81 \approx 10.30\text{ N}
+F_{\text{k},2} = \mu_2 N_2 = \mu_2 m_2 g = 0.7 \cdot 1.50 \cdot 9.81 \approx 10.30\text{ N}
 $$
 
 Since we are pushing the blocks and friction opposes this movement, the magnitude of the net external force is:
 
 $$
-F_{\text{net}} = F - F_{\text{f},1} - F_{\text{f},2} = 20.0 - 1.472 - 10.30 = 8.228\text{ N}
+F_{\text{net}} = F - F_{\text{k},1} - F_{\text{k},2} = 20.0 - 1.472 - 10.30 = 8.228\text{ N}
 $$
 
 The acceleration, which is identical for both bodies and is equal to the acceleration of the center of mass, is:
@@ -137,17 +137,17 @@ $$
 The brick is accelerated by the horizontal contact force (normal force) between the wooden block and the brick, while friction opposes its motion.
 
 $$
-F_{\text{net},2} = F_{\text{contact}} - F_{\text{f},2} = m_2 a
+F_{\text{net},2} = N - F_{\text{k},2} = m_2 a
 $$
 
 $$
-F_{\text{contact}} = m_2 a + F_{\text{f},2} = 1.50 \cdot 4.114 + 10.30 = 16.47\text{ N}
+N = m_2 a + F_{\text{k},2} = 1.50 \cdot 4.114 + 10.30 = 16.47\text{ N}
 $$
 
 After releasing the wooden block, the net external force changes:
 
 $$
-F_{\text{net}}^{\text{new}} = -F_{\text{f},1} - F_{\text{f},2} = -11.772\text{ N}
+F_{\text{net}}^{\text{new}} = -F_{\text{k},1} - F_{\text{k},2} = -11.772\text{ N}
 $$
 
 The deceleration (new acceleration) is:
@@ -159,11 +159,11 @@ $$
 Now, the wooden block pushes the brick with a different force:
 
 $$
-F_{\text{contact}}^{\text{new}} - F_{\text{f},2} = m_2 a^{\text{new}}
+N^{\text{new}} - F_{\text{k},2} = m_2 a^{\text{new}}
 $$
 
 $$
-F_{\text{contact}}^{\text{new}} = m_2 a^{\text{new}} + F_{\text{f},2} = 1.50 \cdot (-5.886) + 10.30 = 1.471\text{ N}
+N^{\text{new}} = m_2 a^{\text{new}} + F_{\text{k},2} = 1.50 \cdot (-5.886) + 10.30 = 1.471\text{ N}
 $$
 
 This contact force can only take positive values because the brick is not glued to the wooden block. If the calculation were to yield a negative result, it would mean that the brick and the wooden block would decelerate at different rates upon release, meaning we could no longer state that they move together. That is not the case in our example.

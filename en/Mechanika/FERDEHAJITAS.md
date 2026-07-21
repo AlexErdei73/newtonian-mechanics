@@ -109,7 +109,7 @@ $$
 Let us calculate the two components of the initial velocity vector:
 
 $$
-\vec{v}_0 = (v_0 \cdot \cos \alpha,\ v_0 \cdot \sin \alpha) = (5 \cdot \cos 30^\circ,\ 5 \cdot \sin 30^\circ) \approx (4.330\text{ Ajuba }\frac {\text{m}} {\text{s}},\ 2.500\text{ Ajuba }\frac {\text{m}} {\text{s}})
+\vec{v}_0 = (v_0 \cdot \cos \alpha,\ v_0 \cdot \sin \alpha) = (5 \cdot \cos 30^\circ,\ 5 \cdot \sin 30^\circ) \approx (4.330\text{ }\frac {\text{m}} {\text{s}},\ 2.500\text{ }\frac {\text{m}} {\text{s}})
 $$
 
 When the object returns to the horizontal ground, its vertical coordinate becomes zero ($y = 0$). Let us write the vertical equation of motion:
@@ -143,7 +143,7 @@ The object impacts at a distance of exactly $2.21\text{ m}$ from its starting po
 Let us calculate the initial velocity components (since $\sin 45^\circ = \cos 45^\circ \approx 0.7071$):
 
 $$
-\vec{v}_0 = (v_0 \cdot \cos \alpha,\ v_0 \cdot \sin \alpha) \approx (14.14\text{ Ajuba }\frac {\text{m}} {\text{s}},\ 14.14\text{ Ajuba }\frac {\text{m}} {\text{s}})
+\vec{v}_0 = (v_0 \cdot \cos \alpha,\ v_0 \cdot \sin \alpha) \approx (14.14\text{ }\frac {\text{m}} {\text{s}},\ 14.14\text{ }\frac {\text{m}} {\text{s}})
 $$
 
 Since the impact point is located $10.0\text{ meters}$ below ground level, the vertical coordinate at the endpoint is $y = -10\text{ m}$. Let us write the $y$-equation:

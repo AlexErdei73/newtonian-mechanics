@@ -23,6 +23,7 @@ Láttuk továbbá, hogy bár a turbulencia általában növeli a közegellenáll
 
 #### Miért rücskös a golflabda?
 A golflabda rücskös felülete szándékosan alakít ki egy vékony, turbulens határréteget a labda körül. Ez két ellentétes fizikai hatással jár:
+
 1. **Negatív hatás:** Kissé megnöveli a közvetlen felületi súrlódást.
 2. **Pozitív hatás:** A turbulens áramlás jobban rátapad a felületre, így a levegő messzebb tudja körüláramolni a gömböt.
 

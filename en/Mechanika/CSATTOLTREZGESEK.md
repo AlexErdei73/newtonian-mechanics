@@ -173,7 +173,7 @@ $$
 The determination of the other (antisymmetrical, opposite-phase) angular frequency is slightly more complex. Let us notice that the midpoint of the middle spring is completely motionless in normal mode II due to symmetry! If the displacement of body 1 is $x$, then the elongation (or compression) of the middle spring will be precisely $2x$ due to the opposite motion. The force of this inner spring points toward the equilibrium position, meaning it **adds to** the restoring force of the outer spring. Writing the equation of motion for body 1:
 
 $$
-ma = F_{\text{e},x} = -D_1 x - 2D_2 x = -(D_1 + 2D_2)x
+ma = F_{\text{net},x} = -D_1 x - 2D_2 x = -(D_1 + 2D_2)x
 $$
 
 $$
@@ -215,7 +215,7 @@ The phenomenon observed in coupled oscillations—namely that energy periodicall
 
 [What If Swings Had Springs Instead Of Ropes: Autoparametric Resonance](https://www.youtube.com/watch?v=MUJmKl7QfDU)
 
-[Rugós inga módusváltása (Szimuláció)](https://alexerdei73.github.io/physics-engine/project/#a3802550-a697-495b-a39e-de8a9bf5bab8)
+[Mode switching of a spring pendulum (simulation)](https://alexerdei73.github.io/physics-engine/project/#a3802550-a697-495b-a39e-de8a9bf5bab8)
 
 In the video and the simulation, we can see a pendulum attached to a spring, which illustrates an extremely spectacular physical phenomenon, the so-called **autoparametric resonance** [0:00:27]. If the system is initially vibrated purely vertically (up-and-down harmonic oscillation), after a while this vertical motion stops completely, and the body switches by itself into a lateral swinging motion (like a classic pendulum) [0:01:21]. After this, the process reverses: the amplitude of the pendulum swing begins to decrease, and the energy returns to the vertical spring oscillation [0:01:22]. The mechanical energy thus periodically migrates back and forth between the two completely different forms of motion [0:09:02].
 
@@ -229,18 +229,21 @@ Although the mathematical description of these systems is much more complex—th
 
 **Problem 1: Effect of Coupling Strength**
 
-Let us assume that the middle coupling spring is replaced with a significantly stronger one, whose spring constant matches that of the outer springs ($D_2 = 0.5\text{ N/m}$), while the other data remain unchanged ($m = 0.2\text{ kg}$, $D_1 = 0.5\text{ N/m}$). 
+Let us assume that the middle coupling spring is replaced with a significantly stronger one, whose spring constant matches that of the outer springs ($D_2 = 0.5\text{ N/m}$), while the other data remain unchanged ($m = 0.2\text{ kg}$, $D_1 = 0.5\text{ N/m}$).
+
 - Determine the angular frequency of normal modes I and II!
 - Calculate how much the period of the beat envelope curve will be in this case!
 - Formulate based on the obtained results how increasing the strength of the coupling affects the period of the beat!
 
 **Problem 2: Initial Conditions and Energy**
 
-In the described coupled oscillating system, at the time instant $t = 0$, body 1 is released from a displacement $x_0 = 10\text{ cm}$ without initial velocity, while body 2 is exactly in its equilibrium position ($x_2 = 0\text{ cm}$), also without initial velocity. 
+In the described coupled oscillating system, at the time instant $t = 0$, body 1 is released from a displacement $x_0 = 10\text{ cm}$ without initial velocity, while body 2 is exactly in its equilibrium position ($x_2 = 0\text{ cm}$), also without initial velocity.
+
 - Express the displacement of the two bodies as a function of time as the superposition of the normal modes! 
 - Explain briefly, based on the derived equations, how the mechanical energy flows between the two bodies during the motion!
 
 **Problem 3: Transient Beat in Forced Oscillation**
 
 The natural frequency of a damped spring-mass system is $f_0 = 5\text{ Hz}$. The system is driven by a harmonically varying external force, whose frequency is $f_{\text{g}} = 5.2\text{ Hz}$. Weak damping is present in the system.
+
 - Calculate how many beats (amplitude maxima) can be observed per second in the first few seconds following the turning on of the driving force, before the transient phenomenon completely dies out!

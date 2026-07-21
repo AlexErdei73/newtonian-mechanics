@@ -40,32 +40,31 @@ $$
 Here, index $1$ refers to the left rope segment and index $2$ refers to the right rope segment. Due to symmetry, the magnitudes of the forces are identical:
 
 $$
-
 |\vec{T}_1| = |\vec{T}_2| = T
 $$
 
 Let's write the vector equation according to the axial coordinates:
 
 $$
-K_{1x} + K_{2x} + F_{g,x} = 0 
+T_{1x} + T_{2x} + F_{g,x} = 0 
 $$
 
 $$
-K_{1y} + K_{2y} + F_{g,y} = 0
+T_{1y} + T_{2y} + F_{g,y} = 0
 $$
 
 Based on the geometric resolution, the values of the components are:
 
 $$
-K_{1x} = -T \cdot \sin \alpha
+T_{1x} = -T \cdot \sin \alpha
 $$
 
 $$
-K_{2x} = T \cdot \sin \alpha
+T_{2x} = T \cdot \sin \alpha
 $$
 
 $$
-K_{1y} = K_{2y} = T \cdot \cos \alpha
+T_{1y} = T_{2y} = T \cdot \cos \alpha
 $$
 
 $$
@@ -82,10 +81,10 @@ $$
 T \cdot \cos \alpha + T \cdot \cos \alpha - F_g = 0
 $$
 
-The first (horizontal) equation is a trivial identity ($-0 + 0 = 0$), and from the second (vertical) equation:
+The first (horizontal) equation is a trivial identity, and from the second (vertical) equation:
 
 $$
-2K \cdot \cos \alpha = F_g
+2T \cdot \cos \alpha = F_g
 $$
 
 $$
@@ -117,25 +116,25 @@ $$
 The system of equations for the coordinate components:
 
 $$
-K_{1x} + K_{2x} + F_{g,x} = 0
+T_{1x} + T_{2x} + F_{g,x} = 0
 $$
 
 $$
-K_{1y} + K_{2y} + F_{g,y} = 0
+T_{1y} + T_{2y} + F_{g,y} = 0
 $$
 
 Based on the direction of the forces, the values of the coordinates are:
 
 $$
-K_{1x} = -T_1 \cdot \sin \alpha
+T_{1x} = -T_1 \cdot \sin \alpha
 $$
 
 $$
-K_{1y} = T_1 \cdot \cos \alpha
+T_{1y} = T_1 \cdot \cos \alpha
 $$
 
 $$
-K_{2x} = T_2,\ \ K_{2y} = 0
+T_{2x} = T_2,\ \ T_{2y} = 0
 $$
 
 $$

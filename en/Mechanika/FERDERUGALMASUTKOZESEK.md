@@ -29,7 +29,7 @@ $$
 In other words, based on the conservation of energy, the magnitude of the velocity before the collision is equal to the magnitude of the velocity after the collision. Since there is no force parallel to the wall ($F_y = 0$ because there is no friction), the $y$-component of momentum is conserved:
 
 $$
-F_{\text{net},y} = 0 \quad \rightarrow \quad \Delta I_y = 0
+F_{\text{net},y} = 0 \quad \rightarrow \quad \Delta p_y = 0
 $$
 
 $$
@@ -69,7 +69,7 @@ A ball of mass $0.100\ \text{kg}$ strikes a wall with a velocity magnitude of $3
 The component of velocity perpendicular to the wall (in the $x$ direction) is:
 
 $$
-I_{0,x} = m \cdot v_{0,x} = m \cdot v_0 \cdot \cos \alpha = 0.100 \cdot 3.00 \cdot \cos 30^\circ \approx 0.2598\ \frac{\text{kg} \cdot \text{m}}{\text{s}}
+p_{0,x} = m \cdot v_{0,x} = m \cdot v_0 \cdot \cos \alpha = 0.100 \cdot 3.00 \cdot \cos 30^\circ \approx 0.2598\ \frac{\text{kg} \cdot \text{m}}{\text{s}}
 $$
 
 Since the collision is elastic, the $x$-component of the rebound velocity has the opposite direction:
@@ -85,13 +85,13 @@ $$
 The change in momentum in the $x$ direction is:
 
 $$
-\Delta I_x = I_x - I_{0,x} = -I_{0,x} - I_{0,x} = -2 \cdot 0.2598 = -0.5196\ \frac{\text{kg} \cdot \text{m}}{\text{s}}
+\Delta p_{0,x} = p_x - p_{0,x} = -p_{0,x} - p_{0,x} = -2 \cdot 0.2598 = -0.5196\ \frac{\text{kg} \cdot \text{m}}{\text{s}}
 $$
 
 The average force (acting on the ball) is:
 
 $$
-F_{\text{net},x} = \frac{\Delta I_x}{t} = \frac{-0.5196}{0.001} = -519.6\ \text{N}
+F_{\text{net},x} = \frac{\Delta p_x}{t} = \frac{-0.5196}{0.001} = -519.6\ \text{N}
 $$
 
 The force acting on the wall is the counterforce (reaction force) of this (Newton's third law):

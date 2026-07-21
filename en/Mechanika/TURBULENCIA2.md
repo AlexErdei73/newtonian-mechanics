@@ -249,6 +249,7 @@ In a popular online science video, the following assertion is made: *“The kine
 
 **Solution:**
 According to the video, the energy distribution based on real spatial eddy size ($E_D$) depends on the diameter $D$ and the specific energy dissipation rate $\varepsilon$ ($E_D \sim \varepsilon^{2/3} \cdot D^{5/3}$). Let us check the units of the right-hand side using the standard SI units of Kolmogorov's theory:
+
 *   The unit of $\varepsilon$: $\text{m}^2/\text{s}^3$, hence the unit of $\varepsilon^{2/3}$: $\text{m}^{4/3}/\text{s}^2$
 *   The unit of the diameter $D$: $\text{m}$, hence the unit of $D^{5/3}$: $\text{m}^{5/3}$
 
@@ -281,6 +282,7 @@ $$
 $$
 
 Based on the equality of powers, we obtain the following system:
+
 *   For time ($\text{s}$): $-3a = -2 \implies a = \frac{2}{3}$
 *   For length ($\text{m}$): $2a + b = 1$
 

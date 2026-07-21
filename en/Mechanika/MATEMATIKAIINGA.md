@@ -186,6 +186,7 @@ The half period of this pendulum (therefore until it swings from one extreme pos
 [The Simple Pendulum](https://alexerdei73.github.io/physics-engine/project/#be74d75b-d4ef-49e0-ac4e-98ff80ff6a54)
 
 In the simulation, the body starts from the bottom, equilibrium position with a push. The length of the pendulum is $3\text{ m}$, the gravitational acceleration is $9.80\ \text{m/s}^2$.
+
 * Let us measure the duration of the first 10 oscillations! Since the pendulum does not start from the extreme position, but it is practical for us to stop the simulator at the extreme position, to calculate the period, the time shown by the simulator must be divided by 10.25, since we measure 10 and a quarter oscillations.
 * Let us also calculate the period from the data. How large an error can we expect? Which is the most important source of error and how large is the actual error?
 

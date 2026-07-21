@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns="http://w3.org" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>The Quadratic Law of Motion</title>
+    <link rel="stylesheet" href="../github-markdown.css" />
+      <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
+  </head>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newtonian Mechanics</a><div class="nav-group-center"><a href="GYORSULAS.html" class="nav-btn" aria-label="Previous lesson">◀<span class="btn-text"> Prev</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Table of Contents">☰<span class="btn-text"> Contents</span></a><a href="FELADATOKGYORSULOMOZG.html" class="nav-btn" aria-label="Next lesson"><span class="btn-text">Next </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newtonian Mechanics</a><div class="nav-group-left"><a href="../index.html">About</a><a href="../VEGEREDMENYEK.html#the-quadratic-law-of-motion" style="font-weight: 600;">Solutions</a><a href="../IRODALOMJEGYZEK.html">Bibliography</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Topics ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematics</a></li><li><a href="NEWTONTORVENYEI.html">Dynamics</a></li><li><a href="MUNKA.html">Energy</a></li><li><a href="IMPULZUS.html">Momentum & Collisions</a></li><li><a href="RUGALMATLANUTKOZES.html">Systems of Particles</a></li><li><a href="EGYENLETESKORMOZGAS.html">Circular Motion</a></li><li><a href="KEPLERTORVENYEI.html">Gravitation</a></li><li><a href="MEREVTEST.html">Rotational Dynamics</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Oscillations & Waves</a></li><li><a href="NYOMAS.html">Fluid Mechanics</a></li></ul></div></div></div></nav></header>
+<main class="markdown-body">
+<h1 id="the-quadratic-law-of-motion">The Quadratic Law of Motion</h1>
+<h2 id="calculating-distance">Calculating Distance</h2>
+<p>Let us recall the velocity-time graph for the case of an object moving down an inclined plane where the acceleration is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">0.5\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>.</p>
+<figure>
+<img src="Kepek/egyenletesengyorsulomozgassebidograf.png" alt="Velocity-time graph of a uniformly accelerating object" />
+<figcaption aria-hidden="true">Velocity-time graph of a uniformly accelerating object</figcaption>
+</figure>
+<p>We also remember that the area under the instantaneous velocity curve (line) universally represents the distance traveled.</p>
+<p>Based on this, we can easily calculate the distance traveled in the case where the initial velocity <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math> is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math>. In this case, the velocity reached at time instant <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mi>v</mi><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {v - v_0} {t} = \frac {v} {t}
+</annotation></semantics></math></p>
+<p>Multiplying both sides by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>, we obtain:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>a</mi><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
+v = a \cdot t
+</annotation></semantics></math></p>
+<p>Now we need to determine the area of a right-angled triangle whose right-angle vertex lies on the time axis (horizontal axis) at time instant <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>. One leg is therefore <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>, and the other is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">a \cdot t</annotation></semantics></math>. The area of a right-angled triangle is exactly half the area of the rectangle, therefore:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>⋅</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mi>t</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+s = \frac {(a \cdot t) \cdot t} {2}
+</annotation></semantics></math></p>
+<p>The target formula, which we call the quadratic law of motion, is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = \frac {a} {2} \cdot t^2
+</annotation></semantics></math></p>
+<blockquote>
+<p><strong>The distance traveled by a uniformly accelerating motion starting from rest (zero initial velocity) is directly proportional to the square of time; the proportionality factor is half of the acceleration.</strong></p>
+</blockquote>
+<h3 id="example">Example</h3>
+<p>What distance is covered in <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math> by an object sliding down an inclined plane from rest if its acceleration is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">0.5\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math>?</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mn>0.5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><mn>2</mn></mfrac><mo>⋅</mo><mn>16</mn><msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow><mn>2</mn></msup><mo>=</mo><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+s = \frac {a} {2} \cdot t^2 = \frac {0.5\text{ }\frac{\text{m}}{\text{s}^2}} {2} \cdot 16\text{ s}^2 = 4\text{ m}
+</annotation></semantics></math></p>
+<p>This example represents exactly the motion plotted on the graph. It can be seen from the graph, however, that the area under the velocity line up to <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math> is exactly <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> unit squares</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ unit squares}</annotation></semantics></math> (2 whole large squares and 2 halved whole squares).</p>
+<h2 id="the-distance-time-graph">The Distance-Time Graph</h2>
+<p>Let us now examine the distance-time graph, which we can also obtain via the simulation. From this, we obviously must read a value of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math> after an elapsed time of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math>.</p>
+<p><a href="https://alexerdei73.github.io/physics-engine/project/#94f47c36-ead0-4d85-a1ff-ac1827797ce9">Frictionless Motion on an Inclined Plane Simulator</a></p>
+<p>For practice, let us look at the image of the distance-time graph based on the simulation! We should obtain the following graph:</p>
+<figure>
+<img src="Kepek/negyzetesuttorvenygraf.png" alt="Graph of the quadratic law of motion" />
+<figcaption aria-hidden="true">Graph of the quadratic law of motion</figcaption>
+</figure>
+<p>It is clear that the distance traveled is indeed <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math> after an elapsed time of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math>. The curve is called a parabola.</p>
+<h2 id="the-quadratic-law-of-motion-with-initial-velocity">The Quadratic Law of Motion with Initial Velocity</h2>
+<p>If there is also an initial velocity, the velocity-time graph is as follows:</p>
+<figure>
+<img src="Kepek/sebessegidografkezdosebessegel.png" alt="Velocity-time graph of uniformly accelerated motion with initial velocity" />
+<figcaption aria-hidden="true">Velocity-time graph of uniformly accelerated motion with initial velocity</figcaption>
+</figure>
+<p>Let us look at the final velocity reached:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {v - v_0} {t}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub><mo>=</mo><mi>a</mi><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
+v - v_0 = a \cdot t
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>a</mi><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
+v = v_0 + a \cdot t
+</annotation></semantics></math></p>
+<p>The distance traveled is now the area of the trapezoid. This area is visibly the sum of the area of the previous right-angled triangle and the area of a rectangle. The sides of the rectangle are <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math>, so its area is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">v_0 \cdot t</annotation></semantics></math>. Thus, the formula we are looking for is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2
+</annotation></semantics></math></p>
+<p>We can also arrive at this formula in another way. We know that the area of a trapezoid is the average of the parallel sides multiplied by the distance between the parallel sides. The parallel sides are <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>v</mi><mn>0</mn></msub><annotation encoding="application/x-tex">v_0</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>, and their distance is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>. According to this:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>v</mi></mrow><mn>2</mn></mfrac><mo>⋅</mo><mi>t</mi></mrow><annotation encoding="application/x-tex">
+s = \frac {v_0 + v} {2} \cdot t
+</annotation></semantics></math></p>
+<p>Dividing this relationship by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math> yields the average velocity:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>v</mi><mo accent="true">¯</mo></mover><mo>=</mo><mfrac><mi>s</mi><mi>t</mi></mfrac><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>v</mi></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">
+\overline{v} = \frac{s}{t} = \frac {v_0 + v} {2}
+</annotation></semantics></math></p>
+<blockquote>
+<p><strong>The average velocity of uniformly accelerated motion is the arithmetic mean of the initial and final velocities.</strong></p>
+</blockquote>
+<p>This statement does not hold true for other types of motion.</p>
+<p>Let us see if we can obtain the relationship used to calculate the distance traveled through some algebraic manipulation!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>v</mi></mrow><mn>2</mn></mfrac><mo>⋅</mo><mi>t</mi><mo>=</mo><mfrac><mrow><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>a</mi><mo>⋅</mo><mi>t</mi></mrow><mn>2</mn></mfrac><mo>⋅</mo><mi>t</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><msub><mi>v</mi><mn>0</mn></msub><mo>+</mo><mi>a</mi><mo>⋅</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>⋅</mo><mi>t</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mi>a</mi><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+s = \frac {v_0 + v} {2} \cdot t = \frac {v_0 + v_0 + a \cdot t} {2} \cdot t = \frac{1} {2} \cdot (2v_0 + a \cdot t) \cdot t = \frac {1} {2} \cdot (2v_0 \cdot t + a \cdot t^2) = v_0 \cdot t + \frac {a} {2} \cdot t^2
+</annotation></semantics></math></p>
+<p>Thus, we have obtained the relationship via this alternative route as well.</p>
+<h3 id="example-1">Example</h3>
+<p>An object sliding down an inclined plane moves without friction with an acceleration of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><msup><mtext mathvariant="normal">s</mtext><mn>2</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">0.5\text{ }\frac{\text{m}}{\text{s}^2}</annotation></semantics></math> and its initial velocity is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">3\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>. What will the velocity of the object be <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math> after launching? What distance does it cover during this time?</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><mrow><mi>v</mi><mo>−</mo><msub><mi>v</mi><mn>0</mn></msub></mrow><mi>t</mi></mfrac></mrow><annotation encoding="application/x-tex">
+a = \frac {v - v_0} {t}
+</annotation></semantics></math></p>
+<p>Substituting the data and denoting the unknown velocity by <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.5</mn><mo>=</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">
+0.5 = \frac {x - 3} {4}
+</annotation></semantics></math></p>
+<p>We solve the equation:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>=</mo><mi>x</mi><mo>−</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">
+2 = x - 3
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">
+5 = x
+</annotation></semantics></math></p>
+<p>Therefore, the velocity of the object at <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">4\text{ s}</annotation></semantics></math> is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> </mtext><mspace width="0.333em"></mspace></mrow><mfrac><mtext mathvariant="normal">m</mtext><mtext mathvariant="normal">s</mtext></mfrac></mrow><annotation encoding="application/x-tex">5\text{ }\frac{\text{m}}{\text{s}}</annotation></semantics></math>.</p>
+<p>The distance is calculated by simple substitution:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><msub><mi>v</mi><mn>0</mn></msub><mo>⋅</mo><mi>t</mi><mo>+</mo><mfrac><mi>a</mi><mn>2</mn></mfrac><mo>⋅</mo><msup><mi>t</mi><mn>2</mn></msup><mo>=</mo><mn>3</mn><mo>⋅</mo><mn>4</mn><mo>+</mo><mfrac><mn>0.5</mn><mn>2</mn></mfrac><mo>⋅</mo><msup><mn>4</mn><mn>2</mn></msup><mo>=</mo><mn>12</mn><mo>+</mo><mn>0.25</mn><mo>⋅</mo><mn>16</mn><mo>=</mo><mn>16</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+s = v_0 \cdot t + \frac {a} {2} \cdot t^2 = 3 \cdot 4 + \frac {0.5} {2} \cdot 4^2 = 12 + 0.25 \cdot 16 = 16\text{ m}
+</annotation></semantics></math></p>
+</main>
+</body>
+</html>

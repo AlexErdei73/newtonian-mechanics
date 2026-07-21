@@ -25,6 +25,7 @@ $$
 [Vektor-összeadás interaktív szimuláció (GeoGebra)](https://www.geogebra.org/m/tpa5qfuq)
 
 Az összegzés során a következő speciális esetekkel találkozhatunk:
+
 * **Azonos irányú vektorok:** Ha a két összetevő vektor egy egyenesbe esik és azonos irányba mutat, az eredő vektor hossza a két összetevő hosszának tiszta összege.
 * **Ellentétes irányú vektorok:** Ha a két vektor egy egyenesbe esik, de ellentétes irányúak, az eredő vektor hossza a két hossz különbsége (a nagyobb értékből kivonjuk a kisebbet), iránya pedig megegyezik a nagyobb összetevő irányával.
 * **Merőleges vektorok:** Ha a két vektor merőleges egymásra, az eredő vektor hosszát a derékszögű háromszögre érvényes **Pitagorasz-tétel** segítségével számíthatjuk ki.

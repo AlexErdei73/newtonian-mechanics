@@ -9,7 +9,6 @@ Quantities that are completely described by their magnitude (their numerical val
 In later chapters, we will frequently encounter quantities that are determined by their direction in addition to their magnitude. These are called **vector quantities**. In printed texts, they are denoted by bold letters, and in handwriting, they are usually represented by a small arrow placed above the symbol. For example, $\vec{a}$ denotes vector $a$, whose length (absolute value) is:
 
 $$
-
 |\vec{a}| = a
 $$
 
@@ -26,6 +25,7 @@ $$
 [Interactive Vector Addition Simulation (GeoGebra)](https://www.geogebra.org/m/tpa5qfuq)
 
 During addition, we may encounter the following special cases:
+
 * **Vectors in the same direction:** If the two component vectors lie along the same line and point in the same direction, the magnitude of the resultant vector is the pure sum of the lengths of the two components.
 * **Vectors in opposite directions:** If the two vectors lie along the same line but point in opposite directions, the magnitude of the resultant vector is the difference between the two lengths (subtracting the smaller value from the larger one), and its direction matches the direction of the larger component vector.
 * **Perpendicular vectors:** If the two vectors are perpendicular to each other, the magnitude of the resultant vector can be calculated using the **Pythagorean theorem**, which applies to right-angled triangles.
@@ -95,7 +95,6 @@ $$
 $$
 
 $$
-
 |\vec{0}| = 0
 $$
 

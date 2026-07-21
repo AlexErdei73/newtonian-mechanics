@@ -30,7 +30,7 @@ In addition to the elastic force and damping, the periodic driving force is adde
 
 
 $$
-F_{x,e} = -Dx - \beta v_x + F_0 \cos(\omega t)
+F_{x,net} = -Dx - \beta v_x + F_0 \cos(\omega t)
 $$
 
 
@@ -38,7 +38,7 @@ Based on Newton's second law, we can set the net force equal to the product of m
 
 
 $$
-F_{x,e} = ma_x
+F_{x,net} = ma_x
 $$
 
 
@@ -217,6 +217,7 @@ $$
 Let us recall how we introduced simple harmonic motion at the beginning of our studies! We imagined the oscillation as the shadow, the projection, of a body performing uniform circular motion (a moving point on the so-called reference circle). The angular velocity of this circular motion is precisely the angular frequency $\omega$.
 
 We apply exactly this logic here too! During the forced oscillation, the displacement, the velocity, and the acceleration also vary periodically. We can imagine these quantities as vectors rotating with an angular velocity $\omega$, whose projection taken onto the horizontal axis gives the instantaneous values:
+
 * The **displacement** stands at a certain angle.
 * The **velocity** leads exactly by $90^\circ$ compared to the displacement (since cosine became sine).
 * The **acceleration** is turned by $180^\circ$ compared to the displacement (since cosine became minus cosine).
@@ -229,7 +230,7 @@ Since all the terms appearing in the equation (the restoring effect, the damping
 
 Thus, instead of complicated trigonometric identities, we can obtain the relationship between the amplitudes with a simple Pythagorean theorem!
 
-![A mozgásegyenlet forgóvektoros ábrázolása](Kepek/rezonanciafazorabra.svg)
+![Phasor representation of the equation of motion](Kepek/rezonanciafazorabra.svg)
 
 ### Examples
 1. First, let us examine the ideal case without damping. Let us choose the amplitude of the driving force such that $f_0 = 1$ holds true.

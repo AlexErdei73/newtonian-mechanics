@@ -33,7 +33,7 @@ The magnitude of the sliding friction force depends solely on the material quali
 > **The magnitude of the sliding friction force is directly proportional to the force pressing the surfaces together perpendicularly. The proportionality factor is the coefficient of friction ($\mu$), which is a dimensionless number characteristic of the material quality of the surfaces (its value usually falls between $0$ and $1$). The friction force opposes the relative motion of the surfaces and always acts parallel to the surface.**
 
 $$
-F_s = \mu \cdot N
+F_k = \mu \cdot N
 $$
 
 ### Example
@@ -56,7 +56,7 @@ $$
 The magnitude of the sliding friction force:
 
 $$
-F_s = \mu \cdot N = 0.5 \cdot 0.4905 = 0.24525\text{ N}
+F_k = \mu \cdot N = 0.5 \cdot 0.4905 = 0.24525\text{ N}
 $$
 
 According to Newton's second law ($F_{\text{net}} = m \cdot |a|$), since only the friction force acts on it on the horizontal plane:
@@ -66,7 +66,6 @@ $$
 $$
 
 $$
-
 |a| = \frac {0.24525} {0.05} = 4.905\text{ }\frac {\text{m}} {\text{s}^2}
 $$
 
@@ -103,23 +102,23 @@ The static friction force cannot increase beyond a maximum threshold limit value
 A relationship similar to sliding friction applies to the maximum static friction force:
 
 $$
-F_{t,\text{max}} = \mu_t \cdot N
+F_{s,\text{max}} = \mu_s \cdot N
 $$
 
 That is, it is generally true for the static force that:
 
 $$
-F_t \leqslant \mu_t \cdot N
+F_s \leqslant \mu_s \cdot N
 $$
 
 We have seen from experiments that for a given set of surfaces and force $N$, a larger force is required to initiate slipping than to maintain motion. In other words, the coefficient of static friction is greater than (or equal to) the coefficient of sliding friction:
 
 $$
-\mu \leqslant \mu_t
+\mu \leqslant \mu_s
 $$
 
 ### Example
-An object with a mass of $0.500\text{ kg}$ is placed on horizontal ground, and we attempt to push it with a horizontal force of magnitude $3.00\text{ N}$. The coefficient of static friction between the surfaces is $\mu_t = 0.7$, and the coefficient of sliding friction is $\mu = 0.5$. What is the friction force acting on the object and the acceleration of the object? Let's calculate the same quantities if the horizontal pushing force is increased to $4.00\text{ N}$.
+An object with a mass of $0.500\text{ kg}$ is placed on horizontal ground, and we attempt to push it with a horizontal force of magnitude $3.00\text{ N}$. The coefficient of static friction between the surfaces is $\mu_s = 0.7$, and the coefficient of sliding friction is $\mu = 0.5$. What is the friction force acting on the object and the acceleration of the object? Let's calculate the same quantities if the horizontal pushing force is increased to $4.00\text{ N}$.
 
 The gravitational force and the normal constraint force on the horizontal ground are:
 
@@ -134,7 +133,7 @@ $$
 Let's calculate the maximum possible value of the static friction force:
 
 $$
-F_{t,\text{max}} = \mu_t \cdot N = 0.7 \cdot 4.905 \approx 3.434\text{ N}
+F_{s,\text{max}} = \mu_s \cdot N = 0.7 \cdot 4.905 \approx 3.434\text{ N}
 $$
 
 Since the maximum static force ($3.434\text{ N}$) is greater than the $3.00\text{ N}$ pushing force we applied, static friction can fully balance the external influence. Thus, the net force acting on the object is zero, the acceleration is $0\text{ }\frac{\text{m}}{\text{s}^2}$, and the object remains at rest. The magnitude of the occurring static friction force in this phase is exactly $3\text{ N}$, and its direction is opposite to the pushing force.
@@ -142,13 +141,13 @@ Since the maximum static force ($3.434\text{ N}$) is greater than the $3.00\text
 If we increase the pushing force to $4.00\text{ N}$, this value already exceeds the maximum limit of the static force ($3.434\text{ N}$). The object then slips and sets into motion, so from this point on, we must calculate using the sliding friction force:
 
 $$
-F_s = \mu \cdot N = 0.5 \cdot 4.905 \approx 2.453\text{ N}
+F_k = \mu \cdot N = 0.5 \cdot 4.905 \approx 2.453\text{ N}
 $$
 
 The magnitude of the horizontal net force ensuring motion is:
 
 $$
-F_{\text{net}} = F - F_s = 4 - 2.453 = 1.547\text{ N}
+F_{\text{net}} = F - F_k = 4 - 2.453 = 1.547\text{ N}
 $$
 
 From Newton's second law ($F_{\text{net}} = m \cdot a$), the acceleration of the moving object is:
@@ -168,7 +167,7 @@ After slipping, the object moves with a constant acceleration of approximately $
 ## Practice Problems
 
 1. A ice hockey player hits a puck with a mass of $0.170\text{ kg}$ lying on horizontal ice, giving it an initial velocity of $15.0\text{ }\frac{\text{m}}{\text{s}}$. The coefficient of sliding friction between the puck and the ice surface is $\mu = 0.05$. What is the sliding friction force acting on the puck, and how far does the puck slide before coming to a complete stop?
-2. A block with a mass of $2.00\text{ kg}$ is placed on a horizontal tabletop and pulled horizontally using a spring balance. We observe that the object sets into motion exactly at the moment the display of the spring balance reaches a value of $8.00\text{ N}$. What is the coefficient of static friction ($\mu_t$) between the wood and the tabletop surface?
+2. A block with a mass of $2.00\text{ kg}$ is placed on a horizontal tabletop and pulled horizontally using a spring balance. We observe that the object sets into motion exactly at the moment the display of the spring balance reaches a value of $8.00\text{ N}$. What is the coefficient of static friction ($\mu_s$) between the wood and the tabletop surface?
 3. We want to push a heavy wardrobe with a mass of $50.0\text{ kg}$ across a horizontal parquet floor. The coefficient of static friction between the surfaces is $0.6$, and the coefficient of sliding friction is $0.4$. What horizontal force must we apply to the wardrobe to just get it moving? Once the wardrobe is already in motion, what constant force is required to keep pushing it at a uniform, constant speed?
 4. A car performs an emergency braking maneuver on a horizontal asphalt road, causing the wheels to lock completely (slide). The coefficient of sliding friction between the rubber and the dry asphalt is $0.7$. What is the car's deceleration during the slide? Does the magnitude of the deceleration depend on the mass of the vehicle?
 5. A crate with a mass of $10.0\text{ kg}$ is pulled along the floor with a horizontal force of $60\text{ N}$. The coefficient of sliding friction between the crate and the floor is $0.3$. Calculate the sliding friction force acting on the crate, as well as the acceleration of the crate's motion!

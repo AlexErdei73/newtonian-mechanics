@@ -240,6 +240,7 @@ Ennek az ingának a fél periódusa (tehát amíg egyik szélső helyzetből a v
 [A matematikai inga](https://alexerdei73.github.io/physics-engine/project/#be74d75b-d4ef-49e0-ac4e-98ff80ff6a54)
 
 A szimulációban a test az alsó, egyensúlyi helyzetből indul egy lökéssel. Az inga hossza $3\text{ m}$, a nehézségi gyorsulás $9,80\ \text{m/s}^2$.
+
 * Mérjük meg az első 10 lengés időtartamát! Mivel az inga nem a szélső helyzetből indul, de nekünk a szélső helyzetben célszerű megállítani a szimulátort, a periódusidő kiszámításához az időt, amit a szimulátor mutat 10,25-tel kell elosszuk, hisz 10 és egy negyed lengést mérünk.
 * Számítsuk is ki a lengésidőt az adatokból. Mekkora hibára számíthatunk? Melyik a legfontosabb hibaforrás és mekkora a tényleges hiba?
 

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://w3.org" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>The Physical Pendulum</title>
+    <link rel="stylesheet" href="../github-markdown.css" />
+      <link rel="icon" type="image/x-icon" href="../favicon.ico"><script type="module" src="https://cdn.jsdelivr.net/npm/@justinribeiro/lite-youtube@1/lite-youtube.min.js" defer></script>
+  </head>
+<body><header class="global-header"><nav class="global-navbar"><a href="../index.html" class="navbar-brand navbar-brand-desktop">Newtonian Mechanics</a><div class="nav-group-center"><a href="MATEMATIKAIINGA.html" class="nav-btn" aria-label="Previous lesson">◀<span class="btn-text"> Prev</span></a><a href="../NEWTON_MECHANIKAJA.html" class="nav-btn" aria-label="Table of Contents">☰<span class="btn-text"> Contents</span></a><a href="FORGASIREZGESEK.html" class="nav-btn" aria-label="Next lesson"><span class="btn-text">Next </span>▶</a></div><input type="checkbox" id="menu-toggle" class="menu-checkbox" /><label for="menu-toggle" class="hamburger-icon" onclick="setTimeout(() => { let nl = document.querySelector('.nav-links'); if(document.getElementById('menu-toggle').checked && nl) { nl.scrollTo({top: nl.scrollHeight, behavior: 'smooth'}); } }, 150);"><span></span><span></span><span></span></label><div class="nav-links"><a href="../index.html" class="navbar-brand navbar-brand-mobile">Newtonian Mechanics</a><div class="nav-group-left"><a href="../index.html">About</a><a href="../VEGEREDMENYEK.html#the-physical-pendulum" style="font-weight: 600;">Solutions</a><a href="../IRODALOMJEGYZEK.html">Bibliography</a></div><div class="nav-group-right"><div class="dropdown"><a href="#" class="dropdown-trigger" onclick="return false;">Topics ▼</a><ul class="dropdown-menu"><li><a href="MERESEK.html">Kinematics</a></li><li><a href="NEWTONTORVENYEI.html">Dynamics</a></li><li><a href="MUNKA.html">Energy</a></li><li><a href="IMPULZUS.html">Momentum & Collisions</a></li><li><a href="RUGALMATLANUTKOZES.html">Systems of Particles</a></li><li><a href="EGYENLETESKORMOZGAS.html">Circular Motion</a></li><li><a href="KEPLERTORVENYEI.html">Gravitation</a></li><li><a href="MEREVTEST.html">Rotational Dynamics</a></li><li><a href="HARMONIKUSREZGOMOZGAS.html">Oscillations & Waves</a></li><li><a href="NYOMAS.html">Fluid Mechanics</a></li></ul></div></div></div></nav></header>
+<main class="markdown-body">
+<h1 id="the-physical-pendulum">The Physical Pendulum</h1>
+<h2 id="experiments">Experiments</h2>
+<p><lite-youtube videoid="Jac3A-ecs4c"></lite-youtube></p>
+<p><lite-youtube videoid="-6jDd0V5feI"></lite-youtube></p>
+<h2 id="the-equation-of-motion">The Equation of Motion</h2>
+<p>In the case of a physical pendulum, the equation of motion is based on the fundamental equation of rotational motion, which is our starting point:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mi>α</mi><mo>=</mo><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">net</mtext></mrow><mtext mathvariant="normal">k</mtext></msubsup></mrow><annotation encoding="application/x-tex">
+I \alpha = M_{z,\text{net}}^{\text{k}}
+</annotation></semantics></math></p>
+<p><em>(Here, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> is the moment of inertia relative to the axis of rotation, and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math> is the angular acceleration.)</em></p>
+<p>Only the gravitational force—which can be imagined as concentrated at the center of mass or center of gravity—exerts a torque, because the line of action of the force arising at the suspension passes through the pivot, meaning its lever arm is zero. Let the center of gravity be at a distance <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math> from the suspension! In this case, the torque is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>M</mi><mrow><mi>z</mi><mo>,</mo><mtext mathvariant="normal">net</mtext></mrow><mtext mathvariant="normal">ext</mtext></msubsup><mo>=</mo><mi>−</mi><mi>m</mi><mi>g</mi><mi>s</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+M_{z,\text{net}}^{\text{ext}} = -mgs \sin \phi
+</annotation></semantics></math></p>
+<p>Here, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> is the angle of rotation enclosed by the vertical line and the segment connecting the center of gravity to the axis of rotation. Provided that this angle is positive, the torque has a negative sign, meaning it acts to decrease the displacement angle. Substituting this gives the following equation:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mi>α</mi><mo>=</mo><mi>−</mi><mi>m</mi><mi>g</mi><mi>s</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+I \alpha = -mgs \sin\phi
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mi>−</mi><mfrac><mrow><mi>m</mi><mi>g</mi><mi>s</mi></mrow><mi>I</mi></mfrac><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+\alpha = -\frac {mgs} {I} \sin\phi
+</annotation></semantics></math></p>
+<p>In the small-angle approximation (in practice up to a displacement of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>5</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>10</mn><mo>∘</mo></msup></mrow><annotation encoding="application/x-tex">5^\circ - 10^\circ</annotation></semantics></math> at most), <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>ϕ</mi><mo>≈</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">\sin\phi \approx \phi</annotation></semantics></math>, therefore the equation becomes:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>α</mi><mo>=</mo><mi>−</mi><mfrac><mrow><mi>m</mi><mi>g</mi><mi>s</mi></mrow><mi>I</mi></mfrac><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">
+\alpha = -\frac {mgs} {I} \phi
+</annotation></semantics></math></p>
+<p>The solution to this, as we know, is simple harmonic motion.</p>
+<h2 id="the-period">The Period</h2>
+<p>From the form of the equation, we can read the square of the angular frequency:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>ω</mi><mn>2</mn></msup><mo>=</mo><mfrac><mrow><mi>m</mi><mi>g</mi><mi>s</mi></mrow><mi>I</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\omega^2 = \frac {mgs} {I}
+</annotation></semantics></math></p>
+<p>And the period is as follows:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow><msup><mi>T</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><mi>g</mi><mi>s</mi></mrow><mi>I</mi></mfrac></mrow><annotation encoding="application/x-tex">
+\frac {4\pi^2} {T^2} = \frac {mgs} {I}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>T</mi><mn>2</mn></msup><mrow><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac><mi>I</mi><mrow><mi>m</mi><mi>g</mi><mi>s</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+\frac {T^2} {4\pi^2} = \frac {I} {mgs}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><msup><mi>π</mi><mn>2</mn></msup><mfrac><mi>I</mi><mrow><mi>m</mi><mi>g</mi><mi>s</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+T^2 = 4\pi^2 \frac {I} {mgs}
+</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>I</mi><mrow><mi>m</mi><mi>g</mi><mi>s</mi></mrow></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt {\frac {I} {mgs}}
+</annotation></semantics></math></p>
+<h3 id="examples">Examples</h3>
+<ol type="1">
+<li>In the case of a simple pendulum, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mi>l</mi></mrow><annotation encoding="application/x-tex">s=l</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">I = ml^2</annotation></semantics></math>. Let us calculate the period!</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>I</mi><mrow><mi>m</mi><mi>g</mi><mi>s</mi></mrow></mfrac></msqrt><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mrow><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><mrow><mi>m</mi><mi>g</mi><mi>l</mi></mrow></mfrac></msqrt><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>l</mi><mi>g</mi></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt {\frac {I} {mgs}} = 2\pi \sqrt {\frac {ml^2} {mgl}} = 2\pi \sqrt {\frac l g}
+</annotation></semantics></math></p>
+<p>Naturally, we obtained the period of a simple pendulum.</p>
+<ol start="2" type="1">
+<li>What is the period of a homogeneous rod of length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mn>0.6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">l = 0.6\text{ m}</annotation></semantics></math> as a physical pendulum, as seen in the experiment?</li>
+</ol>
+<p>Here, the moment of inertia is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">I = \frac 1 3 ml^2</annotation></semantics></math> and <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>=</mo><mfrac><mi>l</mi><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">s = \frac l 2</annotation></semantics></math>, so substituting these gives the following formula:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mi>I</mi><mrow><mi>m</mi><mi>g</mi><mi>s</mi></mrow></mfrac></msqrt><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><mrow><mi>m</mi><mi>g</mi><mfrac><mi>l</mi><mn>2</mn></mfrac></mrow></mfrac></msqrt><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mrow><mn>2</mn><mi>l</mi></mrow><mrow><mn>3</mn><mi>g</mi></mrow></mfrac></msqrt></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt {\frac {I} {mgs}} =  2\pi \sqrt {\frac {\frac 1 3 ml^2} {mg\frac l 2}} = 2\pi \sqrt {\frac {2l} {3g}}
+</annotation></semantics></math></p>
+<p>Substituting the length of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0.6\text{ m}</annotation></semantics></math> here, we get:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mrow><mn>2</mn><mi>l</mi></mrow><mrow><mn>3</mn><mi>g</mi></mrow></mfrac></msqrt><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>3.1415</mn><msqrt><mfrac><mrow><mn>2</mn><mo>⋅</mo><mn>0.6</mn></mrow><mrow><mn>3</mn><mo>⋅</mo><mn>9.81</mn></mrow></mfrac></msqrt><mo>=</mo><mn>1.269</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt {\frac {2l} {3g}} = 2 \cdot 3.1415 \sqrt {\frac {2 \cdot 0.6} {3 \cdot 9.81}} = 1.269\text{ s}
+</annotation></semantics></math></p>
+<p>From the video demonstrating the experiment, we can determine the period across a few oscillations. The time for 7 oscillations is approximately <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9.02</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">9.02\text{ s}</annotation></semantics></math>. From this, <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> is:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac><mn>9.02</mn><mn>7</mn></mfrac><mo>≈</mo><mn>1.29</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+T = \frac {9.02} 7 \approx 1.29\text{ s}
+</annotation></semantics></math></p>
+<p>This is an error of about 1.6%. An error below 2% is considered good for such an observation, since the reaction time is about <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.3</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">0.3\text{ s}</annotation></semantics></math>. This represents an error of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.04</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">0.04\text{ s}</annotation></semantics></math> for a single oscillation. This is roughly a 3% relative error.</p>
+<h2 id="the-reduced-length">The Reduced Length</h2>
+<p>Comparing the period of a simple pendulum and a physical pendulum, we can establish that for every physical pendulum, a simple pendulum can be found whose period matches the period of the physical pendulum. The length of this simple pendulum is called the reduced length of the physical pendulum.</p>
+<blockquote>
+<p><strong>Reduced length:</strong> The length of a simple pendulum whose period is equal to the period of the physical pendulum.</p>
+</blockquote>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>l</mi><mtext mathvariant="normal">r</mtext></msub><mo>=</mo><mfrac><mi>I</mi><mrow><mi>m</mi><mi>s</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">
+l_{\text{r}} = \frac I {ms}
+</annotation></semantics></math></p>
+<p>By remembering this, we can always calculate using the formula for a simple pendulum. In the case of a physical pendulum, we must calculate the period using the reduced length of the pendulum.</p>
+<h3 id="examples-1">Examples</h3>
+<ol type="1">
+<li>Show that the reduced length of a simple pendulum is none other than its own length!</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>l</mi><mtext mathvariant="normal">r</mtext></msub><mo>=</mo><mfrac><mi>I</mi><mrow><mi>m</mi><mi>s</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><mrow><mi>m</mi><mi>l</mi></mrow></mfrac><mo>=</mo><mi>l</mi></mrow><annotation encoding="application/x-tex">
+l_{\text{r}} = \frac I {ms} = \frac {ml^2} {ml} = l
+</annotation></semantics></math></p>
+<ol start="2" type="1">
+<li>Calculate the reduced length of a homogeneous rod of length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math> as a physical pendulum, if the axis of rotation is the endpoint of the rod!</li>
+</ol>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>l</mi><mtext mathvariant="normal">r</mtext></msub><mo>=</mo><mfrac><mi>I</mi><mrow><mi>m</mi><mi>s</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><mrow><mi>m</mi><mfrac><mi>l</mi><mn>2</mn></mfrac></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>l</mi></mrow><annotation encoding="application/x-tex">
+l_{\text{r}} = \frac I {ms} = \frac {\frac 1 3 ml^2} {m \frac l 2} = \frac 2 3 l
+</annotation></semantics></math></p>
+<ol start="3" type="1">
+<li>Calculate the reduced length and the period if, in the case of the rod from the previous example, the axis of rotation is at a distance of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>l</mi><mn>4</mn></mfrac><annotation encoding="application/x-tex">\frac l 4</annotation></semantics></math> from the center of mass! The length of the rod is <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0.6</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">0.6\text{ m}</annotation></semantics></math>.</li>
+</ol>
+<p>The determination of the moment of inertia can be done based on the parallel axis theorem (Steiner’s theorem):</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>0</mn></msub><mo>=</mo><msub><mi>I</mi><mtext mathvariant="normal">COM</mtext></msub><mo>+</mo><mi>m</mi><msup><mi>d</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+I_0 = I_{\text{COM}} + md^2
+</annotation></semantics></math></p>
+<p>From here, based on the previous example, we determine <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mtext mathvariant="normal">COM</mtext></msub><annotation encoding="application/x-tex">I_{\text{COM}}</annotation></semantics></math>!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mtext mathvariant="normal">COM</mtext></msub><mo>=</mo><msub><mi>I</mi><mn>0</mn></msub><mo>−</mo><mi>m</mi><msup><mi>d</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup><mo>−</mo><mi>m</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>l</mi><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+I_{\text{COM}} = I_0 - md^2 = \frac 1 3 ml^2 - m\left(\frac l 2\right)^2 = \frac 1 {12} ml^2
+</annotation></semantics></math></p>
+<p>Now we determine the new <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>!</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><msub><mi>I</mi><mtext mathvariant="normal">COM</mtext></msub><mo>+</mo><mi>m</mi><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mfrac><mn>1</mn><mn>12</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup><mo>+</mo><mi>m</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>l</mi><mn>4</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mfrac><mn>7</mn><mn>48</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">
+I = I_{\text{COM}} + ms^2 = \frac 1 {12} ml^2 + m\left(\frac l 4\right)^2 = \frac 7 {48} ml^2
+</annotation></semantics></math></p>
+<p>Now the reduced length can already be determined:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>l</mi><mtext mathvariant="normal">r</mtext></msub><mo>=</mo><mfrac><mi>I</mi><mrow><mi>m</mi><mi>s</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mfrac><mn>7</mn><mn>48</mn></mfrac><mi>m</mi><msup><mi>l</mi><mn>2</mn></msup></mrow><mrow><mi>m</mi><mfrac><mi>l</mi><mn>4</mn></mfrac></mrow></mfrac><mo>=</mo><mfrac><mn>7</mn><mn>12</mn></mfrac><mi>l</mi><mo>=</mo><mfrac><mrow><mn>7</mn><mo>⋅</mo><mn>0.6</mn></mrow><mn>12</mn></mfrac><mo>=</mo><mn>0.35</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> m</mtext></mrow></mrow><annotation encoding="application/x-tex">
+l_{\text{r}} = \frac {I} {ms} = \frac {\frac 7 {48} ml^2} {m\frac l 4} = \frac 7 {12} l = \frac{7 \cdot 0.6}{12} = 0.35\text{ m}
+</annotation></semantics></math></p>
+<p>The period:</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><msub><mi>l</mi><mtext mathvariant="normal">r</mtext></msub><mi>g</mi></mfrac></msqrt><mo>=</mo><mn>2</mn><mi>π</mi><msqrt><mfrac><mn>0.35</mn><mn>9.81</mn></mfrac></msqrt><mo>=</mo><mn>1.187</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> s</mtext></mrow></mrow><annotation encoding="application/x-tex">
+T = 2\pi \sqrt {\frac {l_{\text{r}}} g} = 2\pi \sqrt {\frac {0.35} {9.81}} = 1.187\text{ s}
+</annotation></semantics></math></p>
+<h2 id="problems">Problems</h2>
+<p><strong>Problem 1: The Suspended Disk</strong> A thin disk of mass <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> and radius <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> with a homogeneous mass distribution is suspended by one point of its rim so that it can perform oscillations in its own plane.</p>
+<ul>
+<li>Determine the period of the pendulum for small displacements!</li>
+<li>What is the reduced length of the disk?</li>
+</ul>
+<p><em>Hint:</em> The moment of inertia of the disk relative to its own center of mass is: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mtext mathvariant="normal">COM</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">I_{\text{COM}} = \frac{1}{2}mR^2</annotation></semantics></math>, apply the parallel axis theorem!</p>
+<p><strong>Problem 2: The Minimal Period</strong> A thin, homogeneous rod of length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math> is set into oscillation as a physical pendulum around a horizontal axis passing through it. The suspension point is located at a distance <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> from the center of mass of the rod.</p>
+<ul>
+<li>Write down the period as a function of the distance <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>!</li>
+<li>Verify by calculation what distance <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> will make the period of the rod minimal!</li>
+</ul>
+<p><strong>Problem 3: The Model of a Pendulum Clock</strong> Let us model the pendulum of a pendulum clock as follows: the shaft of the pendulum is a rigid rod of length <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>l</mi><annotation encoding="application/x-tex">l</annotation></semantics></math> and negligible mass, at the end of which a solid sphere of mass <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> and radius <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math> is fixed.</p>
+<ul>
+<li>Determine the period of this physical pendulum!</li>
+<li>In what ratio does the period of this pendulum stand to that of a simple pendulum whose length matches the distance measured from the suspension to the center of the sphere (<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>+</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">l+R</annotation></semantics></math>)?</li>
+</ul>
+<p><em>Hint:</em> The moment of inertia of a solid sphere relative to its own center of mass is: <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mtext mathvariant="normal">COM</mtext></msub><mo>=</mo><mfrac><mn>2</mn><mn>5</mn></mfrac><mi>m</mi><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">I_{\text{COM}} = \frac{2}{5}mR^2</annotation></semantics></math>.</p>
+</main>
+</body>
+</html>
