@@ -33,6 +33,7 @@ $$
 
 
 Itt $x$ méterben (m), $t$ pedig másodpercben (s) értendő! Keresésük meg a mozgás legfontosabb paramétereit!
+
 * Mennyi az amplitúdó?  
 * Mennyi a körfrekvencia? 
 * Írjuk fel a $v_x$ sebességet leíró összefüggést! 

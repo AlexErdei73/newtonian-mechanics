@@ -103,5 +103,6 @@ Határozd meg a csapágyra ható támaszerő vízszintes és függőleges kompon
 **2. Feladat (Forgó gyűrű)**
 
 Egy $R$ sugarú, vékony drótból készült körgyűrű a függőleges átmérője körül állandó $\omega$ szögsebességgel forog. Egy $m$ tömegű kis gyöngyszem súrlódásmentesen csúszhat a gyűrűn.
+
 * a) Milyen $\omega$ szögsebesség esetén lesz a gyöngyszem stabil egyensúlyi helyzete a gyűrű legalsó pontján kívül?
 * b) Határozd meg ezt az egyensúlyi helyzetet (a függőlegessel bezárt $\varphi$ szöget) a szögsebesség függvényében!

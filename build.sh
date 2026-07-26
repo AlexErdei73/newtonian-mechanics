@@ -12,6 +12,7 @@ cat << 'EOF' > pandoc_clean_template.html
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="description" content="Classical mechanics lectures with high school level math. Best YouTube videos and interactive simulations are included.">
   <title>$title$</title>
   $for(css)$
   <link rel="stylesheet" href="$css$" />

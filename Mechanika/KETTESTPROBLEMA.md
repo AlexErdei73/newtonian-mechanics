@@ -116,6 +116,7 @@ A gyorsulásokból kapott mai érték az egy kicsit több, egész pontosan 3602 
 ## Egyéb, finomabb korrekciók
 
 Létezik még 3 másik, jóval kisebb korrekció is, melyek szükségesek, hogy pontos értéket kapjunk. Ezek a következők fontossági sorrendben:
+
 1. A Nap hatása – A Nap–Föld rendszer nem a Naptól függetlenül létezik, hanem a Nap gravitációs hatását is figyelembe kellene venni. Ez lehetséges, de Newtonnak is „fejfájást” okozott saját bevallása szerint. Ezt jóval később oldották csak meg közelítő módszerekkel (perturbációszámítás). Pontosan ez a probléma (az úgynevezett háromtest-probléma) analitikusan nem oldható meg.
 2. A Hold pályája nem kör, hanem a körtől kissé eltérő ellipszis. Ez is okoz némi korrekciót.
 3. A Föld lapultsága (gömbtől kissé eltérő alakja) szintén befolyásolja a rendszert.

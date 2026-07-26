@@ -69,6 +69,7 @@ A frekvencia egysége $\frac {1} {s}$, ezt hertznek is nevezik, jele: Hz. A kör
 
 ## Példa
 Egy rugóra akasztott test harmonikus rezgőmozgást végez. A mozgás amplitúdója $0,2\text{ m}$. A frekvencia $2\text{ Hz}$.
+
 - Mekkora a periódusidő?
 - Mekkora a körfrekvencia?
 - Írjuk fel a kitérést az idő függvényében megadó egyenletet, ha $t=0$ esetén a kitérés maximális!

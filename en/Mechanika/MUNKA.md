@@ -151,7 +151,7 @@ $$
 The length of the acceleration phase based on the quadratic distance law:
 
 $$
-s = \frac{a}{2} \cdot t^2 = \frac{2.50}{2} \cdot 8^2 = 0.125 \cdot 64 = 80\text{ m}
+s = \frac{a}{2} \cdot t^2 = \frac{2.50}{2} \cdot 8^2 = 1.25 \cdot 64 = 80\text{ m}
 $$
 
 The magnitude of the net force required for acceleration:

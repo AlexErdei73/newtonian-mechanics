@@ -2,7 +2,7 @@
 
 ## Előszó
 
-![Kép a szerzőről](Mechanika/Kepek/alex-dev.jpeg)
+![Kép a szerzőről](Mechanika/Kepek/alex-dev.webp)
 
 Kedves Olvasó!
 

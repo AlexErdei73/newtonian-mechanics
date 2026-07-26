@@ -62,6 +62,7 @@ The unit of frequency is $\frac {1} {s}$, which is also called hertz, denoted by
 
 ## Example
 An object attached to a spring performs simple harmonic motion. The amplitude of the motion is $0.2\text{ m}$, and the frequency is $2\text{ Hz}$.
+
 - What is the period?
 - What is the angular frequency?
 - Write down the equation that gives the displacement as a function of time, if the displacement is at its maximum at $t=0$!

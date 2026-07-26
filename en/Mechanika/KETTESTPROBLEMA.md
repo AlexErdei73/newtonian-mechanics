@@ -116,6 +116,7 @@ The modern value obtained directly from the observed accelerations is slightly h
 ## Other, Finer Corrections
 
 Three other much smaller corrections are required to arrive at a perfectly precise value. Listed in order of importance, they are:
+
 1. The influence of the Sun – The Moon–Earth system does not exist in isolation from the Sun; the Sun's gravitational effect must also be considered. This is possible, but by Newton's own admission, it caused him a great "headache." This was resolved much later using approximation methods (perturbation theory). This specific configuration (known as the three-body problem) cannot be solved analytically.
 2. The Moon's orbit is not a circle, but an ellipse that deviates slightly from a circle. This also introduces a small correction.
 3. The Earth's oblateness (its slight deviation from a perfect sphere) similarly influences the system.

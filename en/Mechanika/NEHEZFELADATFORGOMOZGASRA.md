@@ -102,5 +102,6 @@ Determine the horizontal and vertical components of the supporting force acting 
 **Problem 2 (Rotating Ring)**
 
 A circular ring of radius $R$ made of thin wire rotates around its vertical diameter at a constant angular velocity $\omega$. A small bead of mass $m$ can slide without friction along the ring.
+
 * a) For what angular velocities $\omega$ will the stable equilibrium position of the bead be located somewhere other than the lowest point of the ring?
 * b) Determine this equilibrium position (the angle $\varphi$ enclosed with the vertical) as a function of the angular velocity!

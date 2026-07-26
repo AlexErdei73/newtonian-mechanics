@@ -103,6 +103,7 @@ If the object is allowed to fall freely without external constraints, its accele
 [Professor Walter Lewin's Demonstration of Weightlessness (MIT)](https://www.youtube.com/watch?v=Z07tTuE1mwk&t=27m30s)
 
 In the video, we can observe two highly instructive experiments back-to-back:
+
 1. In the first experiment, the professor holds a plastic bottle filled with water in his hand and jumps off the top of a table. While he is falling freely in the air, he pulls his hand out from under the bottle. The bottle floats freely in space above his hand, proving that it is completely weightless during the free fall phase.
 2. In the second experiment, a weight attached to an electronic scale is dropped. The graph recorded by the computer perfectly plots the phases of the process: the initial resting value drops to zero instantly at the beginning of the free fall. When the apparatus reaches a soft pillow, the weight suddenly spikes to several times its normal value due to deceleration (overload), and after the elastic rebound, a short weightless phase can be observed in the air once again.
 

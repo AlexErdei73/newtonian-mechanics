@@ -100,6 +100,7 @@ Ha a testet külső kényszer nélkül, szabadon engedjük esni, akkor a gyorsul
 [Walter Lewin professzor demonstrációja a súlytalanságra (MIT)](https://www.youtube.com/watch?v=Z07tTuE1mwk&t=27m30s)
 
 A videóban két nagyon tanulságos kísérletet láthatunk egymás után:
+
 1. Az első kísérletben a professzor egy vízzel teli műanyag palackot tart a kezében, majd leugrik az asztal tetejéről. Amíg szabadon esik a levegőben, a kezét elhúzza a palack alól. A palack a keze felett szabadon lebeg a térben, ami bizonyítja, hogy a szabadesés ideje alatt teljesen súlytalan.
 2. A második kísérletben egy elektronikus mérlegre erősített súlyt ejtenek le. A számítógép által rögzített grafikonon tökéletesen kirajzolódnak a folyamat szakaszai: a kezdeti nyugalmi érték a szabadesés kezdetén azonnal nullára esik vissza. Amikor a szerkezet eléri a puha párnát, a fékeződés miatt a súly hirtelen a normál érték többszörösére ugrik meg (túlterhelés), majd a rugalmas visszapattanás után a levegőben újra egy rövid súlytalan szakasz figyelhető meg.
 

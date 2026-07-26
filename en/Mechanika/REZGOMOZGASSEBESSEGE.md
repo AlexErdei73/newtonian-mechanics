@@ -27,6 +27,7 @@ x = 0.2 \cos (4\pi \cdot t)
 $$
 
 Here, $x$ is in metres (m) and $t$ is in seconds (s)! Let us find the most important parameters of the motion.
+
 * What is the amplitude?  
 * What is the angular frequency? 
 * Write down the expression describing the velocity $v_x$! 

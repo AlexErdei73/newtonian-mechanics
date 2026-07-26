@@ -2,7 +2,7 @@
 
 ## Preface
 
-![A photograph of the author](Mechanika/Kepek/alex-dev.jpeg)
+![A photograph of the author](Mechanika/Kepek/alex-dev.webp)
 
 Dear Reader,
 

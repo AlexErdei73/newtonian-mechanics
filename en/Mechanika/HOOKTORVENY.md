@@ -32,6 +32,7 @@ x = 0.2\cos(4\pi t)
 $$
 
 where $x$ is in metres (m) and $t$ is in seconds (s). Determine the following quantities:
+
 * Amplitude
 * Angular frequency
 * Acceleration as a function of time
@@ -143,6 +144,7 @@ $$
 
 ### Example
 A body with a mass of $100\text{ g}$ is suspended from a spring of negligible mass. The other end of the spring is fixed so that the body can oscillate vertically. The body is lifted above its equilibrium position to a height where the spring is unstretched and then released. The spring constant is $100\text{ N/m}$.
+
 * What is the amplitude of the resulting oscillation?
 * What is the angular frequency?
 * What is the period?

@@ -45,7 +45,7 @@ $$
 v = \frac{s}{t} = \frac{60\text{ km}}{1\text{ h}} = \frac{60\ 000\text{ m}}{3600\text{ s}} \approx 16.7\text{ }\frac{\text{m}}{\text{s}}
 $$
 
-*(Since the initial datum was given to two significant figures, we can retain three significant figures in the intermediate calculation, but we must pay attention to precision in the final practical answers.)*
+*(Since the initial data was given to two significant figures, we can retain three significant figures in the intermediate calculation, but we must pay attention to precision in the final practical answers.)*
 
 Let us find the distance traveled in $20\text{ s}$ (let this be the unknown $x$):
 

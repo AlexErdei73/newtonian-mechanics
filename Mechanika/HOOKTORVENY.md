@@ -39,6 +39,7 @@ $$
 
 
 Itt $x$ m-ben értendő, $t$ pedig s-ban. Határozzuk meg a következő mennyiségeket!
+
 * Amplitúdó
 * Körfrekvencia
 * Gyorsulás az idő függvényében
@@ -180,6 +181,7 @@ $$
 
 ### Példa
 Egy elhanyagolható tömegű rugóra $100$ g tömegű testet akasztottak. A rugó másik vége rögzített úgy, hogy a test függőlegesen rezeghet. A testet felemelik az egyensúlyi helyzettől akkora magasságba, hogy a rugó épp nyújtatlan legyen, majd elengedik. A rugóállandó $100$ N/m.
+
 * Mekkora a kialakuló rezgés amplitúdója?
 * Mekkora a körfrekvencia?
 * Mekkora a periódusidő?
