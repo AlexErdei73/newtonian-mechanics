@@ -99,7 +99,7 @@ $$
 $$
 
 
-A points körfrekvencia és periódusidő is kiszámítható:
+The exact angular frequency and period can also be calculated:
 
 
 $$
