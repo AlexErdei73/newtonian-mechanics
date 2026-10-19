@@ -11,10 +11,63 @@
   --fontStack-sansSerif: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --fgColor-accent: Highlight;
 }
+:root {
+  /*light */
+  color-scheme: light dark;
+  --fgColor-danger: #d1242f;
+  --bgColor-attention-muted: #fff8c5;
+  --bgColor-muted: #f6f8fa;
+  --bgColor-neutral-muted: #818b981f;
+  --borderColor-accent-emphasis: #0969da;
+  --borderColor-attention-emphasis: #9a6700;
+  --borderColor-danger-emphasis: #cf222e;
+  --borderColor-default: #d1d9e0;
+  --borderColor-done-emphasis: #8250df;
+  --borderColor-success-emphasis: #1a7f37;
+  --color-prettylights-syntax-brackethighlighter-angle: #59636e;
+  --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
+  --color-prettylights-syntax-carriage-return-bg: #cf222e;
+  --color-prettylights-syntax-carriage-return-text: #f6f8fa;
+  --color-prettylights-syntax-comment: #59636e;
+  --color-prettylights-syntax-constant: #0550ae;
+  --color-prettylights-syntax-constant-other-reference-link: #0a3069;
+  --color-prettylights-syntax-entity: #6639ba;
+  --color-prettylights-syntax-entity-tag: #0550ae;
+  --color-prettylights-syntax-invalid-illegal-text: var(--fgColor-danger);
+  --color-prettylights-syntax-keyword: #cf222e;
+  --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
+  --color-prettylights-syntax-markup-changed-text: #953800;
+  --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
+  --color-prettylights-syntax-markup-deleted-text: #82071e;
+  --color-prettylights-syntax-markup-heading: #0550ae;
+  --color-prettylights-syntax-markup-ignored-bg: #0550ae;
+  --color-prettylights-syntax-markup-ignored-text: #d1d9e0;
+  --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
+  --color-prettylights-syntax-markup-inserted-text: #116329;
+  --color-prettylights-syntax-markup-list: #3b2300;
+  --color-prettylights-syntax-meta-diff-range: #8250df;
+  --color-prettylights-syntax-string: #0a3069;
+  --color-prettylights-syntax-string-regexp: #116329;
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #818b98;
+  --color-prettylights-syntax-variable: #953800;
+  --fgColor-accent: #0969da;
+  --fgColor-attention: #9a6700;
+  --fgColor-done: #8250df;
+  --fgColor-muted: #59636e;
+  --fgColor-success: #1a7f37;
+  --bgColor-default: #ffffff;
+  --borderColor-muted: #d1d9e0b3;
+  --color-prettylights-syntax-invalid-illegal-bg: var(--bgColor-danger-muted);
+  --color-prettylights-syntax-markup-bold: #1f2328;
+  --color-prettylights-syntax-markup-italic: #1f2328;
+  --color-prettylights-syntax-storage-modifier-import: #1f2328;
+  --fgColor-default: #1f2328;
+  --focus-outlineColor: var(--borderColor-accent-emphasis);
+  --borderColor-neutral-muted: var(--borderColor-muted);
+}
 @media (prefers-color-scheme: dark) {
-  .markdown-body, [data-theme="dark"] {
+  :root {
     /*dark */
-    color-scheme: dark;
     --fgColor-accent: #4493f8;
     --bgColor-attention-muted: #bb800926;
     --bgColor-default: #0d1117;
@@ -67,62 +120,6 @@
     --borderColor-neutral-muted: var(--borderColor-muted);
   }
 }
-@media (prefers-color-scheme: light) {
-  .markdown-body, [data-theme="light"] {
-    /*light */
-    color-scheme: light;
-    --fgColor-danger: #d1242f;
-    --bgColor-attention-muted: #fff8c5;
-    --bgColor-muted: #f6f8fa;
-    --bgColor-neutral-muted: #818b981f;
-    --borderColor-accent-emphasis: #0969da;
-    --borderColor-attention-emphasis: #9a6700;
-    --borderColor-danger-emphasis: #cf222e;
-    --borderColor-default: #d1d9e0;
-    --borderColor-done-emphasis: #8250df;
-    --borderColor-success-emphasis: #1a7f37;
-    --color-prettylights-syntax-brackethighlighter-angle: #59636e;
-    --color-prettylights-syntax-brackethighlighter-unmatched: #82071e;
-    --color-prettylights-syntax-carriage-return-bg: #cf222e;
-    --color-prettylights-syntax-carriage-return-text: #f6f8fa;
-    --color-prettylights-syntax-comment: #59636e;
-    --color-prettylights-syntax-constant: #0550ae;
-    --color-prettylights-syntax-constant-other-reference-link: #0a3069;
-    --color-prettylights-syntax-entity: #6639ba;
-    --color-prettylights-syntax-entity-tag: #0550ae;
-    --color-prettylights-syntax-invalid-illegal-text: var(--fgColor-danger);
-    --color-prettylights-syntax-keyword: #cf222e;
-    --color-prettylights-syntax-markup-changed-bg: #ffd8b5;
-    --color-prettylights-syntax-markup-changed-text: #953800;
-    --color-prettylights-syntax-markup-deleted-bg: #ffebe9;
-    --color-prettylights-syntax-markup-deleted-text: #82071e;
-    --color-prettylights-syntax-markup-heading: #0550ae;
-    --color-prettylights-syntax-markup-ignored-bg: #0550ae;
-    --color-prettylights-syntax-markup-ignored-text: #d1d9e0;
-    --color-prettylights-syntax-markup-inserted-bg: #dafbe1;
-    --color-prettylights-syntax-markup-inserted-text: #116329;
-    --color-prettylights-syntax-markup-list: #3b2300;
-    --color-prettylights-syntax-meta-diff-range: #8250df;
-    --color-prettylights-syntax-string: #0a3069;
-    --color-prettylights-syntax-string-regexp: #116329;
-    --color-prettylights-syntax-sublimelinter-gutter-mark: #818b98;
-    --color-prettylights-syntax-variable: #953800;
-    --fgColor-accent: #0969da;
-    --fgColor-attention: #9a6700;
-    --fgColor-done: #8250df;
-    --fgColor-muted: #59636e;
-    --fgColor-success: #1a7f37;
-    --bgColor-default: #ffffff;
-    --borderColor-muted: #d1d9e0b3;
-    --color-prettylights-syntax-invalid-illegal-bg: var(--bgColor-danger-muted);
-    --color-prettylights-syntax-markup-bold: #1f2328;
-    --color-prettylights-syntax-markup-italic: #1f2328;
-    --color-prettylights-syntax-storage-modifier-import: #1f2328;
-    --fgColor-default: #1f2328;
-    --focus-outlineColor: var(--borderColor-accent-emphasis);
-    --borderColor-neutral-muted: var(--borderColor-muted);
-  }
-}
 
 .markdown-body {
   /** CSS default easing. Use for hover state changes and micro-interactions. */
@@ -137,9 +134,15 @@
   color: var(--fgColor-default);
   background-color: var(--bgColor-default);
   font-family: var(--fontStack-sansSerif, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji");
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.5;
   word-wrap: break-word;
+}
+
+@media (min-width: 920px) {
+  .markdown-body {
+    font-size: 1.5rem;
+  }
 }
 
 .markdown-body a {
@@ -403,6 +406,7 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
+  color: 
   margin-top: var(--base-size-24);
   margin-bottom: var(--base-size-16);
   font-weight: var(--base-text-weight-semibold, 600);
@@ -1291,7 +1295,7 @@ lite-youtube:hover {
 
 main.markdown-body {
     padding: 95px 20px 45px 20px !important;
-    max-width: 980px !important;
+    max-width: 68ch !important;
     margin: 0 auto !important;
     box-sizing: border-box !important;
     overflow-x: hidden !important;
