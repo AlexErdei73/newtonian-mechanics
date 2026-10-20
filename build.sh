@@ -40,26 +40,26 @@ echo "=== STEP 1: Compiling Hungarian Environment via Pandoc ==="
 if [ -f "README.md" ]; then
     pandoc -f markdown -t html5 --standalone --mathml --syntax-highlighting=none \
            --id-prefix="" --template=pandoc_clean_template.html \
-           -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_HU - Előszó" -M lang="hu" README.md -o index.html
+           -c github-markdown.css -c custom.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_HU - Előszó" -M lang="hu" README.md -o index.html
 fi
 
 if [ -f "NEWTON_MECHANIKAJA.md" ]; then
     pandoc -f markdown -t html5 --standalone --mathml --syntax-highlighting=none \
            --id-prefix="" --template=pandoc_clean_template.html \
-           -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_HU - Tartalomjegyzék" -M lang="hu" NEWTON_MECHANIKAJA.md -o NEWTON_MECHANIKAJA.html
+           -c github-markdown.css -c custom.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_HU - Tartalomjegyzék" -M lang="hu" NEWTON_MECHANIKAJA.md -o NEWTON_MECHANIKAJA.html
 fi
 
 if [ -f "VEGEREDMENYEK.md" ]; then
     pandoc -f markdown -t html5 --standalone --mathml --syntax-highlighting=none \
            --id-prefix="" --template=pandoc_clean_template.html \
-           -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_HU - Végeredmények" -M lang="hu" VEGEREDMENYEK.md -o VEGEREDMENYEK.html
+           -c github-markdown.css -c custom.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_HU - Végeredmények" -M lang="hu" VEGEREDMENYEK.md -o VEGEREDMENYEK.html
 fi
 
 if [ -f "IRODALOMJEGYZEK.md" ]; then
     echo "Processing: IRODALOMJEGYZEK.md -> IRODALOMJEGYZEK.html"
     pandoc -f markdown -t html5 --standalone --mathml --syntax-highlighting=none \
            --id-prefix="" --template=pandoc_clean_template.html \
-           -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_HU - Ajánlott Irodalom" -M lang="hu" IRODALOMJEGYZEK.md -o IRODALOMJEGYZEK.html
+           -c github-markdown.css -c custom.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_HU - Ajánlott Irodalom" -M lang="hu" IRODALOMJEGYZEK.md -o IRODALOMJEGYZEK.html
 fi
 
 if [ -d "Mechanika" ]; then
@@ -72,7 +72,7 @@ if [ -d "Mechanika" ]; then
         
         pandoc "$lecke_clean" -f markdown -t html5 --standalone --mathml --syntax-highlighting=none \
                --id-prefix="" --template=pandoc_clean_template.html \
-               -c ../github-markdown.css -H <(echo "$SUB_HEADER") -M lang="hu" \
+               -c ../github-markdown.css -c ../custom.css -H <(echo "$SUB_HEADER") -M lang="hu" \
                -o "$output_html" --wrap=none
     done
     rm pandoc_clean_template.html
@@ -92,26 +92,26 @@ if [ -d "en" ]; then
     if [ -f "README.md" ]; then
         pandoc -f markdown -t html5 --standalone --mathml --syntax-highlighting=none \
                --id-prefix="" --template=pandoc_clean_template.html \
-               -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_EN - Preface" -M lang="en" README.md -o index.html
+               -c github-markdown.css -c custom.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_EN - Preface" -M lang="en" README.md -o index.html
     fi
 
     if [ -f "NEWTON_MECHANIKAJA.md" ]; then
         pandoc -f markdown -t html5 --standalone --mathml --syntax-highlighting=none \
                --id-prefix="" --template=pandoc_clean_template.html \
-               -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_EN - Table of Contents" -M lang="en" NEWTON_MECHANIKAJA.md -o NEWTON_MECHANIKAJA.html
+               -c github-markdown.css -c custom.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_EN - Table of Contents" -M lang="en" NEWTON_MECHANIKAJA.md -o NEWTON_MECHANIKAJA.html
     fi
 
     if [ -f "VEGEREDMENYEK.md" ]; then
         pandoc -f markdown -t html5 --standalone --mathml --syntax-highlighting=none \
                --id-prefix="" --template=pandoc_clean_template.html \
-               -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_EN - Solutions" -M lang="en" VEGEREDMENYEK.md -o 'VEGEREDMENYEK.html'
+               -c github-markdown.css -c custom.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_EN - Solutions" -M lang="en" VEGEREDMENYEK.md -o 'VEGEREDMENYEK.html'
     fi
 
     if [ -f "IRODALOMJEGYZEK.md" ]; then
         echo "Processing: en/IRODALOMJEGYZEK.md -> en/IRODALOMJEGYZEK.html"
         pandoc -f markdown -t html5 --standalone --mathml --syntax-highlighting=none \
                --id-prefix="" --template=pandoc_clean_template.html \
-               -c github-markdown.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_EN - Bibliography" -M lang="en" IRODALOMJEGYZEK.md -o IRODALOMJEGYZEK.html
+               -c github-markdown.css -c custom.css -H <(echo "$ROOT_HEADER") -M title="$PROJECT_TITLE_EN - Bibliography" -M lang="en" IRODALOMJEGYZEK.md -o IRODALOMJEGYZEK.html
     fi
 
     if [ -d "Mechanika" ]; then
@@ -124,7 +124,7 @@ if [ -d "en" ]; then
             
             pandoc "$lecke_clean" -f markdown -t html5 --standalone --mathml --syntax-highlighting=none \
                    --id-prefix="" --template=pandoc_clean_template.html \
-                   -c ../github-markdown.css -H <(echo "$SUB_HEADER") -M lang="en" \
+                   -c ../github-markdown.css -c ../custom.css -H <(echo "$SUB_HEADER") -M lang="en" \
                    -o "$output_html" --wrap=none
         done
         rm pandoc_clean_template.html
